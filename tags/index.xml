@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Account for Everything Else</title>
+    <link>http://itihas.review/tags/</link>
+    <description>Recent content in Tags on Account for Everything Else</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Feb 2018 08:39:00 +0530</lastBuildDate>
+    
+	<atom:link href="http://itihas.review/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>poetry</title>
+      <link>http://itihas.review/tags/poetry/</link>
+      <pubDate>Thu, 08 Feb 2018 08:39:00 +0530</pubDate>
+      
+      <guid>http://itihas.review/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drabble</title>
+      <link>http://itihas.review/tags/drabble/</link>
+      <pubDate>Mon, 11 Jul 2016 18:34:02 +0530</pubDate>
+      
+      <guid>http://itihas.review/tags/drabble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>riddle</title>
+      <link>http://itihas.review/tags/riddle/</link>
+      <pubDate>Sun, 05 Apr 2015 00:00:00 +0530</pubDate>
+      
+      <guid>http://itihas.review/tags/riddle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>water body</title>
+      <link>http://itihas.review/tags/water-body/</link>
+      <pubDate>Sun, 10 Aug 2014 20:29:00 -0700</pubDate>
+      
+      <guid>http://itihas.review/tags/water-body/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>horror story</title>
+      <link>http://itihas.review/tags/horror-story/</link>
+      <pubDate>Sun, 10 Aug 2014 20:21:00 -0700</pubDate>
+      
+      <guid>http://itihas.review/tags/horror-story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trainwreck</title>
+      <link>http://itihas.review/tags/trainwreck/</link>
+      <pubDate>Sun, 10 Aug 2014 20:13:00 -0700</pubDate>
+      
+      <guid>http://itihas.review/tags/trainwreck/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interregnum</title>
+      <link>http://itihas.review/tags/interregnum/</link>
+      <pubDate>Sun, 10 Aug 2014 20:12:00 -0700</pubDate>
+      
+      <guid>http://itihas.review/tags/interregnum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>short stories</title>
+      <link>http://itihas.review/tags/short-stories/</link>
+      <pubDate>Wed, 12 Mar 2014 06:52:00 -0700</pubDate>
+      
+      <guid>http://itihas.review/tags/short-stories/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
