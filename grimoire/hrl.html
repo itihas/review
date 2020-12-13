@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-12-14 Mon 01:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exact Humanities Reading List</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Sahiti Chedalavada" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../styles/org.css" />
+
+<script type="text/javascript" src="../styles/org-info.min.js">
+/**
+ *
+ * @source: ../styles/org-info.min.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in ../styles/org-info.min.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in ../styles/org-info.min.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Exact Humanities Reading List</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc8f485f">1. Currently (notably) missing</a></li>
+<li><a href="#orgf5c4ea7">2. monadologie, gottfried leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="navjyoti">navjyoti</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="naturalphilosophy">naturalphilosophy</span></span></a></li>
+<li><a href="#orgae91b83">3. newton-leibniz-clarke correspondence&#xa0;&#xa0;&#xa0;<span class="tag"><span class="navjyoti">navjyoti</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="naturalphilosophy">naturalphilosophy</span></span></a></li>
+<li><a href="#org16e151f">4. Leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span>&#xa0;<span class="aristotleriff">aristotleriff</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="mathphil">mathphil</span></span></a>
+<ul>
+<li><a href="#orgf7487bb">4.1. Monadologie</a></li>
+<li><a href="#orgca85f3f">4.2. Theodicy</a></li>
+</ul>
+</li>
+<li><a href="#org58447f0">5. Descartes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mindbody">mindbody</span>&#xa0;<span class="proofofgod">proofofgod</span>&#xa0;<span class="aristotleriff">aristotleriff</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="mathphil">mathphil</span></span></a>
+<ul>
+<li><a href="#org535b8e4">5.1. Meditations on First Philosophy</a></li>
+</ul>
+</li>
+<li><a href="#org6c18de8">6. hilbert's millenium problems&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="ontology">ontology</span></span></a></li>
+<li><a href="#orgd502470">7. cantor on transfinites&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="ontology">ontology</span></span></a></li>
+<li><a href="#orgdef4177">8. greek conception of irrationals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="mathhistory">mathhistory</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="aesthetics">aesthetics</span></span></a></li>
+<li><a href="#org1f35f42">9. Indian Logic - Ancient, Mediaeval, and Modern - Satish CV&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="indianphilosophy">indianphilosophy</span>&#xa0;<span class="logic">logic</span></span></a></li>
+<li><a href="#orgb087fce">10. The Poetics of Space - Gaston Bachelard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aesthetics">aesthetics</span></span></a></li>
+<li><a href="#orge2267cf">11. Aristotle</a>
+<ul>
+<li><a href="#org8ae2e03">11.1. Poetics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aesthetics">aesthetics</span></span></a></li>
+<li><a href="#orge77e790">11.2. Categories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org0959a40">12. Phantoms in the Brain - VS Ramachandran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="cogsci">cogsci</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></a></li>
+<li><a href="#org4383eed">13. Brief History of India - Romila Thapar&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></a></li>
+<li><a href="#org56fe1d2">14. After Amnesia - GN Devy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="indianphilosophy">indianphilosophy</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></a></li>
+<li><a href="#org9646945">15. One Hundred Years of Solitude - GGM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="fiction">fiction</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></a></li>
+<li><a href="#org6ff39d4">16. Whose Justice? Which Rationailty? - Alastair MacIntyre&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="politics">politics</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org3a8948a">17. Brain-wise - Studies in Neurophilosophy - Patricia Churchland&#xa0;&#xa0;&#xa0;<span class="tag"><span class="cogsci">cogsci</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org978119c">18. Two Concepts of Freedom - Isaiah Berlin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="politics">politics</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org40b693f">19. Within and Without - Herman Hesse&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="fiction">fiction</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org39cd7f9">20. Murder in a Cathedral - TS Eliot&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></a></li>
+<li><a href="#org0e7ac5c">21. Introduction to Philosophy of History: An Essay on the Limits of Historical Objectivity - Raymond aron&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org12e67f4">22. The Postmodern Condition - Jean-Francois Lyotard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org92b7ec7">23. The Historian and His Facts - EH Carr&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org9b63f03">24. Anthropology - Michael Herzfeld&#xa0;&#xa0;&#xa0;<span class="tag"><span class="anthropology">anthropology</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#orgd278bd4">25. Modern Dogma and the Rhetoric of Assent - Wayne Booth&#xa0;&#xa0;&#xa0;<span class="tag"><span class="anthropology">anthropology</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#orga342516">26. The Passion of the Western Mind - Richard Tarnas&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="anthropology">anthropology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="prk">prk</span></span></a></li>
+<li><a href="#org92117e9">27. The Man without Qualities - Robert Musir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></a></li>
+<li><a href="#orgf8f087b">28. The Man in Black - Oliver Goldsmith&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></a></li>
+<li><a href="#org5ca0933">29. Doctor Zhivago - Boris Pasternak&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></a></li>
+<li><a href="#org8ac6d89">30. Mind at the End of its Tether - HG Wells&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></a></li>
+<li><a href="#org7bc7d80">31. Labyrinths - Jorga Louis Borges&#xa0;&#xa0;&#xa0;<span class="tag"><span class="fiction">fiction</span>&#xa0;<span class="navjyoti">navjyoti</span></span></a></li>
+<li><a href="#org564a509">32. Brentano&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="cogsci">cogsci</span>&#xa0;<span class="aristotleriff">aristotleriff</span></span></a>
+<ul>
+<li><a href="#org06d43d8">32.1. On the Several Senses of Being in Aristotle</a></li>
+<li><a href="#org0dc8ec3">32.2. Psychology from an Empirical Standpoint</a></li>
+<li><a href="#org4e1cfdc">32.3. Philosophical Investigations on Space, Time, and Continuum</a></li>
+</ul>
+</li>
+<li><a href="#org58634cc">33. Husserl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="phenomenology">phenomenology</span>&#xa0;<span class="navjyoti">navjyoti</span></span></a></li>
+<li><a href="#org9eebad1">34. Heidegger&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="phenomenology">phenomenology</span>&#xa0;<span class="aesthetics">aesthetics</span>&#xa0;<span class="navjyoti">navjyoti</span></span></a>
+<ul>
+<li><a href="#org86f3686">34.1. Being and Time</a></li>
+<li><a href="#orgd5a0821">34.2. Identity and Difference</a></li>
+</ul>
+</li>
+<li><a href="#org378fd1e">35. The Labyrinth of the Continuum - Leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mathphil">mathphil</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="aristotleriff">aristotleriff</span></span></a></li>
+<li><a href="#org07ddff2">36. Infinity and the Mind - Alan Turing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mathphil">mathphil</span>&#xa0;<span class="confluence">confluence</span></span></a></li>
+<li><a href="#org8c2a001">37. The Beautiful tree - Sri Dharampal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="anthropology">anthropology</span>&#xa0;<span class="confluence">confluence</span></span></a></li>
+<li><a href="#orga730f2e">38. Paradoxes A-Z&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="foundations">foundations</span>&#xa0;<span class="confluence">confluence</span></span></a></li>
+<li><a href="#orgeb4890d">39. Abhijnana sakuntalam - Kalidasa&#xa0;&#xa0;&#xa0;<span class="tag"><span class="sanskrit">sanskrit</span>&#xa0;<span class="classicalsanskrit">classicalsanskrit</span>&#xa0;<span class="poetry">poetry</span>&#xa0;<span class="aesthetics">aesthetics</span></span></a></li>
+<li><a href="#org28a1024">40. Agama-dambara - Bhatta jayanta&#xa0;&#xa0;&#xa0;<span class="tag"><span class="play">play</span>&#xa0;<span class="sanskrit">sanskrit</span>&#xa0;<span class="mediaevalsanskrit">mediaevalsanskrit</span>&#xa0;<span class="ethics">ethics</span>&#xa0;<span class="polity">polity</span></span></a></li>
+<li><a href="#orgef6f2cc">41. Satakatraya / subhashita trisati - Bhartrihari&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ethics">ethics</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="classicalsanskrit">classicalsanskrit</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></a></li>
+</ul>
+</div>
+</div>
+<p>
+So. This is the sort of incomplete document that <i>has</i> to be a living document, because I see no real end to the updates and definitely none in the next three months. Many of these are things I haven't read, or have only given cursory treatment, or received filtered readings of in class. They're from reading assignments, offhand noted recommendations, retrofitted memories of various excerpts, etc. They are by no means complete.
+</p>
+
+<div id="outline-container-orgc8f485f" class="outline-2">
+<h2 id="orgc8f485f"><span class="section-number-2">1</span> Currently (notably) missing</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Most of the classical Sanskrit original sources, commentaries, and excerpts</li>
+<li>Auxiliary / further reading</li>
+<li>Course lists from the syllabus</li>
+<li>Notes on each reading
+<ul class="org-ul">
+<li>context and treatment in discourse</li>
+<li>how they were assigned and grouped</li>
+<li>places to look for further context</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf5c4ea7" class="outline-2">
+<h2 id="orgf5c4ea7"><span class="section-number-2">2</span> monadologie, gottfried leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="navjyoti">navjyoti</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="naturalphilosophy">naturalphilosophy</span></span></h2>
+</div>
+<div id="outline-container-orgae91b83" class="outline-2">
+<h2 id="orgae91b83"><span class="section-number-2">3</span> newton-leibniz-clarke correspondence&#xa0;&#xa0;&#xa0;<span class="tag"><span class="navjyoti">navjyoti</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="naturalphilosophy">naturalphilosophy</span></span></h2>
+</div>
+<div id="outline-container-org16e151f" class="outline-2">
+<h2 id="org16e151f"><span class="section-number-2">4</span> Leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span>&#xa0;<span class="aristotleriff">aristotleriff</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="mathphil">mathphil</span></span></h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf7487bb" class="outline-3">
+<h3 id="orgf7487bb"><span class="section-number-3">4.1</span> Monadologie</h3>
+</div>
+<div id="outline-container-orgca85f3f" class="outline-3">
+<h3 id="orgca85f3f"><span class="section-number-3">4.2</span> Theodicy</h3>
+</div>
+</div>
+<div id="outline-container-org58447f0" class="outline-2">
+<h2 id="org58447f0"><span class="section-number-2">5</span> Descartes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mindbody">mindbody</span>&#xa0;<span class="proofofgod">proofofgod</span>&#xa0;<span class="aristotleriff">aristotleriff</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="mathphil">mathphil</span></span></h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org535b8e4" class="outline-3">
+<h3 id="org535b8e4"><span class="section-number-3">5.1</span> Meditations on First Philosophy</h3>
+</div>
+</div>
+<div id="outline-container-org6c18de8" class="outline-2">
+<h2 id="org6c18de8"><span class="section-number-2">6</span> hilbert's millenium problems&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="ontology">ontology</span></span></h2>
+</div>
+<div id="outline-container-orgd502470" class="outline-2">
+<h2 id="orgd502470"><span class="section-number-2">7</span> cantor on transfinites&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="ontology">ontology</span></span></h2>
+</div>
+<div id="outline-container-orgdef4177" class="outline-2">
+<h2 id="orgdef4177"><span class="section-number-2">8</span> greek conception of irrationals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="math">math</span>&#xa0;<span class="mathhistory">mathhistory</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-org1f35f42" class="outline-2">
+<h2 id="org1f35f42"><span class="section-number-2">9</span> Indian Logic - Ancient, Mediaeval, and Modern - Satish CV&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="indianphilosophy">indianphilosophy</span>&#xa0;<span class="logic">logic</span></span></h2>
+</div>
+<div id="outline-container-orgb087fce" class="outline-2">
+<h2 id="orgb087fce"><span class="section-number-2">10</span> The Poetics of Space - Gaston Bachelard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-orge2267cf" class="outline-2">
+<h2 id="orge2267cf"><span class="section-number-2">11</span> Aristotle</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org8ae2e03" class="outline-3">
+<h3 id="org8ae2e03"><span class="section-number-3">11.1</span> Poetics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="aesthetics">aesthetics</span></span></h3>
+</div>
+<div id="outline-container-orge77e790" class="outline-3">
+<h3 id="orge77e790"><span class="section-number-3">11.2</span> Categories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span></span></h3>
+</div>
+</div>
+<div id="outline-container-org0959a40" class="outline-2">
+<h2 id="org0959a40"><span class="section-number-2">12</span> Phantoms in the Brain - VS Ramachandran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="cogsci">cogsci</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-org4383eed" class="outline-2">
+<h2 id="org4383eed"><span class="section-number-2">13</span> Brief History of India - Romila Thapar&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-org56fe1d2" class="outline-2">
+<h2 id="org56fe1d2"><span class="section-number-2">14</span> After Amnesia - GN Devy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="indianphilosophy">indianphilosophy</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-org9646945" class="outline-2">
+<h2 id="org9646945"><span class="section-number-2">15</span> One Hundred Years of Solitude - GGM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="fiction">fiction</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-org6ff39d4" class="outline-2">
+<h2 id="org6ff39d4"><span class="section-number-2">16</span> Whose Justice? Which Rationailty? - Alastair MacIntyre&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="politics">politics</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org3a8948a" class="outline-2">
+<h2 id="org3a8948a"><span class="section-number-2">17</span> Brain-wise - Studies in Neurophilosophy - Patricia Churchland&#xa0;&#xa0;&#xa0;<span class="tag"><span class="cogsci">cogsci</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org978119c" class="outline-2">
+<h2 id="org978119c"><span class="section-number-2">18</span> Two Concepts of Freedom - Isaiah Berlin&#xa0;&#xa0;&#xa0;<span class="tag"><span class="politics">politics</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org40b693f" class="outline-2">
+<h2 id="org40b693f"><span class="section-number-2">19</span> Within and Without - Herman Hesse&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="fiction">fiction</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org39cd7f9" class="outline-2">
+<h2 id="org39cd7f9"><span class="section-number-2">20</span> Murder in a Cathedral - TS Eliot&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-org0e7ac5c" class="outline-2">
+<h2 id="org0e7ac5c"><span class="section-number-2">21</span> Introduction to Philosophy of History: An Essay on the Limits of Historical Objectivity - Raymond aron&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org12e67f4" class="outline-2">
+<h2 id="org12e67f4"><span class="section-number-2">22</span> The Postmodern Condition - Jean-Francois Lyotard&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="postmodernist">postmodernist</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org92b7ec7" class="outline-2">
+<h2 id="org92b7ec7"><span class="section-number-2">23</span> The Historian and His Facts - EH Carr&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org9b63f03" class="outline-2">
+<h2 id="org9b63f03"><span class="section-number-2">24</span> Anthropology - Michael Herzfeld&#xa0;&#xa0;&#xa0;<span class="tag"><span class="anthropology">anthropology</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-orgd278bd4" class="outline-2">
+<h2 id="orgd278bd4"><span class="section-number-2">25</span> Modern Dogma and the Rhetoric of Assent - Wayne Booth&#xa0;&#xa0;&#xa0;<span class="tag"><span class="anthropology">anthropology</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-orga342516" class="outline-2">
+<h2 id="orga342516"><span class="section-number-2">26</span> The Passion of the Western Mind - Richard Tarnas&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="anthropology">anthropology</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-org92117e9" class="outline-2">
+<h2 id="org92117e9"><span class="section-number-2">27</span> The Man without Qualities - Robert Musir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-orgf8f087b" class="outline-2">
+<h2 id="orgf8f087b"><span class="section-number-2">28</span> The Man in Black - Oliver Goldsmith&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-org5ca0933" class="outline-2">
+<h2 id="org5ca0933"><span class="section-number-2">29</span> Doctor Zhivago - Boris Pasternak&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-org8ac6d89" class="outline-2">
+<h2 id="org8ac6d89"><span class="section-number-2">30</span> Mind at the End of its Tether - HG Wells&#xa0;&#xa0;&#xa0;<span class="tag"><span class="prk">prk</span>&#xa0;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-org7bc7d80" class="outline-2">
+<h2 id="org7bc7d80"><span class="section-number-2">31</span> Labyrinths - Jorga Louis Borges&#xa0;&#xa0;&#xa0;<span class="tag"><span class="fiction">fiction</span>&#xa0;<span class="navjyoti">navjyoti</span></span></h2>
+</div>
+<div id="outline-container-org564a509" class="outline-2">
+<h2 id="org564a509"><span class="section-number-2">32</span> Brentano&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ontology">ontology</span>&#xa0;<span class="epistemics">epistemics</span>&#xa0;<span class="cogsci">cogsci</span>&#xa0;<span class="aristotleriff">aristotleriff</span></span></h2>
+<div class="outline-text-2" id="text-32">
+</div>
+<div id="outline-container-org06d43d8" class="outline-3">
+<h3 id="org06d43d8"><span class="section-number-3">32.1</span> On the Several Senses of Being in Aristotle</h3>
+</div>
+<div id="outline-container-org0dc8ec3" class="outline-3">
+<h3 id="org0dc8ec3"><span class="section-number-3">32.2</span> Psychology from an Empirical Standpoint</h3>
+</div>
+<div id="outline-container-org4e1cfdc" class="outline-3">
+<h3 id="org4e1cfdc"><span class="section-number-3">32.3</span> Philosophical Investigations on Space, Time, and Continuum</h3>
+</div>
+</div>
+<div id="outline-container-org58634cc" class="outline-2">
+<h2 id="org58634cc"><span class="section-number-2">33</span> Husserl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="phenomenology">phenomenology</span>&#xa0;<span class="navjyoti">navjyoti</span></span></h2>
+</div>
+<div id="outline-container-org9eebad1" class="outline-2">
+<h2 id="org9eebad1"><span class="section-number-2">34</span> Heidegger&#xa0;&#xa0;&#xa0;<span class="tag"><span class="postmodernist">postmodernist</span>&#xa0;<span class="phenomenology">phenomenology</span>&#xa0;<span class="aesthetics">aesthetics</span>&#xa0;<span class="navjyoti">navjyoti</span></span></h2>
+<div class="outline-text-2" id="text-34">
+</div>
+<div id="outline-container-org86f3686" class="outline-3">
+<h3 id="org86f3686"><span class="section-number-3">34.1</span> Being and Time</h3>
+</div>
+<div id="outline-container-orgd5a0821" class="outline-3">
+<h3 id="orgd5a0821"><span class="section-number-3">34.2</span> Identity and Difference</h3>
+</div>
+</div>
+<div id="outline-container-org378fd1e" class="outline-2">
+<h2 id="org378fd1e"><span class="section-number-2">35</span> The Labyrinth of the Continuum - Leibniz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mathphil">mathphil</span>&#xa0;<span class="ontology">ontology</span>&#xa0;<span class="aristotleriff">aristotleriff</span></span></h2>
+</div>
+<div id="outline-container-org07ddff2" class="outline-2">
+<h2 id="org07ddff2"><span class="section-number-2">36</span> Infinity and the Mind - Alan Turing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mathphil">mathphil</span>&#xa0;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-org8c2a001" class="outline-2">
+<h2 id="org8c2a001"><span class="section-number-2">37</span> The Beautiful tree - Sri Dharampal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="history">history</span>&#xa0;<span class="anthropology">anthropology</span>&#xa0;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-orga730f2e" class="outline-2">
+<h2 id="orga730f2e"><span class="section-number-2">38</span> Paradoxes A-Z&#xa0;&#xa0;&#xa0;<span class="tag"><span class="philosophy">philosophy</span>&#xa0;<span class="foundations">foundations</span>&#xa0;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-orgeb4890d" class="outline-2">
+<h2 id="orgeb4890d"><span class="section-number-2">39</span> Abhijnana sakuntalam - Kalidasa&#xa0;&#xa0;&#xa0;<span class="tag"><span class="sanskrit">sanskrit</span>&#xa0;<span class="classicalsanskrit">classicalsanskrit</span>&#xa0;<span class="poetry">poetry</span>&#xa0;<span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-org28a1024" class="outline-2">
+<h2 id="org28a1024"><span class="section-number-2">40</span> Agama-dambara - Bhatta jayanta&#xa0;&#xa0;&#xa0;<span class="tag"><span class="play">play</span>&#xa0;<span class="sanskrit">sanskrit</span>&#xa0;<span class="mediaevalsanskrit">mediaevalsanskrit</span>&#xa0;<span class="ethics">ethics</span>&#xa0;<span class="polity">polity</span></span></h2>
+</div>
+<div id="outline-container-orgef6f2cc" class="outline-2">
+<h2 id="orgef6f2cc"><span class="section-number-2">41</span> Satakatraya / subhashita trisati - Bhartrihari&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ethics">ethics</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="classicalsanskrit">classicalsanskrit</span>&#xa0;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016-05-10 Tue 00:00</p>
+<p class="author">Author: Sahiti Chedalavada</p>
+<p class="date">Created: 2020-12-14 Mon 01:43</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

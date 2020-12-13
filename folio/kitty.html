@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-12-14 Mon 01:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Look what the cat dragged in</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Sahiti Chedalavada" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../styles/org.css" />
+
+<script type="text/javascript" src="../styles/org-info.min.js">
+/**
+ *
+ * @source: ../styles/org-info.min.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in ../styles/org-info.min.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in ../styles/org-info.min.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Look what the cat dragged in</h1>
+<p>
+"But I love you," he pleads, eyes streaming and voice shaking; a mess of
+quaking limbs and blotched skin, dressed in dirty thirdhand rags and
+alley-cat hair, on his knees on the expensive carpet I had had selected
+and arranged just last week. I sniff, disgusted. Does he honestly expect
+his snivelling to make any difference to me? One would have thought he’d
+know better by now at least.
+</p>
+
+<p>
+Gingerly, I brush at a trailing, fraying bit of cloth with a foot. I’m not even sure it belongs to any garment
+– it seems perfectly possible that he fished it out of the gutter
+outside a tailor shop.I
+try to lift rather than press at it – I don't want to riskdamaging the
+carpet any more than he has already. It’s likely beyond repair, but one hasto
+show at least that modicum of
+consideration.
+</p>
+
+<p>
+I’m quick enough to pull away before he catches my leg, thankfully. I
+just finished getting myself in order and presentable five minutes ago,
+and heaven only knows what kind of destruction he could wreak on my coat
+with those filthy hands. The lunge he makes towards me is pitifully
+weak, but it’s enough to topple him over; he could be made of wire and
+gelatin, all quivers and stiff joints. He lies, sobbing, with his cheek
+pressed to the shag pile. He tries and fails to lever himself up again,
+and sobs some more. I sigh a little.
+</p>
+
+<p>
+A glance at one of the servicemen standing in the background is enough.
+They know what’s needed, and will handle it without my needing to
+trouble myself one whit more than I have already. I give the heap on the
+ground a last look before turning towards the balcony. It’s the only
+place in the house where I can be assured of escaping his <i>stink</i>.
+</p>
+
+<p>
+It's a nice night. I wish I didn't have to disturb myself, when I could
+otherwise spend the time enjoying it. The air is balmy, the smell of the
+sea is coming in from the slight, warm breeze; the lights twinkle above
+and below – flickering pinpricks like dust in the sky, and the more
+vulgar multicoloured flashes shining up from the spread of land below.
+The lights climb the low hills to the south. They look like bleeding
+fingers, metrically lit avenue-strips leaking pools of muted rainbows.
+It appeals to the nouveau riche aesthetic, I suppose. I’ve been there,
+but never lived there. I wouldn’t want to; for all their vulgar sprawl,
+those estates make me claustrophobic.
+</p>
+
+<p>
+For myself, I prefer to be <i>in</i> town,
+not those suburban excuses for
+city life.I’m placed directly at the
+nerve-centre of the network of lights, but elevated to remoteness from
+it; prized territory rather than profligate. It’s well decorated and
+cosy, with nooks to hole away in and oversize cushions for naps. The art
+is bold and abstract. The furnishings are Art Deco. The colours are
+soothing. I pay for comfort, and I pay for taste.
+</p>
+
+<p>
+I watch now, perched on the wide railing, as the even patterns shift and
+dim. It’s late, for night-blind folks.
+</p>
+
+<p>
+He's pushed onto the deck through the French windows; they close
+silently behind him. I look him over sidelong, unwilling to displace
+myself excessively and slightly afraid he’s still in that obscene state
+he arrived in. As expected, however, all is well. He's clean, hair
+washed and combed, in a cotton shirt and silk slacks, shod in the
+smooth, buttery-soft house moccasins set aside for him. Sweet, generic
+gardenia perfume wafts its way to my nose. While the cringing expression
+and stance is annoying, it takes low priority. I beckon him closer
+lazily. Thankfully he's unable to find anything to trip over in the
+expanse of empty, sanded wood between us.
+</p>
+
+<p>
+He stands awkwardly over me. The silence stretches. He never can handle
+much of it. Practice has given him about a minute's worth of liver, and
+then, on cue, he snaps.
+</p>
+
+<p>
+“Princess. Princess.” he looks at me, desperate. I can read it in his
+eyes, the panic that prey undergo when they realize they're trapped –
+nothing worth doing, and yet they struggle, blindly, because their
+brains tell them to. He has to say something, but he doesn't even
+realize what's coming out of his mouth.
+</p>
+
+<p>
+“Look at me, princess. Won't you believe me? Why won't you believe me?
+Princess, I love you, I love you so much. Isn't that enough for you? You
+said it was, you did, you did. Princess, look at me—”
+</p>
+
+<p>
+His pupils crowd his irises out of the way. He's talking without pause
+for breath, but cuts himself off as I open my mouth. More fool him – I’m
+only yawning. He watches me, and I can see the threads unravelling from
+his mind as the situation truly sets in and he realizes where he is,
+what he's doing.
+</p>
+
+<p>
+“Come with me, Princess. You said you would. You said you would you said
+you would you said you would you—” a gurgle of sorts interrupts his
+litany in his sort. He's collapsed, sobbing.
+</p>
+
+<p>
+It's actually somewhat amusing, in one light. What does he expect me to
+do?
+</p>
+
+<p>
+I sigh. The balcony is no longer silent, and I abandon what slim hopes I
+had of salvaging some part of my nice quiet night. I hop down and
+saunter past him, close enough to cross his shadow – just to spook him
+some more, for the fun of it. He starts violently away, tipping over
+<i>again</i>;and lies trembling as
+he follows me out with his fixed prey-stare.
+</p>
+
+<p>
+The door is opened for me. As I pass through, a soft, delicate hand
+travels along my back, nape to tailbone, in one smooth stroke. I stretch
+into the touch, pleased; my head curves back to glance archly at the
+demure black-and-white figure.
+</p>
+
+<p>
+She used to be dressed in cotton and lace once upon a time, when the old
+steamboat was alive. Now she’s in silk, from her fair, bare silky hair
+to the toes of her soundless, spotless black ballet flats. My orders, of
+course.
+</p>
+
+<p>
+It was the steamboat, in her ticklish feathers and nubby, itchy velvets,
+who left me all this. She won it all from her old mate, of course, but
+that was far before my time.
+</p>
+
+<p>
+Idiot lady. Somewhere she had told somebody
+that the house and the moneywent to either me or her new mate, whichever
+stayed in the house with her corpse for thirty days. The fool sitting
+outside hadn’t made it a week before running. I think it must have
+broken him a little bit, inside his head.
+</p>
+
+<p>
+Milk-boned twit. It hadn’t exactly
+been easy for me either. Three days in, and the smell was on everything.
+It made me <i>ravenous</i>. Still
+does whenever I think about it.
+</p>
+
+<p>
+It took a week after the carcass left
+– minus a few nibbles, and who could blame me? – but my peteventually madeit so you’d think you were in an edelweiss
+field fourthousand foot square, right in the middle of
+the city. I had had about five
+minutes to enjoy it – the last of the old upholstery had just gone out
+the door when this fool had
+tried to let himself in, and
+his reek with him.
+</p>
+
+<p>
+“We’ll throw him out, my sweet. Don’t you worry.” She massages my back
+some more, her long fingers exactly the trick for my sore nerves. We’ve
+never needed words between us, my pet and I; she’s mother and lover and
+attendant. She knows what I need.
+</p>
+
+<p>
+She clucks now, the sound musical in
+her throat. “The hag had terrible taste in some things, didn’t she, sweet? What she saw in this fool to <i>marry</i> I’ll never know. And to think he still had a key!I took it, of course, but we’ll need the
+locks changed anyway.”
+</p>
+
+<p>
+She looks at me, indulgent. “And to
+think he wanted to make off with you. But you’d never look twice at that
+mangy upstart alley
+lurker, would you, Princess. He
+never made you turn a hair.”
+</p>
+
+<p>
+I feel her smile in her fingers, more
+than I see it. She picks me up, holds me against her soft silk-screened
+bosom. Her fingertips tease behind my ears. “Why don’t we make a show of
+it, and have him dragged out by his shirt tails?” Her voice is musical, soft. It has
+none of the screechy
+pitches of the idiot outside,
+and none of the overloudboom that the steamboat’s had
+possessed.
+</p>
+
+<p>
+“You’d like that, wouldn’t you,
+Princess? And I suspect I
+would, too.” She laughs, low
+and throaty, at her own
+joke.
+</p>
+
+<p>
+I purr again, long and loud, in counterpoint.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016-05-10 Tue 00:00</p>
+<p class="author">Author: Sahiti Chedalavada</p>
+<p class="date">Created: 2020-12-14 Mon 01:43</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
