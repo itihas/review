@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-23 Fri 17:35 -->
+<!-- 2021-04-23 Fri 18:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Blotter</title>
@@ -322,10 +322,12 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#org8cc8bc2">It seems worth revisiting the "cultivate consistent mathematical tradeoffs" paradigm in light of Debt's very pretty trust-community-vs-money-market paradigms</a>
 <ul>
-<li><a href="#org70ecb8a">ref https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price</a></li>
+<li><a href="#orgf6fa43a">ref Your Cheerful Price - LessWrong</a></li>
 </ul>
 </li>
+<li><a href="#org0e4e420">things i eat in the bathtub</a></li>
 <li><a href="#org3535cd9">Look for the lesswrong sequence about interfaces over truths</a></li>
+<li><a href="#org792eee7">[Orgmode] Publish atom feeds based on Org files</a></li>
 <li><a href="#orgc2f65e1">spectral sequences - the source for being able to tell anish that sheaf cohomology is org mode, apparently</a></li>
 <li><a href="#org913293c">A story about a gameboard, but pieces moving chnnges the world around you, and it's h love story between the players.</a></li>
 <li><a href="#org2d0f9bd">On a grassy plain, where trees hug the horizon, an unlucky child goes looking in the dark sooty places of the twilight, and finds harm.</a></li>
@@ -364,13 +366,16 @@ Stuff I'm capturing, filed here for posterity.
 <div class="outline-text-2" id="text-org8cc8bc2">
 <pre class="example">
 CREATED: [2021-04-23 Fri 15:21]
+ID: 4874e266-ecf6-483a-adaf-054ce7e7e981
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
-<div id="outline-container-org70ecb8a" class="outline-3">
-<h3 id="org70ecb8a">ref <a href="https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price">https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price</a></h3>
-<div class="outline-text-3" id="text-org70ecb8a">
+<div id="outline-container-orgf6fa43a" class="outline-3">
+<h3 id="orgf6fa43a">ref <a href="https://www.lesswrong.com/posts/MzKKi7niyEqkBPnyu/your-cheerful-price">Your Cheerful Price - LessWrong</a></h3>
+<div class="outline-text-3" id="text-orgf6fa43a">
 <pre class="example">
 CREATED: [2021-04-23 Fri 15:21]
+ID: fdf999e6-4692-45c3-af61-c80d064e2e28
 </pre>
 <blockquote>
 <p>
@@ -382,12 +387,51 @@ I was speaking mostly tongue-in-cheek.  But in fact there are coherence theorems
 </div>
 
 
+<div id="outline-container-org0e4e420" class="outline-2">
+<h2 id="org0e4e420"><a href="https://thingsieatinthebathtub.blogspot.com/?m=1">things i eat in the bathtub</a></h2>
+<div class="outline-text-2" id="text-org0e4e420">
+<pre class="example">
+CREATED: [2021-04-23 Fri 15:21]
+</pre>
+</div>
+</div>
 <div id="outline-container-org3535cd9" class="outline-2">
 <h2 id="org3535cd9">Look for the lesswrong sequence about interfaces over truths</h2>
 <div class="outline-text-2" id="text-org3535cd9">
 <pre class="example">
 CREATED: [2021-04-19 Mon 23:38]
+ID: 601cb148-0b8c-455b-a409-0d84b2506e80
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
+</div>
+</div>
+<div id="outline-container-org792eee7" class="outline-2">
+<h2 id="org792eee7"><a href="https://lists.gnu.org/archive/html/emacs-orgmode/2010-03/msg00415.html">[Orgmode] Publish atom feeds based on Org files</a></h2>
+<div class="outline-text-2" id="text-org792eee7">
+<pre class="example">
+CREATED: [2021-04-19 Mon 17:01]
+</pre>
+
+
+,----
+|   (setq org-publish-project-alist
+|         '(
+|           ...
+|           ("news-feed"
+|            :base-directory "~/website/"
+|            :base-extension "org"
+|            :publishing-directory "~/website/"
+|            ;; new property :publishing-url
+|            :publishing-url "http://example.tld/~john/";
+|            :auto-index t
+|            :index-filename "news.atom"
+|            :index-title "News feed for address@hidden"
+|            :index-function org-atom-publish-feed-index
+|            ;; feed specific settings
+|            :feed-id "6ea57592-69f2-4ef8-b44d-b7a511bd2fe8")
+|           ...
+|           ))
+`----
 </div>
 </div>
 <div id="outline-container-orgc2f65e1" class="outline-2">
@@ -395,6 +439,8 @@ CREATED: [2021-04-19 Mon 23:38]
 <div class="outline-text-2" id="text-orgc2f65e1">
 <pre class="example">
 CREATED: [2021-04-18 Sun 03:16]
+ID: 33400147-156d-460e-8bb5-7816f73b6d3b
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -403,6 +449,8 @@ CREATED: [2021-04-18 Sun 03:16]
 <div class="outline-text-2" id="text-org913293c">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: 92c464d5-e418-4641-bed9-1e748f204b00
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -411,6 +459,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-org2d0f9bd">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: 570246d7-3baf-4dd9-9194-04af9ec4a5ab
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -419,6 +469,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-orgf284e75">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: a5f96863-4a59-4dda-a973-213e42f33bbd
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -427,6 +479,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-org754535e">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: b1a32fb0-457c-417e-99f5-52e82fff06d5
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -435,6 +489,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-org82738d7">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: 33976846-9d87-404d-b42c-47082e982ef6
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -443,6 +499,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-orgd1b071f">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: bcfc53be-eadb-4e6d-8f54-e768edd944b0
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 
 <blockquote>
@@ -471,6 +529,8 @@ Redemption does not exist. There is only rebirth.
 <div class="outline-text-2" id="text-orgcb8e189">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: 75fd3513-9a23-48af-b375-e007f7ba8ca7
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 
 <p>
@@ -484,6 +544,8 @@ Two lovers meet, and cry for a week, without stopping, into their pillows as the
 <div class="outline-text-2" id="text-orge608836">
 <pre class="example">
 CREATED: [2021-04-15 Thu 16:03]
+ID: 78faa971-fa45-415a-b997-29c22b2f9b12
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -492,6 +554,8 @@ CREATED: [2021-04-15 Thu 16:03]
 <div class="outline-text-2" id="text-org72f5e10">
 <pre class="example">
 CREATED: [2021-04-07 Wed 18:15]
+ID: fea1859c-bb1c-4dfc-9d32-dce7db144d89
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -500,6 +564,8 @@ CREATED: [2021-04-07 Wed 18:15]
 <div class="outline-text-2" id="text-org98df756">
 <pre class="example">
 CREATED: [2020-12-14 Mon 19:09]
+ID: 5a750d00-846b-47bb-91c7-6886f1c4df5d
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -508,6 +574,8 @@ CREATED: [2020-12-14 Mon 19:09]
 <div class="outline-text-2" id="text-orgc1165ea">
 <pre class="example">
 CREATED: [2020-11-21 Sat 21:15]
+ID: 291af458-7543-48f8-bbaa-0b0dd4bdf5ed
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -516,6 +584,8 @@ CREATED: [2020-11-21 Sat 21:15]
 <div class="outline-text-2" id="text-orgda27f13">
 <pre class="example">
 CREATED: [2020-11-19 Thu 20:53]
+ID: 72944750-ba29-4a7d-b1d8-2d3cce373ba1
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 
 <p class="verse">
@@ -546,6 +616,8 @@ Perhaps that's far enough you've run.<br />
 <div class="outline-text-2" id="text-org4e858de">
 <pre class="example">
 CREATED: [2020-11-18 Wed 16:00]
+ID: 349363e1-66c3-4df1-8d37-2f35adbb736f
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 I put in <code>X-&gt;Y</code>  sentences
@@ -561,6 +633,8 @@ or a org-spreadsheet table of dependency sentences.
 <div class="outline-text-2" id="text-org2b75750">
 <pre class="example">
 CREATED: [2020-11-11 Wed 22:23]
+ID: 4cd6fb50-e92a-41c0-9851-92224f24ccdf
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 recc from that new coworking discord I joined, relating to the FIRO model. quote:
@@ -605,6 +679,8 @@ My suspicion , Sri, is that you are high-inclusion, and therefore hermit-mode pr
 <div class="outline-text-2" id="text-orgd640647">
 <pre class="example">
 CREATED: [2020-11-04 Wed 17:52]
+ID: 20f6eb56-af3d-4c12-a9be-b3e4d260433b
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 More than "enough", going by feeling. Abundant. Depression and wrongdoing and desire and suffering are all a distraction from that truth. Facing that truth is difficult, because it makes me feel undeserving. Or naive. Or foolish. It is hard to create a life or live a life that lives up to that much joy. And desire is a lot of fun. Maybe I want to hang around here, feeling this feeling, and finding a life that fits it, for awhile longer. 
@@ -616,6 +692,8 @@ More than "enough", going by feeling. Abundant. Depression and wrongdoing and de
 <div class="outline-text-2" id="text-org7bdd337">
 <pre class="example">
 CREATED: [2020-10-03 Sat 10:23]
+ID: cfb7a9ad-a7d3-41bf-9ad9-abac7aedc731
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 Think of DNA and reimplementation. Question: how often on average are things reimplemented in DNA?
@@ -653,6 +731,8 @@ Also, reading the deductive uncertainty paper would really help right about now,
 <div class="outline-text-2" id="text-org01dd09e">
 <pre class="example">
 CREATED: [2020-10-03 Sat 10:12]
+ID: 6decba08-7add-4b54-86ff-b4ae23126227
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 Our happy cat capture story is worth it here
@@ -664,6 +744,8 @@ Our happy cat capture story is worth it here
 <div class="outline-text-2" id="text-orgfb862d1">
 <pre class="example">
 CREATED: [2020-10-02 Fri 21:57]
+ID: 668d162e-c54c-42d6-8e92-3d66edd1fb33
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 apparently very game of thrones esque
@@ -675,6 +757,8 @@ apparently very game of thrones esque
 <div class="outline-text-2" id="text-org710d9c9">
 <pre class="example">
 CREATED: [2020-08-11 Tue 20:48]
+ID: 6372bc2f-4589-48ef-969e-63244348d159
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <p>
 Saying "no" acknowledges the thing you're responding to as having enough weight to be noticed in the first place.
@@ -689,6 +773,8 @@ The mechanism of taboo, therefore, functions as an attempt at inoculation. It's 
 <div class="outline-text-2" id="text-org389c5c5">
 <pre class="example">
 CREATED: [2020-08-08 Sat 23:32]
+ID: 079ba66d-5cb3-4c36-bc28-c16de486b35b
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 
 <p class="verse">
@@ -719,6 +805,8 @@ And they say yes or no based on what they like best.<br />
 <div class="outline-text-2" id="text-org33091f3">
 <pre class="example">
 CREATED: [2020-08-07 Fri 18:01]
+ID: 62f8fc04-517a-4bbc-bc62-652876643481
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 <ul class="org-ul">
 <li>veggie box</li>
@@ -737,6 +825,9 @@ CREATED: [2020-08-07 Fri 18:01]
 <div id="outline-container-org56e7422" class="outline-3">
 <h3 id="org56e7422">Plan for week starting <span class="timestamp-wrapper"><span class="timestamp">[2020-08-08 Sat]</span></span></h3>
 <div class="outline-text-3" id="text-org56e7422">
+<pre class="example">
+ID: 74681242-0041-425c-8e88-333056fd8cb5
+</pre>
 <ul class="org-ul">
 <li>cabbage fry
 <ul class="org-ul">
@@ -771,6 +862,8 @@ CREATED: [2020-08-07 Fri 18:01]
 <div class="outline-text-2" id="text-org0b50173">
 <pre class="example">
 CREATED: [2017-09-02 Sat 11:57]
+ID: 3dcb9f98-be42-482e-85a3-5192e740626a
+PUBDATE: <2021-04-23 Fri 17:36>
 </pre>
 </div>
 </div>
@@ -778,7 +871,7 @@ CREATED: [2017-09-02 Sat 11:57]
 <div id="postamble" class="status">
 <p class="date">Date: 2016-05-10 Tue 00:00</p>
 <p class="author">Author: Sahiti Chedalavada</p>
-<p class="date">Created: 2021-04-23 Fri 17:35</p>
+<p class="date">Created: 2021-04-23 Fri 18:05</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
