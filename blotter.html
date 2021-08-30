@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-06-18 Fri 15:53 -->
+<!-- 2021-08-30 Mon 21:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Blotter</title>
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -196,63 +196,12 @@
 <link rel="stylesheet" href="./styles/org.css" />
 
 <script type="text/javascript" src="./styles/org-info.min.js">
-/**
- *
- * @source: ./styles/org-info.min.js
- *
- * @licstart  The following is the entire license notice for the
- *  JavaScript code in ./styles/org-info.min.js.
- *
- * Copyright (C) 2012-2020 Free Software Foundation, Inc.
- *
- *
- * The JavaScript code in this tag is free software: you can
- * redistribute it and/or modify it under the terms of the GNU
- * General Public License (GNU GPL) as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option)
- * any later version.  The code is distributed WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
- *
- * As additional permission under GNU GPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
- *
- * @licend  The above is the entire license notice
- * for the JavaScript code in ./styles/org-info.min.js.
- *
- */
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
 </script>
 
 <script type="text/javascript">
-
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
 org_html_manager.set("TOC_DEPTH", "4");
 org_html_manager.set("LINK_HOME", "");
@@ -265,52 +214,29 @@ org_html_manager.set("TOC", "0");
 org_html_manager.set("VIEW", "1");
 org_html_manager.setup();  // activate after the parameters are set
 /*]]>*///-->
+// @license-end
 </script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -342,20 +268,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
+<li><a href="#org2880b86">correlational asymmetry and reversing the causal arrows</a></li>
 <li><a href="#org5f054d9"><span class="todo reading">reading</span> Meaningful Games, Robin Clark</a></li>
 <li><a href="#orgcc85b09">on natural vs formal, as the words are used to prefix "language"</a></li>
 <li><a href="#orgf798b2c">Triage: a game where you are a triage nurse</a></li>
 <li><a href="#org901e4d3">Worksheet project: an evolving writing project where you invite people to fill out worksheets that you then extend in response to their responses</a></li>
 <li><a href="#org4fd6a47">What does a twitter dissenter see? Volume and vehemence of reactions to unpopular opinions and how it's changed over the years</a></li>
-<li><a href="#org9e15dbf">Gaze ye not into the recursion, lest ye gaze into the recursion</a></li>
 <li><a href="#orgabc483a">Gaze ye not into the recursion, lest ye gaze into the recursion</a></li>
+<li><a href="#org7663595">Gaze ye not into the recursion, lest ye gaze into the recursion</a></li>
 <li><a href="#org7352b95">Uncommon Time - TV Tropes</a></li>
 <li><a href="#org6a99b04">Harlem (poem) - Wikipedia</a></li>
 <li><a href="#org5602a33">Continental Divide of the Americas - Wikipedia</a></li>
 <li><a href="#org329dafb">Habitat 67 - Wikipedia</a></li>
 <li><a href="#orgeab9ddb">Metabolism (architecture) - Wikipedia</a></li>
 <li><a href="#org1a33495">Story of a shotgun marriage born of a love confession made after a suicide attempt caused by years of trauma, where the couple ends up happy because love actually, step by painful step, conquers all.</a></li>
-<li><a href="#orgfa676a6">Flakes - NixOS Wiki</a>
+<li><a href="#orgc338e2b">Flakes - NixOS Wiki</a>
 <ul>
 <li><a href="#org93af87e"><span class="todo todo">todo</span> repackage configuration.nix as flake</a></li>
 </ul>
@@ -382,10 +309,10 @@ for the JavaScript code in this tag.
 <li><a href="#org0e4e420">things i eat in the bathtub</a></li>
 <li><a href="#org3535cd9">Look for the lesswrong sequence about interfaces over truths</a></li>
 <li><a href="#org792eee7">[Orgmode] Publish atom feeds based on Org files</a></li>
-<li><a href="#orgc338e2b">Flakes - NixOS Wiki</a></li>
+<li><a href="#orgc10c421">Flakes - NixOS Wiki</a></li>
 <li><a href="#org44e33ed">ArchiveBox | 🗃 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more…</a>
 <ul>
-<li><a href="#orgd8c3b3d"><span class="todo todo">todo</span> set up archivebox</a></li>
+<li><a href="#orgd6f73f0"><span class="todo todo">todo</span> set up archivebox</a></li>
 </ul>
 </li>
 <li><a href="#org86dacff">What If Everything I Think About Teaching Is Wrong | Five Twelve Thirteen&#xa0;&#xa0;&#xa0;<span class="tag"><span class="pedagogy">pedagogy</span></span></a></li>
@@ -443,13 +370,38 @@ for the JavaScript code in this tag.
 <li><a href="#org8a9f28e">final versions</a></li>
 </ul>
 </li>
-<li><a href="#orgd6f73f0"><span class="todo working">working</span> set up archivebox</a></li>
+<li><a href="#orgdab9834"><span class="todo working">working</span> set up archivebox</a></li>
 </ul>
 </div>
 </div>
 <p>
 Stuff I'm capturing, filed here for posterity.
 </p>
+<div id="outline-container-org2880b86" class="outline-2">
+<h2 id="org2880b86">correlational asymmetry and reversing the causal arrows</h2>
+<div class="outline-text-2" id="text-org2880b86">
+<pre class="example">
+CREATED: [2021-08-26 Thu 18:00]
+ID: ff5a8f48-24e7-4714-a2f7-cf2ac1dbc927
+</pre>
+
+<p>
+"If I do X the desired signal Y increases".
+</p>
+
+<p>
+Does X cause Y because Y-emitters desired X <i>a priori</i> and are strategically emitting Y to receive more of it, or because the X-action changes Y-emitters such that they emit more Y?
+</p>
+
+<p>
+The latter model is <i>more general</i> and there is no reason to allow the additional detail in the explanation that omits the epicycles.
+</p>
+
+<p>
+"But my model is simpler that way!" isn't actually acceptable unless you are in the middle of developing a model that actually <i>explains</i> things.
+</p>
+</div>
+</div>
 <div id="outline-container-org5f054d9" class="outline-2">
 <h2 id="org5f054d9"><span class="todo reading">reading</span> Meaningful Games, Robin Clark</h2>
 <div class="outline-text-2" id="text-org5f054d9">
@@ -493,20 +445,19 @@ CREATED: [2021-06-04 Fri 14:43]
 </pre>
 </div>
 </div>
-<div id="outline-container-org9e15dbf" class="outline-2">
-<h2 id="org9e15dbf">Gaze ye not into the recursion, lest ye gaze into the recursion</h2>
-<div class="outline-text-2" id="text-org9e15dbf">
-<pre class="example">
-CREATED: [2021-05-21 Fri 16:29]
-</pre>
-</div>
-</div>
 <div id="outline-container-orgabc483a" class="outline-2">
 <h2 id="orgabc483a">Gaze ye not into the recursion, lest ye gaze into the recursion</h2>
 <div class="outline-text-2" id="text-orgabc483a">
 <pre class="example">
 CREATED: [2021-05-21 Fri 16:29]
-ID: f41a597f-6978-45b6-9aea-de37567dcca1
+</pre>
+</div>
+</div>
+<div id="outline-container-org7663595" class="outline-2">
+<h2 id="org7663595">Gaze ye not into the recursion, lest ye gaze into the recursion</h2>
+<div class="outline-text-2" id="text-org7663595">
+<pre class="example">
+CREATED: [2021-05-21 Fri 16:29]
 </pre>
 </div>
 </div>
@@ -568,9 +519,9 @@ written to begin from shortly after the marriage in question
 </p>
 </div>
 </div>
-<div id="outline-container-orgfa676a6" class="outline-2">
-<h2 id="orgfa676a6"><a href="https://nixos.wiki/wiki/Flakes">Flakes - NixOS Wiki</a></h2>
-<div class="outline-text-2" id="text-orgfa676a6">
+<div id="outline-container-orgc338e2b" class="outline-2">
+<h2 id="orgc338e2b"><a href="https://nixos.wiki/wiki/Flakes">Flakes - NixOS Wiki</a></h2>
+<div class="outline-text-2" id="text-orgc338e2b">
 <pre class="example">
 CREATED: [2021-05-14 Fri 10:57]
 </pre>
@@ -823,9 +774,9 @@ CREATED: [2021-04-19 Mon 17:01]
 `----
 </div>
 </div>
-<div id="outline-container-orgc338e2b" class="outline-2">
-<h2 id="orgc338e2b"><a href="https://nixos.wiki/wiki/Flakes">Flakes - NixOS Wiki</a></h2>
-<div class="outline-text-2" id="text-orgc338e2b">
+<div id="outline-container-orgc10c421" class="outline-2">
+<h2 id="orgc10c421"><a href="https://nixos.wiki/wiki/Flakes">Flakes - NixOS Wiki</a></h2>
+<div class="outline-text-2" id="text-orgc10c421">
 <pre class="example">
 CREATED: [2021-04-19 Mon 16:54]
 </pre>
@@ -838,9 +789,9 @@ CREATED: [2021-04-19 Mon 16:54]
 CREATED: [2021-04-19 Mon 16:53]
 </pre>
 </div>
-<div id="outline-container-orgd8c3b3d" class="outline-3">
-<h3 id="orgd8c3b3d"><span class="todo todo">todo</span> set up archivebox</h3>
-<div class="outline-text-3" id="text-orgd8c3b3d">
+<div id="outline-container-orgd6f73f0" class="outline-3">
+<h3 id="orgd6f73f0"><span class="todo todo">todo</span> set up archivebox</h3>
+<div class="outline-text-3" id="text-orgd6f73f0">
 </div>
 </div>
 </div>
@@ -1296,7 +1247,7 @@ Think of DNA and reimplementation. Question: how often on average are things rei
 Program durability is one thing, but 
 </p>
 
-<pre class="example">
+<pre class="example" id="org82b8aca">
 existing code is used to solve the problem / existing code is capable of solving the problem
 </pre>
 
@@ -1516,17 +1467,17 @@ He doesn't walk back out.</li>
 </div>
 </div>
 
-<div id="outline-container-orgd6f73f0" class="outline-2">
-<h2 id="orgd6f73f0"><span class="todo working">working</span> set up archivebox</h2>
-<div class="outline-text-2" id="text-orgd6f73f0">
+<div id="outline-container-orgdab9834" class="outline-2">
+<h2 id="orgdab9834"><span class="todo working">working</span> set up archivebox</h2>
+<div class="outline-text-2" id="text-orgdab9834">
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2016-05-10 Tue 00:00</p>
 <p class="author">Author: Sahiti Chedalavada</p>
-<p class="date">Created: 2021-06-18 Fri 15:53</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2021-08-30 Mon 21:44</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
