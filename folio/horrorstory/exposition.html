@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-09-01 Wed 13:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exposition</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Sahiti Chedalavada" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+
+<script type="text/javascript" src="../../styles/org-info.min.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+// @license-end
+</script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Exposition</h1>
+<p>
+She was pretty. She knew it, too, and
+used it shamelessly to her advantage whenever she thought it would give
+her the slightest edge in anything. Her face was well enough structured,
+but it was her skin, pale and creamy and only ever charmingly blemished,
+that did it for her; that and the way she used her face, the
+expressions. She was petite but healthy-bodied. She attracted attention,
+but not stares. She smiled often, and had a repertoire of smiles, one
+for every occasion and desired outcome.
+</p>
+
+<p>
+Socially speaking, her one perhaps
+redeemable feature was her temper; it blazed at the slightest annoyance,
+and gave her scowls; but died down just as fast. She refused to be
+embarrassed by it, and carried on blithely once any issue it caused was
+resolved. Whatever her other virtues and failings, it was this for which
+people liked her, because it made her both imperfect and nonthreatening.
+There is nothing as toothless as an easily appeased temperament.
+</p>
+
+
+
+
+<p>
+She was only ever truly beautiful when she danced.
+</p>
+
+<p>
+It was what I loved her for.
+</p>
+
+
+
+
+<p>
+The first time I saw her was in a group
+of five. The occasion was meaningless, one of the many half-baked
+internal - “inter-house” – events foisted on our free time for the sake
+of generating the facsimile of a diverse almanac that the institute
+presented prospectives with. The performance was pitiful, really, with
+the steps repetitive and exaggerated, and all the dancers out of step to
+the point where one wondered if they were even performing the same
+routine. Front and centre, put there to bolster the overall appearance
+and remind the others of what they were doing, she stood giving life
+even to those dull motions. Enthusiasm formed the basis for why their
+group won; the other dancers' as well, I suppose, but mostly her own.
+She seemed to take up the entirety of the pitiful stage, tiny as she was
+physically. The other dancers were little more than flawed extensions of
+her presence.
+</p>
+
+
+
+
+<p>
+That magnified personality was the first
+hint I had of her possessing any character to speak of.
+</p>
+
+
+
+
+<p>
+It wasn't much unusual, though; just a
+moment of reflection that betrayed her being human. Character is the
+property of not being superfluous to a story – any story – worth being
+written, and stories are forgiving things; by this measure you would be
+hard pressed to find someone without an ounce of character to speak of
+over the course of their lives and pasts and deaths. This was simply the
+moment where I realized she was worth my interest; an epistemic
+phenomenon purely. The first moment where I could decisively say she
+interested me came much later; how it came about, though, causally or
+chronologically, seems both perfectly obvious and utterly shrouded in
+mystery.
+</p>
+
+
+
+
+<p>
+We were friends, or were defined as such
+in the social structure of our surroundings, almost from the first day.
+In my mind at that time, she was only someone I spoke to. It was a
+matter of circumstance – or at least, not fully relevant – that I spoke
+to perhaps three people out of a hundred-odd in my immediate
+environment, and seven in the extended; not counting those with whom
+communication was unavoidable but mercifully scripted. She bored me much
+of the time, but possessed flashes of insight into matters that honestly
+interested her, as opposed to the many things she did for the sake of
+being able to say she had done it, or for the sake of impressing or
+ingratiating herself with the others.
+</p>
+
+
+
+
+<p>
+“Maths?” she'd say. “I love the subject.
+You can get a hundred in maths.” I would roll my eyes, and she would
+look at me sidelong. “Don't act like you're so much above all of this
+marks bullshit. You care about it more than most of these idiots.” And I
+did care, much as I tried to hide it: whatever anybody said they hated
+in public, they wanted in private. She was perceptive because her world
+was made of these sorts of absolutes.
+</p>
+
+<p>
+Everyone wanted to be better. The best
+wanted to be better at something else. Work was always the last resort.
+Being nice avoided trouble. Slightly dim girls were endearing and got
+treated well. Whatever it was one wanted to accomplish, there was always
+someone somewhere willing to strike a deal that would accomplish it for
+you.
+</p>
+
+
+
+
+<p>
+Some of these were reflective, and some
+were algorithmic. It was rare that she found herself wrong, because she
+constructed and applied her rules very well. She was generally thought
+smart, but by her own design she appeared much less intelligent than she
+was.
+</p>
+
+
+
+
+<p>
+In hindsight, I did talk to her quite a
+lot, even in those early days. Her own insecurity and mine centred many
+of our conversations on why and how precisely we enjoyed each other. We
+shared every detail of our lives and histories, in a passive-aggressive
+bid to outdo each other in the levels of pathos and anger we could
+manufacture from them. 
+</p>
+
+
+
+
+<p>
+“I hate my father so much.” 
+</p>
+
+<p>
+“Me too. He should just leave the house
+already. My mother has spent half her life completely miserable because
+of him. I don't get why he doesn't just <i>leave</i>.” 
+</p>
+
+<p>
+“You haven't seen the half of it. Thank
+God mine isn't home right now. The things he used to&#x2026;ugh, I can't even
+think about it without feeling like screaming.”
+</p>
+
+<p>
+“Like what?”
+</p>
+
+
+
+
+<p>
+I seized upon whatever dregs of
+empathetic feeling I could find in myself to try and justify my
+curiosity; the moment, the unfamiliar flavours of falseness, remain
+vivid in my mind. She was looking for it; she was in a boasting mood,
+after all, and how without an audience ready to eat out of her hand? She
+would pause for a moment, perfectly timed, as she bit her lip in a show
+of nervousness. You would feel by the way she looked at you as if you
+were in her deepest confidence; and yet I had heard the same spiel given
+to others: different context, different content, same beats. With other
+people, it would be others' secrets she would share. She had a measure
+of trust in my closed mouth, because who would I open it to?
+</p>
+
+
+
+
+<p>
+I loved to play her game, because she
+elevated it to an art form.  
+</p>
+
+
+
+
+
+<p>
+I couldn't say where among these million small processes and occurrences
+I began to observe as closely as I did; or when within that observation,
+I began to be fascinated. In hindsight, situation and circumstance made
+it perfectly obvious, a given even, what was going to happen. But if I
+were to attempt a causal map, a true recount of the hows and wherefores
+of our outcome, I would find myself unmoored. For concrete events I have
+only one true instance I can point to, and that was the moment, that
+unbearable, forceful moment crystalline in my memory; when, on an
+interminable bus ride back to the campus from some unimportant
+competition, she touched the tips of her fingers to pointed toes on an
+outstretched leg, gracefully, showily loosening her cramped limbs across
+the empty aisle. Her hair fell forward across her shoulders and onto her
+knees, curls at the nape sticking there with sweat; the pleats of her
+skirt fanned out, hanging just above the floor; her eyes, large and
+direct, were focused on her pointed shoe; and her bare shin was laid out
+at waist level, square in my field of vision. The airless interior
+became vacuum to my lungs, and I realized I was obsessed.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-05-10 Tue&gt;</span></span> <span class="timestamp-wrapper"><span class="timestamp">[2014-08-10 Sun]</span></span></p>
+<p class="author">Author: Sahiti Chedalavada</p>
+<p class="date">Created: 2021-09-01 Wed 13:12</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
