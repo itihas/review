@@ -1,0 +1,10 @@
+:PROPERTIES:
+ :CREATED: [2021-06-05 Sat 12:59]
+ :ID:       25a42ef2-8954-40fb-aefb-32a017a48c30
+ :END:
+#+title: (A)periodicity in finite state automata
+#+filetags: :draft:noexport:
+
+(When) are strings emitted by an FSM periodic?
+
+Can you represent the [[id:288f1c57-41ba-41df-aa54-5b98d7c98ca7][Lotka-Volterra equations]] as an [[https://en.wikipedia.org/wiki/Almost_periodic_function][almost periodic]] FSM?
