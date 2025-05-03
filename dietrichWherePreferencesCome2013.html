@@ -1,82 +1,627 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Dietrich, Franz and List, Christian , Where Do Preferences Come From?</title><meta name="next-head-count" content="3"/><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/e030354651ddf935.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e030354651ddf935.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-b8f8d6679aaa5f42.js" defer=""></script><script src="/_next/static/chunks/framework-a85322f027b40e20.js" defer=""></script><script src="/_next/static/chunks/main-00e108e884e8ba17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-195757f9fcff239e.js" defer=""></script><script src="/_next/static/chunks/929-fd697a5772151b77.js" defer=""></script><script src="/_next/static/chunks/329-4859dea2fee324e7.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-36a5cddfb88d7ae3.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_buildManifest.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main><h1>Dietrich, Franz and List, Christian , Where Do Preferences Come From?</h1><dl><dt>authors</dt><dd>Dietrich, Franz and List, Christian</dd></dl><p>tl;dr Preferences over Properties.
-</p><p>The model discussed by this paper is one where the outcomes of a game each have various properties; and player preferences operate over these properties, rather than the outcomes themselves.
-</p><p>In addition, players filter their preferences on the basis of which properties they may consider relevant. That set of relevant properties is called a player&#x27;s motivational state. Each player has a set of possible motivational states.
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-03 Sat 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dietrich, Franz and List, Christian , Where Do Preferences Come From?</title>
+<meta name="author" content="sahiti" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Dietrich, Franz and List, Christian , Where Do Preferences Come From?</h1>
+<pre class="example">
+ID: 3b68830e-457e-47e9-b387-079d062096a7
+ROAM_REFS: @dietrichWherePreferencesCome2013
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 16:03]
+</pre>
+<p>
+tl;dr Preferences over Properties.
+</p>
+
+
+<p>
+The model discussed by this paper is one where the outcomes of a game each have various properties; and player preferences operate over these properties, rather than the outcomes themselves.
+</p>
+
+<p>
+In addition, players filter their preferences on the basis of which properties they may consider relevant. That set of relevant properties is called a player's motivational state. Each player has a set of possible motivational states.
 Two axiom systems are presented: 1+2, and 1+3.
-</p><ol><li><p>motivational states that contain no properties that discriminate between two outcomes do not generate preferences that distinguish between the outcomes.
-</p></li><li><p>for motivational states <span class="math math-inline">A,B, A \subset B</span>, if <span class="math math-inline">B/A</span> contains no properties that are present in two outcomes, then <span class="math math-inline">B</span> and <span class="math math-inline">A</span> agree with respect to those outcomes.
-</p></li><li><p>for motivational states <span class="math math-inline">A,B, A \subset B</span>, if <span class="math math-inline">B/A</span> contains no properties that discriminate between two outcomes, then <span class="math math-inline">B</span> and <span class="math math-inline">A</span> agree with respect to those outcomes.
-</p></li></ol><p>A scenario that distinguishes the systems:
-</p><p>Suppose motivational states <span class="math math-inline">A \subset B \subset C</span>; properties <span class="math math-inline">p_1 \in A, p_2 \in B/A, p_3 \in C/B</span>; outcomes <span class="math math-inline">x \in p_1, y \notin p_1, x,y \in p_2, x \in p_3, y \notin p_3</span>.
-Under 1+2 system, there can exist a player preference family such that <span class="math math-inline">x \preceq_{A} y \land y \preceq_{B} x</span>. 
-Under 1+3 system this would not be possible; <span class="math math-inline">p_2</span> contains both outcomes, which mean it does not distinguish between them. But <span class="math math-inline">x \preceq_{B} y, y \preceq_{C} x</span> is possible, because <span class="math math-inline">p_3</span> <em>does</em> distinguish between the outcomes.
-</p><p>Two theorems are presented:
-</p><ol><li><p>If <span class="math math-inline">\matchcal{M}</span> is intersection-closed, an agent&#x27;s family of preference-orders satisfies 1+2 iff it is &quot;property-based&quot;.
-</p></li><li><p>If <span class="math math-inline">\matchcal{M}</span> is subset-closed, an agent&#x27;s family of preference-orders satisfies 1+2 iff it is &quot;property-based in a separable way&quot;, i.e. the <em>ranking over the powerset of all properties</em> exhibits independence of irrelevant alternatives. <span class="math math-inline">S_1 \ge S_2 \text{ iff } S_1 \cup T \ge S_2\cup T</span></p></li></ol><h1 id="a-topology-over-the-properties">A topology over the properties?</h1><p>Motivational states are connected to properties as follows:
-</p><ol><li><p>if a player&#x27;s set of possible motivational states is intersection-closed, then the player&#x27;s preferences between alternatives will satisfy 1+2 iff it is property-based, i.e. you can derive the properties.
-</p></li><li><p>if a player&#x27;s set of possible motivational states is subset-closed, then the player&#x27;s preferences between alternatives will satisfy 1+3 iff it is property-based.
-</p></li></ol><p>A proof of these theorems would probably give me the types I could write a simulator for this in.
-</p><p>The set of possible motivational states for a player is a topology over the subset of properties defined as the union over the possible motivational states in the latter case.
-</p><p>In the former case, the same is a <a href="https://en.wikipedia.org/wiki/Pi-system">pi-system</a>. (See also <a href="https://en.wikipedia.org/wiki/Family_of_sets#Special_types_of_set_families">the table here</a>.)
-</p><h1 id="properties-of-outcomes-as-intentions-">Properties of outcomes as intentions </h1><p>Agents select for outcomes, operating from inside certain contexts. Properties that are derivable per DL&#x27;s theorems 1 and 2 can then be said to be a construction of &quot;what the agent was going for.&quot;
-</p><p>What is the organizing principle of the properties that then tells us the relationship between aim A and aim B? That structure is then the structure of intention.
-</p><p>We can read Anscombe fully as a first step to understanding how to assign semantics to motivational states, outcomes, and properties respectively; and what structure over properties to begin looking at (and what might follow as a result.)
-</p><p>Components of organizing principles that suggest themselves, from our understanding so far:
-</p><ul><li><p>epistemics. the motivational states are indications of what agents know about the alternatives. thus, the properties are factual assertions about the outcomes that matter to agents.
-</p></li><li><p>the properties of outcomes can be factual assertions that describe the extensional game further
-</p><ul><li><p>assertions about reachability.
-</p></li><li><p>assertions stronger than reachability
-</p></li><li><p>conditions that help us answer the question &quot;given what they did, what did they want?&quot; (&quot;can we derive it? can we prove it?&quot;)
-</p></li><li><p>conditions that help us assert (or, less likely, disprove) that &quot;given that an agent did that, they must have wanted <em>something</em> that is congruent to the structure presented.&quot; This gives us a falsifiable assertion that I can throw a dataset at.
-</p></li></ul></li><li><p>relevance. the motivational states represent the playing-out of a resource bound on reasoning, which we can understand to be true based on how many properties are in each state - which is monotonic to how many outcomes the agent can distinguish between.
-</p></li></ul><h1 id="a-coalition-that-lies-to-its-members-">a coalition that lies to its members </h1><h2 id="why-does-it-lie">why does it lie?</h2><p>members want things that aren&#x27;t aligned with the coalition as a whole.
+</p>
+<ol class="org-ol">
+<li>motivational states that contain no properties that discriminate between two outcomes do not generate preferences that distinguish between the outcomes.</li>
+<li>for motivational states \(A,B, A \subset B\), if \(B/A\) contains no properties that are present in two outcomes, then \(B\) and \(A\) agree with respect to those outcomes.</li>
+<li>for motivational states \(A,B, A \subset B\), if \(B/A\) contains no properties that discriminate between two outcomes, then \(B\) and \(A\) agree with respect to those outcomes.</li>
+</ol>
+
+
+<p>
+A scenario that distinguishes the systems:
+</p>
+
+<p>
+Suppose motivational states \(A \subset B \subset C\); properties \(p_1 \in A, p_2 \in B/A, p_3 \in C/B\); outcomes \(x \in p_1, y \notin p_1, x,y \in p_2, x \in p_3, y \notin p_3\).
+Under 1+2 system, there can exist a player preference family such that \(x \preceq_{A} y \land y \preceq_{B} x\). 
+Under 1+3 system this would not be possible; \(p_2\) contains both outcomes, which mean it does not distinguish between them. But \(x \preceq_{B} y, y \preceq_{C} x\) is possible, because \(p_3\) <i>does</i> distinguish between the outcomes.
+</p>
+
+<p>
+Two theorems are presented:
+</p>
+
+<ol class="org-ol">
+<li>If \(\matchcal{M}\) is intersection-closed, an agent's family of preference-orders satisfies 1+2 iff it is "property-based".</li>
+<li>If \(\matchcal{M}\) is subset-closed, an agent's family of preference-orders satisfies 1+2 iff it is "property-based in a separable way", i.e. the <i>ranking over the powerset of all properties</i> exhibits independence of irrelevant alternatives. \(S_1 \ge S_2 \text{ iff } S_1 \cup T \ge S_2\cup T\)</li>
+</ol>
+<div id="outline-container-ID-0eb90516-ee05-4eb3-8314-dc1555495e52" class="outline-2">
+<h2 id="ID-0eb90516-ee05-4eb3-8314-dc1555495e52"><span class="section-number-2">1.</span> A topology over the properties?</h2>
+<div class="outline-text-2" id="text-1">
+<pre class="example">
+ID: 0eb90516-ee05-4eb3-8314-dc1555495e52
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 16:03]
+</pre>
+
+<p>
+Motivational states are connected to properties as follows:
+</p>
+<ol class="org-ol">
+<li>if a player's set of possible motivational states is intersection-closed, then the player's preferences between alternatives will satisfy 1+2 iff it is property-based, i.e. you can derive the properties.</li>
+<li>if a player's set of possible motivational states is subset-closed, then the player's preferences between alternatives will satisfy 1+3 iff it is property-based.</li>
+</ol>
+
+<p>
+A proof of these theorems would probably give me the types I could write a simulator for this in.
+</p>
+
+<p>
+The set of possible motivational states for a player is a topology over the subset of properties defined as the union over the possible motivational states in the latter case.
+</p>
+
+<p>
+In the former case, the same is a <a href="https://en.wikipedia.org/wiki/Pi-system">pi-system</a>. (See also <a href="https://en.wikipedia.org/wiki/Family_of_sets#Special_types_of_set_families">the table here</a>.)
+</p>
+</div>
+</div>
+<div id="outline-container-ID-d3c8aea3-92bf-459d-9518-e489f262c4c7" class="outline-2">
+<h2 id="ID-d3c8aea3-92bf-459d-9518-e489f262c4c7"><span class="section-number-2">2.</span> Properties of outcomes as intentions</h2>
+<div class="outline-text-2" id="text-2">
+<pre class="example">
+CREATED: [2022-03-15 Tue 19:19]
+ID: d3c8aea3-92bf-459d-9518-e489f262c4c7
+REVIEW_SCORE: 0.0
+MTIME: [2025-01-21 Tue 12:26]
+</pre>
+
+<p>
+Agents select for outcomes, operating from inside certain contexts. Properties that are derivable per DL's theorems 1 and 2 can then be said to be a construction of "what the agent was going for."
+</p>
+
+<p>
+What is the organizing principle of the properties that then tells us the relationship between aim A and aim B? That structure is then the structure of intention.
+</p>
+
+<p>
+We can read Anscombe fully as a first step to understanding how to assign semantics to motivational states, outcomes, and properties respectively; and what structure over properties to begin looking at (and what might follow as a result.)
+</p>
+
+<p>
+Components of organizing principles that suggest themselves, from our understanding so far:
+</p>
+<ul class="org-ul">
+<li>epistemics. the motivational states are indications of what agents know about the alternatives. thus, the properties are factual assertions about the outcomes that matter to agents.</li>
+<li>the properties of outcomes can be factual assertions that describe the extensional game further
+<ul class="org-ul">
+<li>assertions about reachability.</li>
+<li>assertions stronger than reachability</li>
+<li>conditions that help us answer the question "given what they did, what did they want?" ("can we derive it? can we prove it?")</li>
+<li>conditions that help us assert (or, less likely, disprove) that "given that an agent did that, they must have wanted <i>something</i> that is congruent to the structure presented." This gives us a falsifiable assertion that I can throw a dataset at.</li>
+</ul></li>
+<li>relevance. the motivational states represent the playing-out of a resource bound on reasoning, which we can understand to be true based on how many properties are in each state - which is monotonic to how many outcomes the agent can distinguish between.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfd252bb" class="outline-2">
+<h2 id="orgfd252bb"><span class="section-number-2">3.</span> a coalition that lies to its members</h2>
+<div class="outline-text-2" id="text-3">
+<pre class="example">
+CREATED: [2022-01-11 Tue 22:04]
+</pre>
+</div>
+<div id="outline-container-org17e66c9" class="outline-3">
+<h3 id="org17e66c9"><span class="section-number-3">3.1.</span> why does it lie?</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+members want things that aren't aligned with the coalition as a whole.
 this bears editing.
-</p><h3 id="is-anyone-perfectly-aligned-with-the-coalition">is anyone <em>perfectly</em> aligned with the coalition?</h3><p>arrow argues for yes. but arrow is under unbounded reasoning and a partial ordering over preferences. let&#x27;s assume dietrich-list&#x27;s property based salience limited preferences, which allow for circular preferences so long as the universe never allows them to be salient at the same time. so, we only have to assert consistency over the subset of the preferences in question (which, well,)((why?))
-</p><div class="example">why do preferences have to be consistent within a given decision?
+</p>
+</div>
+<div id="outline-container-org710f8af" class="outline-4">
+<h4 id="org710f8af"><span class="section-number-4">3.1.1.</span> is anyone <i>perfectly</i> aligned with the coalition?</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+arrow argues for yes. but arrow is under unbounded reasoning and a partial ordering over preferences. let's assume dietrich-list's property based salience limited preferences, which allow for circular preferences so long as the universe never allows them to be salient at the same time. so, we only have to assert consistency over the subset of the preferences in question (which, well,)((why?))
+</p>
+
+<pre class="example" id="org363d36d">
+why do preferences have to be consistent within a given decision?
 well, because they need to /resolve/ for that decision.
 all contexts in which we are legal to require a decision are contexts in which we must be able to provide zero or one selections.
-the union over all these choices must be a partial order for VNM rationality - i.e. to have a win condition that&#x27;s the same from start to finish.
+the union over all these choices must be a partial order for VNM rationality - i.e. to have a win condition that's the same from start to finish.
 for time-varying win conditions (or context-varying), we are aiming to be VNM within the equivalence class of a context. outside can go die, though.
-</div><p>so, we only have to assert consistency across all choices made under tham same set of salient properties.
-</p><p>(I think this is axiom 1 in D-L.)
-</p><p>So,
-</p><ul><li><p>if we never change salient properties, this is <!-- -->α<!-- --> and <!-- -->β<!-- --> rationality; probably this is P and I up in aggregator mechanism also.
-</p></li></ul><h3 id="what-is-the-relationship-of-a-grand-coalitions-shapley-value-to-a-welfare-function">what is the relationship of a grand coalition&#x27;s shapley value to a welfare function?</h3><p>An allocation, both are.
-</p><p>Shapley value is pareto-optimal.
-</p><p>allocation function obedient to U provides allocations even where there is no core.
-</p><p>so, the shapley value is the &quot;easy&quot; case, the subset of the allocation problem where Pareto dictates a unique solution.
-</p><p>NO.
-</p><p>Shapley needs to be Pareto optimal, but it is something more than that. It encodes information about <em>mechanism</em>, which allocation elides altogether.
-</p><p>The claim of an allocation is that any mechanism is either irrevocable or degenerate, because everybody in a system would go with it as the optimal choice (if its was offered as a focal point on which coordination problems might also be solved.)
-</p><p>OKAY SO there are several layers to this reasoning.
-</p><h1 id="extensional-games">Extensional games</h1><h2 id="property-adding-game">Property adding game</h2><h2 id="property-removing-game">Property removing game</h2><h1 id="concrete-question-let-properties-be-words-in-the-builder-assistant-game-how-many-rounds-of-play-does-it-take-before-the-epistemic-game-catches-up-to-common-knowledge-of-which-properties-constitute-a-player-ps-motivational-state-">CONCRETE QUESTION: let properties be words in the builder-assistant game. how many rounds of play does it take before the epistemic game catches up to common knowledge of which properties constitute a player p&#x27;s motivational state? </h1><p>once we have the collaborative picture, then we can try to break it.
-</p><h2 id="can-we-build-a-simulation-in-which-siloing-happens">can we build a simulation in which siloing happens?</h2><h3 id="can-we-define-a-complexity-measure-according-to-which-a-language-exhibits-siloing-or-other-such-effects-past-a-threshold-in-that-measure">can we define a complexity measure according to which a language exhibits siloing, or other such effects, past a threshold in that measure?</h3><p>My naive first guess for a complexity measure is &quot;number of tokens in the motivstate.&quot;
-My second guess is &quot;minimum number of steps needed to achieve common knowledge of everybody&#x27;s motivstate in a coalition.&quot;
-</p><h2 id="what-is-the-shape-of-the-game-that-exhibits-the-minimum-number-of-steps-needed-to-achieve-common-knowledge">what is the shape of the game that exhibits the minimum number of steps needed to achieve common knowledge?</h2><h1 id="the-reason-dl-hath-presented-an-axiomatization-is-that-axioms-are-falsifiable-statements-">the reason DL hath presented an axiomatization is that axioms are falsifiable statements. </h1><p>They serve as the condition A in the guarded statement &quot;if A holds in universe U then model M holds in universe U&quot;.
-</p><p>We can check if A holds per falisfiability, and elevate the rest of model M to hold also if it does.
-</p><p>SO: I oughtta find a dataset of preferences to test for the axioms suggested.
-</p><p>Time to strengthen our semiotics.
-</p><h1 id="reasons-why-players-might-move-from-one-motivstate-to-the-other">reasons why players might move from one motivstate to the other</h1><p>Condition being, that the reasoning must be expressed in terms already defined in the game structure, or derived from these.
-</p><ul><li><p>the motivstates represent what they know about the outcomes - updating to add a property is adding a fact to the universe of consideration.
-</p></li><li><p>the motivstates represent &quot;relevance&quot; - updating to add a property necessitates dropping another one, and players optimize for reaching outcomes that are preferred under a maximal motivstate that they can&#x27;t actually ever hold.
-</p></li><li><p>the motivstates represent information about the game itself:
-</p><ul><li><p>reachability - it would be a simplification of the game tree
-</p></li><li><p>whether some future game is gluable onto outcomes with a specific property.
-</p></li><li><p>a fact about <em>the other players</em> (what type would that fact have?)
-</p><ul><li><p>remember that we are trying to assert that motivstates are things that players can infer about other players. what would they be trying to find out?
-</p><ul><li><p>easy answer: what the other players are going to do.
-</p></li></ul></li></ul></li><li><p>verbs - intentions that connect moves to ends, that can be inferred and matched to signalling moves over the course of play.
-</p></li></ul></li><li><p>the motivstates represent concerns that are apt to some environmental fact: e.g. the season dictating the parameters for selecting fruit. in monsoon you must look for thick skins, in summer you must look for high water content, etc. interesting, because it&#x27;s a way to show that the preference cycle might be entrained by an environmental cycle, and therefore rational in context.
-</p><ul><li><p>This is called a zeitgeber. See <a href="/20220318124900-diseasonality_by_scott_alexander_astral_codex_ten">Diseasonality - by Scott Alexander - Astral Codex Ten</a> for the place I first head about this; there&#x27;s a LARGE body of literature attached to the idea of a zeitgeber, and I should read it if and when it seems like a good idea to. Modeling it using this kind of cycle-allowing system would be pretty cool.
-</p><ul><li><p>Spitball intuition: wsize of motivstate tracks how &quot;tight&quot; your curves can be on a cycle - shifting sands do not make for fiine-grained preferences.
-</p><ul><li><p>something something lotka-volterra
-</p><ul><li><p>I do need to spend some time studying this magic when I can.
-</p></li></ul></li></ul></li></ul></li></ul></li></ul><h1 id="motivational-states-and-cores-">motivational states and cores </h1><p>The premise is that somehow, magically, a coalition can determine your motivational state. Given this, we can look at the formation of stable states or cores (remember that these are maximal coalitions according to some dominance function, which will certainly be modified to incorporate the motivational state determination magic, specifically the motivational states that <em>result</em> from it.)
-</p><p>The question is, how in specific does a player&#x27;s motivational state get formed or influenced?
-</p><p>Two candidate games we have already come up with: property adding game and property removing game. Here we would need to determine a mechanism for adding or removing that relied on consensus. Also it is an extensional game. Which is to say we need to figure out how the extensional version of this works.
-</p><h2 id="structures-are-constructed-from-the-outcomes-and-player-preferences-over-the-outcomes">Structures are constructed from the outcomes and player preferences over the outcomes.</h2><p>My misunderstanding earlier was, that m.s. B adding a property p that discriminated x and y to m.s. A still meant B and A could not reverse preferences on x and y. This is untrue: if p discriminates between x and y, under both axiom systems this allows for preference reversal. Player preference orderings are between <em>sets</em> of properties, and do not respect any structure over the properties other than how they attach to outcomes.
-</p><p>This is why we are trying to add structure over the properties that isn&#x27;t their attachment to outcomes.
-</p><h2 id="given-a-set-of-player-preferences-over-the-outcomes-can-we-derive-a-player-preference-ordering-over-the-properties">Given a set of player preferences over the outcomes, can we derive a player preference ordering over the properties?</h2><p>Given a motivstate A, property p <!-- -->∈<!-- --> A, for some player&#x27;s preference ordering over outcomes <span class="math math-inline">\preceq_A</span>, we can construct a relation over properties in A: <span class="math math-inline">R_A = \{(p_1,p_2) | \forall x \in p_1, y \in p_2, x \preceq_A y \lor x \sim_A y\}</span> . <span class="math math-inline">R_A</span> is reflexive and antisymmetric but not transitive: <span class="math math-inline">p_1 R_A p_2 \land p_2 R_A p_3 \land \lnot p_1 R_A p_3</span>.
-</p><ul><li><p>not transitive because there might exist <span class="math math-inline">x,y, x \in p_1 \land y \in p_3 \land y \notin p_2  \land y \preceq_A x</span> .
-</p></li><li><p>counterexample <span class="math math-inline">p_1 = \{x,z\}, p_2 = \{y,w\}, p_3=\{w\}, \preceq_A = \{(x,y), (y,w), (z,x)\}; \therefore p_1 R_A p_2 , p_2 R_A p_3, p_3 R_A p_1</span></p></li></ul><p>Can construct a relation using a stronger condition: <span class="math math-inline">\preccurlyeq_A = \{(p_1,p_2) | \forall x \in p_1, y \in p_2, x \preceq_A y\}</span> . This is transitive, and therefore a partial order.
-</p><p>So, yes.
-</p><section><h2>Backlinks</h2><ul><li><a href="/20221204182031-reachability_semantics_for_properties_in_dl_games">reachability semantics for properties in Dietrich-List games</a></li><li><a href="/20240518001551-iiit_work_summary_may_2024">IIIT Work Summary May 2024</a></li><li><a href="/20240624194522-iiit_work_summary_presentation_june_2024">IIIT Work Summary Presentation June 2024</a></li><li><a href="/all_pages">All Pages</a></li><li><a href="/pettitThreeDogmasNormativity2023">Pettit , On Three Dogmas of Normativity</a></li></ul></section></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"Dietrich, Franz and List, Christian , Where Do Preferences Come From?","hast":{"type":"root","children":[{"type":"element","tagName":"dl","properties":{},"children":[{"type":"element","tagName":"dt","properties":{},"children":[{"type":"text","value":"authors"}]},{"type":"element","tagName":"dd","properties":{},"children":[{"type":"text","value":"Dietrich, Franz and List, Christian"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"tl;dr Preferences over Properties.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The model discussed by this paper is one where the outcomes of a game each have various properties; and player preferences operate over these properties, rather than the outcomes themselves.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"In addition, players filter their preferences on the basis of which properties they may consider relevant. That set of relevant properties is called a player's motivational state. Each player has a set of possible motivational states.\nTwo axiom systems are presented: 1+2, and 1+3.\n"}]},{"type":"element","tagName":"ol","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"motivational states that contain no properties that discriminate between two outcomes do not generate preferences that distinguish between the outcomes.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"for motivational states "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"A,B, A \\subset B"}]},{"type":"text","value":", if "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"B/A"}]},{"type":"text","value":" contains no properties that are present in two outcomes, then "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"B"}]},{"type":"text","value":" and "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"A"}]},{"type":"text","value":" agree with respect to those outcomes.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"for motivational states "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"A,B, A \\subset B"}]},{"type":"text","value":", if "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"B/A"}]},{"type":"text","value":" contains no properties that discriminate between two outcomes, then "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"B"}]},{"type":"text","value":" and "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"A"}]},{"type":"text","value":" agree with respect to those outcomes.\n"}]}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A scenario that distinguishes the systems:\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Suppose motivational states "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"A \\subset B \\subset C"}]},{"type":"text","value":"; properties "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"p_1 \\in A, p_2 \\in B/A, p_3 \\in C/B"}]},{"type":"text","value":"; outcomes "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"x \\in p_1, y \\notin p_1, x,y \\in p_2, x \\in p_3, y \\notin p_3"}]},{"type":"text","value":".\nUnder 1+2 system, there can exist a player preference family such that "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"x \\preceq_{A} y \\land y \\preceq_{B} x"}]},{"type":"text","value":". \nUnder 1+3 system this would not be possible; "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"p_2"}]},{"type":"text","value":" contains both outcomes, which mean it does not distinguish between them. But "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"x \\preceq_{B} y, y \\preceq_{C} x"}]},{"type":"text","value":" is possible, because "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"p_3"}]},{"type":"text","value":" "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"does"}]},{"type":"text","value":" distinguish between the outcomes.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Two theorems are presented:\n"}]},{"type":"element","tagName":"ol","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"If "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"\\matchcal{M}"}]},{"type":"text","value":" is intersection-closed, an agent's family of preference-orders satisfies 1+2 iff it is \"property-based\".\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"If "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"\\matchcal{M}"}]},{"type":"text","value":" is subset-closed, an agent's family of preference-orders satisfies 1+2 iff it is \"property-based in a separable way\", i.e. the "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"ranking over the powerset of all properties"}]},{"type":"text","value":" exhibits independence of irrelevant alternatives. "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"S_1 \\ge S_2 \\text{ iff } S_1 \\cup T \\ge S_2\\cup T"}]}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"a-topology-over-the-properties"},"children":[{"type":"text","value":"A topology over the properties?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Motivational states are connected to properties as follows:\n"}]},{"type":"element","tagName":"ol","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"if a player's set of possible motivational states is intersection-closed, then the player's preferences between alternatives will satisfy 1+2 iff it is property-based, i.e. you can derive the properties.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"if a player's set of possible motivational states is subset-closed, then the player's preferences between alternatives will satisfy 1+3 iff it is property-based.\n"}]}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A proof of these theorems would probably give me the types I could write a simulator for this in.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The set of possible motivational states for a player is a topology over the subset of properties defined as the union over the possible motivational states in the latter case.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"In the former case, the same is a "},{"type":"element","tagName":"a","properties":{"href":"https://en.wikipedia.org/wiki/Pi-system"},"children":[{"type":"text","value":"pi-system"}]},{"type":"text","value":". (See also "},{"type":"element","tagName":"a","properties":{"href":"https://en.wikipedia.org/wiki/Family_of_sets#Special_types_of_set_families"},"children":[{"type":"text","value":"the table here"}]},{"type":"text","value":".)\n"}]},{"type":"element","tagName":"h1","properties":{"id":"properties-of-outcomes-as-intentions-"},"children":[{"type":"text","value":"Properties of outcomes as intentions "}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Agents select for outcomes, operating from inside certain contexts. Properties that are derivable per DL's theorems 1 and 2 can then be said to be a construction of \"what the agent was going for.\"\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What is the organizing principle of the properties that then tells us the relationship between aim A and aim B? That structure is then the structure of intention.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"We can read Anscombe fully as a first step to understanding how to assign semantics to motivational states, outcomes, and properties respectively; and what structure over properties to begin looking at (and what might follow as a result.)\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Components of organizing principles that suggest themselves, from our understanding so far:\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"epistemics. the motivational states are indications of what agents know about the alternatives. thus, the properties are factual assertions about the outcomes that matter to agents.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"the properties of outcomes can be factual assertions that describe the extensional game further\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"assertions about reachability.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"assertions stronger than reachability\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"conditions that help us answer the question \"given what they did, what did they want?\" (\"can we derive it? can we prove it?\")\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"conditions that help us assert (or, less likely, disprove) that \"given that an agent did that, they must have wanted "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"something"}]},{"type":"text","value":" that is congruent to the structure presented.\" This gives us a falsifiable assertion that I can throw a dataset at.\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"relevance. the motivational states represent the playing-out of a resource bound on reasoning, which we can understand to be true based on how many properties are in each state - which is monotonic to how many outcomes the agent can distinguish between.\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"a-coalition-that-lies-to-its-members-"},"children":[{"type":"text","value":"a coalition that lies to its members "}]},{"type":"element","tagName":"h2","properties":{"id":"why-does-it-lie"},"children":[{"type":"text","value":"why does it lie?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"members want things that aren't aligned with the coalition as a whole.\nthis bears editing.\n"}]},{"type":"element","tagName":"h3","properties":{"id":"is-anyone-perfectly-aligned-with-the-coalition"},"children":[{"type":"text","value":"is anyone "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"perfectly"}]},{"type":"text","value":" aligned with the coalition?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"arrow argues for yes. but arrow is under unbounded reasoning and a partial ordering over preferences. let's assume dietrich-list's property based salience limited preferences, which allow for circular preferences so long as the universe never allows them to be salient at the same time. so, we only have to assert consistency over the subset of the preferences in question (which, well,)((why?))\n"}]},{"type":"element","tagName":"div","properties":{"className":["example"]},"children":[{"type":"text","value":"why do preferences have to be consistent within a given decision?\nwell, because they need to /resolve/ for that decision.\nall contexts in which we are legal to require a decision are contexts in which we must be able to provide zero or one selections.\nthe union over all these choices must be a partial order for VNM rationality - i.e. to have a win condition that's the same from start to finish.\nfor time-varying win conditions (or context-varying), we are aiming to be VNM within the equivalence class of a context. outside can go die, though.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"so, we only have to assert consistency across all choices made under tham same set of salient properties.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"(I think this is axiom 1 in D-L.)\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"So,\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"if we never change salient properties, this is "},{"type":"text","value":"α"},{"type":"text","value":" and "},{"type":"text","value":"β"},{"type":"text","value":" rationality; probably this is P and I up in aggregator mechanism also.\n"}]}]}]},{"type":"element","tagName":"h3","properties":{"id":"what-is-the-relationship-of-a-grand-coalitions-shapley-value-to-a-welfare-function"},"children":[{"type":"text","value":"what is the relationship of a grand coalition's shapley value to a welfare function?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"An allocation, both are.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Shapley value is pareto-optimal.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"allocation function obedient to U provides allocations even where there is no core.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"so, the shapley value is the \"easy\" case, the subset of the allocation problem where Pareto dictates a unique solution.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"NO.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Shapley needs to be Pareto optimal, but it is something more than that. It encodes information about "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"mechanism"}]},{"type":"text","value":", which allocation elides altogether.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The claim of an allocation is that any mechanism is either irrevocable or degenerate, because everybody in a system would go with it as the optimal choice (if its was offered as a focal point on which coordination problems might also be solved.)\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"OKAY SO there are several layers to this reasoning.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"extensional-games"},"children":[{"type":"text","value":"Extensional games"}]},{"type":"element","tagName":"h2","properties":{"id":"property-adding-game"},"children":[{"type":"text","value":"Property adding game"}]},{"type":"element","tagName":"h2","properties":{"id":"property-removing-game"},"children":[{"type":"text","value":"Property removing game"}]},{"type":"element","tagName":"h1","properties":{"id":"concrete-question-let-properties-be-words-in-the-builder-assistant-game-how-many-rounds-of-play-does-it-take-before-the-epistemic-game-catches-up-to-common-knowledge-of-which-properties-constitute-a-player-ps-motivational-state-"},"children":[{"type":"text","value":"CONCRETE QUESTION: let properties be words in the builder-assistant game. how many rounds of play does it take before the epistemic game catches up to common knowledge of which properties constitute a player p's motivational state? "}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"once we have the collaborative picture, then we can try to break it.\n"}]},{"type":"element","tagName":"h2","properties":{"id":"can-we-build-a-simulation-in-which-siloing-happens"},"children":[{"type":"text","value":"can we build a simulation in which siloing happens?"}]},{"type":"element","tagName":"h3","properties":{"id":"can-we-define-a-complexity-measure-according-to-which-a-language-exhibits-siloing-or-other-such-effects-past-a-threshold-in-that-measure"},"children":[{"type":"text","value":"can we define a complexity measure according to which a language exhibits siloing, or other such effects, past a threshold in that measure?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"My naive first guess for a complexity measure is \"number of tokens in the motivstate.\"\nMy second guess is \"minimum number of steps needed to achieve common knowledge of everybody's motivstate in a coalition.\"\n"}]},{"type":"element","tagName":"h2","properties":{"id":"what-is-the-shape-of-the-game-that-exhibits-the-minimum-number-of-steps-needed-to-achieve-common-knowledge"},"children":[{"type":"text","value":"what is the shape of the game that exhibits the minimum number of steps needed to achieve common knowledge?"}]},{"type":"element","tagName":"h1","properties":{"id":"the-reason-dl-hath-presented-an-axiomatization-is-that-axioms-are-falsifiable-statements-"},"children":[{"type":"text","value":"the reason DL hath presented an axiomatization is that axioms are falsifiable statements. "}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"They serve as the condition A in the guarded statement \"if A holds in universe U then model M holds in universe U\".\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"We can check if A holds per falisfiability, and elevate the rest of model M to hold also if it does.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"SO: I oughtta find a dataset of preferences to test for the axioms suggested.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Time to strengthen our semiotics.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"reasons-why-players-might-move-from-one-motivstate-to-the-other"},"children":[{"type":"text","value":"reasons why players might move from one motivstate to the other"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Condition being, that the reasoning must be expressed in terms already defined in the game structure, or derived from these.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"the motivstates represent what they know about the outcomes - updating to add a property is adding a fact to the universe of consideration.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"the motivstates represent \"relevance\" - updating to add a property necessitates dropping another one, and players optimize for reaching outcomes that are preferred under a maximal motivstate that they can't actually ever hold.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"the motivstates represent information about the game itself:\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"reachability - it would be a simplification of the game tree\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"whether some future game is gluable onto outcomes with a specific property.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"a fact about "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"the other players"}]},{"type":"text","value":" (what type would that fact have?)\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"remember that we are trying to assert that motivstates are things that players can infer about other players. what would they be trying to find out?\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"easy answer: what the other players are going to do.\n"}]}]}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"verbs - intentions that connect moves to ends, that can be inferred and matched to signalling moves over the course of play.\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"the motivstates represent concerns that are apt to some environmental fact: e.g. the season dictating the parameters for selecting fruit. in monsoon you must look for thick skins, in summer you must look for high water content, etc. interesting, because it's a way to show that the preference cycle might be entrained by an environmental cycle, and therefore rational in context.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This is called a zeitgeber. See "},{"type":"element","tagName":"a","properties":{"href":"/20220318124900-diseasonality_by_scott_alexander_astral_codex_ten"},"children":[{"type":"text","value":"Diseasonality - by Scott Alexander - Astral Codex Ten"}]},{"type":"text","value":" for the place I first head about this; there's a LARGE body of literature attached to the idea of a zeitgeber, and I should read it if and when it seems like a good idea to. Modeling it using this kind of cycle-allowing system would be pretty cool.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Spitball intuition: wsize of motivstate tracks how \"tight\" your curves can be on a cycle - shifting sands do not make for fiine-grained preferences.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"something something lotka-volterra\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"I do need to spend some time studying this magic when I can.\n"}]}]}]}]}]}]}]}]}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"motivational-states-and-cores-"},"children":[{"type":"text","value":"motivational states and cores "}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The premise is that somehow, magically, a coalition can determine your motivational state. Given this, we can look at the formation of stable states or cores (remember that these are maximal coalitions according to some dominance function, which will certainly be modified to incorporate the motivational state determination magic, specifically the motivational states that "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"result"}]},{"type":"text","value":" from it.)\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The question is, how in specific does a player's motivational state get formed or influenced?\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Two candidate games we have already come up with: property adding game and property removing game. Here we would need to determine a mechanism for adding or removing that relied on consensus. Also it is an extensional game. Which is to say we need to figure out how the extensional version of this works.\n"}]},{"type":"element","tagName":"h2","properties":{"id":"structures-are-constructed-from-the-outcomes-and-player-preferences-over-the-outcomes"},"children":[{"type":"text","value":"Structures are constructed from the outcomes and player preferences over the outcomes."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"My misunderstanding earlier was, that m.s. B adding a property p that discriminated x and y to m.s. A still meant B and A could not reverse preferences on x and y. This is untrue: if p discriminates between x and y, under both axiom systems this allows for preference reversal. Player preference orderings are between "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"sets"}]},{"type":"text","value":" of properties, and do not respect any structure over the properties other than how they attach to outcomes.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This is why we are trying to add structure over the properties that isn't their attachment to outcomes.\n"}]},{"type":"element","tagName":"h2","properties":{"id":"given-a-set-of-player-preferences-over-the-outcomes-can-we-derive-a-player-preference-ordering-over-the-properties"},"children":[{"type":"text","value":"Given a set of player preferences over the outcomes, can we derive a player preference ordering over the properties?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Given a motivstate A, property p "},{"type":"text","value":"∈"},{"type":"text","value":" A, for some player's preference ordering over outcomes "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"\\preceq_A"}]},{"type":"text","value":", we can construct a relation over properties in A: "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"R_A = \\{(p_1,p_2) | \\forall x \\in p_1, y \\in p_2, x \\preceq_A y \\lor x \\sim_A y\\}"}]},{"type":"text","value":" . "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"R_A"}]},{"type":"text","value":" is reflexive and antisymmetric but not transitive: "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"p_1 R_A p_2 \\land p_2 R_A p_3 \\land \\lnot p_1 R_A p_3"}]},{"type":"text","value":".\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"not transitive because there might exist "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"x,y, x \\in p_1 \\land y \\in p_3 \\land y \\notin p_2  \\land y \\preceq_A x"}]},{"type":"text","value":" .\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"counterexample "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"p_1 = \\{x,z\\}, p_2 = \\{y,w\\}, p_3=\\{w\\}, \\preceq_A = \\{(x,y), (y,w), (z,x)\\}; \\therefore p_1 R_A p_2 , p_2 R_A p_3, p_3 R_A p_1"}]}]}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Can construct a relation using a stronger condition: "},{"type":"element","tagName":"span","properties":{"className":["math","math-inline"]},"children":[{"type":"text","value":"\\preccurlyeq_A = \\{(p_1,p_2) | \\forall x \\in p_1, y \\in p_2, x \\preceq_A y\\}"}]},{"type":"text","value":" . This is transitive, and therefore a partial order.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"So, yes.\n"}]}]},"filetags":{},"backlinks":[{"path":"/20221204182031-reachability_semantics_for_properties_in_dl_games","title":"reachability semantics for properties in Dietrich-List games"},{"path":"/20240518001551-iiit_work_summary_may_2024","title":"IIIT Work Summary May 2024"},{"path":"/20240624194522-iiit_work_summary_presentation_june_2024","title":"IIIT Work Summary Presentation June 2024"},{"path":"/all_pages","title":"All Pages"},{"path":"/pettitThreeDogmasNormativity2023","title":"Pettit , On Three Dogmas of Normativity"}]},"__N_SSG":true},"page":"/[[...slug]]","query":{"slug":["dietrichWherePreferencesCome2013"]},"buildId":"blyIc6rHhhg1gdDNUOZZM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+</pre>
+
+<p>
+so, we only have to assert consistency across all choices made under tham same set of salient properties.
+</p>
+
+<p>
+(I think this is axiom 1 in D-L.)
+</p>
+
+<p>
+So,
+</p>
+<ul class="org-ul">
+<li>if we never change salient properties, this is &alpha; and &beta; rationality; probably this is P and I up in aggregator mechanism also.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-c6cd0099-e202-44bc-8f58-cea5578ac4b6" class="outline-4">
+<h4 id="ID-c6cd0099-e202-44bc-8f58-cea5578ac4b6"><span class="section-number-4">3.1.2.</span> what is the relationship of a grand coalition's shapley value to a welfare function?</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<pre class="example">
+ID: c6cd0099-e202-44bc-8f58-cea5578ac4b6
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 16:03]
+</pre>
+<p>
+An allocation, both are.
+</p>
+
+<p>
+Shapley value is pareto-optimal.
+</p>
+
+<p>
+allocation function obedient to U provides allocations even where there is no core.
+</p>
+
+<p>
+so, the shapley value is the "easy" case, the subset of the allocation problem where Pareto dictates a unique solution.
+</p>
+
+<p>
+NO.
+</p>
+
+<p>
+Shapley needs to be Pareto optimal, but it is something more than that. It encodes information about <i>mechanism</i>, which allocation elides altogether.
+</p>
+
+<p>
+The claim of an allocation is that any mechanism is either irrevocable or degenerate, because everybody in a system would go with it as the optimal choice (if its was offered as a focal point on which coordination problems might also be solved.)
+</p>
+
+<p>
+OKAY SO there are several layers to this reasoning.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-ade6cb2a-88c1-4d73-bfd1-cbfa5ed5286d" class="outline-2">
+<h2 id="ID-ade6cb2a-88c1-4d73-bfd1-cbfa5ed5286d"><span class="section-number-2">4.</span> Extensional games</h2>
+<div class="outline-text-2" id="text-4">
+<pre class="example">
+ID: ade6cb2a-88c1-4d73-bfd1-cbfa5ed5286d
+REVIEW_SCORE: 0.0
+MTIME: [2025-01-21 Tue 12:26]
+</pre>
+</div>
+<div id="outline-container-org1d910ee" class="outline-3">
+<h3 id="org1d910ee"><span class="section-number-3">4.1.</span> Property adding game</h3>
+<div class="outline-text-3" id="text-4-1">
+<pre class="example">
+REVIEW_SCORE: 0.07500000000000001
+</pre>
+</div>
+</div>
+<div id="outline-container-orgf40d799" class="outline-3">
+<h3 id="orgf40d799"><span class="section-number-3">4.2.</span> Property removing game</h3>
+</div>
+</div>
+<div id="outline-container-ID-07f762dc-b56b-4ed1-bb97-fe5752e472d9" class="outline-2">
+<h2 id="ID-07f762dc-b56b-4ed1-bb97-fe5752e472d9"><span class="section-number-2">5.</span> CONCRETE QUESTION: let properties be words in the builder-assistant game. how many rounds of play does it take before the epistemic game catches up to common knowledge of which properties constitute a player p's motivational state?</h2>
+<div class="outline-text-2" id="text-5">
+<pre class="example">
+CREATED: [2022-03-18 Fri 12:07]
+ID: 07f762dc-b56b-4ed1-bb97-fe5752e472d9
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 16:03]
+</pre>
+<p>
+once we have the collaborative picture, then we can try to break it.
+</p>
+</div>
+<div id="outline-container-orgae1c1e6" class="outline-3">
+<h3 id="orgae1c1e6"><span class="section-number-3">5.1.</span> can we build a simulation in which siloing happens?</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org3eb6847" class="outline-4">
+<h4 id="org3eb6847"><span class="section-number-4">5.1.1.</span> can we define a complexity measure according to which a language exhibits siloing, or other such effects, past a threshold in that measure?</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+My naive first guess for a complexity measure is "number of tokens in the motivstate."
+My second guess is "minimum number of steps needed to achieve common knowledge of everybody's motivstate in a coalition."
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc324182" class="outline-3">
+<h3 id="orgc324182"><span class="section-number-3">5.2.</span> what is the shape of the game that exhibits the minimum number of steps needed to achieve common knowledge?</h3>
+</div>
+</div>
+<div id="outline-container-orgb19e6cc" class="outline-2">
+<h2 id="orgb19e6cc"><span class="section-number-2">6.</span> the reason DL hath presented an axiomatization is that axioms are falsifiable statements.</h2>
+<div class="outline-text-2" id="text-6">
+<pre class="example">
+CREATED: [2022-03-18 Fri 12:10]
+REVIEW_SCORE: 0.07500000000000001
+MTIME: [2024-12-25 Wed 16:03]
+</pre>
+
+<p>
+They serve as the condition A in the guarded statement "if A holds in universe U then model M holds in universe U".
+</p>
+
+<p>
+We can check if A holds per falisfiability, and elevate the rest of model M to hold also if it does.
+</p>
+
+<p>
+SO: I oughtta find a dataset of preferences to test for the axioms suggested.
+</p>
+
+<p>
+Time to strengthen our semiotics.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-73e24281-cfe5-4b46-a64a-d2e4319a34d5" class="outline-2">
+<h2 id="ID-73e24281-cfe5-4b46-a64a-d2e4319a34d5"><span class="section-number-2">7.</span> reasons why players might move from one motivstate to the other</h2>
+<div class="outline-text-2" id="text-7">
+<pre class="example">
+CREATED: [2022-03-18 Fri 12:22]
+ID: 73e24281-cfe5-4b46-a64a-d2e4319a34d5
+REVIEW_SCORE: 0.0
+MTIME: [2025-01-21 Tue 12:26]
+</pre>
+
+<p>
+Condition being, that the reasoning must be expressed in terms already defined in the game structure, or derived from these.
+</p>
+
+<ul class="org-ul">
+<li>the motivstates represent what they know about the outcomes - updating to add a property is adding a fact to the universe of consideration.</li>
+<li>the motivstates represent "relevance" - updating to add a property necessitates dropping another one, and players optimize for reaching outcomes that are preferred under a maximal motivstate that they can't actually ever hold.</li>
+<li>the motivstates represent information about the game itself:
+<ul class="org-ul">
+<li>reachability - it would be a simplification of the game tree</li>
+<li>whether some future game is gluable onto outcomes with a specific property.</li>
+<li>a fact about <i>the other players</i> (what type would that fact have?)
+<ul class="org-ul">
+<li>remember that we are trying to assert that motivstates are things that players can infer about other players. what would they be trying to find out?
+<ul class="org-ul">
+<li>easy answer: what the other players are going to do.</li>
+</ul></li>
+</ul></li>
+<li>verbs - intentions that connect moves to ends, that can be inferred and matched to signalling moves over the course of play.</li>
+</ul></li>
+<li>the motivstates represent concerns that are apt to some environmental fact: e.g. the season dictating the parameters for selecting fruit. in monsoon you must look for thick skins, in summer you must look for high water content, etc. interesting, because it's a way to show that the preference cycle might be entrained by an environmental cycle, and therefore rational in context.
+<ul class="org-ul">
+<li>This is called a zeitgeber. See <a href="20220318124900-diseasonality_by_scott_alexander_astral_codex_ten.html#ID-852eebfe-59b8-461c-8423-d7cd1a60b6cb">Diseasonality - by Scott Alexander - Astral Codex Ten</a> for the place I first head about this; there's a LARGE body of literature attached to the idea of a zeitgeber, and I should read it if and when it seems like a good idea to. Modeling it using this kind of cycle-allowing system would be pretty cool.
+<ul class="org-ul">
+<li>Spitball intuition: wsize of motivstate tracks how "tight" your curves can be on a cycle - shifting sands do not make for fiine-grained preferences.
+<ul class="org-ul">
+<li>something something lotka-volterra
+<ul class="org-ul">
+<li>I do need to spend some time studying this magic when I can.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org87497a0" class="outline-2">
+<h2 id="org87497a0"><span class="section-number-2">8.</span> motivational states and cores</h2>
+<div class="outline-text-2" id="text-8">
+<pre class="example">
+CREATED: [2022-03-17 Thu 10:53]
+</pre>
+
+<p>
+The premise is that somehow, magically, a coalition can determine your motivational state. Given this, we can look at the formation of stable states or cores (remember that these are maximal coalitions according to some dominance function, which will certainly be modified to incorporate the motivational state determination magic, specifically the motivational states that <i>result</i> from it.)
+</p>
+
+<p>
+The question is, how in specific does a player's motivational state get formed or influenced?
+</p>
+
+<p>
+Two candidate games we have already come up with: property adding game and property removing game. Here we would need to determine a mechanism for adding or removing that relied on consensus. Also it is an extensional game. Which is to say we need to figure out how the extensional version of this works.
+</p>
+</div>
+<div id="outline-container-org7625ba2" class="outline-3">
+<h3 id="org7625ba2"><span class="section-number-3">8.1.</span> Structures are constructed from the outcomes and player preferences over the outcomes.</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+My misunderstanding earlier was, that m.s. B adding a property p that discriminated x and y to m.s. A still meant B and A could not reverse preferences on x and y. This is untrue: if p discriminates between x and y, under both axiom systems this allows for preference reversal. Player preference orderings are between <i>sets</i> of properties, and do not respect any structure over the properties other than how they attach to outcomes.
+</p>
+
+<p>
+This is why we are trying to add structure over the properties that isn't their attachment to outcomes.
+</p>
+</div>
+</div>
+<div id="outline-container-org9c4a091" class="outline-3">
+<h3 id="org9c4a091"><span class="section-number-3">8.2.</span> Given a set of player preferences over the outcomes, can we derive a player preference ordering over the properties?</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+Given a motivstate A, property p &isin; A, for some player's preference ordering over outcomes \(\preceq_A\), we can construct a relation over properties in A: \(R_A = \{(p_1,p_2) | \forall x \in p_1, y \in p_2, x \preceq_A y \lor x \sim_A y\} \) . \(R_A\) is reflexive and antisymmetric but not transitive: \(p_1 R_A p_2 \land p_2 R_A p_3 \land \lnot p_1 R_A p_3\).
+</p>
+<ul class="org-ul">
+<li>not transitive because there might exist \(x,y, x \in p_1 \land y \in p_3 \land y \notin p_2  \land y \preceq_A x\) .</li>
+<li>counterexample \(p_1 = \{x,z\}, p_2 = \{y,w\}, p_3=\{w\}, \preceq_A = \{(x,y), (y,w), (z,x)\}; \therefore p_1 R_A p_2 , p_2 R_A p_3, p_3 R_A p_1\)</li>
+</ul>
+
+
+<p>
+Can construct a relation using a stronger condition: \(\preccurlyeq_A = \{(p_1,p_2) | \forall x \in p_1, y \in p_2, x \preceq_A y\} \) . This is transitive, and therefore a partial order.
+</p>
+
+
+<p>
+So, yes.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb63f2d1" class="outline-2">
+<h2 id="orgb63f2d1"><span class="section-number-2">9.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<ul class="org-ul">
+<li><a href="20221204182031-reachability_semantics_for_properties_in_dl_games.html#ID-0e2ca122-b842-4b52-b632-23c9c8ca90b8">reachability semantics for properties in Dietrich-List games</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: sahiti</p>
+<p class="date">Created: 2025-05-03 Sat 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

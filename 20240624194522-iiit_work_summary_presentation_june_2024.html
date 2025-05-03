@@ -1,43 +1,380 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>IIIT Work Summary Presentation June 2024</title><meta name="next-head-count" content="3"/><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/e030354651ddf935.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e030354651ddf935.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-b8f8d6679aaa5f42.js" defer=""></script><script src="/_next/static/chunks/framework-a85322f027b40e20.js" defer=""></script><script src="/_next/static/chunks/main-00e108e884e8ba17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-195757f9fcff239e.js" defer=""></script><script src="/_next/static/chunks/929-fd697a5772151b77.js" defer=""></script><script src="/_next/static/chunks/329-4859dea2fee324e7.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-36a5cddfb88d7ae3.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_buildManifest.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main><h1>IIIT Work Summary Presentation June 2024</h1><h1 id="players-and-games-a-retrospective">Players and Games: A Retrospective</h1><ul><li><p>This is a look back at several different research directions pursued as part of  the IIIT-H Master&#x27;s by Research (Exact Humanities) program requirements.
-</p></li><li><p>The program in question no longer exists in its original form.
-</p></li><li><p>Thesis Statement:
- A game can be imagined as a dynamic entity whose nature is shaped by its players.
-</p></li></ul><h1 id="philosophy">Philosophy</h1><h2 id="heterotopias">Heterotopias</h2><p>Prof. PRK Rao originally suggested to me the research topic of heterotopia, and offered <a href="https://philosophynoworg/issues/107/The_Heterotopia_of_Facebook"><em>The Heterotopia of Facebook</em></a> as a starting point.
-</p><ul><li><p>A heterotopia is an unreal space that changes as it interacts with whatever is constructing it.
-</p></li><li><p>A utopia is a special case of heterotopia.
-</p><ul><li><p>built from the imagination of a <em>moral ideal</em></p></li><li><p>brittle, sensitive to change in the generating ideal
-</p></li><li><p>contradictions inside the ideal break the utopia.
-</p></li></ul></li><li><p>We can imagine a heterotopia derived from a more heterodox moral paradigm, a la Isiah Berlin
-</p><ul><li><p>By nature dynamic.
-</p></li><li><p>If inhabitants of an imagined society are modeled as having the power to change that society, how would we imagine the changes we allow them to make, and the consequent space they inhabit? 
-</p></li></ul></li></ul><h1 id="philosophy-1">Philosophy</h1><h2 id="rhetoric-of-science">Rhetoric of Science</h2><ul><li><p><a title="The Rhetoric of Economics" href="/mccloskeyRhetoricEconomics1983">McCloskey</a> explores the idea of <em>rhetorical</em> work  as central to economics, as a heuristic precursor to evidence-supported theory in a field that experiences evidence scarcity.
-</p><ul><li><p>When many theories <em>can</em> fit an evidence base, it&#x27;s usually best to have them <em>all</em> active and in use, and treat them as <em>languages</em> - media of the work - rather than <em>outcomes</em>.
-</p></li><li><p>The rhetorical thesis: <em>Good sentences</em> are <em>useful sentences</em>, which are not necessarily <em>provably true sentences</em>.
-</p></li></ul></li><li><p>A <em>language-game</em> <a title="Philosophical Investigations" href="/wittgensteinphilosophical2010">Wittgenstein</a> is the idea that language as a tool built to win a collaborative game.
-</p><ul><li><p>A game is most minimally characterised not by the <em>rules</em>, but by the <em>winning strategies</em>.
-</p></li><li><p>Imagine economics as a language-game.
-</p></li><li><p>The practice thesis: Economics is better characterised as a <em>practice</em> than as the associated <em>theory</em>.
-</p></li></ul></li><li><p>Assertion: it is better to think about science <em>in general</em> as a <em>practice</em>, and as <em>rhetorical</em>.
-</p></li></ul><h1 id="logic">Logic</h1><p>The project here was to formally represent player-editable games - games whose structure depended on players (i.e. on player <em>strategic action</em>, either via their preferences or their available moves).
-We can conceive of this as <em>strategic selection among alternative games</em> - , i.e. playing a <em>metagame</em>. There are several ways to approach this idea. I&#x27;ve detailed my attempted approaches chronologically.
-</p><h1 id="logic-1">Logic</h1><h2 id="2016-player-editable-games">2016: Player-editable games</h2><ul><li><p>formal representation of games as collections of rules, with rules describing rule editing. This is effectively a formalization of a <em>Nomic</em>-like game <a title="Appendix 3: Nomic: A Game of Self-Amendment" href="/suberappendix1990">Suber</a>. We quickly run into Suber&#x27;s original issue with Nomic: either a game simplifies to something that can&#x27;t be called <em>editing</em>, or it&#x27;s too underspecified to be able to make positive claims about.
-</p></li><li><p>motivated mechanism design - formally representing mechanism design and turning it into game moves. This proved intractable in the general case. Prior art exists in subproblems that take a similar approach: <a title="Mechanism Design with Possibilistic Beliefs" href="/chenmechanism2015">Chen &amp; Micali</a>, <a title="The Lovely but Lonely Vickrey Auction" href="/ausubellovely2006">Ausubel…</a>.
-</p></li></ul><h1 id="logic-2">Logic</h1><h2 id="2017-18-game-semantics-based-approaches">2017-18 Game semantics based approaches</h2><p>  Game semantics: the study of alternate formal models of games, and their behaviour.
-</p><ul><li><p>Gluing of disparate game trees, or game tree generators, with &quot;meta-moves&quot;, a la <a title="A Logical Structure for Strategies" href="/ramanujamlogical2008">Ramanujam &amp; Simon</a></p></li><li><p>Variations of alternating-time temporal logic <a title="Alternating-Time Temporal Logic" href="/aluralternatingtime2002">Alur…</a> - i.e. coalitional strategies that represent <em>narrowings</em> of a game tree.
-</p><ul><li><p>Easy to construct a dominance relation over games
-</p></li><li><p>Hard to build a notion of dynamics.
-</p></li><li><p>A single good example would have been sufficient to complete this original work.
-</p></li></ul></li><li><p>Dynamics driven by changes in the information available to players over time: temporal epistemic games.
-</p><ul><li><p>This proved unfruitful because clunky.
-</p></li></ul></li></ul><h1 id="logic-3">Logic</h1><h2 id="2022----alternate-models-of-preference">2022 -  Alternate models of preference.</h2><p>Following <a title="Where Do Preferences Come From?" href="/dietrichWherePreferencesCome2013">Dietrich &amp; List</a>, representing players as preferring <em>properties</em> of game states - i.e. preferences between rules. We tried to treat the properties as statements about the reachability of terminally desired states.
-</p><h1 id="confluence-preference-meronomy">Confluence: Preference meronomy</h1><p>Two central questions can now be asked, in several different spheres of concern:
-</p><ul><li><p>Given a collection of <em>agents</em> - purposive, complex, mutually aware actors - what can we say about the world they construct in the pursuit of their goals? Can we infer form from function?
-</p></li><li><p>Given a world, inhabited and constructed by agents - can we say <em>the world as a whole</em> wants something? Can we infer function from form?
-</p></li></ul><h1 id="post-mortem">Post mortem</h1><p>What went wrong here? What could have gone better?
-</p><ul><li><p>Spread too thin. I had <em>too many ideas</em> and did not follow through on any of them enough in the time I had. - Sparse specialised guidance. I did not have enough guidance <em>a priori</em>, and did not reach out to suitable guides.
-</p></li><li><p>Insufficient feedback. I didn&#x27;t finish or share <em>anything</em> until well far too late.
-</p></li><li><p>Inadequate <em>general</em> guidance. How to write a paper? How often should one request/receive feedback? What is the appropriate way to reach out to other academics? I didn&#x27;t know.
-</p></li></ul><h1 id="thank-you">Thank you.</h1><p>Despite obstacles, I enjoyed my time here and the work of answering questions I cared about.
-</p><p>Thank you for your time and consideration.
-</p><p>Questions / comments / feedback?
-</p><section><h2>Backlinks</h2><ul><li><a href="/all_pages">All Pages</a></li></ul></section></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"IIIT Work Summary Presentation June 2024","hast":{"type":"root","children":[{"type":"element","tagName":"h1","properties":{"id":"players-and-games-a-retrospective"},"children":[{"type":"text","value":"Players and Games: A Retrospective"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This is a look back at several different research directions pursued as part of  the IIIT-H Master's by Research (Exact Humanities) program requirements.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The program in question no longer exists in its original form.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Thesis Statement:\n A game can be imagined as a dynamic entity whose nature is shaped by its players.\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"philosophy"},"children":[{"type":"text","value":"Philosophy"}]},{"type":"element","tagName":"h2","properties":{"id":"heterotopias"},"children":[{"type":"text","value":"Heterotopias"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Prof. PRK Rao originally suggested to me the research topic of heterotopia, and offered "},{"type":"element","tagName":"a","properties":{"href":"https://philosophynoworg/issues/107/The_Heterotopia_of_Facebook"},"children":[{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"The Heterotopia of Facebook"}]}]},{"type":"text","value":" as a starting point.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A heterotopia is an unreal space that changes as it interacts with whatever is constructing it.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A utopia is a special case of heterotopia.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"built from the imagination of a "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"moral ideal"}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"brittle, sensitive to change in the generating ideal\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"contradictions inside the ideal break the utopia.\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"We can imagine a heterotopia derived from a more heterodox moral paradigm, a la Isiah Berlin\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"By nature dynamic.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"If inhabitants of an imagined society are modeled as having the power to change that society, how would we imagine the changes we allow them to make, and the consequent space they inhabit? \n"}]}]}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"philosophy-1"},"children":[{"type":"text","value":"Philosophy"}]},{"type":"element","tagName":"h2","properties":{"id":"rhetoric-of-science"},"children":[{"type":"text","value":"Rhetoric of Science"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"/mccloskeyRhetoricEconomics1983","title":"The Rhetoric of Economics"},"children":[{"type":"text","value":"McCloskey"}]},{"type":"text","value":" explores the idea of "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"rhetorical"}]},{"type":"text","value":" work  as central to economics, as a heuristic precursor to evidence-supported theory in a field that experiences evidence scarcity.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"When many theories "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"can"}]},{"type":"text","value":" fit an evidence base, it's usually best to have them "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"all"}]},{"type":"text","value":" active and in use, and treat them as "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"languages"}]},{"type":"text","value":" - media of the work - rather than "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"outcomes"}]},{"type":"text","value":".\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The rhetorical thesis: "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"Good sentences"}]},{"type":"text","value":" are "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"useful sentences"}]},{"type":"text","value":", which are not necessarily "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"provably true sentences"}]},{"type":"text","value":".\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"language-game"}]},{"type":"text","value":" "},{"type":"element","tagName":"a","properties":{"href":"/wittgensteinphilosophical2010","title":"Philosophical Investigations"},"children":[{"type":"text","value":"Wittgenstein"}]},{"type":"text","value":" is the idea that language as a tool built to win a collaborative game.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A game is most minimally characterised not by the "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"rules"}]},{"type":"text","value":", but by the "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"winning strategies"}]},{"type":"text","value":".\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Imagine economics as a language-game.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The practice thesis: Economics is better characterised as a "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"practice"}]},{"type":"text","value":" than as the associated "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"theory"}]},{"type":"text","value":".\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Assertion: it is better to think about science "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"in general"}]},{"type":"text","value":" as a "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"practice"}]},{"type":"text","value":", and as "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"rhetorical"}]},{"type":"text","value":".\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"logic"},"children":[{"type":"text","value":"Logic"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The project here was to formally represent player-editable games - games whose structure depended on players (i.e. on player "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"strategic action"}]},{"type":"text","value":", either via their preferences or their available moves).\nWe can conceive of this as "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"strategic selection among alternative games"}]},{"type":"text","value":" - , i.e. playing a "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"metagame"}]},{"type":"text","value":". There are several ways to approach this idea. I've detailed my attempted approaches chronologically.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"logic-1"},"children":[{"type":"text","value":"Logic"}]},{"type":"element","tagName":"h2","properties":{"id":"2016-player-editable-games"},"children":[{"type":"text","value":"2016: Player-editable games"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"formal representation of games as collections of rules, with rules describing rule editing. This is effectively a formalization of a "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"Nomic"}]},{"type":"text","value":"-like game "},{"type":"element","tagName":"a","properties":{"href":"/suberappendix1990","title":"Appendix 3: Nomic: A Game of Self-Amendment"},"children":[{"type":"text","value":"Suber"}]},{"type":"text","value":". We quickly run into Suber's original issue with Nomic: either a game simplifies to something that can't be called "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"editing"}]},{"type":"text","value":", or it's too underspecified to be able to make positive claims about.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"motivated mechanism design - formally representing mechanism design and turning it into game moves. This proved intractable in the general case. Prior art exists in subproblems that take a similar approach: "},{"type":"element","tagName":"a","properties":{"href":"/chenmechanism2015","title":"Mechanism Design with Possibilistic Beliefs"},"children":[{"type":"text","value":"Chen \u0026 Micali"}]},{"type":"text","value":", "},{"type":"element","tagName":"a","properties":{"href":"/ausubellovely2006","title":"The Lovely but Lonely Vickrey Auction"},"children":[{"type":"text","value":"Ausubel…"}]},{"type":"text","value":".\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"logic-2"},"children":[{"type":"text","value":"Logic"}]},{"type":"element","tagName":"h2","properties":{"id":"2017-18-game-semantics-based-approaches"},"children":[{"type":"text","value":"2017-18 Game semantics based approaches"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"  Game semantics: the study of alternate formal models of games, and their behaviour.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Gluing of disparate game trees, or game tree generators, with \"meta-moves\", a la "},{"type":"element","tagName":"a","properties":{"href":"/ramanujamlogical2008","title":"A Logical Structure for Strategies"},"children":[{"type":"text","value":"Ramanujam \u0026 Simon"}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Variations of alternating-time temporal logic "},{"type":"element","tagName":"a","properties":{"href":"/aluralternatingtime2002","title":"Alternating-Time Temporal Logic"},"children":[{"type":"text","value":"Alur…"}]},{"type":"text","value":" - i.e. coalitional strategies that represent "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"narrowings"}]},{"type":"text","value":" of a game tree.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Easy to construct a dominance relation over games\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Hard to build a notion of dynamics.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A single good example would have been sufficient to complete this original work.\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Dynamics driven by changes in the information available to players over time: temporal epistemic games.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"This proved unfruitful because clunky.\n"}]}]}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"logic-3"},"children":[{"type":"text","value":"Logic"}]},{"type":"element","tagName":"h2","properties":{"id":"2022----alternate-models-of-preference"},"children":[{"type":"text","value":"2022 -  Alternate models of preference."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Following "},{"type":"element","tagName":"a","properties":{"href":"/dietrichWherePreferencesCome2013","title":"Where Do Preferences Come From?"},"children":[{"type":"text","value":"Dietrich \u0026 List"}]},{"type":"text","value":", representing players as preferring "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"properties"}]},{"type":"text","value":" of game states - i.e. preferences between rules. We tried to treat the properties as statements about the reachability of terminally desired states.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"confluence-preference-meronomy"},"children":[{"type":"text","value":"Confluence: Preference meronomy"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Two central questions can now be asked, in several different spheres of concern:\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Given a collection of "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"agents"}]},{"type":"text","value":" - purposive, complex, mutually aware actors - what can we say about the world they construct in the pursuit of their goals? Can we infer form from function?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Given a world, inhabited and constructed by agents - can we say "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"the world as a whole"}]},{"type":"text","value":" wants something? Can we infer function from form?\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"post-mortem"},"children":[{"type":"text","value":"Post mortem"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What went wrong here? What could have gone better?\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Spread too thin. I had "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"too many ideas"}]},{"type":"text","value":" and did not follow through on any of them enough in the time I had. - Sparse specialised guidance. I did not have enough guidance "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"a priori"}]},{"type":"text","value":", and did not reach out to suitable guides.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Insufficient feedback. I didn't finish or share "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"anything"}]},{"type":"text","value":" until well far too late.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Inadequate "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"general"}]},{"type":"text","value":" guidance. How to write a paper? How often should one request/receive feedback? What is the appropriate way to reach out to other academics? I didn't know.\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"thank-you"},"children":[{"type":"text","value":"Thank you."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Despite obstacles, I enjoyed my time here and the work of answering questions I cared about.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Thank you for your time and consideration.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Questions / comments / feedback?\n"}]}]},"filetags":{},"backlinks":[{"path":"/all_pages","title":"All Pages"}]},"__N_SSG":true},"page":"/[[...slug]]","query":{"slug":["20240624194522-iiit_work_summary_presentation_june_2024"]},"buildId":"blyIc6rHhhg1gdDNUOZZM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-03 Sat 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IIIT Work Summary Presentation June 2024</title>
+<meta name="author" content="sahiti" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">IIIT Work Summary Presentation June 2024</h1>
+<pre class="example">
+ID: 099a6785-05ab-44f4-8e3c-93cdf6a58e79
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 15:55]
+</pre>
+<div id="outline-container-orga619fdf" class="outline-2">
+<h2 id="orga619fdf"><span class="section-number-2">1.</span> Players and Games: A Retrospective</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>This is a look back at several different research directions pursued as part of  the IIIT-H Master's by Research (Exact Humanities) program requirements.</li>
+<li>The program in question no longer exists in its original form.</li>
+<li>Thesis Statement:
+A game can be imagined as a dynamic entity whose nature is shaped by its players.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37c3d84" class="outline-2">
+<h2 id="org37c3d84"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgec4e7dc" class="outline-3">
+<h3 id="orgec4e7dc"><span class="section-number-3">2.1.</span> Heterotopias</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Prof. PRK Rao originally suggested to me the research topic of heterotopia, and offered <a href="https://philosophynoworg/issues/107/The_Heterotopia_of_Facebook"><i>The Heterotopia of Facebook</i></a> as a starting point.
+</p>
+<ul class="org-ul">
+<li>A heterotopia is an unreal space that changes as it interacts with whatever is constructing it.</li>
+<li>A utopia is a special case of heterotopia.
+<ul class="org-ul">
+<li>built from the imagination of a <i>moral ideal</i></li>
+<li>brittle, sensitive to change in the generating ideal</li>
+<li>contradictions inside the ideal break the utopia.</li>
+</ul></li>
+<li>We can imagine a heterotopia derived from a more heterodox moral paradigm, a la Isiah Berlin
+<ul class="org-ul">
+<li>By nature dynamic.</li>
+<li>If inhabitants of an imagined society are modeled as having the power to change that society, how would we imagine the changes we allow them to make, and the consequent space they inhabit?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org682425b" class="outline-2">
+<h2 id="org682425b"><span class="section-number-2">3.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc02608c" class="outline-3">
+<h3 id="orgc02608c"><span class="section-number-3">3.1.</span> Rhetoric of Science</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>mccloskeyRhetoricEconomics1983explores the idea of <i>rhetorical</i> work  as central to economics, as a heuristic precursor to evidence-supported theory in a field that experiences evidence scarcity.
+<ul class="org-ul">
+<li>When many theories <i>can</i> fit an evidence base, it's usually best to have them <i>all</i> active and in use, and treat them as <i>languages</i> - media of the work - rather than <i>outcomes</i>.</li>
+<li>The rhetorical thesis: <i>Good sentences</i> are <i>useful sentences</i>, which are not necessarily <i>provably true sentences</i>.</li>
+</ul></li>
+<li>A <i>language-game</i> wittgensteinphilosophical2010is the idea that language as a tool built to win a collaborative game.
+<ul class="org-ul">
+<li>A game is most minimally characterised not by the <i>rules</i>, but by the <i>winning strategies</i>.</li>
+<li>Imagine economics as a language-game.</li>
+<li>The practice thesis: Economics is better characterised as a <i>practice</i> than as the associated <i>theory</i>.</li>
+</ul></li>
+<li>Assertion: it is better to think about science <i>in general</i> as a <i>practice</i>, and as <i>rhetorical</i>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6956c84" class="outline-2">
+<h2 id="org6956c84"><span class="section-number-2">4.</span> Logic</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+The project here was to formally represent player-editable games - games whose structure depended on players (i.e. on player <i>strategic action</i>, either via their preferences or their available moves).
+We can conceive of this as <i>strategic selection among alternative games</i> - , i.e. playing a <i>metagame</i>. There are several ways to approach this idea. I've detailed my attempted approaches chronologically.
+</p>
+</div>
+</div>
+<div id="outline-container-org072e187" class="outline-2">
+<h2 id="org072e187"><span class="section-number-2">5.</span> Logic</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgba9d3b2" class="outline-3">
+<h3 id="orgba9d3b2"><span class="section-number-3">5.1.</span> 2016: Player-editable games</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>formal representation of games as collections of rules, with rules describing rule editing. This is effectively a formalization of a <i>Nomic</i>-like game suberappendix1990. We quickly run into Suber's original issue with Nomic: either a game simplifies to something that can't be called <i>editing</i>, or it's too underspecified to be able to make positive claims about.</li>
+<li>motivated mechanism design - formally representing mechanism design and turning it into game moves. This proved intractable in the general case. Prior art exists in subproblems that take a similar approach: chenmechanism2015, ausubellovely2006.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1935f9b" class="outline-2">
+<h2 id="org1935f9b"><span class="section-number-2">6.</span> Logic</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org114ccbb" class="outline-3">
+<h3 id="org114ccbb"><span class="section-number-3">6.1.</span> 2017-18 Game semantics based approaches</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Game semantics: the study of alternate formal models of games, and their behaviour.
+</p>
+<ul class="org-ul">
+<li>Gluing of disparate game trees, or game tree generators, with "meta-moves", a la ramanujamlogical2008</li>
+<li>Variations of alternating-time temporal logic aluralternatingtime2002- i.e. coalitional strategies that represent <i>narrowings</i> of a game tree.
+<ul class="org-ul">
+<li>Easy to construct a dominance relation over games</li>
+<li>Hard to build a notion of dynamics.</li>
+<li>A single good example would have been sufficient to complete this original work.</li>
+</ul></li>
+<li>Dynamics driven by changes in the information available to players over time: temporal epistemic games.
+<ul class="org-ul">
+<li>This proved unfruitful because clunky.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org428c798" class="outline-2">
+<h2 id="org428c798"><span class="section-number-2">7.</span> Logic</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org84ef4fa" class="outline-3">
+<h3 id="org84ef4fa"><span class="section-number-3">7.1.</span> 2022 -  Alternate models of preference.</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+Following dietrichWherePreferencesCome2013, representing players as preferring <i>properties</i> of game states - i.e. preferences between rules. We tried to treat the properties as statements about the reachability of terminally desired states.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org25bb42a" class="outline-2">
+<h2 id="org25bb42a"><span class="section-number-2">8.</span> Confluence: Preference meronomy</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Two central questions can now be asked, in several different spheres of concern:
+</p>
+<ul class="org-ul">
+<li>Given a collection of <i>agents</i> - purposive, complex, mutually aware actors - what can we say about the world they construct in the pursuit of their goals? Can we infer form from function?</li>
+<li>Given a world, inhabited and constructed by agents - can we say <i>the world as a whole</i> wants something? Can we infer function from form?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org094b865" class="outline-2">
+<h2 id="org094b865"><span class="section-number-2">9.</span> Post mortem</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+What went wrong here? What could have gone better?
+</p>
+<ul class="org-ul">
+<li>Spread too thin. I had <i>too many ideas</i> and did not follow through on any of them enough in the time I had. - Sparse specialised guidance. I did not have enough guidance <i>a priori</i>, and did not reach out to suitable guides.</li>
+<li>Insufficient feedback. I didn't finish or share <i>anything</i> until well far too late.</li>
+<li>Inadequate <i>general</i> guidance. How to write a paper? How often should one request/receive feedback? What is the appropriate way to reach out to other academics? I didn't know.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2526fb9" class="outline-2">
+<h2 id="org2526fb9"><span class="section-number-2">10.</span> Thank you.</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Despite obstacles, I enjoyed my time here and the work of answering questions I cared about.
+</p>
+
+<p>
+Thank you for your time and consideration.
+</p>
+
+<p>
+Questions / comments / feedback?
+</p>
+</div>
+</div>
+<p class="footpara">
+This node is a singleton!</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: sahiti</p>
+<p class="date">Created: 2025-05-03 Sat 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,63 +1,399 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Trust: Studies in Definition</title><meta name="next-head-count" content="3"/><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/e030354651ddf935.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e030354651ddf935.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-b8f8d6679aaa5f42.js" defer=""></script><script src="/_next/static/chunks/framework-a85322f027b40e20.js" defer=""></script><script src="/_next/static/chunks/main-00e108e884e8ba17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-195757f9fcff239e.js" defer=""></script><script src="/_next/static/chunks/929-fd697a5772151b77.js" defer=""></script><script src="/_next/static/chunks/329-4859dea2fee324e7.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-36a5cddfb88d7ae3.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_buildManifest.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main><h1>Trust: Studies in Definition</h1><dl><dt>authors</dt><dd>Yamagishi, Toshio</dd></dl><h1 id="prelude-would-you-say-that-most-of-the-time-people-try-to-be-helpful-or-that-they-are-mostly-just-looking-out-for-themselves">Prelude: &quot;Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?&quot;</h1><ul><li><p>A <em>double-barrel</em> question.
-</p><ul><li><p>These equate (or try to test how equatable) two different question forms are.
-</p></li></ul></li><li><p>Questions don&#x27;t <em>directly measure</em> factors of concern, they <em>correlate</em> with them.
-</p><ul><li><p>Enough of them correlating, and you can decide that &quot;here is a Thing&quot;.
-</p></li></ul></li><li><p>BUT: What form does that correlation take?
-</p></li></ul><h2 id="example-g-factor">Example: <em>g</em> factor</h2><ul><li><p><em>g</em> is the observation that there exists a broad variance across &quot;cognitive ability&quot;.
-</p></li><li><p>Other more specific factors correlate more closely with other tasks.
-</p></li><li><p>Narrower tasks can be observed, and generate the <em>actual data</em> we look at.
-</p></li></ul><h2 id="one-possible-structure-of-conditional-dependence-that-fits-the-correlations">One possible structure of conditional dependence that fits the correlations</h2><pre class="src-block"><code class="language-dot">digraph name {
-        &quot;working memory&quot;[style=filled,color=lightblue];
-        &quot;spatial intelligence&quot;[style=filled,color=lightblue];
-        &quot;EQ&quot;[style=filled,color=lightblue];
-        &quot;g&quot;[style=filled,color=lightblue1];
-        g -&gt; &quot;working memory&quot; -&gt; &quot;ability to repeat back large numbers&quot;[label=&quot;R&gt;0&quot;];
-        g -&gt; &quot;spatial intelligence&quot;[label=&quot;R&gt;0&quot;];
-        &quot;spatial intelligence&quot; -&gt; &quot;ability to solve map problems&quot;[label=&quot;R&gt;0&quot;];
-        g -&gt; &quot;EQ&quot;[label=&quot;R&gt;0&quot;];
-        &quot;EQ&quot; -&gt; &quot;ability to recognize emotions on faces&quot;[label=&quot;R&gt;0&quot;];
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-03 Sat 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trust: Studies in Definition</title>
+<meta name="author" content="sahiti" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Trust: Studies in Definition</h1>
+<pre class="example">
+ID: 4155d0f6-3999-4f6d-bfe5-6e9bd687bd00
+ROAM_REFS: @yamagishiTrustEvolutionaryGame2011
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 15:54]
+</pre>
+<div id="outline-container-org7775483" class="outline-2">
+<h2 id="org7775483"><span class="section-number-2">1.</span> Prelude: "Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?"</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>A <i>double-barrel</i> question.
+<ul class="org-ul">
+<li>These equate (or try to test how equatable) two different question forms are.</li>
+</ul></li>
+<li>Questions don't <i>directly measure</i> factors of concern, they <i>correlate</i> with them.
+<ul class="org-ul">
+<li>Enough of them correlating, and you can decide that "here is a Thing".</li>
+</ul></li>
+<li>BUT: What form does that correlation take?</li>
+</ul>
+</div>
+<div id="outline-container-org6bfa404" class="outline-3">
+<h3 id="org6bfa404"><span class="section-number-3">1.1.</span> Example: <i>g</i> factor</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><i>g</i> is the observation that there exists a broad variance across "cognitive ability".</li>
+<li>Other more specific factors correlate more closely with other tasks.</li>
+<li>Narrower tasks can be observed, and generate the <i>actual data</i> we look at.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf5ba371" class="outline-3">
+<h3 id="orgf5ba371"><span class="section-number-3">1.2.</span> One possible structure of conditional dependence that fits the correlations</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-dot">digraph name {
+        "working memory"[style=filled,color=lightblue];
+        "spatial intelligence"[style=filled,color=lightblue];
+        "EQ"[style=filled,color=lightblue];
+        "g"[style=filled,color=lightblue1];
+        g -&gt; "working memory" -&gt; "ability to repeat back large numbers"[label="R&gt;0"];
+        g -&gt; "spatial intelligence"[label="R&gt;0"];
+        "spatial intelligence" -&gt; "ability to solve map problems"[label="R&gt;0"];
+        g -&gt; "EQ"[label="R&gt;0"];
+        "EQ" -&gt; "ability to recognize emotions on faces"[label="R&gt;0"];
 }
-</code></pre><p><img src="/file1.png"/></p><h2 id="another-possible-structure">Another possible structure</h2><pre class="src-block"><code class="language-dot">digraph name {
-        &quot;working memory&quot;[style=filled,color=lightblue];
-        &quot;Sahiti&#x27;s visual factor&quot;[style=filled,color=lightblue];
-        &quot;working memory&quot; -&gt; &quot;ability to repeat back large numbers&quot;[label=&quot;R&gt;0&quot;];
-        &quot;working memory&quot; -&gt; &quot;ability to solve map problems&quot;[color=red,label=&quot;R&lt;0&quot;];
-        &quot;Sahiti&#x27;s visual factor&quot; -&gt; &quot;ability to solve map problems&quot;[label=&quot;R&gt;0&quot;];
-        &quot;Sahiti&#x27;s visual factor&quot; -&gt; &quot;ability to recognize emotions on faces&quot;[label=&quot;R&gt;0&quot;];
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcdda80d" class="outline-3">
+<h3 id="orgcdda80d"><span class="section-number-3">1.3.</span> Another possible structure</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-src-container">
+<pre class="src src-dot">digraph name {
+        "working memory"[style=filled,color=lightblue];
+        "Sahiti's visual factor"[style=filled,color=lightblue];
+        "working memory" -&gt; "ability to repeat back large numbers"[label="R&gt;0"];
+        "working memory" -&gt; "ability to solve map problems"[color=red,label="R&lt;0"];
+        "Sahiti's visual factor" -&gt; "ability to solve map problems"[label="R&gt;0"];
+        "Sahiti's visual factor" -&gt; "ability to recognize emotions on faces"[label="R&gt;0"];
 }
-</code></pre><p><img src="/file2.png"/></p><h2 id="factor-analysis-gives-us-too-few-answers-in-one-iteration">Factor analysis gives us <em>too few answers</em> in one iteration.</h2><p>So the iterative process of science is to
-</p><ul><li><p>look at the data
-</p></li><li><p>posit two models
-</p><ul><li><p>or five
-</p></li></ul></li><li><p>construct a test which <em>differentiates</em> your models
-</p></li><li><p>find or collect data which fits the parameters of the test
-</p></li><li><p>rinse and repeat.
-</p></li></ul><h2 id="key-insight-all-definitions-and-internal-workings-of-a-model-are-contingent-on-the-model">Key insight: <em>All definitions and internal workings of a model are contingent on the model</em>.</h2><ul><li><p>Eg. &quot;Working memory&quot; is only as useful as the model it is defined within. If a better fit comes along, toss it out and redefine everything.
-</p></li></ul><h2 id="yamagishis-work-is-an-exercise-in-redefinition">Yamagishi&#x27;s work is an exercise in redefinition.</h2><ul><li><p>recap: &quot;Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?&quot;
-</p><ul><li><p>Are the above two question forms likely to be measuring the same thing?
-</p></li></ul></li><li><p>Will they be anticorrelated when asked separately?
-</p></li><li><p>Will the answer to this question correlate with the questions asked separately?
-</p></li><li><p>What else would you ask in the same questionnaire to correlate this with?
-</p></li></ul><h1 id="trust-gullibility-and-social-intelligence"><em>Trust, gullibility, and social intelligence</em></h1><p>Threefold thesis statement:
-</p><ul><li><p>The single factor &quot;trust&quot; should be separated out
-</p><ul><li><p>into
-</p><ul><li><p>The Good Faith principle (belief in the goodness of others)
-</p></li><li><p>prudence/vigilance
-</p></li></ul></li><li><p>Trends across time show that Americans&#x27; good-faith has held steady, where their prudence has increased
-</p><ul><li><p>Both high-good-faith and low-good-faith people are highly vigilant
-</p></li></ul></li></ul></li><li><p>Good-faith differs significantly between cultures: specifically, American and Japanese
-</p></li><li><p>&quot;Gullibility&quot;, or the likelihood that one will be fooled by a bad actor, should be constructed in terms of prudence, not faith. (This makes its correlation with faith interesting.)
-</p></li><li><p></p></li></ul><h2 id="diagrammatically">Diagrammatically:</h2><h3 id="old-model">Old model</h3><pre class="src-block"><code class="language-dot">digraph name {
-        &quot;Trust&quot;[style=filled,color=lightblue]
-        &quot;Trust&quot; -&gt; &quot;Gullibility&quot;[label=&quot;R&gt;0&quot;]
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf31fba8" class="outline-3">
+<h3 id="orgf31fba8"><span class="section-number-3">1.4.</span> Factor analysis gives us <i>too few answers</i> in one iteration.</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+So the iterative process of science is to
+</p>
+<ul class="org-ul">
+<li>look at the data</li>
+<li>posit two models
+<ul class="org-ul">
+<li>or five</li>
+</ul></li>
+<li>construct a test which <i>differentiates</i> your models</li>
+<li>find or collect data which fits the parameters of the test</li>
+<li>rinse and repeat.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org953fe9d" class="outline-3">
+<h3 id="org953fe9d"><span class="section-number-3">1.5.</span> Key insight: <i>All definitions and internal workings of a model are contingent on the model</i>.</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Eg. "Working memory" is only as useful as the model it is defined within. If a better fit comes along, toss it out and redefine everything.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21ef029" class="outline-3">
+<h3 id="org21ef029"><span class="section-number-3">1.6.</span> Yamagishi's work is an exercise in redefinition.</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>recap: "Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?"
+<ul class="org-ul">
+<li>Are the above two question forms likely to be measuring the same thing?</li>
+</ul></li>
+<li>Will they be anticorrelated when asked separately?</li>
+<li>Will the answer to this question correlate with the questions asked separately?</li>
+<li>What else would you ask in the same questionnaire to correlate this with?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orged86b5a" class="outline-2">
+<h2 id="orged86b5a"><span class="section-number-2">2.</span> <i>Trust, gullibility, and social intelligence</i></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Threefold thesis statement:
+</p>
+<ul class="org-ul">
+<li>The single factor "trust" should be separated out
+<ul class="org-ul">
+<li>into
+<ul class="org-ul">
+<li>The Good Faith principle (belief in the goodness of others)</li>
+<li>prudence/vigilance</li>
+</ul></li>
+<li>Trends across time show that Americans' good-faith has held steady, where their prudence has increased
+<ul class="org-ul">
+<li>Both high-good-faith and low-good-faith people are highly vigilant</li>
+</ul></li>
+</ul></li>
+<li>Good-faith differs significantly between cultures: specifically, American and Japanese</li>
+<li>"Gullibility", or the likelihood that one will be fooled by a bad actor, should be constructed in terms of prudence, not faith. (This makes its correlation with faith interesting.)</li>
+<li></li>
+</ul>
+</div>
+<div id="outline-container-orgc9b6c9b" class="outline-3">
+<h3 id="orgc9b6c9b"><span class="section-number-3">2.1.</span> Diagrammatically:</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org57662c4" class="outline-4">
+<h4 id="org57662c4"><span class="section-number-4">2.1.1.</span> Old model</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<div class="org-src-container">
+<pre class="src src-dot">digraph name {
+        "Trust"[style=filled,color=lightblue]
+        "Trust" -&gt; "Gullibility"[label="R&gt;0"]
 }
-</code></pre><p><img src="/file3.png"/></p><h3 id="new-model">New model</h3><pre class="src-block"><code class="language-dot">digraph name {
-        &quot;Good Faith&quot;[style=filled,color=lightblue]
-        &quot;Prudence&quot;[style=filled,color=lightblue]
-        &quot;Good Faith&quot; -&gt; &quot;Gullibility&quot;[color=purple,label=&quot;R=?&quot;]
-        &quot;Prudence&quot; -&gt; &quot;Gullibility&quot;[label=&quot;R&lt;0&quot;]
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd4c6587" class="outline-4">
+<h4 id="orgd4c6587"><span class="section-number-4">2.1.2.</span> New model</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<div class="org-src-container">
+<pre class="src src-dot">digraph name {
+        "Good Faith"[style=filled,color=lightblue]
+        "Prudence"[style=filled,color=lightblue]
+        "Good Faith" -&gt; "Gullibility"[color=purple,label="R=?"]
+        "Prudence" -&gt; "Gullibility"[label="R&lt;0"]
 }
-</code></pre><p><img src="/file4.png"/></p><h2 id="distinguishing-test-for-gullibility-fool-me-once">Distinguishing test for gullibility: Fool me once</h2><p>How much do people update on negative information about someone&#x27;s trustworthiness?
-</p><h3 id="tigers-cave-problem-kakiuchi-and-yamagishi-1997">Tiger&#x27;s cave problem (Kakiuchi and Yamagishi, 1997)</h3><ul><li><p>Iterated prisonner&#x27;s dilemma variant: extensional. Additional penalty whenever you cooperate and your partner defects.
-</p></li></ul><h1 id="ontology-is-an-interesting-problem-with-iterated-factor-analysis-in-anthropometry">Ontology is an interesting problem with iterated factor analysis in anthropometry</h1><ul><li><p></p></li><li><p>ontology
-</p></li></ul><section><h2>Backlinks</h2><ul><li><a href="/all_pages">All Pages</a></li></ul></section></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"Trust: Studies in Definition","hast":{"type":"root","children":[{"type":"element","tagName":"dl","properties":{},"children":[{"type":"element","tagName":"dt","properties":{},"children":[{"type":"text","value":"authors"}]},{"type":"element","tagName":"dd","properties":{},"children":[{"type":"text","value":"Yamagishi, Toshio"}]}]},{"type":"element","tagName":"h1","properties":{"id":"prelude-would-you-say-that-most-of-the-time-people-try-to-be-helpful-or-that-they-are-mostly-just-looking-out-for-themselves"},"children":[{"type":"text","value":"Prelude: \"Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?\""}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"A "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"double-barrel"}]},{"type":"text","value":" question.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"These equate (or try to test how equatable) two different question forms are.\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Questions don't "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"directly measure"}]},{"type":"text","value":" factors of concern, they "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"correlate"}]},{"type":"text","value":" with them.\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Enough of them correlating, and you can decide that \"here is a Thing\".\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"BUT: What form does that correlation take?\n"}]}]}]},{"type":"element","tagName":"h2","properties":{"id":"example-g-factor"},"children":[{"type":"text","value":"Example: "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"g"}]},{"type":"text","value":" factor"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"g"}]},{"type":"text","value":" is the observation that there exists a broad variance across \"cognitive ability\".\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Other more specific factors correlate more closely with other tasks.\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Narrower tasks can be observed, and generate the "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"actual data"}]},{"type":"text","value":" we look at.\n"}]}]}]},{"type":"element","tagName":"h2","properties":{"id":"one-possible-structure-of-conditional-dependence-that-fits-the-correlations"},"children":[{"type":"text","value":"One possible structure of conditional dependence that fits the correlations"}]},{"type":"element","tagName":"pre","properties":{"className":["src-block"]},"children":[{"type":"element","tagName":"code","properties":{"className":["language-dot"]},"children":[{"type":"text","value":"digraph name {\n        \"working memory\"[style=filled,color=lightblue];\n        \"spatial intelligence\"[style=filled,color=lightblue];\n        \"EQ\"[style=filled,color=lightblue];\n        \"g\"[style=filled,color=lightblue1];\n        g -\u003e \"working memory\" -\u003e \"ability to repeat back large numbers\"[label=\"R\u003e0\"];\n        g -\u003e \"spatial intelligence\"[label=\"R\u003e0\"];\n        \"spatial intelligence\" -\u003e \"ability to solve map problems\"[label=\"R\u003e0\"];\n        g -\u003e \"EQ\"[label=\"R\u003e0\"];\n        \"EQ\" -\u003e \"ability to recognize emotions on faces\"[label=\"R\u003e0\"];\n}\n"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"img","properties":{"src":"/file1.png"},"children":[]}]},{"type":"element","tagName":"h2","properties":{"id":"another-possible-structure"},"children":[{"type":"text","value":"Another possible structure"}]},{"type":"element","tagName":"pre","properties":{"className":["src-block"]},"children":[{"type":"element","tagName":"code","properties":{"className":["language-dot"]},"children":[{"type":"text","value":"digraph name {\n        \"working memory\"[style=filled,color=lightblue];\n        \"Sahiti's visual factor\"[style=filled,color=lightblue];\n        \"working memory\" -\u003e \"ability to repeat back large numbers\"[label=\"R\u003e0\"];\n        \"working memory\" -\u003e \"ability to solve map problems\"[color=red,label=\"R\u003c0\"];\n        \"Sahiti's visual factor\" -\u003e \"ability to solve map problems\"[label=\"R\u003e0\"];\n        \"Sahiti's visual factor\" -\u003e \"ability to recognize emotions on faces\"[label=\"R\u003e0\"];\n}\n"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"img","properties":{"src":"/file2.png"},"children":[]}]},{"type":"element","tagName":"h2","properties":{"id":"factor-analysis-gives-us-too-few-answers-in-one-iteration"},"children":[{"type":"text","value":"Factor analysis gives us "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"too few answers"}]},{"type":"text","value":" in one iteration."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"So the iterative process of science is to\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"look at the data\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"posit two models\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"or five\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"construct a test which "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"differentiates"}]},{"type":"text","value":" your models\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"find or collect data which fits the parameters of the test\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"rinse and repeat.\n"}]}]}]},{"type":"element","tagName":"h2","properties":{"id":"key-insight-all-definitions-and-internal-workings-of-a-model-are-contingent-on-the-model"},"children":[{"type":"text","value":"Key insight: "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"All definitions and internal workings of a model are contingent on the model"}]},{"type":"text","value":"."}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Eg. \"Working memory\" is only as useful as the model it is defined within. If a better fit comes along, toss it out and redefine everything.\n"}]}]}]},{"type":"element","tagName":"h2","properties":{"id":"yamagishis-work-is-an-exercise-in-redefinition"},"children":[{"type":"text","value":"Yamagishi's work is an exercise in redefinition."}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"recap: \"Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?\"\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Are the above two question forms likely to be measuring the same thing?\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Will they be anticorrelated when asked separately?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Will the answer to this question correlate with the questions asked separately?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What else would you ask in the same questionnaire to correlate this with?\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"trust-gullibility-and-social-intelligence"},"children":[{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"Trust, gullibility, and social intelligence"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Threefold thesis statement:\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The single factor \"trust\" should be separated out\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"into\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The Good Faith principle (belief in the goodness of others)\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"prudence/vigilance\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Trends across time show that Americans' good-faith has held steady, where their prudence has increased\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Both high-good-faith and low-good-faith people are highly vigilant\n"}]}]}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Good-faith differs significantly between cultures: specifically, American and Japanese\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"\"Gullibility\", or the likelihood that one will be fooled by a bad actor, should be constructed in terms of prudence, not faith. (This makes its correlation with faith interesting.)\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[]}]}]},{"type":"element","tagName":"h2","properties":{"id":"diagrammatically"},"children":[{"type":"text","value":"Diagrammatically:"}]},{"type":"element","tagName":"h3","properties":{"id":"old-model"},"children":[{"type":"text","value":"Old model"}]},{"type":"element","tagName":"pre","properties":{"className":["src-block"]},"children":[{"type":"element","tagName":"code","properties":{"className":["language-dot"]},"children":[{"type":"text","value":"digraph name {\n        \"Trust\"[style=filled,color=lightblue]\n        \"Trust\" -\u003e \"Gullibility\"[label=\"R\u003e0\"]\n}\n"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"img","properties":{"src":"/file3.png"},"children":[]}]},{"type":"element","tagName":"h3","properties":{"id":"new-model"},"children":[{"type":"text","value":"New model"}]},{"type":"element","tagName":"pre","properties":{"className":["src-block"]},"children":[{"type":"element","tagName":"code","properties":{"className":["language-dot"]},"children":[{"type":"text","value":"digraph name {\n        \"Good Faith\"[style=filled,color=lightblue]\n        \"Prudence\"[style=filled,color=lightblue]\n        \"Good Faith\" -\u003e \"Gullibility\"[color=purple,label=\"R=?\"]\n        \"Prudence\" -\u003e \"Gullibility\"[label=\"R\u003c0\"]\n}\n"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"img","properties":{"src":"/file4.png"},"children":[]}]},{"type":"element","tagName":"h2","properties":{"id":"distinguishing-test-for-gullibility-fool-me-once"},"children":[{"type":"text","value":"Distinguishing test for gullibility: Fool me once"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"How much do people update on negative information about someone's trustworthiness?\n"}]},{"type":"element","tagName":"h3","properties":{"id":"tigers-cave-problem-kakiuchi-and-yamagishi-1997"},"children":[{"type":"text","value":"Tiger's cave problem (Kakiuchi and Yamagishi, 1997)"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Iterated prisonner's dilemma variant: extensional. Additional penalty whenever you cooperate and your partner defects.\n"}]}]}]},{"type":"element","tagName":"h1","properties":{"id":"ontology-is-an-interesting-problem-with-iterated-factor-analysis-in-anthropometry"},"children":[{"type":"text","value":"Ontology is an interesting problem with iterated factor analysis in anthropometry"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"ontology\n"}]}]}]}]},"filetags":{},"backlinks":[{"path":"/all_pages","title":"All Pages"}]},"__N_SSG":true},"page":"/[[...slug]]","query":{"slug":["trust-studies-in-definition"]},"buildId":"blyIc6rHhhg1gdDNUOZZM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce27924" class="outline-3">
+<h3 id="orgce27924"><span class="section-number-3">2.2.</span> Distinguishing test for gullibility: Fool me once</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+How much do people update on negative information about someone's trustworthiness?
+</p>
+</div>
+<div id="outline-container-orgbec45cd" class="outline-4">
+<h4 id="orgbec45cd"><span class="section-number-4">2.2.1.</span> Tiger's cave problem (Kakiuchi and Yamagishi, 1997)</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>Iterated prisonner's dilemma variant: extensional. Additional penalty whenever you cooperate and your partner defects.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga8b3c2e" class="outline-2">
+<h2 id="orga8b3c2e"><span class="section-number-2">3.</span> Ontology is an interesting problem with iterated factor analysis in anthropometry</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li></li>
+
+<li>ontology</li>
+</ul>
+</div>
+</div>
+<p class="footpara">
+This node is a singleton!</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: sahiti</p>
+<p class="date">Created: 2025-05-03 Sat 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,33 +1,329 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Hypergame and Variations: or, Rulechanging</title><meta name="next-head-count" content="3"/><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/e030354651ddf935.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e030354651ddf935.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-b8f8d6679aaa5f42.js" defer=""></script><script src="/_next/static/chunks/framework-a85322f027b40e20.js" defer=""></script><script src="/_next/static/chunks/main-00e108e884e8ba17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-195757f9fcff239e.js" defer=""></script><script src="/_next/static/chunks/929-fd697a5772151b77.js" defer=""></script><script src="/_next/static/chunks/329-4859dea2fee324e7.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-36a5cddfb88d7ae3.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_buildManifest.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main><h1>Hypergame and Variations: or, Rulechanging</h1><h1 id="so-you-and-your-friends-are-having-a-game-night">So you and your friends are having a game night.</h1><p>You&#x27;re trying to decide which game to play.
-</p><p>Presumably, you expect to end up picking one of the games, and for everybody to have a good night playing that game.
-</p><p>The game you are playing is hypergame.
-</p><h1 id="is-hypergame-finite">Is hypergame finite?</h1><p>Well.
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-03 Sat 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hypergame and Variations: or, Rulechanging</title>
+<meta name="author" content="sahiti" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Hypergame and Variations: or, Rulechanging</h1>
+<pre class="example">
+ID: 9c42dbd6-0b30-4f3d-abdc-b629fb1eee2b
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 15:54]
+</pre>
+<div id="outline-container-org382699f" class="outline-2">
+<h2 id="org382699f"><span class="section-number-2">1.</span> So you and your friends are having a game night.</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+You're trying to decide which game to play.
+</p>
+
+<p>
+Presumably, you expect to end up picking one of the games, and for everybody to have a good night playing that game.
+</p>
+
+<p>
+The game you are playing is hypergame.
+</p>
+</div>
+</div>
+<div id="outline-container-org277e8f7" class="outline-2">
+<h2 id="org277e8f7"><span class="section-number-2">2.</span> Is hypergame finite?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Well.
 Yes and no.
-The only valid moves in hypergame are &quot;Pick a finite game to play&quot; or &quot;play a move in a finite game you picked&quot;.
-</p><p>What if you pick Hypergame? And then pick Hypergame. etc. ad inf.
-</p><p>Hypergame is no longer a valid game move.
-</p><p>Which means Hypergame is finite.
-</p><p>Russell&#x27;s Paradox, I didn&#x27;t expect to see you here? What sort of a night are you having?
-</p><h1 id="russell-gets-invited-to-leave-because-people-want-to-have-a-good-time">Russell gets invited to leave because people want to have a good time.</h1><p>If your goal is <em>to have a good game night</em>, nobody is incentivized to pick Hypergame. Boom, Hypergame is effectively finite.
-</p><p>The problem with this is that infomration about <em>player preferences</em> and information about <em>player preference interactions</em> are differently modeled. Players in a traditional game-theoretic game can&#x27;t be modeled to have preferences about rules, and rules can&#x27;t be modeled to change because of player preferences.
-</p><p>But this is a thing that happens all the time.
-</p><h1 id="constitutive-vs-regulative-rules">Constitutive vs. regulative rules</h1><p>Searle had an idea a while back about the difference between &quot;Everyone drives on the same side of the road&quot; and &quot;Everyone drives on the left&quot;. Changing the first changes the game, changing the second doesn&#x27;t.
-</p><p>Changing the first changes everybody&#x27;s incentives about the game, while changing the second doesn&#x27;t (at least within the game). That sounds a lot like an incentive differential, liable to cause something akin to pressure or electric current.
-</p><p>You can build hierarchies of incentives, where an incentive has internal structure that is not relevant to the game at the current resolution but is useful to the subgame. That is to say: my incentives while playing Ludo, and while playing Scrabble, have a structure. My preference <em>between</em> Ludo and Scrabble is a reduction of those, as well as of outcomes of playing Ludo vs. outcomes of playing Scrabble.
-</p><p>Alternately, in the traffic example, car manufacturers probably care a great deal about whether a particular country settles on left or right; so do drivers whose government is considering a change. Standards inertia in general is well expressed by this model.
-</p><h1 id="the-problem-of-bottoming-out">The problem of bottoming out</h1><p>Unless players have <em>game-independent preferences</em> about the state of the world, the problem of hypergame&#x27;s infiniteness rears its head again. 
-Incentives don&#x27;t make sense outside of an environment, and an environment to a game-player is just a game.
-</p><p>Therefore, there has to be a set of rules that aren&#x27;t subject to preference or change, form which preferences arise. These are <em>immutable rules</em>.
-</p><h1 id="questions-">Questions: </h1><ul><li><p>Hypergame seems to work well to model player preferences about rules. Can we build usefully narrower variations on hypergame that isolate rules?
-</p></li><li><p>Game hierarchies/hypergame gameplay seems to work well to summarise or collapse interim states of gameplay. This seems like a potentially good model for logical uncertainty - the summarisation of an interim state of computation, about which different models of a problem that are trying to agree can have varying preferences (perspectives).
-</p></li><li><p>Does deciding the boundaries of a &quot;rule&quot; work the same way as it does when we are trying to express the rules to specify traiditonal games?
-</p><ul><li><p>propositional statements in the hypothetical subgame, which are prescriptions in the supergame?
-</p></li></ul></li><li><p>How minimal can we get the set of immutable rules before it stops being useful?
-</p></li><li><p>What do different sorts of immutable rules do?
-</p></li><li><p>Is an &quot;immutable ruleset&quot; the same thing as an &quot;external regularity&quot; in coordination games?
-</p></li><li><p>What does rulewriting look like when players are doing it?
-</p></li><li><p>Real world applications or narrower questions
-</p><ul><li><p>How do languages change and evolve? How do dialects end up influencing language usage in the larger arena?
-</p></li><li><p>Can coordination games be played with <em>games</em> as Schelling points? Is grammar a convention in the same way that a word in the builder-assistant language is a convention?
-</p></li><li><p>Memes in general can be well expressed as coordination games. Can we concretely express certain templates of decisions or attitudes as memes - that is to say, can memes have complex structure?
-</p></li></ul></li></ul></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"Hypergame and Variations: or, Rulechanging","hast":{"type":"root","children":[{"type":"element","tagName":"h1","properties":{"id":"so-you-and-your-friends-are-having-a-game-night"},"children":[{"type":"text","value":"So you and your friends are having a game night."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"You're trying to decide which game to play.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Presumably, you expect to end up picking one of the games, and for everybody to have a good night playing that game.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The game you are playing is hypergame.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"is-hypergame-finite"},"children":[{"type":"text","value":"Is hypergame finite?"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Well.\nYes and no.\nThe only valid moves in hypergame are \"Pick a finite game to play\" or \"play a move in a finite game you picked\".\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What if you pick Hypergame? And then pick Hypergame. etc. ad inf.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Hypergame is no longer a valid game move.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Which means Hypergame is finite.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Russell's Paradox, I didn't expect to see you here? What sort of a night are you having?\n"}]},{"type":"element","tagName":"h1","properties":{"id":"russell-gets-invited-to-leave-because-people-want-to-have-a-good-time"},"children":[{"type":"text","value":"Russell gets invited to leave because people want to have a good time."}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"If your goal is "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"to have a good game night"}]},{"type":"text","value":", nobody is incentivized to pick Hypergame. Boom, Hypergame is effectively finite.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"The problem with this is that infomration about "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"player preferences"}]},{"type":"text","value":" and information about "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"player preference interactions"}]},{"type":"text","value":" are differently modeled. Players in a traditional game-theoretic game can't be modeled to have preferences about rules, and rules can't be modeled to change because of player preferences.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"But this is a thing that happens all the time.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"constitutive-vs-regulative-rules"},"children":[{"type":"text","value":"Constitutive vs. regulative rules"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Searle had an idea a while back about the difference between \"Everyone drives on the same side of the road\" and \"Everyone drives on the left\". Changing the first changes the game, changing the second doesn't.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Changing the first changes everybody's incentives about the game, while changing the second doesn't (at least within the game). That sounds a lot like an incentive differential, liable to cause something akin to pressure or electric current.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"You can build hierarchies of incentives, where an incentive has internal structure that is not relevant to the game at the current resolution but is useful to the subgame. That is to say: my incentives while playing Ludo, and while playing Scrabble, have a structure. My preference "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"between"}]},{"type":"text","value":" Ludo and Scrabble is a reduction of those, as well as of outcomes of playing Ludo vs. outcomes of playing Scrabble.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Alternately, in the traffic example, car manufacturers probably care a great deal about whether a particular country settles on left or right; so do drivers whose government is considering a change. Standards inertia in general is well expressed by this model.\n"}]},{"type":"element","tagName":"h1","properties":{"id":"the-problem-of-bottoming-out"},"children":[{"type":"text","value":"The problem of bottoming out"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Unless players have "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"game-independent preferences"}]},{"type":"text","value":" about the state of the world, the problem of hypergame's infiniteness rears its head again. \nIncentives don't make sense outside of an environment, and an environment to a game-player is just a game.\n"}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Therefore, there has to be a set of rules that aren't subject to preference or change, form which preferences arise. These are "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"immutable rules"}]},{"type":"text","value":".\n"}]},{"type":"element","tagName":"h1","properties":{"id":"questions-"},"children":[{"type":"text","value":"Questions: "}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Hypergame seems to work well to model player preferences about rules. Can we build usefully narrower variations on hypergame that isolate rules?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Game hierarchies/hypergame gameplay seems to work well to summarise or collapse interim states of gameplay. This seems like a potentially good model for logical uncertainty - the summarisation of an interim state of computation, about which different models of a problem that are trying to agree can have varying preferences (perspectives).\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Does deciding the boundaries of a \"rule\" work the same way as it does when we are trying to express the rules to specify traiditonal games?\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"propositional statements in the hypothetical subgame, which are prescriptions in the supergame?\n"}]}]}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"How minimal can we get the set of immutable rules before it stops being useful?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What do different sorts of immutable rules do?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Is an \"immutable ruleset\" the same thing as an \"external regularity\" in coordination games?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"What does rulewriting look like when players are doing it?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Real world applications or narrower questions\n"}]},{"type":"element","tagName":"ul","properties":{},"children":[{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"How do languages change and evolve? How do dialects end up influencing language usage in the larger arena?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Can coordination games be played with "},{"type":"element","tagName":"em","properties":{},"children":[{"type":"text","value":"games"}]},{"type":"text","value":" as Schelling points? Is grammar a convention in the same way that a word in the builder-assistant language is a convention?\n"}]}]},{"type":"element","tagName":"li","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Memes in general can be well expressed as coordination games. Can we concretely express certain templates of decisions or attitudes as memes - that is to say, can memes have complex structure?\n"}]}]}]}]}]}]},"filetags":{},"backlinks":[]},"__N_SSG":true},"page":"/[[...slug]]","query":{"slug":["hypergame-variations"]},"buildId":"blyIc6rHhhg1gdDNUOZZM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+The only valid moves in hypergame are "Pick a finite game to play" or "play a move in a finite game you picked".
+</p>
+
+<p>
+What if you pick Hypergame? And then pick Hypergame. etc. ad inf.
+</p>
+
+<p>
+Hypergame is no longer a valid game move.
+</p>
+
+<p>
+Which means Hypergame is finite.
+</p>
+
+<p>
+Russell's Paradox, I didn't expect to see you here? What sort of a night are you having?
+</p>
+</div>
+</div>
+<div id="outline-container-org1d4a391" class="outline-2">
+<h2 id="org1d4a391"><span class="section-number-2">3.</span> Russell gets invited to leave because people want to have a good time.</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+If your goal is <i>to have a good game night</i>, nobody is incentivized to pick Hypergame. Boom, Hypergame is effectively finite.
+</p>
+
+<p>
+The problem with this is that infomration about <i>player preferences</i> and information about <i>player preference interactions</i> are differently modeled. Players in a traditional game-theoretic game can't be modeled to have preferences about rules, and rules can't be modeled to change because of player preferences.
+</p>
+
+<p>
+But this is a thing that happens all the time.
+</p>
+</div>
+</div>
+<div id="outline-container-org3113bd3" class="outline-2">
+<h2 id="org3113bd3"><span class="section-number-2">4.</span> Constitutive vs. regulative rules</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Searle had an idea a while back about the difference between "Everyone drives on the same side of the road" and "Everyone drives on the left". Changing the first changes the game, changing the second doesn't.
+</p>
+
+<p>
+Changing the first changes everybody's incentives about the game, while changing the second doesn't (at least within the game). That sounds a lot like an incentive differential, liable to cause something akin to pressure or electric current.
+</p>
+
+<p>
+You can build hierarchies of incentives, where an incentive has internal structure that is not relevant to the game at the current resolution but is useful to the subgame. That is to say: my incentives while playing Ludo, and while playing Scrabble, have a structure. My preference <i>between</i> Ludo and Scrabble is a reduction of those, as well as of outcomes of playing Ludo vs. outcomes of playing Scrabble.
+</p>
+
+<p>
+Alternately, in the traffic example, car manufacturers probably care a great deal about whether a particular country settles on left or right; so do drivers whose government is considering a change. Standards inertia in general is well expressed by this model.
+</p>
+</div>
+</div>
+<div id="outline-container-org6c79106" class="outline-2">
+<h2 id="org6c79106"><span class="section-number-2">5.</span> The problem of bottoming out</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Unless players have <i>game-independent preferences</i> about the state of the world, the problem of hypergame's infiniteness rears its head again. 
+Incentives don't make sense outside of an environment, and an environment to a game-player is just a game.
+</p>
+
+<p>
+Therefore, there has to be a set of rules that aren't subject to preference or change, form which preferences arise. These are <i>immutable rules</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-org5835982" class="outline-2">
+<h2 id="org5835982"><span class="section-number-2">6.</span> Questions:</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Hypergame seems to work well to model player preferences about rules. Can we build usefully narrower variations on hypergame that isolate rules?</li>
+<li>Game hierarchies/hypergame gameplay seems to work well to summarise or collapse interim states of gameplay. This seems like a potentially good model for logical uncertainty - the summarisation of an interim state of computation, about which different models of a problem that are trying to agree can have varying preferences (perspectives).</li>
+<li>Does deciding the boundaries of a "rule" work the same way as it does when we are trying to express the rules to specify traiditonal games?
+<ul class="org-ul">
+<li>propositional statements in the hypothetical subgame, which are prescriptions in the supergame?</li>
+</ul></li>
+<li>How minimal can we get the set of immutable rules before it stops being useful?</li>
+<li>What do different sorts of immutable rules do?</li>
+<li>Is an "immutable ruleset" the same thing as an "external regularity" in coordination games?</li>
+<li>What does rulewriting look like when players are doing it?</li>
+<li>Real world applications or narrower questions
+<ul class="org-ul">
+<li>How do languages change and evolve? How do dialects end up influencing language usage in the larger arena?</li>
+<li>Can coordination games be played with <i>games</i> as Schelling points? Is grammar a convention in the same way that a word in the builder-assistant language is a convention?</li>
+<li>Memes in general can be well expressed as coordination games. Can we concretely express certain templates of decisions or attitudes as memes - that is to say, can memes have complex structure?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p class="footpara">
+This node is a singleton!</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: sahiti</p>
+<p class="date">Created: 2025-05-03 Sat 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

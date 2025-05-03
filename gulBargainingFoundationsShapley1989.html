@@ -1,6 +1,231 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Gul, Faruk , Bargaining Foundations of Shapley Value</title><meta name="next-head-count" content="3"/><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/e030354651ddf935.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e030354651ddf935.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-b8f8d6679aaa5f42.js" defer=""></script><script src="/_next/static/chunks/framework-a85322f027b40e20.js" defer=""></script><script src="/_next/static/chunks/main-00e108e884e8ba17.js" defer=""></script><script src="/_next/static/chunks/pages/_app-195757f9fcff239e.js" defer=""></script><script src="/_next/static/chunks/929-fd697a5772151b77.js" defer=""></script><script src="/_next/static/chunks/329-4859dea2fee324e7.js" defer=""></script><script src="/_next/static/chunks/pages/%5B%5B...slug%5D%5D-36a5cddfb88d7ae3.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_buildManifest.js" defer=""></script><script src="/_next/static/blyIc6rHhhg1gdDNUOZZM/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main><h1>Gul, Faruk , Bargaining Foundations of Shapley Value</h1><dl><dt>authors</dt><dd>Gul, Faruk</dd><dt>url</dt><dd><a href="https://www.jstor.org/stable/1912573">https://www.jstor.org/stable/1912573</a></dd></dl><p><a href="/shapley_value_wikipedia">Shapley value</a> is noncooperatively modeled as a unique efficient <a href="/20230728135048-stationary_subgame_perfect_nash_equilibrium">SSPNE</a> in a transferable-utility bargaining game characterised by a characteristic function.
-</p><blockquote><p>Consider a transferable utility.game where N = {1, 2,3,.. ., n }, V: 2N -* IR ?(V(O) = 0). For our purposes,V has the following interpretation:
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-03 Sat 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gul, Faruk , Bargaining Foundations of Shapley Value</title>
+<meta name="author" content="sahiti" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Gul, Faruk , Bargaining Foundations of Shapley Value</h1>
+<pre class="example">
+ID: 1f9569f5-d335-44b5-850f-90e0d18d6801
+ROAM_REFS: @gulBargainingFoundationsShapley1989
+REVIEW_SCORE: 0.0
+MTIME: [2024-12-25 Wed 15:55]
+</pre>
+<p>
+<a href="shapley_value_wikipedia.html#ID-ed783270-8d5a-45b2-abdb-31c9469afa9d">Shapley value</a> is noncooperatively modeled as a unique efficient <a href="20230728135048-stationary_subgame_perfect_nash_equilibrium.html#ID-e90db0d6-ef8b-43fe-89a6-b250ea67ce16">SSPNE</a> in a transferable-utility bargaining game characterised by a characteristic function.
+</p>
+
+<blockquote>
+<p>
+Consider a transferable utility.game where N = {1, 2,3,.. ., n }, V: 2N -* IR ?(V(O) = 0). For our purposes,V has the following interpretation:
 Each agent i owns a valuable resource,and various combinations of these resources (called resource bundles) produce utility according to the function V. Hence, the resources of agents Mc N, when pooled together, produce a flow of utility which has a discounted present value of V(M).
-Agents can buy and sell these resources in exchange for payment of utils.When agent i sells his resource to j, he leaves the market.After such a transaction,we will sometimes denote j as {i, j } to emphasize the fact that he now owns the initial resources of both i and j. Exchange takes place within the framework of the following extensive-form game: At each period t =0,1,2,..., a random meeting occurs, say between players i and j, with probability (2/nt(nt - 1)), where n, is the number of agents still in the game at time t. Hence, each possible meeting is equally likely.Next,one of the two parties,i and j, is chosen randomly (with probability 2) to make an offer r, EeIR . An offer r, is an offer of utility(or a numeraire good which gives the same level of utility to each agent). Say i is chosen and offers rt to j;  then one of the following occurs: (i) j accepts the offer,which means that he sells his resource to i, and leaves the market; (ii) j rejects the offer, and the meeting dissolves.In either case, the next period begins with a new meeting.It should be noted that the probability of a meeting between two players in period t, given that they are still in the game, is independent of whether either or both of them paticipated in any previous meetings. The game continues as long as thereare two or more agents still in the market.This particular extensive form aims at mimicking the bargaining process in markets with very little friction and communication costs. Hence, all agents are constantly making offers, accepting or rejecting offers,and looking for new bargaining partners.To capture this, we assume all future meetings are equally likely and focus on the case where the time between offers is small. We take the point of view that the resources produce streams of utility, hence, each agent derives (1 - S)V(M) from holding the initial resources of the agents in M for one period, where S denotes the common per period discount factor. Therefore, the utility of agent i associated with a given outcome of this game is
-</p></blockquote><p>(refer to paper for equation or trnascribe it later)
-</p><section><h2>Backlinks</h2><ul><li><a href="/all_pages">All Pages</a></li><li><a href="/reachability">Notes on Dietrich &amp; List&#x27;s Property-Based Model of Preferences</a></li></ul></section></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"Gul, Faruk , Bargaining Foundations of Shapley Value","hast":{"type":"root","children":[{"type":"element","tagName":"dl","properties":{},"children":[{"type":"element","tagName":"dt","properties":{},"children":[{"type":"text","value":"authors"}]},{"type":"element","tagName":"dd","properties":{},"children":[{"type":"text","value":"Gul, Faruk"}]},{"type":"element","tagName":"dt","properties":{},"children":[{"type":"text","value":"url"}]},{"type":"element","tagName":"dd","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"https://www.jstor.org/stable/1912573"},"children":[{"type":"text","value":"https://www.jstor.org/stable/1912573"}]}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"element","tagName":"a","properties":{"href":"/shapley_value_wikipedia"},"children":[{"type":"text","value":"Shapley value"}]},{"type":"text","value":" is noncooperatively modeled as a unique efficient "},{"type":"element","tagName":"a","properties":{"href":"/20230728135048-stationary_subgame_perfect_nash_equilibrium"},"children":[{"type":"text","value":"SSPNE"}]},{"type":"text","value":" in a transferable-utility bargaining game characterised by a characteristic function.\n"}]},{"type":"element","tagName":"blockquote","properties":{},"children":[{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"Consider a transferable utility.game where N = {1, 2,3,.. ., n }, V: 2N -* IR ?(V(O) = 0). For our purposes,V has the following interpretation:\nEach agent i owns a valuable resource,and various combinations of these resources (called resource bundles) produce utility according to the function V. Hence, the resources of agents Mc N, when pooled together, produce a flow of utility which has a discounted present value of V(M).\nAgents can buy and sell these resources in exchange for payment of utils.When agent i sells his resource to j, he leaves the market.After such a transaction,we will sometimes denote j as {i, j } to emphasize the fact that he now owns the initial resources of both i and j. Exchange takes place within the framework of the following extensive-form game: At each period t =0,1,2,..., a random meeting occurs, say between players i and j, with probability (2/nt(nt - 1)), where n, is the number of agents still in the game at time t. Hence, each possible meeting is equally likely.Next,one of the two parties,i and j, is chosen randomly (with probability 2) to make an offer r, EeIR . An offer r, is an offer of utility(or a numeraire good which gives the same level of utility to each agent). Say i is chosen and offers rt to j;  then one of the following occurs: (i) j accepts the offer,which means that he sells his resource to i, and leaves the market; (ii) j rejects the offer, and the meeting dissolves.In either case, the next period begins with a new meeting.It should be noted that the probability of a meeting between two players in period t, given that they are still in the game, is independent of whether either or both of them paticipated in any previous meetings. The game continues as long as thereare two or more agents still in the market.This particular extensive form aims at mimicking the bargaining process in markets with very little friction and communication costs. Hence, all agents are constantly making offers, accepting or rejecting offers,and looking for new bargaining partners.To capture this, we assume all future meetings are equally likely and focus on the case where the time between offers is small. We take the point of view that the resources produce streams of utility, hence, each agent derives (1 - S)V(M) from holding the initial resources of the agents in M for one period, where S denotes the common per period discount factor. Therefore, the utility of agent i associated with a given outcome of this game is\n"}]}]},{"type":"element","tagName":"p","properties":{},"children":[{"type":"text","value":"(refer to paper for equation or trnascribe it later)\n"}]}]},"filetags":{},"backlinks":[{"path":"/all_pages","title":"All Pages"},{"path":"/reachability","title":"Notes on Dietrich \u0026 List's Property-Based Model of Preferences"}]},"__N_SSG":true},"page":"/[[...slug]]","query":{"slug":["gulBargainingFoundationsShapley1989"]},"buildId":"blyIc6rHhhg1gdDNUOZZM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+Agents can buy and sell these resources in exchange for payment of utils.When agent i sells his resource to j, he leaves the market.After such a transaction,we will sometimes denote j as {i, j } to emphasize the fact that he now owns the initial resources of both i and j. Exchange takes place within the framework of the following extensive-form game: At each period t =0,1,2,&#x2026;, a random meeting occurs, say between players i and j, with probability (2/nt(nt - 1)), where n, is the number of agents still in the game at time t. Hence, each possible meeting is equally likely.Next,one of the two parties,i and j, is chosen randomly (with probability 2) to make an offer r, EeIR . An offer r, is an offer of utility(or a numeraire good which gives the same level of utility to each agent). Say i is chosen and offers rt to j;  then one of the following occurs: (i) j accepts the offer,which means that he sells his resource to i, and leaves the market; (ii) j rejects the offer, and the meeting dissolves.In either case, the next period begins with a new meeting.It should be noted that the probability of a meeting between two players in period t, given that they are still in the game, is independent of whether either or both of them paticipated in any previous meetings. The game continues as long as thereare two or more agents still in the market.This particular extensive form aims at mimicking the bargaining process in markets with very little friction and communication costs. Hence, all agents are constantly making offers, accepting or rejecting offers,and looking for new bargaining partners.To capture this, we assume all future meetings are equally likely and focus on the case where the time between offers is small. We take the point of view that the resources produce streams of utility, hence, each agent derives (1 - S)V(M) from holding the initial resources of the agents in M for one period, where S denotes the common per period discount factor. Therefore, the utility of agent i associated with a given outcome of this game is
+</p>
+</blockquote>
+
+<p>
+(refer to paper for equation or trnascribe it later)
+</p>
+<p class="footpara">
+This node is a singleton!</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: sahiti</p>
+<p class="date">Created: 2025-05-03 Sat 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
