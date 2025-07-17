@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-06-25 Wed 14:32 -->
+<!-- 2025-07-17 Thu 12:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lecture Notes for Metrics - A Short, Practical Primer</title>
-<meta name="author" content="sahiti" />
+<meta name="author" content="Nix build user" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -205,34 +205,34 @@ REVIEW_SCORE: 0.0
 MTIME: [2024-12-25 Wed 15:54]
 </pre>
 </div>
-<div id="outline-container-org7d66858" class="outline-2">
-<h2 id="org7d66858"><span class="section-number-2">1.</span> Outline</h2>
+<div id="outline-container-org2943593" class="outline-2">
+<h2 id="org2943593"><span class="section-number-2">1.</span> Outline</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org3f49a8b" class="outline-3">
-<h3 id="org3f49a8b"><span class="section-number-3">1.1.</span> First Principles</h3>
+<div id="outline-container-orgf603378" class="outline-3">
+<h3 id="orgf603378"><span class="section-number-3">1.1.</span> First Principles</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orgac41182" class="outline-4">
-<h4 id="orgac41182"><span class="section-number-4">1.1.1.</span> what is a metric</h4>
+<div id="outline-container-orgd56748a" class="outline-4">
+<h4 id="orgd56748a"><span class="section-number-4">1.1.1.</span> what is a metric</h4>
 <div class="outline-text-4" id="text-1-1-1">
 </div>
 <ol class="org-ol">
-<li><a id="orge795cba"></a>in terms of data<br />
+<li><a id="org5931817"></a>in terms of data<br />
 <div class="outline-text-5" id="text-1-1-1-1">
 <p>
 it is a label, a number and a timestamp. so, a time-indexed kv pair.  some other details about the number can be kept for fun sometimes. 
 </p>
 </div>
 </li>
-<li><a id="org68c6f2d"></a>in terms of use<br />
+<li><a id="org51e7744"></a>in terms of use<br />
 <div class="outline-text-5" id="text-1-1-1-2">
 <p>
 it is a single piece of information you want to have about a "running" "system" ie. anything that you can measure, the output of the measurement is a metric.
 </p>
 </div>
 </li>
-<li><a id="orgc966a8b"></a>in terms of "why"<br />
+<li><a id="org54a3653"></a>in terms of "why"<br />
 <div class="outline-text-5" id="text-1-1-1-3">
 <p>
 well,  <i>the scientific method.</i>
@@ -256,24 +256,24 @@ and you have the panaceaic answers to all your questions!
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd0e82b6" class="outline-4">
-<h4 id="orgd0e82b6"><span class="section-number-4">1.1.2.</span> data challenges</h4>
+<div id="outline-container-org5b893f4" class="outline-4">
+<h4 id="org5b893f4"><span class="section-number-4">1.1.2.</span> data challenges</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 collection and storage timestamps, how do they work storage optimization
 </p>
 </div>
 </div>
-<div id="outline-container-org6bed5b5" class="outline-4">
-<h4 id="org6bed5b5"><span class="section-number-4">1.1.3.</span> use challenges</h4>
+<div id="outline-container-org77fdc05" class="outline-4">
+<h4 id="org77fdc05"><span class="section-number-4">1.1.3.</span> use challenges</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 querying and analysis cardinality size bucketing: the ultimate shitty tradeoff between storage and analysis requirements
 </p>
 </div>
 </div>
-<div id="outline-container-org594401a" class="outline-4">
-<h4 id="org594401a"><span class="section-number-4">1.1.4.</span> motivation challenges</h4>
+<div id="outline-container-orgc0ab364" class="outline-4">
+<h4 id="orgc0ab364"><span class="section-number-4">1.1.4.</span> motivation challenges</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <ul class="org-ul">
 <li>measuring irrelevant things</li>
@@ -351,19 +351,19 @@ use cases:
 </div>
 </div>
 </div>
-<div id="outline-container-org6f2181a" class="outline-3">
-<h3 id="org6f2181a"><span class="section-number-3">1.2.</span> System metrics</h3>
+<div id="outline-container-org6620c63" class="outline-3">
+<h3 id="org6620c63"><span class="section-number-3">1.2.</span> System metrics</h3>
 </div>
-<div id="outline-container-org1b218b1" class="outline-3">
-<h3 id="org1b218b1"><span class="section-number-3">1.3.</span> Collectd</h3>
+<div id="outline-container-org2bb3edb" class="outline-3">
+<h3 id="org2bb3edb"><span class="section-number-3">1.3.</span> Collectd</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 get them to install collectd show them what it collects
 </p>
 </div>
 </div>
-<div id="outline-container-orgfb87d3b" class="outline-3">
-<h3 id="orgfb87d3b"><span class="section-number-3">1.4.</span> Graphite</h3>
+<div id="outline-container-orgebfba0d" class="outline-3">
+<h3 id="orgebfba0d"><span class="section-number-3">1.4.</span> Graphite</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 somebody else gotta step in to discuss; pls no practical.
@@ -373,34 +373,34 @@ somebody else gotta step in to discuss; pls no practical.
 a graphite endpoint they can push to and navigate to the dashboard of?
 </p>
 </div>
-<div id="outline-container-org236eed2" class="outline-4">
-<h4 id="org236eed2"><span class="section-number-4">1.4.1.</span> whisperdb</h4>
+<div id="outline-container-orge889856" class="outline-4">
+<h4 id="orge889856"><span class="section-number-4">1.4.1.</span> whisperdb</h4>
 </div>
 
-<div id="outline-container-org6928953" class="outline-4">
-<h4 id="org6928953"><span class="section-number-4">1.4.2.</span> carbon-relay</h4>
+<div id="outline-container-org2fb4aa3" class="outline-4">
+<h4 id="org2fb4aa3"><span class="section-number-4">1.4.2.</span> carbon-relay</h4>
 </div>
 
-<div id="outline-container-org8cbd836" class="outline-4">
-<h4 id="org8cbd836"><span class="section-number-4">1.4.3.</span> carbon-ng? or something the go rewrite</h4>
+<div id="outline-container-org55e9a0a" class="outline-4">
+<h4 id="org55e9a0a"><span class="section-number-4">1.4.3.</span> carbon-ng? or something the go rewrite</h4>
 </div>
 </div>
-<div id="outline-container-org0dd9cb8" class="outline-3">
-<h3 id="org0dd9cb8"><span class="section-number-3">1.5.</span> Prometheus</h3>
+<div id="outline-container-orgcf1dd1e" class="outline-3">
+<h3 id="orgcf1dd1e"><span class="section-number-3">1.5.</span> Prometheus</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 wouldn't minda practical here. prom is smol.
 </p>
 </div>
-<div id="outline-container-orgdfe5196" class="outline-4">
-<h4 id="orgdfe5196"><span class="section-number-4">1.5.1.</span> promtsdb</h4>
+<div id="outline-container-orgc0c45d8" class="outline-4">
+<h4 id="orgc0c45d8"><span class="section-number-4">1.5.1.</span> promtsdb</h4>
 </div>
-<div id="outline-container-orgad54826" class="outline-4">
-<h4 id="orgad54826"><span class="section-number-4">1.5.2.</span> pull-based arch (and the consequences)</h4>
+<div id="outline-container-orge6db5f0" class="outline-4">
+<h4 id="orge6db5f0"><span class="section-number-4">1.5.2.</span> pull-based arch (and the consequences)</h4>
 <div class="outline-text-4" id="text-1-5-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgce11b65"></a>exporters<br />
+<li><a id="orge543e66"></a>exporters<br />
 <div class="outline-text-5" id="text-1-5-2-1">
 <p>
 get them to install node exporter
@@ -409,35 +409,35 @@ get them to install node exporter
 </li>
 </ol>
 </div>
-<div id="outline-container-org500fa85" class="outline-4">
-<h4 id="org500fa85"><span class="section-number-4">1.5.3.</span> prom web endpoint</h4>
+<div id="outline-container-org05323b0" class="outline-4">
+<h4 id="org05323b0"><span class="section-number-4">1.5.3.</span> prom web endpoint</h4>
 </div>
-<div id="outline-container-orgfed7c6e" class="outline-4">
-<h4 id="orgfed7c6e"><span class="section-number-4">1.5.4.</span> alertmanager</h4>
+<div id="outline-container-org13d137a" class="outline-4">
+<h4 id="org13d137a"><span class="section-number-4">1.5.4.</span> alertmanager</h4>
 <div class="outline-text-4" id="text-1-5-4">
 </div>
 <ol class="org-ol">
-<li><a id="orgeacd7d5"></a>alerting rules<br /></li>
+<li><a id="org6dc37ef"></a>alerting rules<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org79b8aa9" class="outline-3">
-<h3 id="org79b8aa9"><span class="section-number-3">1.6.</span> Grafana</h3>
+<div id="outline-container-org4052812" class="outline-3">
+<h3 id="org4052812"><span class="section-number-3">1.6.</span> Grafana</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 unified graphs and queries frontend originally mostly for graphite but it can talk to EVERYTHING muhahahaha somewhat heavy webapp tho
 </p>
 </div>
-<div id="outline-container-org269caf4" class="outline-4">
-<h4 id="org269caf4"><span class="section-number-4">1.6.1.</span> dashboard</h4>
+<div id="outline-container-org9cccb02" class="outline-4">
+<h4 id="org9cccb02"><span class="section-number-4">1.6.1.</span> dashboard</h4>
 </div>
 
-<div id="outline-container-orgc2625ff" class="outline-4">
-<h4 id="orgc2625ff"><span class="section-number-4">1.6.2.</span> panel</h4>
+<div id="outline-container-orgf506508" class="outline-4">
+<h4 id="orgf506508"><span class="section-number-4">1.6.2.</span> panel</h4>
 </div>
 
-<div id="outline-container-orga665721" class="outline-4">
-<h4 id="orga665721"><span class="section-number-4">1.6.3.</span> panel query editing</h4>
+<div id="outline-container-org3c72488" class="outline-4">
+<h4 id="org3c72488"><span class="section-number-4">1.6.3.</span> panel query editing</h4>
 <div class="outline-text-4" id="text-1-6-3">
 <p>
 useful walkthrough here to discuss how and why to use various display features
@@ -446,12 +446,12 @@ useful walkthrough here to discuss how and why to use various display features
 </div>
 </div>
 </div>
-<div id="outline-container-orgea96cd4" class="outline-2">
-<h2 id="orgea96cd4"><span class="section-number-2">2.</span> Duncan method informed class structure</h2>
+<div id="outline-container-org8eb5843" class="outline-2">
+<h2 id="org8eb5843"><span class="section-number-2">2.</span> Duncan method informed class structure</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgef1c703" class="outline-3">
-<h3 id="orgef1c703"><span class="section-number-3">2.1.</span> Core skill</h3>
+<div id="outline-container-org6e1ca73" class="outline-3">
+<h3 id="org6e1ca73"><span class="section-number-3">2.1.</span> Core skill</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>measure a system.
@@ -483,8 +483,8 @@ useful walkthrough here to discuss how and why to use various display features
 This node is a singleton!</p>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: sahiti</p>
-<p class="date">Created: 2025-06-25 Wed 14:32</p>
+<p class="author">Author: Nix build user</p>
+<p class="date">Created: 2025-07-17 Thu 12:11</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
