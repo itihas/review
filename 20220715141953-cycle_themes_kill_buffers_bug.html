@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-19 Sat 07:47 -->
+<!-- 2025-07-19 Sat 07:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>=cycle-themes= kill buffers bug</title>
@@ -204,8 +204,8 @@ ID: a63d8580-c6d4-432d-ba4a-0893e324d2a1
 MTIME: [2024-12-25 Wed 16:06]
 </pre>
 </div>
-<div id="outline-container-org7c4550a" class="outline-2">
-<h2 id="org7c4550a"><span class="section-number-2">1.</span> description</h2>
+<div id="outline-container-org5630e30" class="outline-2">
+<h2 id="org5630e30"><span class="section-number-2">1.</span> description</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 When running cycle-themes, I'd get prompted:
@@ -218,8 +218,8 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org4394aff" class="outline-2">
-<h2 id="org4394aff"><span class="section-number-2">2.</span> what it ended up being</h2>
+<div id="outline-container-org4f0d3fd" class="outline-2">
+<h2 id="org4f0d3fd"><span class="section-number-2">2.</span> what it ended up being</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 makes a call to , which in turn runs:
@@ -235,8 +235,8 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
-<div id="outline-container-org3af0317" class="outline-2">
-<h2 id="org3af0317"><span class="section-number-2">3.</span> fixed it by</h2>
+<div id="outline-container-orgb6fdd9c" class="outline-2">
+<h2 id="orgb6fdd9c"><span class="section-number-2">3.</span> fixed it by</h2>
 <div class="outline-text-2" id="text-3">
 <div class="content">
 <pre class="example">
@@ -249,8 +249,8 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
-<div id="outline-container-org79f7cc7" class="outline-2">
-<h2 id="org79f7cc7"><span class="section-number-2">4.</span> things I did to debug</h2>
+<div id="outline-container-org90bc8a4" class="outline-2">
+<h2 id="org90bc8a4"><span class="section-number-2">4.</span> things I did to debug</h2>
 <div class="outline-text-2" id="text-4">
 <div class="content">
 <pre class="example">
@@ -268,7 +268,7 @@ This node is a singleton!</p>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-07-19 Sat 07:47</p>
+<p class="date">Created: 2025-07-19 Sat 07:59</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
