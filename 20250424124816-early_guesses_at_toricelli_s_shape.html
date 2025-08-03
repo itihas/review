@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-19 Sat 07:59 -->
+<!-- 2025-08-03 Sun 12:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Early guesses at Toricelli's shape</title>
@@ -205,7 +205,7 @@ ID: b6b84d0a-2761-45bd-8b1a-32cf996f89a2
 </div><p>
 initial guess at a cost function:
 </p>
-<pre class="example" id="org6bdd34b">
+<pre class="example" id="org57f4bdd">
 srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
 </pre>
 <p>
@@ -215,8 +215,8 @@ treat srs<sub>score</sub> as the page weight for pagerank
 <p>
 sid's guess: put srs<sub>score</sub> as the damping factor
 </p>
-<div id="outline-container-orgad13fd8" class="outline-2">
-<h2 id="orgad13fd8"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
+<div id="outline-container-org0e6b23e" class="outline-2">
+<h2 id="org0e6b23e"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
@@ -226,8 +226,8 @@ sid's guess: put srs<sub>score</sub> as the damping factor
 </ul>
 </div>
 </div>
-<div id="outline-container-org1428fec" class="outline-2">
-<h2 id="org1428fec"><span class="section-number-2">2.</span> next guess</h2>
+<div id="outline-container-org0537f88" class="outline-2">
+<h2 id="org0537f88"><span class="section-number-2">2.</span> next guess</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
@@ -262,8 +262,8 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
-<div id="outline-container-org347e336" class="outline-2">
-<h2 id="org347e336"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
+<div id="outline-container-orgf7e3c38" class="outline-2">
+<h2 id="orgf7e3c38"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
@@ -324,8 +324,8 @@ Easiness factor shares some semantic features with <a href="frecency_wikipedia.h
 </p>
 </div>
 </div>
-<div id="outline-container-org960ad7e" class="outline-2">
-<h2 id="org960ad7e"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
+<div id="outline-container-org169d9dc" class="outline-2">
+<h2 id="org169d9dc"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
@@ -337,7 +337,7 @@ This node is a singleton!</p>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-07-19 Sat 07:59</p>
+<p class="date">Created: 2025-08-03 Sun 12:31</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
