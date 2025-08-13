@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-09 Sat 16:22 -->
+<!-- 2025-08-13 Wed 08:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</title>
@@ -206,16 +206,16 @@ REVIEW_SCORE: 0.0
 MTIME: [2024-12-25 Wed 15:54]
 </pre>
 </div>
-<div id="outline-container-org18c05a0" class="outline-2">
-<h2 id="org18c05a0"><span class="section-number-2">1.</span> tl;dr</h2>
+<div id="outline-container-orge64b316" class="outline-2">
+<h2 id="orge64b316"><span class="section-number-2">1.</span> tl;dr</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Equilibria for infinite games using coinduction.
 </p>
 </div>
 </div>
-<div id="outline-container-org39039fe" class="outline-2">
-<h2 id="org39039fe"><span class="section-number-2">2.</span> notes as I read</h2>
+<div id="outline-container-org9f9fc46" class="outline-2">
+<h2 id="org9f9fc46"><span class="section-number-2">2.</span> notes as I read</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>what is the Weierstrass function?</li>
@@ -232,8 +232,8 @@ He's representing strategies as the whole game plus "which way to go from here?"
 </p>
 </div>
 </div>
-<div id="outline-container-org21cf092" class="outline-2">
-<h2 id="org21cf092"><span class="section-number-2">3.</span> summary</h2>
+<div id="outline-container-org5daed9b" class="outline-2">
+<h2 id="org5daed9b"><span class="section-number-2">3.</span> summary</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Coinductive definitions (for extensional games):
@@ -241,7 +241,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orgd20e9dd"></a> | Right <a id="orgb9e8f36"></a>
+Strategy := Payoff | Left <a id="org73d8e98"></a> | Right <a id="orgd413e4b"></a>
 </p>
 
 
@@ -264,11 +264,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org8c34653"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgf4f520c"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org85b9457"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org05714bb"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -293,11 +293,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org5d5fe34"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgb32cdca"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org779f958"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org2cfbb80"></a></td>
 </tr>
 </tbody>
 </table>
@@ -317,7 +317,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="orgd4e3f8d"></a> : lleaf <a id="org800d290"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgaf694af"></a> : lleaf <a id="org93b5adc"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -394,7 +394,7 @@ This node is a singleton!</p>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-09 Sat 16:22</p>
+<p class="date">Created: 2025-08-13 Wed 08:59</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
