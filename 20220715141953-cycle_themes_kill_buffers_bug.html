@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-13 Wed 11:17 -->
+<!-- 2025-08-14 Thu 15:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>=cycle-themes= kill buffers bug</title>
@@ -204,8 +204,8 @@ ID: a63d8580-c6d4-432d-ba4a-0893e324d2a1
 MTIME: [2024-12-25 Wed 16:06]
 </pre>
 </div>
-<div id="outline-container-orgbc738e7" class="outline-2">
-<h2 id="orgbc738e7"><span class="section-number-2">1.</span> description</h2>
+<div id="outline-container-orga4dadb7" class="outline-2">
+<h2 id="orga4dadb7"><span class="section-number-2">1.</span> description</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 When running cycle-themes, I'd get prompted:
@@ -218,15 +218,15 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org80d374c" class="outline-2">
-<h2 id="org80d374c"><span class="section-number-2">2.</span> what it ended up being</h2>
+<div id="outline-container-org6285575" class="outline-2">
+<h2 id="org6285575"><span class="section-number-2">2.</span> what it ended up being</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 makes a call to , which in turn runs:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-elisp">(funcall (or (get variable 'custom-set) #'set-default) variable
+<pre class="src src-elisp">(funcall (<span style="font-weight: bold;">or</span> (get variable 'custom-set) #'set-default) variable
 </pre>
 </div>
 
@@ -235,8 +235,8 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
-<div id="outline-container-org77d38e1" class="outline-2">
-<h2 id="org77d38e1"><span class="section-number-2">3.</span> fixed it by</h2>
+<div id="outline-container-orgbdaff24" class="outline-2">
+<h2 id="orgbdaff24"><span class="section-number-2">3.</span> fixed it by</h2>
 <div class="outline-text-2" id="text-3">
 <div class="content">
 <pre class="example">
@@ -249,8 +249,8 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
-<div id="outline-container-org6f78648" class="outline-2">
-<h2 id="org6f78648"><span class="section-number-2">4.</span> things I did to debug</h2>
+<div id="outline-container-org0d0204e" class="outline-2">
+<h2 id="org0d0204e"><span class="section-number-2">4.</span> things I did to debug</h2>
 <div class="outline-text-2" id="text-4">
 <div class="content">
 <pre class="example">
@@ -263,12 +263,18 @@ MTIME: [2025-01-21 Tue 12:25]
 </p>
 </div>
 </div>
-<p class="footpara">
-This node is a singleton!</p>
+<div id="outline-container-org899b4fc" class="outline-2">
+<h2 id="org899b4fc"><span class="section-number-2">5.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<ul class="org-ul">
+<li><a href="../../../home/itihas/org-notebook/public/20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
+</ul>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-13 Wed 11:17</p>
+<p class="date">Created: 2025-08-14 Thu 15:18</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

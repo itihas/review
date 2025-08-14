@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-13 Wed 11:17 -->
+<!-- 2025-08-14 Thu 15:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Toricelli</title>
@@ -240,8 +240,8 @@ ROAM_REFS: https://github.com/itihas/toricelli
 </div><p>
 A tool to turn a corpus into a feed.
 </p>
-<div id="outline-container-org8fdfd79" class="outline-2">
-<h2 id="org8fdfd79"><span class="section-number-2">1.</span> Why toricelli?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="draft">draft</span>&#xa0;<span class="substack">substack</span></span></h2>
+<div id="outline-container-org0699427" class="outline-2">
+<h2 id="org0699427"><span class="section-number-2">1.</span> Why toricelli?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="draft">draft</span>&#xa0;<span class="substack">substack</span></span></h2>
 <div class="outline-text-2" id="text-1">
 <p>
 At several points in recent history, Tumblr users have felt the need to create a howto for effectively using tumblr. Universal among these guides is the recommendation to switch your feed to chronological ordering.
@@ -287,7 +287,7 @@ This is fine, I think; even good. An exobrain isn't meant to be a dead thing. It
 </p>
 
 <p>
-I spent some years meditating on how exobrains ought to move; my best lead for a long while felt like <a href="yow_2014_edward_kmett_stop_treading_water_learning_to_learn_yow_youtube.html#ID-f24d416c-9e45-408c-bf5d-ac1b95b13b32">YOW! 2014 Edward Kmett - Stop Treading Water: Learning to Learn #YOW - YouTube</a>, where the presenter talks about how his Github projects organically arrange his work into a spaced-repetition-style recall exercise. There's something about how humans interface with each other over high-conceptual-density artifacts like Haskell code that rhymes with how I wanted the interface with my notebook to work &#x2013; something like <i>loading up the context</i>.
+I spent some years meditating on how exobrains ought to move; my best lead for a long while felt like <a href="../../../home/itihas/org-notebook/public/yow_2014_edward_kmett_stop_treading_water_learning_to_learn_yow_youtube.html#ID-f24d416c-9e45-408c-bf5d-ac1b95b13b32">YOW! 2014 Edward Kmett - Stop Treading Water: Learning to Learn #YOW - YouTube</a>, where the presenter talks about how his Github projects organically arrange his work into a spaced-repetition-style recall exercise. There's something about how humans interface with each other over high-conceptual-density artifacts like Haskell code that rhymes with how I wanted the interface with my notebook to work &#x2013; something like <i>loading up the context</i>.
 </p>
 
 <p>
@@ -295,11 +295,11 @@ Spaced repetition wasn't quite right - an SRS deck grows, but doesn't really hav
 </p>
 
 <p>
-There's something disconcerting about how an uncurated SRS deck flings you from  subject to subject. It feels like it burns through a line of credit that my mind is extending it - and yeah, upon examination, that is what it's doing! It's burning through my capacity and willingness to switch context, and it often isn't rewarding me with anything for doing it. An SRS card is a stack of acontextual recall tasks, and recall tasks are often enjoyable only by dint of the context they drag in with them. The hedonics of an SRS deck are off. This isn't a good <a href="20250403213714-motivation_curve.html#ID-8bdce822-287e-44a7-b45b-79ff063a7c27">motivation curve</a>.
+There's something disconcerting about how an uncurated SRS deck flings you from  subject to subject. It feels like it burns through a line of credit that my mind is extending it - and yeah, upon examination, that is what it's doing! It's burning through my capacity and willingness to switch context, and it often isn't rewarding me with anything for doing it. An SRS card is a stack of acontextual recall tasks, and recall tasks are often enjoyable only by dint of the context they drag in with them. The hedonics of an SRS deck are off. This isn't a good <a href="../../../home/itihas/org-notebook/public/20250403213714-motivation_curve.html#ID-8bdce822-287e-44a7-b45b-79ff063a7c27">motivation curve</a>.
 </p>
 
 <p>
-Let's try to fix it. I want <i>context</i> to my SRS deck. The key is to notice that a deck is a form of <a href="programmable_attention.html#ID-4493a512-c5ca-4a27-915d-c3c4de9869f0">programmable attention</a>. In fact, it's the classic example - a feed. It augments and mediates your attention via an algorithm.
+Let's try to fix it. I want <i>context</i> to my SRS deck. The key is to notice that a deck is a form of <a href="../../../home/itihas/org-notebook/public/programmable_attention.html#ID-4493a512-c5ca-4a27-915d-c3c4de9869f0">programmable attention</a>. In fact, it's the classic example - a feed. It augments and mediates your attention via an algorithm.
 </p>
 
 <p>
@@ -343,15 +343,15 @@ Therefore, what I want is for the top ten results to have at least three things 
 </p>
 </div>
 </div>
-<div id="outline-container-org0389297" class="outline-2">
-<h2 id="org0389297"><span class="section-number-2">2.</span> background - SRS algorithms</h2>
+<div id="outline-container-org4c47bfe" class="outline-2">
+<h2 id="org4c47bfe"><span class="section-number-2">2.</span> background - SRS algorithms</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Consider a value R, the probability of recall - i.e. whether you pass the test a card gives you. SRS axioms are as follows:
 </p>
 
 <ul class="org-ul">
-<li>\(R\) for a given piece of information can be modeled by a decay function over time, unless acted upon by a recall test. This decay function is called the <a href="20250211162720-forgetting_curve.html#ID-ca8e4d7d-c78f-432b-bd57-b67690d33ac0">forgetting curve</a>.</li>
+<li>\(R\) for a given piece of information can be modeled by a decay function over time, unless acted upon by a recall test. This decay function is called the <a href="../../../home/itihas/org-notebook/public/20250211162720-forgetting_curve.html#ID-ca8e4d7d-c78f-432b-bd57-b67690d33ac0">forgetting curve</a>.</li>
 <li>If you pass a recall test at time \(t\):
 <ul class="org-ul">
 <li>\(R\) jumps to 1.</li>
@@ -411,8 +411,8 @@ They represent solution points in a parent problem of scheduling events that opt
 </p>
 </div>
 </div>
-<div id="outline-container-org94a31b1" class="outline-2">
-<h2 id="org94a31b1"><span class="section-number-2">3.</span> metadata</h2>
+<div id="outline-container-orgf2f405c" class="outline-2">
+<h2 id="orgf2f405c"><span class="section-number-2">3.</span> metadata</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>mtimes</li>
@@ -427,8 +427,8 @@ They represent solution points in a parent problem of scheduling events that opt
 </ul>
 </div>
 </div>
-<div id="outline-container-orga830abc" class="outline-2">
-<h2 id="orga830abc"><span class="section-number-2">4.</span> algorithm</h2>
+<div id="outline-container-org28cde26" class="outline-2">
+<h2 id="org28cde26"><span class="section-number-2">4.</span> algorithm</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>calculate a standalone score based on when an SRS algorithm would show a card: this will only be used for ranking.</li>
@@ -436,16 +436,31 @@ They represent solution points in a parent problem of scheduling events that opt
 </ul>
 </div>
 </div>
-<div id="outline-container-org8c4d09c" class="outline-2">
-<h2 id="org8c4d09c"><span class="section-number-2">5.</span> Related:</h2>
+<div id="outline-container-org6acd4eb" class="outline-2">
+<h2 id="org6acd4eb"><span class="section-number-2">5.</span> Related:</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
-<li><a href="../20160525213000-reviewing_as_thinking_howtoremember_biz.html#ID-34e0bd60-a683-4f36-ac55-1799f57da198">Reviewing As Thinking | HowToRemember.biz</a></li>
+<li><a href="../../../home/itihas/org-notebook/20160525213000-reviewing_as_thinking_howtoremember_biz.html#ID-34e0bd60-a683-4f36-ac55-1799f57da198">Reviewing As Thinking | HowToRemember.biz</a></li>
 </ul>
 </div>
 </div>
-<p class="footpara">
-This node is a singleton!</p>
+<div id="outline-container-org518acfa" class="outline-2">
+<h2 id="org518acfa"><span class="section-number-2">6.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<ul class="org-ul">
+<li><a href="../../../home/itihas/org-notebook/bucket.html#ID-6f94644d-4a2f-4441-ac49-c6c263999406">Projects</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/the-virtue-of-drilling.html#ID-20fbc933-391f-41d6-93cb-991c56c1330e">The virtue of drilling</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/github_alraban_org_recoll_a_lightweight_emacs_org_mode_wrapper_for_the_recoll_full_text_search_engine.html#ID-4d818c12-1ade-4bc5-a2ba-0521add74de6">GitHub - alraban/org-recoll: A lightweight emacs org-mode wrapper for the recoll full-text search engine</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/20240908233908-api_first_or_algorithm.html#ID-504bfada-edde-4899-bdf9-d7c5dcf0f094">api first, or algorithm?</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/20240815103857-blogging_project.html#ID-72179240-24a0-4241-946f-0d1e3b91d2ec">blogging project</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/20210713120500-zettelkasten_is_about_developing_ideas_not_collecting_them.html#ID-05ad69bb-b3a2-4343-828a-068c4400f956">Zettelkasten is about developing ideas, not collecting them</a></li>
+<li><a href="../../../home/itihas/org-notebook/public/20210712224100-spaced_repetition_memory_prompts_should_connect_and_relate_ideas.html#ID-21146a2b-b96b-4978-aa86-dd604f7aba36">Spaced repetition memory prompts should connect and relate ideas</a></li>
+<li><a href="../../../home/itihas/org-notebook/daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
+<li><a href="../../../home/itihas/org-notebook/daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
+</ul>
+</div>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
@@ -459,7 +474,7 @@ perhaps even <i>emulating</i> it.
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-13 Wed 11:17</p>
+<p class="date">Created: 2025-08-14 Thu 15:18</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
