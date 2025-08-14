@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-14 Thu 15:18 -->
+<!-- 2025-08-14 Thu 16:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Early guesses at Toricelli's shape</title>
@@ -205,7 +205,7 @@ ID: b6b84d0a-2761-45bd-8b1a-32cf996f89a2
 </div><p>
 initial guess at a cost function:
 </p>
-<pre class="example" id="org5093f61">
+<pre class="example" id="org29fac39">
 srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
 </pre>
 <p>
@@ -215,8 +215,8 @@ treat srs<sub>score</sub> as the page weight for pagerank
 <p>
 sid's guess: put srs<sub>score</sub> as the damping factor
 </p>
-<div id="outline-container-orgc46372f" class="outline-2">
-<h2 id="orgc46372f"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
+<div id="outline-container-orgedee522" class="outline-2">
+<h2 id="orgedee522"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
@@ -226,8 +226,8 @@ sid's guess: put srs<sub>score</sub> as the damping factor
 </ul>
 </div>
 </div>
-<div id="outline-container-orge690aef" class="outline-2">
-<h2 id="orge690aef"><span class="section-number-2">2.</span> next guess</h2>
+<div id="outline-container-org24fa7b3" class="outline-2">
+<h2 id="org24fa7b3"><span class="section-number-2">2.</span> next guess</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
@@ -262,8 +262,8 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
-<div id="outline-container-org891fa04" class="outline-2">
-<h2 id="org891fa04"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
+<div id="outline-container-orgc2ea0f7" class="outline-2">
+<h2 id="orgc2ea0f7"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
@@ -320,32 +320,32 @@ go back computing Rt step
 </blockquote>
 
 <p>
-Easiness factor shares some semantic features with <a href="../../../home/itihas/org-notebook/public/frecency_wikipedia.html#ID-fcd47c46-e1c3-4d95-9092-c3b0e564f7f5">frecency</a>.
+Easiness factor shares some semantic features with <a href="frecency_wikipedia.html#ID-fcd47c46-e1c3-4d95-9092-c3b0e564f7f5">frecency</a>.
 </p>
 </div>
 </div>
-<div id="outline-container-org0741295" class="outline-2">
-<h2 id="org0741295"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
+<div id="outline-container-orga41f836" class="outline-2">
+<h2 id="orga41f836"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf5dd7c6" class="outline-2">
-<h2 id="orgf5dd7c6"><span class="section-number-2">5.</span> Backlinks</h2>
+<div id="outline-container-orga323c9a" class="outline-2">
+<h2 id="orga323c9a"><span class="section-number-2">5.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 <ul class="org-ul">
-<li><a href="../../../home/itihas/org-notebook/public/index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
-<li><a href="../../../home/itihas/org-notebook/daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../../../home/itihas/org-notebook/daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
+<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-14 Thu 15:18</p>
+<p class="date">Created: 2025-08-14 Thu 16:54</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
