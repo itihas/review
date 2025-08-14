@@ -9,18 +9,18 @@
      xmlns:georss="http://www.georss.org/georss"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:media="http://search.yahoo.com/mrss/"><channel>
-  <title>Recently Reviewed</title>
+  <title>itihas.recently.reviewed</title>
   <atom:link href="https://itihas.review/reviewed-feed.xml" rel="self" type="application/rss+xml" />
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 14 Aug 2025 19:17:04 +0000</pubDate>
-  <lastBuildDate>Thu, 14 Aug 2025 19:17:04 +0000</lastBuildDate>
+  <pubDate>Thu, 14 Aug 2025 19:21:23 +0000</pubDate>
+  <lastBuildDate>Thu, 14 Aug 2025 19:21:23 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
-    <url>https://itihas.review/home.jpg</url>
-    <title>Recently Reviewed</title>
+    <url>https://itihas.review/images/home.jpg</url>
+    <title>itihas.recently.reviewed</title>
     <link>https://itihas.review</link>
   </image>
 
