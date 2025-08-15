@@ -211,6 +211,29 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-description">
+<p>
+When running cycle-themes, I'd get prompted:
+</p>
+
+<blockquote>
+<p>
+The current server still has clients; delete them?
+</p>
+</blockquote>
+</div>
+<p>
+When running cycle-themes, I'd get prompted:
+</p>
+
+<blockquote>
+<p>
+The current server still has clients; delete them?
+</p>
+</blockquote>
+<p>
+The current server still has clients; delete them?
+</p>
 <div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being" class="outline-2">
 <h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being"><span class="section-number-2">2.</span> what it ended up being</h2>
 <div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being">
@@ -228,6 +251,32 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being">
+<p>
+makes a call to , which in turn runs:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(funcall (<span style="font-weight: bold;">or</span> (get variable 'custom-set) #'set-default) variable
+</pre>
+</div>
+
+<p>
+Some of the variables in question are also minor modes, among them . Which for some reason was set to <code>t</code> in Custom?
+</p>
+</div>
+<p>
+makes a call to , which in turn runs:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(funcall (<span style="font-weight: bold;">or</span> (get variable 'custom-set) #'set-default) variable
+</pre>
+</div>
+
+<p>
+Some of the variables in question are also minor modes, among them . Which for some reason was set to <code>t</code> in Custom?
+</p>
 <div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by" class="outline-2">
 <h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by"><span class="section-number-2">3.</span> fixed it by</h2>
 <div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by">
@@ -236,6 +285,14 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by">
+<p>
+removing that from custom. we were fine then.
+</p>
+</div>
+<p>
+removing that from custom. we were fine then.
+</p>
 <div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug" class="outline-2">
 <h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug"><span class="section-number-2">4.</span> things I did to debug</h2>
 <div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug">
@@ -244,6 +301,14 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug">
+<p>
+<code>M-x debug-on-entry enable-theme</code>, then step through the frames until the truly inexplicable moment happened where server-mode was being set to t.
+</p>
+</div>
+<p>
+<code>M-x debug-on-entry enable-theme</code>, then step through the frames until the truly inexplicable moment happened where server-mode was being set to t.
+</p>
 <div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks" class="outline-2">
 <h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks"><span class="section-number-2">5.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks">
@@ -252,6 +317,10 @@ removing that from custom. we were fine then.
 <li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
+</ul>
+<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
