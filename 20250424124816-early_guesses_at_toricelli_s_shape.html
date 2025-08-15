@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-14 Thu 19:21 -->
+<!-- 2025-08-15 Fri 09:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Early guesses at Toricelli's shape</title>
@@ -205,7 +205,7 @@ ID: b6b84d0a-2761-45bd-8b1a-32cf996f89a2
 </div><p>
 initial guess at a cost function:
 </p>
-<pre class="example" id="org67869d8">
+<pre class="example" id="org101a299">
 srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
 </pre>
 <p>
@@ -215,8 +215,8 @@ treat srs<sub>score</sub> as the page weight for pagerank
 <p>
 sid's guess: put srs<sub>score</sub> as the damping factor
 </p>
-<div id="outline-container-org3ce1a76" class="outline-2">
-<h2 id="org3ce1a76"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
+<div id="outline-container-org21d52e9" class="outline-2">
+<h2 id="org21d52e9"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
@@ -226,8 +226,8 @@ sid's guess: put srs<sub>score</sub> as the damping factor
 </ul>
 </div>
 </div>
-<div id="outline-container-org76f719c" class="outline-2">
-<h2 id="org76f719c"><span class="section-number-2">2.</span> next guess</h2>
+<div id="outline-container-org9a0c97c" class="outline-2">
+<h2 id="org9a0c97c"><span class="section-number-2">2.</span> next guess</h2>
 <div class="outline-text-2" id="text-2">
 <div class="org-src-container">
 <pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
@@ -262,8 +262,8 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
-<div id="outline-container-orge43932b" class="outline-2">
-<h2 id="orge43932b"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
+<div id="outline-container-orgeeb76b1" class="outline-2">
+<h2 id="orgeeb76b1"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
@@ -324,16 +324,16 @@ Easiness factor shares some semantic features with <a href="frecency_wikipedia.h
 </p>
 </div>
 </div>
-<div id="outline-container-orga8294c0" class="outline-2">
-<h2 id="orga8294c0"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
+<div id="outline-container-org29f00e6" class="outline-2">
+<h2 id="org29f00e6"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
 </p>
 </div>
 </div>
-<div id="outline-container-org0e3b368" class="outline-2">
-<h2 id="org0e3b368"><span class="section-number-2">5.</span> Backlinks</h2>
+<div id="outline-container-orgfa2535a" class="outline-2">
+<h2 id="orgfa2535a"><span class="section-number-2">5.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 <ul class="org-ul">
@@ -345,7 +345,7 @@ Did this! Claude got me started quite usefully, wrote the skeleton and a first g
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-14 Thu 19:21</p>
+<p class="date">Created: 2025-08-15 Fri 09:02</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
