@@ -197,56 +197,9 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Alur, Rajeev and Henzinger, Thomas A. and Kupferman, Orna , Alternating-Time Temporal Logic</h1>
-<pre class="example">
-ID: ece237c0-cc23-4868-97ec-6482b253051a
-ROAM_REFS: https://en.wikipedia.org/wiki/Alternating-time_Temporal_Logic @aluralternatingtime2002
-REVIEW_SCORE: 0.0
-MTIME: [2024-12-25 Wed 16:03]
-</pre>
-<p>
-Paper that describes alternating-time temporal logic.
-</p>
-
-<p>
-Alternating-time temporal logic is a logic which can express whether the coordinated action of a coalition of agents can enforce a given property of play. This is expressed as players navigating a state space to reach a state from which no futures that violate the property can be reached.
-</p>
-
-
-<p>
-A sentence in alternating-time temporal logic is structured as follows:
-</p>
-
-<p>
-&lt;coalition c&gt; can force &lt;LTL claim L&gt; 
-</p>
-
-<p>
-Which plays out semantically as
-</p>
-
-<p>
-there exists a partial strategy &sigma; consisting only of moves by members of c, such that for every state s' that &sigma; potentially reaches from the current state s, all histories beginning from s' obey L.
-</p>
-
-
-<p>
-ATL is modeled by concurrent game systems. It is satisfiable in PTIME. There exist variants, notably ATL*, which are only satisfiable in 2EXPTIME.
-</p>
-
-
-<p>
-The "alternation" desrcibes the proof strategy, which shows that given a specific coalition and a specific outcome they are trying to force, if there exists a coalitional strategy to force that outcome it can be found by treating the game as a 2-player game between the coalition and its complement and using more typical <a href="20230816195955-backwards_induction_reasoning.html#ID-5fcc0939-204f-4eac-bdee-6d5ca4e91a05">BIR</a> from there.
-</p>
-<div id="outline-container-org59d689a" class="outline-2">
-<h2 id="org59d689a"><span class="section-number-2">1.</span> from wikipedia</h2>
-<div class="outline-text-2" id="text-1">
-<pre class="example">
-CREATED: [2016-11-02 Wed 16:47]
-ID: f9f80d3c-1149-4fe5-9b81-698999868526
-REVIEW_SCORE: 0.0
-MTIME: [2025-01-21 Tue 12:25]
-</pre>
-
+<div id="outline-container-ece237c0-cc23-4868-97ec-6482b253051a-from-wikipedia" class="outline-2">
+<h2 id="ece237c0-cc23-4868-97ec-6482b253051a-from-wikipedia"><span class="section-number-2">1.</span> from wikipedia</h2>
+<div class="outline-text-2" id="text-ece237c0-cc23-4868-97ec-6482b253051a-from-wikipedia">
 <blockquote>
 <p>
 In computer science, Alternating-time Temporal Logic, or ATL, is a branching-time temporal logic that naturally describes computations of multi-agent system and multiplayer games. It offers selective quantification over program-paths that are possible outcomes of games. ATL uses alternating-time formulas to construct model-checkers in order to address problems such as receptiveness, realizability, and controllability.
@@ -266,9 +219,9 @@ In computer science, Alternating-time Temporal Logic, or ATL, is a branching-tim
 </p>
 </div>
 </div>
-<div id="outline-container-org2b6a527" class="outline-2">
-<h2 id="org2b6a527"><span class="section-number-2">2.</span> earlier note</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-ece237c0-cc23-4868-97ec-6482b253051a-earlier-note" class="outline-2">
+<h2 id="ece237c0-cc23-4868-97ec-6482b253051a-earlier-note"><span class="section-number-2">2.</span> earlier note</h2>
+<div class="outline-text-2" id="text-ece237c0-cc23-4868-97ec-6482b253051a-earlier-note">
 <p>
 An <i>extremely complete</i> model of games, capable of expressing essentially whatever you want it to. Essentially CTL parametrized with actors, coalitions, and enforcements. Forcing (whose relationship with games is touched upon in the logic and game stanford encyclopedia article linked in this same bucket) becomes easy to understand via the sound allegory that this language provides.
 </p>
@@ -278,9 +231,9 @@ In order to nest ATL arbitrarily (which is called ATL*), one needs to jump up in
 </p>
 </div>
 </div>
-<div id="outline-container-org936d17a" class="outline-2">
-<h2 id="org936d17a"><span class="section-number-2">3.</span> Backlinks</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-ece237c0-cc23-4868-97ec-6482b253051a-backlinks" class="outline-2">
+<h2 id="ece237c0-cc23-4868-97ec-6482b253051a-backlinks"><span class="section-number-2">3.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-ece237c0-cc23-4868-97ec-6482b253051a-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="../20230816204034-dominance_mediated_atl.html#ID-6c536245-cf2b-4752-bf29-48c51b284aaa">dominance-mediated ATL</a></li>

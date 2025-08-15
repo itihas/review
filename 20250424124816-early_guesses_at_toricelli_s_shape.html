@@ -197,25 +197,9 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Early guesses at Toricelli's shape</h1>
-<pre class="example">
-ID: b6b84d0a-2761-45bd-8b1a-32cf996f89a2
-</pre>
-<p>
-initial guess at a cost function:
-</p>
-<pre class="example" id="orgf9517fa">
-srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
-</pre>
-<p>
-treat srs<sub>score</sub> as the page weight for pagerank
-</p>
-
-<p>
-sid's guess: put srs<sub>score</sub> as the damping factor
-</p>
-<div id="outline-container-orgba2cfb4" class="outline-2">
-<h2 id="orgba2cfb4"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer" class="outline-2">
+<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer"><span class="section-number-2">1.</span> alternative: supermemo as the "outer loop"</h2>
+<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">
 <ul class="org-ul">
 <li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
 <ul class="org-ul">
@@ -224,9 +208,9 @@ sid's guess: put srs<sub>score</sub> as the damping factor
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbd0a568" class="outline-2">
-<h2 id="orgbd0a568"><span class="section-number-2">2.</span> next guess</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess" class="outline-2">
+<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess"><span class="section-number-2">2.</span> next guess</h2>
+<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">
 <div class="org-src-container">
 <pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
 </pre>
@@ -260,9 +244,9 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
-<div id="outline-container-org93b75f9" class="outline-2">
-<h2 id="org93b75f9"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various" class="outline-2">
+<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various"><span class="section-number-2">3.</span> for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
+<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">
 <div class="org-src-container">
 <pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
 sm_2 q n EF I := 
@@ -322,17 +306,17 @@ Easiness factor shares some semantic features with <a href="frecency_wikipedia.h
 </p>
 </div>
 </div>
-<div id="outline-container-org2c9575f" class="outline-2">
-<h2 id="org2c9575f"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the" class="outline-2">
+<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the"><span class="section-number-2">4.</span> note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
+<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">
 <p>
 Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
 </p>
 </div>
 </div>
-<div id="outline-container-org6127c93" class="outline-2">
-<h2 id="org6127c93"><span class="section-number-2">5.</span> Backlinks</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks" class="outline-2">
+<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks"><span class="section-number-2">5.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>

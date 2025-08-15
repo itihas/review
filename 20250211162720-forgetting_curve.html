@@ -193,106 +193,13 @@
   .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
-
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">The Forgetting Curve</h1>
-<pre class="example">
-ID: ca8e4d7d-c78f-432b-bd57-b67690d33ac0
-ROAM_REFS: https://en.wikipedia.org/wiki/Forgetting_curve
-REVIEW_SCORE: 2.0
-MTIME: [2025-02-12 Wed 21:46],[2025-02-12 Wed 19:51]
-</pre>
-<p>
-Hypothesis: there exists a rate of forgetting, and it can be mapped through time.
-</p>
-
-<p>
-We can only ever test <i>recall</i> - can you pass a test of memory (whatever that is), or can't you? The thing is, <a href="strengthening-the-student-toolbox.html#ID-64c30fd4-842f-4d79-9d4e-ad835418c8f9">testing is one of the most effective ways to <i>promote</i> recall</a>, meaning  that there's a very strong observer effect to this test. You've got to design your experiment, and your theory, in a way that's aware of this.
-</p>
-
-<p>
-That we know testing promotes recall at all suggests, poetically, a "use it or lose it" principle - a hypothesis that <a href="20250211163831-recall_measures_instrumentality.html#ID-fc8a8d6b-aa51-48df-943b-03d195b91a03">recall measures instrumentality</a>.
-</p>
-
-<p>
-We know that <a href="strengthening-the-student-toolbox.html#ID-3ad979d9-27db-47be-9c5d-20f42f6facf0">distributed practice</a> is better than overlearning - that is, spreading practice out over time promotes recall. So time <i>is</i> a factor in promoting recall.
-</p>
-
-<p>
-Forgetting, definitionally, also happens over time. The hypothesis that you lose information that you don't try to retain it seems self evident, and the idea that you can measure and map it similarly follows.
-</p>
-
-<p>
-Nice classical scientific modeling question: to measure the "forgetting curve" you have to set up a trial, vary the variable of interest (time), and control for everything else.
-</p>
-
-<p>
-We turn to Hermann Ebbinghaus, the originator of the concept, who ran a small-scale study on himself and came up with an equation that modeled how his recall behaved while memorising random strings of nonsense syllables:
-</p>
-
-\begin{equation}
-b = \frac{100k}{(log(t))^c + k}
-\end{equation}
-
-<p>
-where \(b\) is "savings" or time saved in memorising a string the second time around, \(t\) is time in minutes, and \(c, k\) are constants.
-</p>
-
-<p>
-<a href="20240819164946-spaced_repetition.html#ID-4ed6481b-11a2-4149-b565-3f4e11e06623">spaced repetition</a> software sets up a different experimental structure: the trail (a flashcard) is set to show up at an interval that represents the model's best guess at "greatest savings".  We can gauge the model to be accurate based on how well it works - does it converge to remembering distant cards indefinitely?
-</p>
-
-<p>
-Wikipedia gives us a "simplest model" of the decay:
-</p>
-
-\begin{equation}
-R = e^{-t/s}
-\end{equation}
-
-<p>
-where \(R\) is retrievability (subjective score of how easy a card was is the proxy used in SRS software), \(t\) is time, and \(S\) is stability of memory.wozniakTwoComponentsLongterm1995(need to read that to develop this idea further).
-</p>
-
-<p>
-A really good, classic example of science under experimental poverty.
-</p>
-<div id="outline-container-org3e6460d" class="outline-2">
-<h2 id="org3e6460d"><span class="section-number-2">1.</span> Backlinks</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-ca8e4d7d-c78f-432b-bd57-b67690d33ac0-backlinks" class="outline-2">
+<h2 id="ca8e4d7d-c78f-432b-bd57-b67690d33ac0-backlinks"><span class="section-number-2">1.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-ca8e4d7d-c78f-432b-bd57-b67690d33ac0-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="20240905120229-toricelli.html#ID-4a46861d-3f4b-4e3d-8ed1-8e1d43cb5e14">Toricelli</a></li>

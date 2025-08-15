@@ -197,13 +197,9 @@
 <body>
 <div id="content" class="content">
 <h1 class="title"><code>cycle-themes</code> kill buffers bug</h1>
-<pre class="example">
-ID: a63d8580-c6d4-432d-ba4a-0893e324d2a1
-MTIME: [2024-12-25 Wed 16:06]
-</pre>
-<div id="outline-container-org64dd1fd" class="outline-2">
-<h2 id="org64dd1fd"><span class="section-number-2">1.</span> description</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-description" class="outline-2">
+<h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-description"><span class="section-number-2">1.</span> description</h2>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-description">
 <p>
 When running cycle-themes, I'd get prompted:
 </p>
@@ -215,9 +211,9 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org0fbb132" class="outline-2">
-<h2 id="org0fbb132"><span class="section-number-2">2.</span> what it ended up being</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being" class="outline-2">
+<h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being"><span class="section-number-2">2.</span> what it ended up being</h2>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-what-it-ended-up-being">
 <p>
 makes a call to , which in turn runs:
 </p>
@@ -232,35 +228,25 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
-<div id="outline-container-org8c152e5" class="outline-2">
-<h2 id="org8c152e5"><span class="section-number-2">3.</span> fixed it by</h2>
-<div class="outline-text-2" id="text-3">
-<pre class="example">
-REVIEW_SCORE: 0.0541875
-MTIME: [2024-12-25 Wed 16:06]
-</pre>
-
+<div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by" class="outline-2">
+<h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by"><span class="section-number-2">3.</span> fixed it by</h2>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-fixed-it-by">
 <p>
 removing that from custom. we were fine then.
 </p>
 </div>
 </div>
-<div id="outline-container-orgda36229" class="outline-2">
-<h2 id="orgda36229"><span class="section-number-2">4.</span> things I did to debug</h2>
-<div class="outline-text-2" id="text-4">
-<pre class="example">
-ID: eaacbcd9-ddd3-4d57-a7d9-bc92a425d01c
-MTIME: [2025-01-21 Tue 12:25]
-</pre>
-
+<div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug" class="outline-2">
+<h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug"><span class="section-number-2">4.</span> things I did to debug</h2>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-things-i-did-to-debug">
 <p>
 <code>M-x debug-on-entry enable-theme</code>, then step through the frames until the truly inexplicable moment happened where server-mode was being set to t.
 </p>
 </div>
 </div>
-<div id="outline-container-org6093556" class="outline-2">
-<h2 id="org6093556"><span class="section-number-2">5.</span> Backlinks</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks" class="outline-2">
+<h2 id="a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks"><span class="section-number-2">5.</span> Backlinks</h2>
+<div class="outline-text-2" id="text-a63d8580-c6d4-432d-ba4a-0893e324d2a1-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
