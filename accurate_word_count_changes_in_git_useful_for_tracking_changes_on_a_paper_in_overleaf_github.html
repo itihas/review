@@ -3,7 +3,6 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-15 Fri 09:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Accurate word count changes in git, useful for tracking changes on a paper in overleaf · GitHub</title>
@@ -198,14 +197,13 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Accurate word count changes in git, useful for tracking changes on a paper in overleaf · GitHub</h1>
-<div class="content">
 <pre class="example">
 ID: 1b19a824-8f72-4256-9de9-3341ca3b5520
 ROAM_REFS: https://gist.github.com/MilesCranmer/5c7d86c8740219355d2dfdb184910711
 MTIME: [2025-07-05 Sat 22:50],[2025-01-25 Sat 19:48]
 REVIEW_SCORE: 5.0
 </pre>
-</div><div class="org-src-container">
+<div class="org-src-container">
 <pre class="src src-bash">  <span style="font-weight: bold; font-style: italic;">total</span>=0
 <span style="font-weight: bold;">for</span> sha<span style="font-weight: bold;"> in</span> $(<span style="font-weight: bold;">git rev-list --since="6am" master | sed -e '$ d'</span>); <span style="font-weight: bold;">do</span>
     <span style="font-weight: bold; font-style: italic;">added</span>=$(<span style="font-weight: bold;">git diff --word-diff=porcelain $sha~1..$sha|grep -e"^+[^+]"|wc -w|xargs</span>)
@@ -233,8 +231,8 @@ REVIEW_SCORE: 5.0
 <p>
 Counts words changed per commit. Very cool!
 </p>
-<div id="outline-container-org9d5b984" class="outline-2">
-<h2 id="org9d5b984"><span class="section-number-2">1.</span> Backlinks</h2>
+<div id="outline-container-org4bb144e" class="outline-2">
+<h2 id="org4bb144e"><span class="section-number-2">1.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <ul class="org-ul">
@@ -244,7 +242,6 @@ Counts words changed per commit. Very cool!
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-15 Fri 09:14</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

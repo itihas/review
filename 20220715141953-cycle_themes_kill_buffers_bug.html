@@ -3,7 +3,6 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-15 Fri 09:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>=cycle-themes= kill buffers bug</title>
@@ -198,14 +197,12 @@
 <body>
 <div id="content" class="content">
 <h1 class="title"><code>cycle-themes</code> kill buffers bug</h1>
-<div class="content">
 <pre class="example">
 ID: a63d8580-c6d4-432d-ba4a-0893e324d2a1
 MTIME: [2024-12-25 Wed 16:06]
 </pre>
-</div>
-<div id="outline-container-org94cf496" class="outline-2">
-<h2 id="org94cf496"><span class="section-number-2">1.</span> description</h2>
+<div id="outline-container-orga05d793" class="outline-2">
+<h2 id="orga05d793"><span class="section-number-2">1.</span> description</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 When running cycle-themes, I'd get prompted:
@@ -218,8 +215,8 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
-<div id="outline-container-orgb97cb38" class="outline-2">
-<h2 id="orgb97cb38"><span class="section-number-2">2.</span> what it ended up being</h2>
+<div id="outline-container-orgcf2ada5" class="outline-2">
+<h2 id="orgcf2ada5"><span class="section-number-2">2.</span> what it ended up being</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 makes a call to , which in turn runs:
@@ -235,36 +232,34 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
-<div id="outline-container-org711aac1" class="outline-2">
-<h2 id="org711aac1"><span class="section-number-2">3.</span> fixed it by</h2>
+<div id="outline-container-orgca960e0" class="outline-2">
+<h2 id="orgca960e0"><span class="section-number-2">3.</span> fixed it by</h2>
 <div class="outline-text-2" id="text-3">
-<div class="content">
 <pre class="example">
 REVIEW_SCORE: 0.0541875
 MTIME: [2024-12-25 Wed 16:06]
 </pre>
 
-</div><p>
+<p>
 removing that from custom. we were fine then.
 </p>
 </div>
 </div>
-<div id="outline-container-org2d53895" class="outline-2">
-<h2 id="org2d53895"><span class="section-number-2">4.</span> things I did to debug</h2>
+<div id="outline-container-org98e80f2" class="outline-2">
+<h2 id="org98e80f2"><span class="section-number-2">4.</span> things I did to debug</h2>
 <div class="outline-text-2" id="text-4">
-<div class="content">
 <pre class="example">
 ID: eaacbcd9-ddd3-4d57-a7d9-bc92a425d01c
 MTIME: [2025-01-21 Tue 12:25]
 </pre>
 
-</div><p>
+<p>
 <code>M-x debug-on-entry enable-theme</code>, then step through the frames until the truly inexplicable moment happened where server-mode was being set to t.
 </p>
 </div>
 </div>
-<div id="outline-container-org3cdb456" class="outline-2">
-<h2 id="org3cdb456"><span class="section-number-2">5.</span> Backlinks</h2>
+<div id="outline-container-org12cfdee" class="outline-2">
+<h2 id="org12cfdee"><span class="section-number-2">5.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 <ul class="org-ul">
@@ -274,7 +269,6 @@ MTIME: [2025-01-21 Tue 12:25]
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
-<p class="date">Created: 2025-08-15 Fri 09:15</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
