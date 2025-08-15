@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 15 Aug 2025 09:02:44 +0000</pubDate>
-  <lastBuildDate>Fri, 15 Aug 2025 09:02:44 +0000</lastBuildDate>
+  <pubDate>Fri, 15 Aug 2025 09:15:11 +0000</pubDate>
+  <lastBuildDate>Fri, 15 Aug 2025 09:15:11 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,24 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>caching, sandboxing, heterogeneity -- pick any two</title>
+    <link>https://itihas.review/20250815143411-caching_sandboxing_heterogeneity_pick_any_two.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250815143411-caching_sandboxing_heterogeneity_pick_any_two.html</guid>
+    <pubDate>Fri, 15 Aug 2025 14:40:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>versioning over well-typed edits is a 2-category.</title>
+    <link>https://itihas.review/20161102200300-unison_2_category_thing.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20161102200300-unison_2_category_thing.html</guid>
+    <pubDate>Fri, 15 Aug 2025 14:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>We Just Have to Set Up the Planetary Dev Environment</title>
     <link>https://itihas.review/we_just_have_to_set_up_the_planetary_dev_environment.html</link>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20240819181857-software_defined_networks.html</guid>
     <pubDate>Tue, 25 Feb 2025 14:12:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>adjust your seat</title>
-    <link>https://itihas.review/20210721200800-cfar_modules.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20210721200800-cfar_modules.html</guid>
-    <pubDate>Tue, 25 Feb 2025 12:43:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>decompose your goals, synthesise your strategies</title>
-    <link>https://itihas.review/20250214174736-decompose_your_goals_synthesise_your_strategies.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250214174736-decompose_your_goals_synthesise_your_strategies.html</guid>
-    <pubDate>Fri, 14 Feb 2025 18:09:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
