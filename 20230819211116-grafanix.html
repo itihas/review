@@ -216,25 +216,6 @@ All in all, a profoundly educational experience: I learned a lot about what I ne
 <p>
 Made me want to wirte my own <a href="20230821115339-metrics_dashboard.html#ID-f4e14b80-45c0-486c-bd25-9aad874d0398">metrics dashboard</a> siutation.
 </p>
-<p>
-Project to programmatically generate  grafana dashboards using the nix programming language, and provision grafana instances with them. Shitty boilerplate antipatterns surfaced, and I didn't understand why. What went wrong?
-</p>
-
-<p>
-Grafana expects dashboards to be configured using JSON - but different dashboard elements - for instance, different panel types or variable types - expect JSON objects with different data in them, and use that data differently. Nowhere are these expectations all documented - you have to go look at the defaults that get populated when creating those elements from the UI, and infer from those what the expectations are. This is stupid. I want autodoc. I just want types goddammit.
-</p>
-
-<p>
-In the process of writing the damn gluey mess I also inevitably had to interface with grafana's horrendous slowness. There has to be a better way to render these graphs than what it's doing. There just has to be.
-</p>
-
-<p>
-All in all, a profoundly educational experience: I learned a lot about what I need and want software to do.
-</p>
-
-<p>
-Made me want to wirte my own <a href="20230821115339-metrics_dashboard.html#ID-f4e14b80-45c0-486c-bd25-9aad874d0398">metrics dashboard</a> siutation.
-</p>
 <div id="outline-container-fbfb8f83-d877-4ca2-ae79-f68ae40c88f3-backlinks" class="outline-2">
 <h2 id="fbfb8f83-d877-4ca2-ae79-f68ae40c88f3-backlinks"><span class="section-number-2">1.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-fbfb8f83-d877-4ca2-ae79-f68ae40c88f3-backlinks">
@@ -242,8 +223,6 @@ Made me want to wirte my own <a href="20230821115339-metrics_dashboard.html#ID-f
 <ul class="org-ul">
 </ul>
 </div>
-<ul class="org-ul">
-</ul>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>

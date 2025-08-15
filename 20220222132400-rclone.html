@@ -207,30 +207,6 @@ Rclone is a command line program to manage files on cloud storage. It is a featu
 
 
 <p>
-So the thing about rclone is, it solves a problem you really really wish was generally solved, until you have the solution and realize that it sucks.
-</p>
-
-<p>
-Sure, let's have a FUSE interface with literally any data storage system you could think to use, anywhere!
-</p>
-
-<p>
-Except that you really really wnat a filesystem to be <i>well behaved</i> in the way local filesystems are. A lot of tooling built on top of the filesystem idiom does not expect to face problems like a dropped network connection, or bandwidth limitations, or even i/o performance and cost being too far away from how hard drives and SSDs behave. Rclone takes what responsibility it can for keeping track of the connection state, and this helps the kernel not panic but nothing else. Rclone taught me that software is better off knowing that it's talking to a networked device.
-</p>
-
-<p>
-tl;dr Jellyfin connected to an rclone drive will hang, and this is mostly not Jellyfin's fault.
-</p>
-<blockquote>
-<p>
-About rclone
-Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp; consumer file storage services, as well as standard transfer protocols.
-</p>
-</blockquote>
-
-
-
-<p>
 About rclone
 Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp; consumer file storage services, as well as standard transfer protocols.
 </p>
@@ -261,14 +237,6 @@ tl;dr Jellyfin connected to an rclone drive will hang, and this is mostly not Je
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="20240822173013-data_storage.html#ID-b30bc505-d1e1-4743-aaed-b1211f9fe27d">Data storage</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-</ul>
-<li><a href="20240822173013-data_storage.html#ID-b30bc505-d1e1-4743-aaed-b1211f9fe27d">Data storage</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>

@@ -232,9 +232,6 @@
 <p>
 Reading the introductory section of this on Ed's recommendation for a quick overview of probability theory, i.e. just section 1.1. Running ntoes for now, expansion as warranted.
 </p>
-<p>
-Reading the introductory section of this on Ed's recommendation for a quick overview of probability theory, i.e. just section 1.1. Running ntoes for now, expansion as warranted.
-</p>
 <div id="outline-container-f3aafe51-24e4-491c-9ee1-e809df4261b8-opening-remarks" class="outline-2">
 <h2 id="f3aafe51-24e4-491c-9ee1-e809df4261b8-opening-remarks"><span class="section-number-2">1.</span> opening remarks</h2>
 <div class="outline-text-2" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-opening-remarks">
@@ -242,11 +239,6 @@ Reading the introductory section of this on Ed's recommendation for a quick over
 assuming familiarity with measure theoy, eh? okay, let's see how badly this screws us over.
 </p>
 </div>
-</div>
-<div class="outline-text-2" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-opening-remarks">
-<p>
-assuming familiarity with measure theoy, eh? okay, let's see how badly this screws us over.
-</p>
 </div>
 <p>
 assuming familiarity with measure theoy, eh? okay, let's see how badly this screws us over.
@@ -422,39 +414,11 @@ A probability measure is a measure with \(\mu(\Sigma) = 1\).
 </p>
 </div>
 </div>
-<div class="outline-text-3" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-what-is-a-measure">
 <p>
 Suppose a \(\sigma\)-algebra \(\Sigma\) over \(X\) . A measure is a function \(\mu: \Sigma \to \bb{R}\), with the following properties:
 </p>
-<ul class="org-ul">
-<li>non-negativity: for all \(E \in \Sigma, \mu(E) \ge 0\)</li>
-<li>\(\mu(\emptyset) = 0\)</li>
-<li>countable additivity: for all countable collections \(\{E_k\}_{k=1}^{\infty}\) of pairwise disjoint sets in in \(\Sigma\), \(\mu(\bigcup_{k=1}^{\infty}E_k) = \sum_{k=0}^{\infty}\mu(E_k)\)</li>
-</ul>
-
-<p>
-\((X, \Sigma)\) is called a measurable space. Members of &Sigma; are measurable sets.
-\((X, \Sigma, \mu)\) is a measure space.
-</p>
-
-<p>
-A probability measure is a measure with \(\mu(\Sigma) = 1\). 
-</p>
-</div>
-<p>
-Suppose a \(\sigma\)-algebra \(\Sigma\) over \(X\) . A measure is a function \(\mu: \Sigma \to \bb{R}\), with the following properties:
-</p>
-<ul class="org-ul">
-<li>non-negativity: for all \(E \in \Sigma, \mu(E) \ge 0\)</li>
-<li>\(\mu(\emptyset) = 0\)</li>
-<li>countable additivity: for all countable collections \(\{E_k\}_{k=1}^{\infty}\) of pairwise disjoint sets in in \(\Sigma\), \(\mu(\bigcup_{k=1}^{\infty}E_k) = \sum_{k=0}^{\infty}\mu(E_k)\)</li>
-</ul>
-
-<li>non-negativity: for all \(E \in \Sigma, \mu(E) \ge 0\)</li>
 non-negativity: for all \(E \in \Sigma, \mu(E) \ge 0\)
-<li>\(\mu(\emptyset) = 0\)</li>
 \(\mu(\emptyset) = 0\)
-<li>countable additivity: for all countable collections \(\{E_k\}_{k=1}^{\infty}\) of pairwise disjoint sets in in \(\Sigma\), \(\mu(\bigcup_{k=1}^{\infty}E_k) = \sum_{k=0}^{\infty}\mu(E_k)\)</li>
 countable additivity: for all countable collections \(\{E_k\}_{k=1}^{\infty}\) of pairwise disjoint sets in in \(\Sigma\), \(\mu(\bigcup_{k=1}^{\infty}E_k) = \sum_{k=0}^{\infty}\mu(E_k)\)
 <p>
 \((X, \Sigma)\) is called a measurable space. Members of &Sigma; are measurable sets.
@@ -492,83 +456,17 @@ Why?
 </p>
 </div>
 </div>
-<div class="outline-text-3" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-notation">
 <p>
 This is the wikipedia definition. Tao uses \((\Omega, \mathcal{B}, \mathbb{P})\) instead of \( (X, \Sigma, \mu)\):
 </p>
 
-<ul class="org-ul">
-<li>sample space \(\Omega\)</li>
-<li>\(\mathcal{B}\) , a \(\sigma\)-algebra over \(\Omega\)
-<ul class="org-ul">
-<li>We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i></li>
-</ul></li>
-<li>Probability measure \(\mathbb(P)\) on the sample space:
-<ul class="org-ul">
-<li>\(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event</li>
-<li>\(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b></li>
-<li>\(\mathbb{P}\) is <b>countably additive</b>.</li>
-<li>\(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.</li>
-</ul></li>
-</ul>
-
-<p>
-We'll notate elements of \(\Omega\) as \(\omega\), but want to avoid referring to these directly as much as possible.
-Why?
-</p>
-</div>
-<p>
-This is the wikipedia definition. Tao uses \((\Omega, \mathcal{B}, \mathbb{P})\) instead of \( (X, \Sigma, \mu)\):
-</p>
-
-<ul class="org-ul">
-<li>sample space \(\Omega\)</li>
-<li>\(\mathcal{B}\) , a \(\sigma\)-algebra over \(\Omega\)
-<ul class="org-ul">
-<li>We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i></li>
-</ul></li>
-<li>Probability measure \(\mathbb(P)\) on the sample space:
-<ul class="org-ul">
-<li>\(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event</li>
-<li>\(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b></li>
-<li>\(\mathbb{P}\) is <b>countably additive</b>.</li>
-<li>\(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.</li>
-</ul></li>
-</ul>
-
-<li>sample space \(\Omega\)</li>
 sample space \(\Omega\)
-<li>\(\mathcal{B}\) , a \(\sigma\)-algebra over \(\Omega\)
-<ul class="org-ul">
-<li>We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i></li>
-</ul></li>
 \(\mathcal{B}\) , a \(\sigma\)-algebra over \(\Omega\)
-<ul class="org-ul">
-<li>We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i></li>
-</ul>
-<li>We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i></li>
 We'll call subsets of \(\Omega\), i.e. members of \(\mathcal{B}\), <i>events</i>
-<li>Probability measure \(\mathbb(P)\) on the sample space:
-<ul class="org-ul">
-<li>\(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event</li>
-<li>\(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b></li>
-<li>\(\mathbb{P}\) is <b>countably additive</b>.</li>
-<li>\(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.</li>
-</ul></li>
 Probability measure \(\mathbb(P)\) on the sample space:
-<ul class="org-ul">
-<li>\(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event</li>
-<li>\(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b></li>
-<li>\(\mathbb{P}\) is <b>countably additive</b>.</li>
-<li>\(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.</li>
-</ul>
-<li>\(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event</li>
 \(E \mapsto \mathbb{P}(E)\) where \(E \subset \Omega\) i.e. E is an event
-<li>\(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b></li>
 \(\mathbb{P}(E) \in [0,1]\) - <b>non-negativity</b>
-<li>\(\mathbb{P}\) is <b>countably additive</b>.</li>
 \(\mathbb{P}\) is <b>countably additive</b>.
-<li>\(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.</li>
 \(\mathbb{P}(Omega) = 1\)  - together with coutable additivity, implies \mathbb{P}(&empty;) = 0.
 <p>
 We'll notate elements of \(\Omega\) as \(\omega\), but want to avoid referring to these directly as much as possible.
@@ -648,7 +546,6 @@ not preserved:
 </div>
 </div>
 </div>
-<div class="outline-text-3" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-probability-theory-studies-properties-of">
 <p>
 We avoid referring to elememnts of &Omega; directly because we're trying to study the type family of probability measures, and especially <i>extensions</i> of the measure space.
 </p>
@@ -656,46 +553,7 @@ We avoid referring to elememnts of &Omega; directly because we're trying to stud
 <p>
 \((\Omega^0, \mathcal{B}^0, \mathbb{P}^0)\)  extends \((\Omega, \mathcal{B}, \mathbb{P})\)  if there exists surjective map \(\pi: \Omega^0 \to \Omega\) that is
 </p>
-<ul class="org-ul">
-<li><i>measurable</i>, i.e.\(\pi^{-1} (E) \in \mathcal{B}^0\) for every \(E \in \mathcal{B}\)</li>
-<li><i>probability preserving</i>, i.e. \(\mathbb{P}^0(\pi^{-1}(E)) = \mathbb{P}(E)\) for every \(E \ in mathcal{B}\)</li>
-</ul>
-
-<p>
-\(\pi\) ends up identifying every event \(E \in \mathcal{B}\) with a \(\pi^{-1}(E \in \mathcal{B}^0\).
-</p>
-
-<p>
-<a href="https://almostsuremath.com/2023/06/11/probability-space-extensions-and-relative-products/">alternate source for this</a> calls &pi; a <i>probability preserving measurable map</i>.
-</p>
-
-<p>
-(there's what appears to be a minor abuse of terminology that seems common here, where \(\pi : \Omega^0 \to \Omega\) but \(\pi^{-1}\) is applied to events E, not samples \(\omega\). This is just asking for a preimage made by a surjective function, so I guess that's okay. That's how the blog entry seems to use \(\pi\), anyway.)
-</p>
-
-<p>
-We mostly therefore want to frame our explorations and conclusions in terms of the bits that will let us generalize  \(\Omega\).
-</p>
-
-<p>
-If we fail to do this, let's consider it as no longer doing probability theory. This subject is demarcated by the type family; once you're looking at properties of a specific member that don't generalize across extensions, you're looking at a different thing. In other words, this is our invariance.
-</p>
-</div>
-<p>
-We avoid referring to elememnts of &Omega; directly because we're trying to study the type family of probability measures, and especially <i>extensions</i> of the measure space.
-</p>
-
-<p>
-\((\Omega^0, \mathcal{B}^0, \mathbb{P}^0)\)  extends \((\Omega, \mathcal{B}, \mathbb{P})\)  if there exists surjective map \(\pi: \Omega^0 \to \Omega\) that is
-</p>
-<ul class="org-ul">
-<li><i>measurable</i>, i.e.\(\pi^{-1} (E) \in \mathcal{B}^0\) for every \(E \in \mathcal{B}\)</li>
-<li><i>probability preserving</i>, i.e. \(\mathbb{P}^0(\pi^{-1}(E)) = \mathbb{P}(E)\) for every \(E \ in mathcal{B}\)</li>
-</ul>
-
-<li><i>measurable</i>, i.e.\(\pi^{-1} (E) \in \mathcal{B}^0\) for every \(E \in \mathcal{B}\)</li>
 <i>measurable</i>, i.e.\(\pi^{-1} (E) \in \mathcal{B}^0\) for every \(E \in \mathcal{B}\)
-<li><i>probability preserving</i>, i.e. \(\mathbb{P}^0(\pi^{-1}(E)) = \mathbb{P}(E)\) for every \(E \ in mathcal{B}\)</li>
 <i>probability preserving</i>, i.e. \(\mathbb{P}^0(\pi^{-1}(E)) = \mathbb{P}(E)\) for every \(E \ in mathcal{B}\)
 <p>
 \(\pi\) ends up identifying every event \(E \in \mathcal{B}\) with a \(\pi^{-1}(E \in \mathcal{B}^0\).
@@ -744,89 +602,19 @@ not preserved:
 </ul>
 </div>
 </div>
-<div class="outline-text-4" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-what-is-preserved-under-extension">
 <p>
 preserved:
 </p>
-<ul class="org-ul">
-<li>\(\mathbb{P}(E)\)</li>
-<li>\(E ?= \emptyset\)</li>
-<li>\(E ?= F\)
-<ul class="org-ul">
-<li>notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul></li>
-<li>could you drop surjectivity and still have the map be measurable and probability-preserving?</li>
-</ul></li>
-<li>\(\cup, \cap, \complement\)</li>
-</ul>
-
-<p>
-not preserved:
-</p>
-<ul class="org-ul">
-<li>cardinality of an event - e.g. \(\Omega = {1...6}  , \Omega^0 = {1...6} \times {1...6}\) when you "add a die"</li>
-</ul>
-</div>
-<p>
-preserved:
-</p>
-<ul class="org-ul">
-<li>\(\mathbb{P}(E)\)</li>
-<li>\(E ?= \emptyset\)</li>
-<li>\(E ?= F\)
-<ul class="org-ul">
-<li>notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul></li>
-<li>could you drop surjectivity and still have the map be measurable and probability-preserving?</li>
-</ul></li>
-<li>\(\cup, \cap, \complement\)</li>
-</ul>
-
-<li>\(\mathbb{P}(E)\)</li>
 \(\mathbb{P}(E)\)
-<li>\(E ?= \emptyset\)</li>
 \(E ?= \emptyset\)
-<li>\(E ?= F\)
-<ul class="org-ul">
-<li>notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul></li>
-<li>could you drop surjectivity and still have the map be measurable and probability-preserving?</li>
-</ul></li>
 \(E ?= F\)
-<ul class="org-ul">
-<li>notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul></li>
-<li>could you drop surjectivity and still have the map be measurable and probability-preserving?</li>
-</ul>
-<li>notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul></li>
 notice that this needs surjectivity. why?
-<ul class="org-ul">
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
-</ul>
-<li>otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).</li>
 otherwise there might be an\(\omega \in \Omega\) s.t. \(E \cupdot F = \{\omega\}\), but \(\pi^{-1}\{\omega\} = \emptyset\) and so \(\pi^{-1} E = \pi^{-1} F\) even though \(E \neq F\).
-<li>could you drop surjectivity and still have the map be measurable and probability-preserving?</li>
 could you drop surjectivity and still have the map be measurable and probability-preserving?
-<li>\(\cup, \cap, \complement\)</li>
 \(\cup, \cap, \complement\)
 <p>
 not preserved:
 </p>
-<ul class="org-ul">
-<li>cardinality of an event - e.g. \(\Omega = {1...6}  , \Omega^0 = {1...6} \times {1...6}\) when you "add a die"</li>
-</ul>
-<li>cardinality of an event - e.g. \(\Omega = {1...6}  , \Omega^0 = {1...6} \times {1...6}\) when you "add a die"</li>
 cardinality of an event - e.g. \(\Omega = {1...6}  , \Omega^0 = {1...6} \times {1...6}\) when you "add a die"
 <div id="outline-container-f3aafe51-24e4-491c-9ee1-e809df4261b8-notation-to-reflect-leaving-the" class="outline-4">
 <h4 id="f3aafe51-24e4-491c-9ee1-e809df4261b8-notation-to-reflect-leaving-the"><span class="section-number-4">2.3.2.</span> notation to reflect leaving the underlying set behind: logical language, not set theoretic.</h4>
@@ -838,23 +626,8 @@ cardinality of an event - e.g. \(\Omega = {1...6}  , \Omega^0 = {1...6} \times {
 </ul>
 </div>
 </div>
-<div class="outline-text-4" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-notation-to-reflect-leaving-the">
-<ul class="org-ul">
-<li>we'll use \(\lor, \land,\overline\) instead of \(\cup, cap,\complement\)</li>
-<li>we'll say events "hold". \(E \lor F\) is "the event that E or F hold".</li>
-<li>still using \(\subset\) , though. We're calling it "contains", "implies", or "only if".</li>
-</ul>
-</div>
-<ul class="org-ul">
-<li>we'll use \(\lor, \land,\overline\) instead of \(\cup, cap,\complement\)</li>
-<li>we'll say events "hold". \(E \lor F\) is "the event that E or F hold".</li>
-<li>still using \(\subset\) , though. We're calling it "contains", "implies", or "only if".</li>
-</ul>
-<li>we'll use \(\lor, \land,\overline\) instead of \(\cup, cap,\complement\)</li>
 we'll use \(\lor, \land,\overline\) instead of \(\cup, cap,\complement\)
-<li>we'll say events "hold". \(E \lor F\) is "the event that E or F hold".</li>
 we'll say events "hold". \(E \lor F\) is "the event that E or F hold".
-<li>still using \(\subset\) , though. We're calling it "contains", "implies", or "only if".</li>
 still using \(\subset\) , though. We're calling it "contains", "implies", or "only if".
 <div id="outline-container-f3aafe51-24e4-491c-9ee1-e809df4261b8-eqn-11-the-union-bound" class="outline-3">
 <h3 id="f3aafe51-24e4-491c-9ee1-e809df4261b8-eqn-11-the-union-bound"><span class="section-number-3">2.4.</span> eqn 1.1 the union bound.</h3>
@@ -876,11 +649,6 @@ take complements:
 \end{equation}
 </div>
 </div>
-<div class="outline-text-3" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-eqn-11-the-union-bound">
-\begin{equation}
-\mathbb{P}(\bigvee_{i}~E_i) \leq \sum_{i}~\mathbb{P}(E_i)
-\end{equation}
-
 <p>
 for any countable collection of events E<sub>i</sub> .
 </p>
@@ -889,25 +657,6 @@ for any countable collection of events E<sub>i</sub> .
 take complements:
 </p>
 
-\begin{equation}
-\mathbb{P}(\overline{\bigwedge_{i}~E_i}) \leq \mathbb{P}(\overline{E_i})
-\end{equation}
-</div>
-\begin{equation}
-\mathbb{P}(\bigvee_{i}~E_i) \leq \sum_{i}~\mathbb{P}(E_i)
-\end{equation}
-
-<p>
-for any countable collection of events E<sub>i</sub> .
-</p>
-
-<p>
-take complements:
-</p>
-
-\begin{equation}
-\mathbb{P}(\overline{\bigwedge_{i}~E_i}) \leq \mathbb{P}(\overline{E_i})
-\end{equation}
 <div id="outline-container-f3aafe51-24e4-491c-9ee1-e809df4261b8-backlinks" class="outline-2">
 <h2 id="f3aafe51-24e4-491c-9ee1-e809df4261b8-backlinks"><span class="section-number-2">3.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-f3aafe51-24e4-491c-9ee1-e809df4261b8-backlinks">
@@ -917,12 +666,6 @@ take complements:
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-</ul>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>

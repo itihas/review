@@ -203,50 +203,6 @@ Functional Reactive Programming (FRP) integrates time flow and compositional eve
 </p>
 </blockquote>
 
-<blockquote>
-<p>
-The original formulation of Functional Reactive Programming can be found in the ICFP 97 paper Functional Reactive Animation by Conal Elliott and Paul Hudak. It introduces the following semantic functions:
-</p>
-
-<p>
-at : Behaviorα → Time → α
-</p>
-
-<p>
-occ : Eventα → Time × α
-</p>
-
-<p>
-to provide a formal description of operations on values now commonly known as behaviors and events. But what are they?
-Behaviors
-</p>
-
-<p>
-Traditionally a widget-based user interface is created by a series of imperative actions. First an action is invoked to create an edit widget, then additional actions can be invoked to read its current content, set it to a specific value or to assign an event callback for when the content changes. This is tedious and error-prone.
-</p>
-
-<p>
-A better way to represent an edit widget's content is a time-varying value, called a behavior. The basic idea is that a time-varying value can be represented as a function of time:
-</p>
-</blockquote>
-
-<div class="org-src-container">
-<pre class="src src-haskell">newtype Behavior a =
-    Behavior {
-      at :: Time -&gt; a
-    }
-
-myTodoList                :: Behavior Text
-yesterday                 :: Time
-myTodoList `at` yesterday :: Text
-</pre>
-</div>
-<blockquote>
-<p>
-Functional Reactive Programming (FRP) integrates time flow and compositional events into functional programming. This provides an elegant way to express computation in domains such as interactive animations, robotics, computer vision, user interfaces, and simulation.
-</p>
-</blockquote>
-
 <p>
 Functional Reactive Programming (FRP) integrates time flow and compositional events into functional programming. This provides an elegant way to express computation in domains such as interactive animations, robotics, computer vision, user interfaces, and simulation.
 </p>
@@ -301,17 +257,6 @@ Traditionally a widget-based user interface is created by a series of imperative
 <p>
 A better way to represent an edit widget's content is a time-varying value, called a behavior. The basic idea is that a time-varying value can be represented as a function of time:
 </p>
-<div class="org-src-container">
-<pre class="src src-haskell">newtype Behavior a =
-    Behavior {
-      at :: Time -&gt; a
-    }
-
-myTodoList                :: Behavior Text
-yesterday                 :: Time
-myTodoList `at` yesterday :: Text
-</pre>
-</div>
 <div id="outline-container-c18a5915-ac4a-45fe-8fe9-a17c6063bf2e-backlinks" class="outline-2">
 <h2 id="c18a5915-ac4a-45fe-8fe9-a17c6063bf2e-backlinks"><span class="section-number-2">1.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-c18a5915-ac4a-45fe-8fe9-a17c6063bf2e-backlinks">
@@ -320,10 +265,6 @@ myTodoList `at` yesterday :: Text
 <li><a href="20230727195750-functional_reactive_programming.html#ID-4a047bab-202b-43ac-a728-ac713153da6c">Functional Reactive Programming</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="20230727195750-functional_reactive_programming.html#ID-4a047bab-202b-43ac-a728-ac713153da6c">Functional Reactive Programming</a></li>
-</ul>
-<li><a href="20230727195750-functional_reactive_programming.html#ID-4a047bab-202b-43ac-a728-ac713153da6c">Functional Reactive Programming</a></li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Nix build user</p>
