@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 18 Aug 2025 20:26:56 +0000</pubDate>
-  <lastBuildDate>Mon, 18 Aug 2025 20:26:56 +0000</lastBuildDate>
+  <pubDate>Mon, 18 Aug 2025 20:57:33 +0000</pubDate>
+  <lastBuildDate>Mon, 18 Aug 2025 20:57:33 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,20 +25,20 @@
   </image>
 
   <item>
-    <title>Moire dancing</title>
-    <link>https://itihas.review/20250716204911-moire_dancing.html</link>
+    <title>Wallace, Infinite Jest</title>
+    <link>https://itihas.review/20201125180800-wallace_infinite_jest.html</link>
     <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250716204911-moire_dancing.html</guid>
-    <pubDate>Fri, 15 Aug 2025 23:31:00 +0000</pubDate>
+    <guid isPermaLink="false">https://itihas.review/20201125180800-wallace_infinite_jest.html</guid>
+    <pubDate>Sat, 16 Aug 2025 01:22:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>What do Searle's constitutive/regulative rules, Lewis' convention theory, and Chen and Micali's generalized-utility style coalitions have in common?</title>
-    <link>https://itihas.review/20160805223400-what_do_searle_s_constitutive_regulative_rules_lewis_convention_theory_and_chen_and_micali_s_generalized_utility_style_coalitions_have_in_common.html</link>
+    <title>Moiré dancing</title>
+    <link>https://itihas.review/20250716204911-moire_dancing.html</link>
     <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20160805223400-what_do_searle_s_constitutive_regulative_rules_lewis_convention_theory_and_chen_and_micali_s_generalized_utility_style_coalitions_have_in_common.html</guid>
-    <pubDate>Fri, 15 Aug 2025 22:22:00 +0000</pubDate>
+    <guid isPermaLink="false">https://itihas.review/20250716204911-moire_dancing.html</guid>
+    <pubDate>Fri, 15 Aug 2025 23:31:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -79,15 +79,6 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>Wallace, Infinite Jest</title>
-    <link>https://itihas.review/20201125180800-wallace_infinite_jest.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20201125180800-wallace_infinite_jest.html</guid>
-    <pubDate>Thu, 14 Aug 2025 18:32:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>Gallwey, The Inner Game Of Tennis</title>
     <link>https://itihas.review/20170110123900-inner_game_of_tennis.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -115,15 +106,6 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>references are enriched links</title>
-    <link>https://itihas.review/20250803172225-references_are_enriched_links.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250803172225-references_are_enriched_links.html</guid>
-    <pubDate>Sat, 09 Aug 2025 21:40:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>The strategic level</title>
     <link>https://itihas.review/20210721200800-cfar_modules.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -133,20 +115,29 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>Bookmarking tools suck</title>
-    <link>https://itihas.review/20250803171720-bookmarking_tools_suck.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250803171720-bookmarking_tools_suck.html</guid>
-    <pubDate>Sun, 03 Aug 2025 17:50:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>IndieWebClub</title>
     <link>https://itihas.review/20250803171734-indiewebclub.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250803171734-indiewebclub.html</guid>
     <pubDate>Sun, 03 Aug 2025 17:20:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>references are enriched links</title>
+    <link>https://itihas.review/20250803172225-references_are_enriched_links.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250803172225-references_are_enriched_links.html</guid>
+    <pubDate>Sun, 03 Aug 2025 17:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Bookmarking tools suck</title>
+    <link>https://itihas.review/20250803171720-bookmarking_tools_suck.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250803171720-bookmarking_tools_suck.html</guid>
+    <pubDate>Sun, 03 Aug 2025 17:17:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -921,6 +912,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20210428180900-github_akirak_git_identity_el_manage_multiple_git_identities_from_inside_emacs.html</guid>
     <pubDate>Tue, 25 Feb 2025 14:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>software defined networks</title>
+    <link>https://itihas.review/20240819181857-software_defined_networks.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20240819181857-software_defined_networks.html</guid>
+    <pubDate>Tue, 25 Feb 2025 14:12:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
