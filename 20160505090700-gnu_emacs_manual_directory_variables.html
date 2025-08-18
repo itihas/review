@@ -206,14 +206,6 @@ Sometimes, you may wish to define the same set of local variables to all the fil
 The usual way to define directory-local variables is to put a file named .dir-locals.el24 in a directory. Whenever Emacs visits any file in that directory or any of its subdirectories, it will apply the directory-local variables specified in .dir-locals.el, as though they had been defined as file-local variables for that file (see Local Variables in Files). Emacs searches for .dir-locals.el starting in the directory of the visited file, and moving up the directory tree. To avoid slowdown, this search is skipped for remote files. If needed, the search can be extended for remote files by setting the variable enable-remote-dir-locals to t. 
 </p>
 </blockquote>
-
-<p>
-Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory’s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
-</p>
-
-<p>
-The usual way to define directory-local variables is to put a file named .dir-locals.el24 in a directory. Whenever Emacs visits any file in that directory or any of its subdirectories, it will apply the directory-local variables specified in .dir-locals.el, as though they had been defined as file-local variables for that file (see Local Variables in Files). Emacs searches for .dir-locals.el starting in the directory of the visited file, and moving up the directory tree. To avoid slowdown, this search is skipped for remote files. If needed, the search can be extended for remote files by setting the variable enable-remote-dir-locals to t. 
-</p>
 <div id="outline-container-721a1a35-3f7b-48f0-8ff5-20772b0f4e5c-backlinks" class="outline-2">
 <h2 id="721a1a35-3f7b-48f0-8ff5-20772b0f4e5c-backlinks"><span class="section-number-2">1.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-721a1a35-3f7b-48f0-8ff5-20772b0f4e5c-backlinks">

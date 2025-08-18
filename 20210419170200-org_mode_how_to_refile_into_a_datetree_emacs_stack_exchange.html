@@ -197,10 +197,26 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">org mode - How to refile into a datetree - Emacs Stack Exchange</h1>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-read-datetree-date</span> (d)
+<span style="font-style: italic;">"Parse a time string D and return a date to pass to the datetree functions."</span>
+(<span style="font-weight: bold;">let</span> ((dtmp (nthcdr 3 (parse-time-string d))))
+  (list (cadr dtmp) (car dtmp) (caddr dtmp))))
+
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-refile-to-archive-datetree</span> ()
+  <span style="font-style: italic;">"Refile an entry to a datetree under an archive."</span>
+  (<span style="font-weight: bold;">interactive</span>)
+  (<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">org-datetree</span>)
+  (<span style="font-weight: bold;">let</span> ((datetree-date (my/org-read-datetree-date (org-read-date t nil))))
+    (org-refile nil nil (list nil (buffer-file-name) nil
+                              (<span style="font-weight: bold;">save-excursion</span>
+                                (org-datetree-find-date-create datetree-date)))))
+  (<span style="font-weight: bold;">setq</span> this-command 'my/org-refile-to-journal))
+</pre>
+</div>
 <p>
 used the above to refile into the blotter before I decided that the blotter should just be appended to.
 </p>
-
 <div id="outline-container-0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks" class="outline-2">
 <h2 id="0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks"><span class="section-number-2">1.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks">

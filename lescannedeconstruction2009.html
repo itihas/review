@@ -205,10 +205,6 @@ Equilibria for infinite games using coinduction.
 </p>
 </div>
 </div>
-<p>
-Equilibria for infinite games using coinduction.
-</p>
-
 <div id="outline-container-d488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read" class="outline-2">
 <h2 id="d488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read"><span class="section-number-2">2.</span> notes as I read</h2>
 <div class="outline-text-2" id="text-d488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read">
@@ -227,21 +223,6 @@ He's representing strategies as the whole game plus "which way to go from here?"
 </p>
 </div>
 </div>
-what is the Weierstrass function?
-<blockquote>
-<p>
-a counterexample of the fact that a finite sum of functions differentiable everywhere is differentiable everywhere whereas an infinite sum can be differentiable nowhere.
-</p>
-</blockquote>
-
-<p>
-a counterexample of the fact that a finite sum of functions differentiable everywhere is differentiable everywhere whereas an infinite sum can be differentiable nowhere.
-</p>
-<p>
-He's representing strategies as the whole game plus "which way to go from here?".
-</p>
-
-
 <div id="outline-container-d488b7de-e418-4556-94bb-b8355de64687-summary" class="outline-2">
 <h2 id="d488b7de-e418-4556-94bb-b8355de64687-summary"><span class="section-number-2">3.</span> summary</h2>
 <div class="outline-text-2" id="text-d488b7de-e418-4556-94bb-b8355de64687-summary">
@@ -251,7 +232,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org93dcde3"></a> | Right <a id="orgae48319"></a>
+Strategy := Payoff | Left <a id="org96d012f"></a> | Right <a id="org5d07c95"></a>
 </p>
 
 
@@ -274,11 +255,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orge8421ef"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org36cca33"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org21daedd"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgce64fd3"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -303,11 +284,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org4eefe9b"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org7878f23"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org80531ca"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgd129d81"></a></td>
 </tr>
 </tbody>
 </table>
@@ -327,7 +308,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org537ea24"></a> : lleaf <a id="orge06ba5e"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgb65aeff"></a> : lleaf <a id="org1d701f5"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -399,55 +380,6 @@ SGPE :=
 </table>
 </div>
 </div>
-<p>
-Coinductive definitions (for extensional games):
-</p>
-
-<p>
-Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org93dcde3"></a> | Right <a id="orgae48319"></a>
-</p>
-
-
-<p>
-Predicates:
-</p>
-
-<p>
-s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
-</p>
-<p>
-leads to a leaf
-</p>
-
-<p>
-lleaf s: Strategy := cases s of
-</p>
-<p>
-alleaf s: Strategy := cases s of
-</p>
-<p>
-convertibility (all the strategies where all players but one are held constant):
-</p>
-
-<p>
-convertible a s1 s2: Strategy :=
-</p>
-<p>
-Nash eqbr:
-</p>
-
-<p>
-(lleaf s) and (forall a: Agent s' : Strategy, (lleaf s') and (convertible a s s') , (forall u u' : Payoff, (s2u s a u) and (s2u s' a u'), u &ge; u' )).
-</p>
-
-<p>
-Subgame perfect eqbr:
-</p>
-
-<p>
-SGPE :=
-</p>
 <div id="outline-container-d488b7de-e418-4556-94bb-b8355de64687-backlinks" class="outline-2">
 <h2 id="d488b7de-e418-4556-94bb-b8355de64687-backlinks"><span class="section-number-2">4.</span> Backlinks</h2>
 <div class="outline-text-2" id="text-d488b7de-e418-4556-94bb-b8355de64687-backlinks">

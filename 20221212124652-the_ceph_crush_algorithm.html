@@ -209,10 +209,14 @@ Create a cluster map, which is a tree where the leaves are storage devices; call
 <p>
 Buckets have associated weights and are of four different types:
 </p>
-uniform (children are identical; constant-time allocation)
-list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)
-tree (children have arbitrary weights)
-straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)
+<ul class="org-ul">
+<li>uniform (children are identical; constant-time allocation)</li>
+<li>list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)</li>
+<li>tree (children have arbitrary weights)</li>
+<li>straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)</li>
+</ul>
+
+
 <p>
 This plus implementation of allocation rules, which act as filters.
 </p>

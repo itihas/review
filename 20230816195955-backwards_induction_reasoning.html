@@ -204,8 +204,11 @@ Integral part of the classic solution concepts for extensive-form games. Solved 
 <p>
 Player A reasons backwards from a given outcome to see if it is reachable if, at each step backwards in the tree from that outcome, either
 </p>
-the parent node is under A's control, or
-the parent node is under B's control, and among the available choices of subtree for B at the parent node, the subtree represented by the current node represents the greatest reachable payoff for B.
+<ol class="org-ol">
+<li>the parent node is under A's control, or</li>
+<li>the parent node is under B's control, and among the available choices of subtree for B at the parent node, the subtree represented by the current node represents the greatest reachable payoff for B.</li>
+</ol>
+
 <p>
 The inductive reasoning thus considers the maximum reachable payoff at each node for the player controlling that node. This means that the set of A's reachable outcomes is built exactly the same way as the set of B's reachable outcomes, and that both player's preferences among outcomes are used to build that set. The sets must wind up identical, and eveyr element in them represents a Nash equilibrium to the game.
 </p>
