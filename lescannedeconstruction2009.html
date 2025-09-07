@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</title>
-<meta name="author" content="Nix build user" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -232,7 +231,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orged637bf"></a> | Right <a id="org7d83479"></a>
+Strategy := Payoff | Left <a id="org9c66864"></a> | Right <a id="org8f696e2"></a>
 </p>
 
 
@@ -255,11 +254,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org987b394"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org2de9a26"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org0250907"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgfc46988"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -284,11 +283,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org2f9a130"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgc703bb0"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgbb84898"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org7803bf0"></a></td>
 </tr>
 </tbody>
 </table>
@@ -308,7 +307,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org88e3003"></a> : lleaf <a id="org8ccc995"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orga6e715f"></a> : lleaf <a id="org030b2ac"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -390,7 +389,6 @@ SGPE :=
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Nix build user</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
