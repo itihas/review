@@ -199,7 +199,7 @@
 <p>
 initial guess at a cost function:
 </p>
-<pre class="example" id="org9794e34">
+<pre class="example" id="orgaf1750a">
 srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
 </pre>
 <p>
@@ -209,9 +209,9 @@ treat srs<sub>score</sub> as the page weight for pagerank
 <p>
 sid's guess: put srs<sub>score</sub> as the damping factor
 </p>
-<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer" class="outline-2">
-<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">alternative: supermemo as the "outer loop"</h2>
-<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">
+<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer" class="outline-2">
+<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">alternative: supermemo as the "outer loop"</h2>
+<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">
 <ul class="org-ul">
 <li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
 <ul class="org-ul">
@@ -220,9 +220,9 @@ sid's guess: put srs<sub>score</sub> as the damping factor
 </ul>
 </div>
 </div>
-<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess" class="outline-2">
-<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">next guess</h2>
-<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">
+<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess" class="outline-2">
+<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">next guess</h2>
+<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">
 <div class="org-src-container">
 <pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
 </pre>
@@ -256,9 +256,9 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
-<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various" class="outline-2">
-<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
-<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">
+<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various" class="outline-2">
+<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
+<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">
 <div class="org-src-container">
 <pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
 sm_2 q n EF I := 
@@ -318,17 +318,17 @@ Easiness factor shares some semantic features with <a href="frecency_wikipedia.h
 </p>
 </div>
 </div>
-<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the" class="outline-2">
-<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
-<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">
+<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the" class="outline-2">
+<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
+<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">
 <p>
 Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
 </p>
 </div>
 </div>
-<div id="outline-container-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks" class="outline-2">
-<h2 id="b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-b6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">
+<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks" class="outline-2">
+<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>

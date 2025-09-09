@@ -196,35 +196,35 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Lecture Notes for Metrics - A Short, Practical Primer</h1>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-outline" class="outline-2">
-<h2 id="804671d3-3ec4-4b86-814e-9b15c80f275e-outline">Outline</h2>
-<div class="outline-text-2" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-outline">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-outline" class="outline-2">
+<h2 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-outline">Outline</h2>
+<div class="outline-text-2" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-outline">
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles">First Principles</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles">First Principles</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-first-principles">
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric">what is a metric</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric">what is a metric</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-what-is-a-metric">
 </div>
 <ul class="org-ul">
-<li><a id="804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-data"></a>in terms of data<br />
-<div class="outline-text-5" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-data">
+<li><a id="h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-data"></a>in terms of data<br />
+<div class="outline-text-5" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-data">
 <p>
 it is a label, a number and a timestamp. so, a time-indexed kv pair.  some other details about the number can be kept for fun sometimes. 
 </p>
 </div>
 </li>
-<li><a id="804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-use"></a>in terms of use<br />
-<div class="outline-text-5" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-use">
+<li><a id="h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-use"></a>in terms of use<br />
+<div class="outline-text-5" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-use">
 <p>
 it is a single piece of information you want to have about a "running" "system" ie. anything that you can measure, the output of the measurement is a metric.
 </p>
 </div>
 </li>
-<li><a id="804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-why"></a>in terms of "why"<br />
-<div class="outline-text-5" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-why">
+<li><a id="h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-why"></a>in terms of "why"<br />
+<div class="outline-text-5" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-in-terms-of-why">
 <p>
 well,  <i>the scientific method.</i>
 </p>
@@ -247,25 +247,25 @@ and you have the panaceaic answers to all your questions!
 </li>
 </ul>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges">data challenges</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges">data challenges</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-data-challenges">
 <p>
 collection and storage timestamps, how do they work storage optimization
 </p>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges">use challenges</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges">use challenges</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-use-challenges">
 <p>
 querying and analysis cardinality size bucketing: the ultimate shitty tradeoff between storage and analysis requirements
 </p>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges">motivation challenges</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges">motivation challenges</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-motivation-challenges">
 <ul class="org-ul">
 <li>measuring irrelevant things</li>
 <li>bad labeling
@@ -342,20 +342,20 @@ use cases:
 </div>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-system-metrics" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-system-metrics">System metrics</h3>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-system-metrics" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-system-metrics">System metrics</h3>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-collectd" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-collectd">Collectd</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-collectd">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-collectd" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-collectd">Collectd</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-collectd">
 <p>
 get them to install collectd show them what it collects
 </p>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-graphite" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-graphite">Graphite</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-graphite">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-graphite" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-graphite">Graphite</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-graphite">
 <p>
 somebody else gotta step in to discuss; pls no practical.
 </p>
@@ -364,35 +364,35 @@ somebody else gotta step in to discuss; pls no practical.
 a graphite endpoint they can push to and navigate to the dashboard of?
 </p>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-whisperdb" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-whisperdb">whisperdb</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-whisperdb" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-whisperdb">whisperdb</h4>
 </div>
 
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-relay" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-relay">carbon-relay</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-relay" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-relay">carbon-relay</h4>
 </div>
 
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-ng-or-something-the-go" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-ng-or-something-the-go">carbon-ng? or something the go rewrite</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-ng-or-something-the-go" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-carbon-ng-or-something-the-go">carbon-ng? or something the go rewrite</h4>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus">Prometheus</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus">Prometheus</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-prometheus">
 <p>
 wouldn't minda practical here. prom is smol.
 </p>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-promtsdb" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-promtsdb">promtsdb</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-promtsdb" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-promtsdb">promtsdb</h4>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences">pull-based arch (and the consequences)</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences">pull-based arch (and the consequences)</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-pull-based-arch-and-the-consequences">
 </div>
 <ul class="org-ul">
-<li><a id="804671d3-3ec4-4b86-814e-9b15c80f275e-exporters"></a>exporters<br />
-<div class="outline-text-5" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-exporters">
+<li><a id="h804671d3-3ec4-4b86-814e-9b15c80f275e-exporters"></a>exporters<br />
+<div class="outline-text-5" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-exporters">
 <p>
 get them to install node exporter
 </p>
@@ -400,36 +400,36 @@ get them to install node exporter
 </li>
 </ul>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-prom-web-endpoint" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-prom-web-endpoint">prom web endpoint</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-prom-web-endpoint" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-prom-web-endpoint">prom web endpoint</h4>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager">alertmanager</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager">alertmanager</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-alertmanager">
 </div>
 <ul class="org-ul">
-<li><a id="804671d3-3ec4-4b86-814e-9b15c80f275e-alerting-rules"></a>alerting rules<br /></li>
+<li><a id="h804671d3-3ec4-4b86-814e-9b15c80f275e-alerting-rules"></a>alerting rules<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-grafana" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-grafana">Grafana</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-grafana">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-grafana" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-grafana">Grafana</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-grafana">
 <p>
 unified graphs and queries frontend originally mostly for graphite but it can talk to EVERYTHING muhahahaha somewhat heavy webapp tho
 </p>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-dashboard" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-dashboard">dashboard</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-dashboard" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-dashboard">dashboard</h4>
 </div>
 
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-panel" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-panel">panel</h4>
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-panel" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-panel">panel</h4>
 </div>
 
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing" class="outline-4">
-<h4 id="804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing">panel query editing</h4>
-<div class="outline-text-4" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing" class="outline-4">
+<h4 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing">panel query editing</h4>
+<div class="outline-text-4" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-panel-query-editing">
 <p>
 useful walkthrough here to discuss how and why to use various display features
 </p>
@@ -437,13 +437,13 @@ useful walkthrough here to discuss how and why to use various display features
 </div>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure" class="outline-2">
-<h2 id="804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure">Duncan method informed class structure</h2>
-<div class="outline-text-2" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure" class="outline-2">
+<h2 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure">Duncan method informed class structure</h2>
+<div class="outline-text-2" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-duncan-method-informed-class-structure">
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill" class="outline-3">
-<h3 id="804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill">Core skill</h3>
-<div class="outline-text-3" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill" class="outline-3">
+<h3 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill">Core skill</h3>
+<div class="outline-text-3" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-core-skill">
 <ul class="org-ul">
 <li>measure a system.
 <ul class="org-ul">
@@ -470,9 +470,9 @@ useful walkthrough here to discuss how and why to use various display features
 </div>
 </div>
 </div>
-<div id="outline-container-804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks" class="outline-2">
-<h2 id="804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks">
+<div id="outline-container-h804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks" class="outline-2">
+<h2 id="h804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-h804671d3-3ec4-4b86-814e-9b15c80f275e-backlinks">
 </div>
 <ul class="org-ul">
 </ul>
