@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-Italic.woff2') format('woff2'),
+        url('LibertinusSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-Bold.woff2') format('woff2'),
+        url('LibertinusSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-BoldItalic.woff2') format('woff2'),
+        url('LibertinusSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-Regular.woff2') format('woff2'),
+        url('LibertinusSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('faustina-bolditalic-webfont.woff2') format('woff2'),
+         url('faustina-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('faustina-bold-webfont.woff2') format('woff2'),
+         url('faustina-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('faustina-italic-webfont.woff2') format('woff2'),
+         url('faustina-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('faustina-regular-webfont.woff2') format('woff2'),
+         url('faustina-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

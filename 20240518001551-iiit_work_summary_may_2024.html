@@ -191,7 +191,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
 <div id="content" class="content">
@@ -261,7 +261,7 @@ For my final project in Classical Text Reading I, I translated a portion of the 
 <p>
 Prof. PRK Rao originally suggested to me the research topic of heterotopia, and offered <a href="https://philosophynoworg/issues/107/The_Heterotopia_of_Facebook"><i>The Heterotopia of Facebook</i></a> as a starting point.
 I began by approaching this problem in terms of the <i>semiotics</i> of Facebook - how the system encodes social actions (e.g. the Like button), and how signals like this get exapted for other purposes and undergo semantic drift.
-I wanted to represent this type of effect formally, and to modify the classical representation of games in game theory to allow for player-driven changes to the game specifications. I was also motivated by chenmechanism2015, which discusses motivated mechanism design, and ausubellovely2006, which shows that the Vickrey auction is vulnerable to cheating by collusion, and expresses the “cheat” as a minor edit to the game specification. This in turn suggests a notion of edit distance across game mechanisms, and from there the possibility of constructing a stability metric in the induced space. Put together, the thesis was: mechanism changes can be strategic behaviour, so there ought to be a way to represent that behaviour as part of the game strategy.
+I wanted to represent this type of effect formally, and to modify the classical representation of games in game theory to allow for player-driven changes to the game specifications. I was also motivated by (Chen, Jing and Micali, Silvio 2015), which discusses motivated mechanism design, and , which shows that the Vickrey auction is vulnerable to cheating by collusion, and expresses the “cheat” as a minor edit to the game specification. This in turn suggests a notion of edit distance across game mechanisms, and from there the possibility of constructing a stability metric in the induced space. Put together, the thesis was: mechanism changes can be strategic behaviour, so there ought to be a way to represent that behaviour as part of the game strategy.
   Depending on how one operationalizes this project, several of the hard problems in game theory are subproblems to this one:
 </p>
 <ul class="org-ul">
@@ -277,8 +277,8 @@ I came up with several applications and approaches to this problem between 2017 
 My first approach was to create a game where players could choose among games in a restricted way: exploring choices in a finite number of finite games, or an iterated choice of finite games. This reduces to an alternate way of representing iterated games, and can't be fairly described as having "dynamics" or "player edits" without further characterization.
 This approach runs fairly quickly into the problem of Hypergame paradox, popularized by William Zwicker in 1987: how to ensure that a self-referential structure of this kind is restricted enough to be finite, or remain within computability bounds that allow it to be useful?</li>
 <li><i>ATL</i>:
-aluralternatingtime2002put forward Alternating-Time Temporal Logic (ATL) as a way to express games which can be expressed as a concurrent game system - in other words, a graph that functions as the generator for an extensional game, with a coalition-aware solution concept that can be expressed and deduced on the graph and proven to hold for the generated game tree. I wrote a representation of ATL in Coq theorem prover, and used it to express a dominance relation over the set of ATL formulae that described the graph. Unfortunately, this relation was not computable in its original form.</li>
-<li><i>Nomic</i>:  a game first specified in suberappendix1990,as an illustration that a self-modifying ruleset cannot be written to preclude states where the rules become uninterpretable. Nomic is specified as an InitialSet of rules written in English and meant to be played by human agents; in traditional conceptions of <i>homo rationalis</i> there is no reason to play this game and no way to write a dominant strategy (as the InitialSet puts winning purely to chance). I attempted to create a model of just one element of the <i>Nomic</i> ruleset: players can both <i>read</i> and <i>write</i> the game specification; and provide an example game of Nomic (with a more restrictive InitialSet) for which a winning strategy is computable.
+put forward Alternating-Time Temporal Logic (ATL) as a way to express games which can be expressed as a concurrent game system - in other words, a graph that functions as the generator for an extensional game, with a coalition-aware solution concept that can be expressed and deduced on the graph and proven to hold for the generated game tree. I wrote a representation of ATL in Coq theorem prover, and used it to express a dominance relation over the set of ATL formulae that described the graph. Unfortunately, this relation was not computable in its original form.</li>
+<li><i>Nomic</i>:  a game first specified in ,as an illustration that a self-modifying ruleset cannot be written to preclude states where the rules become uninterpretable. Nomic is specified as an InitialSet of rules written in English and meant to be played by human agents; in traditional conceptions of <i>homo rationalis</i> there is no reason to play this game and no way to write a dominant strategy (as the InitialSet puts winning purely to chance). I attempted to create a model of just one element of the <i>Nomic</i> ruleset: players can both <i>read</i> and <i>write</i> the game specification; and provide an example game of Nomic (with a more restrictive InitialSet) for which a winning strategy is computable.
 Significant prior art exists in formally modeling <i>Nomic</i>, but none built to verify the thesis of the original paper: does self-modification inevitably lead to un-interpretability?</li>
 </ul>
 <p>
@@ -287,13 +287,13 @@ I didn't succeed in writing the formal representation, having run aground on the
 <ul class="org-ul">
 <li><i>Preference meronomy</i>: or part-whole relationships in coalitional strategies.
 Can a coalition be considered to have a preference? Since it possesses a winning strategy, and can be reasoned about in counterfactuals, one can induce a preference relation over outcomes that corresponds to a coalitional strategy. One can therefore explore how individual preferences compose into collective preferences.</li>
-<li><i>Property-based preferences</i>: using an intermediate representation to represent player reasoning about outcomes. dietrichWherePreferencesCome2013describe a way to construct this, which I spent some time trying to use to represent player reasoning: by having the "properties" be true claims about the reachability of various outcomes from the node in question.</li>
+<li><i>Property-based preferences</i>: using an intermediate representation to represent player reasoning about outcomes. describe a way to construct this, which I spent some time trying to use to represent player reasoning: by having the "properties" be true claims about the reachability of various outcomes from the node in question.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks" class="outline-2">
-<h2 id="h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks">
+<div id="outline-container-h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks" class="outline-3">
+<h3 id="h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-h3421e3d8-0f8d-47ec-a03e-4c5329cf096b-backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="20240624194522-iiit_work_summary_presentation_june_2024.html#ID-099a6785-05ab-44f4-8e3c-93cdf6a58e79">IIIT Work Summary Presentation June 2024</a></li>
