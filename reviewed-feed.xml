@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 10 Sep 2025 10:21:36 +0000</pubDate>
-  <lastBuildDate>Wed, 10 Sep 2025 10:21:36 +0000</lastBuildDate>
+  <pubDate>Tue, 16 Sep 2025 12:25:18 +0000</pubDate>
+  <lastBuildDate>Tue, 16 Sep 2025 12:25:18 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,29 @@
   </image>
 
   <item>
+    <title>Bromance</title>
+    <link>https://itihas.review/20250915121943-bromance.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250915121943-bromance.html</guid>
+    <pubDate>Mon, 15 Sep 2025 12:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>2025 lyrids plan</title>
+    <link>https://itihas.review/20250422134247-2025_lyrids_plan.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250422134247-2025_lyrids_plan.html</guid>
+    <pubDate>Wed, 10 Sep 2025 14:43:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>Metro Loomin'</title>
     <link>https://itihas.review/20250907104459-metro_loomin.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250907104459-metro_loomin.html</guid>
-    <pubDate>Sun, 07 Sep 2025 11:20:00 +0000</pubDate>
+    <pubDate>Sun, 07 Sep 2025 21:48:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -201,6 +219,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/full_text_search_on_a_budget_xapian_end_point_dev.html</guid>
     <pubDate>Thu, 17 Jul 2025 22:40:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Borges, Jorge Luis and Hurley, Andrew, The Aleph</title>
+    <link>https://itihas.review/borgesAleph2004.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/borgesAleph2004.html</guid>
+    <pubDate>Thu, 17 Jul 2025 22:39:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -534,15 +561,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250625111657-incron_line_to_autocommit_files_in_a_repo_in_this_case_the_org_notebook.html</guid>
     <pubDate>Wed, 25 Jun 2025 14:29:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>2025 lyrids plan</title>
-    <link>https://itihas.review/20250422134247-2025_lyrids_plan.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250422134247-2025_lyrids_plan.html</guid>
-    <pubDate>Thu, 05 Jun 2025 15:23:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20240822193504-emacs.html</guid>
     <pubDate>Tue, 25 Feb 2025 16:37:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Emacs: xah-math-input.el</title>
-    <link>https://itihas.review/20160506085400-emacs_xah_math_input_el.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20160506085400-emacs_xah_math_input_el.html</guid>
-    <pubDate>Tue, 25 Feb 2025 14:28:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>GitHub - akirak/git-identity.el: Manage multiple Git identities from inside Emacs</title>
-    <link>https://itihas.review/20210428180900-github_akirak_git_identity_el_manage_multiple_git_identities_from_inside_emacs.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20210428180900-github_akirak_git_identity_el_manage_multiple_git_identities_from_inside_emacs.html</guid>
-    <pubDate>Tue, 25 Feb 2025 14:25:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
