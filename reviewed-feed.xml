@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 21 Sep 2025 12:27:07 +0000</pubDate>
-  <lastBuildDate>Sun, 21 Sep 2025 12:27:07 +0000</lastBuildDate>
+  <pubDate>Sun, 21 Sep 2025 12:33:52 +0000</pubDate>
+  <lastBuildDate>Sun, 21 Sep 2025 12:33:52 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>the semantic web and the property knowledge graph</title>
+    <link>https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</guid>
+    <pubDate>Sun, 21 Sep 2025 18:00:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Ruled Paper Templates - Inks and Pens</title>
     <link>https://itihas.review/20220222135200-ruled_paper_templates_inks_and_pens.html</link>
@@ -48,15 +57,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20240822202157-my_non_poetry_writing.html</guid>
     <pubDate>Sun, 21 Sep 2025 17:50:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>the semantic web and the property knowledge graph</title>
-    <link>https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</guid>
-    <pubDate>Sun, 21 Sep 2025 17:41:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
