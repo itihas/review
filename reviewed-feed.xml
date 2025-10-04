@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 21 Sep 2025 15:05:21 +0000</pubDate>
-  <lastBuildDate>Sun, 21 Sep 2025 15:05:21 +0000</lastBuildDate>
+  <pubDate>Sat, 04 Oct 2025 12:31:20 +0000</pubDate>
+  <lastBuildDate>Sat, 04 Oct 2025 12:31:20 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,29 @@
   </image>
 
   <item>
-    <title>the semantic web and the property knowledge graph</title>
-    <link>https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</link>
+    <title>anything to be distracted</title>
+    <link>https://itihas.review/20251004165151-anything_to_be_distracted.html</link>
     <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250921160216-the_semantic_web_and_the_property_knowledge_graph.html</guid>
-    <pubDate>Sun, 21 Sep 2025 18:00:00 +0000</pubDate>
+    <guid isPermaLink="false">https://itihas.review/20251004165151-anything_to_be_distracted.html</guid>
+    <pubDate>Sat, 04 Oct 2025 17:30:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>dawn sounds</title>
+    <link>https://itihas.review/20220429015800-dawn_sounds.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220429015800-dawn_sounds.html</guid>
+    <pubDate>Sun, 21 Sep 2025 20:35:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>O'Rourke, Searle on Speech Acts</title>
+    <link>https://itihas.review/SearleSpeechActs.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/SearleSpeechActs.html</guid>
+    <pubDate>Sun, 21 Sep 2025 19:40:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -66,15 +84,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20160728135000-illocutionary_act_wikipedia_the_free_encyclopedia.html</guid>
     <pubDate>Sun, 21 Sep 2025 17:05:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>O'Rourke, Searle on Speech Acts</title>
-    <link>https://itihas.review/SearleSpeechActs.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/SearleSpeechActs.html</guid>
-    <pubDate>Sun, 21 Sep 2025 16:38:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -786,15 +795,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20240905120229-toricelli.html</guid>
     <pubDate>Thu, 03 Apr 2025 21:55:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>dawn sounds</title>
-    <link>https://itihas.review/20220429015800-dawn_sounds.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220429015800-dawn_sounds.html</guid>
-    <pubDate>Thu, 03 Apr 2025 14:41:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
