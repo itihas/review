@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 04 Oct 2025 13:21:28 +0000</pubDate>
-  <lastBuildDate>Sat, 04 Oct 2025 13:21:28 +0000</lastBuildDate>
+  <pubDate>Mon, 06 Oct 2025 10:19:17 +0000</pubDate>
+  <lastBuildDate>Mon, 06 Oct 2025 10:19:17 +0000</lastBuildDate>
   <generator>Emacs 30.1 Org-mode 9.7.34</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>chatter tags</title>
+    <link>https://itihas.review/20250816170707-chatter_tags.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250816170707-chatter_tags.html</guid>
+    <pubDate>Mon, 06 Oct 2025 15:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Frederick</title>
     <link>https://itihas.review/20230809164758-go_seduce_frederick.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20240819173738-agents_can_only_ever_be_grey_boxes.html</guid>
     <pubDate>Thu, 03 Apr 2025 11:55:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>dominance relation</title>
-    <link>https://itihas.review/20230816203737-dominance_relation.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230816203737-dominance_relation.html</guid>
-    <pubDate>Sat, 22 Mar 2025 00:57:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
