@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Early guesses at Toricelli's shape</title>
+<title>What makes something a digital garden?</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -195,144 +195,35 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Early guesses at Toricelli's shape</h1>
+<h1 class="title">What makes something a digital garden?</h1>
 <p>
-initial guess at a cost function:
+In 2025, I think a digital garden has three primary features:
 </p>
-<pre class="example" id="orge0ab3a2">
-srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
-</pre>
-<p>
-treat srs<sub>score</sub> as the page weight for pagerank
-</p>
-
-<p>
-sid's guess: put srs<sub>score</sub> as the damping factor
-</p>
-<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer" class="outline-2">
-<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">alternative: supermemo as the "outer loop"</h2>
-<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-alternative-supermemo-as-the-outer">
 <ul class="org-ul">
-<li>[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
+<li>It's on a computer
 <ul class="org-ul">
-<li>[itihas] I find this convincing.</li>
+<li>For me this follows not just from the word "digital", but from the aesthetics of "digital gardening" as a verb phrase
+<ul class="org-ul">
+<li>a collection of digital assets invites one to perform a certain kind of sophisticated bookkeeping</li>
+<li>digital assets</li>
+</ul></li>
+</ul></li>
+<li>It's hyperlinked
+<ul class="org-ul">
+<li>There is an addressing system for each note or page</li>
+<li>The addresses are used inside the note body</li>
+<li>sometimes directly inside the text as a way of "inlining" the content of one note inside another</li>
+</ul></li>
+<li>It is "living"
+<ul class="org-ul">
+<li>it can implicitly always be rewritten.</li>
 </ul></li>
 </ul>
-</div>
-</div>
-<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess" class="outline-2">
-<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">next guess</h2>
-<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-next-guess">
-<div class="org-src-container">
-<pre class="src src-nil"># srs_score q n EF I -&gt; n EF I
-</pre>
-</div>
-
-<p>
-sid:
-</p>
-<div class="org-src-container">
-<pre class="src src-nil">I = max(1, f(I,page_rank_score))
-</pre>
-</div>
-<p>
-where
-</p>
-<ul class="org-ul">
-<li>f(I) &lt;= I. super-memo gives us an upper bound on when we should see a page again. PageRank can make us see a page earlier than</li>
-</ul>
-<p>
-2  supermemo wanted us to, because we're trying to keep stuff in working memory that may not optimal for long-term retention, but useful
-  for short-term task clustering.
-</p>
-<ul class="org-ul">
-<li>[itihas] Not really trying to keep task-related stuff together so much as surface things I care about <i>in-context</i> more than I might care about it "naively".</li>
-</ul>
-<p>
-It's meant to produce connections I haven't necessarily made before (generate new knowledge). The "forgetting curve" emphasis in SRS literature treats knowledge as atomic in a way that doesn't make sense to me.
-</p>
-<ul class="org-ul">
-<li>if s1 &gt; s2, f(I, s1) &lt; f(I, s2). If page rank deems a page more important, then see it sooner.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various" class="outline-2">
-<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
-<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-for-reference-supermemo-the-various">
-<div class="org-src-container">
-<pre class="src src-nil"># sm_2: q:user_score n:repetition_number EF:easiness_factor I:interval -&gt; n EF I
-sm_2 q n EF I := 
-    if q &gt;= 3:
-        if n = 0:
-            I = 1
-        if n = 1:
-            I = 6
-        else:
-            I = round(I * EF)
-        n = n + 1
-    else:
-        n = 0
-        I = 1
-    calc_EF = EF + (0.1 - (5 - q) * (0.08 + (5-q) * 0.02))
-    EF = min(calc_EF, 1.3)
-</pre>
-</div>
-
-<p>
-From <a href="https://supermemo.guru/wiki/Algorithm_SM-17#The_Algorithm:_Outline">https://supermemo.guru/wiki/Algorithm_SM-17#The_Algorithm:_Outline</a> :
-</p>
-
-<blockquote>
-<p>
-
-</p>
-
-<p>
-The Algorithm: Outline
-The following procedure can be used to determine the status of memory (DSR status) at any moment of time for a given history of repetitions. Once the DSR status is known, we can determine the next interval using criteria of choice, e.g. forgetting index, maximization of stability, long-term workload minimization, etc.
-</p>
-
-
-<p>
-estimate item difficulty D using the history repetitions for that item
-determine startup stability S0 using the history of repetitions
-for all repetition history records repeat the steps below
-compute theoretical retrievability Rt using current stability estimate Sw and the interval Int
-update Recall[] matrix using D, Sw[n-1], Rt with the grade-derived recall
-compute recall-based retrievability Rr
-compute grade-derived retrievability Rg
-estimate weighted Rw from Rt, Rr, and Rg
-compute Rw-based stability Sr
-compute SInc-based Se (Se=Sw[n-1]*SInc[D,Sw[n-1],Rw])
-compute interval derived stability Si
-estimate weighted Sw from Sr, Se, and Si
-compute the stability increase SInc on the basis of Sw change
-update Sinc[] matrix using D, Sw, Rw with the new SInc value
-compute new interval using Int:=Sw*SInc[D,Sw,Rw]
-go back computing Rt step
-</p>
-</blockquote>
-
-<p>
-Easiness factor shares some semantic features with <a href="frecency_wikipedia.html#ID-fcd47c46-e1c3-4d95-9092-c3b0e564f7f5">frecency</a>.
-</p>
-</div>
-</div>
-<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the" class="outline-2">
-<h2 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
-<div class="outline-text-2" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-note-from-sid-write-the">
-<p>
-Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
-</p>
-</div>
-</div>
-<div id="outline-container-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks" class="outline-3">
-<h3 id="hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-hb6b84d0a-2761-45bd-8b1a-32cf996f89a2-backlinks">
+<div id="outline-container-h59c04499-1304-448a-92fb-b9757767ee8e-backlinks" class="outline-2">
+<h2 id="h59c04499-1304-448a-92fb-b9757767ee8e-backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-h59c04499-1304-448a-92fb-b9757767ee8e-backlinks">
 </div>
 <ul class="org-ul">
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
-<li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>
 </div>
 </div>
