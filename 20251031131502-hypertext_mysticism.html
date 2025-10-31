@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</title>
+<title>hypertext mysticism</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -195,204 +195,23 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</h1>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-tldr" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-tldr">tl;dr</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-tldr">
+<h1 class="title">hypertext mysticism</h1>
 <p>
-Equilibria for infinite games using coinduction.
+Dotcommie tendency to meditate deeply on hypertext as a psychotechnology, ie. as a real augmentation of written language thus far. This note will eventually contian a short narrativization of the idea-history of the semantic web.
 </p>
-</div>
-</div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read">notes as I read</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read">
+
+<p>
+Related:
+</p>
 <ul class="org-ul">
-<li>what is the Weierstrass function?</li>
+<li><a href="20250816170707-chatter_tags.html#ID-815ccd67-e318-4a38-a5ea-b84139570e5c">chatter tags</a></li>
 </ul>
-
-<blockquote>
-<p>
-a counterexample of the fact that a finite sum of functions differentiable everywhere is differentiable everywhere whereas an infinite sum can be differentiable nowhere.
-</p>
-</blockquote>
-
-<p>
-He's representing strategies as the whole game plus "which way to go from here?".
-</p>
-</div>
-</div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-summary" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-summary">summary</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-summary">
-<p>
-Coinductive definitions (for extensional games):
-</p>
-
-<p>
-Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orgf4c63e3"></a> | Right <a id="orgafa3fbb"></a>
-</p>
-
-
-<p>
-Predicates:
-</p>
-
-<p>
-s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">f: Payoff : s2u s a f(a)</td>
-</tr>
-
-<tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org0b04161"></a> u</td>
-</tr>
-
-<tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org600de10"></a> u</td>
-</tr>
-</tbody>
-</table>
-
-
-<p>
-leads to a leaf
-</p>
-
-<p>
-lleaf s: Strategy := cases s of
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">f: Payoff : true</td>
-</tr>
-
-<tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org130b3d3"></a></td>
-</tr>
-
-<tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org1cb637f"></a></td>
-</tr>
-</tbody>
-</table>
-
-<p>
-alleaf s: Strategy := cases s of
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">f: Payoff : true</td>
-</tr>
-
-<tr>
-<td class="org-left"><a id="orgc8c2885"></a> : lleaf <a id="orge3f22c7"></a> and alleaf sl and alleaf sr</td>
-</tr>
-</tbody>
-</table>
-
-
-<p>
-convertibility (all the strategies where all players but one are held constant):
-</p>
-
-<p>
-convertible a s1 s2: Strategy :=
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">leaves are equal if they are equal</td>
-</tr>
-
-<tr>
-<td class="org-left">head(s1) <code>= head(s2) =</code> a :  equal with any switched choice and convertible children</td>
-</tr>
-
-<tr>
-<td class="org-left">head(s1) <code>= head(s2) !</code> a : only equal with same choice and convertible children</td>
-</tr>
-</tbody>
-</table>
-
-
-<p>
-Nash eqbr:
-</p>
-
-<p>
-(lleaf s) and (forall a: Agent s' : Strategy, (lleaf s') and (convertible a s s') , (forall u u' : Payoff, (s2u s a u) and (s2u s' a u'), u &ge; u' )).
-</p>
-
-<p>
-Subgame perfect eqbr:
-</p>
-
-<p>
-SGPE :=
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">Payoff : true</td>
-</tr>
-
-<tr>
-<td class="org-left">Left: alleaf Left and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &gt;= v</td>
-</tr>
-
-<tr>
-<td class="org-left">Right: alleaf Right and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &lt;= v</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-refs" class="outline-3">
-<h3 id="hd488b7de-e418-4556-94bb-b8355de64687-refs">Refs</h3>
-<div class="outline-text-3" id="text-hd488b7de-e418-4556-94bb-b8355de64687-refs">
+<div id="outline-container-ha5cc5b6c-f2db-492c-95c1-34d2f5f6c89d-backlinks" class="outline-2">
+<h2 id="ha5cc5b6c-f2db-492c-95c1-34d2f5f6c89d-backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ha5cc5b6c-f2db-492c-95c1-34d2f5f6c89d-backlinks">
 </div>
 <ul class="org-ul">
-<li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
-</ul>
-</div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-backlinks" class="outline-3">
-<h3 id="hd488b7de-e418-4556-94bb-b8355de64687-backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-hd488b7de-e418-4556-94bb-b8355de64687-backlinks">
-</div>
-<ul class="org-ul">
-<li><a href="20170123112300-infinite_chess_joel_david_hamkins.html#ID-249ce708-c67a-40e4-b32a-e938d960af3f">infinite chess | Joel David Hamkins</a></li>
+<li><a href="a_brief_history_ethos_of_the_digital_garden.html#ID-9dfe967b-8d33-4361-b792-ef170b62d8dd">A Brief History &amp; Ethos of the Digital Garden</a></li>
 </ul>
 </div>
 </div>
