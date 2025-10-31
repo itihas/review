@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>digital gardens</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">digital gardens</h1>
+<p>
+Note created in part for <a href="20250803171734-indiewebclub.html#ID-16b219bb-73d8-40e4-8d7e-4018dc13c3e9">IndieWebClub</a> <a href="https://underline.center/t/indiewebclub-13-with-ankur-and-tanvi/602">#13</a>.
+</p>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-history" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-history">History</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-history">
+<p>
+"Digital garden" started as a verb. Digital <i>gardening</i> was an <a href="https://en.wikipedia.org/wiki/Intuition_pump">intuition pump</a> for a way to relate to a graph of linked webpages. (Old and venerable idiom for graphs and networks! Witness <a href="https://en.wikipedia.org/wiki/Tree_(graph_theory)">trees, forests</a>, <a href="https://www.stat.cmu.edu/~cshalizi/networks/16-1/lectures/08/babcock.pdf">network growth</a>, <a href="https://en.wikipedia.org/wiki/Evolving_network">evolving networks</a>; <a href="https://en.wikipedia.org/wiki/Ecological_network">ecological networks</a> are a metaphor in the other direction.)
+</p>
+
+
+<p>
+Several different cultures and concepts have sprung up around the gradual iterative writing of a network of hyperlinked text.
+</p>
+<ul class="org-ul">
+<li>Wikis
+<ul class="org-ul">
+<li>Collaboratively edited hypertext publication</li>
+<li>originated by the first wiki, <a href="https://wiki.c2.com/">WikiWikiWeb</a>
+<ul class="org-ul">
+<li>In turn inspired by HyperCard
+<ul class="org-ul">
+<li>I think I used a bare-bones clone of this that came with the <a href="https://archive.org/details/world-book-disc">WorldBook Encyclopedia 2003 CDROM</a>.
+<ul class="org-ul">
+<li>It was my first introduction to Zettelkasten!</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="../zettel/zettelkasten.html#ID-d4946ad7-f76b-49c4-aa55-8c38e262c7cb">Zettelkasten</a>
+<ul class="org-ul">
+<li>A system of addressing and linking phyiscal index cards in a "slip box", to create a network of short written notes that concisely explain a concept.</li>
+<li>A system of personal knowledge management that predates computers!</li>
+</ul></li>
+<li>Personal knowledge management
+<ul class="org-ul">
+<li>Old, old practice.</li>
+<li>A library counts as a PKM - the Dewey decimal system organizes books by subject into a numerical total order</li>
+<li>A citation and cross-referencing system counts as a PKM</li>
+<li>a collection of notebooks counts as a PKM</li>
+<li>does anyone I know have a library sciences degree? Anyway you can get a degree in this, and I experience a lust for its syllabus.</li>
+</ul></li>
+<li>Evergreen notes
+<ul class="org-ul">
+<li>Term coined by Andy Matuschak (<a href="https://notes.andymatuschak.org/Evergreen_notes">link</a>) to describe notes that are designed to be iteratively rewritten. Close cousin of the living document.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-what-makes-something-a-digital" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-what-makes-something-a-digital">What makes something a digital garden?</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-what-makes-something-a-digital">
+<p>
+In 2025, I think a digital garden has three primary features:
+</p>
+<ul class="org-ul">
+<li>It's on a computer
+<ul class="org-ul">
+<li>For me this follows not just from the word "digital", but from the aesthetics of "digital gardening" as a verb phrase
+<ul class="org-ul">
+<li>a collection of digital assets invites one to perform a certain kind of sophisticated bookkeeping</li>
+<li>digital assets</li>
+</ul></li>
+</ul></li>
+<li>It's hyperlinked
+<ul class="org-ul">
+<li>There is an addressing system for each note or page</li>
+<li>The addresses are used inside the note body</li>
+<li>sometimes directly inside the text as a way of "inlining" the content of one note inside another</li>
+</ul></li>
+<li>It is "living"
+<ul class="org-ul">
+<li>it can implicitly always be rewritten.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-a-digital-garden-for" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-a-digital-garden-for">What's a digital garden <i>for</i>?</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-a-digital-garden-for">
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-living-text-is-different" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-living-text-is-different">Writing "living" text is different than writing texts that are meant to be published once.</h3>
+<div class="outline-text-3" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-living-text-is-different">
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-for-learning" class="outline-4">
+<h4 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-for-learning">You can write for learning.</h4>
+<div class="outline-text-4" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-for-learning">
+<p>
+You take notes
+</p>
+<ul class="org-ul">
+<li>to extend your working memory</li>
+<li>to <a href="strengthening-the-student-toolbox.html#ID-c3253e02-b457-4c4e-90a8-a519970aba1f">explain something to yourself</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-nonlinearly" class="outline-4">
+<h4 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-nonlinearly">You can write nonlinearly.</h4>
+<div class="outline-text-4" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-nonlinearly">
+<p>
+There are a lot of correct ways to step through contexts. Ever gone on a really good <a href="https://en.wikipedia.org/wiki/Wiki_rabbit_hole">wiki walk</a>?
+</p>
+
+<p>
+Linear writing relies on the reader's memory to keep track of larger structures and relationships between concepts. This is intrinsically limiting. Whenever you have gone too long in a nonfiction work without explaining something, you have to reiterate it: think of the phrase "recall that" in academic writing. These reiterations are often like detours on a journey: a user must keep track of some original line of thought, while simultaneously performing a recall task. Names are a way to shorten this type of reiteration. One names a theorem to be able to use it in future proofs, viz. "By De Moivre's theorem&#x2026;".
+But if you don't remember, you have to look it up. This is the essence of a <i>reference system.</i> A reference is just a name that works with an <i>index</i> &#x2013; a system of relating a <i>name</i> for a thing to the <i>place</i> where you can find it.
+</p>
+
+<p>
+Books often have indices at the back, relating names to pages. Readers of physical books can use a book's physical shape as an index! It's often easy to mark, or even just remember, <i>where in the book</i> you read something. Citations do the same work across publications; In a library, the Dewey decimal system does this. Unique reference IDs in the Zettelkasten do this too. And on computers, especially in the web, this is what links are for.
+</p>
+
+<p>
+Once you have an easy, low-friction way of referencing and cross-referencing stuff, you quickly realie that there's no need for a <i>canonical order in which to step through it</i>. Sure, there are often <i>better</i> and <i>worse</i> places to start, but there's very rarely a <i>unique</i> answer. This is true even in older forms! Nobody who reads a textbook ever steps through the book in the same order; the process of reading a textbook is supposed to be very "back and forth."
+</p>
+
+<p>
+And if you are trying to explain a collection of concepts with a lot of interrelations, it can be a relief to represent them in a more natural form.
+</p>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-responsively" class="outline-4">
+<h4 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-responsively">You can write responsively.</h4>
+<div class="outline-text-4" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-you-can-write-responsively">
+<p>
+Think of Wikipedia. It changes whenever
+</p>
+<ul class="org-ul">
+<li>a notable event happens</li>
+<li>new information comes to light</li>
+<li><p>
+someone notices an inaccuracy
+</p>
+
+<p>
+Writing living documents means that you don't have to be <i>done</i> in order to write something worthwhile. Evolve it as you see fit, or as you see the need!
+</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-linkedhyperlinked-text-is-different" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-linkedhyperlinked-text-is-different">Writing linked/hyperlinked text is different than writing standalone pieces.</h3>
+<div class="outline-text-3" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-writing-linkedhyperlinked-text-is-different">
+<p>
+To be clear, I do count writing for academia here. The central insight is that you don't have to explain what you can link. A link is a kind of <i>anaphora</i> &#x2013; i.e. it's like using a pronoun for something or someone you've already named.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-bad-about-them" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-bad-about-them">What's bad about them?</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-whats-bad-about-them">
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-its-hard-to-write-stories" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-its-hard-to-write-stories">It's hard to write stories.</h3>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-the-interface-betweeen-a-garden" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-the-interface-betweeen-a-garden">The interface betweeen a garden and "finished" work is not seamless.</h3>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-its-hard-to-tell-whats" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-its-hard-to-tell-whats">It's hard to tell what's noteworthy, both when reading and writing.</h3>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-the-stream-vs-the-garden" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-the-stream-vs-the-garden">The Stream vs. the Garden</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-the-stream-vs-the-garden">
+<p>
+<i>This is How You Lose the Time War</i>, anyone?
+</p>
+
+<p>
+There is an essential tension between how the wider internet is constructed &#x2013; to surface the <i>latest</i> thing, to operate in time, laid out in <i>some</i> linear order (any at all), in terms of query-and-response &#x2013; and a collection of objects designed to respond to time in complex organic ways, with a structure that can be accessed in many directions, that will often give you valuable things but not in a predictable way and often not in a keyword-queryable way; whose metadata isn't designed to be accessible from the top down.
+</p>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-metadata-takes-work" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-metadata-takes-work">Metadata takes work</h3>
+<div class="outline-text-3" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-metadata-takes-work">
+<p>
+Where are you expending your bookeeping effort? Are you trying to make search easy, or linking rich? Do you organize in keywords or file directories?
+</p>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-garden-artifacts-change-stream-artifacts" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-garden-artifacts-change-stream-artifacts">Garden artifacts change, stream artifacts rot</h3>
+<div class="outline-text-3" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-garden-artifacts-change-stream-artifacts">
+<p>
+Evergreen notes aren't designed to be static! In a good garden, notes are touched and changed often. This means that 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-gardening-tools-you-may-have" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-gardening-tools-you-may-have">Gardening tools you may have come across</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-gardening-tools-you-may-have">
+<p>
+As you might imagine, there's been a lot of convergent evolution in this space. Phyiscal, digital, web, web-only; private, public, restricted to a company or a private community.
+</p>
+<ul class="org-ul">
+<li>Evernote</li>
+<li>Notion</li>
+<li>Obsidian</li>
+<li>Roam Research</li>
+<li>org-mode and org-roam</li>
+<li>vimwiki</li>
+<li>Tiddlywiki</li>
+<li>Logseq</li>
+</ul>
+
+<p>
+One must note that <i>any</i> blogging system can be used like this! Digital gardening is a <i>conceptual</i> technology.
+What's more, most of the terchnology you cna use has further opinions on how things should be done with it. They can be helpful guardrails for when you want to dive in headfirst, but aren't very good for starting small.
+</p>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-penny-tours-of-pretty-gardens" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-penny-tours-of-pretty-gardens">Penny tours of pretty gardens</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-penny-tours-of-pretty-gardens">
+<p>
+Lot of IndieWebClub repeat offenders fall in this bucket.
+</p>
+<ul class="org-ul">
+<li><a href="https://gwern.net">Gwern</a></li>
+<li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
+<li><a href="https://oleksii.shmalko.com/">Oleksii Schmalko</a></li>
+<li><a href="https://braindump.jethro.dev/">Jethro's Braindump</a></li>
+<li><a href="https://sachachua.com/blog/">Sacha Chua</a></li>
+<li><a href="https://glyphack.com/ob/">Glyphack</a></li>
+<li><a href="https://beepb00p.xyz/blog-graph.html">Blog graph - beepb00p.xyz</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-further-reading" class="outline-2">
+<h2 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-further-reading">Further reading</h2>
+<div class="outline-text-2" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-further-reading">
+<ul class="org-ul">
+<li><a href="https://maggieappleton.com/garden-history">A Brief History &amp; Ethos of the Digital Garden</a></li>
+<li><a href="https://orgmode.org/guide/Capture-Refile-Archive.html">Capture, Refile, Archive</a></li>
+<li><a href="https://sachachua.com/blog/2025/07/finding-the-shape-of-my-thoughts/">Finding the shape of my thoughts</a></li>
+<li><a href="https://www.kathleenspracklen.com/zettelkasten-emotion">How to Use a Zettelkasten to Write Stories Packed with Emotion</a></li>
+<li><a href="https://practicedrawingthis.com/cgi-bin/carousel.cgi?section=newsletter-archive&amp;episode=blog-2025-01-12-the-one-thing-you-need-to-know-about-zettelkasten-">The One Thing You Need To Know About Zettelkasten &#x2013; practicedrawingthis.com</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-hca66f927-0d5d-49cf-a676-43a5696eba2c-backlinks" class="outline-3">
+<h3 id="hca66f927-0d5d-49cf-a676-43a5696eba2c-backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-hca66f927-0d5d-49cf-a676-43a5696eba2c-backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
