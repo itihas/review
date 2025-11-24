@@ -197,19 +197,25 @@
 <div id="content" class="content">
 <h1 class="title">pinebook pro adventures</h1>
 <p>
-In 2021, I acquired a PInebook Pro! It's a beautiful little device, something like a budget phone with a laptop form factor and without the presumption that it will be running Android. A good catalyst to learn about the ways an ISA affects you all the way up the stack. And hardware. I'm having fun, anyway.
+In 2021, I acquired a PInebook Pro! It's a beautiful little device, something like a budget phone with a laptop form factor and without the presumption that it will be running Android. A good catalyst to learn about the ways an ISA affects you all the way up the stack.
 </p>
 
 <p>
-I did get bored with it quickly upon first purchase, but woke it up again in 2025 because whaddaya know, a lightweight potato is actually the perfect stripped-down writing environment.
+I did get bored with it quickly upon first purchase. I briefly woke it up again in 2025 because whaddaya know, a lightweight potato is actually the perfect stripped-down writing environment. It's also great to have a laptoppy computing device hanging around, for folks who want to browse or hack on something with less text neck.
 </p>
 
 <p>
-Performing maintenance on it has been fun. A nostalgic return to Arch, after years of NixOS on my personal driver (and a year of GDebian (I'm sure it's perfectly nice for other people) on my work machine). Technically I <i>could</i> put Nix on it, but I quail before the specter of the sheer extent of procrastination that that would represent. Naturally I'd need a remote build setup (who would build on this baby potato), and then of course I'd have no excuse not to customize the builds to be optimized for the RockPro&#x2026;
-It has Manjaro on it out of the box, I'm keeping it that way. There's plenty of idiosyncrasy and one-off fixes to do for this thing as it is. (See below for those - most of the utility of this note.)
+Performing maintenance on it has been fun. In early 2025 it was a nostalgic return to Arch, after years of NixOS on my personal driver (and a year of GDebian (I'm sure it's perfectly nice for other people) on my work machine). I now want to put Nix on it,
+</p>
+
+<p>
+Naturally I need a remote build setup (who would build on this baby potato), so a prerequisite is getting Hydra up and running. (And using my little baby remote Hetzner as a remote build machine. (I miss my big machine.)) My whole setup gossips on tailscale, which keeps this expected chatter off the open internet.
 </p>
 
 
+<p>
+Manjaro bug log:
+</p>
 <ul class="org-ul">
 <li><p>
 <span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 16:12] </span></span> switch to unstable branch
@@ -249,7 +255,11 @@ WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 â
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<script data-isso="https://comments.itihas.review/"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
 </div>
 </body>
 </html>

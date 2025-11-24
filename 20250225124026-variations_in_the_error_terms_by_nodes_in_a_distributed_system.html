@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>variations in the remainder terms by nodes in a distributed system</title>
+<title>beating, cascading, and other ways distributed systems respond to synchronicity (and lack thereof)</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -195,31 +195,50 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">variations in the remainder terms by nodes in a distributed system</h1>
+<h1 class="title">beating, cascading, and other ways distributed systems respond to synchronicity (and lack thereof)</h1>
 <p>
-Simplest example of this is how Prometheus avoids beating by hash-assigning a random nanosecond delay to the scraping of each node.
+Impulses along the spokes of a hub-and-spoke network really shouldn't stack on each other or else they overwhelm the hub. Federated Prometheus deployments avoid this problem (termed beating) by hash-assigning a random nanosecond delay to the scraping of each node.
 </p>
 
 <p>
-Most poetic example is of improvisational song groups (where did I read about this??? Was is Ed). Or maybe New Orleans jazz is a sufficient illustration. The practice being, be aware of the larger trend, and seek interest on the margin.
+Multiagent systems will often create similar noise-adding solutions to similar problems at the resolution of each individual agent. My favorite example is of improvisational song groups, who use syncopy and chorus to create room for call-and-response.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> New Orleans jazz does something similar. So does tango.
 </p>
 
 <p>
-Rhymes with perturbation theory.
+The practice seems to be a way to create a setup-and-payoff inside a <i>rhythm</i> &#x2013; set up a trend collaboratively, and seek interest on the margin.
+</p>
+
+<p>
+Rhymes with <a href="../20250705222130-perturbation_theory.html#ID-c8603831-2b54-44d8-b0be-7e33796b8f34">perturbation theory</a>. Rhymes also with coopetition.
 </p>
 <div id="outline-container-h3e984df9-83a5-44c9-a333-e360ef7b0164-backlinks" class="outline-2">
 <h2 id="h3e984df9-83a5-44c9-a333-e360ef7b0164-backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-h3e984df9-83a5-44c9-a333-e360ef7b0164-backlinks">
 </div>
 <ul class="org-ul">
+<li><a href="20251104164944-adding_noise.html#ID-dc4edb1d-03ee-47c0-b62c-75be2badec91">adding noise</a></li>
 <li><a href="20210721200800-cfar_modules.html#ID-ab5d7714-5146-411d-a5c9-660b5a8f7d85">adjust your seat</a></li>
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+I heard about this from Ed in the context of Bedouin song groups iirc. It seems like one instance of a thing a lot of improvisational traditions probably do. I need to back it up with some secondary research.
+</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<script data-isso="https://comments.itihas.review/"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
 </div>
 </body>
 </html>
