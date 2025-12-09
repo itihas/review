@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 09 Dec 2025 08:43:26 +0000</pubDate>
-  <lastBuildDate>Tue, 09 Dec 2025 08:43:26 +0000</lastBuildDate>
+  <pubDate>Tue, 09 Dec 2025 14:12:20 +0000</pubDate>
+  <lastBuildDate>Tue, 09 Dec 2025 14:12:20 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.39</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>Fuck wasm-pack</title>
+    <link>https://itihas.review/20251209184154-fuck_wasm_pack.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251209184154-fuck_wasm_pack.html</guid>
+    <pubDate>Tue, 09 Dec 2025 18:50:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>it's about the hunt for me,</title>
     <link>https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20210416162700-writerkata.html</guid>
     <pubDate>Sat, 03 May 2025 12:25:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Review</title>
-    <link>https://itihas.review/index.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/index.html</guid>
-    <pubDate>Sat, 03 May 2025 12:19:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

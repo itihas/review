@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>durability of inferred knowledge</title>
+<title>Fuck wasm-pack</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -195,41 +195,31 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">durability of inferred knowledge</h1>
+<h1 class="title">Fuck wasm-pack</h1>
 <p>
-Think of DNA and reimplementation. Question: how often on average are things reimplemented in DNA?
-Program durability is one thing, but 
-</p>
-
-<pre class="example" id="orgff2ed2e">
-existing code is capable of solving the problem AND existing code is used to solve the problem
-</pre>
-
-<p>
-Edit distance efficiency, tentatively
-</p>
-
-<p>
-Is quite another. I'd be interested to see 
+I started <a href="20251204173528-deploy_ente_via_a_flake.html#ID-d1cf9788-77ed-4bb1-b003-7385d95c4f08">packaging ente with nix</a> for self-hosting purposes. Over the week that I spent languishing in yarn lock hell a new beast reared its head: the Ente team pushed their rust core to prod.  `rust-core` was a good excuse to learn how to package with <a href="https://github.com/ipetkov/crane">crane</a>,  but in the course of `rust-wasm` an enemy from earlier in the year reared its head: wasm-pack. The binary insists on downloading wasm-opt and wasm-bindgen on its own; it spits in the face of your toolchain. People have been complaining about this since 2020:
 </p>
 <ul class="org-ul">
-<li>good ways to measure that</li>
-<li>good ways to improve it</li>
-<li>how DNA performs on that scale.</li>
+<li><a href="https://github.com/drager/wasm-pack/issues/812">https://github.com/drager/wasm-pack/issues/812</a></li>
+<li><a href="https://github.com/drager/wasm-pack/issues/821">https://github.com/drager/wasm-pack/issues/821</a></li>
+<li><p>
+<a href="https://github.com/drager/wasm-pack/issues/1316">https://github.com/drager/wasm-pack/issues/1316</a>
+</p>
+
+<p>
+And forget changing this behaviour, nobody seems to care even to explain <i>why</i>.
+</p>
+
+<p>
+Submitting a PR to the ente team for them to switch to using wasm-bindgen directly, and never mind the boilerplate. Weeping in the meantime.
+</p></li>
 </ul>
-
-<p>
-Also, reading the deductive uncertainty paper would really help right about now, since it hooks up real nice.
-</p>
-
-<p>
-(Above notes sparked from Samo Burja, Functional Institutions are the Exception. <a href="20201002221200-civilization_institutions_knowledge_and_the_future_samo_burja_youtube.html#ID-4c15d258-ad3b-4975-bad2-091986304f76">Civilization: Institutions, Knowledge and the Future - Samo Burja - YouTube</a>)
-</p>
-<div id="outline-container-haefa9dcb-dfb9-4b63-9acd-b6e4492de183-backlinks" class="outline-2">
-<h2 id="haefa9dcb-dfb9-4b63-9acd-b6e4492de183-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-haefa9dcb-dfb9-4b63-9acd-b6e4492de183-backlinks">
+<div id="outline-container-hb9fc0cfa-8ec5-4b79-aba9-31234fa99af1-backlinks" class="outline-2">
+<h2 id="hb9fc0cfa-8ec5-4b79-aba9-31234fa99af1-backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-hb9fc0cfa-8ec5-4b79-aba9-31234fa99af1-backlinks">
 </div>
 <ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
 </ul>
 </div>
 </div>
