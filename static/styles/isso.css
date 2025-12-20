@@ -48,7 +48,7 @@ h4.isso-thread-heading {
 .isso-avatar {
     display: block;
     float: left;
-    margin: 0.95em 0.95em 0;
+    margin: 0.45em 0 0.45em 0;
 }
 .isso-avatar svg {
     max-width: 48px;
@@ -61,7 +61,7 @@ h4.isso-thread-heading {
 }
 .isso-text-wrapper {
     display: block;
-    padding: 0.95em;
+    padding: 0.25em;
 }
 .isso-follow-up {
     padding-left: calc(7% + 20px);
@@ -169,8 +169,8 @@ h4.isso-thread-heading {
 /* Postbox                                                                    */
 /* ========================================================================== */
 .isso-postbox {
-    max-width: 68em;
-    margin: 0 2em;
+    max-width: 45em;
+    margin: 0;
     clear: right;
 }
 .isso-form-wrapper {
