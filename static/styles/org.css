@@ -1405,30 +1405,22 @@ body{
     color:red;
     font-weight:700
 }
-.org-outline-1{
-    color:#00f
+.outline-1{
 }
-.org-outline-2{
-    color:sienna;
+.outline-2{
     margin: 2em 0;
 }
-.org-outline-3{
-    color:#a020f0
+.outline-3{
 }
-.org-outline-4{
-    color:#b22222
+.outline-4{
 }
-.org-outline-5{
-    color:#228b22
+.outline-5{
 }
-.org-outline-6{
-    color:#008b8b
+.outline-6{
 }
-.org-outline-7{
-    color:#483d8b
+.outline-7{
 }
-.org-outline-8{
-    color:#8b2252
+.outline-8{
 }
 .org-package-description{
     color:#000;
@@ -1939,7 +1931,7 @@ dl,ol,ul{
     padding-right:.5em
 }
 a{
-    color:#527d9a;
+    color:darkslateblue;
     text-decoration:none
 }
 a:hover{
