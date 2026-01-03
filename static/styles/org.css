@@ -9,7 +9,7 @@ li::marker {
 
 #content {
     margin: 0;
-    max-width: 40em;
+    max-width: 45em;
 }
 
 html{
@@ -1858,15 +1858,13 @@ a:hover{
 }
 body{
     margin:1em;
-    font-size:24px;
+    font-size:16px;
     line-height:1.4em;
     font-family:Libertinus Serif,serif;
-    color:#333
 }
 @media screen and (min-width:600px){
     body{
-        font-size:24px;
-	width:80%;
+        font-size:18px;
 	padding-left: 20%;
     }
 }
@@ -1931,8 +1929,9 @@ dl,ol,ul{
     padding-right:.5em
 }
 a{
-    color:darkslateblue;
-    text-decoration:none
+    color:#527d9a;
+    text-decoration:underline;
+    font-weight: bold;
 }
 a:hover{
     color:#035;
@@ -2103,7 +2102,8 @@ kbd{
     margin:.2em
 }
 p.verse{
-    margin-left:3%
+    margin-left:1em;
+    line-height: 2em;
 }
 :not(pre)>code{
     padding:2px 5px;
