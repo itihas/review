@@ -194,7 +194,11 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
-<div id="content" class="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content" class="content">
 <h1 class="title">Fuck wasm-pack</h1>
 <p>
 I started <a href="20251204173528-deploy_ente_via_a_flake.html#ID-d1cf9788-77ed-4bb1-b003-7385d95c4f08">packaging ente with nix</a> for self-hosting purposes. Over the week that I spent languishing in yarn lock hell a new beast reared its head: the Ente team pushed their rust core to prod.  `rust-core` was a good excuse to learn how to package with <a href="https://github.com/ipetkov/crane">crane</a>,  but in the course of `rust-wasm` an enemy from earlier in the year reared its head: wasm-pack. The binary insists on downloading wasm-opt and wasm-bindgen on its own; it spits in the face of your toolchain. People have been complaining about this since 2020:

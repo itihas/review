@@ -194,7 +194,11 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
-<div id="content" class="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content" class="content">
 <h1 class="title">blogging project</h1>
 <div id="outline-container-h72179240-24a0-4241-946f-0d1e3b91d2ec-what-are-we-trying-to" class="outline-2">
 <h2 id="h72179240-24a0-4241-946f-0d1e3b91d2ec-what-are-we-trying-to">What are we trying to achieve?</h2>
@@ -299,36 +303,38 @@ I already use tags heavily, albeit halfheartedly, to say what a post is about.
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-todo-implement-tag-pages"></a>todo implement tag pages<br /></li>
 </ul>
 </li>
-<li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-tags-are-control-related"></a>tags are control related<br />
-<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-tags-are-control-related">
+<li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-tags-are-good-data-for"></a>tags are good data for functions<br />
+<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-tags-are-good-data-for">
 <p>
 tags (esp those below) represent what to do with a post, programmatically or otherwise.
 </p>
 </div>
 </li>
+<li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-kinds-of-tag-i-want"></a>kinds of tag I want<br />
+<ul class="org-ul">
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-stub-tag"></a>stub tag<br />
-<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-stub-tag">
+<div class="outline-text-6" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-stub-tag">
 <p>
 things that could stand some fleshing out. not necessary to do it but if you want writing ideas this is a good place to go.
 </p>
 </div>
 </li>
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-draft-tag"></a>draft tag<br />
-<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-draft-tag">
+<div class="outline-text-6" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-draft-tag">
 <p>
 things that are WIP to become "done and good", and in their turn substack posts.
 </p>
 </div>
 </li>
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-this-is-done-and-good"></a>"this is done and good" tag (name TBD)<br />
-<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-this-is-done-and-good">
+<div class="outline-text-6" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-this-is-done-and-good">
 <p>
 things that get posted to substack.
 </p>
 </div>
 </li>
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-noexport-tag"></a>noexport tag<br />
-<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-noexport-tag">
+<div class="outline-text-6" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-noexport-tag">
 <p>
 To be used on child headings! Can dump WIP stuff there. It's meant to be an inbox to drain into publishing or archiving.
 So as not to break links, an empty page gets created for noexport headings with the correct org id (and possibly the title also).
@@ -336,7 +342,7 @@ So as not to break links, an empty page gets created for noexport headings with 
 </div>
 <ul class="org-ul">
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-working-implement-noexport-in-uniorg"></a>working implement noexport in uniorg<br />
-<div class="outline-text-6" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-working-implement-noexport-in-uniorg">
+<div class="outline-text-7" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-working-implement-noexport-in-uniorg">
 <ul class="org-ul">
 <li>done out of the box for heading-level tags</li>
 <li>file-level roam tags are comprehensively not picked up by this skeleton.</li>
@@ -344,6 +350,8 @@ So as not to break links, an empty page gets created for noexport headings with 
 </div>
 <ul class="org-ul">
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-get-file-level-tags-working"></a>get file-level tags working.<br /></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -411,7 +419,10 @@ Go to <code>http://localhost:3000/archive</code> and click around!
 </p>
 </div>
 </li>
-<li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-todo-create-a-flake-for"></a>todo create a flake for the deployment<br /></li>
+<li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-done-create-a-flake-for"></a>done create a flake for the deployment<br />
+<div class="outline-text-5" id="text-h72179240-24a0-4241-946f-0d1e3b91d2ec-done-create-a-flake-for">
+</div>
+</li>
 <li><a id="h72179240-24a0-4241-946f-0d1e3b91d2ec-todo-git-hook-to-publish"></a>todo git hook to publish on commit<br /></li>
 </ul>
 </div>

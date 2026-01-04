@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>itihas.featured</title>
+  <atom:link href="https://itihas.review/featured.xml" rel="self" type="application/rss+xml" />
+  <link>https://itihas.review</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 04 Jan 2026 13:38:47 +0000</pubDate>
+  <lastBuildDate>Sun, 04 Jan 2026 13:38:47 +0000</lastBuildDate>
+  <generator>Emacs 30.2 Org-mode 9.7.39</generator>
+  <webMaster>nixbld@localhost (itihas)</webMaster>
+  <image>
+    <url>https://itihas.review/images/home.jpg</url>
+    <title>itihas.featured</title>
+    <link>https://itihas.review</link>
+  </image>
+
+  <item>
+    <title>Intention</title>
+    <link>https://itihas.review/20221115163402-intention.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221115163402-intention.html</guid>
+    <pubDate>Mon, 29 Dec 2025 19:04:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>pinebook pro adventures</title>
+    <link>https://itihas.review/20250213190135-pinebook_pro_adventures.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250213190135-pinebook_pro_adventures.html</guid>
+    <pubDate>Wed, 05 Nov 2025 16:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>beating, cascading, and other ways distributed systems respond to synchronicity (and lack thereof)</title>
+    <link>https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</guid>
+    <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>digital gardens</title>
+    <link>https://itihas.review/20251030192142-digital_gardens.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251030192142-digital_gardens.html</guid>
+    <pubDate>Fri, 31 Oct 2025 11:54:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>"if" in a story: "'if alive, may the sea foam milk. If dead, may it foam blood.' it foamed blood..."</title>
+    <link>https://itihas.review/20220727144900-if_in_a_story_if_alive_may_the_sea_foam_milk_if_dead_may_it_foam_blood_it_foamed_blood.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220727144900-if_in_a_story_if_alive_may_the_sea_foam_milk_if_dead_may_it_foam_blood_it_foamed_blood.html</guid>
+    <pubDate>Thu, 30 Oct 2025 21:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>kinds of user guide</title>
+    <link>https://itihas.review/20251018164202-kinds_of_user_guide.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251018164202-kinds_of_user_guide.html</guid>
+    <pubDate>Sat, 18 Oct 2025 17:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Metro Loomin'</title>
+    <link>https://itihas.review/20250907104459-metro_loomin.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250907104459-metro_loomin.html</guid>
+    <pubDate>Sun, 07 Sep 2025 21:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Moiré dancing</title>
+    <link>https://itihas.review/20250716204911-moire_dancing.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250716204911-moire_dancing.html</guid>
+    <pubDate>Fri, 15 Aug 2025 23:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Bookmarking tools suck</title>
+    <link>https://itihas.review/20250803171720-bookmarking_tools_suck.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250803171720-bookmarking_tools_suck.html</guid>
+    <pubDate>Sun, 03 Aug 2025 17:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>SRE is like stage production</title>
+    <link>https://itihas.review/20250719122447-sre-is-like-stage-production.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250719122447-sre-is-like-stage-production.html</guid>
+    <pubDate>Sat, 19 Jul 2025 13:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>daily tasks ought to be leaflike</title>
+    <link>https://itihas.review/daily-tasks-ought-to-be-leaflike.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/daily-tasks-ought-to-be-leaflike.html</guid>
+    <pubDate>Thu, 17 Jul 2025 22:29:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Risk mitigation in evolutionary stag-hare games</title>
+    <link>https://itihas.review/20250503124719-risk_mitigation_in_evolutionary_stag_hare_games.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250503124719-risk_mitigation_in_evolutionary_stag_hare_games.html</guid>
+    <pubDate>Thu, 17 Jul 2025 22:18:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>A research journal should be dated.</title>
+    <link>https://itihas.review/20160607113900-create_research_journal.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20160607113900-create_research_journal.html</guid>
+    <pubDate>Thu, 17 Jul 2025 22:18:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Taste</title>
+    <link>https://itihas.review/20250616112139-asako_yuzuki_butter.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250616112139-asako_yuzuki_butter.html</guid>
+    <pubDate>Sun, 06 Jul 2025 09:51:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>CFAR modules</title>
+    <link>https://itihas.review/20210721200800-cfar_modules.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20210721200800-cfar_modules.html</guid>
+    <pubDate>Tue, 25 Feb 2025 17:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>backwards-induction reasoning</title>
+    <link>https://itihas.review/20230816195955-backwards_induction_reasoning.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230816195955-backwards_induction_reasoning.html</guid>
+    <pubDate>Wed, 16 Aug 2023 19:59:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>How To Research Like a PhD Student | Nebula</title>
+    <link>https://itihas.review/20230518184400-how_to_research_like_a_phd_student_nebula.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230518184400-how_to_research_like_a_phd_student_nebula.html</guid>
+    <pubDate>Thu, 18 May 2023 18:44:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>march--</title>
+    <link>https://itihas.review/20230327214200-march.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230327214200-march.html</guid>
+    <pubDate>Mon, 27 Mar 2023 21:42:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>the 8086 MOV instruction is a high-level language. - Hari</title>
+    <link>https://itihas.review/20230316151600-the_8086_mov_instruction_is_a_high_level_language.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230316151600-the_8086_mov_instruction_is_a_high_level_language.html</guid>
+    <pubDate>Thu, 16 Mar 2023 15:16:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Kuleshov effect - Wikipedia</title>
+    <link>https://itihas.review/20230808100117-kuleshov_effect_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808100117-kuleshov_effect_wikipedia.html</guid>
+    <pubDate>Fri, 24 Feb 2023 09:47:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>There's something about the conversations we have in cafes</title>
+    <link>https://itihas.review/20230214125724-theres-something-about-the-conversations-we-have-in-cafes.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230214125724-theres-something-about-the-conversations-we-have-in-cafes.html</guid>
+    <pubDate>Tue, 14 Feb 2023 12:57:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Line of purples - Wikipedia</title>
+    <link>https://itihas.review/20230808103246-line_of_purples_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808103246-line_of_purples_wikipedia.html</guid>
+    <pubDate>Wed, 14 Dec 2022 15:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Psychedelic Dinosaurs, Four-Dimensional Hummingbirds, and How We Got Our Vision: Color, Consciousness, and the Dazzling Universe of Tetrachromacy – The Marginalian</title>
+    <link>https://itihas.review/20230808110549-psychedelic_dinosaurs_four_dimensional_hummingbirds_and_how_we_got_our_vision_color_consciousness_and_the_dazzling_universe_of_tetrachromacy_the_marginalian.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808110549-psychedelic_dinosaurs_four_dimensional_hummingbirds_and_how_we_got_our_vision_color_consciousness_and_the_dazzling_universe_of_tetrachromacy_the_marginalian.html</guid>
+    <pubDate>Wed, 14 Dec 2022 15:38:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Hermann Hesse on What Trees Teach Us About Belonging and Life – The Marginalian</title>
+    <link>https://itihas.review/20230808110549-hermann_hesse_on_what_trees_teach_us_about_belonging_and_life_the_marginalian.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808110549-hermann_hesse_on_what_trees_teach_us_about_belonging_and_life_the_marginalian.html</guid>
+    <pubDate>Wed, 14 Dec 2022 11:05:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Teachers Nurture Growth Mindsets in Math</title>
+    <link>https://itihas.review/20230808110549-teachers_nurture_growth_mindsets_in_math.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808110549-teachers_nurture_growth_mindsets_in_math.html</guid>
+    <pubDate>Tue, 13 Dec 2022 12:10:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>what is the "intention" of a braitenberg vehicle?</title>
+    <link>https://itihas.review/20221130000000-what_is_the_intention_of_a_braitenberg_vehicle.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221130000000-what_is_the_intention_of_a_braitenberg_vehicle.html</guid>
+    <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>"evil is banal" -&gt; "nature is not necessarily good"</title>
+    <link>https://itihas.review/20221130000000-evil_is_banal_nature_is_not_necessarily_good.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221130000000-evil_is_banal_nature_is_not_necessarily_good.html</guid>
+    <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>DM's Esoteric Programming Languages - Piet</title>
+    <link>https://itihas.review/20230808110549-dm_s_esoteric_programming_languages_piet.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808110549-dm_s_esoteric_programming_languages_piet.html</guid>
+    <pubDate>Sun, 27 Nov 2022 14:35:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>On Enjoying Disagreeable Company - LessWrong</title>
+    <link>https://itihas.review/20221115163300-on_enjoying_disagreeable_company_lesswrong.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221115163300-on_enjoying_disagreeable_company_lesswrong.html</guid>
+    <pubDate>Tue, 15 Nov 2022 16:33:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Prospect theory - Wikipedia</title>
+    <link>https://itihas.review/20230808112316-prospect_theory_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-prospect_theory_wikipedia.html</guid>
+    <pubDate>Tue, 01 Nov 2022 16:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>UKLG comment about absolute belief coexisting with knowledge that one has no reason to believe and many to disbelieve is weirdly useful for a textbook also.</title>
+    <link>https://itihas.review/20221101155800-uklg_comment_about_absolute_belief_coexisting_with_knowledge_that_one_has_no_reason_to_believe_and_many_to_disbelieve_is_weirdly_useful_for_a_textbook_also.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221101155800-uklg_comment_about_absolute_belief_coexisting_with_knowledge_that_one_has_no_reason_to_believe_and_many_to_disbelieve_is_weirdly_useful_for_a_textbook_also.html</guid>
+    <pubDate>Tue, 01 Nov 2022 15:58:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Skybird - windsweptfic - Inception (2010) [Archive of Our Own]​</title>
+    <link>https://itihas.review/20230808112316-skybird_windsweptfic_inception_2010_archive_of_our_own.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-skybird_windsweptfic_inception_2010_archive_of_our_own.html</guid>
+    <pubDate>Tue, 01 Nov 2022 10:39:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>grumpy researchers benignly haunted by the poltergeists of unsolved problems</title>
+    <link>https://itihas.review/20221020164400-grumpy_researchers_benignly_haunted_by_the_poltergeists_of_unsolved_problems.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221020164400-grumpy_researchers_benignly_haunted_by_the_poltergeists_of_unsolved_problems.html</guid>
+    <pubDate>Thu, 20 Oct 2022 16:44:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Open Source and Mental Health - Redox - Your Next(Gen) OS</title>
+    <link>https://itihas.review/20230808112316-open_source_and_mental_health_redox_your_next_gen_os.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-open_source_and_mental_health_redox_your_next_gen_os.html</guid>
+    <pubDate>Mon, 17 Oct 2022 22:33:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Have you ever unspooled the spring in a pen?</title>
+    <link>https://itihas.review/20221103145600-have_you_ever_unspooled_the_spring_in_a_pen.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20221103145600-have_you_ever_unspooled_the_spring_in_a_pen.html</guid>
+    <pubDate>Thu, 06 Oct 2022 13:08:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>CS 611 Spring'09 - Advanced Programming Languages</title>
+    <link>https://itihas.review/20230808112316-cs_611_spring_09.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-cs_611_spring_09.html</guid>
+    <pubDate>Sun, 02 Oct 2022 17:19:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Scansion study</title>
+    <link>https://itihas.review/20220923003700-scansion_study.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220923003700-scansion_study.html</guid>
+    <pubDate>Fri, 23 Sep 2022 00:37:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>humility</title>
+    <link>https://itihas.review/20220922031700-humility.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220922031700-humility.html</guid>
+    <pubDate>Thu, 22 Sep 2022 03:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>On the personal</title>
+    <link>https://itihas.review/20220920214500-on_the_personal.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220920214500-on_the_personal.html</guid>
+    <pubDate>Tue, 20 Sep 2022 21:45:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Central Nervous System: Crash Course Anatomy &amp; Physiology #11 - YouTube</title>
+    <link>https://itihas.review/20230808112316-88_central_nervous_system_crash_course_anatomy_physiology_11_youtube.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-88_central_nervous_system_crash_course_anatomy_physiology_11_youtube.html</guid>
+    <pubDate>Fri, 15 Jul 2022 00:53:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>evolutionary history of the mesencephalon?</title>
+    <link>https://itihas.review/20230808112316-88_central_nervous_system_crash_course_anatomy_physiology_11_youtube.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808112316-88_central_nervous_system_crash_course_anatomy_physiology_11_youtube.html</guid>
+    <pubDate>Fri, 15 Jul 2022 00:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Dutch disease - Wikipedia</title>
+    <link>https://itihas.review/20230808114511-dutch_disease_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808114511-dutch_disease_wikipedia.html</guid>
+    <pubDate>Thu, 26 May 2022 21:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>QC (@QiaochuYuan): "one of the first things you learn when you start writing mathematical proofs is the principle of explosion: from a single false premise you can derive any conclusion, true or false. interesting to reflect on how this has shaped my thinking and orientation towards truth" | nitter-unixfox</title>
+    <link>https://itihas.review/20230808114511-qc_qiaochuyuan_tweet_principle_of_explosion.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808114511-qc_qiaochuyuan_tweet_principle_of_explosion.html</guid>
+    <pubDate>Wed, 25 May 2022 16:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>What is FreeSewing?</title>
+    <link>https://itihas.review/20230808114511-what_is_freesewing.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808114511-what_is_freesewing.html</guid>
+    <pubDate>Tue, 17 May 2022 20:39:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Do you understand how alone we are at the moment of feeling?</title>
+    <link>https://itihas.review/20220517031000-do_you_understand_how_alone_we_are_at_the_moment_of_feeling.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220517031000-do_you_understand_how_alone_we_are_at_the_moment_of_feeling.html</guid>
+    <pubDate>Tue, 17 May 2022 10:10:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Regret in Markets | Turing's Invisible Hand</title>
+    <link>https://itihas.review/20220509145900-regret_in_markets_turing_s_invisible_hand.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220509145900-regret_in_markets_turing_s_invisible_hand.html</guid>
+    <pubDate>Mon, 09 May 2022 14:59:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Common Editing and Proofreading Marks in Composition</title>
+    <link>https://itihas.review/20220505213100-common_editing_and_proofreading_marks_in_composition.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220505213100-common_editing_and_proofreading_marks_in_composition.html</guid>
+    <pubDate>Thu, 05 May 2022 21:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>dawn sounds</title>
+    <link>https://itihas.review/20220429015800-dawn_sounds.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220429015800-dawn_sounds.html</guid>
+    <pubDate>Fri, 29 Apr 2022 01:58:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>The Little-Known ‘Slow Fire’ That’s Destroying All Our Books ‹ Literary Hub</title>
+    <link>https://itihas.review/20220429011900-the_little_known_slow_fire_that_s_destroying_all_our_books_literary_hub.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220429011900-the_little_known_slow_fire_that_s_destroying_all_our_books_literary_hub.html</guid>
+    <pubDate>Fri, 29 Apr 2022 01:19:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Andrew Hayward on Twitter: "On autism and literalism, and why it's not just about avoiding euphemisms. 🧵" / Twitter</title>
+    <link>https://itihas.review/20220429011800-andrew_hayward_on_twitter_on_autism_and_literalism_and_why_it_s_not_just_about_avoiding_euphemisms_twitter.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220429011800-andrew_hayward_on_twitter_on_autism_and_literalism_and_why_it_s_not_just_about_avoiding_euphemisms_twitter.html</guid>
+    <pubDate>Fri, 29 Apr 2022 01:18:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>23 Ways To Treat Yo' Self Without Buying Or Eating Anything -</title>
+    <link>https://itihas.review/20220428215000-23_ways_to_treat_yo_self_without_buying_or_eating_anything.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220428215000-23_ways_to_treat_yo_self_without_buying_or_eating_anything.html</guid>
+    <pubDate>Thu, 28 Apr 2022 21:50:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Disagreement (Stanford Encyclopedia of Philosophy)</title>
+    <link>https://itihas.review/20220427164500-disagreement_stanford_encyclopedia_of_philosophy.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220427164500-disagreement_stanford_encyclopedia_of_philosophy.html</guid>
+    <pubDate>Wed, 27 Apr 2022 16:45:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Music and movement as a reboot/shuffle button for my atypical attention inertia (ADHD) | Mel Chua</title>
+    <link>https://itihas.review/20220427145500-music_and_movement_as_a_reboot_shuffle_button_for_my_atypical_attention_inertia_adhd_mel_chua.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220427145500-music_and_movement_as_a_reboot_shuffle_button_for_my_atypical_attention_inertia_adhd_mel_chua.html</guid>
+    <pubDate>Wed, 27 Apr 2022 14:55:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Why Deafening Engineering? Because onto(ethico)epistemologies. | Mel Chua</title>
+    <link>https://itihas.review/20220427142500-why_deafening_engineering_because_onto_ethico_epistemologies_mel_chua.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220427142500-why_deafening_engineering_because_onto_ethico_epistemologies_mel_chua.html</guid>
+    <pubDate>Wed, 27 Apr 2022 14:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>A reader’s guide to the “ontological turn” – Part 4 | Somatosphere</title>
+    <link>https://itihas.review/20230808214256-a_reader_s_guide_to_the_ontological_turn_part_4_somatosphere.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808214256-a_reader_s_guide_to_the_ontological_turn_part_4_somatosphere.html</guid>
+    <pubDate>Wed, 27 Apr 2022 14:20:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Best Homemade Clay</title>
+    <link>https://itihas.review/20220425114000-best_homemade_clay.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220425114000-best_homemade_clay.html</guid>
+    <pubDate>Mon, 25 Apr 2022 11:40:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>in this house we are cringe — I literally love topology so much. I've been...</title>
+    <link>https://itihas.review/20220421002500-in_this_house_we_are_cringe_i_literally_love_topology_so_much_i_ve_been.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220421002500-in_this_house_we_are_cringe_i_literally_love_topology_so_much_i_ve_been.html</guid>
+    <pubDate>Thu, 21 Apr 2022 00:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Poems That Can Save Your Life a Little | Zócalo Public Square</title>
+    <link>https://itihas.review/20220417165000-poems_that_can_save_your_life_a_little_zocalo_public_square.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220417165000-poems_that_can_save_your_life_a_little_zocalo_public_square.html</guid>
+    <pubDate>Sun, 17 Apr 2022 16:50:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Adventures in Backing Up Data with ZFS | Gavin D. Howard</title>
+    <link>https://itihas.review/20220413160000-adventures_in_backing_up_data_with_zfs_gavin_d_howard.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220413160000-adventures_in_backing_up_data_with_zfs_gavin_d_howard.html</guid>
+    <pubDate>Wed, 13 Apr 2022 16:00:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ogive - Wikipedia</title>
+    <link>https://itihas.review/20220329185000-ogive_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220329185000-ogive_wikipedia.html</guid>
+    <pubDate>Tue, 29 Mar 2022 18:50:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>How ‘Mr. Robot’ Uses Lower Quadrant Framing to Create a Feeling of Oppression and Isolation - Bold Entrance</title>
+    <link>https://itihas.review/20220327150500-how_mr_robot_uses_lower_quadrant_framing_to_create_a_feeling_of_oppression_and_isolation_bold_entrance.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220327150500-how_mr_robot_uses_lower_quadrant_framing_to_create_a_feeling_of_oppression_and_isolation_bold_entrance.html</guid>
+    <pubDate>Sun, 27 Mar 2022 15:05:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>email to jam about dietrich-list [2022-03-21 Mon]</title>
+    <link>https://itihas.review/20220321174800-email_to_jam_about_dietrich_list_2022_03_21_mon.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220321174800-email_to_jam_about_dietrich_list_2022_03_21_mon.html</guid>
+    <pubDate>Mon, 21 Mar 2022 17:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Diseasonality - by Scott Alexander - Astral Codex Ten</title>
+    <link>https://itihas.review/20220318124900-diseasonality_by_scott_alexander_astral_codex_ten.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220318124900-diseasonality_by_scott_alexander_astral_codex_ten.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:49:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>reasons why players might move from one motivstate to the other</title>
+    <link>https://itihas.review/dietrichWherePreferencesCome2013.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/dietrichWherePreferencesCome2013.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>reasons why players might move from one motivstate to the other:</title>
+    <link>https://itihas.review/reachability.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/reachability.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>the reason DL have presented an axiomatization is that axioms are falsifiable statements.</title>
+    <link>https://itihas.review/20220321174800-email_to_jam_about_dietrich_list_2022_03_21_mon.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220321174800-email_to_jam_about_dietrich_list_2022_03_21_mon.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:10:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>CONCRETE QUESTION: let properties be words in the builder-assistant game. how many rounds of play does it take before the epistemic game catches up to common knowledge of which properties constitute a player p's motivational state?</title>
+    <link>https://itihas.review/dietrichWherePreferencesCome2013.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/dietrichWherePreferencesCome2013.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:07:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>let properties be words in the builder-assistant game. how many rounds of play does it take before the epistemic game catches up to common knowledge of which properties constitute a player p's motivational state?</title>
+    <link>https://itihas.review/reachability.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/reachability.html</guid>
+    <pubDate>Fri, 18 Mar 2022 12:07:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Holodomor - Wikipedia</title>
+    <link>https://itihas.review/20220317173800-holodomor_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220317173800-holodomor_wikipedia.html</guid>
+    <pubDate>Thu, 17 Mar 2022 17:38:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Justification Logic (Stanford Encyclopedia of Philosophy)</title>
+    <link>https://itihas.review/20230808214256-justification_logic_stanford_encyclopedia_of_philosophy.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808214256-justification_logic_stanford_encyclopedia_of_philosophy.html</guid>
+    <pubDate>Thu, 17 Mar 2022 10:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>justification logics and the geach axiom</title>
+    <link>https://itihas.review/20230808214256-justification_logics_and_the_geach_axiom.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230808214256-justification_logics_and_the_geach_axiom.html</guid>
+    <pubDate>Thu, 17 Mar 2022 10:01:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Union-closed sets conjecture - Wikipedia</title>
+    <link>https://itihas.review/20220315222200-union_closed_sets_conjecture_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220315222200-union_closed_sets_conjecture_wikipedia.html</guid>
+    <pubDate>Tue, 15 Mar 2022 22:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Properties of outcomes as intentions</title>
+    <link>https://itihas.review/reachability.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/reachability.html</guid>
+    <pubDate>Tue, 15 Mar 2022 19:19:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Properties of outcomes as intentions</title>
+    <link>https://itihas.review/dietrichWherePreferencesCome2013.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/dietrichWherePreferencesCome2013.html</guid>
+    <pubDate>Tue, 15 Mar 2022 19:19:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ruled Paper Templates - Inks and Pens</title>
+    <link>https://itihas.review/20220222135200-ruled_paper_templates_inks_and_pens.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222135200-ruled_paper_templates_inks_and_pens.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:52:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ghostscript oneliners</title>
+    <link>https://itihas.review/20220222135200-merge_multiple_pdfs_using_ghostscript_github.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222135200-merge_multiple_pdfs_using_ghostscript_github.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:52:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>‘Fountain’, Marcel Duchamp, 1917, replica 1964 | Tate</title>
+    <link>https://itihas.review/20220222133400-fountain_marcel_duchamp_1917_replica_1964_tate.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133400-fountain_marcel_duchamp_1917_replica_1964_tate.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:34:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>relations - Finding all posets on a set - Mathematics Stack Exchange</title>
+    <link>https://itihas.review/20220222133300-relations_finding_all_posets_on_a_set_mathematics_stack_exchange.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133300-relations_finding_all_posets_on_a_set_mathematics_stack_exchange.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:33:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>GitHub - zerotier/ZeroTierOne: A Smart Ethernet Switch for Earth</title>
+    <link>https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>tinc</title>
+    <link>https://itihas.review/20220222133200-tinc.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133200-tinc.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>GitHub - slackhq/nebula: A scalable overlay networking tool with a focus on performance, simplicity and security</title>
+    <link>https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Jellyfin Remote Access with Tailscale | Ethan Madison's website</title>
+    <link>https://itihas.review/20220222133100-jellyfin_remote_access_with_tailscale_ethan_madison_s_website.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133100-jellyfin_remote_access_with_tailscale_ethan_madison_s_website.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>How do Mesh VPNs work? Writing my own VPN tool in Golang to find out | Sam Lewis</title>
+    <link>https://itihas.review/20220222133100-how_do_mesh_vpns_work_writing_my_own_vpn_tool_in_golang_to_find_out_sam_lewis.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222133100-how_do_mesh_vpns_work_writing_my_own_vpn_tool_in_golang_to_find_out_sam_lewis.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Don't Kill Time - David Perell</title>
+    <link>https://itihas.review/20220222132900-don_t_kill_time_david_perell.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222132900-don_t_kill_time_david_perell.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:29:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Rclone</title>
+    <link>https://itihas.review/20220222132400-rclone.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222132400-rclone.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Gutenprint - Wikipedia</title>
+    <link>https://itihas.review/20220222132300-gutenprint_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222132300-gutenprint_wikipedia.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:23:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>escputil(1) - Linux man page</title>
+    <link>https://itihas.review/20220222132300-escputil_1_linux_man_page.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220222132300-escputil_1_linux_man_page.html</guid>
+    <pubDate>Tue, 22 Feb 2022 13:23:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Slipping into psychosis: living in the prodrome (part 1, originally 5 January 2011) – Neuroanthropology</title>
+    <link>https://itihas.review/20220221180500-slipping_into_psychosis_living_in_the_prodrome_part_1_originally_5_january_2011_neuroanthropology.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220221180500-slipping_into_psychosis_living_in_the_prodrome_part_1_originally_5_january_2011_neuroanthropology.html</guid>
+    <pubDate>Mon, 21 Feb 2022 18:05:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Neuroanthropology – Understanding the encultured brain</title>
+    <link>https://itihas.review/20220221101500-neuroanthropology_understanding_the_encultured_brain.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220221101500-neuroanthropology_understanding_the_encultured_brain.html</guid>
+    <pubDate>Mon, 21 Feb 2022 10:15:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>The Primal Pleasure and Brutal History of Sugar - Eater</title>
+    <link>https://itihas.review/20220218164800-the_primal_pleasure_and_brutal_history_of_sugar_eater.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220218164800-the_primal_pleasure_and_brutal_history_of_sugar_eater.html</guid>
+    <pubDate>Fri, 18 Feb 2022 16:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ali: Fear Eats the Soul movie review (1974) | Roger Ebert</title>
+    <link>https://itihas.review/20220217000400-ali_fear_eats_the_soul_movie_review_1974_roger_ebert.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220217000400-ali_fear_eats_the_soul_movie_review_1974_roger_ebert.html</guid>
+    <pubDate>Thu, 17 Feb 2022 00:04:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Preorder - Wikipedia</title>
+    <link>https://itihas.review/20220210222600-preorder_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222600-preorder_wikipedia.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:26:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Debugging Lisp Part 1: Recompilation - malisper.me</title>
+    <link>https://itihas.review/20220210222500-debugging_lisp_part_1_recompilation_malisper_me.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222500-debugging_lisp_part_1_recompilation_malisper_me.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>GitHub - pixeltris/GK6X: Configure keys, macros, and lighting on GK6X keyboards (GK64, GK84, GK61, etc)</title>
+    <link>https://itihas.review/20220210222500-github_pixeltris_gk6x_configure_keys_macros_and_lighting_on_gk6x_keyboards_gk64_gk84_gk61_etc_https_github_com_pixeltris_gk6x.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222500-github_pixeltris_gk6x_configure_keys_macros_and_lighting_on_gk6x_keyboards_gk64_gk84_gk61_etc_https_github_com_pixeltris_gk6x.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:25:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Neume - Wikipedia https://en.wikipedia.org/wiki/Neume</title>
+    <link>https://itihas.review/20220210222400-neume_wikipedia.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222400-neume_wikipedia.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Internet Manifesto</title>
+    <link>https://itihas.review/20220210222300-internet_manifesto.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222300-internet_manifesto.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:23:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>GNU make</title>
+    <link>https://itihas.review/20220210222100-gnu_make.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222100-gnu_make.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>functional programming - What persistent data structure for a set of partially ordered elements? - Theoretical Computer Science Stack Exchange</title>
+    <link>https://itihas.review/20220210222000-functional_programming_what_persistent_data_structure_for_a_set_of_partially_ordered_elements_theoretical_computer_science_stack_exchange.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220210222000-functional_programming_what_persistent_data_structure_for_a_set_of_partially_ordered_elements_theoretical_computer_science_stack_exchange.html</guid>
+    <pubDate>Thu, 10 Feb 2022 22:20:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>ToposText</title>
+    <link>https://itihas.review/20220202182400-topostext.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220202182400-topostext.html</guid>
+    <pubDate>Wed, 02 Feb 2022 18:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Let Over Lambda</title>
+    <link>https://itihas.review/20220119132800-let_over_lambda.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20220119132800-let_over_lambda.html</guid>
+    <pubDate>Wed, 19 Jan 2022 13:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+</channel>
+</rss>

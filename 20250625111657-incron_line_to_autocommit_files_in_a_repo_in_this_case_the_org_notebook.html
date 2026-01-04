@@ -194,7 +194,11 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
-<div id="content" class="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content" class="content">
 <h1 class="title">incron line to autocommit files in a repo (in this case the org-notebook):</h1>
 <div class="org-src-container">
 <pre class="src src-conf">/home/itihas/org-notebook       IN_CLOSE_WRITE  cd /home/itihas/org-notebook &amp;&amp; git add -A &amp;&amp; git commit -m <span style="font-style: italic;">"[`hostname`] $#"</span> &amp;&amp; git pull --rebase &amp;&amp; git push

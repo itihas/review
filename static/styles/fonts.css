@@ -28,6 +28,25 @@
 
 @font-face {
     font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-SemiBold.woff2') format('woff2'),
+        url('LibertinusSerif-SemiBold.woff') format('woff');
+    font-weight: semibold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    src: url('LibertinusSerif-SemiBoldItalic.woff2') format('woff2'),
+        url('LibertinusSerif-SemiBoldItalic.woff') format('woff');
+    font-weight: semibold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
     src: url('LibertinusSerif-Regular.woff2') format('woff2'),
         url('LibertinusSerif-Regular.woff') format('woff');
     font-weight: normal;

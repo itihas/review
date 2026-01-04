@@ -194,7 +194,11 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
-<div id="content" class="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content" class="content">
 <h1 class="title">Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</h1>
 <div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-tldr" class="outline-2">
 <h2 id="hd488b7de-e418-4556-94bb-b8355de64687-tldr">tl;dr</h2>
@@ -231,7 +235,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org9354e49"></a> | Right <a id="orge65d1c5"></a>
+Strategy := Payoff | Left <a id="org1787a7d"></a> | Right <a id="org6a88420"></a>
 </p>
 
 
@@ -254,11 +258,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org79871d6"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org3bf2b55"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org7bbc288"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org8a2a74d"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -283,11 +287,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgf1e548d"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org127dc73"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org22ee38b"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org13c0f07"></a></td>
 </tr>
 </tbody>
 </table>
@@ -307,7 +311,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org6416a97"></a> : lleaf <a id="orgb7c8a5f"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgd38ed90"></a> : lleaf <a id="orge654fbc"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>

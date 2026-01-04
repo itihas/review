@@ -194,7 +194,11 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
-<div id="content" class="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content" class="content">
 <h1 class="title">get emacs to use a nix-managed project's development environment</h1>
 <p>
 Emacs can pick up <code>direnv</code>, which in turn can have <code>use flake</code> and run <code>nix develop</code> inside the buffer. As long as your Nix Flake has a <code>devShell</code>, many package in emacs will respect it.
