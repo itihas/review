@@ -169,10 +169,7 @@ a{
     font:inherit;
     text-decoration:inherit
 }
-a:hover{
-    text-decoration:underline
-}
-a:
+
 body{
     margin:1em;
     font-size:16px;
@@ -252,9 +249,6 @@ a{
 a:hover{
     color:#042c4e;
     border-bottom:1px dotted
-}
-a:visited{
-    color:#620034;
 }
 figure{
     padding:0;
