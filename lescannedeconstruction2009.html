@@ -235,7 +235,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org1787a7d"></a> | Right <a id="org6a88420"></a>
+Strategy := Payoff | Left <a id="orgd5fb33f"></a> | Right <a id="orgb1fdbde"></a>
 </p>
 
 
@@ -258,11 +258,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org3bf2b55"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org359a30e"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org8a2a74d"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org1a7b23b"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -287,11 +287,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org127dc73"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org9c070c1"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org13c0f07"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orga35d06e"></a></td>
 </tr>
 </tbody>
 </table>
@@ -311,7 +311,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="orgd38ed90"></a> : lleaf <a id="orge654fbc"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgfa1ff0f"></a> : lleaf <a id="org97cfacf"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
