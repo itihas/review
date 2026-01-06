@@ -189,6 +189,10 @@ body{
     background:#5eacd8
 }
 
+.outline-2{
+    margin:2em auto;
+}
+
 p{
 }
 
@@ -434,7 +438,9 @@ p.verse{
     padding:10px
 }
 #org-div-home-and-up{
-    font-size:70%;
+    font-size:80%;
+    font-family: Faustina, sans-serif;
+    font-weight: bold;
     text-align:right;
     white-space:nowrap
 }

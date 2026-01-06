@@ -194,23 +194,24 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
+<div id="preamble" class="status">
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
- |
- <a accesskey="H" href="index.html"> HOME </a>
-</div><div id="content" class="content">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
 <h1 class="title">Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</h1>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-tldr" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-tldr">tl;dr</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-tldr">
+<div id="outline-container-ID-tl;dr" class="outline-2">
+<h2 id="ID-tl;dr">tl;dr</h2>
+<div class="outline-text-2" id="text-ID-tl;dr">
 <p>
 Equilibria for infinite games using coinduction.
 </p>
 </div>
 </div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read">notes as I read</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-notes-as-i-read">
+<div id="outline-container-ID-notes as I read" class="outline-2">
+<h2 id="ID-notes as I read">notes as I read</h2>
+<div class="outline-text-2" id="text-ID-notes as I read">
 <ul class="org-ul">
 <li>what is the Weierstrass function?</li>
 </ul>
@@ -226,16 +227,16 @@ He's representing strategies as the whole game plus "which way to go from here?"
 </p>
 </div>
 </div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-summary" class="outline-2">
-<h2 id="hd488b7de-e418-4556-94bb-b8355de64687-summary">summary</h2>
-<div class="outline-text-2" id="text-hd488b7de-e418-4556-94bb-b8355de64687-summary">
+<div id="outline-container-ID-summary" class="outline-2">
+<h2 id="ID-summary">summary</h2>
+<div class="outline-text-2" id="text-ID-summary">
 <p>
 Coinductive definitions (for extensional games):
 </p>
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orgc2acff4"></a> | Right <a id="org88954ee"></a>
+Strategy := Payoff | Left <a id="org8749297"></a> | Right <a id="org10346ab"></a>
 </p>
 
 
@@ -258,11 +259,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org623e8ee"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgf606e8e"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org427d3ca"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgd7e9070"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -287,11 +288,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org9b7d5d8"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgdc981c7"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orge09fa1c"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgc9efa12"></a></td>
 </tr>
 </tbody>
 </table>
@@ -311,7 +312,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="orge9e9d54"></a> : lleaf <a id="org346f01e"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="org0b6d3ce"></a> : lleaf <a id="orgd062c71"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -383,17 +384,17 @@ SGPE :=
 </table>
 </div>
 </div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-refs" class="outline-3">
-<h3 id="hd488b7de-e418-4556-94bb-b8355de64687-refs">Refs</h3>
-<div class="outline-text-3" id="text-hd488b7de-e418-4556-94bb-b8355de64687-refs">
+<div id="outline-container-ID-Refs" class="outline-3">
+<h3 id="ID-Refs">Refs</h3>
+<div class="outline-text-3" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
 <li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
 </ul>
 </div>
-<div id="outline-container-hd488b7de-e418-4556-94bb-b8355de64687-backlinks" class="outline-3">
-<h3 id="hd488b7de-e418-4556-94bb-b8355de64687-backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-hd488b7de-e418-4556-94bb-b8355de64687-backlinks">
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="20170123112300-infinite_chess_joel_david_hamkins.html#ID-249ce708-c67a-40e4-b32a-e938d960af3f">infinite chess | Joel David Hamkins</a></li>

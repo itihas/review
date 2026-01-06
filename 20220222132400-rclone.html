@@ -194,47 +194,24 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
+<div id="preamble" class="status">
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
- |
- <a accesskey="H" href="index.html"> HOME </a>
-</div><div id="content" class="content">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
 <h1 class="title">Rclone</h1>
-<blockquote>
-<p>
-About rclone
-Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp; consumer file storage services, as well as standard transfer protocols.
-</p>
-</blockquote>
-
-
-
-<p>
-So the thing about rclone is, it solves a problem you really really wish was generally solved, until you have the solution and realize that it sucks.
-</p>
-
-<p>
-Sure, let's have a FUSE interface with literally any data storage system you could think to use, anywhere!
-</p>
-
-<p>
-Except that you really really wnat a filesystem to be <i>well behaved</i> in the way local filesystems are. A lot of tooling built on top of the filesystem idiom does not expect to face problems like a dropped network connection, or bandwidth limitations, or even i/o performance and cost being too far away from how hard drives and SSDs behave. Rclone takes what responsibility it can for keeping track of the connection state, and this helps the kernel not panic but nothing else. Rclone taught me that software is better off knowing that it's talking to a networked device.
-</p>
-
-<p>
-tl;dr Jellyfin connected to an rclone drive will hang, and this is mostly not Jellyfin's fault.
-</p>
-<div id="outline-container-hd0eda6fd-4938-4f71-8547-fbca015c4ec5-refs" class="outline-2">
-<h2 id="hd0eda6fd-4938-4f71-8547-fbca015c4ec5-refs">Refs</h2>
-<div class="outline-text-2" id="text-hd0eda6fd-4938-4f71-8547-fbca015c4ec5-refs">
+<div id="outline-container-ID-Refs" class="outline-2">
+<h2 id="ID-Refs">Refs</h2>
+<div class="outline-text-2" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
 <li><a href="https://rclone.org/">https://rclone.org/</a></li>
 </ul>
 </div>
-<div id="outline-container-hd0eda6fd-4938-4f71-8547-fbca015c4ec5-backlinks" class="outline-2">
-<h2 id="hd0eda6fd-4938-4f71-8547-fbca015c4ec5-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-hd0eda6fd-4938-4f71-8547-fbca015c4ec5-backlinks">
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>

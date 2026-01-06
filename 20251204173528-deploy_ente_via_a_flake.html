@@ -194,18 +194,16 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
+<div id="preamble" class="status">
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
- |
- <a accesskey="H" href="index.html"> HOME </a>
-</div><div id="content" class="content">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
 <h1 class="title">deploy ente via a flake</h1>
-<p>
-I like ente! And I want it to live in my nixops-managed remote box without Docker. Their deployment story is simple enough that it seems worthwile to make a flake for them and try to upstream it. Here's a quick description of this little project.
-</p>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-package-the-components" class="outline-2">
-<h2 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-package-the-components">Package the components</h2>
-<div class="outline-text-2" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-package-the-components">
+<div id="outline-container-ID-Package the components" class="outline-2">
+<h2 id="ID-Package the components">Package the components</h2>
+<div class="outline-text-2" id="text-ID-Package the components">
 <p>
 The ente repository has two projects in it of relevance to us:
 </p>
@@ -223,13 +221,13 @@ It mihgt be thecase that we want to package each of the ente-web compoenents sep
 </p>
 </div>
 </div>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-write-a-nixos-module-to" class="outline-2">
-<h2 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-write-a-nixos-module-to">Write a nixos module to configure and run them</h2>
-<div class="outline-text-2" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-write-a-nixos-module-to">
+<div id="outline-container-ID-Write a nixos module to configure and run them" class="outline-2">
+<h2 id="ID-Write a nixos module to configure and run them">Write a nixos module to configure and run them</h2>
+<div class="outline-text-2" id="text-ID-Write a nixos module to configure and run them">
 </div>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-a-systemd-service-to" class="outline-3">
-<h3 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-a-systemd-service-to">Create a systemd service to run the backend</h3>
-<div class="outline-text-3" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-a-systemd-service-to">
+<div id="outline-container-ID-Create a systemd service to run the backend" class="outline-3">
+<h3 id="ID-Create a systemd service to run the backend">Create a systemd service to run the backend</h3>
+<div class="outline-text-3" id="text-ID-Create a systemd service to run the backend">
 <p>
 Ente-server expects, according to the doc, to be available to the frontend components at a network address, which in the local default is "<a href="http://localhost:8080">http://localhost:8080</a>". We write a systemd service to run it there.
 </p>
@@ -247,9 +245,9 @@ There's also an option to just use a <code>museum.yaml</code> file that you prov
 </p>
 </div>
 </div>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-an-nginx-configuration-that" class="outline-3">
-<h3 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-an-nginx-configuration-that">Create an nginx configuration that serves the frontend</h3>
-<div class="outline-text-3" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-an-nginx-configuration-that">
+<div id="outline-container-ID-Create an nginx configuration that serves the frontend" class="outline-3">
+<h3 id="ID-Create an nginx configuration that serves the frontend">Create an nginx configuration that serves the frontend</h3>
+<div class="outline-text-3" id="text-ID-Create an nginx configuration that serves the frontend">
 <p>
 This is relatively straightforward; I find their expectation of subdomains in productino a little weird, but don't deny that it must simplify their routes management significantly for each service to be able to expect that they're at root. I wish them whatever ease they can manage, beiung on next.js . My misadventures with rasendubi/braindump still have me salty around all the indirection involved in next.
 </p>
@@ -259,9 +257,9 @@ The nginx config can be enabled via a switch, and is a sufficiently canonical fo
 </p>
 </div>
 </div>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-the-nix-options-that" class="outline-3">
-<h3 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-the-nix-options-that">Create the nix options that tangle into <code>museum.yaml</code></h3>
-<div class="outline-text-3" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-create-the-nix-options-that">
+<div id="outline-container-ID-Create the nix options that tangle into =museum.yaml=" class="outline-3">
+<h3 id="ID-Create the nix options that tangle into =museum.yaml=">Create the nix options that tangle into <code>museum.yaml</code></h3>
+<div class="outline-text-3" id="text-ID-Create the nix options that tangle into =museum.yaml=">
 <p>
 The defaults given in <code>config/example.yaml</code> and <code>configurations/local.yaml</code> need to be examined and populated into either the <code>museumConfig</code> local variable (these can be overriden with <code>museumExtraConfig</code>), or as options under <code>config.services.ente.museum</code>. Of particular note: external domain, db, secrets, storage bucket, smtp.
 </p>
@@ -272,9 +270,53 @@ azan-n.com wants to try doing this part, since I've convverted him to the nix li
 </div>
 </div>
 </div>
-<div id="outline-container-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-backlinks" class="outline-3">
-<h3 id="hd1cf9788-77ed-4bb1-b003-7385d95c4f08-backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-hd1cf9788-77ed-4bb1-b003-7385d95c4f08-backlinks">
+<div id="outline-container-ID-Create a systemd service to run the backend" class="outline-3">
+<h3 id="ID-Create a systemd service to run the backend">Create a systemd service to run the backend</h3>
+<div class="outline-text-3" id="text-ID-Create a systemd service to run the backend">
+<p>
+Ente-server expects, according to the doc, to be available to the frontend components at a network address, which in the local default is "<a href="http://localhost:8080">http://localhost:8080</a>". We write a systemd service to run it there.
+</p>
+
+<p>
+The only surprise is that currently the binary wants our configuration to be available in the working directory from which you run the command. It needs that working directory to contain both <code>./museum.yaml</code> and <code>./configurations/${ENVIRONMENT}.yml</code>.
+</p>
+
+<p>
+I create a derivation that copies that directory from source into the right place, and also writes a <code>museum.yaml</code> from nix-managed options.
+</p>
+
+<p>
+There's also an option to just use a <code>museum.yaml</code> file that you provide, which if set overrides the nix-tangled options entirely.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Create an nginx configuration that serves the frontend" class="outline-3">
+<h3 id="ID-Create an nginx configuration that serves the frontend">Create an nginx configuration that serves the frontend</h3>
+<div class="outline-text-3" id="text-ID-Create an nginx configuration that serves the frontend">
+<p>
+This is relatively straightforward; I find their expectation of subdomains in productino a little weird, but don't deny that it must simplify their routes management significantly for each service to be able to expect that they're at root. I wish them whatever ease they can manage, beiung on next.js . My misadventures with rasendubi/braindump still have me salty around all the indirection involved in next.
+</p>
+
+<p>
+The nginx config can be enabled via a switch, and is a sufficiently canonical format to be easy to adapt to whatever reverse proxy service someone might favor. I guess, since their docs give a Caddy config example, that a Caddy config might also be appropriate.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Create the nix options that tangle into =museum.yaml=" class="outline-3">
+<h3 id="ID-Create the nix options that tangle into =museum.yaml=">Create the nix options that tangle into <code>museum.yaml</code></h3>
+<div class="outline-text-3" id="text-ID-Create the nix options that tangle into =museum.yaml=">
+<p>
+The defaults given in <code>config/example.yaml</code> and <code>configurations/local.yaml</code> need to be examined and populated into either the <code>museumConfig</code> local variable (these can be overriden with <code>museumExtraConfig</code>), or as options under <code>config.services.ente.museum</code>. Of particular note: external domain, db, secrets, storage bucket, smtp.
+</p>
+
+<p>
+azan-n.com wants to try doing this part, since I've convverted him to the nix life. So this will be a coauthored PR! (:
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>

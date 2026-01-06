@@ -194,43 +194,24 @@
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 </head>
 <body>
+<div id="preamble" class="status">
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
- |
- <a accesskey="H" href="index.html"> HOME </a>
-</div><div id="content" class="content">
-<h1 class="title">org mode - How to refile into a datetree - Emacs Stack Exchange</h1>
-<div class="org-src-container">
-<pre class="src src-elisp">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-read-datetree-date</span> (d)
-<span style="font-style: italic;">"Parse a time string D and return a date to pass to the datetree functions."</span>
-(<span style="font-weight: bold;">let</span> ((dtmp (nthcdr 3 (parse-time-string d))))
-  (list (cadr dtmp) (car dtmp) (caddr dtmp))))
-
-(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-refile-to-archive-datetree</span> ()
-  <span style="font-style: italic;">"Refile an entry to a datetree under an archive."</span>
-  (<span style="font-weight: bold;">interactive</span>)
-  (<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">org-datetree</span>)
-  (<span style="font-weight: bold;">let</span> ((datetree-date (my/org-read-datetree-date (org-read-date t nil))))
-    (org-refile nil nil (list nil (buffer-file-name) nil
-                              (<span style="font-weight: bold;">save-excursion</span>
-                                (org-datetree-find-date-create datetree-date)))))
-  (<span style="font-weight: bold;">setq</span> this-command 'my/org-refile-to-journal))
-</pre>
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
 </div>
-<p>
-used the above to refile into the blotter before I decided that the blotter should just be appended to.
-</p>
-<div id="outline-container-h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-refs" class="outline-2">
-<h2 id="h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-refs">Refs</h2>
-<div class="outline-text-2" id="text-h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-refs">
+</div>
+<div id="content" class="content">
+<h1 class="title">org mode - How to refile into a datetree - Emacs Stack Exchange</h1>
+<div id="outline-container-ID-Refs" class="outline-2">
+<h2 id="ID-Refs">Refs</h2>
+<div class="outline-text-2" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
 <li><a href="https://emacs.stackexchange.com/questions/10597/how-to-refile-into-a-datetree">https://emacs.stackexchange.com/questions/10597/how-to-refile-into-a-datetree</a></li>
 </ul>
 </div>
-<div id="outline-container-h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks" class="outline-2">
-<h2 id="h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-h0abcd6a9-fb99-43b9-ba25-66d46637a8ee-backlinks">
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
 <li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
