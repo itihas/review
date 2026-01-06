@@ -236,7 +236,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org8a8cad8"></a> | Right <a id="orgdb4bbf7"></a>
+Strategy := Payoff | Left <a id="orgeba6d91"></a> | Right <a id="org7c99574"></a>
 </p>
 
 
@@ -259,11 +259,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgdba1980"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org34d16bf"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org2f218d3"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgb3239cc"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -288,11 +288,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orge8993fe"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org8761706"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgc194f76"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgcca1491"></a></td>
 </tr>
 </tbody>
 </table>
@@ -312,7 +312,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="orged10e17"></a> : lleaf <a id="org2971149"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="org2cedde6"></a> : lleaf <a id="org3505b94"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -402,6 +402,8 @@ SGPE :=
 </div>
 </div>
 <div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 <script data-isso="https://comments.itihas.review/"
         data-isso-css-url="static/styles/isso.css"
         src="https://comments.itihas.review/js/embed.min.js"></script>
