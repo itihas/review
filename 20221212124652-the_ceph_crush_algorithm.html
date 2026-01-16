@@ -202,6 +202,25 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">The Ceph CRUSH algorithm</h1>
+<p>
+Allocation algorithm. given an input value, CRUSH deterministically outputs an ordered list of distinct storage targets.
+</p>
+
+
+<p>
+Create a cluster map, which is a tree where the leaves are storage devices; call the internal nodes buckets.
+</p>
+
+<p>
+Buckets have associated weights and are of four different types:
+</p>
+uniform (children are identical; constant-time allocation)
+list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)
+tree (children have arbitrary weights)
+straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)
+<p>
+This plus implementation of allocation rules, which act as filters.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">

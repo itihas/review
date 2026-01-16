@@ -202,6 +202,22 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Fuck wasm-pack</h1>
+<p>
+I started <a href="20251204173528-deploy_ente_via_a_flake.html#ID-d1cf9788-77ed-4bb1-b003-7385d95c4f08">packaging ente with nix</a> for self-hosting purposes. Over the week that I spent languishing in yarn lock hell a new beast reared its head: the Ente team pushed their rust core to prod.  `rust-core` was a good excuse to learn how to package with <a href="https://github.com/ipetkov/crane">crane</a>,  but in the course of `rust-wasm` an enemy from earlier in the year reared its head: wasm-pack. The binary insists on downloading wasm-opt and wasm-bindgen on its own; it spits in the face of your toolchain. People have been complaining about this since 2020:
+</p>
+<a href="https://github.com/drager/wasm-pack/issues/812">https://github.com/drager/wasm-pack/issues/812</a>
+<a href="https://github.com/drager/wasm-pack/issues/821">https://github.com/drager/wasm-pack/issues/821</a>
+<p>
+<a href="https://github.com/drager/wasm-pack/issues/1316">https://github.com/drager/wasm-pack/issues/1316</a>
+</p>
+
+<p>
+And forget changing this behaviour, nobody seems to care even to explain <i>why</i>.
+</p>
+
+<p>
+Submitting a PR to the ente team for them to switch to using wasm-bindgen directly, and never mind the boilerplate. Weeping in the meantime.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">

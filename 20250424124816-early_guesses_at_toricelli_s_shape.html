@@ -202,6 +202,21 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Early guesses at Toricelli's shape</h1>
+<p>
+initial guess at a cost function:
+</p>
+<pre class="example" id="orgf9704df">
+srs_score = k * (now - supermemo_schedule mtime ctime srs_score) # this gets updated, presumably, after some change to the page
+</pre>
+<p>
+treat srs<sub>score</sub> as the page weight for pagerank
+</p>
+
+<p>
+sid's guess: put srs<sub>score</sub> as the damping factor
+</p>
+
+
 <div id="outline-container-ID-alternative: supermemo as the "outer loop"" class="outline-2">
 <h2 id="ID-alternative: supermemo as the "outer loop"">alternative: supermemo as the "outer loop"</h2>
 <div class="outline-text-2" id="text-ID-alternative: supermemo as the "outer loop"">
@@ -213,6 +228,8 @@
 </ul>
 </div>
 </div>
+[bollu] Reasoning: we want an SRS-shaped output, spiritually - a queue sort of thing that updates as you interact with it.
+[itihas] I find this convincing.
 <div id="outline-container-ID-next guess" class="outline-2">
 <h2 id="ID-next guess">next guess</h2>
 <div class="outline-text-2" id="text-ID-next guess">
@@ -249,6 +266,22 @@ It's meant to produce connections I haven't necessarily made before (generate ne
 </ul>
 </div>
 </div>
+<p>
+sid:
+</p>
+<p>
+where
+</p>
+f(I) &lt;= I. super-memo gives us an upper bound on when we should see a page again. PageRank can make us see a page earlier than
+<p>
+2  supermemo wanted us to, because we're trying to keep stuff in working memory that may not optimal for long-term retention, but useful
+  for short-term task clustering.
+</p>
+[itihas] Not really trying to keep task-related stuff together so much as surface things I care about <i>in-context</i> more than I might care about it "naively".
+<p>
+It's meant to produce connections I haven't necessarily made before (generate new knowledge). The "forgetting curve" emphasis in SRS literature treats knowledge as atomic in a way that doesn't make sense to me.
+</p>
+if s1 &gt; s2, f(I, s1) &lt; f(I, s2). If page rank deems a page more important, then see it sooner.
 <div id="outline-container-ID-for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it" class="outline-2">
 <h2 id="ID-for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it">for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it</h2>
 <div class="outline-text-2" id="text-ID-for reference: supermemo, the various algorithms, what they're tracking and how they're trying to track it">
@@ -311,6 +344,73 @@ Easiness factor shares some semantic features with <a href="frecency_wikipedia.h
 </p>
 </div>
 </div>
+<p>
+From <a href="https://supermemo.guru/wiki/Algorithm_SM-17#The_Algorithm:_Outline">https://supermemo.guru/wiki/Algorithm_SM-17#The_Algorithm:_Outline</a> :
+</p>
+
+<blockquote>
+<p>
+
+</p>
+
+<p>
+The Algorithm: Outline
+The following procedure can be used to determine the status of memory (DSR status) at any moment of time for a given history of repetitions. Once the DSR status is known, we can determine the next interval using criteria of choice, e.g. forgetting index, maximization of stability, long-term workload minimization, etc.
+</p>
+
+
+<p>
+estimate item difficulty D using the history repetitions for that item
+determine startup stability S0 using the history of repetitions
+for all repetition history records repeat the steps below
+compute theoretical retrievability Rt using current stability estimate Sw and the interval Int
+update Recall[] matrix using D, Sw[n-1], Rt with the grade-derived recall
+compute recall-based retrievability Rr
+compute grade-derived retrievability Rg
+estimate weighted Rw from Rt, Rr, and Rg
+compute Rw-based stability Sr
+compute SInc-based Se (Se=Sw[n-1]*SInc[D,Sw[n-1],Rw])
+compute interval derived stability Si
+estimate weighted Sw from Sr, Se, and Si
+compute the stability increase SInc on the basis of Sw change
+update Sinc[] matrix using D, Sw, Rw with the new SInc value
+compute new interval using Int:=Sw*SInc[D,Sw,Rw]
+go back computing Rt step
+</p>
+</blockquote>
+
+<p>
+
+</p>
+
+<p>
+The Algorithm: Outline
+The following procedure can be used to determine the status of memory (DSR status) at any moment of time for a given history of repetitions. Once the DSR status is known, we can determine the next interval using criteria of choice, e.g. forgetting index, maximization of stability, long-term workload minimization, etc.
+</p>
+
+
+<p>
+estimate item difficulty D using the history repetitions for that item
+determine startup stability S0 using the history of repetitions
+for all repetition history records repeat the steps below
+compute theoretical retrievability Rt using current stability estimate Sw and the interval Int
+update Recall[] matrix using D, Sw[n-1], Rt with the grade-derived recall
+compute recall-based retrievability Rr
+compute grade-derived retrievability Rg
+estimate weighted Rw from Rt, Rr, and Rg
+compute Rw-based stability Sr
+compute SInc-based Se (Se=Sw[n-1]*SInc[D,Sw[n-1],Rw])
+compute interval derived stability Si
+estimate weighted Sw from Sr, Se, and Si
+compute the stability increase SInc on the basis of Sw change
+update Sinc[] matrix using D, Sw, Rw with the new SInc value
+compute new interval using Int:=Sw*SInc[D,Sw,Rw]
+go back computing Rt step
+</p>
+<p>
+Easiness factor shares some semantic features with <a href="frecency_wikipedia.html#ID-fcd47c46-e1c3-4d95-9092-c3b0e564f7f5">frecency</a>.
+</p>
+
 <div id="outline-container-ID-note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!" class="outline-2">
 <h2 id="ID-note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!">note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!</h2>
 <div class="outline-text-2" id="text-ID-note from sid: write the API wrangling that gets it to work in gemini / ducky / copilot!">
@@ -319,6 +419,10 @@ Did this! Claude got me started quite usefully, wrote the skeleton and a first g
 </p>
 </div>
 </div>
+<p>
+Did this! Claude got me started quite usefully, wrote the skeleton and a first guess of the code.
+</p>
+
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">

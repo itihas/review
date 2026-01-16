@@ -216,6 +216,18 @@ The current server still has clients; delete them?
 </blockquote>
 </div>
 </div>
+<p>
+When running cycle-themes, I'd get prompted:
+</p>
+
+<blockquote>
+<p>
+The current server still has clients; delete them?
+</p>
+</blockquote>
+<p>
+The current server still has clients; delete them?
+</p>
 <div id="outline-container-ID-what it ended up being" class="outline-2">
 <h2 id="ID-what it ended up being">what it ended up being</h2>
 <div class="outline-text-2" id="text-ID-what it ended up being">
@@ -233,6 +245,13 @@ Some of the variables in question are also minor modes, among them . Which for s
 </p>
 </div>
 </div>
+<p>
+makes a call to , which in turn runs:
+</p>
+
+<p>
+Some of the variables in question are also minor modes, among them . Which for some reason was set to <code>t</code> in Custom?
+</p>
 <div id="outline-container-ID-fixed it by" class="outline-2">
 <h2 id="ID-fixed it by">fixed it by</h2>
 <div class="outline-text-2" id="text-ID-fixed it by">
@@ -241,6 +260,9 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
+<p>
+removing that from custom. we were fine then.
+</p>
 <div id="outline-container-ID-eaacbcd9-ddd3-4d57-a7d9-bc92a425d01c" class="outline-2">
 <h2 id="ID-eaacbcd9-ddd3-4d57-a7d9-bc92a425d01c">things I did to debug</h2>
 <div class="outline-text-2" id="text-ID-eaacbcd9-ddd3-4d57-a7d9-bc92a425d01c">
@@ -249,6 +271,9 @@ removing that from custom. we were fine then.
 </p>
 </div>
 </div>
+<p>
+<code>M-x debug-on-entry enable-theme</code>, then step through the frames until the truly inexplicable moment happened where server-mode was being set to t.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">

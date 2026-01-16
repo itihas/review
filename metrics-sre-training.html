@@ -636,6 +636,9 @@ it is a label, a number and a timestamp. so, a time-indexed kv pair.  some other
 </p>
 </div>
 </li>
+<p>
+it is a label, a number and a timestamp. so, a time-indexed kv pair.  some other details about the number can be kept for fun sometimes. 
+</p>
 <li><a id="ID-in terms of use"></a>in terms of use<br />
 <div class="outline-text-5" id="text-ID-in terms of use">
 <p>
@@ -643,6 +646,9 @@ it is a single piece of information you want to have about a "running" "system" 
 </p>
 </div>
 </li>
+<p>
+it is a single piece of information you want to have about a "running" "system" ie. anything that you can measure, the output of the measurement is a metric.
+</p>
 <li><a id="ID-in terms of "why""></a>in terms of "why"<br />
 <div class="outline-text-5" id="text-ID-in terms of "why"">
 <p>
@@ -666,6 +672,25 @@ and you have the panaceaic answers to all your questions!
 </div>
 </li>
 </ul>
+<p>
+well,  <i>the scientific method.</i>
+</p>
+
+<p>
+debugging something? have a target to meet? need to know how to provision a resource? need to know if you're <i>wasting</i> a resource?
+metrics to the rescue! find a way to
+a) quantify your targets
+b) measure your world
+</p>
+
+<p>
+and you have the panaceaic answers to all your questions!
+</p>
+
+<p>
+(further reading: <i>How to Measure Anything</i>, Douglas Hubbard)
+</p>
+
 <div id="outline-container-ID-data challenges" class="outline-4">
 <h4 id="ID-data challenges">data challenges</h4>
 <div class="outline-text-4" id="text-ID-data challenges">
@@ -674,6 +699,10 @@ collection and storage timestamps, how do they work storage optimization
 </p>
 </div>
 </div>
+<p>
+collection and storage timestamps, how do they work storage optimization
+</p>
+
 <div id="outline-container-ID-use challenges" class="outline-4">
 <h4 id="ID-use challenges">use challenges</h4>
 <div class="outline-text-4" id="text-ID-use challenges">
@@ -682,6 +711,10 @@ querying and analysis cardinality size bucketing: the ultimate shitty tradeoff b
 </p>
 </div>
 </div>
+<p>
+querying and analysis cardinality size bucketing: the ultimate shitty tradeoff between storage and analysis requirements
+</p>
+
 <div id="outline-container-ID-motivation challenges" class="outline-4">
 <h4 id="ID-motivation challenges">motivation challenges</h4>
 <div class="outline-text-4" id="text-ID-motivation challenges">
@@ -760,6 +793,47 @@ use cases:
 </ul>
 </div>
 </div>
+measuring irrelevant things
+bad labeling
+nothing is more irritating than rewriting five labels that ought to have been one label at query time.
+treating <b><b>documents</b></b> and <b><b>metrics</b></b> as the same
+cardinality makes a difference.
+measurement collection and storage is not the same as analysis-artifact caching. Unix principle - small purposeful tools.
+<p>
+use cases:
+</p>
+debugging
+how to investigate a problem given a set of metrics?
+what ought you be <span class="underline">always</span> collecting in case you need to investigate something?
+"system" metrics - trying to measure the function of all the critical pieces of an OS
+"success" metrics - is the thing I want to happen, happening?
+"uptime" usually tracks the history of these
+alerting
+"success" metrics are the zeroth alert.
+"is this working?" tests.
+sometimes the answer is on a spectrum, which means you decide on <span class="underline">thresholds</span> to divide the spectrum into black and white. (or green, orange, and yellow, if you like to pretend you care about an orange alert.)
+the reactionary flow of alert setting
+something went drastically wrong
+it turns out it was due to a certain "bad behaviour"
+let's alert that bad behaviour so that we catch the next time that goes wrong
+strive to do better
+catch frequent offenders
+identify first principles
+reactionary alerts are bandaids. try hard to fix the deeper problem.
+always have a way to remember what you created an alert <span class="underline">for</span>.
+DOCUMENT.
+profiling
+making stuff better.
+have a target: "X endpoint needs to respond in Y ms at the Zth percentile".
+find out how to measure the target.
+figure out what correlates with the target
+stare at graphs of stuff you're already collecting
+make theories about what's happening and figure out how to falsify them
+collect new data as needed
+LABEL WELL
+if there is a standardised way to collect the data you need, USE IT.
+if there isn't, well, collect it in as ad hoc a way as you like, but write a note in a wiki that you've done that
+AND LABEL THE DATA INFORMATIVELY.
 <div id="outline-container-ID-System metrics" class="outline-3">
 <h3 id="ID-System metrics">System metrics</h3>
 </div>
@@ -771,6 +845,10 @@ get them to install collectd show them what it collects
 </p>
 </div>
 </div>
+<p>
+get them to install collectd show them what it collects
+</p>
+
 <div id="outline-container-ID-Graphite" class="outline-3">
 <h3 id="ID-Graphite">Graphite</h3>
 <div class="outline-text-3" id="text-ID-Graphite">
@@ -794,6 +872,14 @@ a graphite endpoint they can push to and navigate to the dashboard of?
 <h4 id="ID-carbon-ng? or something the go rewrite">carbon-ng? or something the go rewrite</h4>
 </div>
 </div>
+<p>
+somebody else gotta step in to discuss; pls no practical.
+</p>
+
+<p>
+a graphite endpoint they can push to and navigate to the dashboard of?
+</p>
+
 <div id="outline-container-ID-whisperdb" class="outline-4">
 <h4 id="ID-whisperdb">whisperdb</h4>
 </div>
@@ -842,6 +928,9 @@ get them to install node exporter
 </ul>
 </div>
 </div>
+<p>
+wouldn't minda practical here. prom is smol.
+</p>
 <div id="outline-container-ID-promtsdb" class="outline-4">
 <h4 id="ID-promtsdb">promtsdb</h4>
 </div>
@@ -868,6 +957,9 @@ get them to install node exporter
 </div>
 </li>
 </ul>
+<p>
+get them to install node exporter
+</p>
 <div id="outline-container-ID-prom web endpoint" class="outline-4">
 <h4 id="ID-prom web endpoint">prom web endpoint</h4>
 </div>
@@ -907,6 +999,10 @@ useful walkthrough here to discuss how and why to use various display features
 </div>
 </div>
 </div>
+<p>
+unified graphs and queries frontend originally mostly for graphite but it can talk to EVERYTHING muhahahaha somewhat heavy webapp tho
+</p>
+
 <div id="outline-container-ID-dashboard" class="outline-4">
 <h4 id="ID-dashboard">dashboard</h4>
 </div>
@@ -923,6 +1019,9 @@ useful walkthrough here to discuss how and why to use various display features
 </p>
 </div>
 </div>
+<p>
+useful walkthrough here to discuss how and why to use various display features
+</p>
 <div id="outline-container-ID-Duncan method informed class structure" class="outline-2">
 <h2 id="ID-Duncan method informed class structure">Duncan method informed class structure</h2>
 <div class="outline-text-2" id="text-ID-Duncan method informed class structure">
@@ -984,6 +1083,17 @@ useful walkthrough here to discuss how and why to use various display features
 </ul>
 </div>
 </div>
+measure a system.
+create or find metrics
+collect metrics
+install and use metrics collectors
+collectd
+what else?
+collate metrics
+ask useful questions of metrics
+know which questions are worth asking and when
+taxonomy of questions
+know how to construct a given question in statspeak
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">

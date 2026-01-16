@@ -202,6 +202,66 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Functional Reactive Programming - HaskellWiki</h1>
+<blockquote>
+<p>
+Functional Reactive Programming (FRP) integrates time flow and compositional events into functional programming. This provides an elegant way to express computation in domains such as interactive animations, robotics, computer vision, user interfaces, and simulation.
+</p>
+</blockquote>
+
+<p>
+Functional Reactive Programming (FRP) integrates time flow and compositional events into functional programming. This provides an elegant way to express computation in domains such as interactive animations, robotics, computer vision, user interfaces, and simulation.
+</p>
+<blockquote>
+<p>
+The original formulation of Functional Reactive Programming can be found in the ICFP 97 paper Functional Reactive Animation by Conal Elliott and Paul Hudak. It introduces the following semantic functions:
+</p>
+
+<p>
+at : Behaviorα → Time → α
+</p>
+
+<p>
+occ : Eventα → Time × α
+</p>
+
+<p>
+to provide a formal description of operations on values now commonly known as behaviors and events. But what are they?
+Behaviors
+</p>
+
+<p>
+Traditionally a widget-based user interface is created by a series of imperative actions. First an action is invoked to create an edit widget, then additional actions can be invoked to read its current content, set it to a specific value or to assign an event callback for when the content changes. This is tedious and error-prone.
+</p>
+
+<p>
+A better way to represent an edit widget's content is a time-varying value, called a behavior. The basic idea is that a time-varying value can be represented as a function of time:
+</p>
+</blockquote>
+
+<p>
+The original formulation of Functional Reactive Programming can be found in the ICFP 97 paper Functional Reactive Animation by Conal Elliott and Paul Hudak. It introduces the following semantic functions:
+</p>
+
+<p>
+at : Behaviorα → Time → α
+</p>
+
+<p>
+occ : Eventα → Time × α
+</p>
+
+<p>
+to provide a formal description of operations on values now commonly known as behaviors and events. But what are they?
+Behaviors
+</p>
+
+<p>
+Traditionally a widget-based user interface is created by a series of imperative actions. First an action is invoked to create an edit widget, then additional actions can be invoked to read its current content, set it to a specific value or to assign an event callback for when the content changes. This is tedious and error-prone.
+</p>
+
+<p>
+A better way to represent an edit widget's content is a time-varying value, called a behavior. The basic idea is that a time-varying value can be represented as a function of time:
+</p>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">

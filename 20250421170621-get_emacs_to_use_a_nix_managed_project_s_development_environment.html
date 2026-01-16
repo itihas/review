@@ -202,6 +202,13 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">get emacs to use a nix-managed project's development environment</h1>
+<p>
+Emacs can pick up <code>direnv</code>, which in turn can have <code>use flake</code> and run <code>nix develop</code> inside the buffer. As long as your Nix Flake has a <code>devShell</code>, many package in emacs will respect it.
+</p>
+
+<p>
+To verify: does eglot?
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">

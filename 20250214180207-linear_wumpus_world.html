@@ -193,6 +193,38 @@
 </style>
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 <link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -202,6 +234,9 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">linear wumpus world</h1>
+<p>
+Wumpus world on a Cartesian coordinate plane \(\bbold{R}^2\). The Wumpus can move to any point. Illustrates the challlenges of too-complex state spaces, how agency is more to do with agent reasoning bounds, goal selection, and the feedback loop between world-learning and goal-writing.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">

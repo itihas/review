@@ -202,6 +202,52 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Standards inertia, PagerDuty</h1>
+<p>
+PagerDuty faces an interesting schema-creation challenge - every platform it supports needs to be mappable to its central control plane. Maintenance is a nightmare. They get to push back against breaking changes as a pretty unique type of stakeholder.
+</p>
+
+<p>
+The case study specification:
+</p>
+
+<p>
+PagerDuty has to interact with a lot of third party vendors whose incident reports they collate for both reporting and analytics purposes, who all use different standards.
+PagerDuty wants 
+</p>
+create a useful, unified tool
+create a database for providing their service and for analytics
+maintain the database schema to remain compatible with every data source
+<p>
+Vendors want to:
+</p>
+improve their platform, including making changes to their database schema and API as needed to improve performance or support features.
+Change standards as little as possible, because it forces everyone dependent on their standard to also change.
+Collaborate with PagerDuty, because users like and use the tool.
+<p>
+PagerDuty can: 
+</p>
+propose changes to a platfomr's schema.
+propose modifications to a platform's planned changes.
+change their API hnadling layer to remain compatible with a platform by expending effort. (sometimes this doesn't work.)
+change their standard to better support a platform.
+Potentially affects compatibility with other platforms.
+Requires changes to all handlers to support the new target schema.
+constrains future changes.
+stop supporting a platform.
+<p>
+in the face of a discrepancy.
+</p>
+
+<p>
+Vendors can:
+</p>
+change their standard at any time.
+propose changes.
+accept or refuse change proposals.
+accept proposals to amend drafted changes.
+<p>
+This is a market where every move is a rule-edit to a subgame.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">

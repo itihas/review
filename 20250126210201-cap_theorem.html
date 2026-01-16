@@ -202,6 +202,37 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">CAP theorem</h1>
+<p>
+"consistency, availability, partition tolerance - pick any two". An asynchronous network can provide only two of the three guarantees:
+</p>
+Consistency - maintaining a common state among nodes under all observations
+Availability - the state as a whole always being observable
+<p>
+Network partition tolerance - if the network gets partitioned, some guarantee is upheld (call this "service"). In practice, <i>which</i>?
+</p>
+
+<p>
+This last question prompts us to look at the <a href="https://en.wikipedia.org/wiki/PACELC_theorem">PACELC theorem</a>, a later extension. From Wikipedia:
+</p>
+
+<p>
+<a href="https://upload.wikimedia.org/wikipedia/commons/3/3c/PACELC_theorem.png">PACELC flowchart</a>
+</p>
+<blockquote>
+<p>
+n database theory, the PACELC theorem is an extension to the CAP theorem. It states that in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and loss of consistency (C). 
+</p>
+</blockquote>
+
+
+<p>
+n database theory, the PACELC theorem is an extension to the CAP theorem. It states that in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and loss of consistency (C). 
+</p>
+<p>
+A discretization of relativity.
+</p>
+
+
 <div id="outline-container-ID-todo work through the formal proof." class="outline-2">
 <h2 id="ID-todo work through the formal proof.">todo work through the formal proof.</h2>
 </div>
