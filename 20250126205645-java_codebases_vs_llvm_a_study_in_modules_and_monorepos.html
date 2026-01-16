@@ -205,15 +205,115 @@
 <p>
 The Java language is best used, according to its own philosophy, to write code as self-contained, with lots of internal dependencies, and well-defined predetermined interfaces to other code. Several consequences arise in long-lived codebases as a result of this.
 </p>
+<ul class="org-ul">
+<li>interfaces fossilize; it quickly becomes verboten to change how classes relate to other classes, because the dependency structure becomes too convoluted to disentangle or diff.
+<ul class="org-ul">
+<li>I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.</li>
+<li>my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul></li>
+</ul></li>
+<li>inconsistencies arise because portions of the dependency tree are to be considered opaque wrt to their <i>functionality</i>, even though they are transparent <i>structurally</i>. The distinction breaks down in situations where, for eg.:
+<ul class="org-ul">
+<li>Class A has methods x and y where x and y are redundant</li>
+<li>Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)</li>
+<li>A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>
+The Java language is best used, according to its own philosophy, to write code as self-contained, with lots of internal dependencies, and well-defined predetermined interfaces to other code. Several consequences arise in long-lived codebases as a result of this.
+</p>
+<ul class="org-ul">
+<li>interfaces fossilize; it quickly becomes verboten to change how classes relate to other classes, because the dependency structure becomes too convoluted to disentangle or diff.
+<ul class="org-ul">
+<li>I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.</li>
+<li>my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul></li>
+</ul></li>
+<li>inconsistencies arise because portions of the dependency tree are to be considered opaque wrt to their <i>functionality</i>, even though they are transparent <i>structurally</i>. The distinction breaks down in situations where, for eg.:
+<ul class="org-ul">
+<li>Class A has methods x and y where x and y are redundant</li>
+<li>Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)</li>
+<li>A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<li>interfaces fossilize; it quickly becomes verboten to change how classes relate to other classes, because the dependency structure becomes too convoluted to disentangle or diff.
+<ul class="org-ul">
+<li>I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.</li>
+<li>my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul></li>
+</ul></li>
 interfaces fossilize; it quickly becomes verboten to change how classes relate to other classes, because the dependency structure becomes too convoluted to disentangle or diff.
+<ul class="org-ul">
+<li>I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.</li>
+<li>my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul></li>
+</ul>
+<li>I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.</li>
 I say <i>becomes</i> because here the black box becomes hard to describe; what is actually happening is that a single agent with sufficiently large memory would not have issues, but a set of interacting bounded agents trying to minimise their rewriting/maintenance effort will inevitably make decisions to preserve and propagate suboptimal structures in the codebase because the dependency tree of the structure in question is too large.
+<li>my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul></li>
 my contention is that java "standards", by which I mean logical structures the changing of which would propagate to a lot of dependencies, tend to be shaped like interfaces.
+<ul class="org-ul">
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
+</ul>
+<li>also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.</li>
 also that this leads to specific absurdities in trying to attach any single task to the larger semantics of a codebase.
+<li>concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.</li>
 concrete examples will follow if it seems worth pursuing in depth; I have anecdotes and one-off examples.
+<li>inconsistencies arise because portions of the dependency tree are to be considered opaque wrt to their <i>functionality</i>, even though they are transparent <i>structurally</i>. The distinction breaks down in situations where, for eg.:
+<ul class="org-ul">
+<li>Class A has methods x and y where x and y are redundant</li>
+<li>Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)</li>
+<li>A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul></li>
+</ul></li>
 inconsistencies arise because portions of the dependency tree are to be considered opaque wrt to their <i>functionality</i>, even though they are transparent <i>structurally</i>. The distinction breaks down in situations where, for eg.:
+<ul class="org-ul">
+<li>Class A has methods x and y where x and y are redundant</li>
+<li>Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)</li>
+<li>A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul></li>
+</ul>
+<li>Class A has methods x and y where x and y are redundant</li>
 Class A has methods x and y where x and y are redundant
+<li>Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)</li>
 Class B, inheriting A, notices this, and overrides A.x to call A.y (i.e. B.A.x -&gt; B.A.y, and B.A.y = A.y)
+<li>A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul></li>
 A is later rewritten to omit A.y; to deprecate A.y, it now calls A.x (i.e A.y -&gt; A.x)
+<ul class="org-ul">
+<li>this means B.A.y -&gt; B.A.x</li>
+</ul>
+<li>this means B.A.y -&gt; B.A.x</li>
 this means B.A.y -&gt; B.A.x
 <div id="outline-container-ID-The "package" idiom of software also has this problem in a more general sense" class="outline-2">
 <h2 id="ID-The "package" idiom of software also has this problem in a more general sense">The "package" idiom of software also has this problem in a more general sense</h2>
@@ -222,6 +322,11 @@ this means B.A.y -&gt; B.A.x
 Here there is a <a href="https://en.wikipedia.org/wiki/Dependency_hell#Problems">much more robust body</a> of examples. <a href="https://nixos.wiki/wiki/Nix_Ecosystem">NixOS</a> and the nix package manager were expressly written in order to address this specific set of issues.
 </p>
 </div>
+</div>
+<div class="outline-text-2" id="text-ID-The "package" idiom of software also has this problem in a more general sense">
+<p>
+Here there is a <a href="https://en.wikipedia.org/wiki/Dependency_hell#Problems">much more robust body</a> of examples. <a href="https://nixos.wiki/wiki/Nix_Ecosystem">NixOS</a> and the nix package manager were expressly written in order to address this specific set of issues.
+</p>
 </div>
 <p>
 Here there is a <a href="https://en.wikipedia.org/wiki/Dependency_hell#Problems">much more robust body</a> of examples. <a href="https://nixos.wiki/wiki/Nix_Ecosystem">NixOS</a> and the nix package manager were expressly written in order to address this specific set of issues.
@@ -235,6 +340,10 @@ Here there is a <a href="https://en.wikipedia.org/wiki/Dependency_hell#Problems"
 <li><a href="examples.html#ID-5b1ee3e1-f052-4fdd-a05d-b11a059fc79d">Potential Real-world examples of rule dynamics</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="examples.html#ID-5b1ee3e1-f052-4fdd-a05d-b11a059fc79d">Potential Real-world examples of rule dynamics</a></li>
+</ul>
+<li><a href="examples.html#ID-5b1ee3e1-f052-4fdd-a05d-b11a059fc79d">Potential Real-world examples of rule dynamics</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

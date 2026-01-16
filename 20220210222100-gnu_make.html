@@ -217,6 +217,88 @@ This simple Makefile compiles a hello.cpp program. It also includes a clean targ
 </blockquote>
 
 
+<div class="org-src-container">
+<pre class="src src-Makefile">   hello: hello.cpp
+        g++ -g -Wall hello.cpp -o hello
+
+clean:
+        rm -f hello
+</pre>
+</div>
+
+
+<blockquote>
+<p>
+Multi-file Example
+</p>
+
+<p>
+It’s important to note a target can be named after after a file. This is most commonly used to:
+</p>
+
+<p>
+Indicate that our target requires a file that must be compiled by another target.
+Only run our target when that dependency has changed to avoid doing extra work.
+</p>
+
+<p>
+Most of your homeworks will require you to compile multiple files, then link them all at once. To do this, we’ll use the -c compiler flag, which compiles without linking. Note that all the files we compile with -c have target names that correspond to the object files we’re expecting out.
+</p>
+
+<p>
+First, take a look at the imaginary file tree we’re basing this Makefile off of:
+</p>
+</blockquote>
+
+<pre class="example" id="org42cee24">
+program/
+  main.cpp
+  file1.cpp
+  file1.h
+  file2.cpp
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-nil">all: program
+
+program: main.cpp file1.o file2.o
+        g++ -g -Wall main.cpp file1.o file2.o -o program
+
+file1.o: file1.cpp file1.h
+        g++ -g -Wall -c file1.cpp -o file1.o
+
+file2.o: file2.cpp
+        g++ -g -Wall -c file2.cpp -o file2.o
+
+clean:
+        rm -f *.o program
+
+</pre>
+</div>
+
+
+
+<blockquote>
+<p>
+When you type make or make [target], the Make will look through your current directory for a Makefile. This file must be called makefile or Makefile.
+Make will then look for the corresponding target in the makefile. If you don’t provide a target, Make will just run the first target it finds.
+If the target is found, the target’s dependencies will be run as needed, then the target commands will be run.
+Oftentimes these commands start with g++, but they can be anything! You can run any command this way.
+</p>
+
+<p>
+The target dependency format looks like this. Note the tab indent before the commands; these are required!
+</p>
+</blockquote>
+
+<div class="org-src-container">
+<pre class="src src-Makefile">target1: dependency1 dependency2 ...
+        command1
+        command2
+        ...
+</pre>
+</div>
+<blockquote>
 <p>
 
 </p>
@@ -228,6 +310,30 @@ Simple Example
 <p>
 This simple Makefile compiles a hello.cpp program. It also includes a clean target that removes our executable in case we want to clean up the directory.
 </p>
+</blockquote>
+
+
+<p>
+
+</p>
+
+<p>
+Simple Example
+</p>
+
+<p>
+This simple Makefile compiles a hello.cpp program. It also includes a clean target that removes our executable in case we want to clean up the directory.
+</p>
+<div class="org-src-container">
+<pre class="src src-Makefile">   hello: hello.cpp
+        g++ -g -Wall hello.cpp -o hello
+
+clean:
+        rm -f hello
+</pre>
+</div>
+
+
 <blockquote>
 <p>
 Multi-file Example
@@ -271,7 +377,7 @@ Most of your homeworks will require you to compile multiple files, then link the
 <p>
 First, take a look at the imaginary file tree we’re basing this Makefile off of:
 </p>
-<pre class="example" id="orgfbb6b06">
+<pre class="example" id="org42cee24">
 program/
   main.cpp
   file1.cpp
@@ -279,6 +385,26 @@ program/
   file2.cpp
 </pre>
 
+<div class="org-src-container">
+<pre class="src src-nil">all: program
+
+program: main.cpp file1.o file2.o
+        g++ -g -Wall main.cpp file1.o file2.o -o program
+
+file1.o: file1.cpp file1.h
+        g++ -g -Wall -c file1.cpp -o file1.o
+
+file2.o: file2.cpp
+        g++ -g -Wall -c file2.cpp -o file2.o
+
+clean:
+        rm -f *.o program
+
+</pre>
+</div>
+
+
+
 <blockquote>
 <p>
 When you type make or make [target], the Make will look through your current directory for a Makefile. This file must be called makefile or Makefile.
@@ -302,6 +428,13 @@ Oftentimes these commands start with g++, but they can be anything! You can run 
 <p>
 The target dependency format looks like this. Note the tab indent before the commands; these are required!
 </p>
+<div class="org-src-container">
+<pre class="src src-Makefile">target1: dependency1 dependency2 ...
+        command1
+        command2
+        ...
+</pre>
+</div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
@@ -311,6 +444,12 @@ The target dependency format looks like this. Note the tab indent before the com
 <li><a href="https://www.gnu.org/software/make/manual/make.html">https://www.gnu.org/software/make/manual/make.html</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="https://bytes.usc.edu/cs104/wiki/makefile/">https://bytes.usc.edu/cs104/wiki/makefile/</a></li>
+<li><a href="https://www.gnu.org/software/make/manual/make.html">https://www.gnu.org/software/make/manual/make.html</a></li>
+</ul>
+<li><a href="https://bytes.usc.edu/cs104/wiki/makefile/">https://bytes.usc.edu/cs104/wiki/makefile/</a></li>
+<li><a href="https://www.gnu.org/software/make/manual/make.html">https://www.gnu.org/software/make/manual/make.html</a></li>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -318,6 +457,8 @@ The target dependency format looks like this. Note the tab indent before the com
 <ul class="org-ul">
 </ul>
 </div>
+<ul class="org-ul">
+</ul>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

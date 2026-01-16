@@ -229,6 +229,32 @@ My preferred method for this is using a ZFS dataset and rolling it back to a bla
 </p>
 </blockquote>
 <p>
+Deeply terrifying inbox-zero quest for intentionality around working machine state.
+</p>
+
+<p>
+I'm a hoarder. Like Bernadette doing KonMari, I notice that this approach to daily-driver maintenance  is irrelevant to me in its highest form. My personal machine is a pet, not cattle.
+</p>
+
+<p>
+Nonetheless, we can understand a lot about how to keep our pets well-groomed from this approach. We ultimately want to create a stable workflow to <a href="20230808100433-elevate_state_to_configuration.html#ID-853091aa-e5ea-4bfe-a637-89d88914cb9e">elevate state to configuration</a>.
+</p>
+
+
+<blockquote>
+<p>
+Opting out
+</p>
+
+<p>
+Before we can opt in to saving data, we must opt out of saving data by default. I do this by setting up my filesystem in a way that lets me easily and safely erase the unwanted data, while preserving the data I do want to keep.
+</p>
+
+<p>
+My preferred method for this is using a ZFS dataset and rolling it back to a blank snapshot before it is mounted. A partition of any other filesystem would work just as well too, running mkfs at boot, or something similar. If you have a lot of RAM, you could skip the erase step and make / a tmpfs.
+</p>
+</blockquote>
+<p>
 Opting out
 </p>
 
@@ -248,6 +274,10 @@ My preferred method for this is using a ZFS dataset and rolling it back to a bla
 <li><a href="https://grahamc.com/blog/erase-your-darlings/">https://grahamc.com/blog/erase-your-darlings/</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="https://grahamc.com/blog/erase-your-darlings/">https://grahamc.com/blog/erase-your-darlings/</a></li>
+</ul>
+<li><a href="https://grahamc.com/blog/erase-your-darlings/">https://grahamc.com/blog/erase-your-darlings/</a></li>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -255,6 +285,8 @@ My preferred method for this is using a ZFS dataset and rolling it back to a bla
 <ul class="org-ul">
 </ul>
 </div>
+<ul class="org-ul">
+</ul>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

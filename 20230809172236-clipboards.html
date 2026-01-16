@@ -221,6 +221,25 @@ Shells and remote shells cna also be variously configured to pass clips through 
 <p>
 Fun little corner of terrible congealed glue in the works.
 </p>
+<p>
+Cut-and-paste.
+</p>
+
+<p>
+X distinguishes primary and visual clipbaords. In addition, Emacs has the kill-ring. and shells keep their own kill ring. This can lead to some interesting situations.
+</p>
+
+<p>
+n GUI Emacs and EXWM,  the last item of the visual clipboard becomes the "yankable thing" but isn't the top of the kill-ring. Emacs' treatment of non-Emacs-controlled clips is mediated by the variables <code>interprogram-cut-function</code> and <code>interprogram-past-function</code>. 
+</p>
+
+<p>
+Shells and remote shells cna also be variously configured to pass clips through or not; generally, they too don't push interprogram clips to kill rings if they are maintaining them.
+</p>
+
+<p>
+Fun little corner of terrible congealed glue in the works.
+</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -228,6 +247,8 @@ Fun little corner of terrible congealed glue in the works.
 <ul class="org-ul">
 </ul>
 </div>
+<ul class="org-ul">
+</ul>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

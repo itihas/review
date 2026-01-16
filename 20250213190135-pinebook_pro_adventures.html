@@ -222,13 +222,165 @@ Naturally I need a remote build setup (who would build on this baby potato), so 
 <p>
 Manjaro bug log:
 </p>
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 16:12] </span></span> switch to unstable branch
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">pacman-mirrors --api --set-branch unstable --fasttrack 10 &amp;&amp; pacman -Syu
+</pre>
+</div>
+<ul class="org-ul">
+<li>pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.</li>
+</ul></li>
+<li><span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 19:10] </span></span> wifi outage
+<ul class="org-ul">
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul></li>
+<li><p>
+<a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
+</p>
+<blockquote>
+<p>
+WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>
+In 2021, I acquired a PInebook Pro! It's a beautiful little device, something like a budget phone with a laptop form factor and without the presumption that it will be running Android. A good catalyst to learn about the ways an ISA affects you all the way up the stack.
+</p>
+
+<p>
+I did get bored with it quickly upon first purchase. I briefly woke it up again in 2025 because whaddaya know, a lightweight potato is actually the perfect stripped-down writing environment. It's also great to have a laptoppy computing device hanging around, for folks who want to browse or hack on something with less text neck.
+</p>
+
+<p>
+Performing maintenance on it has been fun. In early 2025 it was a nostalgic return to Arch, after years of NixOS on my personal driver (and a year of GDebian (I'm sure it's perfectly nice for other people) on my work machine). I now want to put Nix on it,
+</p>
+
+<p>
+Naturally I need a remote build setup (who would build on this baby potato), so a prerequisite is getting Hydra up and running. (And using my little baby remote Hetzner as a remote build machine. (I miss my big machine.)) My whole setup gossips on tailscale, which keeps this expected chatter off the open internet.
+</p>
+
+
+<p>
+Manjaro bug log:
+</p>
+<ul class="org-ul">
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 16:12] </span></span> switch to unstable branch
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">pacman-mirrors --api --set-branch unstable --fasttrack 10 &amp;&amp; pacman -Syu
+</pre>
+</div>
+<ul class="org-ul">
+<li>pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.</li>
+</ul></li>
+<li><span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 19:10] </span></span> wifi outage
+<ul class="org-ul">
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul></li>
+<li><p>
+<a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
+</p>
+<blockquote>
+<p>
+WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul></li>
+</ul></li>
+</ul>
+<li><p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 16:12] </span></span> switch to unstable branch
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">pacman-mirrors --api --set-branch unstable --fasttrack 10 &amp;&amp; pacman -Syu
+</pre>
+</div>
+<ul class="org-ul">
+<li>pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.</li>
+</ul></li>
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 16:12] </span></span> switch to unstable branch
 </p>
+<div class="org-src-container">
+<pre class="src src-bash">pacman-mirrors --api --set-branch unstable --fasttrack 10 &amp;&amp; pacman -Syu
+</pre>
+</div>
+<ul class="org-ul">
+<li>pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.</li>
+</ul>
+<li>pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.</li>
 pacman on manjaro-arm-stable was a full major version behind. Renders AUR completely unusable.
+<li><span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 19:10] </span></span> wifi outage
+<ul class="org-ul">
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul></li>
+<li><p>
+<a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
+</p>
+<blockquote>
+<p>
+WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul></li>
+</ul></li>
 <span class="timestamp-wrapper"><span class="timestamp">[2025-02-13 Thu 19:10] </span></span> wifi outage
+<ul class="org-ul">
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul></li>
+<li><p>
+<a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
+</p>
+<blockquote>
+<p>
+WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul></li>
+</ul>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul></li>
 <a href="https://bbs.archlinux.org/viewtopic.php?id=263442">https://bbs.archlinux.org/viewtopic.php?id=263442</a>
+<ul class="org-ul">
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
+</ul>
+<li>can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle</li>
 can't reboot on this hardware and expect the network driver to be loaded 😔 must power cycle
+<li><p>
+<a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
+</p>
+<blockquote>
+<p>
+WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
+</p>
+</blockquote>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul></li>
 <p>
 <a href="https://bbs.archlinux.org/viewtopic.php?id=298025">https://bbs.archlinux.org/viewtopic.php?id=298025</a>
 </p>
@@ -240,6 +392,10 @@ WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 �
 <p>
 WiFi similarly stopped working after wpa<sub>supplicant</sub> update (2:2.10-8 → 2:2.11-1) and it works after reverting to `sudo pacman -U /var/cache/pacman/pkg/wpa<sub>supplicant</sub>-2:2.10-8-x86<sub>64.pkg.tar.zst</sub>` .
 </p>
+<ul class="org-ul">
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
+</ul>
+<li>had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).</li>
 had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with brcfmac (broadcom driver).
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
@@ -249,6 +405,10 @@ had to downgrade wpa<sub>supplicant</sub> because it stopped playing nicely with
 <li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

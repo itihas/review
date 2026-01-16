@@ -210,6 +210,11 @@ Equilibria for infinite games using coinduction.
 </p>
 </div>
 </div>
+<div class="outline-text-2" id="text-ID-tl;dr">
+<p>
+Equilibria for infinite games using coinduction.
+</p>
+</div>
 <p>
 Equilibria for infinite games using coinduction.
 </p>
@@ -232,6 +237,26 @@ He's representing strategies as the whole game plus "which way to go from here?"
 </p>
 </div>
 </div>
+<div class="outline-text-2" id="text-ID-notes as I read">
+<ul class="org-ul">
+<li>what is the Weierstrass function?</li>
+</ul>
+
+<blockquote>
+<p>
+a counterexample of the fact that a finite sum of functions differentiable everywhere is differentiable everywhere whereas an infinite sum can be differentiable nowhere.
+</p>
+</blockquote>
+
+<p>
+He's representing strategies as the whole game plus "which way to go from here?".
+</p>
+</div>
+<ul class="org-ul">
+<li>what is the Weierstrass function?</li>
+</ul>
+
+<li>what is the Weierstrass function?</li>
 what is the Weierstrass function?
 <blockquote>
 <p>
@@ -256,7 +281,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org900086f"></a> | Right <a id="orgc7a8b82"></a>
+Strategy := Payoff | Left <a id="org031b771"></a> | Right <a id="orgd82bd94"></a>
 </p>
 
 
@@ -279,11 +304,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org0dca4aa"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orga6c7961"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgf7fa4f3"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org5945938"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -308,11 +333,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org96384e4"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgaaf337b"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org1af7b6c"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org29e17b6"></a></td>
 </tr>
 </tbody>
 </table>
@@ -332,7 +357,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org47f1eef"></a> : lleaf <a id="org61723bd"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="org507dca6"></a> : lleaf <a id="org0312843"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -404,13 +429,14 @@ SGPE :=
 </table>
 </div>
 </div>
+<div class="outline-text-2" id="text-ID-summary">
 <p>
 Coinductive definitions (for extensional games):
 </p>
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org900086f"></a> | Right <a id="orgc7a8b82"></a>
+Strategy := Payoff | Left <a id="org031b771"></a> | Right <a id="orgd82bd94"></a>
 </p>
 
 
@@ -421,6 +447,28 @@ Predicates:
 <p>
 s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : s2u s a f(a)</td>
+</tr>
+
+<tr>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orga6c7961"></a> u</td>
+</tr>
+
+<tr>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org5945938"></a> u</td>
+</tr>
+</tbody>
+</table>
+
+
 <p>
 leads to a leaf
 </p>
@@ -428,9 +476,48 @@ leads to a leaf
 <p>
 lleaf s: Strategy := cases s of
 </p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgaaf337b"></a></td>
+</tr>
+
+<tr>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org29e17b6"></a></td>
+</tr>
+</tbody>
+</table>
+
 <p>
 alleaf s: Strategy := cases s of
 </p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left"><a id="org507dca6"></a> : lleaf <a id="org0312843"></a> and alleaf sl and alleaf sr</td>
+</tr>
+</tbody>
+</table>
+
+
 <p>
 convertibility (all the strategies where all players but one are held constant):
 </p>
@@ -438,6 +525,28 @@ convertibility (all the strategies where all players but one are held constant):
 <p>
 convertible a s1 s2: Strategy :=
 </p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">leaves are equal if they are equal</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) =</code> a :  equal with any switched choice and convertible children</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) !</code> a : only equal with same choice and convertible children</td>
+</tr>
+</tbody>
+</table>
+
+
 <p>
 Nash eqbr:
 </p>
@@ -453,6 +562,240 @@ Subgame perfect eqbr:
 <p>
 SGPE :=
 </p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left: alleaf Left and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &gt;= v</td>
+</tr>
+
+<tr>
+<td class="org-left">Right: alleaf Right and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &lt;= v</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+Coinductive definitions (for extensional games):
+</p>
+
+<p>
+Game := Payoff | Agent Game Game
+Strategy := Payoff | Left <a id="org031b771"></a> | Right <a id="orgd82bd94"></a>
+</p>
+
+
+<p>
+Predicates:
+</p>
+
+<p>
+s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : s2u s a f(a)</td>
+</tr>
+
+<tr>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orga6c7961"></a> u</td>
+</tr>
+
+<tr>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org5945938"></a> u</td>
+</tr>
+</tbody>
+</table>
+
+
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : s2u s a f(a)</td>
+</tr>
+
+<tr>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orga6c7961"></a> u</td>
+</tr>
+
+<tr>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org5945938"></a> u</td>
+</tr>
+</tbody>
+<p>
+leads to a leaf
+</p>
+
+<p>
+lleaf s: Strategy := cases s of
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgaaf337b"></a></td>
+</tr>
+
+<tr>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org29e17b6"></a></td>
+</tr>
+</tbody>
+</table>
+
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgaaf337b"></a></td>
+</tr>
+
+<tr>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org29e17b6"></a></td>
+</tr>
+</tbody>
+<p>
+alleaf s: Strategy := cases s of
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left"><a id="org507dca6"></a> : lleaf <a id="org0312843"></a> and alleaf sl and alleaf sr</td>
+</tr>
+</tbody>
+</table>
+
+
+<tbody>
+<tr>
+<td class="org-left">f: Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left"><a id="org507dca6"></a> : lleaf <a id="org0312843"></a> and alleaf sl and alleaf sr</td>
+</tr>
+</tbody>
+<p>
+convertibility (all the strategies where all players but one are held constant):
+</p>
+
+<p>
+convertible a s1 s2: Strategy :=
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">leaves are equal if they are equal</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) =</code> a :  equal with any switched choice and convertible children</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) !</code> a : only equal with same choice and convertible children</td>
+</tr>
+</tbody>
+</table>
+
+
+<tbody>
+<tr>
+<td class="org-left">leaves are equal if they are equal</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) =</code> a :  equal with any switched choice and convertible children</td>
+</tr>
+
+<tr>
+<td class="org-left">head(s1) <code>= head(s2) !</code> a : only equal with same choice and convertible children</td>
+</tr>
+</tbody>
+<p>
+Nash eqbr:
+</p>
+
+<p>
+(lleaf s) and (forall a: Agent s' : Strategy, (lleaf s') and (convertible a s s') , (forall u u' : Payoff, (s2u s a u) and (s2u s' a u'), u &ge; u' )).
+</p>
+
+<p>
+Subgame perfect eqbr:
+</p>
+
+<p>
+SGPE :=
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left: alleaf Left and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &gt;= v</td>
+</tr>
+
+<tr>
+<td class="org-left">Right: alleaf Right and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &lt;= v</td>
+</tr>
+</tbody>
+</table>
+<tbody>
+<tr>
+<td class="org-left">Payoff : true</td>
+</tr>
+
+<tr>
+<td class="org-left">Left: alleaf Left and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &gt;= v</td>
+</tr>
+
+<tr>
+<td class="org-left">Right: alleaf Right and SGPE s and SGPE sr and forall u, v, (s2u sl a u and s2u sr a v) -&gt; u &lt;= v</td>
+</tr>
+</tbody>
 <div id="outline-container-ID-Refs" class="outline-3">
 <h3 id="ID-Refs">Refs</h3>
 <div class="outline-text-3" id="text-ID-Refs">
@@ -461,6 +804,10 @@ SGPE :=
 <li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
 </ul>
 </div>
+<ul class="org-ul">
+<li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
+</ul>
+<li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">
@@ -469,6 +816,10 @@ SGPE :=
 <li><a href="20170123112300-infinite_chess_joel_david_hamkins.html#ID-249ce708-c67a-40e4-b32a-e938d960af3f">infinite chess | Joel David Hamkins</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="20170123112300-infinite_chess_joel_david_hamkins.html#ID-249ce708-c67a-40e4-b32a-e938d960af3f">infinite chess | Joel David Hamkins</a></li>
+</ul>
+<li><a href="20170123112300-infinite_chess_joel_david_hamkins.html#ID-249ce708-c67a-40e4-b32a-e938d960af3f">infinite chess | Joel David Hamkins</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

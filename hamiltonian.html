@@ -221,6 +221,25 @@ So what <i>is</i> a dynamicla system really? Here's probably where I pause and a
 <p>
 In November 2025 the reason I care about this is because I want to understand control systems so I can analogize them better with game systems, following on the work of Jeff Shamma.
 </p>
+<p>
+Reexpression of Newtonian (and Lagrangian) mechanics that takes positions and momenta and gives you energy. Characterises A Hamiltonian system is usefully well-behaved in a variety of ways - eigenvalues all have mirrors, the system is integrable, independence from positions gives you invariance in moments (this last seems <i>useful as hell</i> when thinking about curried expressions / logic but I haven't figured out how yet.
+SICM has a whole section on Hamiltonians in classical mechanics.
+They are also <a href="https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)">applicable in optimal control theory</a>, as developed by Lev Pontryagin as part of Pontryagin's maximum principle.
+Source: 
+</p>
+
+
+<p>
+The Hamiltonian in control theory seems like a related but wholly distinct beast, similarly derivable from the (related but distinct) control theory Lagrangian. Here, the configuration space is not subdivided into <i>position</i> and <i>derivative</i> (or equivalently into <i>manifold</i> and <i>tangent bundle</i>) but into <i>state</i> and <i>control</i> variables. Can control variables be treated as a tangent bundle to state? The analogy seems compelling but I think there are important differences &#x2013; specifically, I want to say state is dependent on prior state <i>and also on</i> control variables (meaning I can define a rate of change but it has to flow from both of these things).
+</p>
+
+<p>
+So what <i>is</i> a dynamicla system really? Here's probably where I pause and ask Anish about it.
+</p>
+
+<p>
+In November 2025 the reason I care about this is because I want to understand control systems so I can analogize them better with game systems, following on the work of Jeff Shamma.
+</p>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
@@ -230,6 +249,12 @@ In November 2025 the reason I care about this is because I want to understand co
 <li><a href="https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)">https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)</a></li>
 </ul>
 </div>
+<ul class="org-ul">
+<li><a href="http://www.scholarpedia.org/article/Hamiltonian_system#References">http://www.scholarpedia.org/article/Hamiltonian_system#References</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)">https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)</a></li>
+</ul>
+<li><a href="http://www.scholarpedia.org/article/Hamiltonian_system#References">http://www.scholarpedia.org/article/Hamiltonian_system#References</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)">https://en.wikipedia.org/wiki/Hamiltonian_(control_theory)</a></li>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -237,6 +262,8 @@ In November 2025 the reason I care about this is because I want to understand co
 <ul class="org-ul">
 </ul>
 </div>
+<ul class="org-ul">
+</ul>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"
