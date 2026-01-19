@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 19 Jan 2026 10:36:34 +0000</pubDate>
-  <lastBuildDate>Mon, 19 Jan 2026 10:36:34 +0000</lastBuildDate>
+  <pubDate>Mon, 19 Jan 2026 12:13:36 +0000</pubDate>
+  <lastBuildDate>Mon, 19 Jan 2026 12:13:36 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.39</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,56 @@
   </image>
 
   <item>
+    <title>What are my intentions with you?</title>
+    <link>https://itihas.review/20260103163715-what_are_my_intentions_with_you.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260103163715-what_are_my_intentions_with_you.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Journal Excerpts</title>
+    <link>https://itihas.review/20260119164004-journal_excerpts.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119164004-journal_excerpts.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>why are you here?</title>
+    <link>https://itihas.review/20260119171603-why_are_you_here.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119171603-why_are_you_here.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:18:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>solstice 2025</title>
     <link>https://itihas.review/20251221173517-solstice_2025.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251221173517-solstice_2025.html</guid>
     <pubDate>Sat, 03 Jan 2026 17:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ramanujam, Ramaswamy and Simon, Sunil, A Logical Structure for Strategies</title>
+    <link>https://itihas.review/ramanujamlogical2008.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/ramanujamlogical2008.html</guid>
+    <pubDate>Sat, 03 Jan 2026 17:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Two lovers meet</title>
+    <link>https://itihas.review/20210415103352-a-fairytale-two-lovers-meet-an.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20210415103352-a-fairytale-two-lovers-meet-an.html</guid>
+    <pubDate>Sat, 03 Jan 2026 17:01:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -52,10 +97,28 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
+    <title>metadata is an opinion</title>
+    <link>https://itihas.review/20251104174111-metadata_is_an_opinion.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251104174111-metadata_is_an_opinion.html</guid>
+    <pubDate>Tue, 04 Nov 2025 17:53:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>beating, cascading, and other ways distributed systems respond to synchronicity (and lack thereof)</title>
     <link>https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</guid>
+    <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>The secret of my beating heart is love</title>
+    <link>https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</guid>
     <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
@@ -858,69 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220210222600-preorder_wikipedia.html</guid>
     <pubDate>Thu, 10 Feb 2022 22:26:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Debugging Lisp Part 1: Recompilation - malisper.me</title>
-    <link>https://itihas.review/20220210222500-debugging_lisp_part_1_recompilation_malisper_me.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220210222500-debugging_lisp_part_1_recompilation_malisper_me.html</guid>
-    <pubDate>Thu, 10 Feb 2022 22:25:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>GitHub - pixeltris/GK6X: Configure keys, macros, and lighting on GK6X keyboards (GK64, GK84, GK61, etc)</title>
-    <link>https://itihas.review/20220210222500-github_pixeltris_gk6x_configure_keys_macros_and_lighting_on_gk6x_keyboards_gk64_gk84_gk61_etc_https_github_com_pixeltris_gk6x.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220210222500-github_pixeltris_gk6x_configure_keys_macros_and_lighting_on_gk6x_keyboards_gk64_gk84_gk61_etc_https_github_com_pixeltris_gk6x.html</guid>
-    <pubDate>Thu, 10 Feb 2022 22:25:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Neume - Wikipedia https://en.wikipedia.org/wiki/Neume</title>
-    <link>https://itihas.review/20220210222400-neume_wikipedia.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220210222400-neume_wikipedia.html</guid>
-    <pubDate>Thu, 10 Feb 2022 22:24:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Internet Manifesto</title>
-    <link>https://itihas.review/20220210222300-internet_manifesto.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220210222300-internet_manifesto.html</guid>
-    <pubDate>Thu, 10 Feb 2022 22:23:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>GNU make</title>
-    <link>https://itihas.review/20220210222100-gnu_make.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220210222100-gnu_make.html</guid>
-    <pubDate>Thu, 10 Feb 2022 22:21:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>ToposText</title>
-    <link>https://itihas.review/20220202182400-topostext.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220202182400-topostext.html</guid>
-    <pubDate>Wed, 02 Feb 2022 18:24:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>ChucK =&gt; A Strongly-Timed Music Programming Language</title>
-    <link>https://itihas.review/20211216173600-chuck_a_strongly_timed_music_programming_language.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20211216173600-chuck_a_strongly_timed_music_programming_language.html</guid>
-    <pubDate>Thu, 16 Dec 2021 17:36:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

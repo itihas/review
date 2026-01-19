@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Journal Excerpts</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Journal Excerpts</h1>
+<p>
+When something particularly pretty happens, maybe I want to show and tell a bit.
+</p>
+<div id="outline-container-ID-2025-04-28" class="outline-2">
+<h2 id="ID-2025-04-28">2025-04-28</h2>
+<div class="outline-text-2" id="text-ID-2025-04-28">
+<p>
+[&#x2026;]
+Something poetic in learning that maybe it's okay to die, that there really is nothing essentially necessary about hurting. that all of this is optional.
+</p>
+
+<p>
+I want to live. It is a small flame in cool water, undeniably there, and the superstructure is trying to mirror it above on the surface, desperate and striving, but if it wasn't so scared of the water it could just reach down through it and find the real desire and let it fuel me. Some things got room to breathe. I feel like I noticed a third path, but I feel like it's important to me that the third path is an <i>option</i>. It's a <i>choice</i> and I can choose differently.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2025-04-10" class="outline-2">
+<h2 id="ID-2025-04-10">2025-04-10</h2>
+<div class="outline-text-2" id="text-ID-2025-04-10">
+<p>
+i try to say the true thing and the true thing is always this - that I am everywhere. that "I" is a fiction and indispensable. That I cobble myself together in the corner of the street when I decide where to go. that I find myself in the shadow of my forward foot. i don't know what's happening but i don''t have to. im out ahead of myself. i'm underneath myself. i support myself. i am not a resource to be extracted, I'm an elephant to ride, a swell of wave to survive.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2022-07-27" class="outline-2">
+<h2 id="ID-2022-07-27">2022-07-27</h2>
+<div class="outline-text-2" id="text-ID-2022-07-27">
+<p>
+how does my shadow want to be loved?
+</p>
+<ul class="org-ul">
+<li>How do I love what I don't yet know? (Where I haven't yet been led?)</li>
+<li>How do I love what does not love me?
+How do I love the parts of myself that will leave me out in the cold, unfed and unclean? The sloth, the torpor?</li>
+<li>how do I love the slow and muddled parts?
+loving a know enough to untangle it gently. moving slowly with the slow.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-2022-09-03" class="outline-2">
+<h2 id="ID-2022-09-03">2022-09-03</h2>
+<div class="outline-text-2" id="text-ID-2022-09-03">
+<p>
+What is the purpose of a day?
+</p>
+
+<p>
+I don't feel it anymore. That doesn't mean it isn't there; it's just hidden in the harmonies. I will go seeking awhile.
+</p>
+</div>
+<div id="outline-container-ID-and also:" class="outline-3">
+<h3 id="ID-and also:">and also:</h3>
+<div class="outline-text-3" id="text-ID-and also:">
+<p>
+I wish to write beside the brushstrokes, along every petal of the fanned daisies and within every crevice of the crinkled chrysanthemums and underlined by the ridges of paint in the folds of the skirt where it has ridden up and pools below her torso; and of course scrawled over and under and into the bare dark between her thighs, paint lewdly streaked and smeared to show where the light fails to touch. Where I cannot put my hands, my mouth, I will put the tip of my pen.
+</p>
+
+<p>
+The forms of letters and words, you see, play in a heretical universe to the world of image. They are a repudiation of the extant relationships between sight and meaning, flagrant, without elegance, a diminishing of power in the main mode in a devil's trade for the emergent modes; blasphemous deletion of the baseline; poetry where impressionists retain the restraint to lyricise. This above all else is what I want to do to her.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-2022-11-01" class="outline-2">
+<h2 id="ID-2022-11-01">2022-11-01</h2>
+<div class="outline-text-2" id="text-ID-2022-11-01">
+<p>
+The shape of the leaves stirs me. The happenstance of the shape of a leaf is the most beautiful thing, and gives me the way to understand how a tree must think, being as it is in this same world I am. A tree, too, is muddying along, trying its best to figure out the rules of the world we live in, reaching into the crevices of it to anchor itself into the easy and simple, or easier and simpler, ways of being. A tree, too, discovers within itself capacities that were built in this same world, symmetries with no further explanation than the invariances it already has gleaned and the history of them in its blood and bones. A tree, too, is, and I don't think thinking is different from being for a human, or for a me at any rate, so this must be how a tree thinks.
+</p>
+
+
+<p>
+&#x2014;
+</p>
+
+<p>
+today I:
+reread my journal.gpg file, and reacquainted myself with my secrets. I feel as though wrinkles have been pressed into my skin from the wringing, and I feel newly dry and very clean.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-02-13" class="outline-2">
+<h2 id="ID-2023-02-13">2023-02-13</h2>
+<div class="outline-text-2" id="text-ID-2023-02-13">
+<p>
+&#x2026;I'm not trying to waste time explaining to you what you already feel, so much as I am trying to excavate what's already in my brain, while standing inside the bubble of the written word. I'm trying to dig through the walls of my mind, to gently uncover without breaking, the "implicit" knowledge.
+[&#x2026;]
+It appears I will have to teach myself to write by writing my way into knowing. This organizational principle of synthesis by transcription is the most irritating thing. I don't <i>want</i> to obtain by serialization-deserialization. I <i>want</i> nothing more than this, but not to have to feel it. I stand in the shallow seawater, trying to learn how to cut across its waves and through the heaving body of it. I hate every moment and chase what I love about it as it flees before me. I cannot but pass through this fire that makes my skin buzz to get what I <i>want</i> from the world. I do not know this for sure but I know it pretty well.
+[&#x2026;]
+(You know why synaesthesia sounds like bullshit? It's because we all do it, and nobody told us it was <i>allowed</i>. Those of us in whom it's too strong to ignore or whom nobody attended to inform of the injunction induce sour grapes. We are dismissive because we are outraged and we are outraged because we never realized the stakes were so low and we feel the obscenity of having mutilated ourselves for such low stakes. The damage is reversible, and you can recover to new strengths. Hold hard onto the hope that has just flared and keep your disappointments from poisoning your fellow man from now on.)
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-02-17" class="outline-2">
+<h2 id="ID-2023-02-17">2023-02-17</h2>
+<div class="outline-text-2" id="text-ID-2023-02-17">
+<p>
+I wish for you to show me the meaning of your living. I wish to climb inside the wounds you have opened upon your body from moving in the directions of your living. I think I will find inside them a smell of the air that was around you when you opened them, and that trapped in there I will find secrets from that moment you lived. 
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-02-23" class="outline-2">
+<h2 id="ID-2023-02-23">2023-02-23</h2>
+<div class="outline-text-2" id="text-ID-2023-02-23">
+<p>
+To leave the place we are in we must stay there. To learn the trick of being swept up we must first prepare, To love the other we have to first hate them, because there is no other way to care. To kill the thing in you which you hate you must first feed it and see it for what it is. Build, darling, even when you are trying to burn, because even bonfires must be built.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-02-27" class="outline-2">
+<h2 id="ID-2023-02-27">2023-02-27</h2>
+<div class="outline-text-2" id="text-ID-2023-02-27">
+<p>
+I need to crack open some old wounds. And I need you with me to do it - because those wounds are yours, they were made by you.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-03-22" class="outline-2">
+<h2 id="ID-2023-03-22">2023-03-22</h2>
+<div class="outline-text-2" id="text-ID-2023-03-22">
+<p>
+Kiss you and kiss me both because it is so hard to contain this joy and that's half the reason you don't come back, isn't it? Because you're <i>scared</i> of this joy. It's okay. We learned how to handle it yesterday. Feel thankful for it. Feel glad that you are feeling it <i>/right now</i>. Be glad for the connection you feel to your summers in the top bunk spent typing and the nights you spent in the computer room weaving and crafting worlds between pageloads. Don't you remember how much fun it was? Aren't you glad it happened? Aren't you glad it's still happening now?
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-03-27" class="outline-2">
+<h2 id="ID-2023-03-27">2023-03-27</h2>
+<div class="outline-text-2" id="text-ID-2023-03-27">
+<p>
+Fie on these prepositions, these subversive subservients to presuppositions! Servile only superficially, these are - opportunist suborners of the ground they bridge, they are, these empirical empiriacal demons of connective tissue, this maddening Greek chorus of structural commentary! I can never can say what I mean but that these prepository poltergeists twist it entirely - make a hegemon out of a nationalist, or a missionary out of an idealist, or a vile strategist or a churl out of a retreater! Serpent-tongued strictures of grammatical implicature - enumerators of the unenumerable, making casewise implicatures of things indivisible into categories! They admit of too much unless they admit of not enough - they are too useful to anybody but their user,
+</p>
+</div>
+</div>
+<div id="outline-container-ID-2023-04-06" class="outline-2">
+<h2 id="ID-2023-04-06">2023-04-06</h2>
+<div class="outline-text-2" id="text-ID-2023-04-06">
+<p>
+Unexpectedly, the fine needles in a really precisely crafted piece of work will touch me somewhere cramped. When they slide into willing flesh, these only create warmth, the electric shock of recognition, beautiful feelings to go with the true things, whose pain is to be embraced. But I am older now than I was, and when something touches me in my shoulders, in my neck, in my arms where my biceps are learning how to push and the points of tension built over years of carrying a strife that I thought in my foolish youth that I would defeat much sooner, when this happens I scream, because there the needles don't hurt good. They are grazing bubbles that have festered and jostling bones that are healing wrong and flinching shut muscles that are already like ingrown carnation petals with how cramped they have been for years together. To let the art in, I have to set aside time against the chance that this may happen. It is a wonder I read or listen or watch or let any of it in at all. It must be somethng humans crave, or else something that they need, because nothing else would explain it.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

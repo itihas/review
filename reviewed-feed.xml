@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 19 Jan 2026 10:36:32 +0000</pubDate>
-  <lastBuildDate>Mon, 19 Jan 2026 10:36:32 +0000</lastBuildDate>
+  <pubDate>Mon, 19 Jan 2026 12:13:33 +0000</pubDate>
+  <lastBuildDate>Mon, 19 Jan 2026 12:13:33 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.39</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,128 @@
   </image>
 
   <item>
-    <title>The Quarantine Cookbook</title>
+    <title>GEM Anscombe should have been on github</title>
+    <link>https://itihas.review/20251106135647-gem_anscombe_should_have_been_on_github.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251106135647-gem_anscombe_should_have_been_on_github.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:36:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>I'll forget their faces</title>
+    <link>https://itihas.review/20251209143007-i_ll_forget_their_faces.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251209143007-i_ll_forget_their_faces.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:34:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>What are my intentions with you?</title>
+    <link>https://itihas.review/20260103163715-what_are_my_intentions_with_you.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260103163715-what_are_my_intentions_with_you.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Journal Excerpts</title>
+    <link>https://itihas.review/20260119164004-journal_excerpts.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119164004-journal_excerpts.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>why are you here?</title>
+    <link>https://itihas.review/20260119171603-why_are_you_here.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119171603-why_are_you_here.html</guid>
+    <pubDate>Mon, 19 Jan 2026 17:18:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>APIs as tool spec</title>
+    <link>https://itihas.review/20260119165311-apis_as_tool_spec.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119165311-apis_as_tool_spec.html</guid>
+    <pubDate>Mon, 19 Jan 2026 16:54:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>selection is an atom of design</title>
+    <link>https://itihas.review/20260119161426-selection_is_an_atom_of_design.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119161426-selection_is_an_atom_of_design.html</guid>
+    <pubDate>Mon, 19 Jan 2026 16:28:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>purpose-built ontologies</title>
+    <link>https://itihas.review/20260119161103-purpose_built_ontologies.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260119161103-purpose_built_ontologies.html</guid>
+    <pubDate>Mon, 19 Jan 2026 16:26:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Stalking the Wild Onji:</title>
+    <link>https://itihas.review/20210915125400-stalking_the_wild_onji.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20210915125400-stalking_the_wild_onji.html</guid>
+    <pubDate>Mon, 19 Jan 2026 16:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Fuck wasm-pack</title>
+    <link>https://itihas.review/20251209184154-fuck_wasm_pack.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251209184154-fuck_wasm_pack.html</guid>
+    <pubDate>Fri, 16 Jan 2026 11:11:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>deploy ente via a flake</title>
+    <link>https://itihas.review/20251204173528-deploy_ente_via_a_flake.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251204173528-deploy_ente_via_a_flake.html</guid>
+    <pubDate>Thu, 15 Jan 2026 19:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Moussaka; or, how to dress up your root vegetables and dairy.</title>
     <link>https://itihas.review/cookbook.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/cookbook.html</guid>
     <pubDate>Thu, 15 Jan 2026 19:39:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>The Quarantine Cookbook: An Unfinished Isolation Journal</title>
+    <link>https://itihas.review/cookbook.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/cookbook.html</guid>
+    <pubDate>Thu, 15 Jan 2026 19:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Recipe generator: Rasam</title>
+    <link>https://itihas.review/20251119221221-recipe_generator.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251119221221-recipe_generator.html</guid>
+    <pubDate>Thu, 15 Jan 2026 17:37:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -39,6 +156,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/itihas_publish_review.html</guid>
     <pubDate>Tue, 06 Jan 2026 17:41:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Work with the garage door up</title>
+    <link>https://itihas.review/work_with_the_garage_door_up.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/work_with_the_garage_door_up.html</guid>
+    <pubDate>Sun, 04 Jan 2026 17:15:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -57,6 +183,51 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251221173517-solstice_2025.html</guid>
     <pubDate>Sat, 03 Jan 2026 17:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Link Rot – Terence Eden’s Blog</title>
+    <link>https://itihas.review/link_rot_terence_eden_s_blog.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/link_rot_terence_eden_s_blog.html</guid>
+    <pubDate>Sat, 03 Jan 2026 17:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ramanujam, Ramaswamy and Simon, Sunil, A Logical Structure for Strategies</title>
+    <link>https://itihas.review/ramanujamlogical2008.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/ramanujamlogical2008.html</guid>
+    <pubDate>Sat, 03 Jan 2026 17:17:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Two lovers meet</title>
+    <link>https://itihas.review/20210415103352-a-fairytale-two-lovers-meet-an.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20210415103352-a-fairytale-two-lovers-meet-an.html</guid>
+    <pubDate>Sat, 03 Jan 2026 17:01:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Blunt-Force Ethnic Credibility | Som-Mai Nguyen</title>
+    <link>https://itihas.review/blunt_force_ethnic_credibility_som_mai_nguyen.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/blunt_force_ethnic_credibility_som_mai_nguyen.html</guid>
+    <pubDate>Thu, 01 Jan 2026 15:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Kuang, R. F., Babel: Or the Necessity of Violence: An Arcane History of the Oxford Translators’ Revolution</title>
+    <link>https://itihas.review/kuangBabelNecessityViolence2022.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/kuangBabelNecessityViolence2022.html</guid>
+    <pubDate>Thu, 01 Jan 2026 15:44:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -88,11 +259,11 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>Fuck wasm-pack</title>
-    <link>https://itihas.review/20251209184154-fuck_wasm_pack.html</link>
+    <title>conway's law</title>
+    <link>https://itihas.review/20251214234536-conway_s_law.html</link>
     <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251209184154-fuck_wasm_pack.html</guid>
-    <pubDate>Tue, 09 Dec 2025 18:50:00 +0000</pubDate>
+    <guid isPermaLink="false">https://itihas.review/20251214234536-conway_s_law.html</guid>
+    <pubDate>Sun, 14 Dec 2025 23:56:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -106,15 +277,6 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>deploy ente via a flake</title>
-    <link>https://itihas.review/20251204173528-deploy_ente_via_a_flake.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251204173528-deploy_ente_via_a_flake.html</guid>
-    <pubDate>Thu, 04 Dec 2025 18:20:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>Hamiltonian</title>
     <link>https://itihas.review/hamiltonian.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -124,11 +286,38 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
+    <title>Ongaro, Diego and Ousterhout, John, In Search of an Understandable Consensus Algorithm (2014)</title>
+    <link>https://itihas.review/ongaroSearchUnderstandableConsensus2025.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/ongaroSearchUnderstandableConsensus2025.html</guid>
+    <pubDate>Fri, 07 Nov 2025 10:51:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>human trust networks (aren't much like machine trust networks)</title>
+    <link>https://itihas.review/20251105165609-human_trust_networks.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251105165609-human_trust_networks.html</guid>
+    <pubDate>Wed, 05 Nov 2025 16:56:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>pinebook pro adventures</title>
     <link>https://itihas.review/20250213190135-pinebook_pro_adventures.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250213190135-pinebook_pro_adventures.html</guid>
     <pubDate>Wed, 05 Nov 2025 16:24:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>metadata is an opinion</title>
+    <link>https://itihas.review/20251104174111-metadata_is_an_opinion.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251104174111-metadata_is_an_opinion.html</guid>
+    <pubDate>Tue, 04 Nov 2025 17:53:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -151,6 +340,15 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
+    <title>The secret of my beating heart is love</title>
+    <link>https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</guid>
+    <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>adding noise</title>
     <link>https://itihas.review/20251104164944-adding_noise.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -165,6 +363,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251103150626-run_a_stack_of_processes.html</guid>
     <pubDate>Mon, 03 Nov 2025 15:08:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>I've lived in many houses.</title>
+    <link>https://itihas.review/20251101163345-i_ve_lived_in_many_houses.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251101163345-i_ve_lived_in_many_houses.html</guid>
+    <pubDate>Sat, 01 Nov 2025 17:12:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -408,6 +615,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251004165151-anything_to_be_distracted.html</guid>
     <pubDate>Sat, 04 Oct 2025 17:57:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>ways to think about feeds</title>
+    <link>https://itihas.review/20250923135640-ways_to_think_about_feeds.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250923135640-ways_to_think_about_feeds.html</guid>
+    <pubDate>Tue, 23 Sep 2025 14:00:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -705,222 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/functional_reactive_programming_haskellwiki.html</guid>
     <pubDate>Thu, 17 Jul 2025 22:29:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Ghostscript oneliners</title>
-    <link>https://itihas.review/20220222135200-merge_multiple_pdfs_using_ghostscript_github.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222135200-merge_multiple_pdfs_using_ghostscript_github.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:28:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>alienation</title>
-    <link>https://itihas.review/20250717222739-alienation.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250717222739-alienation.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:28:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Lessing, Doris , The Fifth Child</title>
-    <link>https://itihas.review/lessingFifthChild1989.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/lessingFifthChild1989.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:27:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Cliché verre - Wikipedia</title>
-    <link>https://itihas.review/cliche_verre_wikipedia.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/cliche_verre_wikipedia.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:26:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>drills that generalize</title>
-    <link>https://itihas.review/drills-that-generalize.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/drills-that-generalize.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:25:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>the problem of the copula</title>
-    <link>https://itihas.review/20240817211612-the_problem_of_the_copula.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20240817211612-the_problem_of_the_copula.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:24:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Risk mitigation in evolutionary stag-hare games</title>
-    <link>https://itihas.review/20250503124719-risk_mitigation_in_evolutionary_stag_hare_games.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250503124719-risk_mitigation_in_evolutionary_stag_hare_games.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:18:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>A research journal should be dated.</title>
-    <link>https://itihas.review/20160607113900-create_research_journal.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20160607113900-create_research_journal.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:18:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Psychedelic Dinosaurs, Four-Dimensional Hummingbirds, and How We Got Our Vision: Color, Consciousness, and the Dazzling Universe of Tetrachromacy – The Marginalian</title>
-    <link>https://itihas.review/20230808110549-psychedelic_dinosaurs_four_dimensional_hummingbirds_and_how_we_got_our_vision_color_consciousness_and_the_dazzling_universe_of_tetrachromacy_the_marginalian.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230808110549-psychedelic_dinosaurs_four_dimensional_hummingbirds_and_how_we_got_our_vision_color_consciousness_and_the_dazzling_universe_of_tetrachromacy_the_marginalian.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:17:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Adventures in Backing Up Data with ZFS | Gavin D. Howard</title>
-    <link>https://itihas.review/20220413160000-adventures_in_backing_up_data_with_zfs_gavin_d_howard.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220413160000-adventures_in_backing_up_data_with_zfs_gavin_d_howard.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:17:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>infinite chess | Joel David Hamkins</title>
-    <link>https://itihas.review/20170123112300-infinite_chess_joel_david_hamkins.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20170123112300-infinite_chess_joel_david_hamkins.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:11:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Rebracketing - Wikipedia</title>
-    <link>https://itihas.review/20170120114100-rebracketing_wikipedia.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20170120114100-rebracketing_wikipedia.html</guid>
-    <pubDate>Thu, 17 Jul 2025 22:10:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Project management: Lessons in software and tooling</title>
-    <link>https://itihas.review/20250717141006-project_management_lessons_in_software_and_tooling.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250717141006-project_management_lessons_in_software_and_tooling.html</guid>
-    <pubDate>Thu, 17 Jul 2025 15:22:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Bauhaus building is antihumanist</title>
-    <link>https://itihas.review/20250716205525-bauhaus_building_is_antihumanist.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250716205525-bauhaus_building_is_antihumanist.html</guid>
-    <pubDate>Wed, 16 Jul 2025 22:07:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Wolfe, Tom, From Bauhaus To Our House</title>
-    <link>https://itihas.review/wolfeBauhausOurHouse2009.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/wolfeBauhausOurHouse2009.html</guid>
-    <pubDate>Wed, 16 Jul 2025 21:11:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Why You Hate Contemporary Architecture</title>
-    <link>https://itihas.review/why_you_hate_contemporary_architecture.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/why_you_hate_contemporary_architecture.html</guid>
-    <pubDate>Wed, 16 Jul 2025 21:11:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Person Do Thing</title>
-    <link>https://itihas.review/person_do_thing.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/person_do_thing.html</guid>
-    <pubDate>Wed, 16 Jul 2025 20:50:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Nix is a better Docker image builder than Docker's image builder - Xe Iaso</title>
-    <link>https://itihas.review/nix_is_a_better_docker_image_builder_than_docker_s_image_builder_xe_iaso.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/nix_is_a_better_docker_image_builder_than_docker_s_image_builder_xe_iaso.html</guid>
-    <pubDate>Tue, 15 Jul 2025 13:08:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Accurate word count changes in git, useful for tracking changes on a paper in overleaf · GitHub</title>
-    <link>https://itihas.review/accurate_word_count_changes_in_git_useful_for_tracking_changes_on_a_paper_in_overleaf_github.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/accurate_word_count_changes_in_git_useful_for_tracking_changes_on_a_paper_in_overleaf_github.html</guid>
-    <pubDate>Sat, 05 Jul 2025 22:50:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>backwards-induction reasoning</title>
-    <link>https://itihas.review/20230816195955-backwards_induction_reasoning.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230816195955-backwards_induction_reasoning.html</guid>
-    <pubDate>Sat, 05 Jul 2025 22:35:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>APIs are rigid</title>
-    <link>https://itihas.review/20250202203353-apis_are_rigid.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250202203353-apis_are_rigid.html</guid>
-    <pubDate>Sat, 05 Jul 2025 22:22:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>grumpy researchers benignly haunted by the poltergeists of unsolved problems</title>
-    <link>https://itihas.review/20221020164400-grumpy_researchers_benignly_haunted_by_the_poltergeists_of_unsolved_problems.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20221020164400-grumpy_researchers_benignly_haunted_by_the_poltergeists_of_unsolved_problems.html</guid>
-    <pubDate>Sat, 05 Jul 2025 22:19:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>intentions vs rules</title>
-    <link>https://itihas.review/20230904100144-intentions_vs_rules.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230904100144-intentions_vs_rules.html</guid>
-    <pubDate>Mon, 30 Jun 2025 20:47:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Meridian</title>
-    <link>https://itihas.review/20250630184422-meridian.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250630184422-meridian.html</guid>
-    <pubDate>Mon, 30 Jun 2025 19:03:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
