@@ -291,95 +291,6 @@ When FILES is given, scan these files instead."</span>
       org-id-locations)))
 </pre>
 </div>
-<div class="org-src-container">
-<pre class="src src-elisp">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-id-update-id-locations</span> (<span style="font-weight: bold; text-decoration: underline;">&amp;optional</span> files silent)
-  <span style="font-style: italic;">"Scan relevant files for IDs.
-Store the relation between files and corresponding IDs.
-This will scan all agenda files, all associated archives, and all
-files currently mentioned in `</span><span style="font-weight: bold; font-style: italic; text-decoration: underline;">org-id-locations</span><span style="font-style: italic;">'.
-When FILES is given, scan these files instead."</span>
-  (<span style="font-weight: bold;">interactive</span>)
-  (<span style="font-weight: bold;">if</span> (not org-id-track-globally)
-      (<span style="font-weight: bold;">error</span> <span style="font-style: italic;">"Please turn on `</span><span style="font-weight: bold; font-style: italic; text-decoration: underline;">org-id-track-globally</span><span style="font-style: italic;">' if you want to track IDs"</span>)
-    (<span style="font-weight: bold;">let*</span> ((org-id-search-archives
-        (<span style="font-weight: bold;">or</span> org-id-search-archives
-        (<span style="font-weight: bold;">and</span> (symbolp org-id-extra-files)
-             (symbol-value org-id-extra-files)
-             (member 'agenda-archives org-id-extra-files))))
-       (files
-        (<span style="font-weight: bold;">or</span> files
-        (append
-         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Agenda files and all associated archives
-</span>         (org-agenda-files t org-id-search-archives)
-         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Explicit extra files
-</span>         (<span style="font-weight: bold;">if</span> (symbolp org-id-extra-files)
-             (symbol-value org-id-extra-files)
-           org-id-extra-files)
-         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Files associated with live Org buffers
-</span>         (delq nil
-               (mapcar (<span style="font-weight: bold;">lambda</span> (b)
-                 (<span style="font-weight: bold;">with-current-buffer</span> b
-                   (<span style="font-weight: bold;">and</span> (derived-mode-p 'org-mode) (buffer-file-name))))
-                   (buffer-list)))
-         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">All files known to have IDs
-</span>         org-id-files)))
-       org-agenda-new-buffers
-       file nfiles tfile ids reg found id seen (ndup 0))
-      (<span style="font-weight: bold;">when</span> (member 'agenda-archives files)
-    (<span style="font-weight: bold;">setq</span> files (delq 'agenda-archives (copy-sequence files))))
-      (<span style="font-weight: bold;">setq</span> nfiles (length files))
-      (<span style="font-weight: bold;">while</span> (<span style="font-weight: bold;">setq</span> file (<span style="font-weight: bold;">pop</span> files))
-    (<span style="font-weight: bold;">unless</span> silent
-      (message <span style="font-style: italic;">"Finding ID locations (%d/%d files): %s"</span>
-           (- nfiles (length files)) nfiles file))
-    (<span style="font-weight: bold;">setq</span> tfile (file-truename file))
-    (<span style="font-weight: bold;">when</span> (<span style="font-weight: bold;">and</span> (file-exists-p file) (not (member tfile seen)))
-      (<span style="font-weight: bold;">push</span> tfile seen)
-      (<span style="font-weight: bold;">setq</span> ids nil)
-      (<span style="font-weight: bold;">with-current-buffer</span> (org-get-agenda-file-buffer file)
-        (<span style="font-weight: bold;">save-excursion</span>
-          (<span style="font-weight: bold;">save-restriction</span>
-        (widen)
-        (goto-char (point-min))
-        (<span style="font-weight: bold;">while</span> (re-search-forward <span style="font-style: italic;">"^[ \t]*:ID:[ \t]+</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">(</span><span style="font-style: italic;">\\S-+</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">)</span><span style="font-style: italic;">[ \t]*$"</span>
-                      nil t)
-          (<span style="font-weight: bold;">setq</span> id (match-string-no-properties 1))
-          (<span style="font-weight: bold;">if</span> (member id found)
-              (<span style="font-weight: bold;">progn</span>
-<span style="font-weight: bold; font-style: italic;">;</span><span style="font-weight: bold; font-style: italic;">added logic
-</span>    (<span style="font-weight: bold;">if</span> org-clone-delete-id
-                    (org-entry-delete nil <span style="font-style: italic;">"ID"</span>)
-                  (org-id-get-create t))
-<span style="font-weight: bold; font-style: italic;">;</span><span style="font-weight: bold; font-style: italic;">end of added logic
-</span>            (message <span style="font-style: italic;">"Duplicate ID \"%s\", also in file %s"</span>
-                 id (<span style="font-weight: bold;">or</span> (car (delq
-                          nil
-                          (mapcar
-                           (<span style="font-weight: bold;">lambda</span> (x)
-                         (<span style="font-weight: bold;">if</span> (member id (cdr x))
-                             (car x)))
-                           reg)))
-                    (buffer-file-name)))
-            (<span style="font-weight: bold;">when</span> (= ndup 0)
-              (ding)
-              (sit-for 2))
-            (<span style="font-weight: bold;">setq</span> ndup (1+ ndup)))
-            (<span style="font-weight: bold;">push</span> id found)
-            (<span style="font-weight: bold;">push</span> id ids)))
-        (<span style="font-weight: bold;">push</span> (cons (abbreviate-file-name file) ids) reg))))))
-      (org-release-buffers org-agenda-new-buffers)
-      (<span style="font-weight: bold;">setq</span> org-agenda-new-buffers nil)
-      (<span style="font-weight: bold;">setq</span> org-id-locations reg)
-      (<span style="font-weight: bold;">setq</span> org-id-files (mapcar 'car org-id-locations))
-      (org-id-locations-save) <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">this function can also handle the alist form
-</span>      <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">now convert to a hash
-</span>      (<span style="font-weight: bold;">setq</span> org-id-locations (org-id-alist-to-hash org-id-locations))
-      (<span style="font-weight: bold;">if</span> (&gt; ndup 0)
-      (message <span style="font-style: italic;">"WARNING: %d duplicate IDs found, check *Messages* buffer"</span> ndup)
-    (message <span style="font-style: italic;">"%d unique files scanned for IDs"</span> (length org-id-files)))
-      org-id-locations)))
-</pre>
-</div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
@@ -388,10 +299,6 @@ When FILES is given, scan these files instead."</span>
 <li><a href="https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode">https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode">https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode</a></li>
-</ul>
-<li><a href="https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode">https://emacs.stackexchange.com/questions/24646/resolving-duplicate-ids-in-org-mode</a></li>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -400,10 +307,6 @@ When FILES is given, scan these files instead."</span>
 <li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
-</ul>
-<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

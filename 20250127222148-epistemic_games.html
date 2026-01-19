@@ -209,18 +209,10 @@ Games where players are not assumed to have perfect common knowledge of the game
 <p>
 Sources: (Blackburn, Patrick and family=Benthem, given=Johan FAK, prefix=van, useprefix=true and Wolter, Frank 2006), (family=Benthem, given=Johan, prefix=van, useprefix=false 2010)
 </p>
-<p>
-Games where players are not assumed to have perfect common knowledge of the gameboard, game history, or current place in it.
-</p>
-
-<p>
-Sources: (Blackburn, Patrick and family=Benthem, given=Johan FAK, prefix=van, useprefix=true and Wolter, Frank 2006), (family=Benthem, given=Johan, prefix=van, useprefix=false 2010)
-</p>
-
 <div id="outline-container-ID-3dce4774-bf4f-425c-89c5-11b0c2cc612c" class="outline-2">
 <h2 id="ID-3dce4774-bf4f-425c-89c5-11b0c2cc612c">Email exchange regarding the above (and other things) with Prof. Benthem:</h2>
 <div class="outline-text-2" id="text-ID-3dce4774-bf4f-425c-89c5-11b0c2cc612c">
-<pre class="example" id="orgde45238">
+<pre class="example" id="org14eb659">
 A question about varying epistemic games to create composable partial games
 
 
@@ -318,203 +310,6 @@ Sahiti Chedalavada
 </pre>
 </div>
 </div>
-<div class="outline-text-2" id="text-ID-3dce4774-bf4f-425c-89c5-11b0c2cc612c">
-<pre class="example" id="orgde45238">
-A question about varying epistemic games to create composable partial games
-
-
-Benthem, Johan van &lt;j.vanbenthem@uva.nl&gt;	Tue, Oct 8, 2019 at 1:32 AM
-To: Sahiti Chedalavada &lt;sahiti93@gmail.com&gt;
-Cc: "johan@stanford.edu" &lt;johan@stanford.edu&gt;
-Dear Sahiti,
-
-
-I was held up by my birthday in China and other events.
-
-Nice topic! The idea of composable partial games is attractive.
-
-It reminds me somewhat of the game logics that I discuss in
-Part V of my book "Logic in Games", attached. Check it out.
-
-
-Let me also point you to this recent survey that I wrote with
-
-Dominik Klein for the Stanford Encyclopedia of Philosophy:
-
-
-https://plato.stanford.edu/entries/logics-for-games/
-
-Your idea of operating at the 'knowledge boundary' also
-appeals to me, though I cannot yet see a precise definition.
-
-There may be work already along the lines you mention
-
-which I am not aware of: you might check with Dr. Dominik
-Klein in Bamberg/Bayreuth, and more in a CS setting, with
-
-Professor Ram Ramanujam, Mathematical Institute, Chennai.
-
-With best wishes,
-
-
-Johan van Benthem
-
---------------------------------------------
-Johan van Benthem, Professor of Logic
-UvA, Stanford and Tsinghua University
-http://staff.fnwi.uva.nl/j.vanbenthem
-范丙申
-
-
-
-From: Sahiti Chedalavada &lt;sahiti93@gmail.com&gt;
-Sent: Wednesday, September 25, 2019 1:27 PM
-To: Benthem, Johan van
-Subject: A question about varying epistemic games to create composable partial games
- 
-Dear Professor van Benthem,
-
-I’m a Master’s student at the Indian Institute of Information Technology, Hyderabad. I have a question about whether it’s possible to model players “leaving” a coalition as if they are players in an epistemic game who change their strategy in response to information gained over the course of play.
-
-I draw from your chapter on epistemic games in Modal Logic for Open Minds; the methods you lay out in that chapter to express the limitations of player knowledge seem tailored to express the intersection of the knowledge bounds of different players. I’ve tried to tweak this approach in order to better express the fine structure of the boundary of knowledge in a game, instead. My interest is in using this representation to model coalitional reasoning about partial games, so that I can fit together a representation of players changing policies mid-play because of a change in context.
-
-As you lay it out in the textbook, in an epistemic game, partial knowledge is modeled with an equivalence relation across game states to express what is indistinguishable in a given player’s perception. This makes it easy to express interesting things about how player’s differing perceptions interact - since equivalence relations overlap in neat, intelligible ways - but difficult to express any patterns in what a player does or doesn’t know.
-
-I wanted to attempt making the converse tradeoff - expressing and using the patterns in a knowledge boundary at the cost of expressing and using the intersections between player knowledge boundaries. It seemed interesting to explore what it might mean for a collection of players to play half a game.
-
-The “outcome” of a partial game would necessarily have to be a series of mutually agreed-upon assertions about play, rather than the state reached at the end of play. Assuming that the “partially specified” game is not merely a play-history tree that can be glued to other trees:
-
-instead of
-moves
-a core
-an end state
-players would have
-strategies
-a core
-an effective “pruning” of the tree
-Where a “pruned” tree is a play-history tree that is void of the states that the core coerced into unreachability for its own gain.
-Representing the gameboard as a concurrent game structure, as used to model alternating-time temporal logic, would allow for the partial specification of a gameboard using ATL, in a way that is by construction conducive to reasoning about viable coalitional strategies. Given a partial concurrent game structure (assuming it expressed at least one concrete “payoff” in a potential unspooled future), it should be possible to derive or verify its “pruned” version - the effective game, after considering player strategy.
-
-Because of this finite open ended way of representing player strategy construction, it would become possible to “compose” both partial games and their corresponding “prunings” via logical combinations of their specifications.
-
-As play proceeds across this chimeric gameboard, what a player or coalition treats as an optimal strategy would also necessarily change. Conditional loyalty, while simple to express in simple examples, quickly becomes hard to model naturally. My hope is that the above is a reasonably elegant and powerful representation of this behaviour, enough for it to predict complex instances of players choosing to “switch sides”, “flout rules” (eg. as in Grice's maxims), or “cheat”.
-
-A possible application of this approach would be a game-theoretic account of collaborative authorship/revision of a language by its speakers. Where the use of language is itself a game (a la David Lewis), the deliberate flouting of that game’s rules constitutes a play in a larger containing game, which over time ends up somehow adding up to a transition in the language’s standards.
-
-I’d appreciate your thoughts on the above. Is it possible, or am I overlooking something? How would you advise me to refine this? Do you know of any resources that would help me?
-
-Thank you for your time and consideration.
-
-Best Regards,
-
-Sahiti Chedalavada
-
-
-
---
--- "Darn it!" said Edmund. "I've left my new torch in Narnia."
-
-</pre>
-</div>
-<pre class="example" id="orgde45238">
-A question about varying epistemic games to create composable partial games
-
-
-Benthem, Johan van &lt;j.vanbenthem@uva.nl&gt;	Tue, Oct 8, 2019 at 1:32 AM
-To: Sahiti Chedalavada &lt;sahiti93@gmail.com&gt;
-Cc: "johan@stanford.edu" &lt;johan@stanford.edu&gt;
-Dear Sahiti,
-
-
-I was held up by my birthday in China and other events.
-
-Nice topic! The idea of composable partial games is attractive.
-
-It reminds me somewhat of the game logics that I discuss in
-Part V of my book "Logic in Games", attached. Check it out.
-
-
-Let me also point you to this recent survey that I wrote with
-
-Dominik Klein for the Stanford Encyclopedia of Philosophy:
-
-
-https://plato.stanford.edu/entries/logics-for-games/
-
-Your idea of operating at the 'knowledge boundary' also
-appeals to me, though I cannot yet see a precise definition.
-
-There may be work already along the lines you mention
-
-which I am not aware of: you might check with Dr. Dominik
-Klein in Bamberg/Bayreuth, and more in a CS setting, with
-
-Professor Ram Ramanujam, Mathematical Institute, Chennai.
-
-With best wishes,
-
-
-Johan van Benthem
-
---------------------------------------------
-Johan van Benthem, Professor of Logic
-UvA, Stanford and Tsinghua University
-http://staff.fnwi.uva.nl/j.vanbenthem
-范丙申
-
-
-
-From: Sahiti Chedalavada &lt;sahiti93@gmail.com&gt;
-Sent: Wednesday, September 25, 2019 1:27 PM
-To: Benthem, Johan van
-Subject: A question about varying epistemic games to create composable partial games
- 
-Dear Professor van Benthem,
-
-I’m a Master’s student at the Indian Institute of Information Technology, Hyderabad. I have a question about whether it’s possible to model players “leaving” a coalition as if they are players in an epistemic game who change their strategy in response to information gained over the course of play.
-
-I draw from your chapter on epistemic games in Modal Logic for Open Minds; the methods you lay out in that chapter to express the limitations of player knowledge seem tailored to express the intersection of the knowledge bounds of different players. I’ve tried to tweak this approach in order to better express the fine structure of the boundary of knowledge in a game, instead. My interest is in using this representation to model coalitional reasoning about partial games, so that I can fit together a representation of players changing policies mid-play because of a change in context.
-
-As you lay it out in the textbook, in an epistemic game, partial knowledge is modeled with an equivalence relation across game states to express what is indistinguishable in a given player’s perception. This makes it easy to express interesting things about how player’s differing perceptions interact - since equivalence relations overlap in neat, intelligible ways - but difficult to express any patterns in what a player does or doesn’t know.
-
-I wanted to attempt making the converse tradeoff - expressing and using the patterns in a knowledge boundary at the cost of expressing and using the intersections between player knowledge boundaries. It seemed interesting to explore what it might mean for a collection of players to play half a game.
-
-The “outcome” of a partial game would necessarily have to be a series of mutually agreed-upon assertions about play, rather than the state reached at the end of play. Assuming that the “partially specified” game is not merely a play-history tree that can be glued to other trees:
-
-instead of
-moves
-a core
-an end state
-players would have
-strategies
-a core
-an effective “pruning” of the tree
-Where a “pruned” tree is a play-history tree that is void of the states that the core coerced into unreachability for its own gain.
-Representing the gameboard as a concurrent game structure, as used to model alternating-time temporal logic, would allow for the partial specification of a gameboard using ATL, in a way that is by construction conducive to reasoning about viable coalitional strategies. Given a partial concurrent game structure (assuming it expressed at least one concrete “payoff” in a potential unspooled future), it should be possible to derive or verify its “pruned” version - the effective game, after considering player strategy.
-
-Because of this finite open ended way of representing player strategy construction, it would become possible to “compose” both partial games and their corresponding “prunings” via logical combinations of their specifications.
-
-As play proceeds across this chimeric gameboard, what a player or coalition treats as an optimal strategy would also necessarily change. Conditional loyalty, while simple to express in simple examples, quickly becomes hard to model naturally. My hope is that the above is a reasonably elegant and powerful representation of this behaviour, enough for it to predict complex instances of players choosing to “switch sides”, “flout rules” (eg. as in Grice's maxims), or “cheat”.
-
-A possible application of this approach would be a game-theoretic account of collaborative authorship/revision of a language by its speakers. Where the use of language is itself a game (a la David Lewis), the deliberate flouting of that game’s rules constitutes a play in a larger containing game, which over time ends up somehow adding up to a transition in the language’s standards.
-
-I’d appreciate your thoughts on the above. Is it possible, or am I overlooking something? How would you advise me to refine this? Do you know of any resources that would help me?
-
-Thank you for your time and consideration.
-
-Best Regards,
-
-Sahiti Chedalavada
-
-
-
---
--- "Darn it!" said Edmund. "I've left my new torch in Narnia."
-
-</pre>
-
-
-
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">
@@ -524,12 +319,6 @@ Sahiti Chedalavada
 <li><a href="20170606183600-roles_an_utterance_can_play.html#ID-06c56933-35ad-44d3-9853-8eaf7ca5d86c">Roles an utterance can play</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="novikovReflexionControlMathematical2014.html#ID-a346e99d-b827-4151-a25b-2b646d58cc4e">Novikov, Dmitry A. and Chkhartishvili, Alexander G., Reflexion and Control: Mathematical Models</a></li>
-<li><a href="20170606183600-roles_an_utterance_can_play.html#ID-06c56933-35ad-44d3-9853-8eaf7ca5d86c">Roles an utterance can play</a></li>
-</ul>
-<li><a href="novikovReflexionControlMathematical2014.html#ID-a346e99d-b827-4151-a25b-2b646d58cc4e">Novikov, Dmitry A. and Chkhartishvili, Alexander G., Reflexion and Control: Mathematical Models</a></li>
-<li><a href="20170606183600-roles_an_utterance_can_play.html#ID-06c56933-35ad-44d3-9853-8eaf7ca5d86c">Roles an utterance can play</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

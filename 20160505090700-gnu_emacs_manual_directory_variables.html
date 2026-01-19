@@ -211,23 +211,6 @@ Sometimes, you may wish to define the same set of local variables to all the fil
 The usual way to define directory-local variables is to put a file named .dir-locals.el24 in a directory. Whenever Emacs visits any file in that directory or any of its subdirectories, it will apply the directory-local variables specified in .dir-locals.el, as though they had been defined as file-local variables for that file (see Local Variables in Files). Emacs searches for .dir-locals.el starting in the directory of the visited file, and moving up the directory tree. To avoid slowdown, this search is skipped for remote files. If needed, the search can be extended for remote files by setting the variable enable-remote-dir-locals to t. 
 </p>
 </blockquote>
-<blockquote>
-<p>
-Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory’s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
-</p>
-
-<p>
-The usual way to define directory-local variables is to put a file named .dir-locals.el24 in a directory. Whenever Emacs visits any file in that directory or any of its subdirectories, it will apply the directory-local variables specified in .dir-locals.el, as though they had been defined as file-local variables for that file (see Local Variables in Files). Emacs searches for .dir-locals.el starting in the directory of the visited file, and moving up the directory tree. To avoid slowdown, this search is skipped for remote files. If needed, the search can be extended for remote files by setting the variable enable-remote-dir-locals to t. 
-</p>
-</blockquote>
-
-<p>
-Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory’s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
-</p>
-
-<p>
-The usual way to define directory-local variables is to put a file named .dir-locals.el24 in a directory. Whenever Emacs visits any file in that directory or any of its subdirectories, it will apply the directory-local variables specified in .dir-locals.el, as though they had been defined as file-local variables for that file (see Local Variables in Files). Emacs searches for .dir-locals.el starting in the directory of the visited file, and moving up the directory tree. To avoid slowdown, this search is skipped for remote files. If needed, the search can be extended for remote files by setting the variable enable-remote-dir-locals to t. 
-</p>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
@@ -236,10 +219,6 @@ The usual way to define directory-local variables is to put a file named .dir-lo
 <li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html</a></li>
-</ul>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html</a></li>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -249,12 +228,6 @@ The usual way to define directory-local variables is to put a file named .dir-lo
 <li><a href="20240819164447-direnv.html#ID-015821be-cffa-4f5c-8e1b-3118d76e05ec">direnv</a></li>
 </ul>
 </div>
-<ul class="org-ul">
-<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
-<li><a href="20240819164447-direnv.html#ID-015821be-cffa-4f5c-8e1b-3118d76e05ec">direnv</a></li>
-</ul>
-<li><a href="20240822193504-emacs.html#ID-d032f894-0e73-462e-ac3d-8c9d8a4d998a">Emacs</a></li>
-<li><a href="20240819164447-direnv.html#ID-015821be-cffa-4f5c-8e1b-3118d76e05ec">direnv</a></li>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"

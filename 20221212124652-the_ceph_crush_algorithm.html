@@ -225,37 +225,6 @@ Buckets have associated weights and are of four different types:
 <p>
 This plus implementation of allocation rules, which act as filters.
 </p>
-<p>
-Allocation algorithm. given an input value, CRUSH deterministically outputs an ordered list of distinct storage targets.
-</p>
-
-
-<p>
-Create a cluster map, which is a tree where the leaves are storage devices; call the internal nodes buckets.
-</p>
-
-<p>
-Buckets have associated weights and are of four different types:
-</p>
-<ul class="org-ul">
-<li>uniform (children are identical; constant-time allocation)</li>
-<li>list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)</li>
-<li>tree (children have arbitrary weights)</li>
-<li>straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)</li>
-</ul>
-
-
-<li>uniform (children are identical; constant-time allocation)</li>
-uniform (children are identical; constant-time allocation)
-<li>list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)</li>
-list (children are arbitrary weights; we step through it until the current node is heavier than the sum of the remaining)
-<li>tree (children have arbitrary weights)</li>
-tree (children have arbitrary weights)
-<li>straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)</li>
-straw (children are assigned numbers which are multiplied by weights, and the "longest straw" is chosen)
-<p>
-This plus implementation of allocation rules, which act as filters.
-</p>
 <div id="outline-container-ID-Backlinks" class="outline-2">
 <h2 id="ID-Backlinks">Backlinks</h2>
 <div class="outline-text-2" id="text-ID-Backlinks">
@@ -263,8 +232,6 @@ This plus implementation of allocation rules, which act as filters.
 <ul class="org-ul">
 </ul>
 </div>
-<ul class="org-ul">
-</ul>
 </div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"
