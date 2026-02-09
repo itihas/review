@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rootconf talk</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Rootconf talk</h1>
+<p>
+In November 2025 I made an elevator pitch for a talk at Rootconf about creating infrastructure for volunteer communities. This went really went in that I had some cool ideas that the pitchees also thought were cool, and so far it's gone poorly in that I've yet to finish incorporating their feedback to add back the technical depth required to do that topic justice. Mostly that's because the scope creep ate my brain for awhile. There are a couple of different directions I could take for <i>technical depth</i> here, and they don't all fit in one talk.
+</p>
+
+<p>
+So let's regear and start from scratch.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+
+<p>
+There are a few central insights I want to capture.
+</p>
+<div id="outline-container-ID-A coalition is like a truck route." class="outline-2">
+<h2 id="ID-A coalition is like a truck route.">A coalition is like a truck route.</h2>
+<div class="outline-text-2" id="text-ID-A coalition is like a truck route.">
+<p>
+This analogizes exactly to Shapley's carpool route.
+</p>
+
+<ul class="org-ul">
+<li>The coalition as a whole is geared towards taking a specific path, perhaps to deliver cargo somewhere. People get on or off as it serves their purposes. While the truck route remains profitable (in utils, not necessarily money), the truck keeps running. Part of what makes this the case is that people want to be on the truck. The nature of the contract they agree to when getting on the truck is what differs from employee to volunteer.</li>
+<li>All agents care about where they get on the truck, and where it drops them off.</li>
+<li>Agents may be carrying <i>backpacks</i> - i.e. serving agendas of their own, which the truck subsidizes the furtherance of.</li>
+<li>A truck may function as a bus, i.e. have no cargo at all besides backpacks.</li>
+</ul>
+</div>
+<div id="outline-container-ID-write out the formal construction of the truck route." class="outline-3">
+<h3 id="ID-write out the formal construction of the truck route."><span class="todo todo">todo</span> write out the formal construction of the truck route.</h3>
+</div>
+</div>
+<div id="outline-container-ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]]." class="outline-2">
+<h2 id="ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]].">Orgs are <a href="20210522205200-forcing_games.html#ID-7053d213-abc8-4d4e-89ad-01ada4aebb6a">forcing functions</a>.</h2>
+<div class="outline-text-2" id="text-ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]].">
+</div>
+<div id="outline-container-ID-Volunteer orgs are /more complex/ forcing functions." class="outline-3">
+<h3 id="ID-Volunteer orgs are /more complex/ forcing functions.">Volunteer orgs are <i>more complex</i> forcing functions.</h3>
+<div class="outline-text-3" id="text-ID-Volunteer orgs are /more complex/ forcing functions.">
+<p>
+This is because volunteers are <i>exclusively</i> compensated in truck path control.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Volunteers are a /fundamentally/ different type of agent than employees are." class="outline-2">
+<h2 id="ID-Volunteers are a /fundamentally/ different type of agent than employees are.">Volunteers are a <i>fundamentally</i> different type of agent than employees are.</h2>
+<div class="outline-text-2" id="text-ID-Volunteers are a /fundamentally/ different type of agent than employees are.">
+<ul class="org-ul">
+<li>Employees are invested in the truck <i>paying them in utils</i>. The truck is a truck. It has cargo that has to get somewhere.</li>
+<li>Volunteers are invested in the <i>path of the truck</i>. They want the cargo to get somewhere.</li>
+<li>Compensation-seekers get on for-profit trucks. Outcome-seekers get on volunteer trucks.</li>
+<li>Compensate volunteers in cargo space. Compensate employees in utils.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Analogously, volunteer vs for-profit orgs are different types of agent." class="outline-2">
+<h2 id="ID-Analogously, volunteer vs for-profit orgs are different types of agent.">Analogously, volunteer vs for-profit orgs are different types of agent.</h2>
+<div class="outline-text-2" id="text-ID-Analogously, volunteer vs for-profit orgs are different types of agent.">
+</div>
+<div id="outline-container-ID-A volunteer organization is always a community." class="outline-3">
+<h3 id="ID-A volunteer organization is always a community.">A volunteer organization is always a community.</h3>
+<div class="outline-text-3" id="text-ID-A volunteer organization is always a community.">
+<ul class="org-ul">
+<li>You are always building a collection of people with shared goals and values, who must work in collaboration to <i>define</i> and <i>operationalize</i> their personal goals and values. This requires them to have high trust in each other and the group as a whole.
+<ul class="org-ul">
+<li>However you define community,  putting humans in a group with these properties will put them in community.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Path capture" class="outline-2">
+<h2 id="ID-Path capture">Path capture</h2>
+<div class="outline-text-2" id="text-ID-Path capture">
+<ul class="org-ul">
+<li>Almost certainly, per Arrow's impossibility theorem, a smaller agent-unit has control over the truck's path. Not all truck passengers can be drivers.</li>
+<li>All agents across all types of organization are potentially interested in <i>path capture</i> &#x2013; i.e. controlling what the truck carries and where it goes. The resources which they have for doing this, and the internal incentive structure of the truck-coalition that they are navigating to do this, differ fundamentally.</li>
+<li>In practice, the agents most aligned with the "truck shape" are the most likely to be able to engage in path capture.</li>
+</ul>
+</div>
+<div id="outline-container-ID-formally express this formal claim: The edit distance between an agent's preferred path and the truck's preferred path should be minimal in order to place an agent in the class of possible dictators." class="outline-3">
+<h3 id="ID-formally express this formal claim: The edit distance between an agent's preferred path and the truck's preferred path should be minimal in order to place an agent in the class of possible dictators."><span class="todo todo">todo</span> formally express this formal claim: The edit distance between an agent's preferred path and the truck's preferred path should be minimal in order to place an agent in the class of possible dictators.</h3>
+</div>
+</div>
+<div id="outline-container-ID-Unknowns" class="outline-2">
+<h2 id="ID-Unknowns">Unknowns</h2>
+<div class="outline-text-2" id="text-ID-Unknowns">
+<ul class="org-ul">
+<li>Unknowns turn the whole game into an epistemic game, where the possibility space blows out, and the space of available conclusions proportionally shrinks.</li>
+</ul>
+</div>
+<div id="outline-container-ID-formally express this formal claim: The /coalitional/ unknowns -- the organization as the player in Wumpus World -- can be derived from the /participant/ unknowns -- and are strictly a subset of the logical conjunction of all player knowledge." class="outline-3">
+<h3 id="ID-formally express this formal claim: The /coalitional/ unknowns -- the organization as the player in Wumpus World -- can be derived from the /participant/ unknowns -- and are strictly a subset of the logical conjunction of all player knowledge."><span class="todo todo">todo</span> formally express this formal claim: The <i>coalitional</i> unknowns &#x2013; the organization as the player in Wumpus World &#x2013; can be derived from the <i>participant</i> unknowns &#x2013; and are strictly a subset of the logical conjunction of all player knowledge.</h3>
+</div>
+
+<div id="outline-container-ID-flesh out: Information asymmetries and knowledge boundaries will evolve differently in volunteer organizations." class="outline-3">
+<h3 id="ID-flesh out: Information asymmetries and knowledge boundaries will evolve differently in volunteer organizations."><span class="todo todo">todo</span> flesh out: Information asymmetries and knowledge boundaries will evolve differently in volunteer organizations.</h3>
+</div>
+</div>
+<div id="outline-container-ID-The trust model for running a for-profit vs a volunteer org is different." class="outline-2">
+<h2 id="ID-The trust model for running a for-profit vs a volunteer org is different.">The trust model for running a for-profit vs a volunteer org is different.</h2>
+<div class="outline-text-2" id="text-ID-The trust model for running a for-profit vs a volunteer org is different.">
+<ul class="org-ul">
+<li>Volunteer orgs are <i>existentially reliant</i> on high trust. This is because misalignment is existentially costly.</li>
+<li>People will operationalize their work according to what they believe is the purpose of the organization.</li>
+<li>Otoh it's trivially easy to steal labor from volunteers once you've performed path-capture and found a stable enough lie to tell. This is a systematic violation of trust that <i>works</i>.
+<ul class="org-ul">
+<li>Case studies: Redmine, OpenAI.</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-ID-There's a bias-variance tradeoff between building an insular vs a vulnerable community." class="outline-3">
+<h3 id="ID-There's a bias-variance tradeoff between building an insular vs a vulnerable community.">There's a bias-variance tradeoff between building an insular vs a vulnerable community.</h3>
+<div class="outline-text-3" id="text-ID-There's a bias-variance tradeoff between building an insular vs a vulnerable community.">
+<p>
+This seems self evident to me but I will have to unpack it.
+</p>
+</div>
+<div id="outline-container-ID-Federated trust is a common way that volunteer orgs solve for this hard limit." class="outline-4">
+<h4 id="ID-Federated trust is a common way that volunteer orgs solve for this hard limit.">Federated trust is a common way that volunteer orgs solve for this hard limit.</h4>
+<div class="outline-text-4" id="text-ID-Federated trust is a common way that volunteer orgs solve for this hard limit.">
+<p>
+Therefore, trust in volunteer communities usually requires a fedaration idiom. 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Models for volunteer trust ought to look completely different." class="outline-3">
+<h3 id="ID-Models for volunteer trust ought to look completely different.">Models for volunteer trust ought to look completely different.</h3>
+<div class="outline-text-3" id="text-ID-Models for volunteer trust ought to look completely different.">
+<ul class="org-ul">
+<li>You need a higher emphasis on <i>reputational</i> trust, because the threat of letting in common patterns of bad actor is much higher but the ability to verify is much lower.</li>
+<li>BFT protocols for decision making are necessary to mitigate against bad actors.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-The compensation model for a for-profit vs a volunteer org is different." class="outline-2">
+<h2 id="ID-The compensation model for a for-profit vs a volunteer org is different.">The compensation model for a for-profit vs a volunteer org is different.</h2>
+</div>
+<div id="outline-container-ID-Expect churn in a volunteer organization to be higher." class="outline-2">
+<h2 id="ID-Expect churn in a volunteer organization to be higher.">Expect churn in a volunteer organization to be higher.</h2>
+<div class="outline-text-2" id="text-ID-Expect churn in a volunteer organization to be higher.">
+<ul class="org-ul">
+<li>Misalignment is a frequent phenomenon and purpose-agnostic compensation functions in part as compensating for misalignment.</li>
+<li>Everybody's playing a <a href="20230909171551-stag_hare_game.html#ID-cd4a21ce-8156-4070-a9d8-be65e62104c1">stag-hare game</a> and purpose-agnostic compensation functions in part as a mitigation for the risk of playing stag. Reliable coordination is costly.</li>
+<li>Churn is very operationally costly.
+<ul class="org-ul">
+<li>Nonprofits often benefit from employing at least some people in order to minimize it.</li>
+<li>To support a volunteer organization, you want to find ways to compensate for this phenomenon.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-flesh out: SRE culture has some really really fabulous tools to handle common nonprofit problems." class="outline-2">
+<h2 id="ID-flesh out: SRE culture has some really really fabulous tools to handle common nonprofit problems."><span class="todo todo">todo</span> flesh out: SRE culture has some really really fabulous tools to handle common nonprofit problems.</h2>
+<div class="outline-text-2" id="text-ID-flesh out: SRE culture has some really really fabulous tools to handle common nonprofit problems.">
+</div>
+<div id="outline-container-ID-Systematizing lore protects a lot against churn." class="outline-3">
+<h3 id="ID-Systematizing lore protects a lot against churn.">Systematizing lore protects a lot against churn.</h3>
+</div>
+<div id="outline-container-ID-SREs know how to create Goodhart-resilient metrics." class="outline-3">
+<h3 id="ID-SREs know how to create Goodhart-resilient metrics.">SREs know how to create Goodhart-resilient metrics.</h3>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="../20251007125930-rootconf_talk_proposal.html#ID-fbb17e1c-8ac7-4973-8001-c15d2c68eba6">Reliability for volunteer organizations</a> - old note here. 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

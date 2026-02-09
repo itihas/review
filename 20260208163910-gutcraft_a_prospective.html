@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gutcraft: a prospective</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Gutcraft: a prospective</h1>
+<p>
+<a href="20250803171734-indiewebclub.html#ID-16b219bb-73d8-40e4-8d7e-4018dc13c3e9">IndieWebClub</a> is talking about reviews today, and one of the interesting lines of discussion we had was about reviews that <i>record the process of deciding on a product</i> &#x2013; a trace of the decision tree that brought you to a product. <a href="20260208165231-write_you_a_prospective_record_the_process_of_deciding_on_a_product.html#ID-1f40e18c-e602-4b93-8da8-85d5746424e3">It's a beautiful concept</a>. I think it makes for a good kind of working note. I'm considering calling this type of note a <i>prospective</i>. 
+</p>
+
+
+<p>
+Presented herein the relevant cross-section of January:
+</p>
+<div id="outline-container-ID-Gacha" class="outline-2">
+<h2 id="ID-Gacha">Gacha</h2>
+<div class="outline-text-2" id="text-ID-Gacha">
+<ul class="org-ul">
+<li>In the throes of work anxiety, I see one too many unreasonably beautiful AI-generated advertisements for <i>Dark War: Survival</i>,  and I install it just to prove to myself that they are fake and it won't be fun.</li>
+<li>Alas, for it's a base builder. I don't, at this time, know the <i>term</i> base builder; I just have the correct and beautiful associations from <a href="https://en.wikipedia.org/wiki/SimCity">SimCity</a>, <a href="https://en.wikipedia.org/wiki/Age_of_Empires">Age of Empires</a>, <a href="https://en.wikipedia.org/wiki/StarCraft">Starcraft</a>, and that great dark goddess <a href="https://en.wikipedia.org/wiki/Egg%2C_Inc.">Egg Inc</a>.</li>
+<li>The key to its powers of enthrallment is that it's keeping me waiting for resources. Tho I recognize the auxetic nature of the finger trap I've been caught in, tho from o'er yonder my floating spirit can perceive the beauteous mathematical trap laid in each timer's relationship to each other: from inside the braided net it's got me good. I struggle harder and harder to squeeze as much of each curency out of each play session as I can; when the epoch ends I switch views restlessly for ten more minutes, proving it to myself; while the next foments, I return over and over to the screen, too soon, planning my next moves. The Skinner box has just enough distracting detail that my brain is kept too busy to trust that there's nothing here for me.</li>
+<li>I will realize immediately that it's gambling with extra steps.</li>
+<li>I will realize in a day or two that it's exactly the same as the Finch app.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Finch" class="outline-2">
+<h2 id="ID-Finch">Finch</h2>
+<div class="outline-text-2" id="text-ID-Finch">
+<ul class="org-ul">
+<li>My cousin sends me one too many screenshots of the adorable tricked-out digital baby bird that she is playing guardian to; the acocmpanying messages get surprisingly emotionally engaged. She has decided what manner of relation she has to the Finch (child would be too high-voltage). My cousin is an inveterate skeptic made in the mold of Lois from <i>Lois and Clark (1993)</i>. I follow along for awhile, thinking, <i>this is concerning. I am concerned.</i> in a loop in my head. At omse point it becomes performative. I drop the concern. I allow myself to be endeared. It's shockingly easy. By the end of December I've installed the damn thing myself.</li>
+<li>There's a baby bird. You can't hurt it. You can only send it on adventures and talk to it. If you don't care for it the implication is that it lives in a safe comfortable liminal space where <a href="https://ozybrennan.substack.com/p/summer-never-ends">time declines to pass</a>. It has a birdhouse of its own. It's doing okay.</li>
+<li>You can send it on adventures. It will return with ancedotes you reply to with present discourse. You can choose to write your own replies. Your choices shape the bird's personality chart.  There is no choice without an effect, but there is no effect that doesn't seem fundamentally okay. You can't really make a bad way frot his bird to be.</li>
+<li>You are invited by a thousand nudges to be kind to yourself, to care for yourself, to treat yourself as you would this baby bird.</li>
+<li>You enter tasks. The tasks can repeat to be habits. There are lots of presets.</li>
+<li>You earn a fake currency by checking off your tasks. You can spend the currency on clothes and furniture, and (later on) on bird-dye and trips to other places to have your daily adventures. For this bird life is an endless vacation paid for with your fake currency that you earn for reasons you decide.</li>
+<li>Finch is also a resource management game, and a similarly elegant one. It is also a source of endless unchallenging novelty, with a fictional currency attached to costly real-world actions.</li>
+<li>In Finch, the costly real-world actions are the thigns you want anyway.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Interlude: bonus prereqs" class="outline-2">
+<h2 id="ID-Interlude: bonus prereqs">Interlude: bonus prereqs</h2>
+<div class="outline-text-2" id="text-ID-Interlude: bonus prereqs">
+<ul class="org-ul">
+<li>Six months ago I read <a href="https://www.astralcodexten.com/p/your-review-alpha-school">Your Review: Alpha School</a>, from which my singular takeaway was: bribery works.</li>
+<li><a href="https://www.youtube.com/watch?v=GPrNWuppMcc&amp;t=1840s">CJ the X, discussing C Thi Nguyen</a>, explores <i>aesthetic engagement</i> as an expansion of <i>suspension of disbelief</i>: the ability to take something seriously enough to <i>act from inside its frame</i> &#x2013; to <i>follow its rules</i> &#x2013; and thereby access an otherwise inaccessible truth.
+<ul class="org-ul">
+<li>recall <a href="20221101155800-uklg_comment_about_absolute_belief_coexisting_with_knowledge_that_one_has_no_reason_to_believe_and_many_to_disbelieve_is_weirdly_useful_for_a_textbook_also.html#ID-31de0c66-0f7b-4219-ae01-1df8529e0609">UKLG on belief in fiction</a>.</li>
+</ul></li>
+</ul>
+
+<p>
+The picture that seems to emerge is: being able to care about fictional currencies is <i>a superpower</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-The gut health cargo cult" class="outline-2">
+<h2 id="ID-The gut health cargo cult">The gut health cargo cult</h2>
+<div class="outline-text-2" id="text-ID-The gut health cargo cult">
+<ul class="org-ul">
+<li>I spend the holidays with family. My borther, who has been navigating severe gut health problems since 2017, responds with equanimity and benevolence to my sheepish admission that the genetic gastroenteric bell has also tolled for me. For two weeks, I follow his diet and exercise instructions with ill grace. I experience higher energy, more emotional resilience, and overall good mood than I have in months. I am like unto John the Savage, worse off for knowing Utopia.</li>
+<li>I try to instantiate some of these simple recommendations for myself, with indifferent implementation quality. It's somehow more emotionally draining to resist the allure of a bag of chips when you're exquisitely aware of the suffering it's causing you in the midsection even as you're eating it. There is no joyful abandon left.</li>
+<li>I attempt to veer in the opposite direction, the typical alternative defence against ruthless reality: let's try <i>everything</i>! Let's get lost in a scrupulosity spiral! Let's mire ourselves in a miserable illusion of control for a little while!</li>
+<li>Fortunately I am quite bad at torturing myself these days. It's too easy to notice that adherence these sorts of stories is wholly optional.</li>
+<li>And the literature <i>sure doesn't help</i>. There is no internet mystery cult more inclined to expensive rituals of augury than wellness, nor within that space is there so rarefied and scrupulous and simultaneuosly nonsensical than the adherents of the Gut. It's abundantly clear that
+<ul class="org-ul">
+<li>all the low hanging fruit are <i>targets</i> that you've already heard of.  Either you're already meeting them or it's hard for you in particular for reasons that are particular to you.</li>
+<li>Of <i>solution methods</i> there is a profusion. Essentially nothing works for everybody.
+<ul class="org-ul">
+<li>Lots of stuff works some of the time for some people under some conditions.</li>
+<li>what works when for whom is <i>extremely contextual</i>.</li>
+</ul></li>
+</ul></li>
+<li>Cargo cults are essentially inevitable in here and you can waste arbitrary amounts of time in them. You can got got. Nobody even necessarily has to profit from you getting got. Lots of folks create products and ventures just to pick up the free money that's lying around from where people have left it as offerings to the cargo gods, i.e. from people getting self-got.</li>
+<li>This is a <a href="https://www.henrikkarlsson.xyz/p/multi-armed-bandit">multi-armed bandit</a>.
+<ul class="org-ul">
+<li>i.e. this is a real-world Skinner box.</li>
+<li>i.e. this is a gacha game.</li>
+<li>i.e. this is a Finch.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Anyway so I decided to make myself a paper-based gacha game representing my own gut" class="outline-2">
+<h2 id="ID-Anyway so I decided to make myself a paper-based gacha game representing my own gut">Anyway so I decided to make myself a paper-based gacha game representing my own gut</h2>
+<div class="outline-text-2" id="text-ID-Anyway so I decided to make myself a paper-based gacha game representing my own gut">
+<p>
+<a href="20260208162340-gutcraft.html#ID-64e1d4d4-c2be-47f0-af50-a4f424037acf">Gutcraft</a> has two currencies:
+</p>
+<ul class="org-ul">
+<li>one for actions (pulls on the highest-value bandit arm, which is trying to hit my protein floor by consuming soy protein shakes. The unit is Shake.)</li>
+<li>one for outcomes (good gut days, the only thing this game is built to care about. The unit is Good Day, which for my own reasons I'm calling Strawberry.)</li>
+</ul>
+
+<p>
+Every other action is absorbed into the tech tree, because everything else worth doing is dependent on how resilient I am to challenge. Both my currencies express and quantify metrics that track that resilience: Strawberries express recent history of good gut health, and Shakes express both insult tolerance and whether I've been hittign my protein floor recently. Because I'm treating them as currencies, I'm prevented from over-updating on either form of evidence.
+</p>
+
+<p>
+I also have a set of rule constraints that serve as a cahce for non-stupid decision making. The most important set of these is "don't make a bad day worse." In the morning I assign a Stability score to the preceding 24 hours, and this puts me in one of four buckets. Protein floor doesn't matter on S1 days, and actively <i>shouldn't</i> be pursued on S0 days.
+</p>
+
+<p>
+I have one(1) experiment queue. I can't be trying out more than one intervention at once: it uses up too many of my resources to ensure seup and compliance for more than one thing at a time, and it confounds the data I get about each. How am I supposed to know how an extra day per week at the gym trades off against an <i>l. reuteri</i> supplement if I'm auditioning both at once? Gym time is <i>costly</i>. I care about these tradeoffs.
+</p>
+
+<p>
+There's a profound relief I'm feeling upon finding a correct systematization of my problem. It's quite upsetting to encoutner a haunted problem, but it's <i>invigorating</i> to notice that the problem is haunted and to be able to do something about it.
+</p>
+
+<p>
+This has been a prospective; updates to follow.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

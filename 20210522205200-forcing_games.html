@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>selection is an atom of design</title>
+<title>Forcing games</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -201,24 +201,71 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">selection is an atom of design</h1>
+<h1 class="title">Forcing games</h1>
 <p>
-I feel like explaining this any further will just result in shitty empty tautological sentences. The reason the note exists, though, is to track and maybe pump against the thing where we tend to anthropomorphize agentic processes. Where it seems like there's a "designer" at play, you can ask:
+Games that encode <a href="../bookmarks/20170123112900-forcing_mathematics_wikipedia.html#ID-38ab9ced-9766-4481-a780-dfefb6ee121d">forcing functions</a>. First encountered in &#x2013; see quote below.
+</p>
+<div id="outline-container-ID-09522da4-5c7d-4fe4-9908-fa72fed7de57" class="outline-2">
+<h2 id="ID-09522da4-5c7d-4fe4-9908-fa72fed7de57">Forcing - or, design by committee</h2>
+<div class="outline-text-2" id="text-ID-09522da4-5c7d-4fe4-9908-fa72fed7de57">
+<blockquote>
+<p>
+Forcing games are also known to descriptive set theorists as
+Banach-Mazur games; see the references by Kechris or Oxtoby
+below for more details of the mathematical background. Model theorists
+use them as a way of building infinite structures with controlled
+properties. To sketch the idea, imagine that a countably infinite team
+of builders are building a house A. Each builder has his or
+her own task to carry out: for example to install a bath or to
+wallpaper the entrance hall. Each builder has infinitely many chances
+to enter the site and add some finite amount of material to the house;
+these slots for the builders are interleaved so that the whole process
+takes place in a sequence of steps counted by the natural numbers. 
 </p>
 
-<p>
-What's doing the selecting?
-</p>
 
 <p>
-This is one tool for searching the causal vicinity without having to anthropomorphize. (I mean by all means anthropomorphize to the extent that it helps you cogitate. This is meant to be one alternate lens, prescriptions sold separately.)
+To show that the house can be built to order, we need to show that
+each builder separately can carry out his or her appointed task,
+regardless of what the other builders do. So we imagine each builder as
+player ∃ in a game where all the other players are lumped
+together as ∀, and we aim to prove that ∃ has a winning
+strategy for this game. When we have proved this for each builder
+separately, we can imagine them going to work, each with their own
+winning strategy. They all win their respective games and the result is
+one beautiful house.
 </p>
-<div id="outline-container-ID-Backlinks" class="outline-2">
-<h2 id="ID-Backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-ID-Backlinks">
+
+
+<p>
+More technically, the elements of the structure A are fixed
+in advance, say as a0, a1,
+a2 etc., but the properties of these elements have
+to be settled by the play. Each player moves by throwing in a set of
+atomic or negated atomic statements about the elements, subject only to
+the condition that the set consisting of all the statements thrown in
+so far must be consistent with a fixed set of axioms written down
+before the game. (So throwing in a negated atomic sentence ¬φ
+has the effect of preventing any player from adding φ at a later
+stage.) At the end of the joint play, the set of atomic sentences
+thrown in has a canonical model, and this is the structure A;
+there are ways of ensuring that it is a model of the fixed set of
+axioms. A possible property P of A is said to be
+enforceable if a builder who is given the task of making P
+true of A has a winning strategy. A central point (due
+essentially to Ehrenfeucht) is that the conjunction of a countably
+infinite set of enforceable properties is again enforceable.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
-<li><a href="20260119161103-purpose_built_ontologies.html#ID-82f386f0-a69a-4954-8d4d-b5a0c4c2333d">purpose-built ontologies</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="20260209174617-rootconf_talk.html#ID-3160b0bd-1fd8-47db-8773-df3794301c75">Rootconf talk</a></li>
 </ul>
 </div>
 </div>

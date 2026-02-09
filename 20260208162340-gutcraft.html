@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gutcraft</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Gutcraft</h1>
+<p>
+<b>version: v0</b>
+</p>
+
+<p>
+A paper-based resource management game for strategic gut health in hard mode.
+</p>
+
+
+<p>
+What you will find below is my first attempt to encode the risk economy of dealing with my precarious gut health in a format that lets me track what I'm doing about it and how well it's working. The principles, and perhaps even the structure, may also be adaptable to your own hyperspecific high-dimensional observer-effect-laden confound-riddled, high-stakes real-world problem space. <i>Caveat ludens.</i>
+</p>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+Gutcraft is a control system for the strategic management of gut-related health.
+</p>
+
+<p>
+Advancement in the game is achieved by seeking stability, consistency, and tolerance.
+</p>
+
+<p>
+Everything here is designed so you:
+</p>
+<ul class="org-ul">
+<li>organize several different kinds of health improvement effort in synergy with each other:
+<ul class="org-ul">
+<li>slow cumulative habits.</li>
+<li>accumulated history of nonevents.</li>
+<li>step-function interventions.</li>
+</ul></li>
+<li>are cued to slow down and ease up on bad days.</li>
+<li>track progress <i>with</i>, rather than <i>against</i>, the wibbly wobbly biological noise.</li>
+<li>gather data in a way that aligns with and helps build intuition.
+<ul class="org-ul">
+<li>what is even the point of it all if not to cultivate your gut feelings?</li>
+</ul></li>
+</ul>
+
+<p>
+You will be asked to write large parts of this system yourself, so that it's tuned to you. There are papercraft suggestions for you to create the tracking tools yourself, to build hand-love if that's your thing.
+</p>
+
+<p>
+This is written in large part <i>for me and my constraints</i>. If there are easy generalizations to make here please tell me about them! However, it's likely that your system of constraints will work <i>completely</i> differently than mine. Therefore consider yourself encouraged to riff on the general idea and make it your own.
+</p>
+<div id="outline-container-ID-Currencies" class="outline-2">
+<h2 id="ID-Currencies">Currencies</h2>
+<div class="outline-text-2" id="text-ID-Currencies">
+</div>
+<div id="outline-container-ID-🥤 Shakes" class="outline-3">
+<h3 id="ID-🥤 Shakes">🥤 Shakes</h3>
+<div class="outline-text-3" id="text-ID-🥤 Shakes">
+</div>
+<div id="outline-container-ID-What they represent" class="outline-4">
+<h4 id="ID-What they represent">What they represent</h4>
+<div class="outline-text-4" id="text-ID-What they represent">
+<ul class="org-ul">
+<li>protein intake</li>
+<li>routine adherence</li>
+<li>controlled risk</li>
+</ul>
+
+<p>
+Earning a shake represents both risk and reward.
+</p>
+<ul class="org-ul">
+<li>protein is a gut stressor, and getting enough of it means you incur a risk that your alimentary sanctuary will destabilise. A shake therefore represents our unit of risk incurred.</li>
+<li>hitting your protein floor means that you're improving your ability to heal from gut (and other) insults, and working to reduce your overall levels of inflammation. A shake therefore also represents a unit of health work performed.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-How you earn them" class="outline-4">
+<h4 id="ID-How you earn them">How you earn them</h4>
+<div class="outline-text-4" id="text-ID-How you earn them">
+<p>
+Each day, aim to earn `n` shakes, where `n = (PROTEIN/FLOOR - TYPICAL/MEAL/PROTEIN) / PROTEIN/PER/SHAKE`.
+You earn 1 shake by consuming either
+</p>
+<ul class="org-ul">
+<li>1 protein shake, OR</li>
+<li>1/n your daily protein requirement</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Notes on Shakes" class="outline-4">
+<h4 id="ID-Notes on Shakes">Notes on Shakes</h4>
+<div class="outline-text-4" id="text-ID-Notes on Shakes">
+<p>
+You don't need dice to tell you the outcome of earning a shake. You just need to wait a day and listen for the rumblings. (yes, "shake" is a pun.)
+</p>
+
+<p>
+You cannot progress without shakes, but they do not guarantee progress.
+</p>
+
+<p>
+Shakes are cheaper when consumed <i>as</i> shakes for two reasons:
+</p>
+<ul class="org-ul">
+<li>shakes represent a local minimum of risk per gram of protein.</li>
+<li>One meal's worth of food is already priced in.</li>
+</ul>
+
+<p>
+The main option is there to make it clear what you should expect to be doing most days, which is drink two shakes; the alternative option is there to encode the spirit of the thing, so that you don't have to rules-lawyer in the dark in the event of edge cases.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-🍓 Strawberries" class="outline-3">
+<h3 id="ID-🍓 Strawberries">🍓 Strawberries</h3>
+<div class="outline-text-3" id="text-ID-🍓 Strawberries">
+</div>
+<div id="outline-container-ID-What they represent" class="outline-4">
+<h4 id="ID-What they represent">What they represent</h4>
+<div class="outline-text-4" id="text-ID-What they represent">
+<ul class="org-ul">
+<li>Units of the desired outcome.</li>
+<li>Historical evidence of stability.</li>
+<li>Quantified license to fuck around.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-How you earn them" class="outline-4">
+<h4 id="ID-How you earn them">How you earn them</h4>
+<div class="outline-text-4" id="text-ID-How you earn them">
+<ul class="org-ul">
+<li>1 strawberry per good gut day (Stability levels 2, 3)</li>
+<li>2 strawberries on <i>great</i> gut days (Stability level 4)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Notes on Strawberries" class="outline-4">
+<h4 id="ID-Notes on Strawberries">Notes on Strawberries</h4>
+<div class="outline-text-4" id="text-ID-Notes on Strawberries">
+<p>
+Strawberrys are slow to accumulate, required for advancing in the tech tree, and outside your direct control. You create the conditions; your gut decides if it worked or not.
+The better your bets, the more reliable this income stream is. The game's win condition is \(\dv{🍓}{\mathrm{days}} \to 1\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Gauges" class="outline-2">
+<h2 id="ID-Gauges">Gauges</h2>
+<div class="outline-text-2" id="text-ID-Gauges">
+</div>
+<div id="outline-container-ID-The Stability Gauge" class="outline-3">
+<h3 id="ID-The Stability Gauge">The Stability Gauge</h3>
+<div class="outline-text-3" id="text-ID-The Stability Gauge">
+</div>
+<div id="outline-container-ID-What it represents" class="outline-4">
+<h4 id="ID-What it represents">What it represents</h4>
+<div class="outline-text-4" id="text-ID-What it represents">
+<ul class="org-ul">
+<li>higher resuloution on the day's strawberry (or lack thereof)</li>
+<li>how much slack you have for the day</li>
+<li>which policy is in effect, if you're playing smart</li>
+</ul>
+
+<p>
+Sanctuary State is a daily assessment. You observe it, and it gates what moves are available.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Assessment criteria" class="outline-4">
+<h4 id="ID-Assessment criteria">Assessment criteria</h4>
+<div class="outline-text-4" id="text-ID-Assessment criteria">
+<p>
+Answer based on <i>yesterday and this morning</i>, not hopes for today.
+</p>
+
+<p>
+Go down the list. Pick the <i>first matching level</i>:
+</p>
+
+<ol class="org-ol">
+<li>Reflux spike, GI pain, or crash symptoms? → S0 (if acute) or S1 (if lingering)</li>
+<li>Clearly low energy, poor sleep recovery, or "off"? → S1</li>
+<li>Digestion predictable, energy adequate, nothing notable? → S2</li>
+<li>Felt steady, resilient, could have handled more? → S3</li>
+<li>Felt robust and recovered well from recent load? → S4</li>
+</ol>
+
+<p>
+If you're unsure between two levels, <i>pick the lower one</i>. You can always revise upward tomorrow.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Stability Rules" class="outline-4">
+<h4 id="ID-Stability Rules">Stability Rules</h4>
+<div class="outline-text-4" id="text-ID-Stability Rules">
+</div>
+<ul class="org-ul">
+<li><a id="ID-S0 — EMERGENCY (shelter in place)"></a>S0 — EMERGENCY (shelter in place)<br />
+<div class="outline-text-5" id="text-ID-S0 — EMERGENCY (shelter in place)">
+<ul class="org-ul">
+<li>No new interventions</li>
+<li>No gym</li>
+<li>No pushing protein—floor is optional today</li>
+<li>No shakes earned (you're not taking risks today)</li>
+<li>No strawberrys earned (the sanctuary is too disrupted to assess)</li>
+<li><b>Goal: stabilize only.</b> Rest, hydrate, easy foods.</li>
+</ul>
+</div>
+</li>
+<li><a id="ID-S1 — UNSETTLED (maintenance mode)"></a>S1 — UNSETTLED (maintenance mode)<br />
+<div class="outline-text-5" id="text-ID-S1 — UNSETTLED (maintenance mode)">
+<ul class="org-ul">
+<li>Maintain protein floor if tolerable</li>
+<li>No unlocks</li>
+<li>No intervention progress</li>
+<li>shakes earned if floor is met</li>
+<li>No strawberrys (sanctuary state is not yet validated)</li>
+</ul>
+</div>
+</li>
+<li><a id="ID-S2 — STABLE (git r done)"></a>S2 — STABLE (git r done)<br />
+<div class="outline-text-5" id="text-ID-S2 — STABLE (git r done)">
+<ul class="org-ul">
+<li>Maintain current setup</li>
+<li>Earn shakes</li>
+<li>Earn strawberrys</li>
+<li><b>Do not start new interventions</b></li>
+<li>This is where most progress happens. Respect it.</li>
+</ul>
+</div>
+</li>
+<li><a id="ID-S3 — CALM (interventions available)"></a>S3 — CALM (interventions available)<br />
+<div class="outline-text-5" id="text-ID-S3 — CALM (interventions available)">
+<ul class="org-ul">
+<li>Start <b>one</b> new intervention (if unlocked and funded)</li>
+<li>Light gym if already unlocked</li>
+<li>Protein surplus tolerated</li>
+<li>Earn shakes and strawberrys normally</li>
+</ul>
+</div>
+</li>
+<li><a id="ID-S4 — THRIVING (nuts for the winter)"></a>S4 — THRIVING (nuts for the winter)<br />
+<div class="outline-text-5" id="text-ID-S4 — THRIVING (nuts for the winter)">
+<ul class="org-ul">
+<li>Progress gym intensity <b>or</b> transition interventions</li>
+<li>Earn bonus strawberry (+1 extra)</li>
+<li>Treat as opportunity, not expectation</li>
+<li>Do not restructure your life to chase S4</li>
+</ul>
+
+
+
+
+<p>
+A slider, clip, or movable arrow with 5 positions:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Level</th>
+<th scope="col" class="org-left">Name</th>
+<th scope="col" class="org-left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">S0</td>
+<td class="org-left">EMERGENCY</td>
+<td class="org-left">Ecosystem in revolt (possibly emetic). Shelter-in-place.</td>
+</tr>
+
+<tr>
+<td class="org-left">S1</td>
+<td class="org-left">UNSETTLED</td>
+<td class="org-left">Skittish. Maintenance only.</td>
+</tr>
+
+<tr>
+<td class="org-left">S2</td>
+<td class="org-left">STABLE</td>
+<td class="org-left">Baseline. The workhorse state.</td>
+</tr>
+
+<tr>
+<td class="org-left">S3</td>
+<td class="org-left">CALM</td>
+<td class="org-left">Settled. New interventions possible.</td>
+</tr>
+
+<tr>
+<td class="org-left">S4</td>
+<td class="org-left">THRIVING</td>
+<td class="org-left">Rare bonus. Found money.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-The Weather Gauge" class="outline-3">
+<h3 id="ID-The Weather Gauge">The Weather Gauge</h3>
+<div class="outline-text-3" id="text-ID-The Weather Gauge">
+</div>
+<div id="outline-container-ID-What it represents" class="outline-4">
+<h4 id="ID-What it represents">What it represents</h4>
+<div class="outline-text-4" id="text-ID-What it represents">
+<p>
+Weather is <i>not part of the control system</i>. It doesn't gate actions or earn resources. It's a present-tense read on your aggregate state—mood, anxiety, nervous system, and all the things that are hard to name.
+</p>
+
+<p>
+Weather is what's happening <i>everywhere</i>. It's on your dashboard as a source, not a sink, to the control system.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Assessment criteria" class="outline-4">
+<h4 id="ID-Assessment criteria">Assessment criteria</h4>
+<div class="outline-text-4" id="text-ID-Assessment criteria">
+<p>
+Assess alongside stability. Update it if something shifts. Look at both before making choices that affect the sanctuary &#x2013; saying yes to a night out, delaying a meal, making a stretch effort at work &#x2013; and use it to help you predict, and plan for, what kind of challenges will arise today. Example prompts: are cravings going to hit worse today? Will you feel faint at 2pm? Where will your pain threshold be?
+</p>
+
+<p>
+The scale runs from -3 to +3.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Score</th>
+<th scope="col" class="org-left">Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">+3</td>
+<td class="org-left">Clear skies. Resourced.</td>
+</tr>
+
+<tr>
+<td class="org-right">+2</td>
+<td class="org-left">Fair. Could handle a storm.</td>
+</tr>
+
+<tr>
+<td class="org-right">+1</td>
+<td class="org-left">Mild. Baseline.</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-left">Overcast. Flat. Neither here nor there.</td>
+</tr>
+
+<tr>
+<td class="org-right">-1</td>
+<td class="org-left">Unsettled. Something's brewing.</td>
+</tr>
+
+<tr>
+<td class="org-right">-2</td>
+<td class="org-left">Storm warning. Active coping needed. Cascade risk.</td>
+</tr>
+
+<tr>
+<td class="org-right">-3</td>
+<td class="org-left">Severe weather. Survival mode only.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-ID-Notes" class="outline-4">
+<h4 id="ID-Notes">Notes</h4>
+<div class="outline-text-4" id="text-ID-Notes">
+</div>
+<ul class="org-ul">
+<li><a id="ID-No rewards for weather"></a>No rewards for weather<br />
+<div class="outline-text-5" id="text-ID-No rewards for weather">
+<p>
+The sanctuary wants good weather but is better off building resilience to it than investing in terraforming systems.
+Place this gauge next to the Sanctuary gauge.
+</p>
+</div>
+</li>
+<li><a id="ID-Why track it?"></a>Why track it?<br />
+<div class="outline-text-5" id="text-ID-Why track it?">
+<p>
+We track it to keep an eye on the "rest of the system" and track how coupled our gut is to it both up- and downstream. Weather -2 → crushing desire to eat hot chip and lie → no strawberry tomorrow. The gauge lets you build an animal instinct for the trajectory. Sniff the air and batten down the hatches if a storm's on it's way.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Intervention Queue" class="outline-2">
+<h2 id="ID-Intervention Queue">Intervention Queue</h2>
+<div class="outline-text-2" id="text-ID-Intervention Queue">
+<p>
+An <i>intervention</i> is a change made to the system. This may be a one-off action, but will in the typical case be the establishment of a new habit. After establishing a habit, the intervention can be said to end while the habitual practice itself continues.
+</p>
+
+<p>
+You may, at any point in time, be actively conducting at most <i>n</i> interventions on your gut, where <i>n</i> in the number of intervention queues you have.
+</p>
+
+<ul class="org-ul">
+<li>Setup costs: We have limited fucks to give, and precommitted fucks eat slack and thus cost more.</li>
+<li>Clean data: more than one intervention at once (usually) confounds the data. Marginal value of parallel invterventions drops off sharply for this reason.</li>
+<li>Stress. in expectation, interventions impose a strawberry cost.</li>
+<li>Complexity: The lower bound of complexity scaling factor is O(n<sup>2</sup>).</li>
+</ul>
+
+<p>
+For these reasons, at the start of the game we have one (1) intervention queue.
+</p>
+
+<p>
+Interventions typically require any or all of the following:
+</p>
+<ul class="org-ul">
+<li>Fieldwork prerequisites.</li>
+<li>An expenditure of shakes &amp; strawberrys.</li>
+<li>Sanctuary ≥ S3 on start day.</li>
+<li>A precommitted minimum duration until the intervention can be said to be established.</li>
+<li>Preregistered predictions about its outcomes.</li>
+<li>Preregistered intentions round data collection &#x2013; method, type, and collection condition.</li>
+</ul>
+
+<p>
+Once started, an intervention runs until established or discontinued at your discretion. Dropping to S0/S1 doesn't cancel the intervention, but may be cause to consider cancellation.
+</p>
+</div>
+<div id="outline-container-ID-Notes on intervention design" class="outline-3">
+<h3 id="ID-Notes on intervention design">Notes on intervention design</h3>
+<div class="outline-text-3" id="text-ID-Notes on intervention design">
+<p>
+Each intervention results in a disruption to the current status, whatever that may be. Each intervention will affect the ecosystem along a number of axes, many of them mysterious and unknown. Therefore, when executing an intervention, you have two priorities:
+</p>
+<ul class="org-ul">
+<li>good preconditions for smooth change: adequate resources, a stable state, changes that don't represent sudden shocks to the system. This is important because you don't want to break the existing systems of the sanctuary; you want to make safe, reversible choices at every step.</li>
+<li>good data from the change (and this entails a lot: a well understood baseline, appropriate experiment design, good data collection). You will never be able to tell if something works or doesn't if you don't practice good science about it.</li>
+</ul>
+
+<p>
+Be a good environmentalist! Steward your ecosystem responsibly.
+</p>
+
+<p>
+Some prompts:
+</p>
+<ul class="org-ul">
+<li>What do you want to try?</li>
+<li>What do you think will work?</li>
+<li>What, if you finally tried it once and for all, will help you sleep better at night?</li>
+<li><p>
+What's your current biggest problem or complaint?
+</p>
+
+<p>
+Consider just adding things to an Intervention Inbox when you come across them. God knows that our media is frankly <i>polluted</i> with candidate interventions.
+</p></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Intervention Tech Tree" class="outline-3">
+<h3 id="ID-Intervention Tech Tree">Intervention Tech Tree</h3>
+<div class="outline-text-3" id="text-ID-Intervention Tech Tree">
+<ul class="org-ul">
+<li>Express your changes as ramps and trees.</li>
+<li>Break big changes down into staircases of smaller changes.</li>
+<li>If your system is unstable, any intervention will represent noise and risk making you feel too bad, or under-resourced, to continue with the intervention. Pricing an intervention is therefore a very important step in its design.</li>
+<li>shakes are resilience, strawberries are stability.</li>
+<li>2 weeks of fair weather ~= 10 strawberries.</li>
+<li>2 weeks of good preparation ~= 30 shakes.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Fieldwork (Preparations)" class="outline-2">
+<h2 id="ID-Fieldwork (Preparations)">Fieldwork (Preparations)</h2>
+<div class="outline-text-2" id="text-ID-Fieldwork (Preparations)">
+<p>
+These are infrastructure. They represent real-world actions that unlock future interventions.
+</p>
+
+<p>
+When completed, gain:
+</p>
+<ul class="org-ul">
+<li>+1 shakes</li>
+<li>+0.5 strawberry (1 for 2 tasks)</li>
+</ul>
+
+<p>
+Infrastructure work along the critical path is a high-value action, which is why it comes with currency rewards. Enjoy your just desserts for making the real world more tractable.
+</p>
+
+<p>
+Task breakdowns are fairly specific to the work you have, so it's on you to price your own fieldwork. 
+</p>
+
+<p>
+The pricing for intervention unlocks assumes around 6 shakes + 2 strawberries will come from fieldwork.
+</p>
+
+<p>
+In paper form, make this your favourite format of todo list.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Restarting after dropping" class="outline-2">
+<h2 id="ID-Restarting after dropping">Restarting after dropping</h2>
+<div class="outline-text-2" id="text-ID-Restarting after dropping">
+<p>
+Once you've already tried something you have a better understanding of what it will cost you. But restarting <i>also</i> represents a certain amount of systemic stress &#x2013; so it costs 1/3 of the original price in shakes and strawberries.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Closed season protocol" class="outline-2">
+<h2 id="ID-Closed season protocol">Closed season protocol</h2>
+<div class="outline-text-2" id="text-ID-Closed season protocol">
+<p>
+If you haven't earned a shake in 14 days, the sanctuary is <b>closed for the season, not abandoned</b>.
+</p>
+
+<p>
+<b>What to do:</b>
+</p>
+<ol class="org-ol">
+<li>Remove the tracker from the wall</li>
+<li>Put your resources in an envelope</li>
+<li>Put the envelope somewhere dignified—a drawer, a folder</li>
+<li>The sanctuary reopens when you're ready, with all progress intact</li>
+</ol>
+
+<p>
+The sanctuary can close. You don't disappear.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Playbooks" class="outline-2">
+<h2 id="ID-Playbooks">Playbooks</h2>
+<div class="outline-text-2" id="text-ID-Playbooks">
+</div>
+<div id="outline-container-ID-Read this when considering a shake" class="outline-3">
+<h3 id="ID-Read this when considering a shake">Read this when considering a shake</h3>
+<div class="outline-text-3" id="text-ID-Read this when considering a shake">
+<p>
+Your protein floor is <b>__<sub>g</sub>/day</b> (0.8g/kg).
+</p>
+
+<p>
+This is the minimum for tissue maintenance and recovery. Remember that protein (probabilistically) negatively impacts <i>tomorrow's</i> strawberry &#x2013; and if tomorrow's is already bad, the day after's &#x2013; but increases the <i>expected strawberries next week</i>. So max out what you can tolerate but not more.
+</p>
+
+<ul class="org-ul">
+<li>At S0: Floor is suspended. Eat what you can tolerate.</li>
+<li>At S1: Floor is the goal, not the minimum. Hit it if you can.</li>
+<li>At S2+: Hit the floor or leave game currency on the table.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Read this when tired" class="outline-3">
+<h3 id="ID-Read this when tired">Read this when tired</h3>
+<div class="outline-text-3" id="text-ID-Read this when tired">
+<ul class="org-ul">
+<li>You cannot rush interventions with effort alone</li>
+<li>Bad days do not erase progress</li>
+<li>Sanctuary state is not a goal—it's conditions</li>
+<li>Most progress happens at S2</li>
+<li>S3 and S4 are opportunities, not obligations</li>
+<li>interventions are experiments, not rewards</li>
+</ul>
+
+<p>
+<b>If confused, do less.</b>
+</p>
+
+<p>
+<b>If overwhelmed, drop to maintenance and wait for clarity.</b>
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Sanctuary closure" class="outline-3">
+<h3 id="ID-Sanctuary closure">Sanctuary closure</h3>
+<div class="outline-text-3" id="text-ID-Sanctuary closure">
+<p>
+If this system stops modeling your reality usefully, that's a flaw in the map, not in the territory. You tried something! That merits honour.
+</p>
+
+
+<p>
+If and when you want to, go find &#x2013; or build &#x2013; a different system.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Optional Papercraft" class="outline-3">
+<h3 id="ID-Optional Papercraft">Optional Papercraft</h3>
+<div class="outline-text-3" id="text-ID-Optional Papercraft">
+<ul class="org-ul">
+<li>Printed instructions: this guide, posted up for reference.</li>
+<li>Sanctuary gauge: Slider, clothespin, or movable arrow on a strip (5 positions: S0–S4)</li>
+<li>Weather gauge: Adjacent to Sanctuary, visually distinct—maybe a different color slider, or a simple number you write and erase. Runs -3 to +3.</li>
+<li>shake tally: Little shakes - or just triangles - drawn in rows.</li>
+<li>strawberry tally: Little strawberries - or just hearts - drawn in clusters of five.</li>
+<li>intervention tech tree: an index card per intervention, detailing the intervention, price in shakes + strawberries, stability preconditions, and the fieldwork checklist</li>
+<li>fieldwork tasks: a checklist on the index card</li>
+<li>intervention queue: A single enclosure, either empty or occupied by an index card</li>
+<li>Closed Season envelope: A real envelope, labeled, ready if needed</li>
+</ul>
+
+<p>
+Use red for the S0 rules. Make them impossible to miss.
+</p>
+
+<p>
+The two gauges should be visible together for quick reference.
+</p>
+
+<p>
+If it takes under 2 hours, it's worth doing by hand.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-A final note: the art of this game" class="outline-2">
+<h2 id="ID-A final note: the art of this game">A final note: the art of this game</h2>
+<div class="outline-text-2" id="text-ID-A final note: the art of this game">
+<p>
+This system is not your enemy. It's not even your supervisor. It's an economic model of your constraints, with all the important parts written by you.
+When the system says "no," it's reflecting back its best understanding of what you can afford. It tries its best to hold that knowledge so you don't have to.
+The whole system is the zeroth intervention.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="20260208163910-gutcraft_a_prospective.html#ID-0901186b-0496-4e7c-a507-223464e629fd">Gutcraft: a prospective</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>
