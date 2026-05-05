@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -218,12 +219,12 @@ This simple Makefile compiles a hello.cpp program. It also includes a clean targ
 
 
 <div class="org-src-container">
-<pre class="src src-Makefile">   hello: hello.cpp
+<pre class="src src-Makefile"><code>   hello: hello.cpp
         g++ -g -Wall hello.cpp -o hello
 
 clean:
         rm -f hello
-</pre>
+</code></pre>
 </div>
 
 
@@ -250,7 +251,7 @@ First, take a look at the imaginary file tree we’re basing this Makefile off o
 </p>
 </blockquote>
 
-<pre class="example" id="orgb12aa9e">
+<pre class="example" id="org6d33ed2">
 program/
   main.cpp
   file1.cpp
@@ -259,7 +260,7 @@ program/
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-nil">all: program
+<pre class="src src-nil"><code>all: program
 
 program: main.cpp file1.o file2.o
         g++ -g -Wall main.cpp file1.o file2.o -o program
@@ -273,7 +274,7 @@ file2.o: file2.cpp
 clean:
         rm -f *.o program
 
-</pre>
+</code></pre>
 </div>
 
 
@@ -292,11 +293,11 @@ The target dependency format looks like this. Note the tab indent before the com
 </blockquote>
 
 <div class="org-src-container">
-<pre class="src src-Makefile">target1: dependency1 dependency2 ...
+<pre class="src src-Makefile"><code>target1: dependency1 dependency2 ...
         command1
         command2
         ...
-</pre>
+</code></pre>
 </div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
@@ -312,7 +313,7 @@ The target dependency format looks like this. Note the tab indent before the com
 <div class="outline-text-2" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
-</ul>
+nil</ul>
 </div>
 </div>
 <div id="postamble" class="status">

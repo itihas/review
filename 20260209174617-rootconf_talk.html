@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -213,44 +214,56 @@ So let's regear and start from scratch.<sup><a id="fnr.1" class="footref" href="
 <p>
 There are a few central insights I want to capture.
 </p>
-<div id="outline-container-ID-A coalition is like a truck route." class="outline-2">
-<h2 id="ID-A coalition is like a truck route.">A coalition is like a truck route.</h2>
-<div class="outline-text-2" id="text-ID-A coalition is like a truck route.">
+<div id="outline-container-ID-A coalition is like a vehicle route." class="outline-2">
+<h2 id="ID-A coalition is like a vehicle route.">A coalition is like a vehicle route.</h2>
+<div class="outline-text-2" id="text-ID-A coalition is like a vehicle route.">
 <p>
-This analogizes exactly to Shapley's carpool route.
+A coalition is the game-theory concept for a collection of agents for whom working together is better than working alone.
+</p>
+
+<p>
+Think of a coalition as a group of people, moving in the same direction, in a vehicle. this is the analogy I was taught coalitional theory with, and need to find the original source of this construction.
 </p>
 
 <ul class="org-ul">
-<li>The coalition as a whole is geared towards taking a specific path, perhaps to deliver cargo somewhere. People get on or off as it serves their purposes. While the truck route remains profitable (in utils, not necessarily money), the truck keeps running. Part of what makes this the case is that people want to be on the truck. The nature of the contract they agree to when getting on the truck is what differs from employee to volunteer.</li>
-<li>All agents care about where they get on the truck, and where it drops them off.</li>
-<li>Agents may be carrying <i>backpacks</i> - i.e. serving agendas of their own, which the truck subsidizes the furtherance of.</li>
-<li>A truck may function as a bus, i.e. have no cargo at all besides backpacks.</li>
+<li>The coalition as a whole selects its path on the basis of some <i>consensus</i> value &ndash; but the concensus only needs to hold <i>for current passengers, about the stops those passengers care about</i>. People get on or off at the stops they were trying to get to. While at least one person on the vehicle wants it to go somewhere enough to pay for gas, the vehicle keeps running.</li>
+<li>All passengers care about where they get on the vehicle (origin) and where it drops them off (destination).</li>
+<li>Passengers are usually pursuing incentives of their own, which the vehicle is instrumental to.</li>
+<li>the vehicle is costly to run, i.e. passengers have to agree on a payment model to keep it running. If it isn't profitable for them, as measured against their incentives, they won't get on.</li>
+</ul>
+
+<p>
+You can see that with this level of generality, there are lots of potential <i>kinds</i> of solution. Let's look at two.
+</p>
+
+<ul class="org-ul">
+<li>A vehicle might work like a bus, i.e. its passengers don't tend to share origins or destinations. Call this <i>common-means</i> coalitions.</li>
+<li>OTOH it might work like a carpool, i.e. passengers share a common origin or destination. Call these <i>common-origin</i> and <i>common-goals</i> coalitions.</li>
 </ul>
 </div>
-<div id="outline-container-ID-write out the formal construction of the truck route." class="outline-3">
-<h3 id="ID-write out the formal construction of the truck route."><span class="todo todo">todo</span> write out the formal construction of the truck route.</h3>
+<div id="outline-container-ID-write out the formal construction of the vehicle route." class="outline-3">
+<h3 id="ID-write out the formal construction of the vehicle route."><span class="todo todo">todo</span> write out the formal construction of the vehicle route.</h3>
 </div>
 </div>
 <div id="outline-container-ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]]." class="outline-2">
 <h2 id="ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]].">Orgs are <a href="20210522205200-forcing_games.html#ID-7053d213-abc8-4d4e-89ad-01ada4aebb6a">forcing functions</a>.</h2>
-<div class="outline-text-2" id="text-ID-Orgs are [[id:7053d213-abc8-4d4e-89ad-01ada4aebb6a][forcing functions]].">
 </div>
-<div id="outline-container-ID-Volunteer orgs are /more complex/ forcing functions." class="outline-3">
-<h3 id="ID-Volunteer orgs are /more complex/ forcing functions.">Volunteer orgs are <i>more complex</i> forcing functions.</h3>
-<div class="outline-text-3" id="text-ID-Volunteer orgs are /more complex/ forcing functions.">
+
+<div id="outline-container-ID-Volunteer orgs are common-goals coalitions computing a forcing function." class="outline-2">
+<h2 id="ID-Volunteer orgs are common-goals coalitions computing a forcing function.">Volunteer orgs are common-goals coalitions computing a forcing function.</h2>
+<div class="outline-text-2" id="text-ID-Volunteer orgs are common-goals coalitions computing a forcing function.">
 <p>
-This is because volunteers are <i>exclusively</i> compensated in truck path control.
+All coalitions can fail by <i>inadequate profit</i>, but common-goals coalitions will additionally fail by <i>goals divergence</i>. If a goal is only approximately understood, and over the course of computing it you find that your incentives don't select for it anymore, you might want to leave; but this may strand you somewhere you don't want to be, and you have a much higher chance of stopping the vehicle altogether.
 </p>
-</div>
 </div>
 </div>
 <div id="outline-container-ID-Volunteers are a /fundamentally/ different type of agent than employees are." class="outline-2">
 <h2 id="ID-Volunteers are a /fundamentally/ different type of agent than employees are.">Volunteers are a <i>fundamentally</i> different type of agent than employees are.</h2>
 <div class="outline-text-2" id="text-ID-Volunteers are a /fundamentally/ different type of agent than employees are.">
 <ul class="org-ul">
-<li>Employees are invested in the truck <i>paying them in utils</i>. The truck is a truck. It has cargo that has to get somewhere.</li>
-<li>Volunteers are invested in the <i>path of the truck</i>. They want the cargo to get somewhere.</li>
-<li>Compensation-seekers get on for-profit trucks. Outcome-seekers get on volunteer trucks.</li>
+<li>Employees are invested in the vehicle <i>paying them in utils</i>. The vehicle is a vehicle. It has cargo that has to get somewhere.</li>
+<li>Volunteers are invested in the <i>path of the vehicle</i>. They want the cargo to get somewhere.</li>
+<li>Compensation-seekers get on for-profit vehicles. Outcome-seekers get on volunteer vehicles.</li>
 <li>Compensate volunteers in cargo space. Compensate employees in utils.</li>
 </ul>
 </div>
@@ -276,7 +289,7 @@ This is because volunteers are <i>exclusively</i> compensated in truck path cont
 <div class="outline-text-2" id="text-ID-Path capture">
 <ul class="org-ul">
 <li>Almost certainly, per Arrow's impossibility theorem, a smaller agent-unit has control over the truck's path. Not all truck passengers can be drivers.</li>
-<li>All agents across all types of organization are potentially interested in <i>path capture</i> &#x2013; i.e. controlling what the truck carries and where it goes. The resources which they have for doing this, and the internal incentive structure of the truck-coalition that they are navigating to do this, differ fundamentally.</li>
+<li>All agents across all types of organization are potentially interested in <i>path capture</i> &ndash; i.e. controlling what the truck carries and where it goes. The resources which they have for doing this, and the internal incentive structure of the truck-coalition that they are navigating to do this, differ fundamentally.</li>
 <li>In practice, the agents most aligned with the "truck shape" are the most likely to be able to engage in path capture.</li>
 </ul>
 </div>
@@ -292,7 +305,7 @@ This is because volunteers are <i>exclusively</i> compensated in truck path cont
 </ul>
 </div>
 <div id="outline-container-ID-formally express this formal claim: The /coalitional/ unknowns -- the organization as the player in Wumpus World -- can be derived from the /participant/ unknowns -- and are strictly a subset of the logical conjunction of all player knowledge." class="outline-3">
-<h3 id="ID-formally express this formal claim: The /coalitional/ unknowns -- the organization as the player in Wumpus World -- can be derived from the /participant/ unknowns -- and are strictly a subset of the logical conjunction of all player knowledge."><span class="todo todo">todo</span> formally express this formal claim: The <i>coalitional</i> unknowns &#x2013; the organization as the player in Wumpus World &#x2013; can be derived from the <i>participant</i> unknowns &#x2013; and are strictly a subset of the logical conjunction of all player knowledge.</h3>
+<h3 id="ID-formally express this formal claim: The /coalitional/ unknowns -- the organization as the player in Wumpus World -- can be derived from the /participant/ unknowns -- and are strictly a subset of the logical conjunction of all player knowledge."><span class="todo todo">todo</span> formally express this formal claim: The <i>coalitional</i> unknowns &ndash; the organization as the player in Wumpus World &ndash; can be derived from the <i>participant</i> unknowns &ndash; and are strictly a subset of the logical conjunction of all player knowledge.</h3>
 </div>
 
 <div id="outline-container-ID-flesh out: Information asymmetries and knowledge boundaries will evolve differently in volunteer organizations." class="outline-3">
@@ -370,8 +383,7 @@ Therefore, trust in volunteer communities usually requires a fedaration idiom.
 <div class="outline-text-3" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
-<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
-</ul>
+nil</ul>
 </div>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>

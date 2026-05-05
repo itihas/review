@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -203,8 +204,16 @@
 <div id="content" class="content">
 <h1 class="title">Full-text search on a budget: Xapian | End Point Dev</h1>
 <p>
-Real-world Xapian user in the wild. See also <a href="../bookmarks/20201113154800-recoll_finds_your_documents.html#ID-6c2aa6a6-4717-4d85-816e-7e3c70845a8d">Recoll</a>
+Xapian is a library for doing fast infromation retrieval. The branch of IR paradigms that lost: Lucene, Solr, and other search systems work like services that answer to APIs, and scale without needing a master node. For smallish IR problems and settings where you don't want or need to make API calls Xapian remains superior. (I mean, "small" here means "I could probably run search for wikipedia on a 30GB instance.")
 </p>
+
+<p>
+Projects that use it
+</p>
+<ul class="org-ul">
+<li><a href="../bookmarks/20201113154800-recoll_finds_your_documents.html#ID-6c2aa6a6-4717-4d85-816e-7e3c70845a8d">Recoll</a></li>
+<li>notmuch</li>
+</ul>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
@@ -218,6 +227,8 @@ Real-world Xapian user in the wild. See also <a href="../bookmarks/2020111315480
 <div class="outline-text-2" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="20230821114510-searchable_local_copy_of_stackexchange.html#ID-8e431f57-bd32-4819-ad38-cb222b7e0672">searchable local copy of stackexchange</a></li>
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 <li><a href="../daily/2025-06-04.html#ID-3f7c6ea5-0b16-45cd-8c60-6a0c4b5fa498">2025-06-04</a></li>
 </ul>

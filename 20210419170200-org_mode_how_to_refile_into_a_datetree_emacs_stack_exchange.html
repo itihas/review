@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -203,7 +204,7 @@
 <div id="content" class="content">
 <h1 class="title">org mode - How to refile into a datetree - Emacs Stack Exchange</h1>
 <div class="org-src-container">
-<pre class="src src-elisp">(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-read-datetree-date</span> (d)
+<pre class="src src-elisp"><code>(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-read-datetree-date</span> (d)
 <span style="font-style: italic;">"Parse a time string D and return a date to pass to the datetree functions."</span>
 (<span style="font-weight: bold;">let</span> ((dtmp (nthcdr 3 (parse-time-string d))))
   (list (cadr dtmp) (car dtmp) (caddr dtmp))))
@@ -217,7 +218,7 @@
                               (<span style="font-weight: bold;">save-excursion</span>
                                 (org-datetree-find-date-create datetree-date)))))
   (<span style="font-weight: bold;">setq</span> this-command 'my/org-refile-to-journal))
-</pre>
+</code></pre>
 </div>
 <p>
 used the above to refile into the blotter before I decided that the blotter should just be appended to.

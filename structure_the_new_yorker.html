@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Structure - The New Yorker</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Structure - The New Yorker</h1>
+<div id="outline-container-ID-Excerpts" class="outline-2">
+<h2 id="ID-Excerpts">Excerpts</h2>
+<div class="outline-text-2" id="text-ID-Excerpts">
+<blockquote>
+<p>
+The white space that separated the Upset Rapid and the alpinist said things that I would much prefer to leave to the white space to say—violin phraseology about courage and lack of courage and how they can exist side by side in the human breast.
+</p>
+</blockquote>
+
+
+<blockquote>
+<p>
+In the juxtaposition of those two cards lay what made this phase of the writing process the most interesting to me, the most absorbing and exciting. Those two weeks on the picnic table notwithstanding, this phase has also always been the briefest. After putting the two cards together, and then constructing around them the rest of the book, all I had to do was write it, and that took more than a year. 
+</p>
+</blockquote>
+
+
+<blockquote>
+<p>
+He listened to the whole process from pocket notebooks to coded slices of paper, then mentioned a text editor called Kedit, citing its exceptional capabilities in sorting. Kedit (pronounced “kay-edit”), a product of the Mansfield Software Group, is the only text editor I have ever used. I have never used a word processor. Kedit did not paginate, italicize, approve of spelling, or screw around with headers, WYSIWYGs, thesauruses, dictionaries, footnotes, or Sanskrit fonts. Instead, Howard wrote programs to run with Kedit in imitation of the way I had gone about things for two and a half decades.
+</p>
+
+<p>
+He wrote Structur. He wrote Alpha. He wrote mini-macros galore. Structur lacked an “e” because, in those days, in the Kedit directory eight letters was the maximum he could use in naming a file. In one form or another, some of these things have come along since, but this was 1984 and the future stopped there. Howard, who died in 2005, was the polar opposite of Bill Gates—in outlook as well as income. Howard thought the computer should be adapted to the individual and not the other way around. One size fits one. The programs he wrote for me were molded like clay to my requirements—an appealing approach to anything called an editor.
+</p>
+</blockquote>
+
+<p>
+this last harmonizes well with <a href="write_tools_for_love.html#ID-3f759b7b-a190-4c11-b0f6-40f8f810c9db">write tools for love</a>.
+</p>
+
+
+<blockquote>
+<p>
+eveloping a structure is seldom that simple. Almost always there is considerable tension between chronology and theme, and chronology traditionally wins. The narrative wants to move from point to point through time, while topics that have arisen now and again across someone’s life cry out to be collected. They want to draw themselves together in a single body, in the way that salt does underground. But chronology usually dominates. As themes prove inconvenient, you find some way to tuck them in. Through flashbacks and flash-forwards, you can move around in time, of course, but such a structure remains under chronological control and can’t do much about items that are scattered thematically.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-ID-the actual process he follows" class="outline-2">
+<h2 id="ID-the actual process he follows">the actual process he follows</h2>
+<div class="outline-text-2" id="text-ID-the actual process he follows">
+<ol class="org-ol">
+<li>collect and transcribe all notes</li>
+<li>cut them up (Structur macro did this in Kedit)</li>
+<li>decide on a structure. this is an esoteric, alchemical, poetic process.</li>
+<li>sort and reorder</li>
+<li>slowly glue together pieces into paragraphs, sections, chapters (Alpha macro did this in Kedit)</li>
+<li>that's it you're done; rinse and repeat, interleaving with other editing forms, to taste.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-ID-Thoughts" class="outline-2">
+<h2 id="ID-Thoughts">Thoughts</h2>
+<div class="outline-text-2" id="text-ID-Thoughts">
+</div>
+<div id="outline-container-ID-Tools" class="outline-3">
+<h3 id="ID-Tools">Tools</h3>
+<div class="outline-text-3" id="text-ID-Tools">
+<p>
+Org-mode and org-roam <i>do not do transclusion nicely</i>. Headings can be reordered but seem like they're meant to <i>render</i> to headings. i.e. headings are overloaded.
+I need <i>editing</i> structure just as much as or more than I need <i>publishing</i> structure.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Poetics of structure" class="outline-3">
+<h3 id="ID-Poetics of structure">Poetics of structure</h3>
+<div class="outline-text-3" id="text-ID-Poetics of structure">
+<p>
+<a href="20220715011054-poetry_of_structuralism.html#ID-f9d0c6c6-b336-4d26-98f9-6b977091ec76">I mean. Well.</a>
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Process" class="outline-3">
+<h3 id="ID-Process">Process</h3>
+<div class="outline-text-3" id="text-ID-Process">
+<p>
+This relies on some laborious organization steps I feel a later millenial's learned-helplessness towards. In particular I feel hesitance and resentment around the casual way he refers to his standard-size plywood sheet on sawhorses, on which his project can stay spread for weeks at a time. The sheer luxury of space and quiet implied here &ndash; but you know, it's not that out of reach. And he himself likes it less well than the scale made possible by the computer.
+</p>
+
+<p>
+It reminds me a little bit of something my brother said about linear algebra, to the effect of: "once you're convinced in the symbols, and grasp how they move and what they do, you can leave the imagination of Euclidean space behind entirely. You stop having to translate 'linear space' to the imagination of a physical space to understand it &ndash; and it give you a lot more mental room to learn and imagine a universe of much weirder spacelike things."<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+
+<p>
+Well, I want more support in understanding structure right now than I think I'll need once I have the hang of it. I already think like this about poetry, and carrying ove the PCK from there I think it's a matter of finding and refining an ear for structure.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Long writing forms in the wild whose structures may be of interest to create worked examples of this process in" class="outline-3">
+<h3 id="ID-Long writing forms in the wild whose structures may be of interest to create worked examples of this process in">Long writing forms in the wild whose structures may be of interest to create worked examples of this process in</h3>
+<div class="outline-text-3" id="text-ID-Long writing forms in the wild whose structures may be of interest to create worked examples of this process in">
+<ul class="org-ul">
+<li>listicles</li>
+</ul>
+
+<p>
+&gt; greentext
+</p>
+
+<p>
+&gt;&gt; reblogs
+&gt; yk, in tumblr
+</p>
+
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-05-04 Mon 13:31]</span></span> tweet threads (1/?)
+</p>
+
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-05-04 Mon 13:31]</span></span>[itihas]
+chatlogs
+actually this one might be particularly interesting
+narratively self-structuring. you see
+closely married to stream-of-consciousness (but less affected)
+((because it's literally a transcription of an asynchronous conversational form))
+((you say things as they occur to you and make up whatever structuaral scaffolding you feel suits the moment))
+<span class="timestamp-wrapper"><span class="timestamp">[2026-05-04 Mon 13:34]</span></span>[itihas]
+when affecting the form "fictionally", you know what each of these structural elements signify, and can deploy them to great intuitive effect. you might intersperse a pause here or there
+You might create chats that are a wall of text
+and other that are
+short
+broken up
+<span class="timestamp-wrapper"><span class="timestamp">[2026-05-04 Mon 13:36]</span></span>
+add a timestamp to indicate the passage of time
+(where am I going with this?)
+((you see how natural the question becomes?? you see how the hegemony of chronicity actually <i>serves</i> to unfetter the conversational themese from the petty shackles of sequence?))
+((how the <i>rhyme</i> with a wholly structurally distant part of this document tree creates a tensile delight for the reader and writer both?))
+((you feels the erotic charge of the anaphora here?))
+((the <i>sotto voce</i> quality of the double parenthesis, the absurdist humour of the long-drawn-out bit flavouring the text with amplitude and temporality both?))
+((the pitch/beat of it all? the way the structure sticks you the reader back into time, who thought you were its master in the consumption of the feeble diachronic written word?))
+(((now imagine this landing in your notifications on a workday)))
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Refs" class="outline-3">
+<h3 id="ID-Refs">Refs</h3>
+<div class="outline-text-3" id="text-ID-Refs">
+</div>
+<ul class="org-ul">
+<li><a href="https://web.archive.org/web/20150205053143/https:/www.newyorker.com/magazine/2013/01/14/structure">https://web.archive.org/web/20150205053143/https:/www.newyorker.com/magazine/2013/01/14/structure</a></li>
+</ul>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+The process he describes feels linguistic, a la Barb Oakley, though it would to a wordcel, wouldn't it. 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -203,7 +204,7 @@
 <div id="content" class="content">
 <h1 class="title">Accurate word count changes in git, useful for tracking changes on a paper in overleaf · GitHub</h1>
 <div class="org-src-container">
-<pre class="src src-bash">  <span style="font-weight: bold; font-style: italic;">total</span>=0
+<pre class="src src-bash"><code>  <span style="font-weight: bold; font-style: italic;">total</span>=0
 <span style="font-weight: bold;">for</span> sha<span style="font-weight: bold;"> in</span> $(<span style="font-weight: bold;">git rev-list --since="6am" master | sed -e '$ d'</span>); <span style="font-weight: bold;">do</span>
     <span style="font-weight: bold; font-style: italic;">added</span>=$(<span style="font-weight: bold;">git diff --word-diff=porcelain $sha~1..$sha|grep -e"^+[^+]"|wc -w|xargs</span>)
     <span style="font-weight: bold; font-style: italic;">deleted</span>=$(<span style="font-weight: bold;">git diff --word-diff=porcelain $sha~1..$sha|grep -e"^-[^-]"|wc -w|xargs</span>)
@@ -224,7 +225,7 @@
     <span style="font-weight: bold;">fi</span>
 <span style="font-weight: bold;">done</span>
 <span style="font-weight: bold;">echo</span> <span style="font-style: italic;">"Total changed:"</span>, $<span style="font-weight: bold; font-style: italic;">total</span>
-</pre>
+</code></pre>
 </div>
 
 <p>

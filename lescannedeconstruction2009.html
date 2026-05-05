@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -237,7 +238,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orgcab198f"></a> | Right <a id="org0f54d82"></a>
+Strategy := Payoff | Left <a id="org4fce9d1"></a> | Right <a id="org4bb7a1c"></a>
 </p>
 
 
@@ -260,11 +261,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org56d9d5b"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org3af70e2"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgaf37ab5"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org68a6ef7"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -289,11 +290,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org0039b8f"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org12fcb7b"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgf03b8b4"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org4ea6af2"></a></td>
 </tr>
 </tbody>
 </table>
@@ -313,7 +314,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org6ce2930"></a> : lleaf <a id="org650482e"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgf191914"></a> : lleaf <a id="org47091d3"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>

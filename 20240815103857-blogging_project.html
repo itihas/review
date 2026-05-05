@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -249,7 +250,7 @@ It doesn't really unbake further than that. I want to do this. I don't know why.
 <h3 id="ID-Okay, so why does it matter that people see?">Okay, so why does it matter that people see?</h3>
 <div class="outline-text-3" id="text-ID-Okay, so why does it matter that people see?">
 <p>
-&#x2026;just in case.
+&hellip;just in case.
 </p>
 
 <p>
@@ -407,13 +408,13 @@ Archived headings don't get exported. Links to archived entries get redirected t
 workflow to get a minimal site up and running:
 </p>
 <div class="org-src-container">
-<pre class="src src-shell">nix-shell -p nodejs_latest
+<pre class="src src-shell"><code>nix-shell -p nodejs_latest
 npx create-next-app --example https://github.com/rasendubi/uniorg/tree/master/examples/org-braindump braindump
 <span style="font-weight: bold;">cd</span> braindump
 mv public public.default
 ln -s ~/org-notebook ./public
 npm run dev
-</pre>
+</code></pre>
 </div>
 <p>
 Optionally, copy the default's <code>index.org</code> to the notebook to make it so the landing page doesn't break.
@@ -460,8 +461,8 @@ all links must be citations.
 <li><a id="ID-script to convert all links to citations"></a><span class="todo todo">todo</span> script to convert all links to citations<br />
 <div class="outline-text-5" id="text-ID-script to convert all links to citations">
 <ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> handles links in headings (relic of old system)</li>
-<li class="off"><code>[&#xa0;]</code> finds all links in pages</li>
+<li class="off"><code>[&nbsp;]</code> handles links in headings (relic of old system)</li>
+<li class="off"><code>[&nbsp;]</code> finds all links in pages</li>
 </ul>
 </div>
 </li>

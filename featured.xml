@@ -14,9 +14,9 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 09 Feb 2026 16:50:30 +0000</pubDate>
-  <lastBuildDate>Mon, 09 Feb 2026 16:50:30 +0000</lastBuildDate>
-  <generator>Emacs 30.2 Org-mode 9.7.39</generator>
+  <pubDate>Tue, 05 May 2026 12:08:47 +0000</pubDate>
+  <lastBuildDate>Tue, 05 May 2026 12:08:47 +0000</lastBuildDate>
+  <generator>Emacs 30.2 Org-mode 9.8.4</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
     <url>https://itihas.review/images/home.jpg</url>
@@ -24,6 +24,24 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>2021</title>
+    <link>https://itihas.review/2021.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/2021.html</guid>
+    <pubDate>Mon, 04 May 2026 13:49:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>how does the notebook work?</title>
+    <link>https://itihas.review/20230816114251-how_does_the_notebook_work.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230816114251-how_does_the_notebook_work.html</guid>
+    <pubDate>Tue, 17 Feb 2026 13:39:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Gutcraft: a prospective</title>
     <link>https://itihas.review/20260208163910-gutcraft_a_prospective.html</link>
@@ -273,6 +291,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20230518184400-how_to_research_like_a_phd_student_nebula.html</guid>
     <pubDate>Thu, 18 May 2023 18:44:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>In my thirtieth year,</title>
+    <link>https://itihas.review/20230423104231-in-my-thirtieth-year.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230423104231-in-my-thirtieth-year.html</guid>
+    <pubDate>Sun, 23 Apr 2023 10:42:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -894,33 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222132300-gutenprint_wikipedia.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:23:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>escputil(1) - Linux man page</title>
-    <link>https://itihas.review/20220222132300-escputil_1_linux_man_page.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222132300-escputil_1_linux_man_page.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:23:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Slipping into psychosis: living in the prodrome (part 1, originally 5 January 2011) – Neuroanthropology</title>
-    <link>https://itihas.review/20220221180500-slipping_into_psychosis_living_in_the_prodrome_part_1_originally_5_january_2011_neuroanthropology.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220221180500-slipping_into_psychosis_living_in_the_prodrome_part_1_originally_5_january_2011_neuroanthropology.html</guid>
-    <pubDate>Mon, 21 Feb 2022 18:05:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Neuroanthropology – Understanding the encultured brain</title>
-    <link>https://itihas.review/20220221101500-neuroanthropology_understanding_the_encultured_brain.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220221101500-neuroanthropology_understanding_the_encultured_brain.html</guid>
-    <pubDate>Mon, 21 Feb 2022 10:15:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

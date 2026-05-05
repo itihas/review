@@ -55,6 +55,7 @@
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
   pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -69,7 +70,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -236,7 +237,7 @@ A better way to represent an edit widget's content is a time-varying value, call
 </blockquote>
 
 <div class="org-src-container">
-<pre class="src src-haskell">newtype Behavior a =
+<pre class="src src-haskell"><code>newtype Behavior a =
     Behavior {
       at :: Time -&gt; a
     }
@@ -244,7 +245,7 @@ A better way to represent an edit widget's content is a time-varying value, call
 myTodoList                :: Behavior Text
 yesterday                 :: Time
 myTodoList `at` yesterday :: Text
-</pre>
+</code></pre>
 </div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
