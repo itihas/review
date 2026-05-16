@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Project management: Lessons in software and tooling</title>
+<title>Project management (and project management software, and project management literature)</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -202,24 +202,95 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">Project management: Lessons in software and tooling</h1>
+<h1 class="title">Project management (and project management software, and project management literature)</h1>
 <p>
-Spent much of July 2025 deploying and testing
+I <i>want</i> to do big things. I at least want to be able to do things that take me longer than a week, or have multiple parts, or serve multiple purposes, or that people rely on. There's a necessary task involved in causing that sort of thing, variously termed "keeping track" or "managing" or "handling" or "executive function", and at the scales most people operate on the tool they use to perform that task just lives in their head, as far as I can tell. This works &hellip; dubiously &hellip; for me, because my copy of that tool is a nonstandard model.
 </p>
-<ul class="org-ul">
-<li>Leantime</li>
-<li>Focalboard</li>
-<li>Plane</li>
-<li>Briefly, google sheets</li>
-<li>Asana</li>
-</ul>
+<div id="outline-container-ID-Learn X in Y minutes: Asana" class="outline-2">
+<h2 id="ID-Learn X in Y minutes: Asana">Learn X in Y minutes: Asana</h2>
+<div class="outline-text-2" id="text-ID-Learn X in Y minutes: Asana">
+<p>
+I spent much of July 2025 deploying and testing project management solutions to try to learn the field, and it went &hellip; well, it's still going, on-again and off-again, and we're currently on-again; but it's not going so well.
+</p>
 
 <p>
-For keeping track of my tasks across the seven or eight different things I have been actively working on.
-Turns out
+I thought <a href="20251214234536-conway_s_law.html#ID-03b730a3-002d-457c-9ee0-e0f3f81cb47c">Conway's Law</a> would apply to project management if it applied anywhere, right? The data structure you're tracking a process state with matches the shape of the process, either by design or by drift. It was originally formulated about organizations. This is why I tried to use project management software before I tried to pick up a project management book.
+</p>
+
+<p>
+I figured, if I just entered all the metadata about all the tasks I was fielding across the seven or eight different things I'd been actively working on, and the 3-14 bigger-picture ends those projects were instrumental to, the tools would teach me how to use them, and hopefully how to do the task at all. <a href="../zettel/zettelkasten.html#ID-d4946ad7-f76b-49c4-aa55-8c38e262c7cb">Zettelkasten</a> work that way, after all. <a href="20240819164946-spaced_repetition.html#ID-4ed6481b-11a2-4149-b565-3f4e11e06623">Spaced repetition</a> doesn't, but has good tutorials and lots of crazed proponents telling you how to develop taste around it. Hell, <i>writing</i> works this way. That's the level of the stack we should be looking at when it comes to the field of "management", right? This is a basic, basic technology. This is at least as old as Ea-Nasir. This is, as far as we know, <i>what writing was invented for</i>. Surely.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Software I've tried so far" class="outline-2">
+<h2 id="ID-Software I've tried so far">Software I've tried so far</h2>
+<div class="outline-text-2" id="text-ID-Software I've tried so far">
+</div>
+<div id="outline-container-ID-Leantime" class="outline-3">
+<h3 id="ID-Leantime">Leantime</h3>
+<div class="outline-text-3" id="text-ID-Leantime">
+<p>
+Purports to be for neurodivergent people. Silently drops you into a "pro trial"; the ostensibly open-source offering is really open-core with a nerfed open core. Especially predatory, being aimed at non-technical people who <i>ipso facto</i> struggle to do things about things.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Focalboard" class="outline-3">
+<h3 id="ID-Focalboard">Focalboard</h3>
+<div class="outline-text-3" id="text-ID-Focalboard">
+<p>
+Unusably dependent on clicking. UX horrorshow.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Plane" class="outline-3">
+<h3 id="ID-Plane">Plane</h3>
+<div class="outline-text-3" id="text-ID-Plane">
+<p>
+"Open continuum". Nerfed open core, which I should have guessed for myself given the state of their build documentation. A special place in hell for IndiaFOSS sponsors who advocate for rights ratcheting.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Google Sheets" class="outline-3">
+<h3 id="ID-Google Sheets">Google Sheets</h3>
+<div class="outline-text-3" id="text-ID-Google Sheets">
+<p>
+Quite usable. If only it was more usable on mobile. The person who creates a mobile spreadsheet editing idiom that I am willing to use for text entry gets lifetime monthly cookies of their choice in their meatspace mailbox. In the end I suspect I will return to a spreadsheet with a form in front of it, or some homegrown version of the same thing with a SQLite and HTML.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Asana" class="outline-3">
+<h3 id="ID-Asana">Asana</h3>
+<div class="outline-text-3" id="text-ID-Asana">
+<p>
+The metadata is usable because it's so extensible, and because the library of templates is so rich. Unfortunately most of that just isn't available in the free tier (and if all I wanted was a todo list I would have used a todo list software or <span class="underline">notes app</span>). The terrible export and account closure story was what ha me running away from it as fast as I could, though. There is no way I'm ever trusting Asana with my data.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Vikunja" class="outline-3">
+<h3 id="ID-Vikunja">Vikunja</h3>
+<div class="outline-text-3" id="text-ID-Vikunja">
+<p>
+So far so good. Self-hostable, SQL backed, does not make me want to poke my eyes out morally or otherwise.
 </p>
 <ul class="org-ul">
-<li>Asana's the best so far</li>
+<li>Still more click-driven than I'd like but at least there's a command palette.</li>
+<li>It's available on Android and at least for now that's a limiting factor. Neither the phone ubiquity nor the phone dependency <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> can currently be gainsaid.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Conclusions from the experiment" class="outline-2">
+<h2 id="ID-Conclusions from the experiment">Conclusions from the experiment</h2>
+<div class="outline-text-2" id="text-ID-Conclusions from the experiment">
+<p>
+I've found them all (modulo Vikunja, which I've just started using) to be inadequate to my purposes in several surprising directions. If nothing else, it's been a not-this study in my own taste. Roundabout and frustrating way to develop an ear, and eventually I want to apprentice under someone who knows what they're doing well enough that I can wrestle my inadequate tooling into working for me the way I do with everything else in the year of our lord 2026.
+</p>
+</div>
+<div id="outline-container-ID-Lessons learned" class="outline-3">
+<h3 id="ID-Lessons learned">Lessons learned</h3>
+<div class="outline-text-3" id="text-ID-Lessons learned">
+<ul class="org-ul">
+<li>Arbitrary extensibility helps everything. Asana's library of strategy representations into which you can assemble project-sized concerns was extensive and educational. But! This layer is only available in the paid tier. My discovery of this was shortly thereafter followed by my discovery of its <i>utterly abysmal</i> export and account deletion stories.</li>
 <li>Keyboard shortcuts really, really matter. If I can't <i>write</i> into the thing it is useless to me.</li>
 <li>Having templates and structure in place to test out various workflows is really, really helpful &ndash; Leantime's "vision canvas" template was a game changer for me in terms of understanding <i>why</i> these things even existed outside of being highly structured task tracking &ndash; what all the metadata is even good for.
 <ul class="org-ul">
@@ -230,20 +301,251 @@ Turns out
 <li>Metadata is <i>organic</i>. Claude likes to annotate tasks with emoji, category-prefixes, and heavy descriptions; the lesson I take away from it is that sometimes the structure helps you think, and sometimes it gets in the way of thinking. Where there is friction it's better to do the locally sensible thing.</li>
 <li>It turns out that <i>local changes</i> is a really good principle in general. If you assume you know what needs to surface in advance of the surfacing, you trip yourself up. If you try to fit all your insights into the categories even when you experience the friction, you get in the way of your own thinking. If you try to <i>eliminate</i> all friction in advance, though, you get in the way of being able to think at all. This is because the <i>leading edge</i> of your work is where all the exceptions will of necessity happen (it's where you start learning your unknown unknowns.)</li>
 <li>Firms surface these exceptions to managers. The whole reason all the beautiful project management structures that exist prioritize the prominent display of whatever is going wrong is that that's where the hyperspecific novel work always is. The way a firm metabolizes uncertainty is via its network of cooperating agents; ideally, if the game theoretic architecture of the coalition of people is resilient to the challenge introduced by a problem, the uncertainty propagates through it, often via bookkeeping tools like these, to an agent who makes a decision that is then fractally semi-destructively implemented by the whole coordinating organism.</li>
-<li>Personally, you can surface these exceptions for yourself, but when I do it it <i>sucks</i> emotionally. [[<a href="https://www.lesswrong.com/posts/vzfz4AS6wbooaTeQk/staring-into-the-abyss-as-a-core-life-skill">https://www.lesswrong.com/posts/vzfz4AS6wbooaTeQk/staring-into-the-abyss-as-a-core-life-skill</a></li>
+<li>I want better metabolic processes at my level, and I want them to actually have representation in this system.</li>
+<li>I can surface these exceptions for myself, and over time it's started sucking less for me emotionally. [[<a href="https://www.lesswrong.com/posts/vzfz4AS6wbooaTeQk/staring-into-the-abyss-as-a-core-life-skill">https://www.lesswrong.com/posts/vzfz4AS6wbooaTeQk/staring-into-the-abyss-as-a-core-life-skill</a></li>
 </ul>
 <p>
-][Staring into the abyss as a core life skill]] has been very helpful for me in that regard.
+][Staring into the abyss as a core life skill]] has been very helpful for me in that regard. I get real-life vertigo from doing it, which was a fun bit of somatic consonance to discover on a third-floor balcony in Manali.
 </p>
-<div id="outline-container-ID-Backlinks" class="outline-2">
-<h2 id="ID-Backlinks">Backlinks</h2>
-<div class="outline-text-2" id="text-ID-Backlinks">
+<ul class="org-ul">
+<li>I don't know what it is about project management software that seems to make its project lifecycles as toxic as they seem to be from the outside. If feels like you just can't get the smell of enterprise off of them.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-RTFM(anual)" class="outline-2">
+<h2 id="ID-RTFM(anual)">RTFM(anual)</h2>
+<div class="outline-text-2" id="text-ID-RTFM(anual)">
+<p>
+I'm galled at the hubris of management literature and what it thinks it has the power to explain. Is this what physicists felt like, looking at biologists at the turn of the 20th century? "Do you know how little we know? What do you think you even mean, when you make claims as sweeping as you are making?" Perhaps many of them were well insulated from this crisis of confidence &ndash; or at least quarantined to prevent its transmission &ndash; by the modernity meme: faith in <i>science as a method</i>, by the <i>project</i> view of humanity. The long arc of history was supposed to sweep us upward; and at some point we were going to be done. Our only local goal was to <i>have</i> goals; to sacrifice for the good.
+</p>
+
+<p>
+I'm currently early in the process of hate reading , which I mostly hate because I can smell the Taylorism wafting off of it much more strongly than I ever suspected. I didn't think it was going to be a project management book that radicalized me, but perhaps I should have suspected; for all my pretensions to bureaucratic apologist, in practice and aesthetic I hate bureaucrats as crushingly as anybody ever has. I fear them, I loathe them, I am too scared to despise them. This hatred feels personal enough that I suspect it of being self-hate on occasion. I feel I have been done a moral injury by bureaucrats, made complicit in evils. I feel my hand has been moved against my will. I guess this is what happens when you <a href="https://www.lesswrong.com/posts/jinzzbPHshif8nmnw/do-not-conquer-what-you-cannot-defend">let a thing get too big</a>. The more a system touches, the more culpable it is. All of us weasels inside, we don't know how defensible our choices are, or whether it matters to our personal account that when we turn the gears of evil we're just doing our jobs.
+</p>
+
+<p>
+Okay we have gotten a little bit off track.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-RTFM(ysteries)" class="outline-2">
+<h2 id="ID-RTFM(ysteries)">RTFM(ysteries)</h2>
+<div class="outline-text-2" id="text-ID-RTFM(ysteries)">
+<p>
+<a href="https://open.substack.com/pub/chillphysicsenjoyer/p/do-not-plan">CasualPhysicsEnjoyer on planning (he says, don't)</a>:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li>being successful by any metric likely does not matter, so you may as well be having fun.
+<ul class="org-ul">
+<li>but if you did want to be crazy successful, you would have to be lucky
+<ul class="org-ul">
+<li>if you are not lucky, then you should at least be having fun</li>
+<li>if you somehow are lucky, you need to work hard
+<ul class="org-ul">
+<li>but to work hard at something, you need to enjoy it,
+<ul class="org-ul">
+<li>therefore, you need to quit if you’re not having fun.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+All the routes above involve not being bored. So quit if you are.
+</p>
+</blockquote>
+
+
+<p>
+And this:
+</p>
+<blockquote>
+<p>
+The next reason why goal seeking is bad is because it’s a waste of time due to world uncertainty and chaos. [&hellip;] Time is scarce so you take an L if you spend it planning. 
+</p>
+</blockquote>
+
+<p>
+And also this zinger:
+</p>
+<blockquote>
+<p>
+Long term goal seeking is also bad because it tricks you that you’re going to stick to something, which makes you more likely to defer it.
+</p>
+</blockquote>
+
+<p>
+Not that I've ever done that. Pay no attention to the thesis behind the curtain.
+</p>
+
+
+<p>
+My favorite therapist said "a plan is a guess", which implies that good plans ought to be built like betting. It implies that we make plans because if we get good at guessing then we can rely on the future being a certain way; and that makes our lives easier and puts goals within reach.
+</p>
+
+<p>
+He also said to <a href="processes_not_goals.html#ID-867c20ed-e8d0-4968-bd04-297f862e459d">build processes rather than selecting goals</a>. The point of this is to put your focus where it does the most good &ndash; towards building the one-time thing that pays repeated dividends, instead of towards achieving one desirable outcome once. In extremis, this approach yields several paths, which, come to think of it, are probably what the Ashtanga paths to yoga are (might be interesting to flesh out that meme later).
+</p>
+
+<p>
+The aesthetic of what CasualPhysicsEnjoyer is saying above appeals to me &ndash; in order to accomplish what you want, do what you want. Cultivate and pursue taste, and you'll be fulfilling your taste reliably.
+</p>
+
+<p>
+The aesthetic of the bet is also appealing, in a different way &ndash; more like <a href="repercussions_and_summer_thunder_and_unscrupulous_intentions.html#ID-c94edc70-7910-42ca-b70c-40dc71fd247d">repercussions and summer thunder and unscrupulous intentions</a>. You divine, and intuit, and foray; you seduce. And when all has happened you look back and ask, "what is it I have done?", and spend the rest of your life answering yourself.
+</p>
+
+<p>
+Consider also at <a href="structure_the_new_yorker.html#ID-6494d64f-9b17-4b11-9781-56bd4d6b7e3a">McPhee on structure</a>. He doesn't waste time telling you just-so stories of structural correctness, which anybody who's ever loved a blog or a webweave or <a href="https://www.sbnation.com/a/17776-football">17776</a> will instantly know to be not-even-wrong. He tells you, instead, that structure is where the poetry lives, and tries to teach you to listen for it.
+</p>
+
+<p>
+The software and tooling, like the book, has no way to represent these things, despite it being an ongoing operational reality for everything humans ever do with one another, and despite it being the way I see people work who are <i>good at this stuff</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Current suspicions and possibilities" class="outline-2">
+<h2 id="ID-Current suspicions and possibilities">Current suspicions and possibilities</h2>
+<div class="outline-text-2" id="text-ID-Current suspicions and possibilities">
+</div>
+<div id="outline-container-ID-I need an apprenticeship." class="outline-3">
+<h3 id="ID-I need an apprenticeship.">I need an apprenticeship.</h3>
+<div class="outline-text-3" id="text-ID-I need an apprenticeship.">
+<p>
+Perhaps I've got to shadow somebody who's <i>that good</i> at this. Somebody whose work and methods i can fall in love with.
+</p>
+
+
+
+<div id="org29b0300" class="figure">
+<p><img src="static/images/Current_suspicions_and_possibilities/2026-05-16_11-47-35_han-get-me-my-money.gif" alt="2026-05-16_11-47-35_han-get-me-my-money.gif" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-I need better literature." class="outline-3">
+<h3 id="ID-I need better literature.">I need better literature.</h3>
+<div class="outline-text-3" id="text-ID-I need better literature.">
+<p>
+Who writes to help you build an <i>ear</i> for this stuff? The way good books about writing do?
+</p>
+</div>
+</div>
+<div id="outline-container-ID-I need narrower literature." class="outline-3">
+<h3 id="ID-I need narrower literature.">I need narrower literature.</h3>
+<div class="outline-text-3" id="text-ID-I need narrower literature.">
+<p>
+Lit specific to consultants, or independent creatives, or software engineers, may be more helpful in a cookbook kind of way. Lit specific to <i>anything</i> might help me build a taste for cookbooks and how they relate to cooking.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-I need a work-study." class="outline-3">
+<h3 id="ID-I need a work-study.">I need a work-study.</h3>
+<div class="outline-text-3" id="text-ID-I need a work-study.">
+<p>
+I need to learn this in a shop that does it well &ndash; actually well &ndash; and pick it up as I go along.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-I need to take notes while reading /The Pragmatic Engineer/." class="outline-3">
+<h3 id="ID-I need to take notes while reading /The Pragmatic Engineer/.">I need to take notes while reading <i>The Pragmatic Engineer</i>.</h3>
+<div class="outline-text-3" id="text-ID-I need to take notes while reading /The Pragmatic Engineer/.">
+<p>
+Maybe we just have to pay close critical attention to the cream of the LinkedIn crop, and see what we find.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-I need to call my mom." class="outline-3">
+<h3 id="ID-I need to call my mom.">I need to call my mom.</h3>
+<div class="outline-text-3" id="text-ID-I need to call my mom.">
+<p>
+She's Actually Good at this. I'm allergic to a bunch of her advice, in that I instantly viscerally hate a lot of what she says to do, but it's also <i>good advice</i> a lot of the time, in that when I breathe my way through my reaction, and evaluate the advice for its logical consistency and applicability to the world, it all typechecks; and when I apply it, it often works well.
+(Am I already in an apprenticeship? Am I a shitty apprentice?)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-RTFM(om)" class="outline-2">
+<h2 id="ID-RTFM(om)">RTFM(om)</h2>
+<div class="outline-text-2" id="text-ID-RTFM(om)">
+<p>
+Okay, so. This all usually works, or at least it has for me.
+</p>
+</div>
+<div id="outline-container-ID-163 hours in a month, 140 for neurospicy people." class="outline-3">
+<h3 id="ID-163 hours in a month, 140 for neurospicy people.">163 hours in a month, 140 for neurospicy people.</h3>
+<div class="outline-text-3" id="text-ID-163 hours in a month, 140 for neurospicy people.">
+<p>
+Non-negotiable.
+Treat 4 hours as a half-day, and eyeball what a thing is going to take you. This is your progress bar. It will be more accurate than you want it to be.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Assemble a dependency tree of tasks. Linearize it." class="outline-3">
+<h3 id="ID-Assemble a dependency tree of tasks. Linearize it.">Assemble a dependency tree of tasks. Linearize it.</h3>
+<div class="outline-text-3" id="text-ID-Assemble a dependency tree of tasks. Linearize it.">
+<p>
+This is also what al the other literature says. This part, I think, is where a lot of "ear" comes in. Mum has ear. She always seems to ask the question that operationalizes a thing quickly. So maybe this is actually
+</p>
+</div>
+<div id="outline-container-ID-Try to find the question that operationalizes a thing quickly." class="outline-4">
+<h4 id="ID-Try to find the question that operationalizes a thing quickly.">Try to find the question that operationalizes a thing quickly.</h4>
+</div>
+
+<div id="outline-container-ID-Figure out what you don't know, and ask yourself how long it would take to find out. And then PRICE THAT IN." class="outline-4">
+<h4 id="ID-Figure out what you don't know, and ask yourself how long it would take to find out. And then PRICE THAT IN.">Figure out what you don't know, and ask yourself how long it would take to find out. And then PRICE THAT IN.</h4>
+</div>
+</div>
+<div id="outline-container-ID-add float, i.e. 1.2 * estimate = estimate." class="outline-3">
+<h3 id="ID-add float, i.e. 1.2 * estimate = estimate.">add float, i.e. 1.2 * estimate = estimate.</h3>
+<div class="outline-text-3" id="text-ID-add float, i.e. 1.2 * estimate = estimate.">
+<p>
+Things always take longer than you think they will. Price it in.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-PRICE EVERYTHING IN" class="outline-3">
+<h3 id="ID-PRICE EVERYTHING IN">PRICE EVERYTHING IN</h3>
+<div class="outline-text-3" id="text-ID-PRICE EVERYTHING IN">
+<p>
+Discovery? Price it in. Uncertainty? Price it in. Wait times? Price it in. Comms? SAY IT WITH ME
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-In conclusion" class="outline-2">
+<h2 id="ID-In conclusion">In conclusion</h2>
+<div class="outline-text-2" id="text-ID-In conclusion">
+<p>
+Stuff happens. Sometimes we make it happen. idk
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
 <li><a href="daily-tasks-ought-to-be-leaflike.html#ID-17d2b357-7d8e-41d0-849b-37bab2ade165">daily tasks ought to be leaflike</a></li>
 </ul>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+the phone conspiracy. the phone supremacy. the phone reliquary. the phone idolatry. all hail the phone. #myphone
+</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
