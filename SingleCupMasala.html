@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>GNU make</title>
+<title>, In A Single Cup Of Masala Chai, A Meeting Of Many Histories</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -202,110 +202,23 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">GNU make</h1>
+<h1 class="title">, In A Single Cup Of Masala Chai, A Meeting Of Many Histories</h1>
 <blockquote>
 <p>
-
+In 1929, the Great Depression occurred, which affected the economies of empires like Britain and the United States.  The year coincided with a large production of tea, as a result of which prices fell and surpluses loomed.  The British government and East India Company panicked, and decided that the best way to sell stocks would be to popularise the beverage in India itself. The year also saw the invention of the CTC or “Crash Tear Curl” machine, which perfected a technique to process the full bodied leaf into smaller, dust-like particles. This increased the quantities further, and also created what the British considered a lower quality of tea, but one able to make a denser, more robust brew. It was CTC tea that Indians took a liking to — the dark colour and the elevated, bitter kick that chai would soon come to be associated with, began with the machine.
 </p>
 
 <p>
-Simple Example
-</p>
-
-<p>
-This simple Makefile compiles a hello.cpp program. It also includes a clean target that removes our executable in case we want to clean up the directory.
+Meanwhile, a marketing campaign to sell tea to Indians began. A body known as the Tea Cess Committee or TCC was set up by British officers. Members of the TCC were dispatched to railway stations to set up tea stalls, and instruction manuals were made in different languages. In Mumbai, Calcutta and Delhi, campaigns were started to spread the habit of tea in several languages, with marketeers even setting up stalls in women-only spaces, and canvassing from door to door. “The conversion of the subcontinental population to tea-drinking was a result of what must have been the first major marketing campaign in the time of 20th century India,” historian Lizzie Collingham writes in her book Curry: A Tale of Cooks and Conquerors about the initiatives, which were also among the largest sale campaigns the subcontinent would ever witness. 
 </p>
 </blockquote>
-
-
-<div class="org-src-container">
-<pre class="src src-Makefile"><code>   hello: hello.cpp
-        g++ -g -Wall hello.cpp -o hello
-
-clean:
-        rm -f hello
-</code></pre>
-</div>
-
-
-<blockquote>
-<p>
-Multi-file Example
-</p>
-
-<p>
-It’s important to note a target can be named after after a file. This is most commonly used to:
-</p>
-
-<p>
-Indicate that our target requires a file that must be compiled by another target.
-Only run our target when that dependency has changed to avoid doing extra work.
-</p>
-
-<p>
-Most of your homeworks will require you to compile multiple files, then link them all at once. To do this, we’ll use the -c compiler flag, which compiles without linking. Note that all the files we compile with -c have target names that correspond to the object files we’re expecting out.
-</p>
-
-<p>
-First, take a look at the imaginary file tree we’re basing this Makefile off of:
-</p>
-</blockquote>
-
-<pre class="example" id="orgf18a86d">
-program/
-  main.cpp
-  file1.cpp
-  file1.h
-  file2.cpp
-</pre>
-
-<div class="org-src-container">
-<pre class="src src-nil"><code>all: program
-
-program: main.cpp file1.o file2.o
-        g++ -g -Wall main.cpp file1.o file2.o -o program
-
-file1.o: file1.cpp file1.h
-        g++ -g -Wall -c file1.cpp -o file1.o
-
-file2.o: file2.cpp
-        g++ -g -Wall -c file2.cpp -o file2.o
-
-clean:
-        rm -f *.o program
-
-</code></pre>
-</div>
-
-
-
-<blockquote>
-<p>
-When you type make or make [target], the Make will look through your current directory for a Makefile. This file must be called makefile or Makefile.
-Make will then look for the corresponding target in the makefile. If you don’t provide a target, Make will just run the first target it finds.
-If the target is found, the target’s dependencies will be run as needed, then the target commands will be run.
-Oftentimes these commands start with g++, but they can be anything! You can run any command this way.
-</p>
-
-<p>
-The target dependency format looks like this. Note the tab indent before the commands; these are required!
-</p>
-</blockquote>
-
-<div class="org-src-container">
-<pre class="src src-Makefile"><code>target1: dependency1 dependency2 ...
-        command1
-        command2
-        ...
-</code></pre>
-</div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
-<li><a href="https://bytes.usc.edu/cs104/wiki/makefile/">https://bytes.usc.edu/cs104/wiki/makefile/</a></li>
-<li><a href="https://www.gnu.org/software/make/manual/make.html">https://www.gnu.org/software/make/manual/make.html</a></li>
+<li>Deepak () In A Single Cup Of Masala Chai, A Meeting Of Many Histories, , <a href="https://www.diasporaco.com/blogs/journal/in-a-single-cup-of-masala-chai-a-meeting-of-many-histories">https://www.diasporaco.com/blogs/journal/in-a-single-cup-of-masala-chai-a-meeting-of-many-histories</a>.</li>
+<li>Deepak () In A Single Cup Of Masala Chai, A Meeting Of Many Histories, , <a href="https://www.diasporaco.com/blogs/journal/in-a-single-cup-of-masala-chai-a-meeting-of-many-histories">https://www.diasporaco.com/blogs/journal/in-a-single-cup-of-masala-chai-a-meeting-of-many-histories</a>.</li>
 </ul>
 </div>
 <div id="outline-container-ID-Backlinks" class="outline-2">

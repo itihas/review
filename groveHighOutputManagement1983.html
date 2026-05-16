@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>GNU make</title>
+<title>family=Grove, given=Andrew, prefix=s, useprefix=false, High Output Management</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -202,110 +202,51 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">GNU make</h1>
-<blockquote>
+<h1 class="title">family=Grove, given=Andrew, prefix=s, useprefix=false, High Output Management</h1>
 <p>
-
+I'm a chapter into <i>High Output Management</i>, by Andrew S. Grove &ndash; this is supposed to be the hook chapter &ndash; and I hate it. Let's have a goal, he says, to serve a breakfast. The stylized breakfast consists of a piece of toast, a coffee, and a three-minute egg. According to him, you time the preparation and assembly of each thing by working backwards from the <i>limiting step</i>, i.e. the thing that is going to take the longest. Naively, this may be the 3-minute egg, but if, say, the toaster has a queue in front of it, it becomes the toast.
 </p>
 
 <p>
-Simple Example
+Why? The naive version of this makes sense &ndash; make the whole process take the time of the longest step, and do everything else concurrently to that. Why does the toaster queue make it the "longest step"? There's frame-of-reference shenanigans happening here &ndash; the algorithm from the perspective of the "make one breakfast" computer is not the same as the algorithm from the perspective of the whole kitchen. Why is there a toaster queue? Ah, but perhaps we don't need to care about the toaster queue at all. Perhaps it isn't our business. We just need to get our part of this done &ndash; one breakfast.
 </p>
 
 <p>
-This simple Makefile compiles a hello.cpp program. It also includes a clean target that removes our executable in case we want to clean up the directory.
+I hate the book because at the end of the chapter he says that the limiting factor of the US prison system should obviously be the conviction, not cell availability. Therefore we should construct more prison cells to avoid compromising the quality of the only point of the whole process. Sometimes, with strong opinions encoded into the text of this kind, I can be like, okay, this is dated, whatever, the material still adapts well. People are wrong. People disagree. I don't have to let this book be about this disagreement. But in this case, this example in this place illustrates a few things too neatly. So far, this just-so story has relied entirely on rhyme as reason, and it was working on me. I was bored, but nodding along. Sure,
 </p>
-</blockquote>
-
-
-<div class="org-src-container">
-<pre class="src src-Makefile"><code>   hello: hello.cpp
-        g++ -g -Wall hello.cpp -o hello
-
-clean:
-        rm -f hello
-</code></pre>
-</div>
-
-
-<blockquote>
+<ul class="org-ul">
+<li>we need to fix problems at the lowest-value stage possible.</li>
+<li>you want tests at intake steps to prevent late failures.</li>
+<li>you want not to compromise on the quality of your output, i.e. you need to pass the final test.</li>
+<li>you should consider maintaining an inventory of resources you need at each stage to prevent unavailability from cascading down the process you designed.</li>
+</ul>
 <p>
-Multi-file Example
+Wait what do you mean
 </p>
-
+<ul class="org-ul">
+<li>the quality of the justice system is determined by the courts</li>
+<li>convictions are the most expensive output, i.e. the limiting factor</li>
+<li>our current limiting factor is prison cells, which is compromising output quality</li>
+<li>build more cells because the relative cost is cheap</li>
+</ul>
 <p>
-It’s important to note a target can be named after after a file. This is most commonly used to:
+??? How did we get to the American prison-industrial complex from spherical McMuffins?
 </p>
 
 <p>
-Indicate that our target requires a file that must be compiled by another target.
-Only run our target when that dependency has changed to avoid doing extra work.
+But it makes sense, see, because this process is <i>goal-agnostic</i>. It actively factors out whether an output is or isn't an output you want. It says, you have an allocation of resources Y with which to solve for X, go on, write the equation. Clean.
 </p>
 
 <p>
-Most of your homeworks will require you to compile multiple files, then link them all at once. To do this, we’ll use the -c compiler flag, which compiles without linking. Note that all the files we compile with -c have target names that correspond to the object files we’re expecting out.
+How do you surface information in this system? You do it via tests. What if your tests don't capture something? I'd imagine, at this stage of reading, that he's about to bolt on an error handling mechanism. This is about the kind of management that assists in the upward flow of power; in centralization of knowledge and decisionmaking. It's a book about how to be a good sensorimotor ganglion. When a structure like this is built, <a href="https://www.lesswrong.com/posts/jinzzbPHshif8nmnw/do-not-conquer-what-you-cannot-defend">it's at risk of getting co-opted</a>.
 </p>
-
-<p>
-First, take a look at the imaginary file tree we’re basing this Makefile off of:
-</p>
-</blockquote>
-
-<pre class="example" id="orgf18a86d">
-program/
-  main.cpp
-  file1.cpp
-  file1.h
-  file2.cpp
-</pre>
-
-<div class="org-src-container">
-<pre class="src src-nil"><code>all: program
-
-program: main.cpp file1.o file2.o
-        g++ -g -Wall main.cpp file1.o file2.o -o program
-
-file1.o: file1.cpp file1.h
-        g++ -g -Wall -c file1.cpp -o file1.o
-
-file2.o: file2.cpp
-        g++ -g -Wall -c file2.cpp -o file2.o
-
-clean:
-        rm -f *.o program
-
-</code></pre>
-</div>
-
-
-
-<blockquote>
-<p>
-When you type make or make [target], the Make will look through your current directory for a Makefile. This file must be called makefile or Makefile.
-Make will then look for the corresponding target in the makefile. If you don’t provide a target, Make will just run the first target it finds.
-If the target is found, the target’s dependencies will be run as needed, then the target commands will be run.
-Oftentimes these commands start with g++, but they can be anything! You can run any command this way.
-</p>
-
-<p>
-The target dependency format looks like this. Note the tab indent before the commands; these are required!
-</p>
-</blockquote>
-
-<div class="org-src-container">
-<pre class="src src-Makefile"><code>target1: dependency1 dependency2 ...
-        command1
-        command2
-        ...
-</code></pre>
-</div>
 <div id="outline-container-ID-Refs" class="outline-2">
 <h2 id="ID-Refs">Refs</h2>
 <div class="outline-text-2" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
-<li><a href="https://bytes.usc.edu/cs104/wiki/makefile/">https://bytes.usc.edu/cs104/wiki/makefile/</a></li>
-<li><a href="https://www.gnu.org/software/make/manual/make.html">https://www.gnu.org/software/make/manual/make.html</a></li>
+<li>family=Grove (1983) High Output Management, Random House New York, <a href="http://archive.org/details/dli.ernet.213936">http://archive.org/details/dli.ernet.213936</a>.</li>
+<li>family=Grove (1983) High Output Management, Random House New York, <a href="http://archive.org/details/dli.ernet.213936">http://archive.org/details/dli.ernet.213936</a>.</li>
 </ul>
 </div>
 <div id="outline-container-ID-Backlinks" class="outline-2">
