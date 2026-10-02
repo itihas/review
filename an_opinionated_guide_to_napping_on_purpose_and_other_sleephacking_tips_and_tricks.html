@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>An opinionated guide to napping on purpose, and other sleephacking tips and tricks</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">An opinionated guide to napping on purpose, and other sleephacking tips and tricks</h1>
+<blockquote>
+<p>
+Tanvi: Man I want yalls superpower
+Tanvi: ie the ability to nap
+Me: HOLD MY COFFEE
+</p>
+</blockquote>
+
+<p>
+I did a lot of sleephacking in college, i.e. implemented various sleep protocols of dubious sourcing in an attempt to fix my persistent feeling of sleep deprivation. I am now garden variety bedtime procrastinator and sufficiently self employed to not have to care about when I sleep or wake up; therefore, I take very few naps, except for the post-alarm snoozing variety.
+</p>
+
+<p>
+But I can still nap on purpose, with a couple tries! And with a few days to weeks of practice, probably so can you.
+</p>
+<div id="outline-container-ID-Core insight" class="outline-2">
+<h2 id="ID-Core insight">Core insight</h2>
+<div class="outline-text-2" id="text-ID-Core insight">
+<p>
+The central insight of everything that follows is: you don't gotta force it. You gotta <i>let</i> it. Sleep is an affordance, i.e. something that works like a muscle does. It's a thing you can do on purpose, without having to think about it, the same way you pick up a cup; and you <i>already</i> use this affordance every time you sleep. The trick is to hook up the part of you that does things "on purpose" to the part that <i>does the thing</i> without the former getting in the latter's way.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Baseline: No wasted effort. Even 5 minutes closing your eyes and pretending to sleep counts, helps, and feels good." class="outline-2">
+<h2 id="ID-Baseline: No wasted effort. Even 5 minutes closing your eyes and pretending to sleep counts, helps, and feels good.">Baseline: No wasted effort. Even 5 minutes closing your eyes and pretending to sleep counts, helps, and feels good.</h2>
+<div class="outline-text-2" id="text-ID-Baseline: No wasted effort. Even 5 minutes closing your eyes and pretending to sleep counts, helps, and feels good.">
+<p>
+Zeroth step. What would it take for you to choose to lie down, close your eyes, and do nothing else for 5 minutes? Figure that out and do it. Chances are you'll rederive several of the following strategies.
+But also: baseline. Studies have shown that even lying down with your eyes closed, awake the whole time, confers some of the benefits of sleeping. You can't lose.
+If you're awake, you're at least relaxing on purpose. If you can't relax, at least you're <i>learning</i> to relax on purpose. If you think you'll never learn, well, your body is supported and getting a break for the time you're lying down.
+(If that's not what you need, well, go do something else! Maybe what you actually need right now is a walk, or a run, or a snack, or to talk to a friend, or to hug a friend, or to scream for a bit, or to journal. Or even to sit down for 15 minutes and solve your specific problem. I recommend youfeellikeshit.com as a checklist resource to figure out wtf is wrong and address it. It got me through some rough years.)
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Set context." class="outline-2">
+<h2 id="ID-Set context.">Set context.</h2>
+<div class="outline-text-2" id="text-ID-Set context.">
+<p>
+Block off the time and space; make it possible to pay attention. How does that work for you?
+</p>
+<ul class="org-ul">
+<li>Set a timer.</li>
+<li>Find a guided meditation you like. there are nap specific ones. or just play whale sounds! or something you like in the genre of "downregulating". or just white noise.</li>
+<li>Lots of specific context cues work for different people. The key is to find something <i>relaxing in the right spceific way</i>. Learn from the cats. find your sunbeam, or spot under the blanket, or chair cushion under the table, whatever it is.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Do the thing." class="outline-2">
+<h2 id="ID-Do the thing.">Do the thing.</h2>
+<div class="outline-text-2" id="text-ID-Do the thing.">
+<p>
+There are two ways you can go about this: let your mind learn how to sleep, or let your mind get out of the way.
+</p>
+<ul class="org-ul">
+<li>When you are very relaxed, try to to find the <i>sleep movement</i> in your brain. I mean the same kind of mental move as <i>try to flex you left pectoral muscle</i> or <i>try to twitch your little toe</i>. This is, I stress, a hardware hookup that already exists; you just don't have it indexed right now.
+<ul class="org-ul">
+<li>Deliberate sleep can honestly be a deeply powerful meditation practice, esp for the kind of refactoring / defragging dreams do.</li>
+<li>related: lucid dreaming.</li>
+</ul></li>
+<li>Play an easy mental game, that takes your attention but doesn't make you work hard otherwise. Example games below. The idea is to work your brain about as hard as easy walking works your body; it softens and regulates you, and gives your mind something to do.
+<ul class="org-ul">
+<li>Like category games? Pick a word, like BLANKET. Try to think of all the animals you can whose names start with the first letter, then the second letter, etc.</li>
+<li>Like free association? Pick a word, like BLANKET. Pick a word that BLANKET makes you think of. Pick a word that <i>that</i> word makes you think of. etc.</li>
+<li>Like mental arithmetic? List the Fibonacci numbers. Don't try to do it fast, don't work too hard. Just go easy, solve the additions one by one.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Manage the before and after." class="outline-2">
+<h2 id="ID-Manage the before and after.">Manage the before and after.</h2>
+<div class="outline-text-2" id="text-ID-Manage the before and after.">
+<ul class="org-ul">
+<li>If you feel groggy getting up, consider <b>caffeine naps</b>. drink a coffee, set a timer for 20 minutes. the caffeine wakes you up when it hits.</li>
+<li>Try to avoid naps arising solely from stress fatigue (the thing where you get sleepy because too anxious). If you don't currently have a good way to relax on purpose, though, this can be a good stopgap. I used it for years.</li>
+<li>Do take naps to mitigate sleep deprivation, even if it occurs alongside stress fatigue. This is the best reason to sleep, and will bring the stress down for real.</li>
+<li>Do take naps to have ideas, even if it occurs  alongside stress fatigue. "Let me take a quick nap to think about this" is a deeply underutilized move, and can be a sideways approach to addressing the source fo the stress.
+<ul class="org-ul">
+<li>The trick, here, is to figure out how to <i>sleep</i> about it instead of <i>think</i> about it. A good reference point for the target sensation is the feeling of being half asleep and drifting.</li>
+<li>This is both a good sideways approach to deliberate sleep, and a good distraction game to play while you're waiting to fall asleep.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Fix the stuff getting in the way." class="outline-2">
+<h2 id="ID-Fix the stuff getting in the way.">Fix the stuff getting in the way.</h2>
+<div class="outline-text-2" id="text-ID-Fix the stuff getting in the way.">
+<ul class="org-ul">
+<li>sleep mask can be helpful. (this also helps set context for me: it feels like a different thing than "lying down in the daytime", more intentional, good strong sensory cue. YMMV if you don't like blindfolds.)</li>
+<li>white noise can be helpful.</li>
+<li>phone on a surface out of your reach.</li>
+<li>shower, or wipe down with a moist towelette, if that's bothering you.</li>
+<li>spend 5 minutes getting your temperature desires dialed in. the right blanket, the right shirt or pants, socks or no socks, etc.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Nap habits" class="outline-2">
+<h2 id="ID-Nap habits">Nap habits</h2>
+<div class="outline-text-2" id="text-ID-Nap habits">
+<p>
+If you plan to make a habit of napping, pick a style and a ritual to go with it.
+</p>
+
+<ul class="org-ul">
+<li><b>catnaps</b> are quick, caffeine nap shaped, and build fluency with moving up and down regulation states. also really good for idea having.</li>
+<li>A <b>biphasic sleep schedule</b> i.e. <b>siestas</b> are a commitment to a routine that gets you both early bird and night owl life, at the expense of the afternoon. good for routine, a full extra 90 minute sleep cycle i.e. proper REM ie proper extra rest. Also the opportunity for dream work, if you're into that: lucid dreaming etc live here. expect a boost to your emotional stability; ime also a bit of an emotional "out of step" feeling with the people around you. circadian rhythms are the OG synced cycles.</li>
+</ul>
+
+<p>
+Why do you need the extra sleep? Is it a situational need or a routine need?
+</p>
+</div>
+<div id="outline-container-ID-Catnap strategies for situational needs" class="outline-3">
+<h3 id="ID-Catnap strategies for situational needs">Catnap strategies for situational needs</h3>
+<div class="outline-text-3" id="text-ID-Catnap strategies for situational needs">
+<p>
+If you want to take a nap because of a particular feeling / tiredness level / ad-hoc meeting-free window, you want catnaps; but keep an eye on exactly what response pattern you're training. The risk here is that if you pick a thing to <i>escape</i> by napping, naps become an avoidance strategy, ie. an addiction pattern. Diminishing marginal returns; eventually naps will leave you unsatisfied even as the desire to nap intensifies. The key to avoid this (like it always is) is to design your practice so that it addresses the most upstream need you can identify, as directly as you can identify it.
+</p>
+
+<p>
+That said, sleep is a versatile toolin your mindbody arsenal. You can do lots of thigns with it.
+</p>
+
+<ul class="org-ul">
+<li>hit a particular feeling of frustration and catch yourself thinking "I wish I had time to think about this"? Take that intention into your strategy for constructing the nap; spend the time thinking. But loosely; more like noting. Let yourself hold the felt sense of the problem lightly, and drift. Gendlin's focusing practice is a helpful note here.</li>
+<li>stuck in a way where you feel like having an idea? take notes from dali's chair thing with the key, and let yourself go more towards free association and dreaming. the multiplicity of maya is your friend.</li>
+<li>want a break and to come down from the focus? headspace's Switching Off guided visualisation has been a good friend to me for this. your whale sounds genre is also great. for me, timers are great, because I know there's an endpoint and I don't have to worry about it. progressive clenching and relaxation can also be good. bringing your breath low in the body is good. savasana is good. 10 minutes of yin yoga and <span class="underline">then</span> savasana is <span class="underline">great</span>. (is all of this too slow? consider taking a walk.)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Sleep cycle edits for routine needs" class="outline-3">
+<h3 id="ID-Sleep cycle edits for routine needs">Sleep cycle edits for routine needs</h3>
+<div class="outline-text-3" id="text-ID-Sleep cycle edits for routine needs">
+<p>
+If you want a boost to get through the day  and you're willing to bite the bullet to make it part of your routine, the usual notes about good routine design apply. How do you make thigns a part of your day? If you don't already have a working protocol for that, <i>Atomic Habits</i> by James Clear is a good and clear manual to build one.
+</p>
+
+<p>
+Set up cues for yourself to change into siesta mode; the feeling of fullness after lunch, a particular meeting lull that you leverage or design, a set of tasks you queue up to the agents before going down. have a power-down sequence and a wake-up sequence. expect it to feel weird and not quite right for a few tries; the space for the practice will be easier to set up than the practice itself.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-WARNING: DON'T DO POLYPHASIC SLEEP. Risk of psychosis. Anecdotal." class="outline-2">
+<h2 id="ID-WARNING: DON'T DO POLYPHASIC SLEEP. Risk of psychosis. Anecdotal.">WARNING: DON'T DO POLYPHASIC SLEEP. Risk of psychosis. Anecdotal.</h2>
+</div>
+
+<div id="outline-container-ID-Is it working?" class="outline-2">
+<h2 id="ID-Is it working?">Is it working?</h2>
+<div class="outline-text-2" id="text-ID-Is it working?">
+<p>
+You get feedback on 2-3 time horizons: immediately upon waking up, the next day, and a week out. different habits will have different response profiles. in advance of trying something, ask yourself what you expect (you'll have a reasonable intuitive answer) and then after that time has passed CHECK AGAINST YOUR PREDICTIONS.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Sources and resources" class="outline-2">
+<h2 id="ID-Sources and resources">Sources and resources</h2>
+<div class="outline-text-2" id="text-ID-Sources and resources">
+<ul class="org-ul">
+<li>the caffeine nap Idea I think I got from the.fabulous app, dan ariely's old thing. I wonder if caeffeine nap meditations exist in the wild; I'll look it up after this!</li>
+<li>headspace guided sleep meditations, esp the wind-down ones, are gold.</li>
+<li>wikipedia on biphasic sleep</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Happy sleephacking!" class="outline-2">
+<h2 id="ID-Happy sleephacking!">Happy sleephacking!</h2>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

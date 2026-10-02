@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 16 May 2026 07:52:33 +0000</pubDate>
-  <lastBuildDate>Sat, 16 May 2026 07:52:33 +0000</lastBuildDate>
+  <pubDate>Fri, 02 Oct 2026 14:30:01 +0000</pubDate>
+  <lastBuildDate>Fri, 02 Oct 2026 14:30:01 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.8.4</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,24 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>it's about the hunt for me,</title>
+    <link>https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</guid>
+    <pubDate>Tue, 07 Jul 2026 19:02:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Project management (and project management software, and project management literature)</title>
+    <link>https://itihas.review/20250717141006-project_management_lessons_in_software_and_tooling.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20250717141006-project_management_lessons_in_software_and_tooling.html</guid>
+    <pubDate>Sat, 16 May 2026 11:22:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>2021</title>
     <link>https://itihas.review/2021.html</link>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133100-jellyfin_remote_access_with_tailscale_ethan_madison_s_website.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>How do Mesh VPNs work? Writing my own VPN tool in Golang to find out | Sam Lewis</title>
-    <link>https://itihas.review/20220222133100-how_do_mesh_vpns_work_writing_my_own_vpn_tool_in_golang_to_find_out_sam_lewis.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133100-how_do_mesh_vpns_work_writing_my_own_vpn_tool_in_golang_to_find_out_sam_lewis.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Don't Kill Time - David Perell</title>
-    <link>https://itihas.review/20220222132900-don_t_kill_time_david_perell.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222132900-don_t_kill_time_david_perell.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:29:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

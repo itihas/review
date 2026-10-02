@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>normativity</title>
+<title>View update problem - Relational Model</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -202,72 +202,50 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">normativity</h1>
+<h1 class="title">View update problem - Relational Model</h1>
 <p>
-The concept space of norms and things to do with norms. "Normativity" can refer to
+In the words of the CEDANET notes:
 </p>
 
-<ol class="org-ol">
-<li>descriptions of norms that are active in your object of study</li>
-<li>normative claims you are making about your object of study</li>
-<li>what a norm even is</li>
-</ol>
-
+<blockquote>
 <p>
-In economics, normativity(2) is a mode of inquiry alongside descriptive and prescriptive modes. It's the class of questions of any of the following forms:
-</p>
-<ul class="org-ul">
-<li>"what <i>ought</i> to be?"</li>
-<li>"what events, were they to transpire, would universally be agreed to be somehow aberrant, and why? what ought to happen in those events?"</li>
-<li>"what rules or values benefit everybody to implement?"</li>
-<li>"what rules or values are enforced by everyone?"</li>
-<li>"what is held to be true by all players in this system, even though the world itself does not seem to offer evidence?"</li>
-</ul>
-
-<p>
-<b>Q:</b> You may notice that those are all very different types of question, that should return different types of answer. Why do they all fall get called "normative"? Why, actually, am I calling them all normativity(2)?
+The view update problem refers to the difficulty/impossibility of providing alternative updatable views on a database.
 </p>
 
 <p>
-<b>A:</b> Norms are <i>social truths</i>. Whether by enforcement, equilibrium, or common traits among actors in a system, some things that could in theory happen just <i>don't</i>.
+It's sometimes assumes views are associated with individual relvars.
 </p>
 
 <p>
-When asked, the answers any embedded explainer will reach for will insult, dismiss, or make an enemy of even a hypothetical violator of a norm.
+It's more useful (and more general) to define a view as meaning a derived dbvar. Therefore a view means a set of named relvars. (just like the set of base relvars which are defined in the database schema).
 </p>
 
 <p>
-Normativity is  an understudied concept relative to the use economists put it to. From my favorite perspective it's a broad class of examples of <a href="mutually_enforced_reality_pruning.html#ID-ef93f6a3-7198-48e7-b74d-131030ef6870">mutually enforced reality pruning</a>.
+It is assumed logical independence implies a view looks and behaves no differently than if the relvars in the view were declared as base relvars in a schema.
 </p>
-<div id="outline-container-ID-The normative bait-and-switch" class="outline-2">
-<h2 id="ID-The normative bait-and-switch">The normative bait-and-switch</h2>
-<div class="outline-text-2" id="text-ID-The normative bait-and-switch">
+
 <p>
-An operation I've sometimes seen performed in economics metatheory, where a descriptive hypothesis that gets disproven in an unsatisfying edge-case-y way, or isn't falsifiable in the first place, will sometimes be silently recast as a norm so that it can be kept in the model. Axioms of revealed preference were where I first saw this happen. Properties of the given setting's <i>homo rationalis</i> are also likely suspects.
+One of the purposes of normalisation is to avoid data redundancy and simpify updating the database. For that reason it is expected that an updatable view is normalised. 
 </p>
-</div>
-</div>
-<div id="outline-container-ID-Further reading" class="outline-2">
-<h2 id="ID-Further reading"><span class="todo todo">todo</span> Further reading</h2>
-<div class="outline-text-2" id="text-ID-Further reading">
-<ul class="org-ul">
-<li>(Gibbard, Allan 1990) &ndash; norm-expressivism, a normativity(3) claim: norms are what everybody feels they ought to be.</li>
-<li>&ndash; the above structure generalized; foundational work on how a "way everybody does a thing" theoretically and causally comes to be.</li>
-<li>(Bicchieri, Cristina 2005) &ndash; formalization of rules. Disagrees with Pettit about whether stag-hare and builder-assistant are the same.</li>
-<li>(Horty, John F. 2001) &ndash; norms as properties <i>p</i> of outcomes that you help enforce because helping to enforce <i>p</i> is a dominant strategy for you. Mutually enforced reality pruning from a deontic logic perspective.</li>
-<li>(Infante, Gerardo and Lecouteux, Guilhem and Sugden, Robert 2014) &ndash; "there's a secret rational agent inside you!" welfare economics edition</li>
-<li><a href="pettitThreeDogmasNormativity2023.html#ID-fc4bedeb-baca-4add-98d6-d9e47b337282">Pettit , On Three Dogmas of Normativity</a> &ndash; current work, discussing foibles of the norms project.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-ID-Backlinks" class="outline-3">
-<h3 id="ID-Backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-ID-Backlinks">
+</blockquote>
+
+<p>
+<i>Why</i> are views so difficult to make updatable? I don't yet have a good intuition for this.
+</p>
+<div id="outline-container-ID-Refs" class="outline-2">
+<h2 id="ID-Refs">Refs</h2>
+<div class="outline-text-2" id="text-ID-Refs">
 </div>
 <ul class="org-ul">
-<li><a href="pettitThreeDogmasNormativity2023.html#ID-fc4bedeb-baca-4add-98d6-d9e47b337282">Pettit , On Three Dogmas of Normativity</a></li>
-<li><a href="../the_dignity_of_recipes.html#ID-c6a38e9a-07d1-47ff-a09c-d12ec1881a9f">the dignity of recipes</a></li>
+<li><a href="https://cedanet.com.au/documents/relational-model/relational-model-html/view-update-problem.html">https://cedanet.com.au/documents/relational-model/relational-model-html/view-update-problem.html</a></li>
 </ul>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
 </div>
 </div>
 <div id="postamble" class="status">

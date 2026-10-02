@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>normativity</title>
+<title>Perturbation Theory</title>
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -194,6 +194,38 @@
 </style>
 <link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
 <link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -202,71 +234,52 @@
 </div>
 </div>
 <div id="content" class="content">
-<h1 class="title">normativity</h1>
+<h1 class="title">Perturbation Theory</h1>
 <p>
-The concept space of norms and things to do with norms. "Normativity" can refer to
+A calculus approach to approximate solutions to problems. Build a simpler model that approximates a complex model, and split the solution into "solvable" and "perturbative" parts. In regular perturbation theory, this is a split into terms in a power series: \(A \equiv A_0 + \varepsilon\A_1 + \varepsilon^{2}A_2 ...\)
 </p>
 
-<ol class="org-ol">
-<li>descriptions of norms that are active in your object of study</li>
-<li>normative claims you are making about your object of study</li>
-<li>what a norm even is</li>
-</ol>
+<p>
+Originally created to solve the three-body problem.
+</p>
 
 <p>
-In economics, normativity(2) is a mode of inquiry alongside descriptive and prescriptive modes. It's the class of questions of any of the following forms:
+Potential solution pathway for some of the <a href="../zettel/blood-flow-linear-programming-review.html#ID-86462f65-49bc-47be-b841-6552835950a2">blood flow: linear programming review</a> questions.
+</p>
+
+<p>
+Source:
 </p>
 <ul class="org-ul">
-<li>"what <i>ought</i> to be?"</li>
-<li>"what events, were they to transpire, would universally be agreed to be somehow aberrant, and why? what ought to happen in those events?"</li>
-<li>"what rules or values benefit everybody to implement?"</li>
-<li>"what rules or values are enforced by everyone?"</li>
-<li>"what is held to be true by all players in this system, even though the world itself does not seem to offer evidence?"</li>
+<li><a href="../20250705222130-structure_and_interpretation_of_classical_mechanics.html#ID-742a1774-4a37-4da3-9167-0f04e48dd952">Structure and Interpretation of Classical Mechanics</a></li>
 </ul>
 
 <p>
-<b>Q:</b> You may notice that those are all very different types of question, that should return different types of answer. Why do they all fall get called "normative"? Why, actually, am I calling them all normativity(2)?
+Related:
 </p>
-
-<p>
-<b>A:</b> Norms are <i>social truths</i>. Whether by enforcement, equilibrium, or common traits among actors in a system, some things that could in theory happen just <i>don't</i>.
-</p>
-
-<p>
-When asked, the answers any embedded explainer will reach for will insult, dismiss, or make an enemy of even a hypothetical violator of a norm.
-</p>
-
-<p>
-Normativity is  an understudied concept relative to the use economists put it to. From my favorite perspective it's a broad class of examples of <a href="mutually_enforced_reality_pruning.html#ID-ef93f6a3-7198-48e7-b74d-131030ef6870">mutually enforced reality pruning</a>.
-</p>
-<div id="outline-container-ID-The normative bait-and-switch" class="outline-2">
-<h2 id="ID-The normative bait-and-switch">The normative bait-and-switch</h2>
-<div class="outline-text-2" id="text-ID-The normative bait-and-switch">
-<p>
-An operation I've sometimes seen performed in economics metatheory, where a descriptive hypothesis that gets disproven in an unsatisfying edge-case-y way, or isn't falsifiable in the first place, will sometimes be silently recast as a norm so that it can be kept in the model. Axioms of revealed preference were where I first saw this happen. Properties of the given setting's <i>homo rationalis</i> are also likely suspects.
-</p>
-</div>
-</div>
-<div id="outline-container-ID-Further reading" class="outline-2">
-<h2 id="ID-Further reading"><span class="todo todo">todo</span> Further reading</h2>
-<div class="outline-text-2" id="text-ID-Further reading">
 <ul class="org-ul">
-<li>(Gibbard, Allan 1990) &ndash; norm-expressivism, a normativity(3) claim: norms are what everybody feels they ought to be.</li>
-<li>&ndash; the above structure generalized; foundational work on how a "way everybody does a thing" theoretically and causally comes to be.</li>
-<li>(Bicchieri, Cristina 2005) &ndash; formalization of rules. Disagrees with Pettit about whether stag-hare and builder-assistant are the same.</li>
-<li>(Horty, John F. 2001) &ndash; norms as properties <i>p</i> of outcomes that you help enforce because helping to enforce <i>p</i> is a dominant strategy for you. Mutually enforced reality pruning from a deontic logic perspective.</li>
-<li>(Infante, Gerardo and Lecouteux, Guilhem and Sugden, Robert 2014) &ndash; "there's a secret rational agent inside you!" welfare economics edition</li>
-<li><a href="pettitThreeDogmasNormativity2023.html#ID-fc4bedeb-baca-4add-98d6-d9e47b337282">Pettit , On Three Dogmas of Normativity</a> &ndash; current work, discussing foibles of the norms project.</li>
+<li><a href="hamiltonian.html#ID-9e825327-9162-4d1f-9eb3-e45b4796252d">Hamiltonian</a></li>
+</ul>
+<div id="outline-container-ID-Refs" class="outline-2">
+<h2 id="ID-Refs">Refs</h2>
+<div class="outline-text-2" id="text-ID-Refs">
+</div>
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Perturbation_theory">https://en.wikipedia.org/wiki/Perturbation_theory</a></li>
 </ul>
 </div>
-</div>
-<div id="outline-container-ID-Backlinks" class="outline-3">
-<h3 id="ID-Backlinks">Backlinks</h3>
-<div class="outline-text-3" id="text-ID-Backlinks">
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
 </div>
 <ul class="org-ul">
-<li><a href="pettitThreeDogmasNormativity2023.html#ID-fc4bedeb-baca-4add-98d6-d9e47b337282">Pettit , On Three Dogmas of Normativity</a></li>
-<li><a href="../the_dignity_of_recipes.html#ID-c6a38e9a-07d1-47ff-a09c-d12ec1881a9f">the dignity of recipes</a></li>
+<li><a href="20251104164944-adding_noise.html#ID-dc4edb1d-03ee-47c0-b62c-75be2badec91">adding noise</a></li>
+<li><a href="20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html#ID-3e984df9-83a5-44c9-a333-e360ef7b0164">beating, cascading, and other ways distributed systems respond to synchronicity (and lack thereof)</a></li>
+<li><a href="20210721200800-cfar_modules.html#ID-ab5d7714-5146-411d-a5c9-660b5a8f7d85">adjust your seat</a></li>
+<li><a href="makiModelsLocusTheir2011.html#ID-b03b6c93-c9fc-40d0-a8ad-c075e9ee6210">Mäki, Uskali, Models and the Locus of Their Truth</a></li>
+<li><a href="20250131144804-the_stability_of_lonely_vickrey_or_one_s_choice_of_neighbourhood.html#ID-403309e8-80b4-42d9-a480-45c46001f984">The stability of Lonely Vickrey, or One's Choice of Neighbourhood</a></li>
+<li><a href="../to-read.html#ID-3d25e1f6-26b1-43c5-a356-303cb6cc678a">Manifolds</a></li>
+<li><a href="../20250131144338-stability_theory.html#ID-f0b2e49d-984e-4480-8ecc-dec277c9ceb6">stability theory</a></li>
 </ul>
 </div>
 </div>

@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 16 May 2026 07:52:28 +0000</pubDate>
-  <lastBuildDate>Sat, 16 May 2026 07:52:28 +0000</lastBuildDate>
+  <pubDate>Fri, 02 Oct 2026 14:29:56 +0000</pubDate>
+  <lastBuildDate>Fri, 02 Oct 2026 14:29:56 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.8.4</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,42 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>normativity</title>
+    <link>https://itihas.review/20230826021259-normativity.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20230826021259-normativity.html</guid>
+    <pubDate>Fri, 18 Sep 2026 17:30:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>D. Rumelhart, D. Norman , Modes of Learning</title>
+    <link>https://itihas.review/november30thModesLearningRumelhart.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/november30thModesLearningRumelhart.html</guid>
+    <pubDate>Sat, 15 Aug 2026 14:06:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>it's about the hunt for me,</title>
+    <link>https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</guid>
+    <pubDate>Tue, 07 Jul 2026 19:02:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Grove, Andrew, High Output Management</title>
+    <link>https://itihas.review/groveHighOutputManagement1983.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/groveHighOutputManagement1983.html</guid>
+    <pubDate>Sat, 16 May 2026 13:15:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Project management (and project management software, and project management literature)</title>
     <link>https://itihas.review/20250717141006-project_management_lessons_in_software_and_tooling.html</link>
@@ -502,15 +538,6 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>it's about the hunt for me,</title>
-    <link>https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</guid>
-    <pubDate>Tue, 09 Dec 2025 14:02:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>Hamiltonian</title>
     <link>https://itihas.review/hamiltonian.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -894,33 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250421170621-get_emacs_to_use_a_nix_managed_project_s_development_environment.html</guid>
     <pubDate>Sun, 21 Sep 2025 17:53:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Prose Writing</title>
-    <link>https://itihas.review/20240822202157-my_non_poetry_writing.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20240822202157-my_non_poetry_writing.html</guid>
-    <pubDate>Sun, 21 Sep 2025 17:50:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Illocutionary speech acts</title>
-    <link>https://itihas.review/20160728135000-illocutionary_act_wikipedia_the_free_encyclopedia.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20160728135000-illocutionary_act_wikipedia_the_free_encyclopedia.html</guid>
-    <pubDate>Sun, 21 Sep 2025 17:05:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>There's something about the conversations we have in cafes</title>
-    <link>https://itihas.review/20230214125724-theres-something-about-the-conversations-we-have-in-cafes.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230214125724-theres-something-about-the-conversations-we-have-in-cafes.html</guid>
-    <pubDate>Sun, 21 Sep 2025 15:59:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
