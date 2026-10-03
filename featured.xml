@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 02 Oct 2026 15:15:17 +0000</pubDate>
-  <lastBuildDate>Fri, 02 Oct 2026 15:15:17 +0000</lastBuildDate>
+  <pubDate>Sat, 03 Oct 2026 11:35:39 +0000</pubDate>
+  <lastBuildDate>Sat, 03 Oct 2026 11:35:39 +0000</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.8.4</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>itihas/publish-review</title>
+    <link>https://itihas.review/itihas_publish_review.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/itihas_publish_review.html</guid>
+    <pubDate>Fri, 02 Oct 2026 20:40:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>it's about the hunt for me,</title>
     <link>https://itihas.review/20251209135203-it_s_about_the_hunt_for_me.html</link>
@@ -911,15 +920,6 @@
     <link>https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Jellyfin Remote Access with Tailscale | Ethan Madison's website</title>
-    <link>https://itihas.review/20220222133100-jellyfin_remote_access_with_tailscale_ethan_madison_s_website.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133100-jellyfin_remote_access_with_tailscale_ethan_madison_s_website.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
