@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exact Humanities Reading List</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Exact Humanities Reading List</h1>
+<p>
+An incomplete list of reading material and course syllabus material from the IIIT-Hyderabad's short-lived Exact Humanities  Dual Degree Master's program.
+</p>
+<div id="outline-container-ID-Notable holes" class="outline-2">
+<h2 id="ID-Notable holes">Notable holes</h2>
+<div class="outline-text-2" id="text-ID-Notable holes">
+<ul class="org-ul">
+<li>Most of the classical Sanskrit original sources, commentaries, and excerpts. The grainy PDFs have mostly not survived my various computer migrations.</li>
+<li>Course lists from the syllabus, and the mapping from reading to course.</li>
+<li>Notes on each reading, mine and the lecturer's both.</li>
+<li>Original context of presentation. Each course was very opinionated &ndash; several of our professors and most notably Prof. Navjyoti were using the classroom as a setting to further develop their own original thought &ndash; so secondary material misses out on a lot of what was going on.</li>
+<li>Who cared about what. Each lecturer had a notable focus, opinion, and supporting material. This mishmash is unrepresentative of the variety.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-newton-leibniz-clarke correspondence" class="outline-2">
+<h2 id="ID-newton-leibniz-clarke correspondence">newton-leibniz-clarke correspondence&nbsp;&nbsp;&nbsp<span class="tag"><span class="navjyoti">navjyoti</span>&nbsp;<span class="ontology">ontology</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="naturalphilosophy">naturalphilosophy</span></span></h2>
+</div>
+<div id="outline-container-ID-Leibniz" class="outline-2">
+<h2 id="ID-Leibniz">Leibniz&nbsp;&nbsp;&nbsp<span class="tag"><span class="ontology">ontology</span>&nbsp;<span class="aristotleriff">aristotleriff</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="mathphil">mathphil</span>&nbsp;<span class="naturalphilosophy">naturalphilosophy</span></span></h2>
+<div class="outline-text-2" id="text-ID-Leibniz">
+</div>
+<div id="outline-container-ID-Monadologie" class="outline-3">
+<h3 id="ID-Monadologie">Monadologie</h3>
+</div>
+<div id="outline-container-ID-Theodicy" class="outline-3">
+<h3 id="ID-Theodicy">Theodicy</h3>
+</div>
+<div id="outline-container-ID-The Labyrinth of the Continuum" class="outline-3">
+<h3 id="ID-The Labyrinth of the Continuum">The Labyrinth of the Continuum</h3>
+</div>
+</div>
+<div id="outline-container-ID-Descartes" class="outline-2">
+<h2 id="ID-Descartes">Descartes&nbsp;&nbsp;&nbsp<span class="tag"><span class="mindbody">mindbody</span>&nbsp;<span class="proofofgod">proofofgod</span>&nbsp;<span class="aristotleriff">aristotleriff</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="mathphil">mathphil</span></span></h2>
+<div class="outline-text-2" id="text-ID-Descartes">
+</div>
+<div id="outline-container-ID-Meditations on First Philosophy" class="outline-3">
+<h3 id="ID-Meditations on First Philosophy">Meditations on First Philosophy</h3>
+</div>
+</div>
+<div id="outline-container-ID-hilbert's millenium problems" class="outline-2">
+<h2 id="ID-hilbert's millenium problems">hilbert's millenium problems&nbsp;&nbsp;&nbsp<span class="tag"><span class="math">math</span>&nbsp;<span class="ontology">ontology</span></span></h2>
+</div>
+<div id="outline-container-ID-cantor on transfinites" class="outline-2">
+<h2 id="ID-cantor on transfinites">cantor on transfinites&nbsp;&nbsp;&nbsp<span class="tag"><span class="math">math</span>&nbsp;<span class="ontology">ontology</span></span></h2>
+</div>
+<div id="outline-container-ID-greek conception of irrationals" class="outline-2">
+<h2 id="ID-greek conception of irrationals">greek conception of irrationals&nbsp;&nbsp;&nbsp<span class="tag"><span class="math">math</span>&nbsp;<span class="mathhistory">mathhistory</span>&nbsp;<span class="ontology">ontology</span>&nbsp;<span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-ID-Indian Logic - Ancient, Mediaeval, and Modern - Satish CV" class="outline-2">
+<h2 id="ID-Indian Logic - Ancient, Mediaeval, and Modern - Satish CV">Indian Logic - Ancient, Mediaeval, and Modern - Satish CV&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophy">philosophy</span>&nbsp;<span class="indianphilosophy">indianphilosophy</span>&nbsp;<span class="logic">logic</span></span></h2>
+</div>
+<div id="outline-container-ID-The Poetics of Space - Gaston Bachelard" class="outline-2">
+<h2 id="ID-The Poetics of Space - Gaston Bachelard">The Poetics of Space - Gaston Bachelard&nbsp;&nbsp;&nbsp<span class="tag"><span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-ID-Aristotle" class="outline-2">
+<h2 id="ID-Aristotle">Aristotle</h2>
+<div class="outline-text-2" id="text-ID-Aristotle">
+</div>
+<div id="outline-container-ID-Poetics" class="outline-3">
+<h3 id="ID-Poetics">Poetics&nbsp;&nbsp;&nbsp<span class="tag"><span class="aesthetics">aesthetics</span></span></h3>
+</div>
+<div id="outline-container-ID-Categories" class="outline-3">
+<h3 id="ID-Categories">Categories&nbsp;&nbsp;&nbsp<span class="tag"><span class="ontology">ontology</span></span></h3>
+</div>
+</div>
+<div id="outline-container-ID-Phantoms in the Brain - VS Ramachandran" class="outline-2">
+<h2 id="ID-Phantoms in the Brain - VS Ramachandran">Phantoms in the Brain - VS Ramachandran&nbsp;&nbsp;&nbsp<span class="tag"><span class="cogsci">cogsci</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-ID-Brief History of India - Romila Thapar" class="outline-2">
+<h2 id="ID-Brief History of India - Romila Thapar">Brief History of India - Romila Thapar&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-ID-After Amnesia - GN Devy" class="outline-2">
+<h2 id="ID-After Amnesia - GN Devy">After Amnesia - GN Devy&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="indianphilosophy">indianphilosophy</span>&nbsp;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-ID-One Hundred Years of Solitude - GGM" class="outline-2">
+<h2 id="ID-One Hundred Years of Solitude - GGM">One Hundred Years of Solitude - GGM&nbsp;&nbsp;&nbsp<span class="tag"><span class="fiction">fiction</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-ID-Whose Justice? Which Rationailty? - Alasdair MacIntyre" class="outline-2">
+<h2 id="ID-Whose Justice? Which Rationailty? - Alasdair MacIntyre">Whose Justice? Which Rationailty? - Alasdair MacIntyre&nbsp;&nbsp;&nbsp<span class="tag"><span class="postmodernist">postmodernist</span>&nbsp;<span class="politics">politics</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Brain-wise - Studies in Neurophilosophy - Patricia Churchland" class="outline-2">
+<h2 id="ID-Brain-wise - Studies in Neurophilosophy - Patricia Churchland">Brain-wise - Studies in Neurophilosophy - Patricia Churchland&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophyofscience">philosophyofscience</span>&nbsp;<span class="cogsci">cogsci</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Two Concepts of Freedom - Isaiah Berlin" class="outline-2">
+<h2 id="ID-Two Concepts of Freedom - Isaiah Berlin">Two Concepts of Freedom - Isaiah Berlin&nbsp;&nbsp;&nbsp<span class="tag"><span class="politics">politics</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Within and Without - Herman Hesse" class="outline-2">
+<h2 id="ID-Within and Without - Herman Hesse">Within and Without - Herman Hesse&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophy">philosophy</span>&nbsp;<span class="fiction">fiction</span>&nbsp;<span class="ontology">ontology</span>&nbsp;<span class="postmodernist">postmodernist</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Murder in a Cathedral - TS Eliot" class="outline-2">
+<h2 id="ID-Murder in a Cathedral - TS Eliot">Murder in a Cathedral - TS Eliot&nbsp;&nbsp;&nbsp<span class="tag"><span class="prk">prk</span>&nbsp;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-ID-Introduction to Philosophy of History: An Essay on the Limits of Historical Objectivity - Raymond Aron" class="outline-2">
+<h2 id="ID-Introduction to Philosophy of History: An Essay on the Limits of Historical Objectivity - Raymond Aron">Introduction to Philosophy of History: An Essay on the Limits of Historical Objectivity - Raymond Aron&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="postmodernist">postmodernist</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-The Postmodern Condition - Jean-Francois Lyotard" class="outline-2">
+<h2 id="ID-The Postmodern Condition - Jean-Francois Lyotard">The Postmodern Condition - Jean-Francois Lyotard&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophy">philosophy</span>&nbsp;<span class="postmodernist">postmodernist</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-The Historian and His Facts - EH Carr" class="outline-2">
+<h2 id="ID-The Historian and His Facts - EH Carr">The Historian and His Facts - EH Carr&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Anthropology - Michael Herzfeld" class="outline-2">
+<h2 id="ID-Anthropology - Michael Herzfeld">Anthropology - Michael Herzfeld&nbsp;&nbsp;&nbsp<span class="tag"><span class="anthropology">anthropology</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-The Structure of Scientific Revolutions - Thomas Kuhn" class="outline-2">
+<h2 id="ID-The Structure of Scientific Revolutions - Thomas Kuhn">The Structure of Scientific Revolutions - Thomas Kuhn&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophy">philosophy</span>&nbsp;<span class="philosophyofscience">philosophyofscience</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-Modern Dogma and the Rhetoric of Assent - Wayne Booth" class="outline-2">
+<h2 id="ID-Modern Dogma and the Rhetoric of Assent - Wayne Booth">Modern Dogma and the Rhetoric of Assent - Wayne Booth&nbsp;&nbsp;&nbsp<span class="tag"><span class="anthropology">anthropology</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-The Passion of the Western Mind - Richard Tarnas" class="outline-2">
+<h2 id="ID-The Passion of the Western Mind - Richard Tarnas">The Passion of the Western Mind - Richard Tarnas&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="anthropology">anthropology</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="prk">prk</span></span></h2>
+</div>
+<div id="outline-container-ID-The Man without Qualities - Robert Musil" class="outline-2">
+<h2 id="ID-The Man without Qualities - Robert Musil">The Man without Qualities - Robert Musil&nbsp;&nbsp;&nbsp<span class="tag"><span class="prk">prk</span>&nbsp;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-ID-The Man in Black - Oliver Goldsmith" class="outline-2">
+<h2 id="ID-The Man in Black - Oliver Goldsmith">The Man in Black - Oliver Goldsmith&nbsp;&nbsp;&nbsp<span class="tag"><span class="prk">prk</span>&nbsp;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-ID-Doctor Zhivago - Boris Pasternak" class="outline-2">
+<h2 id="ID-Doctor Zhivago - Boris Pasternak">Doctor Zhivago - Boris Pasternak&nbsp;&nbsp;&nbsp<span class="tag"><span class="prk">prk</span>&nbsp;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-ID-Mind at the End of its Tether - HG Wells" class="outline-2">
+<h2 id="ID-Mind at the End of its Tether - HG Wells">Mind at the End of its Tether - HG Wells&nbsp;&nbsp;&nbsp<span class="tag"><span class="prk">prk</span>&nbsp;<span class="fiction">fiction</span></span></h2>
+</div>
+<div id="outline-container-ID-Labyrinths - Jorge Louis Borges" class="outline-2">
+<h2 id="ID-Labyrinths - Jorge Louis Borges">Labyrinths - Jorge Louis Borges&nbsp;&nbsp;&nbsp<span class="tag"><span class="fiction">fiction</span>&nbsp;<span class="navjyoti">navjyoti</span></span></h2>
+</div>
+<div id="outline-container-ID-Brentano" class="outline-2">
+<h2 id="ID-Brentano">Brentano&nbsp;&nbsp;&nbsp<span class="tag"><span class="ontology">ontology</span>&nbsp;<span class="epistemics">epistemics</span>&nbsp;<span class="cogsci">cogsci</span>&nbsp;<span class="aristotleriff">aristotleriff</span></span></h2>
+<div class="outline-text-2" id="text-ID-Brentano">
+</div>
+<div id="outline-container-ID-On the Several Senses of Being in Aristotle" class="outline-3">
+<h3 id="ID-On the Several Senses of Being in Aristotle">On the Several Senses of Being in Aristotle</h3>
+</div>
+<div id="outline-container-ID-Psychology from an Empirical Standpoint" class="outline-3">
+<h3 id="ID-Psychology from an Empirical Standpoint">Psychology from an Empirical Standpoint</h3>
+</div>
+<div id="outline-container-ID-Philosophical Investigations on Space, Time, and Continuum" class="outline-3">
+<h3 id="ID-Philosophical Investigations on Space, Time, and Continuum">Philosophical Investigations on Space, Time, and Continuum</h3>
+</div>
+</div>
+<div id="outline-container-ID-Husserl" class="outline-2">
+<h2 id="ID-Husserl">Husserl&nbsp;&nbsp;&nbsp<span class="tag"><span class="postmodernist">postmodernist</span>&nbsp;<span class="phenomenology">phenomenology</span>&nbsp;<span class="navjyoti">navjyoti</span></span></h2>
+</div>
+<div id="outline-container-ID-Heidegger" class="outline-2">
+<h2 id="ID-Heidegger">Heidegger&nbsp;&nbsp;&nbsp<span class="tag"><span class="postmodernist">postmodernist</span>&nbsp;<span class="phenomenology">phenomenology</span>&nbsp;<span class="aesthetics">aesthetics</span>&nbsp;<span class="navjyoti">navjyoti</span></span></h2>
+<div class="outline-text-2" id="text-ID-Heidegger">
+</div>
+<div id="outline-container-ID-Being and Time" class="outline-3">
+<h3 id="ID-Being and Time">Being and Time</h3>
+</div>
+<div id="outline-container-ID-Identity and Difference" class="outline-3">
+<h3 id="ID-Identity and Difference">Identity and Difference</h3>
+</div>
+</div>
+<div id="outline-container-ID-Infinity and the Mind - Alan Turing" class="outline-2">
+<h2 id="ID-Infinity and the Mind - Alan Turing">Infinity and the Mind - Alan Turing&nbsp;&nbsp;&nbsp<span class="tag"><span class="mathphil">mathphil</span>&nbsp;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-ID-Small is Beautiful - EF Schumacher" class="outline-2">
+<h2 id="ID-Small is Beautiful - EF Schumacher">Small is Beautiful - EF Schumacher&nbsp;&nbsp;&nbsp<span class="tag"><span class="harshsatya">harshsatya</span>&nbsp;<span class="politics">politics</span>&nbsp;<span class="socionity">socionity</span></span></h2>
+</div>
+<div id="outline-container-ID-The Beautiful tree - Sri Dharampal" class="outline-2">
+<h2 id="ID-The Beautiful tree - Sri Dharampal">The Beautiful tree - Sri Dharampal&nbsp;&nbsp;&nbsp<span class="tag"><span class="history">history</span>&nbsp;<span class="anthropology">anthropology</span>&nbsp;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-ID-Paradoxes A-Z" class="outline-2">
+<h2 id="ID-Paradoxes A-Z">Paradoxes A-Z&nbsp;&nbsp;&nbsp<span class="tag"><span class="philosophy">philosophy</span>&nbsp;<span class="foundations">foundations</span>&nbsp;<span class="confluence">confluence</span></span></h2>
+</div>
+<div id="outline-container-ID-Abhijnana sakuntalam - Kalidasa" class="outline-2">
+<h2 id="ID-Abhijnana sakuntalam - Kalidasa">Abhijnana sakuntalam - Kalidasa&nbsp;&nbsp;&nbsp<span class="tag"><span class="sanskrit">sanskrit</span>&nbsp;<span class="classicalsanskrit">classicalsanskrit</span>&nbsp;<span class="poetry">poetry</span>&nbsp;<span class="aesthetics">aesthetics</span></span></h2>
+</div>
+<div id="outline-container-ID-Agama-dambara - Bhatta jayanta" class="outline-2">
+<h2 id="ID-Agama-dambara - Bhatta jayanta">Agama-dambara - Bhatta jayanta&nbsp;&nbsp;&nbsp<span class="tag"><span class="play">play</span>&nbsp;<span class="sanskrit">sanskrit</span>&nbsp;<span class="mediaevalsanskrit">mediaevalsanskrit</span>&nbsp;<span class="ethics">ethics</span>&nbsp;<span class="politics">politics</span></span></h2>
+</div>
+<div id="outline-container-ID-Satakatraya / subhashita trisati - Bhartrihari" class="outline-2">
+<h2 id="ID-Satakatraya / subhashita trisati - Bhartrihari">Satakatraya / subhashita trisati - Bhartrihari&nbsp;&nbsp;&nbsp<span class="tag"><span class="ethics">ethics</span>&nbsp;<span class="philosophy">philosophy</span>&nbsp;<span class="classicalsanskrit">classicalsanskrit</span>&nbsp;<span class="pranavvasishta">pranavvasishta</span></span></h2>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>
