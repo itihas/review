@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>the dignity of recipes</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">the dignity of recipes</h1>
+<div class="page-meta">
+<span class="page-stage score-seedling" title="review score: 2" role="img" aria-label="seedling">🌱</span>
+<span class="page-tags">tags: <span class="tag"><span class="draft">draft</span></span></span>
+<span class="page-mtimes">updated: <time datetime="2026-11-04T12:42">2026-11-04 Wed 12:42</time>, <time datetime="2026-10-01T08:28">2026-10-01 Thu 08:28</time></span>
+</div>
+<p>
+(The indignity of having to follow a recipe)
+</p>
+
+<p>
+To whom is a recipe an instruction, and from whom?
+</p>
+
+<p>
+Let's attempt a hasty class analysis.
+</p>
+
+<p>
+A recipe is a unit of standardised instruction. As a society scales, it needs to write more of them; but they always flow along pre-created axes of power. Before it scales, we only have a few of these, but later we have more.
+</p>
+
+<p>
+The bourgeoisie owe their success to recipes, and have the most complicated relationship to them.
+The luxuries and comforts of the aristocracy depend on the correct execution of recipes.
+The working class are the primary and oldest audience of recipes.
+</p>
+
+<p>
+Filter this through a little postmodernism, extract the subjectivities and discard the leavings of reality and consequence&hellip;
+Recipes are a status thing.
+</p>
+
+<p>
+Like most status things, as a good little post-Western thinker, I may begin by thinking in a social frame, but I'll revert to frames of individual power and of first principle as soon as I can and see if I can work my way back.
+</p>
+
+<p>
+I imagine that there is a deeper natural governance over the corner of reality I am engaging with than can be mediated by a recipe-writing priest; perhaps that reaching for it will give me <i>true</i> freedom, my little furtherance of the Protestant-ish priesthood of all believers.  It appeals to my sense of intellectual status to dream of the True Truth, to posit a space of True Forms underneath the mundane space of This Vegetable, that I can manipulate directly.
+</p>
+
+<p>
+This is nonsense. Reality, especially corners of reality that humans tend to encode in recipe form, is too <a href="https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail">messy</a> for that shit. Knowing the Maillard reaction will not save you from learning every last one of its faces. Your perfectly browned asparagus needs to be green underneath the browning and <i>also</i> cooked all the way through, and someone has to be the first to figure out a way to make both of these things happen; for instance, blanching and then shocking in ice water; a trick that you will later find works for some, but not all, fibrous greens. Your instincts for caramelizing onions will kill you dead when you toughen your tofu a step too far. Your cast iron pan reacts chemically with your food. The starch on your rice is a feature for some rices in some dishes in some cuisines, and will mean you're ingesting heavy metals if you try it in some countries.
+</p>
+
+<p>
+You simply can't generalize from the categories you build in a descriptive frame: every chemical reaction, heat curve, mechanical process, occurs in too many settings, in cacophonous concert with too many confounds.
+</p>
+
+<p>
+One therefore must learn to cook in <i>procedural</i> units, not units of <i>principle</i>. Baker's percentages. Rests and rises and ferments. Chunks of method and the settings they apply in. Smell, touch, and taste cues. You learn a <i>control flow</i>, and the conditions are just contingent parts of it.
+</p>
+
+<p>
+Disconnecting any given procedure from its specific setting, or pulling free a chunk of it, usually doesn't turn it into a principle; by itself it's unlikely to lead to any valid or general <i>description</i> of reality. A series of steps remains a series of steps, even if you translate it into a statement like "if you do X, then Y, then Z, something happens&hellip;"
+You can reason, experiment, or vary your way into learning statements like this, but you can't get rid of that sequence of action conditionals. That's what the thing you're looking at <i>is</i> &ndash; a product of a seuqnece of actions. An approach. A frame. The procedural unit compresses into smaller information shapes, but those smaller shapes are <i><a href="20230826021259-normativity.html#ID-f634d24c-4ac2-49e3-ac2c-45eb22d8b7c5">normative</a></i>. It's a function, waiting for a scenario to be applied to.
+</p>
+
+<p>
+The cognitive skill I call <a href="20220830185321-manipulation.html#ID-fb9e0b46-f6d8-415b-a2f0-738c11ff5030">manipulation</a> is <i>about</i> domains that work like this. From the inside, instantiating complex procedures feels like fluency, like virtuosic performance. Generative, unrepeatable, always possessed of <i>quality</i>; converging upon a desirable outcome each time; not necessarily the same outcome, not the same way; but <i>in</i> the same ways. The manipulator strives to be resilient to variation in input, gleans feedback and generality from variance in output. They want to make everything under any conditions and they want it all to be good. The atoms of this class of skill are procedure. Their transmissible units are recipes &ndash; little generalized chunks of control flow.
+</p>
+
+<p>
+The thing is. When someone tells me what to do, they're <i>telling me what to do</i>.
+</p>
+
+<p>
+Alas for the social brain, the collective mind with which we must contend: when I am trying to learn a procedure, I am subordinating my actions to a perceived Other. There's a social transmission of information that gets conceptually entangled with the social move of <i>subordination</i>. It takes a bit of finagling to point to this distinction in words, because most of the words we use for one are puns for the other &ndash; I'm taking direction, I'm being instructed, I'm learning control.
+</p>
+
+<p>
+When Alice tells a recipe to Bob, it's because she's invested in Bob ensuring some outcome.
+</p>
+
+<p>
+Why?
+</p>
+
+<p>
+There: we've worked our way back up to the power dynamics.
+</p>
+
+<p>
+Software is a recipe. It tries to express some corner of reality that behaves like procedure, and ask a computer to do some of the work of the application.
+(See <a href="20250719122447-sre-is-like-stage-production.html#ID-eb41c287-fdf1-445a-8591-b96bf544df82">SRE is like stage production</a> for POV in this genre.)
+</p>
+
+<p>
+But let's skip ahead, import from a different library that seems to have the right shape to talk about the bit of it I really care about. I both love recipes and hate them. I love the piece of reality that does, somehow, get captured by a baker's percentage. I love how I was taught to cook, measuring powders on my fingers.
+</p>
+
+<p>
+Across the five Confucian relationships possible between people, only one suggests a flavour of such desire that flows between equals: friendship. If a friend were teaching me a recipe, I think I'd find it more more frightening, from the place my heart comes from for these types of things; and if I were to brave that fear, I suspect I'd find something beautiful. Something unsullied by the expectations of my place in society that the act of cooking has connoted throughout my upbringing.
+</p>
+
+<p>
+Or, to put it another way: there's a kind of love that suggests that I want Bob to make good spaghetti arrabbiata because I liked it and I want him to have it too.
+</p>
+
+<p>
+For such a violent, codependent, status-obsessed, short-lived species, we've accumulated quite a lot of love to go around. Recipes are everywhere for every conceivable recipe-shaped domain, and in the literary corpus they come to me without expectation. I may be slow in my heart to trust it, but it is trustworthy, in that shivery sort of way that happens when you let yourself touch Big Stuff.
+</p>
+
+<p>
+I guess I'm saying that the Best Recipes are <a href="write_tools_for_love.html#ID-3f759b7b-a190-4c11-b0f6-40f8f810c9db">tools</a>.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

@@ -203,6 +203,10 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Lescanne , Deconstruction of Infinite Extensive Games Using Coinduction</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-mtimes">updated: <time datetime="2024-12-25T15:54">2024-12-25 Wed 15:54</time></span>
+</div>
 <div id="outline-container-ID-tl;dr" class="outline-2">
 <h2 id="ID-tl;dr">tl;dr</h2>
 <div class="outline-text-2" id="text-ID-tl;dr">
@@ -238,7 +242,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org2e0808b"></a> | Right <a id="org12776e3"></a>
+Strategy := Payoff | Left <a id="org51b50b1"></a> | Right <a id="org822d193"></a>
 </p>
 
 
@@ -261,11 +265,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgbaba93a"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgb581c5d"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org3b5a357"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org78b746c"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -290,11 +294,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgee4d7c9"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org223a408"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org55b0bf2"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org3565630"></a></td>
 </tr>
 </tbody>
 </table>
@@ -314,7 +318,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org83e3c28"></a> : lleaf <a id="org12d4613"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="org4d1105e"></a> : lleaf <a id="orgc5bac5d"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
