@@ -207,7 +207,7 @@
 <span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
 <span class="page-mtimes">updated: <time datetime="2024-12-25T15:54">2024-12-25 Wed 15:54</time></span>
 </div>
-<div class="page-refs" id="orgbabb753">
+<div class="page-refs" id="org57a3129">
 <p>
 <span class="page-refs-label">refs:</span></p>
 <ul class="org-ul">
@@ -250,7 +250,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="orga2436a4"></a> | Right <a id="org19a6cf1"></a>
+Strategy := Payoff | Left <a id="orgf6fc196"></a> | Right <a id="org3fe0ed1"></a>
 </p>
 
 
@@ -273,11 +273,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org9be003b"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="org0a08fd9"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org05ab4e6"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orgf961df7"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -302,11 +302,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgb52709c"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org01d0aa6"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org34db704"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org144fdd0"></a></td>
 </tr>
 </tbody>
 </table>
@@ -326,7 +326,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="org5fa701b"></a> : lleaf <a id="orgeea6ead"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="org744fbaa"></a> : lleaf <a id="orgee2c227"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
