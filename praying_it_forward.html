@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>praying it forward</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">praying it forward</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="fiction">fiction</span></span></span>
+</div>
+<p>
+Abby knelt beside his bed for the fourth time that week. It was the most successful week so far for his prayers, in that he hadn't managed so far to make time for this more than thrice a week. His habit-tracker app had given him a little splashy interstitial screen for it yesterday &ndash; one more day to go for a new longest streak! He was looking forward to today's celebration screen once he got today's praying done.
+</p>
+
+<p>
+He went to kneel, check his phone; remembered that he'd wanted to put it somewhere far from him before he started, so he got up to put it on his dresser; went to the bathroom, while he was up anyway. When he came back in, his phone was ringing.
+</p>
+
+<p>
+It was his mother. "Haan, maa." "Abhirath? How are you, dear?" "Maa, I'm a little busy, can I call later?" "Arre, not that, just that your father's appointment isn't getting confirmed, this portal no, it's not accepting only." "Okay, shall I check and do it tomorrow?" "No, darling, you're busy, and we need the appointment confirmed now itself, can you just tell me how to do it? The date on the calendar is not getting clicked when I try, I don't know what's happening&hellip;"
+</p>
+
+<p>
+He eventually determined that the date his mother wanted for his father's document verification appointment was greyed out on the site &ndash; or meant to be greyed out, it was unclear how it was actually displaying to her &ndash; because no appointments were available on that day. This was deemed unacceptable; it was the only date that would work, which she made known at some length. He thought, <i>I wish she would just shut up</i>, and then, feeling he'd trangressed the bounds of the prayerful frame of mind he was supposed to be in, he thought <i>Let me not lose my temper</i>. He wondered if that counted towards his prayer goal for the day.
+</p>
+
+<p>
+It was unclear to him whether his prayer had helped his temper any. He asked her at one point, "what am I supposed to do about the documents office or their system? Why are you telling me this?" It appeared, however, that she took this in stride: "don't yell, child, I was only asking for just a little bit of help&hellip;"
+</p>
+
+<p>
+She eventually determined that she would call the office to see if they'd fit them in on Friday. He was pessimistic and frustrated, but did not voice his pessimism or frustration. He was not forbearing so much as he was cutting himself loose, inside his heart, from any concern over whether her strategy would succeed, or whether his father would even get his document verification appointment, all so that she would hang up sooner; which she eventually did.
+</p>
+
+<p>
+He walked over from where he'd been stooping awkwardly over his dresser to his bed and knelt back down. Then he got up, put the phone back on the dresser, and walked back to kneel again. His knees cracked.
+</p>
+
+<p>
+He turned his head toward the dresser. He wondered if he wanted to do this tonight. He stopped thinking about it and started.
+</p>
+
+<p>
+<i>Let me not lose my temper with my mother. Dear God in Heaven. Our Father who art in Heaven, hallowed be thy name&hellip;</i>
+</p>
+
+<p>
+When he did this usually, he mumbled the words to himself; he'd heard that the sound mattered, and also that if it was purely mental it didn't anchor one to the action as well. This improvised first sentence was a little awkward to say out loud. It sounded wrong, felt bad in his mouth. For the first time, he realized how <i>silly</i> he felt. He imagined what he looked like, back facing his bedroom door, bum hovering over his heels&hellip;
+</p>
+
+<p>
+He could hear his own heartbeat, loud in his ears. He could hear his breath, scraping jagged past his throat. He could feel behind his ears where a flush was glowing. His visual field, behind his closed eyes, flashed disconnected images, supersaturated and strange, like a waking nightmare.
+</p>
+
+<p>
+He got up, and went to his phone, and opened his habit tracker app, and checked off "pray every day" for Thursday.
+</p>
+
+<hr />
+
+<p>
+He was out to dinner &ndash; well, drinks &ndash; with his friends &ndash; well, his colleagues &ndash; well, the three other boys he tended to fall into breakroom conversations with, even though they were from different teams &ndash; when his father called. Harry wouldn't stop trying to continue the debate they'd gotten into while they were waiting together behind the row of people at the bar while he picked up the phone and said hello and asked what the matter was. He didn't quite know who he was telling to shut up for a minute when he said it out loud. He might have been louder than he should have been. The matter was that his mother had gotten into an accident, all was well, but she'd broken her jaw. What kind of accident? We took her to the family doctor, he recommended a particular maxillofacial surgeon. How long was the wait? We already got it done, beta, surgery is tomorrow morning, remember we have an introduction, don't worry. But how did it happen in the first place? Discharge from the hospital would be in a week; recovery would take a few months. He should come home soon and help take care of her. He couldn't get the time off work, other people were taking leaves and it was too busy, he'd be home in two months for his cousin's wedding anyway.
+</p>
+
+<p>
+A beer reached his hand. He pulled from it while on the line with his father; this felt sacrilegious. He told his father to give his mother a hug for him, and was told it would happen later; she was sleeping.
+</p>
+
+<hr />
+
+<p>
+Next Monday, at his desk, he heard: <i>I wish I could run her over</i>.
+</p>
+
+<p>
+"Sorry?"
+</p>
+
+<p>
+Charlotte, who sat next to him, looked up at him. "Hm?"
+</p>
+
+<p>
+He mumbled an apology, and looked around in case it was someone else who had spoken. Pat was looking at them from across the room, but then when Abby looked over he looked back at his monitor.
+</p>
+
+<p>
+Missy had come back from her sick leave. Abby had been picking up her work while she was gone, and was satisfied with how this fact was addressed at the sprint planning call. In the little selfie camera feed in the corner of the conference room TV screen, which they were all facing so that their manager, who usually signed in from home, felt included in the room, her eyes looked beady, recessed, her smile overbright; her plans for the next sprint were delivered in a bright, forced voice.
+</p>
+
+<hr />
+
+<p>
+<i>I wish I could run her over.</i>
+</p>
+
+<p>
+It was stuck in his head. Or was it? It sounded <i>spoken</i>, every time. Songs that got stuck in his head didn't normally sound like that.
+</p>
+
+<hr />
+
+<p>
+He knelt to pray.
+</p>
+
+<p>
+He pronounced the words as practiced, trying to find the feeling inside himself on purpose for once that kept away the sense of <i>silly</i>, trying to make the sound of his own voice go through his ears and reach his head.
+</p>
+
+<p>
+<i>I wish I could run her over.</i>
+</p>
+
+<p>
+He mouthed around the Our Father, hoping for it to taste like something. The shape of his lips felt like nothing at all.
+</p>
+
+<p>
+<i>I wish I could run her over</i> and over and over and over&mdash;
+</p>
+
+<p>
+He went to his phone on the dresser. He took a second to look at it. He closed it again, and got into his bed, and went to sleep.
+</p>
+
+<hr />
+
+<p>
+He heard Missy was getting fired, or quitting, or on garden leave, or something of that nature. She'd apparently been traveling while ostensibly on sick leave. She asked him to coffee. Over the cup, her eyes caught the light as she looked at him; they looked like glass over wood.
+</p>
+
+<p>
+"It wasn't a car accident that hurt your mother, Abby. I punched her in the face."
+</p>
+
+<p>
+Steam curled up from the table where his coffee sat.
+</p>
+
+<p>
+He wondered what his face was doing.
+</p>
+
+<p>
+She looked better than she had. Her sweater looked expensive. Homey.
+</p>
+
+<p>
+She said, "I wish I didn't have to go to work in the morning."
+</p>
+
+<p>
+He said, "Come again?"
+</p>
+
+<p>
+"That's what my wish was. I wish I didn't have to go to work in the morning.' What was the prayer? I don't remember. For strength, or something? 'Let me have the strength to face the new day.'"
+</p>
+
+<p>
+<i>Let me run her over, just once.</i> He shook the thought &ndash; the sound &ndash; away &ndash; and caught her watching him do it.
+</p>
+
+<p>
+He thought, as hard as he could, of blank, white space. The sound of his breath made a rhythm in his ears next to <i>run her over, over, run over, over over</i>. Sweat stung at his temples.
+</p>
+
+<p>
+She smiled at him, and said, "<i>Relax.</i> It's only happened to me once, and it only happened to the person before me once, too. Do you know who it is yet? The next one?"
+</p>
+
+<p>
+He wanted to ask how he should find out. It took a moment for him to find the breath.
+</p>
+
+<p>
+"It's the same thing, sweetheart, just backwards."
+</p>
+
+<p>
+It was fucked up that she sounded maternal, right? That was fucked up? He wished he could check in with his friends &ndash; well, his colleagues/drinking-buddies &ndash; about this.
+</p>
+
+<hr />
+
+<p>
+He knelt. He didn't pray. He tried to let it come.
+</p>
+
+<p>
+It took a moment to cue the thing &ndash; the <i>feeling</i> of it &ndash; to happen on purpose. He supposed he'd been practicing.
+</p>
+
+<p>
+<i>I wish I could / just let me / please can I just / I don't even want anything / an accident / what if I just did an accident / god she deserves it / god she would flop around like a blow up doll / heels in the air / hair fucked up  / let me run her over</i>
+</p>
+
+<p>
+Passing, sharp, intrusive, fleeting. It seemed &hellip; petty. Like an itch.
+</p>
+
+<p>
+Who?
+</p>
+
+<p>
+Pat's face, watching him &ndash; no, watching Charlotte, next to him &ndash; across the room. In Abby's mind, the face seized grotesquely, expression deforming the features just a little too far. Sneering, but also yearning.
+</p>
+
+<p>
+He thought about it. He thought about whether he could live with this, in his head, forever.
+</p>
+
+<hr />
+
+<p>
+He called Missy and said, "did you <i>travel to India</i>?"
+</p>
+
+<p>
+Then he said, "wait, that's not why I called. I called to &ndash; because &ndash; how sure are you that it can't happen again?"
+</p>
+
+<p>
+Then he said, "I'm going to try to pray to you again. Or &ndash; no, I <i>won't</i>, but I <i>could</i>, and that's what I mean &ndash; I mean I <i>could</i>."
+</p>
+
+<p>
+Then he said, "Help me with the next one. That's all I want. It's a two man &ndash; sorry, a two person job &ndash;  and then we can forget the whole thing. After, I mean. We can just &ndash; leave it behind."
+</p>
+
+<p>
+When it was over, his whole body was shaking. He went into the shower to wash off the sweat.
+</p>
+
+<hr />
+
+<p>
+He watched as Missy dragged Charlotte by the arm along the sidewalk, laughing. Her scarf was billowing in the wind and her skirt was flattening itself against the legs of Charlotte's pantsuit. Charlotte's face was shifting out of the expression Abby was used to seeing on her at work. Abby watched her eyebrows and cheeks move, feeling like his attention was stuck there. He wondering if he looked like he was staring.
+</p>
+
+<p>
+In the driver's seat next to him, Pat glanced over to see what he was looking at. "Wonder if she'll quit soon, too."
+</p>
+
+<p>
+"Yeah, maybe? Why?" He wasn't really paying attention. "Go slower, man, you know we all jaywalk around here." Was that likely to make him slow down or speed up? "I mean, it's fine, it's whatever." <i>God, you wuss.</i> Shit, did that count as a prayer?
+</p>
+
+<p>
+(Now, see, that fear, that was new.)
+</p>
+
+<p>
+"I was thinking about maybe asking her out sometime. I dunno, I always thought she was cute. But dating at work would be weird."
+</p>
+
+<p>
+Missy pointed at a cafe across the street. You could see her saying, <i>come on, come onnn, they'll run out</i> and she turned away and Abby repeated the rest to himself automatically <i>of the blueberry bagels in like five more minutes</i>, and they stepped into the street, and Abby started reaching for Pat's shoulder but stopped himself with his hand half in the air, but Pat didn't notice. His hands were flexing on the steering wheel, and he was watching the women too.
+</p>
+
+<p>
+When they were nearly at the other sidewalk, Missy's scarf floated free of her neck, and she ran back across the street to chase it. Charlotte paused next to the curb, turned back to her.
+</p>
+
+<p>
+The car was on track to clip her. Perhaps Pat was going a little fast. Was he going to swerve?
+</p>
+
+<p>
+Was he <i>not going to swerve?</i> 
+</p>
+
+<p>
+He didn't swerve.
+</p>
+
+<p>
+Abby looked in the direction of his friend's face, jolted forward when the impact halted them, flinched at the driver's side door being thrown open as Pat hurried outside.
+</p>
+
+<hr />
+
+<p>
+The injuries weren't too serious. Charlotte didn't quit; she and Pat did start dating. Abby watched for a little while to see if he started acting distracted &ndash; like something was stuck in his head &ndash; but then left off, oddly discouraged, when it didn't seem to happen.
+</p>
+
+<p>
+Missy was worried, thought they should seek him out together. He wasn't so sure. Maybe it just wasn't their problem anymore?
+</p>
+
+<p>
+He decided it wasn't his problem anymore.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>
