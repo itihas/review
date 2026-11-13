@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>/ad hominem/ norms vs standpoint norms</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title"><i>ad hominem</i> norms vs standpoint norms</h1>
+<div class="page-meta">
+<span class="page-stage score-seedling" title="review score: 2" role="img" aria-label="seedling">🌱</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="draft">draft</span></span></span>
+<span class="page-mtimes">updated: <time datetime="2026-11-11T19:40">2026-11-11 Wed 19:40</time>, <time datetime="2026-11-11T19:40">2026-11-11 Wed 19:40</time></span>
+</div>
+<p>
+<a href="https://www.woman-of-letters.com/">Naomi Kanakia</a> at Inkhaven gave us a sales pitch for writing discourse posts, which amounted in large part to "stop being such cowards and STAND FOR WHAT YOU BELIEVE IN, FOOLS." Attendees were set aruffle; among the stronger objections raised to her exposition on this subject was that one should find it perfectly possible to structure a post in terms of the <i>idea</i> being refuted without ever needing to address an interlocutor about it.
+</p>
+
+<p>
+It's interesting in a couple of different directions, not least because of the different ways people want to operationalize this point. A blogger who engages in discourse will treat <i>specifically naming and providing exemplars</i> of the point of contention, and its maker, as the proper etiquette. Coming from an academic or a rationalist frame (or for that matter any sufficiently, uh, <i>Enlit</i> frame), however, doing this is low-status, low-hygiene, and rude. The former intends it in the spirit of addressing an open letter; the latter thinks it's an invitation to genetic fallacy at best, and at worst an outright <i>ad hominem</i>.
+</p>
+
+<p>
+You could do either or both or neither of these things while in the process of disagreeing with someone in public. You can name the person, the paper, the receipts, and keep it all scrupulously free of mention that the author of any of it even exists; you can also insult their family, dishonor their place of birth, and imply that their marred speech comes with a side of foul breath, without ever alerting them, naming them, or even identifying them when you do it. These two readings of the  aren't in opposition, and with the disambiguation the disagreement should have dissolved. Why didn't it?
+</p>
+
+<hr />
+
+<p>
+Why stand for what you believe in (fools)? And why not?
+</p>
+
+<p>
+The argument-for that stuck with me: the claim that I, personally, was a coward for not standing up for what <i>I personally</i> believe in. If I care, I should <i>care</i>. I should put the weight of my standing behind speech.
+</p>
+
+<p>
+The discoursepost as a speech act seems hard to separate from the speaker. Like gossip, parliamentary debate, and couch conversations at house parties, you don't really care about who's talking in a way that's separable from what they're saying. Sometimes this is degenerate: you don't care who they are at all; or else you don't care what they're saying outside of "who they are" in some other sense. More often it's something in between. There's a whole universe of entanglements out here, man.
+</p>
+
+<p>
+This, I think, is the <i>actual</i> disagreement being had when quibbling about whether and who to name in your post. Does the person matter to what's being said, or not? If you disagree, you should be able to disagree "on the merits", right? Except for all the times you can't?
+</p>
+
+<hr />
+
+<p>
+I posit two competing norm-sets at play. I hold affiliations to neither; this is an attempt at Naming.
+</p>
+
+<ul class="org-ul">
+<li><b><i>ad hominem</i> norms</b> presuppose that the genetic fallacy and the <i>ad hominem</i> fallacy are in fact fallacies. In fact they suppose that nothing can be derived about an argument from its maker. You're supposed to treat with the person as <i>separate</i> from what they're saying.</li>
+<li><p>
+<b>standpoint norms</b> presuppose that arguments are <i>inseparable</i> from their maker; that their history of stances, personal values, and conduct in private and public life, are all fair game for dispute (insofar as disclosed).
+</p>
+
+<hr /></li>
+</ul>
+
+<p>
+We're taught <i>ad hominem</i> norms in most contexts where we're taught explicitly to "reason", "think critically", or "debate", by those terms. When talking to somebody you know nothing about, they're great. They're also excellent to speak to <i>well-behaved enemies</i> - the type who are similarly constrained, by moral or contractual bent, to use the same norms with you too.
+</p>
+
+<p>
+Nobody plays by these rules as written, however. It's within the letter but against the spirit, for example, to direct the argument towards spheres of discourse where you know that the other party's knowledge is on shakier, but their argument <i>as would have been counterfactually made by someone with a better understanding of the space</i> would hold up. It's against both letter and spirit to counterargue with claims that don't make logic sense, but sound good; or to get what someone is saying wrong in a way that disfavors them on purpose. It's egregious to argue things that you don't yourself believe, but you know your audience will favor.
+</p>
+
+<p>
+There's also no way to appeal to privileged information. Things that only you know &ndash; or things that only you understand &ndash; are argument-stoppers. The other party has no recourse without talking about why they should or shouldn't believe you about it.
+</p>
+
+<p>
+And out past this: there is no way to discuss <i>taste</i> at all. What you like and dislike is a fact about you. <i>De gustibus non est disputandum</i>.
+</p>
+
+<hr />
+
+<p>
+In another universe of discourse, we allow ourselves to say things like, "of course <i>you</i> would think that. You're a pinko commie liberal. You and I take entirely different forms of issue with <i>The Rocky Horror Picture Show</i>, even if we object to all of the same things in it." Such argument is not only perfectly within the rules of play:
+</p>
+<ul class="org-ul">
+<li>it serves as both convenient shorthand for large chunks of premise. This is a kind of rhetorical flourish; you could say the same thing "the slow way", but this is shorter, funnier, more memorable.</li>
+<li>it signals knowledge of the intertext; it says, "I know who you are, and I know where we are. I can situate this conversation in a larger context." It also says, "I've done my homework. I respect you enough to have read up. I come prepared for you to take me seriously."</li>
+<li>It speaks in a register to The Audience<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, who proceed to self-select into camps, or out of the conversation entirely, on this basis. Another rhetorical flourish: by positing categories one reifies them.</li>
+</ul>
+
+<p>
+In this universe, there is The Discourse, and we all speak to It. Like prayer to a God, there is nothing presumed to be outside its domain.
+</p>
+
+
+<hr />
+
+<p>
+I don't exactly hold affiliations to either of these camps. I'm trying here to notice that they exist and that they represent different tradeoffs. This is an attempt at Naming.
+</p>
+
+<p>
+That said, I have <i>sympathies</i> with both. Standpoint norms clearly work much better, at least locally, for long-running dialogues. The one carve-out for the <i>ad hominem</i> fallacy listed in the Wikipedia is <a href="https://en.wikipedia.org/wiki/Ad_hominem#Argument_from_commitment">argument from commitment</a> &ndash; "you said you disagreed with one of your premises already, so stop using it." Taken over the history of someone's public life and writing &ndash; a widely readable trace that's available at all times &ndash; it sure starts looking like you should act as if that blog has a <i>blogsona</i> of whom you can demand, <i>to thine own self be true</i>.
+</p>
+
+<p>
+But on the other hand, I often want people to <i>listen to what I'm saying to you right now, goddammit</i>. I want to be allowed to change and to grow. I want to privilege my current best efforts at understanding. I want to be <i>myself</i> out loud, even if the self I am is throwing away most of what I know at the moment to <a href="https://drossbucket.com/2018/04/08/the-cognitive-decoupling-elite/">reason about the tiny reasonable skeleton I've decided it has right now</a>. 
+</p>
+
+<hr />
+
+<p>
+I think the fear that high-decoupling people might come into standpoint norms with might be this: fear of being held to a defunct standard.
+</p>
+
+<p>
+An abstraction is an unforgiving thing: within its frame there is often only right or wrong, or the promise of either<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>. Usually a high-decoupling person finds out that the way they constructed a problem is fundamentally flawed somehow. They would at that time like to discard the work altogether, to hold all conclusions that followed as inapplicable. As painful as it is to you, the mortal reasoner, that the work you thought was done has not been done, it's still preferable to the horror of being told you <i>can't leave those conclusions behind</i>. To give a speech act status in its own right, to let people reify your old speech into a picture of You &ndash; even just <i>A</i> You &ndash; must feel like being asked to drag a carcass around.
+</p>
+
+<hr />
+
+<p>
+Note that the above isn't an <i>invalidation</i>, merely an <i>appeal</i>. This is appropriate to a contest of <a href="20230826021259-normativity.html#ID-f634d24c-4ac2-49e3-ac2c-45eb22d8b7c5">norms</a>.
+</p>
+
+<p>
+And there is a counterappeal, that Naomi made in as many words:
+</p>
+
+<ul class="org-ul">
+<li>"I disagree that you should have to stand by everything you write forever."</li>
+<li>"you're just afraid to be wrong in public, that's why you're trying so hard to be bulletproof before you even say anything."</li>
+<li>"You're not going to <i>win</i> by doing a discoursepoast. That's not what this is for. Learning from people's reactions, learning how people <i>feel</i> about this thing that you also care about, is what this is for."</li>
+</ul>
+
+<hr />
+
+<p>
+I think these two norm sets aren't incompatible. From an I need a lot more machinery to satisfy myself that I understand what the reconciliation is.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+among The Audience is The Algorithm
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+or, rarely, <a href="https://plato.stanford.edu/entries/logic-paraconsistent/">both</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+half-chewed inkhavenpoasting off to a good start. 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

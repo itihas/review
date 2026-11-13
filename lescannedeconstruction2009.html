@@ -207,6 +207,14 @@
 <span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
 <span class="page-mtimes">updated: <time datetime="2024-12-25T15:54">2024-12-25 Wed 15:54</time></span>
 </div>
+<div class="page-refs" id="orgcbf88e1">
+<p>
+<span class="page-refs-label">refs:</span></p>
+<ul class="org-ul">
+<li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
+</ul>
+
+</div>
 <div id="outline-container-ID-tl;dr" class="outline-2">
 <h2 id="ID-tl;dr">tl;dr</h2>
 <div class="outline-text-2" id="text-ID-tl;dr">
@@ -242,7 +250,7 @@ Coinductive definitions (for extensional games):
 
 <p>
 Game := Payoff | Agent Game Game
-Strategy := Payoff | Left <a id="org9bf4e93"></a> | Right <a id="orgdd0dcba"></a>
+Strategy := Payoff | Left <a id="org0397a8e"></a> | Right <a id="orgbb460d9"></a>
 </p>
 
 
@@ -265,11 +273,11 @@ s2u  s:Strategy a:Agent u:Utility : Pred := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgc403041"></a> u</td>
+<td class="org-left">Left : s2u sl a u =&gt; s2u <a id="orgd80a6de"></a> u</td>
 </tr>
 
 <tr>
-<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="org03a7a42"></a> u</td>
+<td class="org-left">Right : s2u sr a u =&gt; s2u <a id="orga203833"></a> u</td>
 </tr>
 </tbody>
 </table>
@@ -294,11 +302,11 @@ lleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="orgcb8854e"></a></td>
+<td class="org-left">Left  : lleaf sl =&gt; lleaf <a id="org3c2b07c"></a></td>
 </tr>
 
 <tr>
-<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="org76272ad"></a></td>
+<td class="org-left">Right  : lleaf sr =&gt; lleaf <a id="orgf3ff62b"></a></td>
 </tr>
 </tbody>
 </table>
@@ -318,7 +326,7 @@ alleaf s: Strategy := cases s of
 </tr>
 
 <tr>
-<td class="org-left"><a id="orga0b933b"></a> : lleaf <a id="orgf4b43a4"></a> and alleaf sl and alleaf sr</td>
+<td class="org-left"><a id="orgcfc23ca"></a> : lleaf <a id="org46a5ead"></a> and alleaf sl and alleaf sr</td>
 </tr>
 </tbody>
 </table>
@@ -389,14 +397,6 @@ SGPE :=
 </tbody>
 </table>
 </div>
-</div>
-<div id="outline-container-ID-Refs" class="outline-3">
-<h3 id="ID-Refs">Refs</h3>
-<div class="outline-text-3" id="text-ID-Refs">
-</div>
-<ul class="org-ul">
-<li>Lescanne (2009-04-22) Deconstruction of Infinite Extensive Games Using Coinduction, , <a href="http://arxiv.org/abs/0904.3528">http://arxiv.org/abs/0904.3528</a>.</li>
-</ul>
 </div>
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>

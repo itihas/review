@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 04 Nov 2026 23:58:03 +0000</pubDate>
-  <lastBuildDate>Wed, 04 Nov 2026 23:58:03 +0000</lastBuildDate>
+  <pubDate>Fri, 13 Nov 2026 00:16:07 +0000</pubDate>
+  <lastBuildDate>Fri, 13 Nov 2026 00:16:07 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>the dignity of recipes</title>
+    <link>https://itihas.review/the_dignity_of_recipes.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/the_dignity_of_recipes.html</guid>
+    <pubDate>Wed, 11 Nov 2026 15:46:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>itihas/publish-review</title>
     <link>https://itihas.review/itihas_publish_review.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133200-tinc.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>GitHub - slackhq/nebula: A scalable overlay networking tool with a focus on performance, simplicity and security</title>
-    <link>https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133100-github_slackhq_nebula_a_scalable_overlay_networking_tool_with_a_focus_on_performance_simplicity_and_security.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:31:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

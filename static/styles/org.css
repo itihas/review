@@ -496,9 +496,34 @@ p.verse{
     background-color:transparent;
     color:inherit
 }
-.page-tags,.page-mtimes,.page-crossposts{
+.page-tags,.page-mtimes,.page-crossposts,.page-refs{
     font-family:Ubuntu Mono,monospace
 }
 .page-mtimes time{
     white-space:nowrap
+}
+.page-refs{
+    display:flex;
+    align-items:baseline;
+    gap:.3em;
+    margin:.2em 0 1.5em;
+    font-size:80%;
+    color:#666;
+    line-height:1.4
+}
+.page-meta+.page-refs{
+    margin-top:-1.2em
+}
+.page-refs p{
+    margin:0
+}
+.page-refs ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    min-width:0;
+    overflow-wrap:anywhere
+}
+.page-refs li{
+    display:block
 }
