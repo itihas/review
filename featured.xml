@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 14 Nov 2026 01:55:58 +0000</pubDate>
-  <lastBuildDate>Sat, 14 Nov 2026 01:55:58 +0000</lastBuildDate>
+  <pubDate>Sat, 14 Nov 2026 02:13:13 +0000</pubDate>
+  <lastBuildDate>Sat, 14 Nov 2026 02:13:13 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>emerald city</title>
+    <link>https://itihas.review/emerald_city.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/emerald_city.html</guid>
+    <pubDate>Fri, 13 Nov 2026 17:57:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>the dignity of recipes</title>
     <link>https://itihas.review/the_dignity_of_recipes.html</link>
@@ -911,15 +920,6 @@
     <link>https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>tinc</title>
-    <link>https://itihas.review/20220222133200-tinc.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133200-tinc.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>

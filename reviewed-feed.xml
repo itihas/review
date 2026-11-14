@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 14 Nov 2026 01:55:54 +0000</pubDate>
-  <lastBuildDate>Sat, 14 Nov 2026 01:55:54 +0000</lastBuildDate>
+  <pubDate>Sat, 14 Nov 2026 02:13:08 +0000</pubDate>
+  <lastBuildDate>Sat, 14 Nov 2026 02:13:08 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,20 @@
   </image>
 
   <item>
+    <title>emerald city</title>
+    <link>https://itihas.review/emerald_city.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/emerald_city.html</guid>
+    <pubDate>Fri, 13 Nov 2026 17:57:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>praying it forward</title>
     <link>https://itihas.review/praying_it_forward.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/praying_it_forward.html</guid>
-    <pubDate>Thu, 12 Nov 2026 20:02:00 +0000</pubDate>
+    <pubDate>Thu, 12 Nov 2026 20:09:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251031153441-writing_living_text_is_different_than_writing_publish_once_text.html</guid>
     <pubDate>Fri, 31 Oct 2025 07:06:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>A Brief History &amp; Ethos of the Digital Garden</title>
-    <link>https://itihas.review/a_brief_history_ethos_of_the_digital_garden.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/a_brief_history_ethos_of_the_digital_garden.html</guid>
-    <pubDate>Fri, 31 Oct 2025 07:05:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
