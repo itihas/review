@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emerald city</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">emerald city</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="draft">draft</span></span></span>
+</div>
+<p>
+you ever walk into a room and can just <i>smell</i> what everybody's thinking? 
+</p>
+
+<hr />
+
+<p>
+The city is a shallow bowl; in the distance you see the foothills, houses walking up streets; above that, the sky stretches, generous, overspilling. Some mornings it comes closer, foaming clouds pouring mannered rain into the broken sidewalks and over the asphalt. Inside the perforated shells of houses, you watch it fall without slant, fail to come in.
+</p>
+
+<hr />
+
+<p>
+It's hard, when you're in a room of strangers, to remember that these are all <i>people</i>. A decade ago, this same group of people (or at least <i>nominally</i> the same, with some of the same faces) taught me that it was my responsibility to find this out; to elicit the humanity from the faces around me, to try to understand what they are hearing when you speak, and speak <i>to</i> them. To change what you say so that someone else can hear it. That honesty cannot be an activity undertaken in isolation. But walking in amongst them a decade later, I realize I still need to work at it, and maybe I'll always need to work at it. One of the problems with aging and growing is this: you learn to like yourself more, wherever you are, and when you go somewhere different and do something different and talk to different people you don't always carry all of that with you. I've left pieces of me behind. I miss home. I miss the people I already know how to love.
+</p>
+
+<hr />
+
+<p>
+Here's how I think Bangalore works:
+</p>
+
+<p>
+Once upon a time, you hated yourself, because you hated everything around you. Life came with a family, and with friends from school and from your street or your colony or your village. Once a year, four hundred thousand people shambled, in delirium, into classrooms around the country, to prove that they spoke the language in which (you were told) the secrets of the universe were discussed. Perhaps you even cared about this the way (some of) the examiners did. It didn't matter. This was your ticket to a better life.
+In a thousand different ways, this exercise doesn't work for people. It didn't work for you. Maybe it was because you couldn't, but at any rate you didn't. Instead you ended up somewhere different, but not too different. Far, but not too far.
+Bangalore is the shore of the place where things happen.
+</p>
+
+<hr />
+
+<p>
+I love my friends. Here's how I learned to love them: I learned where they came from, and what they expected and needed, and what they were good at. And then I gave them what I could, and listened when they told me their stories, and let them love me back.
+</p>
+
+<p>
+Two months into the formation of the current circle of seven-ish people who I spend the most time with these days, one of them put down his drink gently, stopped trying to tell the story he was trying to get through, and asked why none of us could fucking listen all the way through sixteen sentences without starting a tangent on the third. We took turns telling him that the answer was just ADHD; was just the joy we were feeling at hearing him say something that sparked something else in our brains, overspilling. There's material friction here. We loved the sound of our own voices. We loved singing counterpoint to him; the way jokes and asides and gossip and other stories built on each other; we were whipping each other into a froth and we were having fun.
+</p>
+
+<p>
+He's mostly given up on telling long stories to us. In some ways this is good; he tended to hold court when speaking, in a way that tested our patience. In other ways this is very bad, because he talks so rarely now. He likes listening to us, he knows we hear him and that he's loved, but he can't be fun and interesting in the way that he likes to be. His art of conversation has evolved to suit us; some of the fat's been shaved off, and some of the meat's gone with it.
+</p>
+
+<p>
+I don't know how he feels about this. I wish I did. I hope he'll read this and tell me.
+</p>
+
+<hr />
+
+<p>
+Lighthaven is close quarters. The many kitchens abut the many living rooms and dens. When you sit, you're sitting next to someone. When you stand in a corner to file your nails, a tarot card is being drawn from a deck five feet from you; a watring can is being filled in the sink you're leaning up against; in the next room, someone's typing on a couch. You walk softly. You try not to overhear, but you can't help but want to interrupt, cut in when it gets interesting. You're meant to, but only sometimes. You have to develop an ear for it.
+</p>
+
+<p>
+People are frank about your work and solicitous about everything else; the way coworkers are. Food, water, sleep are frictionless. It's too cold for things to smell, but you worry about how you smell anyway. Once, my brother told me that one of his students could tell when he hadn't switched out his socks. You go most places, even over the ice-cold wet astroturf, barefoot; dirt is less offensive than sweat. It's like living in an office.
+</p>
+
+<p>
+It's like living in an office because you work in tech, and this is the city that decided how tech offices ought to be.
+</p>
+
+<p>
+This whole city &ndash; this whole multi-centred megalopolis &ndash; feels a little like living in an office. You can't help but wonder, over and over, where the real people are.
+</p>
+
+<hr />
+
+<p>
+These are all real people. They prefer, and learn, and err, and fall in love. They shit and eat and favor their lumbar spines.
+</p>
+
+<hr />
+
+<p>
+There's a bay leaf in the bowl. There is a god, speaking in the ears of San Francisco, Berkeley, Redwood City, Oakland, San Jose. There is a smell you can't get out of your nose, coming off of everyone you speak to and listen to and watch as they regard their laptop screen, eyes half-lidded.
+</p>
+
+<p>
+It is speaking to you.
+</p>
+
+<p>
+It is speaking to me.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>
