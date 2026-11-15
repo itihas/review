@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>teachers</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">teachers</h1>
+<div class="page-meta">
+<span class="page-stage score-seedling" title="review score: 3" role="img" aria-label="seedling">🌱</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span></span>
+<span class="page-mtimes">updated: <time datetime="2026-11-15T15:15">2026-11-15 Sun 15:15</time>, <time datetime="2026-11-15T15:15">2026-11-15 Sun 15:15</time>, <time datetime="2026-11-15T12:49">2026-11-15 Sun 12:49</time></span>
+</div>
+<div class="page-refs" id="org3dde2ae">
+<p>
+<span class="page-refs-label">refs:</span></p>
+<ul class="org-ul">
+<li><a href="https://blogs.iiit.ac.in/monthly_news/prof-p-r-k-rao/">https://blogs.iiit.ac.in/monthly_news/prof-p-r-k-rao/</a></li>
+<li><a href="https://www.youtube.com/watch?v=-I_BW4Wzy-I">https://www.youtube.com/watch?v=-I_BW4Wzy-I</a></li>
+<li><a href="https://www.linkedin.com/posts/karandi65_prof-prk-rao-my-phd-thesis-supervisor-at-activity-7414516836513529856-gCka">https://www.linkedin.com/posts/karandi65_prof-prk-rao-my-phd-thesis-supervisor-at-activity-7414516836513529856-gCka</a></li>
+</ul>
+
+</div>
+<p>
+Twice a week, we sleep well. We finish our assignments, we make it to the mess in time to eat our dinners, retire to our rooms and fall asleep gently, perhaps reading something unchallenging. We wake naturally. We eat a substantial breakfast, ideally in the mess where the food will have enough slow carbohydrates to sustain us for some time. It's late enough in the year that it's not too hot to concentrate. The building we are going to is well enough ventilated, with enough of the bright sunlight filtering through to inspire wakefulness but not so much that it wears on us. Our respective singular notebooks are in our bags or in our hands. At eleven thirty in the morning, we filter in past the slight man who is already writing on the blackboard. He's in a short-sleeved cotton shirt, slacks, sandals. He moves energetically. You wonder if he used to break chalk more often than he does now, and how long it took him to stop.
+</p>
+
+<p>
+You read as he writes, copy down the quotes on he's the board, a little behind him. You know he won't wait long to start speaking once he's done.
+</p>
+
+<blockquote>
+<p>
+Man is an exception, whatever else he is. If he is not the image of God, then he is a disease of the dust. If it is not true that a divine being fell, then we can only say that one of the animals went entirely off its head.
+</p>
+</blockquote>
+<p>
+&ndash;G.K. Chesterton
+</p>
+<blockquote>
+<p>
+Man is a mere upstart.
+</p>
+</blockquote>
+<p>
+&ndash;I don't remember who this was, and don't have my notebook from that time to check against. The searches turn up nothing.
+</p>
+
+<p>
+He turns around and starts talking.
+</p>
+
+<p>
+A hundred and twenty minutes later, we're half an hour late for lunch, and walk out sweaty and confused, like we've spent them all on an athletic mat, wrestling.
+</p>
+
+<p>
+I don't follow my friends to lunch. I trail out after him, like a duckling. I've been planning my inciting question since halfway through the class, but I don't think it makes much difference what it is. He's not done talking to me.
+</p>
+
+<p>
+We walk up to his office. I sit there until 3PM, notebook in hand; most of what I manage to write down are references. I get a word in edgewise, every half hour or so, when a question I can't answer for myself or he hasn't anticipated me having has been building to bursting point. All I have to offer is prompts; he knows more than me about everything. Every interjection wins  me six more things to read.
+</p>
+
+<p>
+I still haven't gotten through this reading list. I've lost the notebook I wrote it in; all I have to go on are the scraps of it burned into my brain.
+</p>
+
+<hr />
+
+<p>
+What did we talk about?
+</p>
+
+<p>
+At the time, it felt like <i>everything</i>. We talked about all the different moving parts it took to "describe" "a human" as "knowing" "something". The tricks of signal processing that a brain does and how it feels to be on the other end of them(Ramachandran, V. S. and Blakeslee, Sandra 1998), (Churchland, Patricia Smith 2002); the skill it takes to assign intention and meaning. Symbolism, and the work of the sunflower in the vase on the ironing board in the scene that happens 60% of the way through the <i>Doctor Zhivago</i> movie. Why every system of explanation, every frame you can think of, is necessarily inadequate to some task that you already care about; the consequent criticality of being able to use many sets of tools. The feeling of fluency, or fluidity, of balance and poise and agility that you wanted when switching between frames. The paradoxical feeling of commitment to pluralism. Why he thought the grand ontological project of my head of department was doomed for failure, and why he chose to be part of it anyway.
+</p>
+
+<p>
+How it feels to be betrayed, how it feels when an explanation fails you. T.S. Eliot, <i>Murder in the Cathedral</i>, and how it feels when you get got for standing for what you believe in.
+</p>
+
+<blockquote>
+<p>
+How can I explain, how can I explain to you? You will understand less after I have explained it.
+All that I could hope to make you understand is only events: not what has happened.
+</p>
+</blockquote>
+<p>
+&ndash; T.S. Eliot, <i>Family Reunion</i> 
+</p>
+
+<p>
+So you see, he had a program. He was trying to explain to me how my brain worked, and how to use it.
+</p>
+
+<p>
+He was building me a boat, apprenticing me to him in boat-building for an extra set of hands because he couldn't get in there and build it himself.
+</p>
+
+<p>
+When you picture this, picture me in the water, far, far out from shore. In the normal scheme of things, I'd have drowned in due course.
+</p>
+
+<hr />
+
+<p>
+He once said that people in general have a few too many tethers to reality, and could stand to loosen some of them. I replied that I felt like I had very few. He said I was right, and needed the opposite. I needed more things to care about.
+</p>
+
+<p>
+He assigned me to write a biography of myself, and I wrote it for him and in it I said: the sum total of my life as I could see it right now was a sense of <i>pushing</i>.
+</p>
+
+<p>
+He told me that I wasn't at the age for thinking serious thoughts yet, and that most people shouldn't try before they're at least thirty. I don't know that he was all that wrong about that. Most of what he's taught me has landed in <a href="repercussions_and_summer_thunder_and_unscrupulous_intentions.html#ID-c94edc70-7910-42ca-b70c-40dc71fd247d">repercussions</a>.
+</p>
+
+<hr />
+
+<p>
+The course was <i>History of Ideas</i>, and he was trying to teach us how to write one. Our idea for the semester was "origin".
+</p>
+
+<p>
+The way he tended to explain things was as follows: he'd start with a sentence. You learned to be grateful that he wrote it down first, because we never got all the way through the sentence. "Man", he might say, and take a moment to note what "man" meant in the context of the speaker's time and place; whose usage he might be thinking of; metonymy, and the abstraction on the other side of it; whether "man" in this case was a species, or a social class, or a historical phenomenon. He'd note, without naming the feminist reading directly, that the choice of signifier implicitly made an identity claim between whichever grand abstraction it was and the <i>word</i>; and where, after all, did our sense of the <i>word itself</i> come from? The intertext, the connotation, that came bundled with "man" the lexeme had its own part to play. This was our subject. Now for the participle.
+</p>
+
+<p>
+We might pause, detour into meta, to discuss how to perform such an excavation, and why. What are you reading for? What are you looking for? He'd warn us of the temptation of placing ourselves outside our interpretations by default; he'd spent a semester already showing us the pitfalls of treating an observer as something that can at all be disentangled from the observed, of anthropological bias<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, of the sundry error modes that come with not knowing how you were choosing to orient to the fixpoint when you were a humans studying humans. How, then, he'd ask, do you do that? Beneath the firmament of incompleteness, of the impossibility of ever being right enough about something that <i>you the claimant</i> stopped mattering, the whole animal kingdom of approaches to principled partial approaches remained; one might, for example, learn to <i>apply</i> one's pluralism via dialogic reading(Lacapra, Dominick 2000).
+</p>
+
+<p>
+"'&ndash;is a mere upstart', hm? What manner of claim is this? We route our claim through the <a href="20240817211612-the_problem_of_the_copula.html#ID-f0ddce1a-d113-48a3-9d34-fd82f7e4613a">copula</a>, which poses interesting questions, which we should already be aware from Navjyoti sir last year on the typology of the copula. Which \"is\" is it? Identity, membership, property? Artha, bhava, tatparya? What changes?" He'd pause, hopefully, to see if anybody had answers. We hoped, too, that one of us had <i>an</i> answer in mind that satisfied him. There were many, but we were nineteen.
+</p>
+
+<p>
+And so it would go. The sentence was evaluated, like an AST, against everything that was on his mind. To write a history of ideas, we had to learn how to unpack an idea, and linearize it into a history, and understand, once one has done this, just what it is that one has done. So we watched him do it, and apprenticed ourselves.
+</p>
+
+<p>
+He wished he'd had a chance to teach us Philosophy of Science first, but Navjyoti sir wanted him to teach this, because for those of us who carried enough of it away, it bent us into the right shapes to write good ontologies.
+</p>
+
+<hr />
+
+<p>
+He looked like he was watercolored onto the air. Crisp cotton shirts with delicate sleeve edges; fine hair that lifted in the wind. When he smoked, I thought he looked how the Oracle of Delphi might. Wizened, a little sinister; good, but perhaps a little too knowledgeable to be kind.
+</p>
+
+<hr />
+
+<p>
+I wish I ever got to see him teach math. A friend in the electronics stream had him for <i>Probability and Random Processes</i>. She said most of the class hated and feared him and she felt like she finally started to understand even a little bit of how and why things actually <i>worked</i>. What I wouldn't have given.
+</p>
+
+<hr />
+
+<p>
+He died in January of this year. I went to one of his memorials.
+</p>
+
+<p>
+(How can I explain, how can I explain to you?)
+</p>
+
+<p>
+I said something, towards the very end. I thought I'd have trouble with not crying, but when I got up there I stood tall and my voice was clear. Something along the lines of what I've written here; I tried to explain what it was like to watch him think.
+</p>
+
+<hr />
+
+<p>
+Part of my propensity to be opaque and unhelpful in my writing is downstream of him. I spent most of my life until him too scared of my own perspective to own up to it fully; but when you understand something  &ndash; when you <i>really</i> understand it &ndash; you understand how difficult it is, how impossible it is, really &ndash; to get anyone else to understand. Yours is the only brain that will hold this thing in this way. I stopped being afraid of being understood, of being made plain, and instead started reaching toward it, working under the firmament of incompleteness for the pieces of it that nevertheless obtained.
+</p>
+
+<p>
+He made me unafraid to chase strange compressions, to convey more of what I have than I can say clearly. I started mixing my thoughts, my art, my craft, and my moral commitments together. I held myself to the standard of trying always to say the correct thing to say. This sounds like a constraint but it's a freedom; a freedom-to. There are many right answers.
+</p>
+
+<p>
+I find in myself, as I write this, a moral commitment to say as much as I possibly can, and damn the strangeness just as long as it's the correct thing to say. To be clear when I can be clear, without conceding what clarity can't hold.
+</p>
+
+<blockquote>
+<p>
+Whereof one cannot speak, thereof one must be silent.
+</p>
+</blockquote>
+<p>
+&ndash; Wittgenstein
+</p>
+
+<blockquote>
+<p>
+If the world were clear, art would not exist.
+</p>
+</blockquote>
+<p>
+&ndash;Albert Camus
+</p>
+
+<hr />
+
+<p>
+He used to say, <i>I have one foot in the grave, and I'm looking to put the other in as soon as possible.</i>
+</p>
+
+<p>
+He used to say, <i>Alas, for I can't help but keep trying to teach. If only the students would come.</i>
+</p>
+
+<p>
+He had a deranged bcc mailing list where he'd forward articles he thought were interesting or that he wanted to make a point about. He capitalized like someone who'd read too many Germans in the original and liked Naming things. (I realize now where I contracted this Infection from.) He used scare quotes liberally, for similar reason.
+</p>
+
+<blockquote>
+<p>
+Our success in our efforts to keep public spaces(as well as private spaces) 'clean' crucially depends on how 'clean' are our ideas on the production of 'garbage'.
+</p>
+
+<p>
+As long as our ideas are anchored in a model of development/progress that is aimed at 'consuming' more than is allowed by 'disposal', accumulation of 'garbage' is the unreflected consequence 'we' cannot escape from or subject 'others' to an undeserved injustice.
+</p>
+</blockquote>
+<p>
+&ndash; P.R.K. Rao, on campus mailing list littering discourse
+</p>
+
+<p>
+I used to write him cryptic, emotional letters around once a year, usually in response to a mailing list message where he said he wanted to know how the <a href="hrl.html#ID-0fcac44e-764c-4178-ba1d-b46102e63c72">CEH</a> alumni are doing.
+</p>
+
+<p>
+I found it hard to send them. I was scared shitless of him, in case that wasn't clear. I was overawed. I was in love.
+</p>
+
+<p>
+I'm really bitter about it. I should have been talking to him so much more. I should have annoyed him as much as I could, made a nuisance of myself. I should have asked him questions in long stupid essays where he'd have to go apoplectic with rage and brim with citations at me until I was educated by sheer dint of force. I took too long to learn.
+(I took exactly as long as he expected me to, to learn.)
+</p>
+
+<hr />
+
+<p>
+I fucking miss him.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+not to be confused with anthropic bias. I'm realizing that this was one of his terms of art; (Bourdieu, Pierre 1992), who he was probably drawing from for this construction, refers to "scholastic" or "intellectualist" bias, but his arguments about reflexive anthropology can be strengthened by a fixpoint-brained person into a larger class of failure modes. I think this is what happened.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script data-isso="https://comments.itihas.review/"
+        data-isso-css-url="static/styles/isso.css"
+        src="https://comments.itihas.review/js/embed.min.js"></script>
+<section id="isso-thread">
+<noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+</div>
+</body>
+</html>

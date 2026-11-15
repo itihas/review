@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 14 Nov 2026 21:56:29 +0000</pubDate>
-  <lastBuildDate>Sat, 14 Nov 2026 21:56:29 +0000</lastBuildDate>
+  <pubDate>Sun, 15 Nov 2026 23:37:47 +0000</pubDate>
+  <lastBuildDate>Sun, 15 Nov 2026 23:37:47 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,24 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>Exact Humanities Reading List</title>
+    <link>https://itihas.review/hrl.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/hrl.html</guid>
+    <pubDate>Sun, 15 Nov 2026 15:32:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>teachers</title>
+    <link>https://itihas.review/teachers.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/teachers.html</guid>
+    <pubDate>Sun, 15 Nov 2026 15:15:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>ask a man how his day's been going</title>
     <link>https://itihas.review/ask_conq_how_his_day_s_been_going.html</link>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251031153441-metadata_takes_work.html</guid>
     <pubDate>Fri, 31 Oct 2025 07:13:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>The Garden and the Stream: A Technopastoral – Hapgood</title>
-    <link>https://itihas.review/the_garden_and_the_stream_a_technopastoral_hapgood.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/the_garden_and_the_stream_a_technopastoral_hapgood.html</guid>
-    <pubDate>Fri, 31 Oct 2025 07:12:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>It's hard to tell what's noteworthy in a garden.</title>
-    <link>https://itihas.review/20251031153441-it_s_hard_to_tell_what_s_noteworthy_in_a_garden.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251031153441-it_s_hard_to_tell_what_s_noteworthy_in_a_garden.html</guid>
-    <pubDate>Fri, 31 Oct 2025 07:09:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
