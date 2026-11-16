@@ -59,7 +59,8 @@ dfn{
 }
 em{
     font-style:italic;
-    font-weight:600
+    font-weight:600;
+    letter-spacing:-0.01em
 }
 h1{
     font-size:2em;
@@ -100,7 +101,10 @@ figure{
 hr{
     box-sizing:content-box;
     height:0;
-    overflow:visible
+    overflow:visible;
+    border:0;
+    border-top:1px solid #d3d3d3;
+    margin:1.5em 0
 }
 button,input,optgroup,select,textarea{
     font:inherit;
