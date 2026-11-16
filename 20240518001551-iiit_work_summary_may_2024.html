@@ -272,7 +272,7 @@ For my final project in Classical Text Reading I, I translated a portion of the 
 <p>
 Prof. PRK Rao originally suggested to me the research topic of heterotopia, and offered <a href="https://philosophynoworg/issues/107/The_Heterotopia_of_Facebook"><i>The Heterotopia of Facebook</i></a> as a starting point.
 I began by approaching this problem in terms of the <i>semiotics</i> of Facebook - how the system encodes social actions (e.g. the Like button), and how signals like this get exapted for other purposes and undergo semantic drift.
-I wanted to represent this type of effect formally, and to modify the classical representation of games in game theory to allow for player-driven changes to the game specifications. I was also motivated by (Chen, Jing and Micali, Silvio 2015), which discusses motivated mechanism design, and , which shows that the Vickrey auction is vulnerable to cheating by collusion, and expresses the “cheat” as a minor edit to the game specification. This in turn suggests a notion of edit distance across game mechanisms, and from there the possibility of constructing a stability metric in the induced space. Put together, the thesis was: mechanism changes can be strategic behaviour, so there ought to be a way to represent that behaviour as part of the game strategy.
+I wanted to represent this type of effect formally, and to modify the classical representation of games in game theory to allow for player-driven changes to the game specifications. I was also motivated by<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, which discusses motivated mechanism design, and<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, which shows that the Vickrey auction is vulnerable to cheating by collusion, and expresses the “cheat” as a minor edit to the game specification. This in turn suggests a notion of edit distance across game mechanisms, and from there the possibility of constructing a stability metric in the induced space. Put together, the thesis was: mechanism changes can be strategic behaviour, so there ought to be a way to represent that behaviour as part of the game strategy.
   Depending on how one operationalizes this project, several of the hard problems in game theory are subproblems to this one:
 </p>
 <ul class="org-ul">
@@ -287,9 +287,8 @@ I came up with several applications and approaches to this problem between 2017 
 <li><i>Metagames</i>:
 My first approach was to create a game where players could choose among games in a restricted way: exploring choices in a finite number of finite games, or an iterated choice of finite games. This reduces to an alternate way of representing iterated games, and can't be fairly described as having "dynamics" or "player edits" without further characterization.
 This approach runs fairly quickly into the problem of Hypergame paradox, popularized by William Zwicker in 1987: how to ensure that a self-referential structure of this kind is restricted enough to be finite, or remain within computability bounds that allow it to be useful?</li>
-<li><i>ATL</i>:
-put forward Alternating-Time Temporal Logic (ATL) as a way to express games which can be expressed as a concurrent game system - in other words, a graph that functions as the generator for an extensional game, with a coalition-aware solution concept that can be expressed and deduced on the graph and proven to hold for the generated game tree. I wrote a representation of ATL in Coq theorem prover, and used it to express a dominance relation over the set of ATL formulae that described the graph. Unfortunately, this relation was not computable in its original form.</li>
-<li><i>Nomic</i>:  a game first specified in ,as an illustration that a self-modifying ruleset cannot be written to preclude states where the rules become uninterpretable. Nomic is specified as an InitialSet of rules written in English and meant to be played by human agents; in traditional conceptions of <i>homo rationalis</i> there is no reason to play this game and no way to write a dominant strategy (as the InitialSet puts winning purely to chance). I attempted to create a model of just one element of the <i>Nomic</i> ruleset: players can both <i>read</i> and <i>write</i> the game specification; and provide an example game of Nomic (with a more restrictive InitialSet) for which a winning strategy is computable.
+<li><i>ATL</i>:<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup> put forward Alternating-Time Temporal Logic (ATL) as a way to express games which can be expressed as a concurrent game system - in other words, a graph that functions as the generator for an extensional game, with a coalition-aware solution concept that can be expressed and deduced on the graph and proven to hold for the generated game tree. I wrote a representation of ATL in Coq theorem prover, and used it to express a dominance relation over the set of ATL formulae that described the graph. Unfortunately, this relation was not computable in its original form.</li>
+<li><i>Nomic</i>:  a game first specified in<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>,as an illustration that a self-modifying ruleset cannot be written to preclude states where the rules become uninterpretable. Nomic is specified as an InitialSet of rules written in English and meant to be played by human agents; in traditional conceptions of <i>homo rationalis</i> there is no reason to play this game and no way to write a dominant strategy (as the InitialSet puts winning purely to chance). I attempted to create a model of just one element of the <i>Nomic</i> ruleset: players can both <i>read</i> and <i>write</i> the game specification; and provide an example game of Nomic (with a more restrictive InitialSet) for which a winning strategy is computable.
 Significant prior art exists in formally modeling <i>Nomic</i>, but none built to verify the thesis of the original paper: does self-modification inevitably lead to un-interpretability?</li>
 </ul>
 <p>
@@ -298,7 +297,7 @@ I didn't succeed in writing the formal representation, having run aground on the
 <ul class="org-ul">
 <li><i>Preference meronomy</i>: or part-whole relationships in coalitional strategies.
 Can a coalition be considered to have a preference? Since it possesses a winning strategy, and can be reasoned about in counterfactuals, one can induce a preference relation over outcomes that corresponds to a coalitional strategy. One can therefore explore how individual preferences compose into collective preferences.</li>
-<li><i>Property-based preferences</i>: using an intermediate representation to represent player reasoning about outcomes. describe a way to construct this, which I spent some time trying to use to represent player reasoning: by having the "properties" be true claims about the reachability of various outcomes from the node in question.</li>
+<li><i>Property-based preferences</i>: using an intermediate representation to represent player reasoning about outcomes.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup> describe a way to construct this, which I spent some time trying to use to represent player reasoning: by having the "properties" be true claims about the reachability of various outcomes from the node in question.</li>
 </ul>
 </div>
 </div>
@@ -310,7 +309,23 @@ Can a coalition be considered to have a preference? Since it possesses a winning
 <li><a href="20240624194522-iiit_work_summary_presentation_june_2024.html#ID-099a6785-05ab-44f4-8e3c-93cdf6a58e79">IIIT Work Summary Presentation June 2024</a></li>
 </ul>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Chen &amp; Micali (2015) Mechanism Design with Possibilistic Beliefs, Journal of Economic Theory, <a href="http://www.sciencedirect.com/science/article/pii/S0022053113001397">http://www.sciencedirect.com/science/article/pii/S0022053113001397</a>.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Ausubel, Milgrom &amp; others (2006) The Lovely but Lonely Vickrey Auction, Combinatorial auctions, <a href="http://www-siepr.stanford.edu/Papers/pdf/03-36.pdf">http://www-siepr.stanford.edu/Papers/pdf/03-36.pdf</a> (<a href="ausubellovely2006.html#ID-93db4ad9-d629-4bda-8478-1436f9b66bdf">my note</a>).</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Alur, Henzinger &amp; Kupferman (2002) Alternating-Time Temporal Logic, Journal of the ACM (JACM), <a href="http://dl.acm.org/citation.cfm?id=585270">http://dl.acm.org/citation.cfm?id=585270</a> (<a href="aluralternatingtime2002.html#ID-ece237c0-cc23-4868-97ec-6482b253051a">my note</a>).</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Suber (1990) Appendix 3: Nomic: A Game of Self-Amendment, , <a href="https://dash.harvard.edu/bitstream/handle/1/10288408/Peter%20Suber,%20%20Nomic%20.html?sequence=1">https://dash.harvard.edu/bitstream/handle/1/10288408/Peter%20Suber,%20%20Nomic%20.html?sequence=1</a> (<a href="suberappendix1990.html#ID-6e6b8672-0988-40ee-be9c-d4dced5398e7">my note</a>).</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Dietrich &amp; List (2013-08-01) Where Do Preferences Come From?, SSRN Electronic Journal, 10.2139/ssrn.1728510 (<a href="dietrichWherePreferencesCome2013.html#ID-3b68830e-457e-47e9-b387-079d062096a7">my note</a>).</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
 <script data-goatcounter="https://itihas.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
