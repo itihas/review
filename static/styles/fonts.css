@@ -40,7 +40,7 @@
     font-family: 'Libertinus Serif';
     src: url('LibertinusSerif-SemiBoldItalic.woff2') format('woff2'),
         url('LibertinusSerif-SemiBoldItalic.woff') format('woff');
-    font-weight: semibold;
+    font-weight: 600;
     font-style: italic;
     font-display: swap;
 }
