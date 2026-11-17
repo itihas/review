@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 16 Nov 2026 23:55:57 +0000</pubDate>
-  <lastBuildDate>Mon, 16 Nov 2026 23:55:57 +0000</lastBuildDate>
+  <pubDate>Tue, 17 Nov 2026 03:09:01 +0000</pubDate>
+  <lastBuildDate>Tue, 17 Nov 2026 03:09:01 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,42 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>thirst trap</title>
+    <link>https://itihas.review/thirst_trap.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/thirst_trap.html</guid>
+    <pubDate>Mon, 16 Nov 2026 19:02:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>praying it forward</title>
+    <link>https://itihas.review/praying_it_forward.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/praying_it_forward.html</guid>
+    <pubDate>Sun, 15 Nov 2026 17:23:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>autobiographical review</title>
+    <link>https://itihas.review/20260208165301-autobiographical_review.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20260208165301-autobiographical_review.html</guid>
+    <pubDate>Sun, 15 Nov 2026 17:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>404</title>
+    <link>https://itihas.review/404.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/404.html</guid>
+    <pubDate>Sun, 15 Nov 2026 16:29:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>Exact Humanities Reading List</title>
     <link>https://itihas.review/hrl.html</link>
@@ -57,15 +93,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/emerald_city.html</guid>
     <pubDate>Fri, 13 Nov 2026 17:57:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>praying it forward</title>
-    <link>https://itihas.review/praying_it_forward.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/praying_it_forward.html</guid>
-    <pubDate>Thu, 12 Nov 2026 20:09:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -547,15 +574,6 @@
     <description><![CDATA[]]></description>
   </item>
   <item>
-    <title>autobiographical review</title>
-    <link>https://itihas.review/20260208165301-autobiographical_review.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20260208165301-autobiographical_review.html</guid>
-    <pubDate>Sun, 08 Feb 2026 03:26:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
     <title>Review</title>
     <link>https://itihas.review/index.html</link>
     <author>nixbld@localhost (itihas)</author>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251101163345-i_ve_lived_in_many_houses.html</guid>
     <pubDate>Sat, 01 Nov 2025 04:42:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>There Is No Antimemetics Division (V1) @ Things Of Interest</title>
-    <link>https://itihas.review/there_is_no_antimemetics_division_v1_things_of_interest.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/there_is_no_antimemetics_division_v1_things_of_interest.html</guid>
-    <pubDate>Sat, 01 Nov 2025 03:12:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Metadata takes work</title>
-    <link>https://itihas.review/20251031153441-metadata_takes_work.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251031153441-metadata_takes_work.html</guid>
-    <pubDate>Fri, 31 Oct 2025 07:13:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>thirst trap</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">thirst trap</h1>
+<div class="page-meta">
+<span class="page-stage score-budding" title="review score: 4" role="img" aria-label="budding">🌿</span>
+<span class="page-mtimes">updated: <time datetime="2026-11-16T19:02">2026-11-16 Mon 19:02</time>, <time datetime="2026-11-16T18:27">2026-11-16 Mon 18:27</time></span>
+</div>
+<div class="page-refs" id="org230840c">
+<p>
+<span class="page-refs-label">refs:</span></p>
+<ul class="org-ul">
+<li><a href="https://www.tumblr.com/iamthelowercase/833493869015580672?source=share">https://www.tumblr.com/iamthelowercase/833493869015580672?source=share</a></li>
+</ul>
+
+</div>
+<p class="verse">
+One upon a time there was a beautiful woman,<br />
+And we all agreed that she very very beautiful.<br />
+When she died, we all wondered why.<br />
+<br />
+In the grand scheme of things,<br />
+There are enough ways to die that<br />
+We all agree are very beautiful as well,<br />
+And a fundamental lack,<br />
+A lack of earth and sky,<br />
+(or something in between, perhaps<br />
+something that fills the containers made<br />
+between the ineffable and inevitable)<br />
+&ndash; this feels insufficiently dead,<br />
+feels like something alive,<br />
+the death of a lack of which we<br />
+might treat as sensible enough<br />
+to kill someone, but would be<br />
+<em>unsatisfied</em> by &ndash;<br />
+Such things should not kill the beautiful.<br />
+<br />
+This woman died from a lack<br />
+of life, of love, of <i>care</i> &ndash;<br />
+and well, we were all<br />
+unsatisfied.<br />
+</p>
+
+<p>
+<a href="https://www.tumblr.com/iamthelowercase/833493869015580672?source=share">https://www.tumblr.com/iamthelowercase/833493869015580672?source=share</a>
+</p>
+
+<hr />
+
+<p>
+This is your reminder to hydrate. Drink some fucking water. No, I mean it. Get up, get some fucking water,
+</p>
+
+<p>
+(if you have access to electrolytes, put some of that in there too,)
+</p>
+
+<p>
+and <i>drink it</i>.
+</p>
+
+<p>
+Okay, are you back? Have you done it? Good.
+</p>
+
+<hr />
+
+<p>
+When I was a younger creature, early in my career, I took advantage of my health insurance for the very first time because for the first time, the UTI that had plagued me ever since the rains started (a common occurrence &ndash; changes in humidity tended to cause this to happen) did not abate so much as progress into a searing, overpowering, stabbing pain deep in my pelvis, continguous and co-occurring with an accompanying dull ache in the vicinity of my lumbar spine. I now know where my kidneys are! I've <i>felt</i> them. I recommend the knowledge itself, somatic access is always kind of nice and fun, but perhaps gain it some other way than I did.
+</p>
+
+<p>
+They did an ultrasound, and determined that I had a mild bacterial infection in my kidneys.
+</p>
+
+<hr />
+
+<p>
+They did not diagnose me with autism that day, but perhaps they should have. I think this is the autism diagnosis the world needs.
+</p>
+
+<p>
+It is very strange to me, in fact, that "drink water" is so high up in the homeostatic dependency chain, but encoded so far down. Thirst is not how I would have chosen to represent this requirement, given my givens. I would strongly prefer for such an impulse to be functionally more similar to the reasons I don't bend my knees the wrong way around &ndash; a mechanical impossibility combined with the extremely loud warning alarms of pain.
+</p>
+
+<p>
+I think what happened here is something like a <a href="https://www.lesswrong.com/posts/R3eDrDoX8LisKgGZe/sum-threshold-attacks">sum-threshold attack</a> in the medium of evolutionary pressures. Missing a drink of water <i>one</i> time does nothing at all, you see. It's only a concern when understood as the integral over glasses of water you have ingested over the 3-day window.
+</p>
+
+<p>
+So the implemented solution solves for the integral.
+</p>
+
+
+<p>
+It's a strong-link solution. In my environment I notice many cues to hydrate:
+</p>
+<ul class="org-ul">
+<li>The near-ubiquitous availability and salience of water in most social settings, including settings where food would be considered inapproriate.</li>
+<li>The longstanding and storied collection of social cues to eat and drink when others do.</li>
+<li>Water capacity to act as a carrier for flavours I like (this is fun, because it's the same effect that makes water so useful to my body &ndash; it's a solvent for salts both outside and inside the meatbag).</li>
+<li>It helps me regulate my internal temperature &ndash; one of the things water carries well is heat!<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>.</li>
+<li><p>
+Thirst. The dedicated set of somatic cues to do the thing.
+</p>
+
+<hr /></li>
+</ul>
+
+<p>
+Thirst is not just one thing. It's the dry throat, sure; but there's also the strange, subtle, pervasive interoceptive cue that I can only describe as <i>sticky gears</i>. My eyes don't open and close right. Moving my arms and legs brings the sense of struggling hydraulics. The notion that I might have to <i>get up</i> brings with it the sense that the day is stretching out before me, unfathomably long and getting longer, like a gob of wet bubblegum getting pulled apart by the hands of God, and me a dry wad of bubblegum stuck tenuously on top of it, wobbling and coming unglued as my anchor-point deforms.
+</p>
+
+<p>
+(Anybody else?)
+</p>
+
+<hr />
+
+
+<p>
+I didn't learn to recognize the feeling above as thirst until like late last year. Also, none of the social cues ever worked on me. I've had this feeling, for most of my adult life, that my body's constantly on the verge of falling apart.
+</p>
+
+<p>
+I think a lot of this feeling of precarity just <i>is</i> &ndash; not downstream of, not related to, not the emotional expression of, just <em>is</em> &ndash; the sensation of thirst.
+</p>
+
+
+<hr />
+
+
+<p>
+DRINK YOUR WATER.
+</p>
+
+<p>
+This has been a PSA.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+aside: hot drinks are almost always better than cold, in almost every weather. Hot water in a sweaty climate cools you down! A refreshing mint tea with honey in it replaces sugars, a little salt, and cues you to sweat. I'm aware that there are a diversity of opinions on this, and will gently suggest the diversity of metabolic compositions as one explanation and bow out from the controversy I feel that the attention I have drawn to this point will engender. the only reason I'm bringing it up is to run a <a href="https://www.henrikkarlsson.xyz/p/search-query">search query</a> for my fellow hot-tea-in-summer-drinking people.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>

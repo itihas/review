@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 16 Nov 2026 23:56:01 +0000</pubDate>
-  <lastBuildDate>Mon, 16 Nov 2026 23:56:01 +0000</lastBuildDate>
+  <pubDate>Tue, 17 Nov 2026 03:09:06 +0000</pubDate>
+  <lastBuildDate>Tue, 17 Nov 2026 03:09:06 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>thirst trap</title>
+    <link>https://itihas.review/thirst_trap.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/thirst_trap.html</guid>
+    <pubDate>Mon, 16 Nov 2026 19:02:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>emerald city</title>
     <link>https://itihas.review/emerald_city.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133300-relations_finding_all_posets_on_a_set_mathematics_stack_exchange.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:33:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>GitHub - zerotier/ZeroTierOne: A Smart Ethernet Switch for Earth</title>
-    <link>https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133200-github_zerotier_zerotierone_a_smart_ethernet_switch_for_earth.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:32:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
