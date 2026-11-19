@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>soupsperiment</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">soupsperiment</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="theloop">theloop</span></span> <span class="tag"><span class="empirical">empirical</span></span></span>
+</div>
+<p>
+So: <i>can</i> you taste a bay leaf in a soup bowl?
+</p>
+
+<p>
+My estimable colleagues in this empirically minded mystery cult take time on occasion to ritually assert their affiliations to empirical study. Here in this publication dedicated to this most sacred of sacraments &ndash; Let us look at the world! Let us <i>categorize</i> it into <i>parts</i> and determine their relations, their correlations! Let us attempt to perceive the joints of the world itself, and when we have perceived them let us take out our knives and <i>carve</i>!!!! &ndash; I humbly submit the record of my own novitiate endeavours, in a domain I hold quite close to my heart, indeed quite close.
+</p>
+
+<p>
+My stomach is, after all, right there, on the other side of my diaphragm. And while in the map of my body my nose and tongue may seem more distant, consider after all that on astronomical scales my entire body is smaller than our error bars for our state-of-the-art instrumentation.
+</p>
+
+<p>
+Let us, in the spirit of <i>philia</i> and <i>ludus</i>, of <i>ethos</i> and <i>pathos</i> and <i>logos</i> in turn,
+</p>
+
+<p>
+test each other!
+</p>
+<div id="outline-container-ID-experimental design" class="outline-2">
+<h2 id="ID-experimental design">experimental design</h2>
+<div class="outline-text-2" id="text-ID-experimental design">
+<p>
+We've written and submitted this whole portion of the whole thing to <i><a href="https://looploop.blog/">The Loop</a></i>'s preregistration committee before the first subject is ever tested.
+</p>
+
+<p>
+Now, bay leaf aromachemicals, I'm told, are supposed to be fat-soluble, and so we must have a fatty solvent. This doesn't stop me from suspecting its efficacy can translate well to a water-based broth, because, well, one man's ingredient is another friend's recipe, and all it takes to emulsify an oil in a water broth is a little protein or starch to give it a li'l gel matrix to anchor to.
+</p>
+
+<p>
+In these lights I construct our categories and reify them as CONCOCTIONS:
+</p>
+<ol class="org-ol">
+<li>coconut milk, neutral oil, salt</li>
+<li>coconut-milk-based soup</li>
+<li>water-broth soup</li>
+<li>water, cornstarch, neutral oil, and salt</li>
+</ol>
+
+
+<p>
+A COOK will prepare each of the above concoctions, at first without bay leaves, and portion them out into individual servings. Then the cook will add bay leaves (first bloomed in the neutral oil) to the pots, heat for five more minutes, and  portion them out once more into individual servings.
+</p>
+
+<p>
+A SECRET-KEEPER will create a MARKER-BASED LEGEND, and mark each of these serving cups on the bottom rim said legend, such that it is invisible to the cook; and array them next to the pots in groups. They will also NUMBER THE CUPS.
+</p>
+
+<p>
+The legend will work as follows:
+</p>
+<ul class="org-ul">
+<li>red-green-blue-black for each of the concoctions</li>
+<li>orange-purple for with vs without bay leaf.</li>
+</ul>
+
+<p>
+After double-checking that the serving has occurred as intended, the secret-keeper will give the READY signal, and we will proceed into our waitng pit of hungry, sniffly, shivering TEST SUBJECTS where they lay unsuspecting in our TEST SETTING &ndash; that is, a room of friends and colleagues who have noticed that it is a rainy day and would perhaps be willing to fill out a SURVEY FORM if it comes bundled with some soup.
+</p>
+
+
+<p>
+Said subjects will answer TWO SURVEY QUESTIONS on their respective SLIPS OF PAPER that they then fold up and submit to us. They will also hopefully refrain from identifying themselves in said slips of paper.
+</p>
+
+<p>
+The questions are as follows:
+</p>
+<ol class="org-ol">
+<li>Rate everything you tried!
+<ul class="org-ul">
+<li>9 entries with fields for cup number and score.</li>
+</ul></li>
+<li>What's the experiment about?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-ID-Results" class="outline-2">
+<h2 id="ID-Results">Results</h2>
+<div class="outline-text-2" id="text-ID-Results">
+<p>
+Find the raw data <a href="https://docs.google.com/spreadsheets/d/12MEfzU-srRwTWkMcUcR3UMQafjQEpd3wz7Xir_WftPk/edit?usp=sharing">in this gsheet</a>.
+</p>
+
+<p>
+We received 12 total entries; of these, two self-reported their disqualification in question 2, as requested, because they'd already heard about the experiment because they were in the room during its deisgn phase. (Though this is conjecture; they did not reveal their identities on the survey form.)
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Analytical methodology" class="outline-2">
+<h2 id="ID-Analytical methodology">Analytical methodology</h2>
+<div class="outline-text-2" id="text-ID-Analytical methodology">
+<p>
+Id' like to formally apologize to Alexander Wales for running my mouth last night about whtehr analysis counts as empricism. This whole exercise is accursed and useless without a hefty layer of principled interpretation to even begin to make sense of what's happening. As it stands, getting anything I'd not laugh at calling a conclusion from these apltry numerical offerings is like unto squeezing blood from a stone. And yet, having gone out there and collected the data, I feel so strongly convinced, in my heart of hearts, that it <i>ought</i> to be able to tell us <i>something</i>. <i>Anything</i>. I have touched the bones of the world! I have stared at the heart of a flower and rubbed the yellow dust of its propagation between my fingers! I thought I smelled God in the perfume of a frying bay leaf! Shouldn't I have <i>learned something</i>?
+</p>
+
+
+<p>
+Ahem.
+</p>
+
+<p>
+Anyway.
+</p>
+
+<p>
+I tried a groupby and a mean of each group, aware all the while that each axis of grouping available to me (8 buckets, 3 axes, 12 &ndash; TWELVE &ndash; datapoints) was already <i>definitionally</i> near to about as riddled with confound as it was possible to be and still hope to learn anything at all.
+(This shows that people really like coconut milk, and not much else.)
+</p>
+
+<p>
+Claude has informed me that the instrument I seek is not a linear regression, but a mixed linear model; machinery that GSheets in its wisdom has not seen fit to provide me. Why do they always lock up the power tools in places I'd have to vibe up properly if I wanted to get anywhere properly with them.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Conclusions and conjectures" class="outline-2">
+<h2 id="ID-Conclusions and conjectures">Conclusions and conjectures</h2>
+<div class="outline-text-2" id="text-ID-Conclusions and conjectures">
+<p>
+Coconut milk is tasty. Vegans everywhere (those without coconut allergies, anyway) agree.
+</p>
+
+<p>
+The rest will take a moment to confirm.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Qualitative analysis (i.e. my own opinions, which I get to call science because I'm consecrated into the clan of the qualified opinion havers now)" class="outline-2">
+<h2 id="ID-Qualitative analysis (i.e. my own opinions, which I get to call science because I'm consecrated into the clan of the qualified opinion havers now)">Qualitative analysis (i.e. my own opinions, which I get to call science because I'm consecrated into the clan of the qualified opinion havers now)</h2>
+<div class="outline-text-2" id="text-ID-Qualitative analysis (i.e. my own opinions, which I get to call science because I'm consecrated into the clan of the qualified opinion havers now)">
+<p>
+Folks conjectured wildly about what it was we were actually trying to test; absolutely nobody guessed bay leaf to be among the differentiators. This despite a faint greenish tinge in both the cornstarch and coconut milk concoctions, which I thought was a dead giveaway.
+</p>
+
+<p>
+The closest guess was someone who asked if this was a leave-some-out ingredient attribution (not in those words), <i>without</i> specifying which ingredient.
+</p>
+
+<p>
+Two people had guesses that it was about coconut milk. Seeing the data, I'm not surprised; the single biggest single-factor positive effect on flavor was coconut milk. Tracks, and fair. Nature's emulsions usually beat ours, when we're not trying very hard to beat them. In practice, I used the same mirepoix base for both broths; coconut was indeed a little something extra.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Problems with the design and execution" class="outline-2">
+<h2 id="ID-Problems with the design and execution">Problems with the design and execution</h2>
+<div class="outline-text-2" id="text-ID-Problems with the design and execution">
+</div>
+<div id="outline-container-ID-Methodological hiccups" class="outline-3">
+<h3 id="ID-Methodological hiccups">Methodological hiccups</h3>
+<div class="outline-text-3" id="text-ID-Methodological hiccups">
+<ul class="org-ul">
+<li>Our sample size was very very small.</li>
+<li>Respondent 6 rated one thing 6? Unclear what exactly was up there.</li>
+<li>Respondent 11 rated on a scale of 10, and asked me to normalize by dividing by 2. This will result in off-by-one-ish effects. Fortunately (?), they started from 0, which I've already decided to normalize to 1.</li>
+<li>Speaking of zeros &ndash;several other people rated 0s for some things. Fair. Some things feel like a zero. I should have given you all Likert bubbles. This was a fault of the form.</li>
+<li>I had to cut the experiment short because I'd forgotten I had an appointment. One of my gracious editors helpfully offered to clean up the mess we'd left on the island. I thanked him and dashed off, having entirely forgotten that I hadn't taken any note of the key on the bottom. An hour and a half later, I could be found fishing the cups out of the trash, dictating the number-color triads to a friend I'd flagged down.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Regrets in the late night" class="outline-3">
+<h3 id="ID-Regrets in the late night">Regrets in the late night</h3>
+<div class="outline-text-3" id="text-ID-Regrets in the late night">
+<ul class="org-ul">
+<li>Should we have been <i>more</i> clear about what was being tested? Or was this the correct level of obfuscation of intent? I'm torn. Perhaps I just dislike withholding information I think is cool; perhaps in subjective experimentation you only ever really get anywhere when you lead the human to the funky-tasting mostly-water with a few more steps.</li>
+<li>I found myself aesthetically displeased with the amount of wastage involved in setting this experiment up in a hygienic and safe manner. Individual tasitng cups for everybody, plus tasting spoons to taste, plus fresh utensils and cups for folks worried about flavour cross-contamination&hellip;</li>
+<li>Speaking of which, I would have liked to have a policy about flavour cross-contamination. I believe that this problem was adequately mitigated by letting people take their bepoke best shots at tasting.</li>
+<li>These are not the conditions under which one enjoys a bowl of soup. To do this <i>right</i>, I'd have to have hosted a dinner party &ndash; one in which, in fact, I provided a variety of soups, whose similarity to each other would only be suspiciously remarked upon by those not in the know. We'd have an army of helpful, near-invisible service staff, checking in on the diners' satisfaction with the meal as a whole, making close note of expressions, speed and quantity of consumption, unforced commentary. This whole affair would of course need a large and diverse enough sample size that we must of course host at a sutiable venue; and of course to gather <i>good</i> data about food, we cannot study it in isolation. We'd have to hold these monthly, inviting a great variety of people, on the thinnest of external excuses. Was this what hosting was, once upon a time? A/B testing on your undoubtedly clued-in guests?</li>
+<li>Actually, no, wait, what I'm actually realizing is that I already know who gets to do this in the modern day: !this sort of thing is a huge part of what makes working at an ad-tech shop fun.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Resource constraints" class="outline-3">
+<h3 id="ID-Resource constraints">Resource constraints</h3>
+<div class="outline-text-3" id="text-ID-Resource constraints">
+<ul class="org-ul">
+<li>It is currently 23:34 and I have to hit publish. Given more time I'd have written a shorter, tastier, better designed study.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-Acknolwedgments" class="outline-2">
+<h2 id="ID-Acknolwedgments">Acknolwedgments</h2>
+<div class="outline-text-2" id="text-ID-Acknolwedgments">
+<ul class="org-ul">
+<li><a href="https://www.mutuallyassuredseduction.com/">Natalia</a>, for doing the broth grocery run while I schemed and planned and underwent a preregistration review round and printed things out &ndash; and then doing another when it turned out that I'd overestimated the Lighthaven kitchens and assumed they just had cans of coconut milk on hand.</li>
+<li>Lighthaven, for the justified esteem I hold its kitchen in. This whole thing should not have been this easy to put together in an afternoon.</li>
+<li><a href="https://wadapan.substack.com/">wadapan</a>, for acting as the secret keeper, creating the legend, and going back and forth marking up cups.</li>
+<li><a href="https://vishalblog.substack.com/">Vishal</a>, for chopping my onion (and stirring my soups while I cried at the onion <i>he</i> had chopped).</li>
+<li>The good residents of the building I was cooking these soups in, for tolerating a lot of logistical hullaballoo.</li>
+<li>And finally, the good editors of <i><a href="https://looploop.blog/">The Loop</a></i>, for inspiring this entire exercise through an alchemical combination of nerd-sniping, peer pressure, environmental structure, and timely logistical and editorial support.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>
