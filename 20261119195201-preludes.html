@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Preludes</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Preludes</h1>
+<div class="page-meta">
+<span class="page-stage score-seedling" title="review score: 2" role="img" aria-label="seedling">🌱</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span></span>
+<span class="page-mtimes">updated: <time datetime="2026-11-19T21:26">2026-11-19 Thu 21:26</time>, <time datetime="2026-11-19T21:26">2026-11-19 Thu 21:26</time>, <time datetime="2026-11-19T21:25">2026-11-19 Thu 21:25</time></span>
+</div>
+<div id="outline-container-ID-Game night" class="outline-2">
+<h2 id="ID-Game night">Game night</h2>
+<div class="outline-text-2" id="text-ID-Game night">
+<p>
+Imagine it's board game night.You and your friends want to play a game. But you don't yet know which.
+</p>
+
+<p>
+As may happen in some circles, someone says, "Wait. Why don't we make a game out of picking the game? We'll take turns picking. Rock-paper-scissors to determine turn order."
+</p>
+
+<p>
+As may happen in some circles, your first player says, "let's play the game-picking game! Same turn order as the above."
+</p>
+
+<p>
+This is deemed hilarious, roundly praised as a grand joke.
+</p>
+
+<p>
+After a few rounds of selecting the game-picking game, a real game gets chosen.
+</p>
+
+<p>
+What is a "real" game? Why?
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Hypergame" class="outline-2">
+<h2 id="ID-Hypergame">Hypergame</h2>
+<div class="outline-text-2" id="text-ID-Hypergame">
+<p>
+Above we describe a variant of <i>hypergame</i>, a mathematical puzzle first described by Zwicker<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> to a class of students as a variant of Russell's paradox. (Is hypergame finite?) It isn't, as he later realized; it's a variant of the <a href="https://en.wikipedia.org/wiki/Burali-Forti_paradox">Burali-Forti paradox</a>, which loosely says that the ordinal numbers can't form a set on pain of antinomy.
+</p>
+
+<p>
+By <i>choosing</i>, we're <i>counting</i>, you see. If we chose to play hypergame forever, hypergame would never end. That means it isn't a game at all, and shouldn't have been among the choices.
+</p>
+
+<p>
+There: now I've given you a plausible-enough just-so story, and derived from it a contrived spherical cow. High-decouplers rejoice.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Social choice functions" class="outline-2">
+<h2 id="ID-Social choice functions">Social choice functions</h2>
+<div class="outline-text-2" id="text-ID-Social choice functions">
+<p>
+You know that old adage that "there's enough food in the world for nobody to go hungry &ndash; it's just a matter of distribution?"
+</p>
+
+<p>
+Let's try to solve a piece of that here.
+</p>
+
+<p>
+Abstract away, if you will, the challenges of <i>getting</i> everything everywhere; imagine an Oracle that will fulfill any distribution of resources you choose, just as soon as you can manage to all choose it. One time, one wish. Rezone the farms, earmark the grocery bags, end to end.
+</p>
+
+<p>
+Any function that solves for this is called a <i>social choice function</i>. If performed in the style we were all excited about back in the 30s and 40s, it would be a <i>Bergson-Samuelson social welfare function</i>.
+</p>
+
+<p>
+Anyway, we can't write these. Or, well, we can, but we won't all ratify them. Or, well, maybe we will, but if
+</p>
+
+<ul class="org-ul">
+<li>We're trying to make sure that we make all choices that would make <i>everybody</i> happier, i.e. nobody's forgetting ethical chocolate while ethical chocolate's on the cards.</li>
+<li>We're trying to write a <i>total</i> allocation of <i>everything we can</i>; we must know what to do with the Nesquik and the durian alike.</li>
+<li>Relatedly: we're trying not to flip how apples are allocated relative to oranges when we try to introduce the question of how to allocate bananas. This is finicky and horrible but can you think of a better way to update the function without getting Dutch-booked by a bad actor? Remember that we <i>all</i> have to ratify this.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup></li>
+<li>No one person is calling all the shots. No dictators.</li>
+</ul>
+
+<p>
+Well, we can't. No such function exists.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Ranked choice voting" class="outline-2">
+<h2 id="ID-Ranked choice voting">Ranked choice voting</h2>
+<div class="outline-text-2" id="text-ID-Ranked choice voting">
+<p>
+You watch Alaska's 2026 midterms with breathless envy. If only, you think, I could vote under a system this good. If only I could vote seven times on one ballot. If only I could watch <i>myself</i> converse with ten thousand others &ndash; or a hundred million, or two billion &ndash; as our <i>second preferences</i> were taken into account. <i>First-past-the-post</i> is a pretty nice way to say <i>my way or the highway</i>. It's a pretty nice way to say <i>my job is not to worry about those people</i>.
+</p>
+
+<p>
+There's a system out there, in use today, that does on the merits just seem <i>better</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Locally rational" class="outline-2">
+<h2 id="ID-Locally rational">Locally rational</h2>
+<div class="outline-text-2" id="text-ID-Locally rational">
+<p>
+You go to the market. Tangerines are in season. You weren't craving them before, but now suddenly the dream of the juice fills your mouth. You replace the orange juice on the shelf from your basket. Five minutes ago, you were debating whether you needed the chocolate really, but now the chocolate can stay.
+</p>
+
+<p>
+Tonight's dessert is taking shape in your mind as you cross to the checkout, humming.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-P.S." class="outline-2">
+<h2 id="ID-P.S.">P.S.</h2>
+<div class="outline-text-2" id="text-ID-P.S.">
+<blockquote>
+<p>
+I
+</p>
+
+<p>
+The winter evening settles down
+With smell of steaks in passageways.
+Six o’clock.
+The burnt-out ends of smoky days.
+And now a gusty shower wraps
+The grimy scraps
+Of withered leaves about your feet
+And newspapers from vacant lots;
+The showers beat
+On broken blinds and chimney-pots,
+And at the corner of the street
+A lonely cab-horse steams and stamps.
+</p>
+
+<p>
+And then the lighting of the lamps.
+</p>
+</blockquote>
+<p>
+&mdash; T.S. Eliot
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Zwicker (1987-06) Playing Games with Games: The Hypergame Paradox, Am. Math. Monthly, <a href="http://dx.doi.org/10.2307/2322840">http://dx.doi.org/10.2307/2322840</a> (<a href="zwickerplaying1987.html#ID-7e905eee-5e1d-4659-aa06-05b733fc24a6">my note</a>).</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+this double negative really bothers me. I get that it's pointing at the positive action of decoupling, not the negative space where coupling ought to be, but you <i>must</i> notice the pejorative connotations and how the unnecessarily involution smacks of copium to an uninitiated ear &ndash; forgive me, never mind, I presume that was out of scope for the coinage.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Debate rages on how to construct this axiom; what constraints do you want to place on your add-alternative operation, any what for? What failure modes are you trying to protect against? What does your spherical cow need to do in your model?
+Fortunately for me this is only a prelude.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Sen (1977) Social Choice Theory: A Re-Examination, Econometrica, <a href="http://www.jstor.org/stable/1913287">http://www.jstor.org/stable/1913287</a>.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>

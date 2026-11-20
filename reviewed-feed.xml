@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 19 Nov 2026 07:53:00 +0000</pubDate>
-  <lastBuildDate>Thu, 19 Nov 2026 07:53:00 +0000</lastBuildDate>
+  <pubDate>Fri, 20 Nov 2026 05:30:33 +0000</pubDate>
+  <lastBuildDate>Fri, 20 Nov 2026 05:30:33 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,29 @@
   </image>
 
   <item>
+    <title>Preludes</title>
+    <link>https://itihas.review/20261119195201-preludes.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/20261119195201-preludes.html</guid>
+    <pubDate>Thu, 19 Nov 2026 21:26:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>soupsperiment</title>
+    <link>https://itihas.review/soupsperiment.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/soupsperiment.html</guid>
+    <pubDate>Wed, 18 Nov 2026 23:48:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>live migrations</title>
     <link>https://itihas.review/live_migrations.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/live_migrations.html</guid>
-    <pubDate>Tue, 17 Nov 2026 23:23:00 +0000</pubDate>
+    <pubDate>Tue, 17 Nov 2026 23:57:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -903,24 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20210721200800-cfar_modules.html</guid>
     <pubDate>Tue, 04 Nov 2025 03:48:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>run a stack of processes</title>
-    <link>https://itihas.review/20251103150626-run_a_stack_of_processes.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251103150626-run_a_stack_of_processes.html</guid>
-    <pubDate>Mon, 03 Nov 2025 15:08:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>Early guesses at Toricelli's shape</title>
-    <link>https://itihas.review/20250424124816-early_guesses_at_toricelli_s_shape.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250424124816-early_guesses_at_toricelli_s_shape.html</guid>
-    <pubDate>Sat, 01 Nov 2025 15:52:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
