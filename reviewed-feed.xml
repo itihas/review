@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Fri, 20 Nov 2026 08:04:33 +0000</pubDate>
-  <lastBuildDate>Fri, 20 Nov 2026 08:04:33 +0000</lastBuildDate>
+  <pubDate>Sat, 21 Nov 2026 03:30:18 +0000</pubDate>
+  <lastBuildDate>Sat, 21 Nov 2026 03:30:18 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -25,11 +25,20 @@
   </image>
 
   <item>
+    <title>live migrations</title>
+    <link>https://itihas.review/live_migrations.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/live_migrations.html</guid>
+    <pubDate>Fri, 20 Nov 2026 19:15:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
     <title>Preludes</title>
     <link>https://itihas.review/20261119195201-preludes.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20261119195201-preludes.html</guid>
-    <pubDate>Thu, 19 Nov 2026 21:26:00 +0000</pubDate>
+    <pubDate>Thu, 19 Nov 2026 22:25:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -39,15 +48,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/soupsperiment.html</guid>
     <pubDate>Wed, 18 Nov 2026 23:48:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>live migrations</title>
-    <link>https://itihas.review/live_migrations.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/live_migrations.html</guid>
-    <pubDate>Tue, 17 Nov 2026 23:57:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>

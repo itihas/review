@@ -204,11 +204,12 @@
 <div id="content" class="content">
 <h1 class="title">live migrations</h1>
 <div class="page-meta">
-<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-stage score-seedling" title="review score: 3" role="img" aria-label="seedling">🌱</span>
 <span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="sre">sre</span></span></span>
+<span class="page-mtimes">updated: <time datetime="2026-11-20T19:15">2026-11-20 Fri 19:15</time>, <time datetime="2026-11-20T18:21">2026-11-20 Fri 18:21</time></span>
 </div>
 <p>
-(an accounting parable in three parts; part one of three)<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+(an accounting parable in the process of haphazard expansion; to be later divided into three parts)<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
 </p>
 
 
@@ -272,6 +273,30 @@ You just need to figure out <i>which two things</i> you want to pick <i>for each
 <p>
 Consider our service: a social media app for birdwatchers to log sightings of birds, tagged with a GPS location and short messages. These "tweets", if you will, are sent out to other birdwatchers in your area, so they can keep an eye out for the same species &ndash; or perhaps the same specimen! &ndash; of bird.
 </p>
+
+<p>
+It's day three. You finally have all your accounts on everything set up. You get on a call with the CTO and the person who, you are told, is going to be your primary point of contact for this whole thing.
+</p>
+
+<p>
+They will screenshare draw.io, and draw you five boxes. This, they say, is <em>the deployment</em>.
+</p>
+
+<p>
+They are wrong. Not wrong, exactly, but they have a certain way of imagining things. A CTO, a product manager, these types of people have very particular ways of imagining the thing you're both looking at together. To them, these things are like <em>capabilities</em> &ndash; or perhaps more baldly, <em>waterwheels in the revenue stream</em>. They think, <i>what does my product do?</i> And then, <i>what does it need to do it?</i> And that's what they tell you.
+</p>
+
+<p>
+This is not quite what you need to know. Here's what <i>you</i> care about:
+</p>
+<ul class="org-ul">
+<li>What's actually happening in there? Forget what it's <i>meant</i> to do: <em>what's at all  actually doing?</em></li>
+<li>What will hurt when it breaks, and how much? <em>What's going to get them mad at me?</em></li>
+</ul>
+
+<p>
+So. Armed with the variously well-grounded map your liaison/leadership has given you, you embark upon your forensic expedition.
+</p>
 </div>
 <div id="outline-container-ID-Get to know your services" class="outline-3">
 <h3 id="ID-Get to know your services">Get to know your services</h3>
@@ -280,17 +305,41 @@ Consider our service: a social media app for birdwatchers to log sightings of bi
 <li><b>API</b> serves the API request made by the app and the website. Straightforward, cleanly. Deployed as a Docker container.</li>
 <li><b>Frontend</b> is the website. You get a Github repo when they tell you about this, as is only right. It's served by the load balancer straightforwardly, but you have a tiny little service that tracks user sessions. It's mostly redundant with the app code, really. Probably entirely redundant. Should have been deleted eight months ago, but there was this whole feature push, and then lots happened. Anyway, they're working on it.</li>
 <li>Inside the API code, you have a Terraform script that spins up a <b>Memcached</b>.  It's only for testing.</li>
-<li>Production does use <b>Redis</b>, though, to keep track of GPS coordinates. This is how the API decides which collection of tweets to serve to which user. It's quite a clever use of GIS. The logic for it all lives in API, where you note approvingly that the Redis endpoint is configured via an environment variable &ndash; and then, less approvingly, note that the environment variable is overridden in the <code>src/config/vars.go</code>, if <code>IS_DEV</code> is set to true. A search for <code>IS_DEV</code> turns up no other usage.</li>
-<li>There's a <b>photo bucket</b> cached at edges, which the CTO tells you is informed by the Redis GIS data but the logic for which will take you 3 weeks to get somebody to show you where and how. The backing store is an object store. This sort of thing is, if not S3, an <i>S3-like</i> that "speaks" the S3 API. In our case let's say it's just S3.</li>
-<li><b>bg</b> is a server running in a virtual machine with a homebrewed Github actions deployment pipeline and whose IP address is hardcoded in a dozen places in the code. It calculates thumbnails, recognizes birds, runs the recommender algorithm, and also refers to the Redis. (This is deemed okay and safe because bg doesn't <i>write</i> to any of the production stores unless the call to it is about production data.) You are seized at 11:30PM one Tuesday night with primordial terror, and wake up to check whether Redis is the <i>only</i> place where GIS data is written. You note with relief that of course it's also written to the Postgres database, and are vaguely ashamed for having needed to check. These are competent people. These are your peers. These people have been here since the beginning of this company, and could maybe just buy you? The person, wholesale? &ndash; considering the equity they've accrued. You should have more respect.</li>
-<li>There's <b>batch</b>, which is importantly different from <b>bg</b> in that it primarily exists to update the bird-recognition models. It downloads and uploads massive corpora of photo data from the photo bucket on a daily basis &ndash; seemingly over the <i>public</i> internet. You breathe deep.</li>
-<li>Two weeks in, you discover the secrets database. This one you've prepared for. You click back out, run a script to grep for every secret-key-like string in every repository you've been given access to, and save the results to a file. You have already decided that outside of this measure, you will avoid the rest of the question for as long as you possibly can.</li>
-<li>And of course, there's the <b>database</b>. Seven copies of three databases, in fact; all on separate database instances, of course, for sanitation reasons. Which for which? Some are for testing or staging environments; for others, we create dummy databases in the build scripts, because they're small and we don't need to do UAT (User Acceptance Testing, otherwise known as <i>it's so hard to fake convincing userdata that we just renamed you Oogle Boogle living at 1234 Fivesix Lane in our testing environment and called it a day</i>) on them. Each in its dignity is possessed of a storied history of schema migrations; there is real design thought put into the shape of their entities and relations. Too bad they all use the default RDS postgres config, but that's easily enough fixed.</li>
+<li>Production does use <b>Redis</b>, though, to keep track of GPS coordinates. This is how the API decides which collection of tweets to serve to which user. It's quite a clever use of GIS. The logic for it all lives in API, where you note approvingly that the Redis endpoint is configured via an environment variable &ndash; and then, less approvingly, note that the environment variable is overridden in the <code>src/config/vars.go</code>, if <code>IS_DEV</code> is set to true. A search for <code>IS_DEV</code> across every code repo you have access to turns up no other uses of <code>IS_DEV</code>, anywhere.</li>
+<li>There's a <b>photo bucket</b> cached at edges, which the CTO tells you is informed by the Redis GIS data but the logic for which will take you 3 weeks to get somebody to show you where and how. The backing store is an object store. This sort of thing is, if not S3, an <i>S3-like</i> that "speaks" the S3 API. It shouldn't be surprising, and it isn't. It's just S3. (The buckets are atrociously named, but the buckets are always atrociously named. You yourself have never named a bucket well in your life; every time you try, the sight of the form field inspires you to black out for thirty seconds and then it exists and it's called <code>mealsquare3-2_sandbox</code> and you don't care anymore so you don't change it.)</li>
 </ul>
 
 
 <p>
-And there we have it: our rogues' gallery.
+Breathe. We're only halfway through.
+</p>
+
+
+<ul class="org-ul">
+<li><b>bg</b> is a server running in a virtual machine with a homebrewed Github actions deployment pipeline and whose IP address is hardcoded in a dozen places in the code. It calculates thumbnails, recognizes birds, runs the recommender algorithm, and also refers to the Redis. (This is deemed okay and safe because bg doesn't <i>write</i> to any of the production stores unless the call to it is about production data.) You are seized at 11:30PM one Tuesday night with primordial terror, and wake up to check whether Redis is the <i>only</i> place where GIS data is written. You note with relief that of course it's also written to the Postgres database, and are vaguely ashamed for having needed to check. These are competent people. These are your peers. These people have been here since the beginning of this company, and could maybe just buy you? The person, wholesale? &ndash; considering the equity they've accrued. You should have more respect.</li>
+<li>There's also <b>batch</b>, which is importantly different from <b>bg</b> in that it primarily exists to update the bird-recognition models. It downloads and uploads massive corpora of photo data from the photo bucket on a daily basis &ndash; seemingly over the <i>public</i> internet. You breathe deep.</li>
+<li>Two weeks in, you discover the <b>secrets management system</b>. This one you've prepared for, and you were prepared to be more horrified than you are. At least it exists, you know? At least it appears that they don't <i>need</i> to send each other secrets on Slack. (Although, you know, they probably still do.) Are you supposed to have access to these? Probably if they could figure out how to make it possible for you to do your work <i>without</i> needing access to these, they wouldn't need you in the first place. You click back out, run a script to grep for every secret-key-like string in every repository you've been given access to, and save the results to a file. You have already decided that outside of this measure, you will avoid the rest of the question for as long as you possibly can.</li>
+</ul>
+
+<p>
+Breathe again. The most important parts:
+</p>
+
+<ul class="org-ul">
+<li>The <b>database</b>. Seven copies of three databases, in fact; all on separate database instances, of course, for sanitation reasons. Which for which? Some are for testing or staging environments; for others, we create dummy databases in the build scripts, because they're small and we don't need to do UAT (User Acceptance Testing, otherwise known as <i>it's so hard to fake convincing userdata that we just renamed you Oogle Boogle living at 1234 Fivesix Lane in our testing environment and called it a day</i>) on them. Each in its dignity is possessed of a storied history of schema migrations; there is real design thought put into the shape of their entities and relations. Too bad they all use the default RDS postgres config, but that's easily enough fixed.</li>
+<li>The <b>virtual networks</b>. These exist, but nothing uses them correctly. Though you were forewarned, you'd forgotten &ndash; perhaps you'd repressed the knowledge in horror &ndash; the API server talks to the database <i>over the public internet</i>. It's hard to find words for how scary this is. It's like these people have never heard of .</li>
+</ul>
+
+
+
+<p>
+Exhale. We're done. This is as good as it's going to get.
+There we have it: our rogues' gallery
+It's been three days and you owe these people a plan. A <i>roadmap</i>, as it were.
+</p>
+
+<p>
+You know you don't understand everything you need to to guarantee that you will break nothing along the way. To guarantee that, you'd need years of study.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup> So what you need to find out next is the answer to your question 2.
 </p>
 </div>
 </div>
@@ -298,10 +347,21 @@ And there we have it: our rogues' gallery.
 <h3 id="ID-What are your SLOs?">What are your SLOs?</h3>
 <div class="outline-text-3" id="text-ID-What are your SLOs?">
 <p>
-What are your service obligations? What's going to make your employer tsk at the inconvenience, vs stay up all night on the call with you, asking for an update every fifteen minutes? What costs anxiety, vs what costs money?
-In other words: what is your <i>real</i> priority order for things to go wrong?
-Get clear on this early.
+In other words, <em>what will get them mad at me?</em>
 </p>
+
+<p>
+What are your service obligations? What's going to make your employer tsk at the inconvenience, vs stay up all night on the call with you, asking for an update every fifteen minutes? What costs anxiety, vs what costs money?
+</p>
+
+<p>
+In other words: what is your <i>real</i> priority order for things to go wrong?
+</p>
+
+<p>
+Get clear on this early. Get <i>numerically</i> clear on this early, if you can. How many minutes of downtime can you tolerate for this exercise? What's the conversion rate of scheduled to unscheduled? Weekend to weekday? Day to night?<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+</p>
+
 
 <ol class="org-ol">
 <li>Our app cannot lose data: ornithology itself will wither on the vine. Tweets are <i>scientific posterity</i>. They are also a bedrock of user and community faith. Therefore, the Postgres is your baby, the thing you will protect with your life and tuck in at night. This is usually how these things go; data above all.</li>
@@ -309,17 +369,51 @@ Get clear on this early.
 <li>Duplicate or corrupted writes are potentially harmful to real user data, but serving incorrect things for brief windows is a somewhat expected risk for our apps' users. So long as any errors are corrected and "tweeted" by the company account, this is at worst an embarrassment.</li>
 <li>Downtime in non-critical regions is probably fine, if scheduled well in advance. Management will grumble but concede when you argue the point in terms of the more important priorities.</li>
 </ol>
+
+
+<p>
+People don't like thinking about things going wrong. So how do you get these answers without guesswork?
+</p>
+
+<p>
+There are a couple of ways, but one very reliable way is to figure out where the engineering effort has already gone. Whatever gets more love is what matters more.
+</p>
+
+<p>
+If it's a good outfit, the architecture will reflect these priorities.
+</p>
+
+<p>
+So you ask:
+</p>
 </div>
 </div>
 <div id="outline-container-ID-What's your current CAP compromise?" class="outline-3">
 <h3 id="ID-What's your current CAP compromise?">What's your current CAP compromise?</h3>
 <div class="outline-text-3" id="text-ID-What's your current CAP compromise?">
 <p>
+The <a href="20250126210201-cap_theorem.html#ID-23e10c0c-33a4-49c9-9518-e3de14702a30">CAP theorem</a> is a magnificent little parable about the constraints networked phenomena operate under. Briefly, it says, if you're splitting work among a collection of machines, you get to pick any two of:
+</p>
+<ul class="org-ul">
+<li>collection of machine that always agree</li>
+<li>collection of machines that answer quickly</li>
+<li>collection of machines that don't factionalize into competing collections</li>
+</ul>
+
+<p>
+Which two an org picks for its services, in which cases, will tell you what their priorities are.
+</p>
+
+<p>
 Ornithologists want to know what's in the area within seconds, or at worst minutes; even if one time in ten the info is bad, they'd rather hear about it than not.
 </p>
 
 <p>
 Therefore our architecture prioritizes Availability. We have network edges, geospatially sharded; aggregation to the central deployment takes minutes verging to hours for photodata.
+</p>
+
+<p>
+Okay. With this, you feel like you have a handle on where you're at.
 </p>
 </div>
 </div>
@@ -356,22 +450,71 @@ Here's the secret to how this all works:
 </p>
 
 <p>
-Put the most critical thing in the innermost change window. Treat it as the pivot-point of the change. How long will it take to cut it over?
+Write a dependency tree. then take it up in your hands; and peel it open like an orange. Split the leaves of the tree, and let them fall onto the calendar wherever gravity and linkage naturally takes them.
 </p>
 
 <p>
-This is your atomic step. Build outwards from here.
+Lo: you have a Gantt chart.
+</p>
+</div>
+<div id="outline-container-ID-Okay, here's what I mean:" class="outline-3">
+<h3 id="ID-Okay, here's what I mean:">Okay, here's what I mean:</h3>
+<div class="outline-text-3" id="text-ID-Okay, here's what I mean:">
+<p>
+Every step of this cutover is a source-target pair &ndash; i.e. the though you're moving, and where it's moving to. A start state, and end state. Each of these pairs makes a change window. Your job is to figure out the order these timestamps go in, and to do that, you've got to figure out how these change windows relate to each other. To do that, you need three pieces of information:
+</p>
+<ul class="org-ul">
+<li>which services depend on which (and which features of their dependencies they need). For this you'll write a <em>dependency graph</em>.</li>
+<li>what tasks are involved for each individual migration, and how long they'll take. This is just you todo, or your <em>effort estimate</em> if you're being fancy / paid by the hour.</li>
+<li>when certain changes are being made, certain others <em>cannot</em> be made. Write out your matrix of <em>change locks</em>, or alternately your <em>freeze protocol</em>.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup></li>
+</ul>
+
+
+<p>
+Here's how you're going to use these three pieces of information, once you have them.
+</p>
+<ul class="org-ul">
+<li>For any pair of services, either:
+<ul class="org-ul">
+<li>A depends on B (direct ancestry)</li>
+<li>A and B are cousins (common ancestor)</li>
+</ul></li>
+<li><em>If A depends on B, then A is inside B.</em> Put another way: whenever you move something over, it should already have everything in the new place that it needs to start running. This will leave you with some ties to break, which you break with the next rule:</li>
+<li>Now, if A and B are instead cousins:
+<ul class="org-ul">
+<li><em>If  A takes longer than B, A starts earlier than B.</em></li>
+<li>Of course, if they both take around the same amount of time:
+<ul class="org-ul">
+<li><em>If A starts a lock, start A later</em>.</li>
+<li>If none of these are a tiebreaker, it doesn't really matter. Do what's fun for you.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+Like I said, peel the dependency tree open like an orange. This is the best possible way to phrase this sentiment. There are no better metaphors available.<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>
+</p>
+
+<p>
+You shall communicate this to your supervisors/clients/worried onlookers. You shall especially <i>especially</i> stress THREE CRITICAL PIECES OF CALENDAR INFORMATION:
+</p>
+<ul class="org-ul">
+<li>scheduled downtime</li>
+<li>development freezes</li>
+<li>cutover day</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-So what does this look like for ornithologyApp?" class="outline-3">
+<h3 id="ID-So what does this look like for ornithologyApp?">So what does this look like for ornithologyApp?</h3>
+<div class="outline-text-3" id="text-ID-So what does this look like for ornithologyApp?">
+<p>
+<b>TO BE WRITTEN WHENEVER I NEXT FEEL LIKE RANTING ABOUT NEWLY OBSOLETE SKILLS</b>
+<img src="https://i.kym-cdn.com/photos/images/newsfeed/001/044/247/297.png" alt="297.png" />
 </p>
 </div>
 </div>
-<div id="outline-container-ID-TUNE IN TOMORROW FOR PART 2" class="outline-2">
-<h2 id="ID-TUNE IN TOMORROW FOR PART 2">TUNE IN TOMORROW FOR PART 2</h2>
 </div>
-
-
-
-
-
 <div id="outline-container-ID-Backlinks" class="outline-3">
 <h3 id="ID-Backlinks">Backlinks</h3>
 <div class="outline-text-3" id="text-ID-Backlinks">
@@ -385,11 +528,28 @@ This is your atomic step. Build outwards from here.
 <div id="text-footnotes">
 
 <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
-god, Inkhaven, it's down to the damn wire today, isn't it? May I never speak of work related matters again. Let's go back to mourning our dead professors tomorrow, or something. 
+god, Inkhaven, it's down to the damn wire today, isn't it? May I never speak of work related matters again. Let's go back to mourning our dead professors tomorrow, or something.
+EDIT <span class="timestamp-wrapper"><span class="timestamp">[2026-11-20 Fri 19:09]</span></span>: I have time today and fleshing this out will buy me time on the weirder harder things I am working on. Have some more cranky-old-man SRE war stories and leave me to wrestle with my logic-and-philosophy demons in peace! Begone with ye and yer overbearing daily word count requirements, I have <i>thinking</i> to do and procrastination to do it in!
 </p></div></div>
 
 <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 eliding some detail about network partition, don't be pedantic at me about it before I have a chance to justify myself 
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+You'd need to read every line of code they wrote, and every line they imported. You'd need to read these six textbooks cover to cover, and then these fifty papers published in the last five years to see what's changed about the network stack between the textbooks' publication time and now. You'd need to get on extended calls with AWS support, get to know them, take them and their bosses out for drinks, convince them to violate their NDAs just a little bit, just for fun.  You'd need to create a little mental homunculus of every developer who ever worked at this company &ndash; hunt them down on LinkedIn, or Twitter, or across the Yukon, rifle in hand; you may possibly need to reify each one into a little straw doll, stuffed with paper printed over with hashes of the commits they've authored, affixed to a wreath of ethernet cables, hung over your bed to watch as you fall asleep.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+In which timezone? That one sometimes gets you.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Sometimes, we write explainer posts in which we discover that we think of ourselves as idiots. Other times we endeavor for a measure of self-forgiveness and learning from past mistakes. Anyway, have a freeze policy of <i>some</i> sort. It's really easy to be a people-pleaser about this one, I've found; asking people to stop committing their work is daunting. You still need to do it.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Okay, <i>fine</i>, go read <i>Critical Chain</i>(Goldratt (1997) Critical Chain, Great Barrington, MA : North River Press, <a href="http://archive.org/details/criticalchain0000gold">http://archive.org/details/criticalchain0000gold</a>) for the actually understandable metaphor and well-worked example. Look, I never said I was <i>good</i> at explaining these things. I only ever promised, even implicitly, to be entertaining.
 </p></div></div>
 
 
