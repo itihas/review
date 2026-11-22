@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 21 Nov 2026 03:30:18 +0000</pubDate>
-  <lastBuildDate>Sat, 21 Nov 2026 03:30:18 +0000</lastBuildDate>
+  <pubDate>Sun, 22 Nov 2026 04:31:04 +0000</pubDate>
+  <lastBuildDate>Sun, 22 Nov 2026 04:31:04 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>how to explain: an explainer</title>
+    <link>https://itihas.review/six_ways_to_bake_a_cake_or_how_to_explain.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/six_ways_to_bake_a_cake_or_how_to_explain.html</guid>
+    <pubDate>Sat, 21 Nov 2026 20:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>live migrations</title>
     <link>https://itihas.review/live_migrations.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20251104164944-adding_noise.html</guid>
     <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>The strategic level</title>
-    <link>https://itihas.review/20210721200800-cfar_modules.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20210721200800-cfar_modules.html</guid>
-    <pubDate>Tue, 04 Nov 2025 03:48:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
