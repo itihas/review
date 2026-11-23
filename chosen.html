@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>chosen</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">chosen</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span></span>
+</div>
+<p>
+On a lonely little island full of various sorts of uncomfortable people, there are some who are just lonely enough, as well as being idle, to dream about it. In the warmth and wet of the thermohaline winds that wash the streets, the dreams mingle, unsanitary, murmuring to each other, fouling the air.
+</p>
+
+<p>
+Once upon a time, the United Kingdom actually mattered. I learned to speak under the shadow of the Empire; to walk and pause in conversation for certain lengths of time but no longer; to contend with the wood-paneled shells within which my government constitutes itself. Nothing has changed enough in seventy years to forget these things.
+</p>
+
+<p>
+It's a bit embarrassing, I think, to speak on national character. Overattribution of the kind that Europe is accustomed to.
+</p>
+
+<p>
+The state of Karnataka is the same population as the UK, 80% of the area. Seventy years ago, its borders and states were completely different: Mysore state stayed entirely inside the new borders, but all the rest of it was piecemeal, shaved off neighbours. This sort of thing still matters, still affects life and language and demographic in ways you have to go looking for. Coorg speaks Coorgi, a language that gets called a dialect but is only partially mutually intelligible with Kannada, Tamil, Telugu, and Malayalam. In Bidar, you hear a completely different halfway-language, between Kannada and Telangana. Is Telangana a state or a language? 13 years ago, before it won statehood, it was a region of Andhra and a dialect of Telugu.
+</p>
+
+<p>
+These linguistic border sacrifices and conflicts, these category-writing victims you the English-language reader have never heard of &ndash; when I tell it to you in English, is Coorgi more invisible, or less, than Manx or Welsh?
+</p>
+
+<p>
+Karnataka is a piecemeal state, just like Andhra was, just like all of them are. There's no other way for a state to be, as the European nations will tell you &ndash; although they had the luxury of arriving at unity in their own sweet time, to loosen their grip on the "nation" half of the question. To make a nation, you start with a state, which is just a defensible border, an inside and an outside; and then you dream up a way to be, and you teach or bully or expel your remainders and dissidents and competitors until it's true enough to work. Karnataka, like most Indian states, doesn't really entertain serious aspirations to nationhood.
+</p>
+
+<blockquote>
+<p>
+The worst thing the British ever did to India was unite us.
+</p>
+</blockquote>
+<p>
+&mdash; per my memory, Rajagopalachari. I'm probably misremembering; I'll have to ask around.
+</p>
+
+<p>
+The British left the shores of the subcontinent, and the southern end of it watched, uncertain, pretending indifference, as <i>something happened</i> in the hole they'd somehow torn open on their way out, gaping from Punjab to Bengal. Centuries and millenia of millefeuille history got picked up, ripped apart, squished together differently. It's hard to build a total, deep picture of a thing, questioning the assumptions on which it sits, until the thing is for some reason in question. <a href="https://www.youtube.com/watch?v=OgacNVbka8M">Ask a Punjabi what broke</a> sometime. They're still trying to figure it out.
+</p>
+
+<p>
+They looked at each other, Cochin and Hyderabad<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> and Madras and Mysore, and looked back in the direction of the North; and decided they'd probably be okay with a compromise.
+</p>
+
+<hr />
+
+<p>
+Britain dreams of Empire, and Empire is a spiderweb. Land is just an anchor, and everything on it dirt or prey.
+</p>
+
+<p>
+I can get on a train in Bangalore Cantonment station, fifteen minutes northwest of my house by autorickshaw, and be in Howrah station, in Kolkata, a day and a half later. This has been the route for around twenty-five years; before then, I'd have had to go to Chennai, and to Howrah from there via the Vijayawada link, which would have taken threeish days, and has taken threeish days since probably 1899 when the Howrah-Vijayawada-Madras line was opened.
+</p>
+
+<p>
+From there, it's another half-day to Siliguri.
+</p>
+
+<p>
+You can imagine the tea purchasers who took this journey regularly, going both ways; and the men and women who got on at Vizag, recruited to work in the new tea plantations, traveling once, one way.
+</p>
+
+<hr />
+
+<p>
+Britain dreams itself in a coven of peers who are not friends. Britain thinks in her heart of hearts that she is alone. Britain looks at France, and finds France in her nightmares later in the night.
+</p>
+
+<p>
+In my class-ten history textbook, we're taught the Goodhart problem. In "Hanoi, Tonkin, French Indochina (present day Hanoi, Vietnam),<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>" they tried to put a bounty on rats, to be paid out on presentment of a tail. Not long after, the French started noticing tailless rats around. Naturally: it's bad husbandry to kill the cash rat.
+</p>
+
+<p>
+Hanoi residents probably did not need to "notice" for the most part. The Wikipedia page explains that the government officials doing the bounty offer and the noticing and all that had "formally assumed control" of Hanoi in 1882; and that the region of Tonkin was "not fully pacified" until "as late as" 1896. these phrasings jump out at me. It's crass to get hung up on phrasings &ndash; <i>I don't like your tone, young man</i> &ndash; but hung up I do get. They always tell you what you'll be crucified for when you're <i>writing</i> the phrasings. I've seen enough Twitter cancellations to know they're right. When will it be my turn with the lit match? When will be my turn to decide what burns? I have some money I'd like to turn into rat tails.
+</p>
+
+<hr />
+
+<p>
+Britain dreams of sun. She dreams of mountains; of the sea, but a different sea; of beaches, but not the Dover beaches. She sneers at Galway, but wishes she understood how to long for Ireland. She sets her children running in the moors, sucks out of them the yellow juices of the jungle with wind and rain and wild English roses (curling prettily at their petal-ends, curiously scentless); and wonders also when the dark man will come along, half-hidden in the gorse, promising them harm.
+</p>
+
+<p>
+Britain dreams of sand, of beaches so endless they turn to desert, rivers so broad they cleave apart the continents. Britain dreams of <i>coal</i>, of coal-black hearts and bog leeches, deceptively calm green rivers and orderly-looking church steeples with endless little private rooms; secret histories in its heart of hearts, pumping consequence out into the world, and all that consequence spilling its way back in, overrich, too much to hold.  Britain dreams of a world made round with Britishness. Of an island, suspended, miserable, in the eddy currents, waiting for everything to flow through it at least once, so it can finally declare it all shit.
+</p>
+
+<p>
+Britain, in short, dreams of herself. She dreams of looking in the mirror and seeing <i>everything</i>.
+</p>
+
+<hr />
+
+<p>
+What does it feel like when, in the middle of an attack of self-consciousness, you realize that somebody else is <i>also looking</i>? Like, you're wondering whether your breath smells, so you cut yourself off mid-sentence, and then someone asks you a question about what you didn't finish explaining so now you have to <i>repeat</i> yourself, you're frantically trying to figure out how to make this as brief as possible &mdash; and the woman next to you wrinkles her nose?
+</p>
+
+<p>
+Do you feel the same impulse to sadism as I do, when I see somebody get caught in a self-consciousness trap, to tell them that they're right about whatever it is they're worrying about &ndash; or that it's even <i>worse</i> than they imagined? Perhaps to tell them that no, their breath is fine, it's just their habit of mispronouncing every third word that makes them a little painful to listen to with a straight face?
+</p>
+
+<p>
+Or, perhaps: have you ever felt the frustration of trying to explain to someone that the problem with their habit of making unkind and insulting jokes is not the metaphysical tarnish upon their soul originated by their mother's lack of affection towards them as a child and how their friends probably all secretly hated them, but that they should stop making the jokes, and perhaps apologize for the ones they made before? That, in fact, this was a problem <i>with</i> them, not <i>about</i> them?
+</p>
+
+<p>
+And, in the middle of feeling this frustration: have you been struck, at any point, with the keen awareness that the cruelest possible thing to do in this situation, the thing that would confirm all their worst fears and leave them trapped in the worst version of themselves, would be to <i>leave them to it</i>?
+</p>
+
+<p>
+Doesn't it feel <i>delicious</i>?
+</p>
+
+<p>
+Anyway, I have infinite sympathy for Britain.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Well, Hyderabad took some, uh, <a href="https://en.wikipedia.org/wiki/Indian_annexation_of_Hyderabad">convincing</a>. 
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre">https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre</a> 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>
