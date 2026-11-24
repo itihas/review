@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 24 Nov 2026 07:17:49 +0000</pubDate>
-  <lastBuildDate>Tue, 24 Nov 2026 07:17:49 +0000</lastBuildDate>
+  <pubDate>Tue, 24 Nov 2026 07:34:56 +0000</pubDate>
+  <lastBuildDate>Tue, 24 Nov 2026 07:34:56 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,24 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>ayanami rei</title>
+    <link>https://itihas.review/ayanami_rei.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/ayanami_rei.html</guid>
+    <pubDate>Mon, 23 Nov 2026 23:04:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>chosen</title>
+    <link>https://itihas.review/chosen.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/chosen.html</guid>
+    <pubDate>Mon, 23 Nov 2026 02:21:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>how to explain: an explainer</title>
     <link>https://itihas.review/six_ways_to_bake_a_cake_or_how_to_explain.html</link>
@@ -902,24 +920,6 @@
     <link>https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</link>
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20250225124026-variations_in_the_error_terms_by_nodes_in_a_distributed_system.html</guid>
-    <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>The secret of my beating heart is love</title>
-    <link>https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20230325150348-the-secret-of-my-beating-heart.html</guid>
-    <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>adding noise</title>
-    <link>https://itihas.review/20251104164944-adding_noise.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20251104164944-adding_noise.html</guid>
     <pubDate>Tue, 04 Nov 2025 17:06:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
