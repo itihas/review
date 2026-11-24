@@ -240,11 +240,16 @@ What is a "real" game? Why?
 <h2 id="ID-Hypergame">Hypergame</h2>
 <div class="outline-text-2" id="text-ID-Hypergame">
 <p>
-<i>Hypergame</i> is a mathematical puzzle first described by Zwicker<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> to a class of students as a riff on an old exam bonus question: define hypergame as a game where the first choice is the choice of finite game to play. All finite games are allowed. Is "hypergame" a finite game? Can it be chosen?
+<i>Hypergame</i> is a mathematical puzzle first described by Zwicker<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> to a class of students as a riff on an old exam bonus question:
 </p>
+<ul class="org-ul">
+<li>define a "finite game" as a game with no infinite runs; i.e. any given turn might have you selecting among infinite moves, but there will only ever be a finite number of turns.</li>
+<li>Define hypergame as a game where the first player chooses a finite game to play. All finite games are allowed.</li>
+</ul>
 
 <p>
-The Zwicker paper shows us how hypergame is a variant of the <a href="https://en.wikipedia.org/wiki/Burali-Forti_paradox">Burali-Forti paradox</a>, which loosely says that the ordinal numbers can't form a set on pain of antinomy. <i>Choosing</i> is also <i>counting</i>, you see: each turn bumps the counter.
+Is "hypergame" a finite game?
+In other words: can you choose "hypergame" in the first turn of hypergame?
 </p>
 
 <p>
@@ -256,7 +261,11 @@ So if we eliminate "hypergame" from the choices of game in hypergame, do we make
 </p>
 
 <p>
-It does not: you've just built hypergame-prime, which is "hypergame except you can't choose 'hypergame'", which is now a choice of game in hypergame-prime.
+It does not: you've just constructed "hypergame except you can't choose 'hypergame'", which is a /different game than hypergame. Let's call it hypergame-one. "Hypergame-one" now one of the games you can choose to play in hypergame-one. For that matter, "hypergame-one" is also among the choosable games in hypergame! And so is hypergame-two (where you can choose any finite game but can't choose 'hypergame' or 'hypergame-one')
+</p>
+
+<p>
+The Zwicker paper shows us how hypergame is a variant of the <a href="https://en.wikipedia.org/wiki/Burali-Forti_paradox">Burali-Forti paradox</a>, which loosely says that the ordinal numbers can't form a set on pain of antinomy. The analogy goes that <i>choosing</i> is <i>counting</i>: each turn bumps the counter.
 </p>
 
 <p>

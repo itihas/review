@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ayanami rei</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">ayanami rei</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="response">response</span></span> <span class="tag"><span class="nge">nge</span></span></span>
+</div>
+<p>
+tl;dr Ayanami Rei is a projection honey trap, and I <i>identify</i> with the experience of being a projection honey trap. Of course, I may be projecting.
+</p>
+
+<hr />
+
+<p>
+The real show is different, but to me, in my heart, this is how Neon Genesis Evangelion starts:
+</p>
+
+<p>
+Yellow liquid splashing against  across a black field. Quick cuts of an adolescent girl heaving herself out of it, staggering. A female voice, dispassionate and full of fry, in voiceover:
+</p>
+
+<blockquote>
+<p>
+Who is this? This is me. これは誰？これは私。
+</p>
+
+<p>
+Who am I? What am I? What am I? What am I? What am I? 私は誰？私は何？私は何？私は何？私は何？
+</p>
+
+<p>
+I am myself. This object is me. 私は自分。この物体が自分。自分を作っている形。
+</p>
+
+<p>
+This is the me that can be seen, yet I feel as though I am not myself. 目に見える私。でも私は私で無い感じ。 
+</p>
+</blockquote>
+
+<p>
+<i><a href="https://wiki.evageeks.org/Theory_and_Analysis:Rei%27s_Monologue">source</a></i>
+</p>
+
+<p>
+This is not how this show starts. Something like it happens in episode 14.
+</p>
+
+<p>
+But Ayanami Rei is what this show is about, to me, so it makes sense that this is how my mind chose to arrange it.
+</p>
+
+<hr />
+
+<p>
+Lots of people spend lots of time looking at shinji directly, because he's very loud and he's splattered all over the plot and themes and center screen of the show. But evangelion has the peculair and beautiful property of spending enough love on the shadow and foil of him, too, because it sort of <i>has</i> to in order to do the thing it wants to be doing. The central spritual problem that our plot gives our protagonist is that <i>he can't see what's happening outside of him</i>, but things he needs and craves are happening in that outside the whole time.
+</p>
+<ul class="org-ul">
+<li>He's not special, but this would mean if he found a way to face this, he'd realize that it also means that he's not alone.</li>
+<li>He's not paranoid, they really are all out to get him; but noticing this would require him to stop convincing himself that it's all paranoia.</li>
+<li>He is being cast as a sacrificial lamb, but if he actually noticed this instead of using the sense of martyrdom to anaesthetize everything else, he'd think to ask how necessary any of it even is.</li>
+<li>He feels alone and misunderstood, and like nobody around him is real in a way where it sticks around when he's not looking &ndash; and pays no attention to the lives of people around him and the concerns they have that have nothing to do with him.</li>
+</ul>
+
+<p>
+To illustrate this, all of these details need not only to be established, but to be given some amount of narrative and thematic weight.
+</p>
+
+<p>
+They way Evangelion is built, I feel like the author went about the worldbuilding as follows:
+</p>
+<ul class="org-ul">
+<li>What is Shinji afraid of facing?</li>
+<li>Why is he wrong to be afraid? What detail would exonerate him from this concern, that needs to exist? Which character needs to carry this detail?</li>
+<li>What story is he going to tell about them that makes sure he will never, ever notice this detail? What choice would make this maximally mean-funny?</li>
+</ul>
+
+<p>
+And then once all the details were in place:
+</p>
+<ul class="org-ul">
+<li>Okay no more jokes, how do I sell this? How do I give it a heart?</li>
+</ul>
+
+<p>
+Each character in turn is built like this. The afterthought of life and perspective sketched into a theme-and-plot box.
+</p>
+
+<p>
+Ayanami's box goes like this:
+</p>
+<ul class="org-ul">
+<li>Mom
+<ul class="org-ul">
+<li>Fear: My dad loves her more than me</li>
+<li>Fear: Was she hurt? Is she hurting?</li>
+<li>Draw: Might love me? Might love me more than anything?</li>
+<li>Wall/idealization/nature of the blind spot: Missing, perfect, untouchable, unknowable. Unhelpable &ndash; independent, favored.</li>
+</ul></li>
+</ul>
+
+<p>
+How do you make this cruel and funny?
+</p>
+<ul class="org-ul">
+<li>What if there really is nothing there? What if her insides are <i>actually</i> just empty? What is, whenever you tried to reach towards her, she didn't push you away, she just didn't understand?</li>
+</ul>
+
+
+<p>
+Ayanami Rei is built to be projected onto. Hilariously her in-world creator, Shinji's father, made her so he could project onto her.
+</p>
+
+<p>
+Ayanami Rei only exists in relation to other people. she spends 14 episodes being an object, a mystery, a mysterious other, alien even to herself. Ayanami rei was <a href="https://en.wikipedia.org/wiki/Born_Sexy_Yesterday">Born Sexy Yesterday</a>. Ayanami Rei is an innocent even to her own body. When she puts it to too much use, it breaks and they replace it.
+</p>
+
+<p>
+She gives you Nothing. She doesn't cooperate. She Works To Rule. She is Playing The Role of The Anime Girl.She's Built For This.
+</p>
+
+<p>
+And in Episode 14, you hear the inside of her head, and find out that this is also how she feels inside.
+</p>
+
+<hr />
+
+<p>
+She constitutes herself in response to the perception of an intrusion; an Other, somehow not-her, nevertheless Inside.
+</p>
+
+<p>
+To be clear, she does in fact have an <i>effective</i> personality. It's just that most of it has been determined by the shape of the box that was drawn for her in the larger story. She is steely-eyed, workmanlike, serious, obedient. She tends to stay silent when she's in an unfamiliar situation, and people think she's standoffish, or distant, or mysterious. She appears to be hurt often, and ignores or disregards it, inviting (or at least bringing up the prospect of) concern. It doesn't bother her when a boy gets in her personal space, because she doesn't seem to quite <i>have</i> such a thing as personal space. She doesn't really appear to get caught up in other people's vibe, because, well, she doesn't quite have  a vibe of her own that could  be seen to be caught.
+</p>
+
+<p>
+She doesn't think of any of these quite concrete patterns she displays as being features of herself, and she's right not to; all of it is some kind of response to her circumstances. She doesn't see a "self" when she looks in the mirror. She sees a body, and she doesn't think of the body as her own.
+</p>
+
+<p>
+I don't know or care, really, if Hideaki Anno knew what particular psychic phenomenon he was exemplifying when he threw this particular negative-space picture of male yearning together. He posits and we derive, you know? The derivable fact is, this is a type of person that exists. Actually it's a whole collection of different types of people who have a specific brain pattern in common. I am this type of person, at least a little bit; or rather this particular brain pattern happened in me.
+</p>
+
+<p>
+Here is why you constitute yourself in response to an other: it's because nobody affords you the right to a boundary, and so when you look in the space "inside" you, where "you" should be (or nothing, but "you" if "anything at all"), you find <i>somebody else</i> in there.
+</p>
+
+<p>
+You redraw the boundaries, declare a new thing to be "inside". You cede what capabilities you must and anchor yourself to wahtever's left. You'll embed your sense of self, of stability and permanance and persistence, in weird little corners; in your qualia, your fleeting preverbal impressions, the various hideyholes in the deep layers of thoughtspace that nobody's really looking at even <a href="https://www.lesswrong.com/posts/5FAnfAStc7birapMx/the-hostile-telepaths-problem">socio-telepathically</a>. You play little logical/verbal frame games, phrase everything in terms of "how things could be" instead of "what you could do", <i>where is 'I'?</i>  instead of <i>where can I go to be alone?</i>,  <i>there is a 'me' that can be seen</i> instead of <i>can they stop looking at me?</i>, <i>I am not myself</i> instead of <i>I wish things were different</i>.
+</p>
+
+<p>
+Do you know what it feels like to constitute yourself as the nacre that keeps the sand particle from scratching you up inside?
+</p>
+
+<p>
+Among many other annoyances, it involves a lot of circuitous bookkeeping. There is the not-me, and there is the not-quite-me, but that's what I'm doing in response to the not-me, so that must be what I am, that must be at least part of what <i>I</i> am made up of, mustn't it? You gather evidence of the thing you hope exists in sentence fragments scattered like trash around the edge of the fenced-off area surrounding the strange loop, as far from both the stimulus and the response as you can manage. I wish I was being metaphorical. I wish I could show you the pages and pages of psychotic, diagrammatical scrap-paper-ish journal entries I was doing this in when I did this, desperately trying to find a way to reconstitute myself.
+</p>
+
+<hr />
+
+<p>
+Ayanami Rei gets <i>reached inside</i>. In the second-to-last episode, Shinji Gendo puts his hand inside her  belly. The boundary of her body is shown to be permeable, and he quite casually permeates it. You know that according to him he has the right.
+</p>
+
+<hr />
+
+<p>
+The end of Evangelion, to me, in my heart, is when Ayanami Rei grows to the size of the Moon, and falls back into the ocean, body just breaching the surface; and then, somehow, is once again her own size, sitting by the shore; Shinji's body beside her, freshly crawled out of the ocean, looking out as he coughs and gasps and shivers. This is not what happens.
+</p>
+<div id="outline-container-ID-Backlinks" class="outline-2">
+<h2 id="ID-Backlinks">Backlinks</h2>
+<div class="outline-text-2" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>
