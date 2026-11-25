@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>cycloids</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">cycloids</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="draft">draft</span></span></span>
+</div>
+<p>
+In the eleventh grade, a lecturer in shiny pants (we liked making fun of his shiny pants) took a beat, among many beats, to talk about what happened when you trace a point on a wheel and trace its path as the wheel is rolling. This is called a cycloid, and it's one of my most favorite shapes in the world. It's just really really pretty. I don't know. Do you get it? Do you also think so?
+</p>
+
+
+<p>
+Take a circle rolling on a flat surface, and you get a cute little wave.
+</p>
+
+
+<div id="orgf2025d9" class="figure">
+<p><img src="static/images/cycloid-line.gif" alt="cycloid-line.gif" />
+</p>
+</div>
+
+
+<p>
+What if it's rolling on a curved surface? Like, say, another circle?
+</p>
+
+
+<div id="org55164d9" class="figure">
+<p><img src="static/images/cycloid-circle.gif" alt="cycloid-circle.gif" />
+</p>
+</div>
+
+
+<p>
+Or a Bezier curve?
+</p>
+
+
+<div id="org3792454" class="figure">
+<p><img src="static/images/cycloid-bezier.gif" alt="cycloid-bezier.gif" />
+</p>
+</div>
+
+
+<p>
+What if the wheel isn't a circle? Like, say, a <a href="https://en.wikipedia.org/wiki/Reuleaux_triangle">Reuleaux triangle</a>?
+</p>
+
+
+<div id="org38bba7e" class="figure">
+<p><img src="static/images/cycloid-reuleaux.gif" alt="cycloid-reuleaux.gif" />
+</p>
+</div>
+
+
+<p>
+Let's go back to the circles: what if you nested them? Put a cycloid on a cycloid, so to speak?
+</p>
+
+
+<div id="orge8c0d51" class="figure">
+<p><img src="static/images/cycloid-nested.gif" alt="cycloid-nested.gif" />
+</p>
+</div>
+
+
+<p>
+What if you picked a point to trace that <i>wasn't</i> on the edge of the circle?<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+
+
+<div id="org7cbf19c" class="figure">
+<p><img src="static/images/cycloid-trochoid.gif" alt="cycloid-trochoid.gif" />
+</p>
+</div>
+
+<p>
+This structure-creating-path pattern is everywhere when you know where and how to look. Really complex things come out of really simple things.
+</p>
+
+
+
+<div id="org99cd09e" class="figure">
+<p><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Cassini_apparent.jpg/960px-Cassini_apparent.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail" alt="960px-Cassini_apparent.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail" />
+</p>
+</div>
+
+<p>
+Sometimes, as with simple cycloids, it's really clear what the <i>generator</i> is &ndash; which two simple structures interacted, and how, to form the complex structure. At times like these, you want to point to the simple structures and say, this is <em>upstream</em> in some important way. The complexity <i>comes from somewhere</i>.
+</p>
+
+
+<p>
+Other times, it's less clear.
+</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/slfS7j_7L6s?si=R9JjMLhy9MnOAiDf&amp;start=99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<p>
+When we look at Homer's face, does it seem fair to say that the <em>generating idea</em> of what we're looking at is a collection of interacting circles?
+</p>
+
+<p>
+When you put very simple, general concepts together, and organize them into a framework of interactions, you can often do many, many more things with them than you expect to be able to do at the outset.
+</p>
+
+<p>
+This is the kind of scenario for which people write maxims like Occam's razor. <i>Why</i>, one might say, should we suspect that the simplest explanation is often the most correct? Why, for that matter, is it a <i>suspicion</i>, and not a mere truth-claim?
+</p>
+
+<p>
+Situations like epicycle-Homer are a good answer to the first question. Epicycle-Homer is why "epicycle" is a shorthand for the code smell that a reasoner gets from explanations that <a href="https://www.lesswrong.com/posts/Yq6aA4M3JKWaQepPJ/burdensome-details">presume too many details</a>.
+</p>
+
+<p>
+But the second question is a little harder to think about. In the universe of the example, it's the question, <em>why is epicycle-Homer possible</em>?
+</p>
+
+<p>
+How did we end up writing a system that could cause Homer using just 350 compasses?
+</p>
+
+<p>
+Here we can notice two things:
+</p>
+<ul class="org-ul">
+<li>350 compasses is a lot of compasses.</li>
+<li>350 compasses can be used to draw many pictures. Something further is needed to select among those many pictures for <i>Homer</i>.</li>
+</ul>
+
+
+<div id="orge5c15df" class="figure">
+<p><img src="static/images/peanut-epicycles.gif" alt="peanut-epicycles.gif" />
+</p>
+</div>
+
+<p>
+What is that something further?
+</p>
+
+<hr />
+
+<p>
+Let's take another look at Ptolemy's model of the spheres.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+
+
+<div id="org85457d1" class="figure">
+<p><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Cassini_apparent.jpg/960px-Cassini_apparent.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail" alt="960px-Cassini_apparent.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail" />
+</p>
+</div>
+
+<p>
+We might begin by noting the various  symmetries. Homer-generator takes quite a few rotations around the pivot before you get Homer. We might look at the "petals" of the paths: Venus has exactly five. Come to think of it, they all have an integer number of these. Why?
+</p>
+
+<p>
+Well. Because it's a path drawn by a wheel rolling on a larger circle. Well, to be precise, it's a path drawn by a point <i>outside</i> the wheel, as the wheel rolls on the big circle. A trochoid!
+</p>
+
+<p>
+The distance covered by one turn is going to be a ratio of the <i>radiuses</i> of the circles.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+
+<p>
+\(\frac{2\pi a}{2\pi b} = \frac{a}{b} \)
+</p>
+
+<p>
+So the path will close every \(b\) times it goes around the center.
+</p>
+
+<p>
+Notice also that a "petal", as we've been calling them, only happens when a planet is traveling <i>backwards</i> on the wheel faster than it travels <i>forward</i> on the circle. So the count of petals \(a\) gives you how many <i>extra</i> times it goes around the wheel for every time it goes around the circle:  i.e. how many <i>extra epicycles</i> per <i>cycle</i>.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+</p>
+
+<p>
+For each path, you have a different \(a\) and \(b\), and you can find them by counting. Venus winds around the earth 8 times, and in that time the wheel rotates 5 extra times. 8+5 = 13 epicycles per 8 cycles.
+</p>
+
+<p>
+How long does this take, relative to, say, Jupiter?<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>
+</p>
+
+<p>
+Well, this diagram won't show us. They kept that in the logs. In the spreadsheets, if you will, and very good spreadsheets they were, too.
+</p>
+
+<p>
+Looking up at the heavens is a real rat's nest of factors, isn't it? A ridiculous amount of bookkeeping to do over centuries and centuries to figure out that something like this is happening. Decades to notice any error. By the time you have a diagram like this, something <i>almost</i> right, <i>almost</i> true, it legitimately hurts to change it.
+</p>
+
+<p>
+There were errors. Planets <i>almost</i> repeat their exact paths far more often than they <i>do</i> repeat them. The ratios of the radii declined to be rational in practice; but every number is <i>almost</i> rational, and so on a thin
+enough time slice &ndash; in a blink of an eye on a cosmic scale, say &ndash; any such path will look <i>almost</i> periodic. When Venus arrives in the sky at its brightest, <i>almost</i> exactly where you said it would, 2.5 days late &ndash; well, it keeps you up at night. But it was doing that anyway. You try to update what you have, by small steps. You don't try to turn it all over.
+</p>
+
+<hr />
+
+
+<p>
+Enough with the staring at primitive representation tools. We can't tell time with a static image, and our human brains would much prefer not to have to tell <i>time</i> from a table. So I'm not going to give you one;  let's fix the picture instead.
+</p>
+
+
+<div id="org847d700" class="figure">
+<p><img src="static/images/ptolemy-periods.gif" alt="ptolemy-periods.gif" />
+</p>
+</div>
+
+<p>
+There. Now we have the periods.
+</p>
+
+<p>
+Wait. Notice something strange?
+</p>
+
+
+<div id="orgdb4ed7d" class="figure">
+<p><img src="static/images/ptolemy-sun-arrows.gif" alt="ptolemy-sun-arrows.gif" />
+</p>
+</div>
+
+<p>
+There:
+Every <i>cycle</i> of Mercury, Venus, and the Sun lines up &ndash; and every period of Jupiter's, Saturn's, and Mars' <i>epicycles</i> lines up with them.
+</p>
+
+<p>
+In the parlance, you would call the periods of the cycles and epicycles <i>free parameters</i>. Nothing in the picture that we've built so far constrains them to behave this way. So why aren't these free parameters, well, free?
+</p>
+
+<p>
+Even once you have your beautiful generators, and the patterns they make, <i>this</i> is the smell you go looking for, the thing that will actually force an update: a regularity that <i>you didn't put there</i>.
+</p>
+
+<p>
+Regularities like this are <i>redundant information</i>. Maybe, you must now think, there is a way to reduce the redundancy: to say once what now appears to be said five times over.
+</p>
+
+<p>
+And now, <i>now</i>, we can ask the simplest question, the one you already know the answer to:
+</p>
+
+<p>
+Why is the Sun's orbit a circle?
+</p>
+
+
+<div id="org55b2a45" class="figure">
+<p><img src="static/images/ptolemy-sun-centred.gif" alt="ptolemy-sun-centred.gif" />
+</p>
+</div>
+
+<p>
+Lo: a Euclidean parable.
+</p>
+<div id="outline-container-ID-Things I wish I could add to this post, or make another post about" class="outline-2">
+<h2 id="ID-Things I wish I could add to this post, or make another post about">Things I wish I could add to this post, or make another post about</h2>
+<div class="outline-text-2" id="text-ID-Things I wish I could add to this post, or make another post about">
+<p>
+&ndash;which, fortunately, I can just put here as a note for later, because I run a goddamn <a href="the_garden_and_the_stream_a_technopastoral_hapgood.html#ID-b6ddb5c0-d0e2-4bb6-bcd0-072a2f517dc5">garden, not a stream</a>. I'm going to start adding these to everything so I can get anything ever done <a href="https://www.inkhaven.blog/">around here</a>.
+</p>
+
+<ul class="org-ul">
+<li>What must it have been like to be a <a href="https://en.wikipedia.org/wiki/Deferent_and_epicycle#History">Greek geometer</a> using these tools to trace out the path of Mercury? How would you go about telling them about Homer Simpson?</li>
+<li>I want to play a game of <a href="https://www.lesswrong.com/w/chronophone">chronophone</a>. Can I tell Ptolemy about the Fourier transform?What would be equivalent surprisal?
+<ul class="org-ul">
+<li>I think there's a way to leverage an invariant to write a class of winning strategies for chronophone. Roughly it goes like this: If you find a reasoning tool that your interlocutor could also use, that if you were to use would generate equivalently surprising insights to you, then you can induce them to use it the way you're using it. This is sort of an argument from <a href="proof_identity.html#ID-d94fc999-aec0-40e2-bf57-26807b75405d">proof identity</a> that I'm doing here.</li>
+</ul></li>
+<li>The thing I'm playing with here, trying to think through carefully, is how <em>concepts</em> work; how concepts compose and decompose, factor models into something we can call <i>information</i>. There's a very strange cognitive thing happening where Ptolemy would not have needed to argue from a <i>number</i> like the period &ndash; annotation to the diagram &ndash; if he had access to the animation. He could have just seen it.
+<ul class="org-ul">
+<li>By analogy, I don't think we have a good way yet to imagine how <i>compression</i> works. We have to argue from number.</li>
+</ul></li>
+<li>I wish I could have spent the time to play around with writing these animations myself. Unfortunately that would have meant it would have taken me a week at least. Alas, for the relative speeds of coding and writing: I'm not that kind of wizard.
+<ul class="org-ul">
+<li>I still want to make every animation a slider. It would be cute, and help illustrate a sub-point I'm making in here about tools. Also they need to be SVGs, and are not at time of publishing.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+nil</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+This is called a trochoid. <img src="https://i.imgflip.com/9978u0.jpg" alt="9978u0.jpg" />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Well, Cassini's plot that derives from Ptolemy's model fo the spheres.]why <i>extra</i> epicycles? This is left as an exercise for the reader. 
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+But watch out! Recall that the planet is somewhere <i>outside</i> the wheel, not <i>on</i> it. Recall:
+</p>
+
+
+<div id="orgbac246b" class="figure">
+<p><img src="static/images/cycloid-trochoid.gif" alt="cycloid-trochoid.gif" />
+</p>
+</div></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+why <i>extra</i> epicycles? Exercise for the reader. 
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+This is what makes the planets not be Homer, by the way. Time.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>
