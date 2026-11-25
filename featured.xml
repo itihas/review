@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 25 Nov 2026 01:29:31 +0000</pubDate>
-  <lastBuildDate>Wed, 25 Nov 2026 01:29:31 +0000</lastBuildDate>
+  <pubDate>Wed, 25 Nov 2026 01:39:21 +0000</pubDate>
+  <lastBuildDate>Wed, 25 Nov 2026 01:39:21 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>cycloids</title>
+    <link>https://itihas.review/cycloids.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/cycloids.html</guid>
+    <pubDate>Tue, 24 Nov 2026 17:27:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>thirst trap</title>
     <link>https://itihas.review/thirst_trap.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20220222133400-fountain_marcel_duchamp_1917_replica_1964_tate.html</guid>
     <pubDate>Tue, 22 Feb 2022 13:34:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>relations - Finding all posets on a set - Mathematics Stack Exchange</title>
-    <link>https://itihas.review/20220222133300-relations_finding_all_posets_on_a_set_mathematics_stack_exchange.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20220222133300-relations_finding_all_posets_on_a_set_mathematics_stack_exchange.html</guid>
-    <pubDate>Tue, 22 Feb 2022 13:33:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
