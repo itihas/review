@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 26 Nov 2026 06:23:51 +0000</pubDate>
-  <lastBuildDate>Thu, 26 Nov 2026 06:23:51 +0000</lastBuildDate>
+  <pubDate>Thu, 26 Nov 2026 11:02:06 +0000</pubDate>
+  <lastBuildDate>Thu, 26 Nov 2026 11:02:06 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -24,6 +24,15 @@
     <link>https://itihas.review</link>
   </image>
 
+  <item>
+    <title>bar stories</title>
+    <link>https://itihas.review/bar_stories.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/bar_stories.html</guid>
+    <pubDate>Thu, 26 Nov 2026 02:58:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
   <item>
     <title>capital R</title>
     <link>https://itihas.review/capital_r.html</link>
@@ -912,15 +921,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/ongaroSearchUnderstandableConsensus2025.html</guid>
     <pubDate>Thu, 06 Nov 2025 21:21:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>pinebook pro adventures</title>
-    <link>https://itihas.review/20250213190135-pinebook_pro_adventures.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/20250213190135-pinebook_pro_adventures.html</guid>
-    <pubDate>Wed, 05 Nov 2025 16:24:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
