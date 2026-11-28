@@ -14,8 +14,8 @@
   <link>https://itihas.review</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 28 Nov 2026 10:10:25 +0000</pubDate>
-  <lastBuildDate>Sat, 28 Nov 2026 10:10:25 +0000</lastBuildDate>
+  <pubDate>Sat, 28 Nov 2026 10:21:55 +0000</pubDate>
+  <lastBuildDate>Sat, 28 Nov 2026 10:21:55 +0000</lastBuildDate>
   <generator>Emacs 31.1 Org-mode 9.8.10</generator>
   <webMaster>nixbld@localhost (itihas)</webMaster>
   <image>
@@ -147,15 +147,6 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/20260208165301-autobiographical_review.html</guid>
     <pubDate>Sun, 15 Nov 2026 17:21:00 +0000</pubDate>
-
-    <description><![CDATA[]]></description>
-  </item>
-  <item>
-    <title>404</title>
-    <link>https://itihas.review/404.html</link>
-    <author>nixbld@localhost (itihas)</author>
-    <guid isPermaLink="false">https://itihas.review/404.html</guid>
-    <pubDate>Sun, 15 Nov 2026 16:29:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
@@ -921,6 +912,15 @@
     <author>nixbld@localhost (itihas)</author>
     <guid isPermaLink="false">https://itihas.review/hamiltonian.html</guid>
     <pubDate>Fri, 07 Nov 2025 17:08:00 +0000</pubDate>
+
+    <description><![CDATA[]]></description>
+  </item>
+  <item>
+    <title>Ongaro, Diego and Ousterhout, John, In Search of an Understandable Consensus Algorithm (2014)</title>
+    <link>https://itihas.review/ongaroSearchUnderstandableConsensus2025.html</link>
+    <author>nixbld@localhost (itihas)</author>
+    <guid isPermaLink="false">https://itihas.review/ongaroSearchUnderstandableConsensus2025.html</guid>
+    <pubDate>Thu, 06 Nov 2025 21:21:00 +0000</pubDate>
 
     <description><![CDATA[]]></description>
   </item>
