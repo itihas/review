@@ -249,7 +249,7 @@ I want to write something sometime soon about the beating heart behind many kind
 </p>
 
 <p>
-Among my favorite forms of form is the blameless postmortem. Originally a Google SRE invention, the blameless postmortem is a surprisingly humane document, designed to serve several purposes with a single intention behind them.
+Among my favorite forms of form is the blameless postmortem. Originally a Google SRE invention, the <a href="https://sre.google/sre-book/postmortem-culture/">blameless postmortem</a> is a surprisingly humane document, designed to serve several purposes with a single intention behind them.
 </p>
 
 <p>
@@ -257,7 +257,7 @@ It goes like this: you push an update to a caching layer, and Gmail goes down.
 </p>
 
 <p>
-If you raise your hand and say, "it might have been this update that took Gmail down," people can check your update, roll it back, and bring it back up in fifteen minutes.
+If you raise your hand and say, "it might have been the change I just made that took Gmail down," people can check that change, roll it back, and bring it back up in fifteen minutes.
 </p>
 
 <p>
@@ -265,7 +265,7 @@ If you don't, people will have to check every change that happened in the last t
 </p>
 
 <p>
-How do you make it safe for the guy that pushed the breaking update to raise his hand?
+How do you make it safe for the guy that pushed the breaking change to raise his hand?
 </p>
 </div>
 </div>
@@ -277,23 +277,23 @@ The answer is very easy and surprisingly unintuitive: you can't do blame.
 </p>
 
 <p>
-Maybe it's not that unintuitive, actually. When I first read this ethos in a corporate setting, it made immediate sense to me. Laid out socially like this it seems completely obvious that if you make that guy pay for breaking something, you make everybody vigilant, defensive, unwilling to speak baldly about the truth. Letting people get away with doing their jobs is the same thing as letting them do their jobs at all.
+Maybe it's not that unintuitive at first blush. When I first read this ethos in a corporate setting, it made immediate sense to me. Laid out socially like this it seems completely obvious that if you make that guy pay for breaking something, you make everybody vigilant, defensive, unwilling to speak baldly about the truth. Letting people get away with doing their jobs is the same thing as letting them do their jobs at all.
 </p>
 
 <p>
-The thing is I hadn't realized that I let this pass so easily because outside of my own notice was a sentiment that went something like, <i>well, of course, exceptions aside</i>.
+The thing is I hadn't realized at the time is that, outside of my own notice, I was thinking something like, <i>well, of course, exceptions aside</i>.
 </p>
 
 <p>
-I wonder what your exceptions are to blamelessness. Mine would probably have been quite poorly articulated if they'd risen to the point of articulability in my awareness. I might have said, <i>sometimes people really are at fault</i>; but it's good for some people to get away with things if it means that most people attain positive freedoms. I might have said, <i>sometimes people should take responsibility</i>, and maybe something more is in that one; But in the context of a megacorporation employing thousands of people, nobody should be held responsible for the whole machine when their particular gear's number happened to come up that day.
+I wonder what your exceptions are to blamelessness. Mine would probably have been quite poorly articulated if they'd risen to the point of articulability in my awareness. I might have said, <i>sometimes people really are at fault</i>; but it's good for some people to get away with things if it means that most people attain positive freedoms. I might have said, <i>sometimes people should take responsibility</i>, and maybe something more is in that one; but in the context of a megacorporation employing thousands of people, nobody should be held responsible for the whole machine when their particular gear's number happened to come up that day.
 </p>
 
 <p>
-It's a finny principle, really. When you try to treat it as if it were 100% true, no exceptions, it becomes significantly more frustrating: less intuitive, yet somehow no less true.
+It's a funny principle, really. When you try to treat "blame is counterproductive" as if it were 100% applicable all the time, no exceptions, it becomes significantly more frustrating: less intuitive, yet somehow no less true.
 </p>
 
 <p>
-Here is the truth: blame is grief. Blame is the social system saying:
+Here is the truth: blame is grief. Blame is a <i>social</i> inference machine saying:
 </p>
 <ul class="org-ul">
 <li>I care about this and I care that it's costing me something to mess it up.</li>
@@ -304,9 +304,13 @@ Here is the truth: blame is grief. Blame is the social system saying:
 </p>
 </div>
 </div>
-<div id="outline-container-ID-My flight error rates" class="outline-2">
-<h2 id="ID-My flight error rates">My flight error rates</h2>
-<div class="outline-text-2" id="text-ID-My flight error rates">
+<div id="outline-container-ID-An illustration" class="outline-2">
+<h2 id="ID-An illustration">An illustration</h2>
+<div class="outline-text-2" id="text-ID-An illustration">
+</div>
+<div id="outline-container-ID-My flight error rates" class="outline-3">
+<h3 id="ID-My flight error rates">My flight error rates</h3>
+<div class="outline-text-3" id="text-ID-My flight error rates">
 <p>
 Of the flights I've taken in the last year, 36% of them had something go wrong. Mostly these are day-of incidents, unlike this latest one, which is a booking error. It's also a <i>more esoteric</i> booking error than my last one: instead of straightforwardly getting a known-and-publicized date wrong, I failed to check for an implicit constraint before scheduling.
 </p>
@@ -314,23 +318,27 @@ Of the flights I've taken in the last year, 36% of them had something go wrong. 
 <p>
 My mitigation strategy for this quite-high error rate costs me something like 25% more on average per ticket, not counting time to replan and rebook things and time taken (both on the work clock and the calendar(which costs me in fare drift)) to get my booking preview reviewed before I buy.
 </p>
+
+<p>
+I'd like to allocate less of my time and money to this problem. I care about this and I don't like how much it costs me to mess it up.
+</p>
 </div>
 </div>
-<div id="outline-container-ID-This incident's postmortem, for an illustration" class="outline-2">
-<h2 id="ID-This incident's postmortem, for an illustration">This incident's postmortem, for an illustration</h2>
-<div class="outline-text-2" id="text-ID-This incident's postmortem, for an illustration">
+<div id="outline-container-ID-This incident's postmortem" class="outline-3">
+<h3 id="ID-This incident's postmortem">This incident's postmortem</h3>
+<div class="outline-text-3" id="text-ID-This incident's postmortem">
 </div>
-<div id="outline-container-ID-executive summary" class="outline-3">
-<h3 id="ID-executive summary">executive summary</h3>
-<div class="outline-text-3" id="text-ID-executive summary">
+<div id="outline-container-ID-executive summary" class="outline-4">
+<h4 id="ID-executive summary">executive summary</h4>
+<div class="outline-text-4" id="text-ID-executive summary">
 <p>
 A flight out was booked and then a role in a play was accepted, that happened after the date of departure. Upon noticing this information, the flight's date was changed to be after the date of the play.
 </p>
 </div>
 </div>
-<div id="outline-container-ID-event log" class="outline-3">
-<h3 id="ID-event log">event log</h3>
-<div class="outline-text-3" id="text-ID-event log">
+<div id="outline-container-ID-event log" class="outline-4">
+<h4 id="ID-event log">event log</h4>
+<div class="outline-text-4" id="text-ID-event log">
 <ul class="org-ul">
 <li>On the 15th of November, I decided to fly out on 9th December, before the formal end of Inkhaven, and booked my return ticket accordingly.</li>
 <li>I later participated in auditions for an event that was due to happen at the end of Inkhaven, and was accepted for the part.</li>
@@ -340,17 +348,17 @@ A flight out was booked and then a role in a play was accepted, that happened af
 </ul>
 </div>
 </div>
-<div id="outline-container-ID-root cause" class="outline-3">
-<h3 id="ID-root cause">root cause</h3>
-<div class="outline-text-3" id="text-ID-root cause">
+<div id="outline-container-ID-root cause" class="outline-4">
+<h4 id="ID-root cause">root cause</h4>
+<div class="outline-text-4" id="text-ID-root cause">
 <p>
 Implicit date constraints.
 </p>
 </div>
 </div>
-<div id="outline-container-ID-What went well" class="outline-3">
-<h3 id="ID-What went well">What went well</h3>
-<div class="outline-text-3" id="text-ID-What went well">
+<div id="outline-container-ID-What went well" class="outline-4">
+<h4 id="ID-What went well">What went well</h4>
+<div class="outline-text-4" id="text-ID-What went well">
 <ul class="org-ul">
 <li>Precommitments worked; they ensured the problem remained salient in my mind.</li>
 <li>I found the new tickets and costed everything out quickly.</li>
@@ -359,9 +367,9 @@ Implicit date constraints.
 </ul>
 </div>
 </div>
-<div id="outline-container-ID-Where we got lucky" class="outline-3">
-<h3 id="ID-Where we got lucky">Where we got lucky</h3>
-<div class="outline-text-3" id="text-ID-Where we got lucky">
+<div id="outline-container-ID-Where we got lucky" class="outline-4">
+<h4 id="ID-Where we got lucky">Where we got lucky</h4>
+<div class="outline-text-4" id="text-ID-Where we got lucky">
 <ul class="org-ul">
 <li>If I hadn't seen the Substack note, I might not have noticed until much later.</li>
 <li>Japan Airlines prefers to sell out rather than gouge, and this means that I could was very lucky to have a return flight available for rebooking at all.</li>
@@ -369,9 +377,9 @@ Implicit date constraints.
 </ul>
 </div>
 </div>
-<div id="outline-container-ID-What could have gone better" class="outline-3">
-<h3 id="ID-What could have gone better">What could have gone better</h3>
-<div class="outline-text-3" id="text-ID-What could have gone better">
+<div id="outline-container-ID-What could have gone better" class="outline-4">
+<h4 id="ID-What could have gone better">What could have gone better</h4>
+<div class="outline-text-4" id="text-ID-What could have gone better">
 <ul class="org-ul">
 <li>I had a pretty strong revealed preference to be here until the end of Inkhaven, that I could have priced for myself earlier on.</li>
 <li>I could have asked after the dates.</li>
@@ -379,9 +387,9 @@ Implicit date constraints.
 </ul>
 </div>
 </div>
-<div id="outline-container-ID-Next steps" class="outline-3">
-<h3 id="ID-Next steps">Next steps</h3>
-<div class="outline-text-3" id="text-ID-Next steps">
+<div id="outline-container-ID-Next steps" class="outline-4">
+<h4 id="ID-Next steps">Next steps</h4>
+<div class="outline-text-4" id="text-ID-Next steps">
 <ul class="org-ul">
 <li>I'm going to have a 44h journey and will be <i>wiped</i> when I land. I'm going to have to set up some serious recovery plans for when I land. Preliminary notes: white tea, clean laundry, zero-effort low-challenge meal plan, time with friends, TV show queued up to stare at mindlessly for a few hours.</li>
 <li>I should probably schedule my visa biometric appointment in advance, for a few days after I land, so that I don't have to do that task in the recovery window, and to give me an ironclad reason to climb out of bed eventually and see the sun, because that helps.</li>
@@ -390,9 +398,9 @@ Implicit date constraints.
 </div>
 </div>
 </div>
-<div id="outline-container-ID-the form of the above and the function it serves" class="outline-2">
-<h2 id="ID-the form of the above and the function it serves">the form of the above and the function it serves</h2>
-<div class="outline-text-2" id="text-ID-the form of the above and the function it serves">
+<div id="outline-container-ID-the form, and the function it serves" class="outline-3">
+<h3 id="ID-the form, and the function it serves">the form, and the function it serves</h3>
+<div class="outline-text-3" id="text-ID-the form, and the function it serves">
 <p>
 With some elisions and personal riffs, this is more or less the form in which I've written up dozens of these little guys. Let's talk about the form of the form for a second.
 </p>
@@ -434,8 +442,9 @@ And once you have all that written down, you have a picture of a thing that happ
 </p>
 
 <p>
-postmortems are a very humane, beautiful kind of document.
+Like I said: postmortems are a very humane document.
 </p>
+</div>
 </div>
 </div>
 <div id="outline-container-ID-Backlinks" class="outline-3">
