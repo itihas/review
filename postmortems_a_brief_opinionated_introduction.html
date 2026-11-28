@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>postmortems: a brief, opinionated introduction</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="static/styles/org.css"/>
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+<a accesskey="a" href="index.html"> Home </a> | <a accesskey="a" href="archive.html"> Archive </a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">postmortems: a brief, opinionated introduction</h1>
+<div class="page-meta">
+<span class="page-stage score-seed" title="review score: 0" role="img" aria-label="seed">🌰</span>
+<span class="page-tags">tags: <span class="tag"><span class="inkhaven">inkhaven</span></span> <span class="tag"><span class="explainerposting">explainerposting</span></span></span>
+</div>
+<p>
+So three days ago (<span class="timestamp-wrapper"><span class="timestamp">[2026-11-25 Wed]</span></span>), I realized that I'd booked my flight ticket out from SFO for the 9th of December. This was a problem, I realized, because I'm acting in a performance of Chekhov's <i>The Proposal</i>, directed by the excellent <a href="https://substack.com/@ehbaker">E Baker</a>, scheduled for the 11th. I found this out through a Substack note she had posted.
+</p>
+
+<p>
+I spent the first five minutes after seeing that note realizing that
+</p>
+<ul class="org-ul">
+<li>I was going to have to reschedule <i>again</i> (I'd already done it once because I'd gotten the dates for Inkhaven wrong).</li>
+<li>Pre-Christmas tickets were ruinously expensive, and Japan Airlines only had one rescheduling option to offer me, involving a 14 hour layover in Boston.</li>
+<li>I needed to be back in India in time to apply for my UK visa for MATS, which meant that I couldn't just beg a couch from friends or family for the season.</li>
+</ul>
+
+
+<p>
+I then spent two hours after that asking myself and my <a href="https://www.oblomovka.com/wp/2026/11/24/your-smarter-friend/">smarter friend</a> how it had come to this, <i>again</i>.
+</p>
+
+<p>
+This could have been rumination. I have ecxtensicve notes in my Claude system prompt about what it looks like when I'm ruminating, and what to tell me about it. When it chooses to deploy those tools in a conversation, I of course immediately find myself rationalizing what I'm doing instead of listening to it. But I do take a breath when it tells me to take a breath, because nothing true dissolves when you breathe about it. So in the process of breathing-and-then-rationalizing, I often find remainders underneath the panicky self-explanation of a drive and a process that I actually do care about doing well, actually.
+</p>
+
+<p>
+What's behind the question of "why has it once more come to this?"
+</p>
+
+<p>
+Well&hellip;nothing. When asked in isolation, when one finds the room in one's head not to retreat into a flinch-away, into self-recrimination or fearful rosarying of pasts and futures, there are two simple things happening:
+</p>
+
+<ul class="org-ul">
+<li>I care about this and I care that it's costing me something to mess it up.</li>
+<li>I <i>actually want to know</i> what's going wrong.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></li>
+</ul>
+<div id="outline-container-ID-blameless postmortems" class="outline-2">
+<h2 id="ID-blameless postmortems">blameless postmortems</h2>
+<div class="outline-text-2" id="text-ID-blameless postmortems">
+<p>
+I want to write something sometime soon about the beating heart behind many kinds of corporate paperwork. Bureucrats, you might be surprised to find, are humans. Lots of what they do has to be shaped around their fallible squishy meatbag selves for the larger apparatus of the Bureaucracy to work.
+</p>
+
+<p>
+Among my favorite forms of form is the blameless post mortem. Originally a Google SRE invention, the blameless post mortem is a surprisingly humane document, designed to serve several purposes with a single intention behind them.
+</p>
+
+<p>
+It goes like this: you push an update to a caching layer, and Gmail goes down.
+</p>
+
+<p>
+If you raise your hand and say, "it might have been this update that took Gmail down," people can check your update, roll it back, and bring it back up in fifteen minutes.
+</p>
+
+<p>
+If you don't, people will have to check every change that happened in the last three hours, form competing hypotheses, and test each one. In the process they might break even more things, that will also have to be fixed. Gmail might not be back up for hours.
+</p>
+
+<p>
+How do you make it safe for the guy that pushed the breaking update to raise his hand?
+</p>
+</div>
+</div>
+<div id="outline-container-ID-blame" class="outline-2">
+<h2 id="ID-blame">blame</h2>
+<div class="outline-text-2" id="text-ID-blame">
+<p>
+The answer is very easy and surprisingly unintuitive: you can't do blame.
+</p>
+
+<p>
+Maybe it's not that unintuitive, actually. When I first read this ethos in a corporate setting, it made immediate sense to me. Laid out socially like this it seems completely obvious that if you make that guy pay for breaking something, you make everybody vigilant, defensive, unwilling to speak baldly about the truth. Letting people get away with doing their jobs is the same thing as letting them do their jobs at all.
+</p>
+
+<p>
+The thing is I hadn't realized that I let this pass so easily because outside of my own notice was a sentiment that went something like, <i>well, of course, exceptions aside</i>.
+</p>
+
+<p>
+I wonder what your exceptions are to blamelessness. Mine would probably have been quite poorly articulated if they'd risen to the point of articulability in my awareness. I might have said, <i>sometimes people really are at fault</i>; but it's good for some people to get away with things if it means that most people attain positive freedoms. I might have said, <i>sometimes people should take responsibility</i>, and maybe something more is in that one; But in the context of a megacorporation employing thousands of people, nobody should be held responsible for the whole machine when their particular gear's number happened to come up that day.
+</p>
+
+<p>
+It's a finny principle, really. When youtry to treat it as if it were 100% true, no exceptions, it becomes significantly more frustrating: less intuitive, yet somehow no less true.
+</p>
+
+<p>
+Here is the truth: blame is grief. Blame is the social system saying:
+</p>
+<ul class="org-ul">
+<li>I care about this and I care that it's costing me something to mess it up.</li>
+<li>I actually want to know what's going wrong.</li>
+</ul>
+<p>
+&mdash;and, crucially, <i>flinching</i>. Recrimination, false consequence, fearful rosarying of pasts and futures.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-My flight error rates" class="outline-2">
+<h2 id="ID-My flight error rates">My flight error rates</h2>
+<div class="outline-text-2" id="text-ID-My flight error rates">
+<p>
+Of the flights I've taken in the last year, 36% of them had something go wrong. Mostly these are day-of incidents, unlike this latest one, which is a booking error. It's also a <i>more esoteric</i> booking error than my last one: instead of straightforwardly getting a known-and-publicised date wrong, I failed to check for an implicit constraint before scheduling.
+</p>
+
+<p>
+My mitigation strategy for this quite-high error rate costs me something like 25% more on average per ticket, not counting time to replan and rebook things and time taken (both on the work clock and the calendar(which costs me in fare drift)) to get my booking preview reviewed before I buy.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-This incident's post mortem, for an illustration" class="outline-2">
+<h2 id="ID-This incident's post mortem, for an illustration">This incident's post mortem, for an illustration</h2>
+<div class="outline-text-2" id="text-ID-This incident's post mortem, for an illustration">
+</div>
+<div id="outline-container-ID-executive summary" class="outline-3">
+<h3 id="ID-executive summary">executive summary</h3>
+<div class="outline-text-3" id="text-ID-executive summary">
+<p>
+A flight out was booked and then a role in a play was accepted, that happened after the date of departure. Upon noticing this information, the flight's date was changed to be after the date of the play.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-event log" class="outline-3">
+<h3 id="ID-event log">event log</h3>
+<div class="outline-text-3" id="text-ID-event log">
+<ul class="org-ul">
+<li>On the 15th of November, I decided to fly out on 9th December, before the formal end of Inkhaven, and booked my return ticket accordingly.</li>
+<li>I later participated in auditions for an event that was due to happen at the end of Inkhaven, and was accepted for the part.</li>
+<li>I noticed on the 25th of November from a Substack note  that I'd made a commitment to be in Berkeley past the date I was due to leave.</li>
+<li>I messaged the director to precommit to a ticket change, making sure somebody knew about the problem. I also messaged friends so they'd ask me about it.</li>
+<li>I paid an elevated fare difference to change my ticket to the 13th. The ticket change was confirmed on the 27th.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-root cause" class="outline-3">
+<h3 id="ID-root cause">root cause</h3>
+<div class="outline-text-3" id="text-ID-root cause">
+<p>
+Implicit date constraints.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-What went well" class="outline-3">
+<h3 id="ID-What went well">What went well</h3>
+<div class="outline-text-3" id="text-ID-What went well">
+<ul class="org-ul">
+<li>Precommitments worked; they ensured the problem remained salient in my mind.</li>
+<li>I found the new tickets and costed everything out quickly.</li>
+<li>I had a clear picture of my priorities and this made decisionmaking easy.</li>
+<li>I noticed the discrepancy when presented with the information in the correct format.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Where we got lucky" class="outline-3">
+<h3 id="ID-Where we got lucky">Where we got lucky</h3>
+<div class="outline-text-3" id="text-ID-Where we got lucky">
+<ul class="org-ul">
+<li>If I hadn't seen the Substack note, I might not have noticed until much later.</li>
+<li>Japan Airlines prefers to sell out rather than gouge, and this means that I could was very lucky to have a return flight available for rebooking at all.</li>
+<li>The paranoia about travel going wrong was in this case well-calibrated and functional. No hyper in this vigilance this time.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-What could have gone better" class="outline-3">
+<h3 id="ID-What could have gone better">What could have gone better</h3>
+<div class="outline-text-3" id="text-ID-What could have gone better">
+<ul class="org-ul">
+<li>I had a pretty strong revealed preference to be here until the end of Inkhaven, that I could have priced for myself earlier on.</li>
+<li>I could have asked after the dates.</li>
+<li>I could have not auditioned, which while sad would have been more responsible.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-ID-Next steps" class="outline-3">
+<h3 id="ID-Next steps">Next steps</h3>
+<div class="outline-text-3" id="text-ID-Next steps">
+<ul class="org-ul">
+<li>I'm going to have a 44h journey and will be <i>wiped</i> when I land. I'm going to have to set up some serious recovery plans for when I land. Preliminary notes: white tea, clean laundry, zero-effort low-challenge meal plan, time with friends, TV show queued up to stare at mindlessly for a few hours.</li>
+<li>I should probably schedule my visa biometric appointment in advance, for a few days after I land, so that I don't have to do that task in the recovery window, and to give me an ironclad reason to climb out of bed eventually and see the sun, because that helps.</li>
+<li>The spreadsheet I ended up dumping the flight incident data into could stand to become a proper vibed-up app or website for me to keep logging into, because nothing helps you get motivated to fix a problem like an SLO to get number-go-up about.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-ID-the form of the above and the function it serves" class="outline-2">
+<h2 id="ID-the form of the above and the function it serves">the form of the above and the function it serves</h2>
+<div class="outline-text-2" id="text-ID-the form of the above and the function it serves">
+<p>
+With some elisions and personal riffs, this is more or less the form in which I've written up dozens of these little guys. Let's talk about the form of the form for a second.
+</p>
+
+<p>
+Passive voice, correctly reviled in many cases, is appropriate and important here, because it keeps the guy that did it away from the focus. The human brain is always, always looking for social information to anchor it situational understanding to; you have to take Certain Measures to keep a reader focused on <i>what happened</i> instead of <i>who did it</i>.
+</p>
+
+<p>
+We have a summary up top to remind us of what this even is.
+</p>
+
+<p>
+We have an event log, usually with a timeline (which I'm a little too lazy for at the moment), with as little editorializing and analysis as possible, because if the analysis is <i>wrong</i> in some way, well, we want something more like an account of the ground truth to anchor our revised analysis to.
+</p>
+
+<p>
+"Root cause" is the correct home for analysis. Separated out like this, it helps me notice that analysis is actually <i>hard</i> in like a base, irreducible way. What do I think <i>happened</i>? In this case I notice something like <i>time anaphora</i>. I don't imagine time this way, or in a way that answers this class of questions. What do I do about it? Well, think about it some more. It's <i>hard</i>. I don't see all the way around it yet. This is one of the most valuable pieces of the whole exercise, and I usually fill it in last, because the entire rest of the document is an excuse to lay out the pieces of the puzzle that "root cause" is cuing me to solve. This section is the place where valuable theories are built.
+</p>
+
+<p>
+That's what I think of the remaining pieces as, anyway. Writing prompts that help me get the facts of the matter out; the stuff that will keep circling in me forever if I don't get it down. If I have a place to write "what went well", I won't feel the strange half-shame of being proud of myself for how I handled a situation created by my own mistake; the situationa nd the mistake and my handling of it all stop being about me, and I cna just describe the pieces of the whole thing I'm happy about, take a second to notice what's working, anchor it in my affective reasoning as things I like and want more of.
+</p>
+
+<p>
+Luck is similar. Lots of luck isn't really luck. It's more like <i>grace</i> &ndash; like the universe being okay to you at least as often as it isn't okay to you, fractally down inside your mistakes and your recoveries and your mastery and your heroism and all of it. There will be things that happen that you couldn't see coming; and inside the frame of an explanation of one of the bad things, there will be goog things.
+</p>
+
+<p>
+"Next steps" is just where I put my todo. The ladder I can use to climb out of the place where this is the thing that's happening, into the rest of my life. The curtains opening and the world through the window, where this is about to become something that happened, and I get to orient to what happens <i>next</i>. (I love the word <i>next</i>. I think that makes me very Silicon-Valley-core in some ways.)
+</p>
+
+<p>
+So that's it, that's the map. Describe it; give it a little time and space and consideration; once you have, take a look into its beating heart, its center, and make what sense of it you can.
+</p>
+
+<p>
+And once you have all that written down, you have a picture of a thing that happened to you that you can use to be truthful and clear and also be kind.
+</p>
+
+<p>
+Post mortems are a very humane, beautiful kind of document.
+</p>
+</div>
+</div>
+<div id="outline-container-ID-Backlinks" class="outline-3">
+<h3 id="ID-Backlinks">Backlinks</h3>
+<div class="outline-text-3" id="text-ID-Backlinks">
+</div>
+<ul class="org-ul">
+<li><a href="index.html#ID-3cf4c0b8-c265-42e5-a6df-3efc6e8944f5">Review</a></li>
+</ul>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+secretly, these are both the same question, asked two ways. 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<script data-goatcounter="https://itihas.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</div>
+</body>
+</html>
